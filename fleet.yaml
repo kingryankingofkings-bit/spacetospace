@@ -1,0 +1,30 @@
+apiVersion: "agones.dev/v1"
+kind: Fleet
+metadata:
+  name: antigravity-game-server
+spec:
+  replicas: 2
+  scheduling: Packed
+  template:
+    spec:
+      ports:
+      - name: default
+        portPolicy: Dynamic
+        containerPort: 8080
+      template:
+        spec:
+          containers:
+          - name: game-server
+            image: gcr.io/your-project/antigravity-server:latest
+            resources:
+              requests:
+                memory: "512Mi"
+                cpu: "500m"
+              limits:
+                memory: "1Gi"
+                cpu: "1000m"
+            env:
+            - name: REDIS_URL
+              value: "redis://redis-master.default.svc.cluster.local:6379"
+            - name: PG_URL
+              value: "postgres://user:pass@postgres.default.svc.cluster.local:5432/antigravity"

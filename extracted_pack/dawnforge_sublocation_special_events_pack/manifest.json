@@ -1,0 +1,26 @@
+{
+  "pack_name": "dawnforge_sublocation_special_events_pack",
+  "created_for": "Echoes of the Dawnforge",
+  "event_count": 215,
+  "sublocation_count": 215,
+  "world_location_count": 43,
+  "minimum_required_player_level": 20,
+  "maximum_required_player_level": 40,
+  "xp_policy": "No completion XP, no spawned enemy XP, no combo XP for special-event entities.",
+  "files": [
+    "EVENT_VALIDATION_REPORT.txt",
+    "README.md",
+    "SPECIAL_EVENT_CATALOG.md",
+    "SPECIAL_EVENT_CATALOG.txt",
+    "SPECIAL_EVENT_DESIGN_SUMMARY.md",
+    "SPECIAL_EVENT_SYSTEM_RULES.md",
+    "data/special_event_loot_table.json",
+    "data/special_event_monster_stats.json",
+    "data/special_events.json",
+    "tables/BASELINE_MONSTER_STAT_MODEL.csv",
+    "tables/SPECIAL_EVENT_LOOT_TABLE.csv",
+    "tables/SPECIAL_EVENT_MONSTER_STATS.csv",
+    "tables/SPECIAL_EVENT_TRIGGER_MATRIX.csv",
+    "tables/SUBLOCATION_EVENT_COVERAGE.csv"
+  ]
+}

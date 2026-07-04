@@ -1,0 +1,594 @@
+{
+  "coordinate_system": "Y-up, origin near ground/center of footprint, forward generally along negative Z",
+  "note": "These are coarse gameplay collider suggestions. Tune against the final animation rig, speed, and arena camera.",
+  "models": {
+    "gnarl_maws": {
+      "file": "models/creatures/01_gnarl_maw.glb",
+      "visual_bounds": {
+        "geometry_count": 51,
+        "vertices": 3642,
+        "triangles": 1214,
+        "visual_bounds_min": [
+          -0.77,
+          -0.01,
+          -1.35
+        ],
+        "visual_bounds_max": [
+          0.77,
+          0.964,
+          0.901
+        ],
+        "file_size_bytes": 70064
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "box",
+          "name": "body",
+          "center": [
+            0,
+            0.45,
+            -0.05
+          ],
+          "size": [
+            1.35,
+            0.85,
+            1.55
+          ]
+        },
+        {
+          "type": "box",
+          "name": "latch_jaw",
+          "center": [
+            0,
+            0.45,
+            -1.05
+          ],
+          "size": [
+            0.85,
+            0.45,
+            0.65
+          ]
+        }
+      ]
+    },
+    "grid_rushers": {
+      "file": "models/creatures/02_grid_rusher.glb",
+      "visual_bounds": {
+        "geometry_count": 27,
+        "vertices": 1722,
+        "triangles": 574,
+        "visual_bounds_min": [
+          -0.72,
+          0.016,
+          -0.92
+        ],
+        "visual_bounds_max": [
+          0.72,
+          0.691,
+          0.76
+        ],
+        "file_size_bytes": 36588
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "capsule",
+          "name": "spine",
+          "start": [
+            0,
+            0.5,
+            -0.8
+          ],
+          "end": [
+            0,
+            0.5,
+            0.55
+          ],
+          "radius": 0.22
+        }
+      ]
+    },
+    "scrap_phalanx": {
+      "file": "models/creatures/03_scrap_phalanx.glb",
+      "visual_bounds": {
+        "geometry_count": 20,
+        "vertices": 1854,
+        "triangles": 618,
+        "visual_bounds_min": [
+          -0.628,
+          0.01,
+          -0.966
+        ],
+        "visual_bounds_max": [
+          0.631,
+          1.98,
+          0.227
+        ],
+        "file_size_bytes": 34976
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "box",
+          "name": "shield_wall",
+          "center": [
+            0,
+            1.42,
+            -0.5
+          ],
+          "size": [
+            1.35,
+            0.95,
+            0.18
+          ]
+        },
+        {
+          "type": "capsule",
+          "name": "body",
+          "start": [
+            0,
+            0.15,
+            0
+          ],
+          "end": [
+            0,
+            1.05,
+            0
+          ],
+          "radius": 0.22
+        }
+      ]
+    },
+    "siphon_ticks": {
+      "file": "models/creatures/04_siphon_tick.glb",
+      "visual_bounds": {
+        "geometry_count": 29,
+        "vertices": 2190,
+        "triangles": 730,
+        "visual_bounds_min": [
+          -0.76,
+          0.018,
+          -0.84
+        ],
+        "visual_bounds_max": [
+          0.76,
+          0.4,
+          0.5
+        ],
+        "file_size_bytes": 42168
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "box",
+          "name": "low_body",
+          "center": [
+            0,
+            0.18,
+            0
+          ],
+          "size": [
+            0.75,
+            0.3,
+            1.0
+          ]
+        }
+      ]
+    },
+    "ascendant_colossus": {
+      "file": "models/bosses/boss_01_ascendant_colossus.glb",
+      "visual_bounds": {
+        "geometry_count": 41,
+        "vertices": 4920,
+        "triangles": 1640,
+        "visual_bounds_min": [
+          -2.261,
+          -0.058,
+          -0.739
+        ],
+        "visual_bounds_max": [
+          2.265,
+          4.805,
+          0.621
+        ],
+        "file_size_bytes": 81880
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "capsule",
+          "name": "titan_body",
+          "start": [
+            0,
+            0.2,
+            0
+          ],
+          "end": [
+            0,
+            4.35,
+            0
+          ],
+          "radius": 0.95
+        },
+        {
+          "type": "sphere",
+          "name": "chest_weakpoint",
+          "center": [
+            0,
+            2.55,
+            -0.35
+          ],
+          "radius": 0.35
+        }
+      ]
+    },
+    "syndicate_lich": {
+      "file": "models/bosses/boss_02_syndicate_lich.glb",
+      "visual_bounds": {
+        "geometry_count": 38,
+        "vertices": 9558,
+        "triangles": 3186,
+        "visual_bounds_min": [
+          -1.37,
+          0.55,
+          -0.975
+        ],
+        "visual_bounds_max": [
+          1.37,
+          3.25,
+          0.975
+        ],
+        "file_size_bytes": 143228
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "capsule",
+          "name": "floating_body",
+          "start": [
+            0,
+            0.65,
+            0
+          ],
+          "end": [
+            0,
+            2.95,
+            0
+          ],
+          "radius": 0.65
+        },
+        {
+          "type": "sphere",
+          "name": "barrier",
+          "center": [
+            0,
+            1.85,
+            0
+          ],
+          "radius": 1.05
+        }
+      ]
+    },
+    "resonant_behemoth": {
+      "file": "models/bosses/boss_03_resonant_behemoth.glb",
+      "visual_bounds": {
+        "geometry_count": 28,
+        "vertices": 6888,
+        "triangles": 2296,
+        "visual_bounds_min": [
+          -2.318,
+          -0.036,
+          -3.168
+        ],
+        "visual_bounds_max": [
+          2.318,
+          2.34,
+          1.984
+        ],
+        "file_size_bytes": 104348
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "box",
+          "name": "huge_body",
+          "center": [
+            0,
+            0.95,
+            0.25
+          ],
+          "size": [
+            2.55,
+            1.4,
+            3.7
+          ]
+        },
+        {
+          "type": "sphere",
+          "name": "throat_sac_zone",
+          "center": [
+            0,
+            0.7,
+            -1.35
+          ],
+          "radius": 0.55
+        }
+      ]
+    },
+    "null_anomaly": {
+      "file": "models/bosses/boss_04_null_anomaly.glb",
+      "visual_bounds": {
+        "geometry_count": 33,
+        "vertices": 2976,
+        "triangles": 992,
+        "visual_bounds_min": [
+          -1.359,
+          -0.002,
+          -1.015
+        ],
+        "visual_bounds_max": [
+          1.319,
+          2.058,
+          0.993
+        ],
+        "file_size_bytes": 56184
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "capsule",
+          "name": "real_body",
+          "start": [
+            0,
+            0.1,
+            0
+          ],
+          "end": [
+            0,
+            1.95,
+            0
+          ],
+          "radius": 0.35
+        },
+        {
+          "type": "sphere",
+          "name": "echo_split_area",
+          "center": [
+            0,
+            1.0,
+            0
+          ],
+          "radius": 1.15
+        }
+      ]
+    },
+    "apex_chimera": {
+      "file": "models/bosses/boss_05_apex_chimera.glb",
+      "visual_bounds": {
+        "geometry_count": 55,
+        "vertices": 6414,
+        "triangles": 2138,
+        "visual_bounds_min": [
+          -1.0,
+          -0.019,
+          -1.906
+        ],
+        "visual_bounds_max": [
+          1.16,
+          1.87,
+          2.68
+        ],
+        "file_size_bytes": 109136
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "box",
+          "name": "predator_body",
+          "center": [
+            0,
+            1.05,
+            0.1
+          ],
+          "size": [
+            2.0,
+            1.3,
+            3.35
+          ]
+        },
+        {
+          "type": "box",
+          "name": "mouth_intercept_zone",
+          "center": [
+            0,
+            1.05,
+            -1.65
+          ],
+          "size": [
+            0.9,
+            0.55,
+            0.65
+          ]
+        }
+      ]
+    },
+    "resonance_maestro": {
+      "file": "models/bosses/boss_06_resonance_maestro.glb",
+      "visual_bounds": {
+        "geometry_count": 33,
+        "vertices": 7974,
+        "triangles": 2658,
+        "visual_bounds_min": [
+          -1.09,
+          0.35,
+          -1.468
+        ],
+        "visual_bounds_max": [
+          1.09,
+          3.077,
+          0.768
+        ],
+        "file_size_bytes": 123164
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "capsule",
+          "name": "hovering_body",
+          "start": [
+            0,
+            0.75,
+            0
+          ],
+          "end": [
+            0,
+            2.8,
+            0
+          ],
+          "radius": 0.55
+        },
+        {
+          "type": "sphere",
+          "name": "bass_trap_projectile",
+          "center": [
+            0,
+            1.52,
+            -1.2
+          ],
+          "radius": 0.25
+        }
+      ]
+    },
+    "data_forged_evolvarch": {
+      "file": "models/bosses/boss_07_data_forged_evolvarch.glb",
+      "visual_bounds": {
+        "geometry_count": 52,
+        "vertices": 7032,
+        "triangles": 2344,
+        "visual_bounds_min": [
+          -1.75,
+          -0.535,
+          -1.889
+        ],
+        "visual_bounds_max": [
+          1.75,
+          3.035,
+          1.814
+        ],
+        "file_size_bytes": 124956
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "box",
+          "name": "titan_body",
+          "center": [
+            0,
+            1.2,
+            0.05
+          ],
+          "size": [
+            2.3,
+            1.55,
+            3.25
+          ]
+        },
+        {
+          "type": "sphere",
+          "name": "evolution_ring",
+          "center": [
+            0,
+            1.25,
+            0
+          ],
+          "radius": 1.75
+        }
+      ]
+    },
+    "ivory_behemoth": {
+      "file": "models/bosses/boss_08_ivory_behemoth.glb",
+      "visual_bounds": {
+        "geometry_count": 39,
+        "vertices": 6156,
+        "triangles": 2052,
+        "visual_bounds_min": [
+          -1.45,
+          -0.06,
+          -2.95
+        ],
+        "visual_bounds_max": [
+          1.45,
+          2.424,
+          2.135
+        ],
+        "file_size_bytes": 96160
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "box",
+          "name": "pachyderm_body",
+          "center": [
+            0,
+            1.25,
+            0.0
+          ],
+          "size": [
+            3.0,
+            2.0,
+            4.3
+          ]
+        },
+        {
+          "type": "box",
+          "name": "tusk_sweep",
+          "center": [
+            0,
+            1.25,
+            -2.45
+          ],
+          "size": [
+            3.0,
+            0.85,
+            1.35
+          ]
+        }
+      ]
+    },
+    "astral_sovereign": {
+      "file": "models/bosses/boss_09_astral_sovereign.glb",
+      "visual_bounds": {
+        "geometry_count": 51,
+        "vertices": 10014,
+        "triangles": 3338,
+        "visual_bounds_min": [
+          -1.759,
+          0.75,
+          -1.712
+        ],
+        "visual_bounds_max": [
+          1.647,
+          3.315,
+          1.638
+        ],
+        "file_size_bytes": 161188
+      },
+      "suggested_collision_shapes": [
+        {
+          "type": "capsule",
+          "name": "floating_lich_body",
+          "start": [
+            0,
+            0.8,
+            0
+          ],
+          "end": [
+            0,
+            3.0,
+            0
+          ],
+          "radius": 0.75
+        },
+        {
+          "type": "sphere",
+          "name": "cosmic_shield",
+          "center": [
+            0,
+            1.85,
+            0
+          ],
+          "radius": 1.1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+apiVersion: "autoscaling.agones.dev/v1"
+kind: FleetAutoscaler
+metadata:
+  name: mmo-fleet-autoscaler
+spec:
+  fleetName: mmo-game-server-fleet
+  policy:
+    type: Buffer
+    buffer:
+      bufferSize: 2
+      minReplicas: 2
+      maxReplicas: 10

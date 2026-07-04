@@ -1,0 +1,545 @@
+{
+  "pack_name": "Free-Flow Creature and Boss GLB Pack",
+  "version": "3.0",
+  "asset_type": "static_low_poly_glb_meshes",
+  "coordinate_system": "Y-up, origin near ground/center of footprint, forward generally along negative Z",
+  "units": "arbitrary game units; suggested to treat as meters in Three.js",
+  "generated_files_count": 13,
+  "models": [
+    {
+      "id": "gnarl_maws",
+      "display_name": "The Gnarl-Maws",
+      "category": "creature",
+      "role": "Fodder / Movement Restrictor",
+      "file": "models/creatures/01_gnarl_maw.glb",
+      "description": "Squat, blocky heavy-chewer with oversized steel-gnawing jaws, durable leathery hide, latch hooks, and stumpy braced legs.",
+      "mechanics": [
+        "Latch & Drag",
+        "Shake-Off"
+      ],
+      "engine_hooks": {
+        "main_hit_region": "gnarl_maw_blocky_torso",
+        "latch_origin": "gnarl_maw_lower_jaw_latch_plate",
+        "shake_off_target": "gnarl_maw_overdeveloped_head"
+      },
+      "suggested_animations": [
+        "idle_chew",
+        "crawl",
+        "latch_jump",
+        "drag_resist",
+        "shake_off_stun",
+        "death_sprawl"
+      ],
+      "asset_stats": {
+        "geometry_count": 51,
+        "vertices": 3642,
+        "triangles": 1214,
+        "visual_bounds_min": [
+          -0.77,
+          -0.01,
+          -1.35
+        ],
+        "visual_bounds_max": [
+          0.77,
+          0.964,
+          0.901
+        ],
+        "file_size_bytes": 70064
+      }
+    },
+    {
+      "id": "grid_rushers",
+      "display_name": "The Grid-Rushers",
+      "category": "creature",
+      "role": "Combo-Batteries / Positional Threat",
+      "file": "models/creatures/02_grid_rusher.glb",
+      "description": "Spindly, glowing automaton-insect built around a forward lance silhouette, thin legs, grid bars, and a rear thrust flare.",
+      "mechanics": [
+        "Linear Swarm",
+        "One-Hit Wonders"
+      ],
+      "engine_hooks": {
+        "core": "grid_rusher_glowing_core",
+        "forward_direction_hint": "grid_rusher_forward_lance_head",
+        "death_pop_origin": "grid_rusher_rear_thrust_flare"
+      },
+      "suggested_animations": [
+        "idle_twitch",
+        "linear_sprint",
+        "impact_pop",
+        "lane_swarm"
+      ],
+      "asset_stats": {
+        "geometry_count": 27,
+        "vertices": 1722,
+        "triangles": 574,
+        "visual_bounds_min": [
+          -0.72,
+          0.016,
+          -0.92
+        ],
+        "visual_bounds_max": [
+          0.72,
+          0.691,
+          0.76
+        ],
+        "file_size_bytes": 36588
+      }
+    },
+    {
+      "id": "scrap_phalanx",
+      "display_name": "The Scrap-Phalanx",
+      "category": "creature",
+      "role": "Defensive Horde / Clumper",
+      "file": "models/creatures/03_scrap_phalanx.glb",
+      "description": "Fragile scavenger-drone holding a jagged improvised shield wall made from rusted car-door metal and wood planks.",
+      "mechanics": [
+        "The Turtle Shell",
+        "Scatter Strike"
+      ],
+      "engine_hooks": {
+        "shield_root": "scrap_phalanx_rusted_car_door_shield",
+        "vulnerable_body": "scrap_phalanx_small_body",
+        "scatter_origin": "scrap_phalanx_jagged_scrap_top_edge"
+      },
+      "suggested_animations": [
+        "idle_hide",
+        "clump_formation",
+        "shield_brace",
+        "scatter_break",
+        "panic_scurry"
+      ],
+      "asset_stats": {
+        "geometry_count": 20,
+        "vertices": 1854,
+        "triangles": 618,
+        "visual_bounds_min": [
+          -0.628,
+          0.01,
+          -0.966
+        ],
+        "visual_bounds_max": [
+          0.631,
+          1.98,
+          0.227
+        ],
+        "file_size_bytes": 34976
+      }
+    },
+    {
+      "id": "siphon_ticks",
+      "display_name": "The Siphon-Ticks",
+      "category": "creature",
+      "role": "Evasive Nuisance / Priority Target",
+      "file": "models/creatures/04_siphon_tick.glb",
+      "description": "Low floor-camouflaged tick with skittering legs, energy siphon proboscis, and glowing combo-meter abdomen.",
+      "mechanics": [
+        "The Opportunist",
+        "The Chase"
+      ],
+      "engine_hooks": {
+        "siphon_probe": "siphon_tick_energy_proboscis",
+        "stolen_meter_visual": "siphon_tick_combo_meter_core",
+        "weak_point": "siphon_tick_translucent_energy_abdomen"
+      },
+      "suggested_animations": [
+        "floor_idle",
+        "ambush_dart",
+        "siphon_channel",
+        "flee_to_edge",
+        "squash"
+      ],
+      "asset_stats": {
+        "geometry_count": 29,
+        "vertices": 2190,
+        "triangles": 730,
+        "visual_bounds_min": [
+          -0.76,
+          0.018,
+          -0.84
+        ],
+        "visual_bounds_max": [
+          0.76,
+          0.4,
+          0.5
+        ],
+        "file_size_bytes": 42168
+      }
+    },
+    {
+      "id": "ascendant_colossus",
+      "display_name": "The Ascendant Colossus",
+      "category": "boss",
+      "role": "Multi-Phase Titan / Form-Shifter",
+      "file": "models/bosses/boss_01_ascendant_colossus.glb",
+      "description": "Towering stone giant with breakable phase-one armor, exposed lightning phase-two core, grapple weakpoints, and floating shattered shell pieces.",
+      "mechanics": [
+        "Evolutionary Phases",
+        "Structural Scaling"
+      ],
+      "engine_hooks": {
+        "phase1_group_prefix": "ascendant_colossus_phase1_",
+        "phase2_group_prefix": "ascendant_colossus_phase2_",
+        "grapple_points_prefix": "ascendant_colossus_grapple_weakpoint_"
+      },
+      "suggested_animations": [
+        "slow_walk",
+        "armor_chip_react",
+        "shell_shatter",
+        "lightning_phase_idle",
+        "limb_climb_reacts",
+        "titan_slam"
+      ],
+      "asset_stats": {
+        "geometry_count": 41,
+        "vertices": 4920,
+        "triangles": 1640,
+        "visual_bounds_min": [
+          -2.261,
+          -0.058,
+          -0.739
+        ],
+        "visual_bounds_max": [
+          2.265,
+          4.805,
+          0.621
+        ],
+        "file_size_bytes": 81880
+      }
+    },
+    {
+      "id": "syndicate_lich",
+      "display_name": "The Syndicate Lich",
+      "category": "boss",
+      "role": "Undead Commander / Zone Controller",
+      "file": "models/bosses/boss_02_syndicate_lich.glb",
+      "description": "Floating skeletal commander in tattered regal robes, with visible command orbs, combo-locked barrier rings, crown spikes, and dark magic particles.",
+      "mechanics": [
+        "Issuing Orders",
+        "Combo-Locked Shielding"
+      ],
+      "engine_hooks": {
+        "shield_ring_A": "syndicate_lich_combo_locked_barrier_ring_vertical",
+        "shield_ring_B": "syndicate_lich_combo_locked_barrier_ring_horizontal",
+        "order_orbs_prefix": "syndicate_lich_marked_minion_order_orb_"
+      },
+      "suggested_animations": [
+        "hover_idle",
+        "issue_order",
+        "barrier_pulse",
+        "shield_break",
+        "summon_swirl",
+        "death_unravel"
+      ],
+      "asset_stats": {
+        "geometry_count": 38,
+        "vertices": 9558,
+        "triangles": 3186,
+        "visual_bounds_min": [
+          -1.37,
+          0.55,
+          -0.975
+        ],
+        "visual_bounds_max": [
+          1.37,
+          3.25,
+          0.975
+        ],
+        "file_size_bytes": 143228
+      }
+    },
+    {
+      "id": "resonant_behemoth",
+      "display_name": "The Resonant Behemoth",
+      "category": "boss",
+      "role": "Rhythm-Based Giant / Environmental Hazard",
+      "file": "models/bosses/boss_03_resonant_behemoth.glb",
+      "description": "Colossal subterranean amphibian with resonant throat sacs, mallet forelimbs, vibrating spine crystals, and shockwave telegraph rings.",
+      "mechanics": [
+        "The Bass Drop",
+        "Echo Strikes"
+      ],
+      "engine_hooks": {
+        "throat_sacs_prefix": "resonant_behemoth_resonant_throat_sac_",
+        "spine_crystals_prefix": "resonant_behemoth_vibrating_spine_crystal_",
+        "shockwave_rings_prefix": "resonant_behemoth_echo_shockwave_ring_"
+      },
+      "suggested_animations": [
+        "idle_hum",
+        "sac_charge",
+        "bass_drop",
+        "echo_slam",
+        "submerge",
+        "crystal_crack"
+      ],
+      "asset_stats": {
+        "geometry_count": 28,
+        "vertices": 6888,
+        "triangles": 2296,
+        "visual_bounds_min": [
+          -2.318,
+          -0.036,
+          -3.168
+        ],
+        "visual_bounds_max": [
+          2.318,
+          2.34,
+          1.984
+        ],
+        "file_size_bytes": 104348
+      }
+    },
+    {
+      "id": "null_anomaly",
+      "display_name": "The Null Anomaly",
+      "category": "boss",
+      "role": "Reality Warper / Precision Tester",
+      "file": "models/bosses/boss_04_null_anomaly.glb",
+      "description": "Fragmented digital-light humanoid with one real shadow-tell form, three fake echoes, gravity-reversal debris, and void-energy fragments.",
+      "mechanics": [
+        "Echo Splintering",
+        "Gravity Reversal"
+      ],
+      "engine_hooks": {
+        "real_shadow_tell": "null_anomaly_real_shadow_tell_ring",
+        "real_core": "null_anomaly_real_core_magenta",
+        "fake_echo_prefix": "null_anomaly_fake_echo_"
+      },
+      "suggested_animations": [
+        "glitch_idle",
+        "split_echoes",
+        "fake_hit_stun_player",
+        "gravity_flip",
+        "reform",
+        "phase_warp"
+      ],
+      "asset_stats": {
+        "geometry_count": 33,
+        "vertices": 2976,
+        "triangles": 992,
+        "visual_bounds_min": [
+          -1.359,
+          -0.002,
+          -1.015
+        ],
+        "visual_bounds_max": [
+          1.319,
+          2.058,
+          0.993
+        ],
+        "file_size_bytes": 56184
+      }
+    },
+    {
+      "id": "apex_chimera",
+      "display_name": "The Apex Chimera",
+      "category": "boss",
+      "role": "Evolutionary Beast / Mob Integrator",
+      "file": "models/bosses/boss_05_apex_chimera.glb",
+      "description": "Biomechanical predator with exposed integration ports, synthetic muscle, mechanical limbs, an evolved shoulder cannon, and reinforced tail club.",
+      "mechanics": [
+        "Forced Evolution",
+        "Interception Combos"
+      ],
+      "engine_hooks": {
+        "integration_ports_prefix": "apex_chimera_exposed_integration_port_",
+        "plasma_cannon": "apex_chimera_evolved_shoulder_plasma_cannon",
+        "tail_club": "apex_chimera_tail_club_weapon"
+      },
+      "suggested_animations": [
+        "predator_idle",
+        "consume_mob",
+        "grow_weapon",
+        "intercept_interrupt",
+        "tail_slam",
+        "cannon_fire"
+      ],
+      "asset_stats": {
+        "geometry_count": 55,
+        "vertices": 6414,
+        "triangles": 2138,
+        "visual_bounds_min": [
+          -1.0,
+          -0.019,
+          -1.906
+        ],
+        "visual_bounds_max": [
+          1.16,
+          1.87,
+          2.68
+        ],
+        "file_size_bytes": 109136
+      }
+    },
+    {
+      "id": "resonance_maestro",
+      "display_name": "The Resonance Maestro",
+      "category": "boss",
+      "role": "Sonic Spellcaster / Tempo Controller",
+      "file": "models/bosses/boss_06_resonance_maestro.glb",
+      "description": "Hovering sonic spellcaster with festival-like armor, twin tuning forks, visible bass wave rings, and a bounceable sonic trap sphere.",
+      "mechanics": [
+        "The Bass Trap",
+        "Tempo Shift"
+      ],
+      "engine_hooks": {
+        "bass_trap": "resonance_maestro_bounceable_bass_trap_sphere",
+        "wave_rings_prefix": "resonance_maestro_visible_bass_wave_ring_",
+        "tuning_forks_prefix": "resonance_maestro_tuning_fork_"
+      },
+      "suggested_animations": [
+        "hover_idle",
+        "tempo_shift_slow",
+        "tempo_shift_fast",
+        "fork_strike",
+        "bass_trap_cast",
+        "redirect_hit"
+      ],
+      "asset_stats": {
+        "geometry_count": 33,
+        "vertices": 7974,
+        "triangles": 2658,
+        "visual_bounds_min": [
+          -1.09,
+          0.35,
+          -1.468
+        ],
+        "visual_bounds_max": [
+          1.09,
+          3.077,
+          0.768
+        ],
+        "file_size_bytes": 123164
+      }
+    },
+    {
+      "id": "data_forged_evolvarch",
+      "display_name": "The Data-Forged Evolvarch",
+      "category": "boss",
+      "role": "Evolutionary Titan / Form-Shifter",
+      "file": "models/bosses/boss_07_data_forged_evolvarch.glb",
+      "description": "Digital metallic titan with quadruped armored body, wing/biped modules, streaming code lines, glowing bio-core, and interruptible data rings.",
+      "mechanics": [
+        "Tiered Evolution",
+        "Evolution Interrupt"
+      ],
+      "engine_hooks": {
+        "interrupt_ring": "data_forged_evolvarch_interruptible_data_ring",
+        "code_lines_prefix": "data_forged_evolvarch_streaming_code_line_",
+        "wing_modules_prefix": "data_forged_evolvarch_folded_wing_panel_"
+      },
+      "suggested_animations": [
+        "guarded_quad_idle",
+        "data_ring_charge",
+        "evolution_interrupt",
+        "wing_unfold",
+        "biped_restructure",
+        "mega_phase_warning"
+      ],
+      "asset_stats": {
+        "geometry_count": 52,
+        "vertices": 7032,
+        "triangles": 2344,
+        "visual_bounds_min": [
+          -1.75,
+          -0.535,
+          -1.889
+        ],
+        "visual_bounds_max": [
+          1.75,
+          3.035,
+          1.814
+        ],
+        "file_size_bytes": 124956
+      }
+    },
+    {
+      "id": "ivory_behemoth",
+      "display_name": "The Ivory Behemoth",
+      "category": "boss",
+      "role": "Charging Giant / Positioning Test",
+      "file": "models/bosses/boss_08_ivory_behemoth.glb",
+      "description": "Ancient pachyderm giant with cracked earth skin, multi-pronged tusks, pillar legs, heavy trunk, and attached parasitic swarm units.",
+      "mechanics": [
+        "The Stampede",
+        "Parasitic Swarm"
+      ],
+      "engine_hooks": {
+        "primary_tusks_prefix": "ivory_behemoth_primary_sweeping_tusk_",
+        "parasites_prefix": "ivory_behemoth_parasitic_swarm_tick_",
+        "trunk": "ivory_behemoth_heavy_trunk"
+      },
+      "suggested_animations": [
+        "heavy_idle",
+        "stampede_charge",
+        "wall_crash_stun",
+        "parasite_shake",
+        "tusk_vault_window",
+        "stomp"
+      ],
+      "asset_stats": {
+        "geometry_count": 39,
+        "vertices": 6156,
+        "triangles": 2052,
+        "visual_bounds_min": [
+          -1.45,
+          -0.06,
+          -2.95
+        ],
+        "visual_bounds_max": [
+          1.45,
+          2.424,
+          2.135
+        ],
+        "file_size_bytes": 96160
+      }
+    },
+    {
+      "id": "astral_sovereign",
+      "display_name": "The Astral Sovereign",
+      "category": "boss",
+      "role": "Cosmic Lich / Gravity Manipulator",
+      "file": "models/bosses/boss_09_astral_sovereign.glb",
+      "description": "Skeletal ethereal cosmic lich with light-absorbing robes, orbital debris, meteor projectiles, cosmic shield rings, and dark space-dust particles.",
+      "mechanics": [
+        "Zero-G Combos",
+        "Orbital Deflection"
+      ],
+      "engine_hooks": {
+        "cosmic_shield_A": "astral_sovereign_cosmic_shield_orbit_A",
+        "cosmic_shield_B": "astral_sovereign_cosmic_shield_orbit_B",
+        "debris_prefix": "astral_sovereign_zero_g_orbital_debris_"
+      },
+      "suggested_animations": [
+        "zero_g_idle",
+        "raise_meteors",
+        "orbital_deflection_opening",
+        "gravity_suspend",
+        "shield_crack",
+        "cosmic_disperse"
+      ],
+      "asset_stats": {
+        "geometry_count": 51,
+        "vertices": 10014,
+        "triangles": 3338,
+        "visual_bounds_min": [
+          -1.759,
+          0.75,
+          -1.712
+        ],
+        "visual_bounds_max": [
+          1.647,
+          3.315,
+          1.638
+        ],
+        "file_size_bytes": 161188
+      }
+    }
+  ],
+  "notes": [
+    "All files are real .glb mesh assets with embedded materials and named geometry parts.",
+    "These are static prototype/gameplay-readable models, not skeletal-rigged or animated characters.",
+    "Boss phase/ability visuals are included as separately named mesh parts so an engine can show, hide, recolor, or animate them.",
+    "Transparent/emissive materials are included for glows; visual bloom still needs to be enabled in the game renderer."
+  ]
+}

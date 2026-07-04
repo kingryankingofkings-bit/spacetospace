@@ -1,0 +1,24 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: director-agones-role
+rules:
+- apiGroups: ["agones.dev"]
+  resources: ["gameservers"]
+  verbs: ["get", "list", "watch"]
+- apiGroups: ["allocation.agones.dev"]
+  resources: ["gameserverallocations"]
+  verbs: ["create"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: director-agones-rolebinding
+subjects:
+- kind: ServiceAccount
+  name: default
+  namespace: default
+roleRef:
+  kind: Role
+  name: director-agones-role
+  apiGroup: rbac.authorization.k8s.io

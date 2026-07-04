@@ -1,0 +1,23 @@
+apiVersion: "agones.dev/v1"
+kind: Fleet
+metadata:
+  name: mmo-game-server-fleet
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        agones.dev/fleet: mmo-game-server-fleet
+    spec:
+      ports:
+      - name: default
+        portPolicy: Dynamic
+        containerPort: 2567
+      template:
+        spec:
+          containers:
+          - name: gameserver
+            image: game-server:latest # Replace with actual registry
+            env:
+            - name: PORT
+              value: "2567"
