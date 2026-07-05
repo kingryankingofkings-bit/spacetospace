@@ -6,7 +6,7 @@ let subscribers: ((event: MessageEvent) => void)[] = [];
 export const useMultiplayer = () => {
   const [players, setPlayers] = useState<any[]>([]);
   const [worldObjects, setWorldObjects] = useState<any[]>([]);
-  const [terrainMods, setTerrainMods] = useState<any[]>([]);
+
   const [worldNpcs, setWorldNpcs] = useState<any[]>([]);
   const [bosses, setBosses] = useState<any[]>([]);
   const [combo, setCombo] = useState<number>(0);
@@ -51,7 +51,6 @@ export const useMultiplayer = () => {
         }
 
         setWorldObjects(data.worldObjects || data.objects || []);
-        setTerrainMods(data.terrainMods || data.terrain || []);
         setWorldNpcs(data.npcs || []);
         setBosses(data.bosses || []);
         if (data.combo !== undefined) setCombo(data.combo);
@@ -85,10 +84,6 @@ export const useMultiplayer = () => {
         setWorldObjects((prev) => [...prev, data.object]);
       } else if (data.type === 'remove_object' || data.type === 'object_removed') {
         setWorldObjects((prev) => prev.filter((o) => o.id !== data.id));
-      } else if (data.type === 'terrain_mods_update') {
-        setTerrainMods(data.terrainMods);
-      } else if (data.type === 'terraform') {
-        setTerrainMods((prev) => [...prev, data.terrain]);
       } else if (data.type === 'npc_update') {
         setWorldNpcs(data.npcs || []);
       } else if (data.type === "boss_update") {
@@ -128,17 +123,7 @@ export const useMultiplayer = () => {
     }
   };
 
-  const sendPlaceObject = (type: string, x: number, y: number, z: number) => {
-    if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
-      wsRef.current.send(JSON.stringify({ type: 'place_object', object: { id: Math.random().toString(36).substr(2,9), type, x, y, z } }));
-    }
-  };
 
-  const sendTerraform = (x: number, z: number, height: number) => {
-    if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
-      wsRef.current.send(JSON.stringify({ type: 'terraform', terrain: { x, z, height } }));
-    }
-  };
 
   const sendAttack = (targetId: string) => {
     if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
@@ -183,8 +168,8 @@ export const useMultiplayer = () => {
   };
 
   return { 
-    players, sessionId, sendMove, sendPlaceObject, sendTerraform, sendAttack, sendAbility, sendFastTravel, sendSpawnBoss, sendPickupLoot,
-    worldObjects, terrainMods, worldNpcs, bosses, combo, health,
+    players, sessionId, sendMove, sendAttack, sendAbility, sendFastTravel, sendSpawnBoss, sendPickupLoot,
+    worldObjects, worldNpcs, bosses, combo, health,
     playerClass, level, skillPoints, unlockedSkills, inventory, selectClass, unlockSkill
   };
 };

@@ -1,0 +1,1849 @@
+{
+  "pack_name": "Biome-Specific Props GLB Pack v1",
+  "created_utc": "2026-07-05T05:24:38.492239+00:00",
+  "format": "GLB",
+  "asset_count": 72,
+  "biome_count": 12,
+  "notes": [
+    "All assets are real static GLB mesh assets.",
+    "Designed as low-poly browser-game props for rapid world population.",
+    "Use instancing for repeated foliage, rocks, crates, ruins, and small props.",
+    "Assets are not animated or scripted."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/forest_mossy_log.glb",
+      "name": "Mossy Fallen Log",
+      "biome": "forest",
+      "category": "biome_specific_prop",
+      "gameplay_use": "cover / set dressing",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.445
+        ],
+        "size": [
+          2.4,
+          0.748,
+          0.75
+        ]
+      },
+      "tags": [
+        "forest",
+        "cover"
+      ],
+      "size_bytes": 4984
+    },
+    {
+      "file": "glb_assets/forest_fern_cluster.glb",
+      "name": "Fern Cluster",
+      "biome": "forest",
+      "category": "biome_specific_prop",
+      "gameplay_use": "foliage / ground detail",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.445
+        ],
+        "size": [
+          1.766,
+          1.766,
+          0.889
+        ]
+      },
+      "tags": [
+        "forest",
+        "foliage"
+      ],
+      "size_bytes": 7184
+    },
+    {
+      "file": "glb_assets/forest_giant_root_arch.glb",
+      "name": "Giant Root Arch",
+      "biome": "forest",
+      "category": "biome_specific_prop",
+      "gameplay_use": "natural arch / passage landmark",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.1
+        ],
+        "size": [
+          1.838,
+          0.36,
+          2.8
+        ]
+      },
+      "tags": [
+        "forest",
+        "landmark",
+        "arch"
+      ],
+      "size_bytes": 5280
+    },
+    {
+      "file": "glb_assets/forest_mushroom_cluster.glb",
+      "name": "Mushroom Cluster",
+      "biome": "forest",
+      "category": "biome_specific_prop",
+      "gameplay_use": "foliage / magical set dressing",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          -0.034,
+          0.007,
+          0.301
+        ],
+        "size": [
+          1.06,
+          0.726,
+          0.613
+        ]
+      },
+      "tags": [
+        "forest",
+        "mushroom"
+      ],
+      "size_bytes": 7612
+    },
+    {
+      "file": "glb_assets/forest_thorn_bush.glb",
+      "name": "Thorn Bush",
+      "biome": "forest",
+      "category": "biome_specific_prop",
+      "gameplay_use": "movement blocker / damage prop",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "size": [
+          1.82,
+          1.43,
+          0.975
+        ]
+      },
+      "tags": [
+        "forest",
+        "hazard",
+        "thorn"
+      ],
+      "size_bytes": 8564
+    },
+    {
+      "file": "glb_assets/forest_hollow_stump.glb",
+      "name": "Hollow Stump",
+      "biome": "forest",
+      "category": "biome_specific_prop",
+      "gameplay_use": "cover / loot container prop",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.493
+        ],
+        "size": [
+          0.96,
+          0.913,
+          0.985
+        ]
+      },
+      "tags": [
+        "forest",
+        "container"
+      ],
+      "size_bytes": 5052
+    },
+    {
+      "file": "glb_assets/desert_cactus_cluster.glb",
+      "name": "Cactus Cluster",
+      "biome": "desert",
+      "category": "biome_specific_prop",
+      "gameplay_use": "foliage / minor blocker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          -0.023,
+          0.075,
+          0.9
+        ],
+        "size": [
+          1.405,
+          0.51,
+          1.8
+        ]
+      },
+      "tags": [
+        "desert",
+        "foliage"
+      ],
+      "size_bytes": 5724
+    },
+    {
+      "file": "glb_assets/desert_dune_rock.glb",
+      "name": "Dune Rock Cluster",
+      "biome": "desert",
+      "category": "biome_specific_prop",
+      "gameplay_use": "cover / terrain detail",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.265
+        ],
+        "size": [
+          3.4,
+          2.2,
+          0.73
+        ]
+      },
+      "tags": [
+        "desert",
+        "terrain",
+        "cover"
+      ],
+      "size_bytes": 4816
+    },
+    {
+      "file": "glb_assets/desert_sun_baked_bones.glb",
+      "name": "Sun-Baked Bones",
+      "biome": "desert",
+      "category": "biome_specific_prop",
+      "gameplay_use": "set dressing / landmark clue",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.137,
+          0.0,
+          0.28
+        ],
+        "size": [
+          1.997,
+          0.52,
+          0.448
+        ]
+      },
+      "tags": [
+        "desert",
+        "bones"
+      ],
+      "size_bytes": 4856
+    },
+    {
+      "file": "glb_assets/desert_weathered_obelisk.glb",
+      "name": "Weathered Obelisk",
+      "biome": "desert",
+      "category": "biome_specific_prop",
+      "gameplay_use": "landmark / quest marker",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.004,
+          1.665
+        ],
+        "size": [
+          0.694,
+          0.702,
+          3.33
+        ]
+      },
+      "tags": [
+        "desert",
+        "landmark"
+      ],
+      "size_bytes": 2992
+    },
+    {
+      "file": "glb_assets/desert_clay_pot_stack.glb",
+      "name": "Clay Pot Stack",
+      "biome": "desert",
+      "category": "biome_specific_prop",
+      "gameplay_use": "breakable prop",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.18,
+          0.005,
+          0.323
+        ],
+        "size": [
+          1.04,
+          0.69,
+          0.636
+        ]
+      },
+      "tags": [
+        "desert",
+        "breakable"
+      ],
+      "size_bytes": 5572
+    },
+    {
+      "file": "glb_assets/desert_dry_well.glb",
+      "name": "Dry Well",
+      "biome": "desert",
+      "category": "biome_specific_prop",
+      "gameplay_use": "landmark / interactable",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.928
+        ],
+        "size": [
+          1.35,
+          1.267,
+          1.845
+        ]
+      },
+      "tags": [
+        "desert",
+        "well"
+      ],
+      "size_bytes": 5952
+    },
+    {
+      "file": "glb_assets/snow_ice_crystal_cluster.glb",
+      "name": "Ice Crystal Cluster",
+      "biome": "snow_ice",
+      "category": "biome_specific_prop",
+      "gameplay_use": "cover / magic material node",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.05
+        ],
+        "size": [
+          1.3,
+          1.3,
+          2.1
+        ]
+      },
+      "tags": [
+        "snow",
+        "ice",
+        "crystal"
+      ],
+      "size_bytes": 4304
+    },
+    {
+      "file": "glb_assets/snow_frozen_pine.glb",
+      "name": "Frozen Pine",
+      "biome": "snow_ice",
+      "category": "biome_specific_prop",
+      "gameplay_use": "tree / set dressing",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.275
+        ],
+        "size": [
+          1.6,
+          1.6,
+          2.55
+        ]
+      },
+      "tags": [
+        "snow",
+        "tree"
+      ],
+      "size_bytes": 4692
+    },
+    {
+      "file": "glb_assets/snow_boulder.glb",
+      "name": "Snow-Capped Boulder",
+      "biome": "snow_ice",
+      "category": "biome_specific_prop",
+      "gameplay_use": "cover",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "size": [
+          2.1,
+          1.5,
+          1.125
+        ]
+      },
+      "tags": [
+        "snow",
+        "cover"
+      ],
+      "size_bytes": 3604
+    },
+    {
+      "file": "glb_assets/snow_icicle_hazard.glb",
+      "name": "Icicle Hazard",
+      "biome": "snow_ice",
+      "category": "biome_specific_prop",
+      "gameplay_use": "falling hazard marker",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.375
+        ],
+        "size": [
+          0.9,
+          0.35,
+          1.85
+        ]
+      },
+      "tags": [
+        "snow",
+        "hazard"
+      ],
+      "size_bytes": 3780
+    },
+    {
+      "file": "glb_assets/snow_frost_shrine.glb",
+      "name": "Frost Shrine",
+      "biome": "snow_ice",
+      "category": "biome_specific_prop",
+      "gameplay_use": "quest/interactable shrine",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.914
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.828
+        ]
+      },
+      "tags": [
+        "snow",
+        "shrine",
+        "quest"
+      ],
+      "size_bytes": 7004
+    },
+    {
+      "file": "glb_assets/snow_frozen_crate.glb",
+      "name": "Frozen Crate",
+      "biome": "snow_ice",
+      "category": "biome_specific_prop",
+      "gameplay_use": "breakable loot prop",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.517
+        ],
+        "size": [
+          1.06,
+          1.06,
+          1.045
+        ]
+      },
+      "tags": [
+        "snow",
+        "crate",
+        "loot"
+      ],
+      "size_bytes": 4184
+    },
+    {
+      "file": "glb_assets/volcanic_basalt_columns.glb",
+      "name": "Basalt Column Cluster",
+      "biome": "volcanic",
+      "category": "biome_specific_prop",
+      "gameplay_use": "cover / landmark",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.035,
+          0.037,
+          0.9
+        ],
+        "size": [
+          1.27,
+          0.507,
+          1.8
+        ]
+      },
+      "tags": [
+        "volcanic",
+        "basalt",
+        "cover"
+      ],
+      "size_bytes": 2744
+    },
+    {
+      "file": "glb_assets/volcanic_lava_rock.glb",
+      "name": "Lava Rock",
+      "biome": "volcanic",
+      "category": "biome_specific_prop",
+      "gameplay_use": "hazardous terrain detail",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "size": [
+          1.95,
+          1.5,
+          1.125
+        ]
+      },
+      "tags": [
+        "volcanic",
+        "lava",
+        "hazard"
+      ],
+      "size_bytes": 4096
+    },
+    {
+      "file": "glb_assets/volcanic_magma_vent.glb",
+      "name": "Magma Vent",
+      "biome": "volcanic",
+      "category": "biome_specific_prop",
+      "gameplay_use": "fire hazard emitter",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.91
+        ],
+        "size": [
+          1.24,
+          1.24,
+          1.82
+        ]
+      },
+      "tags": [
+        "volcanic",
+        "hazard",
+        "fire"
+      ],
+      "size_bytes": 3984
+    },
+    {
+      "file": "glb_assets/volcanic_charred_tree.glb",
+      "name": "Charred Tree",
+      "biome": "volcanic",
+      "category": "biome_specific_prop",
+      "gameplay_use": "burnt set dressing",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          -0.021,
+          0.0,
+          0.95
+        ],
+        "size": [
+          1.466,
+          0.506,
+          1.9
+        ]
+      },
+      "tags": [
+        "volcanic",
+        "tree",
+        "charred"
+      ],
+      "size_bytes": 3392
+    },
+    {
+      "file": "glb_assets/volcanic_iron_ore_node.glb",
+      "name": "Iron Ore Node",
+      "biome": "volcanic",
+      "category": "biome_specific_prop",
+      "gameplay_use": "resource node",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "size": [
+          1.56,
+          1.3,
+          0.91
+        ]
+      },
+      "tags": [
+        "volcanic",
+        "resource",
+        "ore"
+      ],
+      "size_bytes": 5724
+    },
+    {
+      "file": "glb_assets/volcanic_ash_totem.glb",
+      "name": "Ash Totem",
+      "biome": "volcanic",
+      "category": "biome_specific_prop",
+      "gameplay_use": "ritual / faction marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.085
+        ],
+        "size": [
+          0.75,
+          0.75,
+          2.17
+        ]
+      },
+      "tags": [
+        "volcanic",
+        "totem",
+        "quest"
+      ],
+      "size_bytes": 4300
+    },
+    {
+      "file": "glb_assets/swamp_reed_cluster.glb",
+      "name": "Reed Cluster",
+      "biome": "swamp",
+      "category": "biome_specific_prop",
+      "gameplay_use": "foliage / cover detail",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "size": [
+          1.1,
+          1.1,
+          1.2
+        ]
+      },
+      "tags": [
+        "swamp",
+        "foliage"
+      ],
+      "size_bytes": 10016
+    },
+    {
+      "file": "glb_assets/swamp_murky_pool.glb",
+      "name": "Murky Pool",
+      "biome": "swamp",
+      "category": "biome_specific_prop",
+      "gameplay_use": "hazard / water feature",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.069
+        ],
+        "size": [
+          2.02,
+          1.989,
+          0.137
+        ]
+      },
+      "tags": [
+        "swamp",
+        "water",
+        "hazard"
+      ],
+      "size_bytes": 6476
+    },
+    {
+      "file": "glb_assets/swamp_rotted_stump.glb",
+      "name": "Rotted Stump",
+      "biome": "swamp",
+      "category": "biome_specific_prop",
+      "gameplay_use": "set dressing / cover",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.028,
+          0.0,
+          0.447
+        ],
+        "size": [
+          0.845,
+          0.827,
+          0.905
+        ]
+      },
+      "tags": [
+        "swamp",
+        "stump"
+      ],
+      "size_bytes": 4976
+    },
+    {
+      "file": "glb_assets/swamp_hanging_vines.glb",
+      "name": "Hanging Vines",
+      "biome": "swamp",
+      "category": "biome_specific_prop",
+      "gameplay_use": "ceiling/wall foliage",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.225
+        ],
+        "size": [
+          1.6,
+          0.1,
+          1.65
+        ]
+      },
+      "tags": [
+        "swamp",
+        "vines"
+      ],
+      "size_bytes": 6116
+    },
+    {
+      "file": "glb_assets/swamp_bog_skull_marker.glb",
+      "name": "Bog Skull Marker",
+      "biome": "swamp",
+      "category": "biome_specific_prop",
+      "gameplay_use": "danger marker / quest clue",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.01,
+          0.0,
+          0.75
+        ],
+        "size": [
+          0.724,
+          0.512,
+          1.4
+        ]
+      },
+      "tags": [
+        "swamp",
+        "marker"
+      ],
+      "size_bytes": 4936
+    },
+    {
+      "file": "glb_assets/swamp_slime_pod.glb",
+      "name": "Slime Pod",
+      "biome": "swamp",
+      "category": "biome_specific_prop",
+      "gameplay_use": "breakable hazard pod",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.48
+        ],
+        "size": [
+          0.84,
+          0.731,
+          1.008
+        ]
+      },
+      "tags": [
+        "swamp",
+        "hazard",
+        "pod"
+      ],
+      "size_bytes": 7300
+    },
+    {
+      "file": "glb_assets/ruins_broken_column.glb",
+      "name": "Broken Column",
+      "biome": "ruins",
+      "category": "biome_specific_prop",
+      "gameplay_use": "cover / ancient set dressing",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.065,
+          0.0,
+          0.938
+        ],
+        "size": [
+          1.031,
+          0.856,
+          1.875
+        ]
+      },
+      "tags": [
+        "ruins",
+        "cover"
+      ],
+      "size_bytes": 3476
+    },
+    {
+      "file": "glb_assets/ruins_cracked_statue.glb",
+      "name": "Cracked Statue",
+      "biome": "ruins",
+      "category": "biome_specific_prop",
+      "gameplay_use": "landmark / quest prop",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.885
+        ],
+        "size": [
+          0.75,
+          0.75,
+          1.77
+        ]
+      },
+      "tags": [
+        "ruins",
+        "statue",
+        "landmark"
+      ],
+      "size_bytes": 4920
+    },
+    {
+      "file": "glb_assets/ruins_rubble_pile.glb",
+      "name": "Rubble Pile",
+      "biome": "ruins",
+      "category": "biome_specific_prop",
+      "gameplay_use": "terrain clutter / low cover",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.072,
+          -0.05,
+          0.25
+        ],
+        "size": [
+          1.364,
+          0.903,
+          0.462
+        ]
+      },
+      "tags": [
+        "ruins",
+        "rubble",
+        "cover"
+      ],
+      "size_bytes": 4472
+    },
+    {
+      "file": "glb_assets/ruins_ancient_brazier.glb",
+      "name": "Ancient Brazier",
+      "biome": "ruins",
+      "category": "biome_specific_prop",
+      "gameplay_use": "light / objective marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.9
+        ],
+        "size": [
+          0.84,
+          0.84,
+          1.8
+        ]
+      },
+      "tags": [
+        "ruins",
+        "light",
+        "brazier"
+      ],
+      "size_bytes": 5248
+    },
+    {
+      "file": "glb_assets/ruins_rune_floor_slab.glb",
+      "name": "Rune Floor Slab",
+      "biome": "ruins",
+      "category": "biome_specific_prop",
+      "gameplay_use": "puzzle floor tile",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.085
+        ],
+        "size": [
+          1.6,
+          1.6,
+          0.17
+        ]
+      },
+      "tags": [
+        "ruins",
+        "puzzle",
+        "rune"
+      ],
+      "size_bytes": 5888
+    },
+    {
+      "file": "glb_assets/ruins_fallen_arch_piece.glb",
+      "name": "Fallen Arch Piece",
+      "biome": "ruins",
+      "category": "biome_specific_prop",
+      "gameplay_use": "cover / traversal decoration",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.48
+        ],
+        "size": [
+          2.245,
+          0.898,
+          0.51
+        ]
+      },
+      "tags": [
+        "ruins",
+        "cover",
+        "arch"
+      ],
+      "size_bytes": 3520
+    },
+    {
+      "file": "glb_assets/city_street_lamp.glb",
+      "name": "Street Lamp",
+      "biome": "city",
+      "category": "biome_specific_prop",
+      "gameplay_use": "light / navigation marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.352
+        ],
+        "size": [
+          0.38,
+          0.38,
+          2.705
+        ]
+      },
+      "tags": [
+        "city",
+        "light"
+      ],
+      "size_bytes": 4928
+    },
+    {
+      "file": "glb_assets/city_crate_pallet.glb",
+      "name": "Crate Pallet",
+      "biome": "city",
+      "category": "biome_specific_prop",
+      "gameplay_use": "cover / breakable prop",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.347
+        ],
+        "size": [
+          1.4,
+          1.0,
+          0.695
+        ]
+      },
+      "tags": [
+        "city",
+        "crate",
+        "cover"
+      ],
+      "size_bytes": 2536
+    },
+    {
+      "file": "glb_assets/city_trash_bin.glb",
+      "name": "Trash Bin",
+      "biome": "city",
+      "category": "biome_specific_prop",
+      "gameplay_use": "street prop / cover",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.025,
+          0.53
+        ],
+        "size": [
+          0.82,
+          0.67,
+          1.1
+        ]
+      },
+      "tags": [
+        "city",
+        "trash",
+        "cover"
+      ],
+      "size_bytes": 3892
+    },
+    {
+      "file": "glb_assets/city_vendor_kiosk.glb",
+      "name": "Urban Vendor Kiosk",
+      "biome": "city",
+      "category": "biome_specific_prop",
+      "gameplay_use": "merchant / set dressing",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.805
+        ],
+        "size": [
+          2.0,
+          1.2,
+          1.61
+        ]
+      },
+      "tags": [
+        "city",
+        "vendor"
+      ],
+      "size_bytes": 2704
+    },
+    {
+      "file": "glb_assets/city_neon_sign.glb",
+      "name": "Neon Sign",
+      "biome": "city",
+      "category": "biome_specific_prop",
+      "gameplay_use": "shop sign / navigation marker",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.02,
+          1.2
+        ],
+        "size": [
+          1.6,
+          0.14,
+          0.7
+        ]
+      },
+      "tags": [
+        "city",
+        "neon",
+        "sign"
+      ],
+      "size_bytes": 3580
+    },
+    {
+      "file": "glb_assets/city_traffic_barrier.glb",
+      "name": "Traffic Barrier",
+      "biome": "city",
+      "category": "biome_specific_prop",
+      "gameplay_use": "lane blocker / vault prop",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.06,
+          0.325
+        ],
+        "size": [
+          2.0,
+          0.471,
+          0.65
+        ]
+      },
+      "tags": [
+        "city",
+        "barrier",
+        "vault"
+      ],
+      "size_bytes": 2584
+    },
+    {
+      "file": "glb_assets/skyship_rope_coil.glb",
+      "name": "Rope Coil",
+      "biome": "skyship",
+      "category": "biome_specific_prop",
+      "gameplay_use": "ship deck clutter",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.16
+        ],
+        "size": [
+          0.94,
+          0.926,
+          0.247
+        ]
+      },
+      "tags": [
+        "skyship",
+        "deck"
+      ],
+      "size_bytes": 8564
+    },
+    {
+      "file": "glb_assets/skyship_anchor_winch.glb",
+      "name": "Anchor Winch",
+      "biome": "skyship",
+      "category": "biome_specific_prop",
+      "gameplay_use": "ship machinery / interactable",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.208,
+          0.0,
+          0.59
+        ],
+        "size": [
+          1.835,
+          0.7,
+          0.88
+        ]
+      },
+      "tags": [
+        "skyship",
+        "machinery"
+      ],
+      "size_bytes": 4748
+    },
+    {
+      "file": "glb_assets/skyship_canvas_sail_folded.glb",
+      "name": "Folded Canvas Sail",
+      "biome": "skyship",
+      "category": "biome_specific_prop",
+      "gameplay_use": "deck prop / cover",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.35
+        ],
+        "size": [
+          2.1,
+          0.804,
+          0.52
+        ]
+      },
+      "tags": [
+        "skyship",
+        "sail"
+      ],
+      "size_bytes": 2724
+    },
+    {
+      "file": "glb_assets/skyship_cargo_net.glb",
+      "name": "Cargo Net",
+      "biome": "skyship",
+      "category": "biome_specific_prop",
+      "gameplay_use": "cargo prop / visual clutter",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.422
+        ],
+        "size": [
+          1.32,
+          1.12,
+          0.835
+        ]
+      },
+      "tags": [
+        "skyship",
+        "cargo"
+      ],
+      "size_bytes": 5876
+    },
+    {
+      "file": "glb_assets/skyship_balloon_panel.glb",
+      "name": "Balloon Panel",
+      "biome": "skyship",
+      "category": "biome_specific_prop",
+      "gameplay_use": "airship hull/sail module",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.029,
+          0.7
+        ],
+        "size": [
+          2.9,
+          0.382,
+          1.35
+        ]
+      },
+      "tags": [
+        "skyship",
+        "airship"
+      ],
+      "size_bytes": 4584
+    },
+    {
+      "file": "glb_assets/skyship_gangplank.glb",
+      "name": "Skyship Gangplank",
+      "biome": "skyship",
+      "category": "biome_specific_prop",
+      "gameplay_use": "boarding ramp / traversal",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.61
+        ],
+        "size": [
+          2.985,
+          0.92,
+          0.928
+        ]
+      },
+      "tags": [
+        "skyship",
+        "ramp",
+        "traversal"
+      ],
+      "size_bytes": 2568
+    },
+    {
+      "file": "glb_assets/underwater_coral_cluster.glb",
+      "name": "Coral Cluster",
+      "biome": "underwater",
+      "category": "biome_specific_prop",
+      "gameplay_use": "underwater foliage / obstacle",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.03,
+          -0.009,
+          0.85
+        ],
+        "size": [
+          0.86,
+          0.425,
+          1.0
+        ]
+      },
+      "tags": [
+        "underwater",
+        "coral"
+      ],
+      "size_bytes": 2660
+    },
+    {
+      "file": "glb_assets/underwater_kelp_bundle.glb",
+      "name": "Kelp Bundle",
+      "biome": "underwater",
+      "category": "biome_specific_prop",
+      "gameplay_use": "underwater foliage",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.125
+        ],
+        "size": [
+          0.9,
+          0.856,
+          2.25
+        ]
+      },
+      "tags": [
+        "underwater",
+        "kelp"
+      ],
+      "size_bytes": 7212
+    },
+    {
+      "file": "glb_assets/underwater_ruined_anchor.glb",
+      "name": "Ruined Anchor",
+      "biome": "underwater",
+      "category": "biome_specific_prop",
+      "gameplay_use": "landmark / set dressing",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.779
+        ],
+        "size": [
+          1.372,
+          0.565,
+          1.558
+        ]
+      },
+      "tags": [
+        "underwater",
+        "anchor"
+      ],
+      "size_bytes": 6896
+    },
+    {
+      "file": "glb_assets/underwater_bubble_vent.glb",
+      "name": "Bubble Vent",
+      "biome": "underwater",
+      "category": "biome_specific_prop",
+      "gameplay_use": "visual hazard / traversal lift marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.64
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.28
+        ]
+      },
+      "tags": [
+        "underwater",
+        "bubble",
+        "vent"
+      ],
+      "size_bytes": 6076
+    },
+    {
+      "file": "glb_assets/underwater_pressure_gate.glb",
+      "name": "Pressure Gate",
+      "biome": "underwater",
+      "category": "biome_specific_prop",
+      "gameplay_use": "underwater locked gate",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.029,
+          1.0
+        ],
+        "size": [
+          2.0,
+          0.258,
+          2.0
+        ]
+      },
+      "tags": [
+        "underwater",
+        "gate"
+      ],
+      "size_bytes": 6012
+    },
+    {
+      "file": "glb_assets/underwater_shell_cache.glb",
+      "name": "Shell Cache",
+      "biome": "underwater",
+      "category": "biome_specific_prop",
+      "gameplay_use": "loot container",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.016,
+          0.412
+        ],
+        "size": [
+          1.08,
+          0.752,
+          0.788
+        ]
+      },
+      "tags": [
+        "underwater",
+        "loot"
+      ],
+      "size_bytes": 4664
+    },
+    {
+      "file": "glb_assets/cave_stalagmite_cluster.glb",
+      "name": "Stalagmite Cluster",
+      "biome": "cave",
+      "category": "biome_specific_prop",
+      "gameplay_use": "hazard / terrain prop",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.015,
+          0.013,
+          1.09
+        ],
+        "size": [
+          1.03,
+          0.486,
+          1.42
+        ]
+      },
+      "tags": [
+        "cave",
+        "hazard",
+        "rock"
+      ],
+      "size_bytes": 2644
+    },
+    {
+      "file": "glb_assets/cave_crystal_geode.glb",
+      "name": "Crystal Geode",
+      "biome": "cave",
+      "category": "biome_specific_prop",
+      "gameplay_use": "resource node / set dressing",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.664
+        ],
+        "size": [
+          1.69,
+          1.3,
+          1.472
+        ]
+      },
+      "tags": [
+        "cave",
+        "crystal",
+        "resource"
+      ],
+      "size_bytes": 5096
+    },
+    {
+      "file": "glb_assets/cave_mine_cart_broken.glb",
+      "name": "Broken Mine Cart",
+      "biome": "cave",
+      "category": "biome_specific_prop",
+      "gameplay_use": "industrial cave prop / cover",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.026,
+          0.402
+        ],
+        "size": [
+          1.2,
+          1.052,
+          0.745
+        ]
+      },
+      "tags": [
+        "cave",
+        "mine",
+        "cover"
+      ],
+      "size_bytes": 3952
+    },
+    {
+      "file": "glb_assets/cave_hanging_lantern.glb",
+      "name": "Hanging Cave Lantern",
+      "biome": "cave",
+      "category": "biome_specific_prop",
+      "gameplay_use": "light source prop",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.47
+        ],
+        "size": [
+          0.41,
+          0.41,
+          1.06
+        ]
+      },
+      "tags": [
+        "cave",
+        "light"
+      ],
+      "size_bytes": 7748
+    },
+    {
+      "file": "glb_assets/cave_wooden_support_beam.glb",
+      "name": "Wooden Support Beam",
+      "biome": "cave",
+      "category": "biome_specific_prop",
+      "gameplay_use": "mine support / structural prop",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.14
+        ],
+        "size": [
+          1.8,
+          0.2,
+          2.28
+        ]
+      },
+      "tags": [
+        "cave",
+        "support"
+      ],
+      "size_bytes": 2572
+    },
+    {
+      "file": "glb_assets/cave_dark_pool.glb",
+      "name": "Dark Cave Pool",
+      "biome": "cave",
+      "category": "biome_specific_prop",
+      "gameplay_use": "hazard / water feature",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.068
+        ],
+        "size": [
+          1.84,
+          1.812,
+          0.137
+        ]
+      },
+      "tags": [
+        "cave",
+        "water"
+      ],
+      "size_bytes": 6492
+    },
+    {
+      "file": "glb_assets/cosmic_orbital_debris.glb",
+      "name": "Orbital Debris",
+      "biome": "cosmic_data",
+      "category": "biome_specific_prop",
+      "gameplay_use": "zero-g cover / vault point",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.458
+        ],
+        "size": [
+          1.375,
+          1.031,
+          0.684
+        ]
+      },
+      "tags": [
+        "cosmic",
+        "debris",
+        "zero_g"
+      ],
+      "size_bytes": 4256
+    },
+    {
+      "file": "glb_assets/cosmic_star_crystal.glb",
+      "name": "Star Crystal",
+      "biome": "cosmic_data",
+      "category": "biome_specific_prop",
+      "gameplay_use": "resource / cosmic landmark",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.317
+        ],
+        "size": [
+          1.09,
+          0.533,
+          1.867
+        ]
+      },
+      "tags": [
+        "cosmic",
+        "crystal"
+      ],
+      "size_bytes": 5356
+    },
+    {
+      "file": "glb_assets/cosmic_gravity_anchor.glb",
+      "name": "Gravity Anchor",
+      "biome": "cosmic_data",
+      "category": "biome_specific_prop",
+      "gameplay_use": "zero-g puzzle anchor",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.465
+        ],
+        "size": [
+          1.23,
+          1.211,
+          0.93
+        ]
+      },
+      "tags": [
+        "cosmic",
+        "gravity",
+        "puzzle"
+      ],
+      "size_bytes": 8284
+    },
+    {
+      "file": "glb_assets/data_corruption_node.glb",
+      "name": "Data Corruption Node",
+      "biome": "cosmic_data",
+      "category": "biome_specific_prop",
+      "gameplay_use": "hazard / objective target",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "size": [
+          1.17,
+          0.7,
+          1.152
+        ]
+      },
+      "tags": [
+        "data",
+        "corruption",
+        "hazard"
+      ],
+      "size_bytes": 8464
+    },
+    {
+      "file": "glb_assets/data_server_relic.glb",
+      "name": "Server Relic",
+      "biome": "cosmic_data",
+      "category": "biome_specific_prop",
+      "gameplay_use": "data vault prop / cover",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.022,
+          0.8
+        ],
+        "size": [
+          0.75,
+          0.595,
+          1.6
+        ]
+      },
+      "tags": [
+        "data",
+        "server",
+        "cover"
+      ],
+      "size_bytes": 3540
+    },
+    {
+      "file": "glb_assets/data_holo_bridge_piece.glb",
+      "name": "Holographic Bridge Piece",
+      "biome": "cosmic_data",
+      "category": "biome_specific_prop",
+      "gameplay_use": "temporary platform / puzzle bridge",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          3.0,
+          1.08,
+          0.13
+        ]
+      },
+      "tags": [
+        "data",
+        "bridge",
+        "platform"
+      ],
+      "size_bytes": 2668
+    },
+    {
+      "file": "glb_assets/industrial_pipe_bundle.glb",
+      "name": "Pipe Bundle",
+      "biome": "industrial",
+      "category": "biome_specific_prop",
+      "gameplay_use": "industrial cover / set dressing",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.485
+        ],
+        "size": [
+          2.2,
+          0.65,
+          0.51
+        ]
+      },
+      "tags": [
+        "industrial",
+        "pipe",
+        "cover"
+      ],
+      "size_bytes": 5244
+    },
+    {
+      "file": "glb_assets/industrial_warning_console.glb",
+      "name": "Warning Console",
+      "biome": "industrial",
+      "category": "biome_specific_prop",
+      "gameplay_use": "interactable control prop",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.047,
+          0.486
+        ],
+        "size": [
+          0.65,
+          0.545,
+          0.972
+        ]
+      },
+      "tags": [
+        "industrial",
+        "console"
+      ],
+      "size_bytes": 5432
+    },
+    {
+      "file": "glb_assets/industrial_gear_stack.glb",
+      "name": "Gear Stack",
+      "biome": "industrial",
+      "category": "biome_specific_prop",
+      "gameplay_use": "forge/mechanical set dressing",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.055,
+          0.0,
+          0.255
+        ],
+        "size": [
+          1.37,
+          1.033,
+          0.363
+        ]
+      },
+      "tags": [
+        "industrial",
+        "gear"
+      ],
+      "size_bytes": 7980
+    },
+    {
+      "file": "glb_assets/industrial_chain_hanging.glb",
+      "name": "Hanging Chain",
+      "biome": "industrial",
+      "category": "biome_specific_prop",
+      "gameplay_use": "ceiling hazard / set dressing",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.087
+        ],
+        "size": [
+          0.29,
+          0.276,
+          1.702
+        ]
+      },
+      "tags": [
+        "industrial",
+        "chain"
+      ],
+      "size_bytes": 10492
+    },
+    {
+      "file": "glb_assets/industrial_fuel_canister.glb",
+      "name": "Fuel Canister",
+      "biome": "industrial",
+      "category": "biome_specific_prop",
+      "gameplay_use": "explosive/destructible prop",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.013,
+          0.542
+        ],
+        "size": [
+          0.56,
+          0.585,
+          1.083
+        ]
+      },
+      "tags": [
+        "industrial",
+        "explosive"
+      ],
+      "size_bytes": 5968
+    },
+    {
+      "file": "glb_assets/industrial_security_camera.glb",
+      "name": "Security Camera",
+      "biome": "industrial",
+      "category": "biome_specific_prop",
+      "gameplay_use": "enemy detection prop",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.23,
+          1.4
+        ],
+        "size": [
+          0.55,
+          0.7,
+          0.55
+        ]
+      },
+      "tags": [
+        "industrial",
+        "security"
+      ],
+      "size_bytes": 5028
+    }
+  ]
+}

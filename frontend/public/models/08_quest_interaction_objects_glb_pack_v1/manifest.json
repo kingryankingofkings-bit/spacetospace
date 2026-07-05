@@ -1,0 +1,384 @@
+{
+  "pack_name": "Quest Interaction Objects GLB Pack v1",
+  "created_utc": "2026-07-05T07:36:02.325492+00:00",
+  "format": "GLB",
+  "asset_count": 15,
+  "description": "Dedicated quest/interactable object pack extracted from the Modular Environment + Shop + Quest pack for easier engine-prefab batching.",
+  "assets": [
+    {
+      "file": "glb_assets/quest_boss_key_pedestal.glb",
+      "name": "Boss Key Pedestal",
+      "category": "quest_interaction_object",
+      "gameplay_use": "boss key presentation",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.635
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.27
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "boss_key",
+        "pedestal"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_broken_device.glb",
+      "name": "Broken Device",
+      "category": "quest_interaction_object",
+      "gameplay_use": "repair / scavenging objective",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.05,
+          -0.043,
+          0.45
+        ],
+        "size": [
+          1.599,
+          1.013,
+          0.9
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "device",
+        "repair"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_courier_package.glb",
+      "name": "Courier Package",
+      "category": "quest_interaction_object",
+      "gameplay_use": "delivery quest item",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.015,
+          0.3
+        ],
+        "size": [
+          0.92,
+          0.65,
+          0.6
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "delivery",
+        "package"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_evidence_crate.glb",
+      "name": "Evidence Crate",
+      "category": "quest_interaction_object",
+      "gameplay_use": "collectible evidence container",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.025,
+          0.45
+        ],
+        "size": [
+          1.2,
+          1.05,
+          0.9
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "evidence",
+        "crate"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_notice_board.glb",
+      "name": "Quest Notice Board",
+      "category": "quest_interaction_object",
+      "gameplay_use": "quest hub board",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.6
+        ],
+        "size": [
+          2.2,
+          0.18,
+          3.2
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "board",
+        "hub"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_objective_flag.glb",
+      "name": "Objective Flag",
+      "category": "quest_interaction_object",
+      "gameplay_use": "capture / location objective",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.41,
+          0.0,
+          1.2
+        ],
+        "size": [
+          0.98,
+          0.16,
+          2.4
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "flag",
+        "objective"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_pressure_plate.glb",
+      "name": "Pressure Plate",
+      "category": "quest_interaction_object",
+      "gameplay_use": "floor trigger",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.08
+        ],
+        "size": [
+          1.4,
+          1.4,
+          0.16
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "pressure_plate",
+        "trigger"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_puzzle_switch.glb",
+      "name": "Puzzle Switch",
+      "category": "quest_interaction_object",
+      "gameplay_use": "switch / puzzle interaction",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.407
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.825
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "switch",
+        "puzzle"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_relic_fragment.glb",
+      "name": "Relic Fragment",
+      "category": "quest_interaction_object",
+      "gameplay_use": "rare collectible / turn-in item",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          0.72,
+          0.6,
+          1.12
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "relic",
+        "collectible"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_rescue_cage.glb",
+      "name": "Rescue Cage",
+      "category": "quest_interaction_object",
+      "gameplay_use": "rescue objective / prisoner prop",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.09
+        ],
+        "size": [
+          1.8,
+          1.8,
+          2.17
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "rescue",
+        "cage"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_ritual_stone.glb",
+      "name": "Ritual Stone",
+      "category": "quest_interaction_object",
+      "gameplay_use": "ritual / activation objective",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.2
+        ],
+        "size": [
+          0.947,
+          0.8,
+          2.4
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "ritual",
+        "stone"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_scroll_pedestal.glb",
+      "name": "Quest Scroll Pedestal",
+      "category": "quest_interaction_object",
+      "gameplay_use": "quest acceptance / story trigger",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.755
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.51
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "scroll",
+        "pedestal"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_sealed_door.glb",
+      "name": "Sealed Door",
+      "category": "quest_interaction_object",
+      "gameplay_use": "story gate / locked door",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.05,
+          1.5
+        ],
+        "size": [
+          2.4,
+          0.3,
+          3.0
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "door",
+        "locked"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_signal_flare_beacon.glb",
+      "name": "Signal Flare Beacon",
+      "category": "quest_interaction_object",
+      "gameplay_use": "signal / summon objective",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.25
+        ],
+        "size": [
+          0.8,
+          0.8,
+          2.5
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "signal",
+        "beacon"
+      ]
+    },
+    {
+      "file": "glb_assets/quest_tracking_marker.glb",
+      "name": "Tracking Marker",
+      "category": "quest_interaction_object",
+      "gameplay_use": "waypoint / tracking objective",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.175
+        ],
+        "size": [
+          0.94,
+          0.94,
+          2.35
+        ]
+      },
+      "source_pack": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "tags": [
+        "quest",
+        "marker",
+        "tracking"
+      ]
+    }
+  ]
+}

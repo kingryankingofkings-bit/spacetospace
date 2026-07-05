@@ -1,0 +1,304 @@
+{
+  "pack_name": "Resource Gathering Nodes GLB Pack v1",
+  "pack_slug": "09_resource_gathering_nodes_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:56.815240+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Harvest nodes for crafting and economy systems.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/iron_ore_node.glb",
+      "name": "Iron Ore Node",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.706
+        ],
+        "size": [
+          1.43,
+          1.1,
+          1.427
+        ]
+      },
+      "tags": [
+        "resource",
+        "red"
+      ],
+      "size_bytes": 4704
+    },
+    {
+      "file": "glb_assets/silver_ore_node.glb",
+      "name": "Silver Ore Node",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.706
+        ],
+        "size": [
+          1.43,
+          1.1,
+          1.427
+        ]
+      },
+      "tags": [
+        "resource",
+        "orange"
+      ],
+      "size_bytes": 4704
+    },
+    {
+      "file": "glb_assets/gold_ore_node.glb",
+      "name": "Gold Ore Node",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.706
+        ],
+        "size": [
+          1.43,
+          1.1,
+          1.427
+        ]
+      },
+      "tags": [
+        "resource",
+        "yellow"
+      ],
+      "size_bytes": 4708
+    },
+    {
+      "file": "glb_assets/blue_crystal_node.glb",
+      "name": "Blue Crystal Node",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.706
+        ],
+        "size": [
+          1.43,
+          1.1,
+          1.427
+        ]
+      },
+      "tags": [
+        "resource",
+        "green"
+      ],
+      "size_bytes": 4704
+    },
+    {
+      "file": "glb_assets/void_crystal_node.glb",
+      "name": "Void Crystal Node",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.706
+        ],
+        "size": [
+          1.43,
+          1.1,
+          1.427
+        ]
+      },
+      "tags": [
+        "resource",
+        "purple"
+      ],
+      "size_bytes": 4704
+    },
+    {
+      "file": "glb_assets/healing_herb_patch.glb",
+      "name": "Healing Herb Patch",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.36
+        ],
+        "size": [
+          1.088,
+          1.088,
+          0.72
+        ]
+      },
+      "tags": [
+        "resource",
+        "green"
+      ],
+      "size_bytes": 9144
+    },
+    {
+      "file": "glb_assets/poison_herb_patch.glb",
+      "name": "Poison Herb Patch",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.36
+        ],
+        "size": [
+          1.088,
+          1.088,
+          0.72
+        ]
+      },
+      "tags": [
+        "resource",
+        "green"
+      ],
+      "size_bytes": 9144
+    },
+    {
+      "file": "glb_assets/rare_flower_patch.glb",
+      "name": "Rare Flower Patch",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.36
+        ],
+        "size": [
+          1.088,
+          1.088,
+          0.72
+        ]
+      },
+      "tags": [
+        "resource",
+        "gold"
+      ],
+      "size_bytes": 9136
+    },
+    {
+      "file": "glb_assets/wood_log_bundle.glb",
+      "name": "Wood Log Bundle",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.081,
+          0.355
+        ],
+        "size": [
+          1.23,
+          0.751,
+          0.57
+        ]
+      },
+      "tags": [
+        "resource",
+        "red"
+      ],
+      "size_bytes": 5576
+    },
+    {
+      "file": "glb_assets/ancient_bone_pile.glb",
+      "name": "Ancient Bone Pile",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "size": [
+          1.05,
+          1.05,
+          0.7
+        ]
+      },
+      "tags": [
+        "resource",
+        "orange"
+      ],
+      "size_bytes": 6788
+    },
+    {
+      "file": "glb_assets/fishing_node_marker.glb",
+      "name": "Fishing Node Marker",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "size": [
+          1.05,
+          1.05,
+          0.7
+        ]
+      },
+      "tags": [
+        "resource",
+        "yellow"
+      ],
+      "size_bytes": 6788
+    },
+    {
+      "file": "glb_assets/data_cache_node.glb",
+      "name": "Data Cache Node",
+      "template": "resource",
+      "gameplay_use": "Harvest nodes for crafting and economy systems.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "size": [
+          1.05,
+          1.05,
+          0.7
+        ]
+      },
+      "tags": [
+        "resource",
+        "green"
+      ],
+      "size_bytes": 6788
+    }
+  ]
+}

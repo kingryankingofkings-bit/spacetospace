@@ -1,0 +1,391 @@
+{
+  "generated_utc": "2026-07-05T07:36:08.350433+00:00",
+  "roadmap_packs_1_to_12": [
+    {
+      "roadmap_id": 1,
+      "title": "Modular Environment Kit",
+      "primary_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "production_focus": "convert environment modules into grid-snapped prefabs with collision, snapping sockets, material variants, and navigation rules"
+    },
+    {
+      "roadmap_id": 2,
+      "title": "Biome-Specific Prop Packs",
+      "primary_zip": "biome_specific_props_glb_pack_v1.zip",
+      "production_focus": "tag by biome, make instanced prop prefabs, assign simple colliders, and create density/placement rules"
+    },
+    {
+      "roadmap_id": 3,
+      "title": "Shop and Town Interior Assets",
+      "primary_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "production_focus": "convert shop/interior meshes into interactive shop, inn, blacksmith, dye, and display prefabs"
+    },
+    {
+      "roadmap_id": 4,
+      "title": "Item Pickup and Equipment Display",
+      "primary_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "production_focus": "map item database entries to archetype prefabs, rarity glows, loot beams, pickup triggers, and display stands"
+    },
+    {
+      "roadmap_id": 5,
+      "title": "VFX Proxy Assets",
+      "primary_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "production_focus": "turn static VFX meshes into timed VFX prefabs with emissive/additive materials, scaling curves, despawn, and hitbox sync"
+    },
+    {
+      "roadmap_id": 6,
+      "title": "Animation Placeholder Pack",
+      "primary_zip": "06_animation_placeholder_pose_glb_pack_v1.zip",
+      "production_focus": "use pose proxies as animation reference targets; create humanoid/quadruped placeholder state machines"
+    },
+    {
+      "roadmap_id": 7,
+      "title": "UI/HUD 3D/2D Worldspace Markers",
+      "primary_zip": "07_ui_hud_worldspace_markers_glb_pack_v1.zip",
+      "production_focus": "convert markers to worldspace UI prefabs with billboard behavior, distance fading, occlusion rules, and accessibility scaling"
+    },
+    {
+      "roadmap_id": 8,
+      "title": "Quest Interaction Objects",
+      "primary_zip": "08_quest_interaction_objects_glb_pack_v1.zip",
+      "production_focus": "add interactable components, quest state visibility, objective highlighting, and completion logic"
+    },
+    {
+      "roadmap_id": 9,
+      "title": "Mounts, Vehicles, and Travel",
+      "primary_zip": "09_mounts_vehicles_travel_glb_pack_v1.zip",
+      "production_focus": "add ride/board/use components, nav constraints, docking points, camera anchors, and travel transitions"
+    },
+    {
+      "roadmap_id": 10,
+      "title": "Enemy Faction Architecture",
+      "primary_zip": "10_enemy_faction_architecture_glb_pack_v1.zip",
+      "production_focus": "make faction structures, hazards, spawn anchors, turrets, nest objects, and destructible objectives into prefabs"
+    },
+    {
+      "roadmap_id": 11,
+      "title": "Boss Arena Set Pack",
+      "primary_zip": "11_boss_arena_mechanics_glb_pack_v1.zip",
+      "production_focus": "build boss arena prefabs with mechanic anchors, climbing points, phase triggers, lane markers, hazard zones, and camera volumes"
+    },
+    {
+      "roadmap_id": 12,
+      "title": "Audio Placeholder Pack",
+      "primary_zip": "12_audio_placeholder_cue_pack_v1.zip",
+      "production_focus": "import WAV cues as audio events, group by mixer, add spatialization, variation, cooldown, and replacement hooks"
+    }
+  ],
+  "all_detected_packs": [
+    {
+      "zip": "01_animation_placeholder_pose_glb_pack_v1.zip",
+      "pack_name": "Animation Placeholder Pose GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 62903
+    },
+    {
+      "zip": "02_ui_hud_worldspace_markers_glb_pack_v1.zip",
+      "pack_name": "UI HUD + Worldspace Markers GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 43968
+    },
+    {
+      "zip": "03_enemy_faction_architecture_glb_pack_v1.zip",
+      "pack_name": "Enemy Faction Architecture GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 44402
+    },
+    {
+      "zip": "04_boss_arena_mechanics_glb_pack_v1.zip",
+      "pack_name": "Boss Arena Mechanics GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 54324
+    },
+    {
+      "zip": "05_mounts_vehicles_travel_glb_pack_v1.zip",
+      "pack_name": "Mounts Vehicles + Travel GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 27893
+    },
+    {
+      "zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "pack_name": "VFX Proxy + Combat Telegraph GLB Pack v1",
+      "glb_count": 68,
+      "wav_count": 0,
+      "manifest_asset_count": 68,
+      "size_bytes": 217185
+    },
+    {
+      "zip": "06_animation_placeholder_pose_glb_pack_v1.zip",
+      "pack_name": "Animation Placeholder Pose GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 62903
+    },
+    {
+      "zip": "06_lighting_atmosphere_glb_pack_v1.zip",
+      "pack_name": "Lighting + Atmosphere GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 34924
+    },
+    {
+      "zip": "07_puzzle_mechanisms_glb_pack_v1.zip",
+      "pack_name": "Puzzle Mechanisms GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 32544
+    },
+    {
+      "zip": "07_ui_hud_worldspace_markers_glb_pack_v1.zip",
+      "pack_name": "UI HUD + Worldspace Markers GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 43968
+    },
+    {
+      "zip": "08_destructible_debris_glb_pack_v1.zip",
+      "pack_name": "Destructible + Debris GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 32589
+    },
+    {
+      "zip": "08_quest_interaction_objects_glb_pack_v1.zip",
+      "pack_name": "Quest Interaction Objects GLB Pack v1",
+      "glb_count": 15,
+      "wav_count": 0,
+      "manifest_asset_count": 15,
+      "size_bytes": 28398
+    },
+    {
+      "zip": "09_mounts_vehicles_travel_glb_pack_v1.zip",
+      "pack_name": "Mounts Vehicles + Travel GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 27893
+    },
+    {
+      "zip": "09_resource_gathering_nodes_glb_pack_v1.zip",
+      "pack_name": "Resource Gathering Nodes GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 30239
+    },
+    {
+      "zip": "10_enemy_faction_architecture_glb_pack_v1.zip",
+      "pack_name": "Enemy Faction Architecture GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 44402
+    },
+    {
+      "zip": "10_town_exterior_structures_glb_pack_v1.zip",
+      "pack_name": "Town Exterior Structures GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 27200
+    },
+    {
+      "zip": "11_boss_arena_mechanics_glb_pack_v1.zip",
+      "pack_name": "Boss Arena Mechanics GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 54324
+    },
+    {
+      "zip": "11_faction_banners_signage_glb_pack_v1.zip",
+      "pack_name": "Faction Banners + Signage GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 18595
+    },
+    {
+      "zip": "12_audio_placeholder_cue_pack_v1.zip",
+      "pack_name": "Audio Placeholder Cue Pack v1",
+      "glb_count": 0,
+      "wav_count": 24,
+      "manifest_asset_count": 24,
+      "size_bytes": 149367
+    },
+    {
+      "zip": "12_combat_training_practice_glb_pack_v1.zip",
+      "pack_name": "Combat Training + Practice GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 44471
+    },
+    {
+      "zip": "13_companion_pet_summon_glb_pack_v1.zip",
+      "pack_name": "Companion Pet + Summon GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 41222
+    },
+    {
+      "zip": "14_projectiles_ammo_glb_pack_v1.zip",
+      "pack_name": "Projectiles + Ammo GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 21692
+    },
+    {
+      "zip": "15_crafting_workstations_glb_pack_v1.zip",
+      "pack_name": "Crafting Workstations GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 24472
+    },
+    {
+      "zip": "16_cinematic_story_props_glb_pack_v1.zip",
+      "pack_name": "Cinematic + Story Props GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 35978
+    },
+    {
+      "zip": "17_accessibility_readability_markers_glb_pack_v1.zip",
+      "pack_name": "Accessibility + Readability Markers GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 31689
+    },
+    {
+      "zip": "18_lod_collision_navigation_helpers_glb_pack_v1.zip",
+      "pack_name": "LOD Collision + Navigation Helpers GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 21208
+    },
+    {
+      "zip": "19_dungeon_traps_hazards_glb_pack_v1.zip",
+      "pack_name": "Dungeon Traps + Hazards GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 23030
+    },
+    {
+      "zip": "20_ambient_wildlife_critters_glb_pack_v1.zip",
+      "pack_name": "Ambient Wildlife + Critters GLB Pack v1",
+      "glb_count": 12,
+      "wav_count": 0,
+      "manifest_asset_count": 12,
+      "size_bytes": 51579
+    },
+    {
+      "zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+      "pack_name": "Master All GLB Assets Pack",
+      "glb_count": 38,
+      "wav_count": 0,
+      "manifest_asset_count": null,
+      "size_bytes": 635715
+    },
+    {
+      "zip": "TWENTY_NEXT_GAME_ASSET_PACKS_MASTER.zip",
+      "pack_name": "Twenty Next Game Asset Packs Master",
+      "glb_count": 0,
+      "wav_count": 0,
+      "manifest_asset_count": null,
+      "size_bytes": 504232
+    },
+    {
+      "zip": "biome_specific_props_glb_pack_v1.zip",
+      "pack_name": "Biome-Specific Props GLB Pack v1",
+      "glb_count": 72,
+      "wav_count": 0,
+      "manifest_asset_count": 72,
+      "size_bytes": 149063
+    },
+    {
+      "zip": "browser_game_3d_asset_pack_v1.zip",
+      "pack_name": "Browser Game 3D Asset Pack v1",
+      "glb_count": 50,
+      "wav_count": 0,
+      "manifest_asset_count": 50,
+      "size_bytes": 115876
+    },
+    {
+      "zip": "concept_monsters_proper_glb_pack_v2.zip",
+      "pack_name": "Concept Monsters Proper GLB Pack",
+      "glb_count": 9,
+      "wav_count": 0,
+      "manifest_asset_count": null,
+      "size_bytes": 143716
+    },
+    {
+      "zip": "free_flow_creatures_and_bosses_glb_pack_v3.zip",
+      "pack_name": "Free-Flow Creature and Boss GLB Pack",
+      "glb_count": 13,
+      "wav_count": 0,
+      "manifest_asset_count": null,
+      "size_bytes": 262600
+    },
+    {
+      "zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "pack_name": "Item Pickup + Equipment Display GLB Pack v1",
+      "glb_count": 75,
+      "wav_count": 0,
+      "manifest_asset_count": 75,
+      "size_bytes": 268556
+    },
+    {
+      "zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "pack_name": "Modular Environment + Shop + Quest GLB Pack v1",
+      "glb_count": 57,
+      "wav_count": 0,
+      "manifest_asset_count": 57,
+      "size_bytes": 87892
+    },
+    {
+      "zip": "sector_characters_glb_pack_v4.zip",
+      "pack_name": "Sector Characters Glb Pack V4",
+      "glb_count": 8,
+      "wav_count": 0,
+      "manifest_asset_count": null,
+      "size_bytes": 70726
+    },
+    {
+      "zip": "tiered_low_poly_monster_model_pack_v1.zip",
+      "pack_name": "Tiered Low-Poly Monster Model Pack",
+      "glb_count": 8,
+      "wav_count": 0,
+      "manifest_asset_count": null,
+      "size_bytes": 192713
+    },
+    {
+      "zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "pack_name": "VFX Proxy + Combat Telegraph GLB Pack v1",
+      "glb_count": 68,
+      "wav_count": 0,
+      "manifest_asset_count": 68,
+      "size_bytes": 217185
+    }
+  ]
+}

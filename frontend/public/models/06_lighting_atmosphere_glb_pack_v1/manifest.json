@@ -1,0 +1,304 @@
+{
+  "pack_name": "Lighting + Atmosphere GLB Pack v1",
+  "pack_slug": "06_lighting_atmosphere_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:56.581202+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Light sources, fog proxies, shafts, and environmental mood props.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/wall_torch.glb",
+      "name": "Wall Torch",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.985
+        ],
+        "size": [
+          0.576,
+          0.562,
+          1.97
+        ]
+      },
+      "tags": [
+        "light",
+        "red"
+      ],
+      "size_bytes": 7288
+    },
+    {
+      "file": "glb_assets/standing_brazier.glb",
+      "name": "Standing Brazier",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.985
+        ],
+        "size": [
+          0.576,
+          0.562,
+          1.97
+        ]
+      },
+      "tags": [
+        "light",
+        "orange"
+      ],
+      "size_bytes": 7288
+    },
+    {
+      "file": "glb_assets/crystal_lamp_blue.glb",
+      "name": "Crystal Lamp Blue",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.985
+        ],
+        "size": [
+          0.576,
+          0.562,
+          1.97
+        ]
+      },
+      "tags": [
+        "light",
+        "yellow"
+      ],
+      "size_bytes": 7292
+    },
+    {
+      "file": "glb_assets/street_lamp_warm.glb",
+      "name": "Street Lamp Warm",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.985
+        ],
+        "size": [
+          0.576,
+          0.562,
+          1.97
+        ]
+      },
+      "tags": [
+        "light",
+        "green"
+      ],
+      "size_bytes": 7288
+    },
+    {
+      "file": "glb_assets/forge_lava_lamp.glb",
+      "name": "Forge Lava Lamp",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.985
+        ],
+        "size": [
+          0.576,
+          0.562,
+          1.97
+        ]
+      },
+      "tags": [
+        "light",
+        "orange"
+      ],
+      "size_bytes": 7288
+    },
+    {
+      "file": "glb_assets/void_lantern.glb",
+      "name": "Void Lantern",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.985
+        ],
+        "size": [
+          0.576,
+          0.562,
+          1.97
+        ]
+      },
+      "tags": [
+        "light",
+        "purple"
+      ],
+      "size_bytes": 7288
+    },
+    {
+      "file": "glb_assets/healing_safe_zone_light.glb",
+      "name": "Healing Safe Zone Light",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.985
+        ],
+        "size": [
+          0.576,
+          0.562,
+          1.97
+        ]
+      },
+      "tags": [
+        "light",
+        "green"
+      ],
+      "size_bytes": 7288
+    },
+    {
+      "file": "glb_assets/fog_volume_proxy.glb",
+      "name": "Fog Volume Proxy",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.75
+        ],
+        "size": [
+          2.38,
+          1.936,
+          1.36
+        ]
+      },
+      "tags": [
+        "light",
+        "gold"
+      ],
+      "size_bytes": 12036
+    },
+    {
+      "file": "glb_assets/god_ray_beam_proxy.glb",
+      "name": "God Ray Beam Proxy",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          2.4
+        ],
+        "size": [
+          0.9,
+          0.9,
+          2.4
+        ]
+      },
+      "tags": [
+        "light",
+        "red"
+      ],
+      "size_bytes": 3544
+    },
+    {
+      "file": "glb_assets/warning_beacon_red.glb",
+      "name": "Warning Beacon Red",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.985
+        ],
+        "size": [
+          0.576,
+          0.562,
+          1.97
+        ]
+      },
+      "tags": [
+        "light",
+        "orange"
+      ],
+      "size_bytes": 7288
+    },
+    {
+      "file": "glb_assets/underwater_glow_lamp.glb",
+      "name": "Underwater Glow Lamp",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.985
+        ],
+        "size": [
+          0.576,
+          0.562,
+          1.97
+        ]
+      },
+      "tags": [
+        "light",
+        "blue"
+      ],
+      "size_bytes": 7288
+    },
+    {
+      "file": "glb_assets/archive_hologram_light.glb",
+      "name": "Archive Hologram Light",
+      "template": "light",
+      "gameplay_use": "Light sources, fog proxies, shafts, and environmental mood props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.985
+        ],
+        "size": [
+          0.576,
+          0.562,
+          1.97
+        ]
+      },
+      "tags": [
+        "light",
+        "green"
+      ],
+      "size_bytes": 7288
+    }
+  ]
+}

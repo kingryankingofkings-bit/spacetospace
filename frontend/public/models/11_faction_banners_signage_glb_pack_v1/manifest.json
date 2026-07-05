@@ -1,0 +1,304 @@
+{
+  "pack_name": "Faction Banners + Signage GLB Pack v1",
+  "pack_slug": "11_faction_banners_signage_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:56.928867+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Banners, signs, insignias, and wayfinding props.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/corporate_banner.glb",
+      "name": "Corporate Banner",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.47,
+          -0.001,
+          1.0
+        ],
+        "size": [
+          1.05,
+          0.113,
+          2.0
+        ]
+      },
+      "tags": [
+        "banner",
+        "red"
+      ],
+      "size_bytes": 3492
+    },
+    {
+      "file": "glb_assets/forge_warning_sign.glb",
+      "name": "Forge Warning Sign",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.05,
+          -0.015,
+          0.8
+        ],
+        "size": [
+          1.3,
+          0.13,
+          1.6
+        ]
+      },
+      "tags": [
+        "banner",
+        "orange"
+      ],
+      "size_bytes": 2596
+    },
+    {
+      "file": "glb_assets/sanctuary_leaf_banner.glb",
+      "name": "Sanctuary Leaf Banner",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.47,
+          -0.001,
+          1.0
+        ],
+        "size": [
+          1.05,
+          0.113,
+          2.0
+        ]
+      },
+      "tags": [
+        "banner",
+        "yellow"
+      ],
+      "size_bytes": 3496
+    },
+    {
+      "file": "glb_assets/orbital_resistance_banner.glb",
+      "name": "Orbital Resistance Banner",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.47,
+          -0.001,
+          1.0
+        ],
+        "size": [
+          1.05,
+          0.113,
+          2.0
+        ]
+      },
+      "tags": [
+        "banner",
+        "green"
+      ],
+      "size_bytes": 3496
+    },
+    {
+      "file": "glb_assets/resonant_peaks_sign.glb",
+      "name": "Resonant Peaks Sign",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.05,
+          -0.015,
+          0.8
+        ],
+        "size": [
+          1.3,
+          0.13,
+          1.6
+        ]
+      },
+      "tags": [
+        "banner",
+        "blue"
+      ],
+      "size_bytes": 2596
+    },
+    {
+      "file": "glb_assets/subway_grid_sign.glb",
+      "name": "Subway Grid Sign",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.05,
+          -0.015,
+          0.8
+        ],
+        "size": [
+          1.3,
+          0.13,
+          1.6
+        ]
+      },
+      "tags": [
+        "banner",
+        "purple"
+      ],
+      "size_bytes": 2596
+    },
+    {
+      "file": "glb_assets/deprecated_repository_sign.glb",
+      "name": "Deprecated Repository Sign",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.05,
+          -0.015,
+          0.8
+        ],
+        "size": [
+          1.3,
+          0.13,
+          1.6
+        ]
+      },
+      "tags": [
+        "banner",
+        "white"
+      ],
+      "size_bytes": 2580
+    },
+    {
+      "file": "glb_assets/infinite_archives_banner.glb",
+      "name": "Infinite Archives Banner",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.47,
+          -0.001,
+          1.0
+        ],
+        "size": [
+          1.05,
+          0.113,
+          2.0
+        ]
+      },
+      "tags": [
+        "banner",
+        "gold"
+      ],
+      "size_bytes": 3276
+    },
+    {
+      "file": "glb_assets/sky_warden_banner.glb",
+      "name": "Sky Warden Banner",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.47,
+          -0.001,
+          1.0
+        ],
+        "size": [
+          1.05,
+          0.113,
+          2.0
+        ]
+      },
+      "tags": [
+        "banner",
+        "red"
+      ],
+      "size_bytes": 3492
+    },
+    {
+      "file": "glb_assets/order_epochalypse_banner.glb",
+      "name": "Order Epochalypse Banner",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.47,
+          -0.001,
+          1.0
+        ],
+        "size": [
+          1.05,
+          0.113,
+          2.0
+        ]
+      },
+      "tags": [
+        "banner",
+        "orange"
+      ],
+      "size_bytes": 3496
+    },
+    {
+      "file": "glb_assets/quest_board_arrow_sign.glb",
+      "name": "Quest Board Arrow Sign",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.05,
+          -0.015,
+          0.8
+        ],
+        "size": [
+          1.3,
+          0.13,
+          1.6
+        ]
+      },
+      "tags": [
+        "banner",
+        "yellow"
+      ],
+      "size_bytes": 2600
+    },
+    {
+      "file": "glb_assets/danger_boss_gate_sign.glb",
+      "name": "Danger Boss Gate Sign",
+      "template": "banner",
+      "gameplay_use": "Banners, signs, insignias, and wayfinding props.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.05,
+          -0.015,
+          0.8
+        ],
+        "size": [
+          1.3,
+          0.13,
+          1.6
+        ]
+      },
+      "tags": [
+        "banner",
+        "red"
+      ],
+      "size_bytes": 2596
+    }
+  ]
+}

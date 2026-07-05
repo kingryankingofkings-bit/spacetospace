@@ -16,8 +16,6 @@ export const ToolsPanel: React.FC = () => {
 
       switch (e.key) {
         case '1': setActiveTool('select'); break;
-        case '2': setActiveTool('place'); break;
-        case '3': setActiveTool('terraform'); break;
         case '4': setActiveTool('character'); break;
         case '5': setActiveTool('attack'); break;
         case '6': setActiveTool('mod'); break;
@@ -37,18 +35,7 @@ export const ToolsPanel: React.FC = () => {
         >
           Select Tool
         </button>
-        <button 
-          className={`tool-button ${activeTool === 'place' ? 'active' : ''}`}
-          onClick={() => setActiveTool('place')}
-        >
-          Place Object
-        </button>
-        <button 
-          className={`tool-button ${activeTool === 'terraform' ? 'active' : ''}`}
-          onClick={() => setActiveTool('terraform')}
-        >
-          Terraform
-        </button>
+
         <button 
           className={`tool-button ${activeTool === 'character' ? 'active' : ''}`}
           onClick={() => setActiveTool('character')}

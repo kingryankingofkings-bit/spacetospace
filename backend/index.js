@@ -763,11 +763,6 @@ wss.on("connection", (ws) => {
           }
         }
       }
-      else if (data.type === "place_object") {
-        const obj = data.object || data;
-        await db.saveObject(obj);
-        broadcast(data);
-      }
       else if (data.type === "interact_npc") {
         const npc = npcs.find(n => n.id === data.npcId);
         const sessionId = ws.sessionId;
@@ -1310,11 +1305,6 @@ wss.on("connection", (ws) => {
            client.release();
         }
       }
-      else if (data.type === "terraform") {
-        const terrain = data.terrain || data;
-        await db.saveTerrain(terrain);
-        broadcast(data);
-      }
       else if (data.type === "attack") {
         const now = Date.now();
         const ATTACK_COOLDOWN_MS = 300; 
@@ -1670,11 +1660,11 @@ server.listen(port, async () => {
   try {
     const numObjectsRes = await db.pool.query('SELECT COUNT(*) FROM world_objects');
     if (parseInt(numObjectsRes.rows[0].count) === 0) {
-      console.log('Seeding initial resource nodes...');
-      const types = ['iron_node', 'herb_node', 'data_core_node'];
-      for (let i = 0; i < 50; i++) {
+      console.log('Seeding initial resource nodes and new objects...');
+      const types = ['iron_node', 'herb_node', 'data_core_node', 'trap_spike', 'destructible_barrel', 'banner_faction', 'wildlife_deer', 'puzzle_button'];
+      for (let i = 0; i < 80; i++) {
         const type = types[Math.floor(Math.random() * types.length)];
-        const obj = { id: `resource_${Date.now()}_${i}`, type, x: (Math.random() - 0.5) * 500, y: 0, z: (Math.random() - 0.5) * 500 };
+        const obj = { id: `resource_${Date.now()}_${i}`, type, x: (Math.random() - 0.5) * 50, y: 0, z: (Math.random() - 0.5) * 50 };
         await db.saveObject(obj);
       }
     }

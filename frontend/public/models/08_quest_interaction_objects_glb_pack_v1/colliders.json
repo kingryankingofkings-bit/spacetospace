@@ -1,0 +1,257 @@
+{
+  "glb_assets/quest_boss_key_pedestal.glb": {
+    "name": "Boss Key Pedestal",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.635
+      ],
+      "size": [
+        1.0,
+        1.0,
+        1.27
+      ]
+    },
+    "recommended_use": "boss key presentation"
+  },
+  "glb_assets/quest_broken_device.glb": {
+    "name": "Broken Device",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        -0.05,
+        -0.043,
+        0.45
+      ],
+      "size": [
+        1.599,
+        1.013,
+        0.9
+      ]
+    },
+    "recommended_use": "repair / scavenging objective"
+  },
+  "glb_assets/quest_courier_package.glb": {
+    "name": "Courier Package",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.015,
+        0.3
+      ],
+      "size": [
+        0.92,
+        0.65,
+        0.6
+      ]
+    },
+    "recommended_use": "delivery quest item"
+  },
+  "glb_assets/quest_evidence_crate.glb": {
+    "name": "Evidence Crate",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.025,
+        0.45
+      ],
+      "size": [
+        1.2,
+        1.05,
+        0.9
+      ]
+    },
+    "recommended_use": "collectible evidence container"
+  },
+  "glb_assets/quest_notice_board.glb": {
+    "name": "Quest Notice Board",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.6
+      ],
+      "size": [
+        2.2,
+        0.18,
+        3.2
+      ]
+    },
+    "recommended_use": "quest hub board"
+  },
+  "glb_assets/quest_objective_flag.glb": {
+    "name": "Objective Flag",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.41,
+        0.0,
+        1.2
+      ],
+      "size": [
+        0.98,
+        0.16,
+        2.4
+      ]
+    },
+    "recommended_use": "capture / location objective"
+  },
+  "glb_assets/quest_pressure_plate.glb": {
+    "name": "Pressure Plate",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.08
+      ],
+      "size": [
+        1.4,
+        1.4,
+        0.16
+      ]
+    },
+    "recommended_use": "floor trigger"
+  },
+  "glb_assets/quest_puzzle_switch.glb": {
+    "name": "Puzzle Switch",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.407
+      ],
+      "size": [
+        0.9,
+        0.9,
+        0.825
+      ]
+    },
+    "recommended_use": "switch / puzzle interaction"
+  },
+  "glb_assets/quest_relic_fragment.glb": {
+    "name": "Relic Fragment",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "size": [
+        0.72,
+        0.6,
+        1.12
+      ]
+    },
+    "recommended_use": "rare collectible / turn-in item"
+  },
+  "glb_assets/quest_rescue_cage.glb": {
+    "name": "Rescue Cage",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.09
+      ],
+      "size": [
+        1.8,
+        1.8,
+        2.17
+      ]
+    },
+    "recommended_use": "rescue objective / prisoner prop"
+  },
+  "glb_assets/quest_ritual_stone.glb": {
+    "name": "Ritual Stone",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.2
+      ],
+      "size": [
+        0.947,
+        0.8,
+        2.4
+      ]
+    },
+    "recommended_use": "ritual / activation objective"
+  },
+  "glb_assets/quest_scroll_pedestal.glb": {
+    "name": "Quest Scroll Pedestal",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.755
+      ],
+      "size": [
+        0.9,
+        0.9,
+        1.51
+      ]
+    },
+    "recommended_use": "quest acceptance / story trigger"
+  },
+  "glb_assets/quest_sealed_door.glb": {
+    "name": "Sealed Door",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.05,
+        1.5
+      ],
+      "size": [
+        2.4,
+        0.3,
+        3.0
+      ]
+    },
+    "recommended_use": "story gate / locked door"
+  },
+  "glb_assets/quest_signal_flare_beacon.glb": {
+    "name": "Signal Flare Beacon",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.25
+      ],
+      "size": [
+        0.8,
+        0.8,
+        2.5
+      ]
+    },
+    "recommended_use": "signal / summon objective"
+  },
+  "glb_assets/quest_tracking_marker.glb": {
+    "name": "Tracking Marker",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.175
+      ],
+      "size": [
+        0.94,
+        0.94,
+        2.35
+      ]
+    },
+    "recommended_use": "waypoint / tracking objective"
+  }
+}

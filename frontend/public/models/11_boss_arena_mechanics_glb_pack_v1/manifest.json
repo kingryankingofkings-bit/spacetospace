@@ -1,0 +1,304 @@
+{
+  "pack_name": "Boss Arena Mechanics GLB Pack v1",
+  "pack_slug": "04_boss_arena_mechanics_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:56.447515+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Arena mechanism pieces for boss encounters and phase mechanics.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/colossus_climb_anchor.glb",
+      "name": "Colossus Climb Anchor",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "red"
+      ],
+      "size_bytes": 15076
+    },
+    {
+      "file": "glb_assets/lich_shield_pylon.glb",
+      "name": "Lich Shield Pylon",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "purple"
+      ],
+      "size_bytes": 15080
+    },
+    {
+      "file": "glb_assets/behemoth_shockwave_plate.glb",
+      "name": "Behemoth Shockwave Plate",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "yellow"
+      ],
+      "size_bytes": 15080
+    },
+    {
+      "file": "glb_assets/null_anomaly_echo_node.glb",
+      "name": "Null Anomaly Echo Node",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "purple"
+      ],
+      "size_bytes": 15080
+    },
+    {
+      "file": "glb_assets/chimera_feeding_lane_marker.glb",
+      "name": "Chimera Feeding Lane Marker",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "blue"
+      ],
+      "size_bytes": 15080
+    },
+    {
+      "file": "glb_assets/maestro_rhythm_pillar.glb",
+      "name": "Maestro Rhythm Pillar",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "purple"
+      ],
+      "size_bytes": 15080
+    },
+    {
+      "file": "glb_assets/evolvarch_data_ring_anchor.glb",
+      "name": "Evolvarch Data Ring Anchor",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "white"
+      ],
+      "size_bytes": 15064
+    },
+    {
+      "file": "glb_assets/ivory_behemoth_crash_wall.glb",
+      "name": "Ivory Behemoth Crash Wall",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "gold"
+      ],
+      "size_bytes": 15068
+    },
+    {
+      "file": "glb_assets/astral_sovereign_zero_g_node.glb",
+      "name": "Astral Sovereign Zero-G Node",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "red"
+      ],
+      "size_bytes": 15076
+    },
+    {
+      "file": "glb_assets/boss_weakpoint_pedestal.glb",
+      "name": "Boss Weakpoint Pedestal",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "red"
+      ],
+      "size_bytes": 15076
+    },
+    {
+      "file": "glb_assets/phase_lock_obelisk.glb",
+      "name": "Phase Lock Obelisk",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "yellow"
+      ],
+      "size_bytes": 15080
+    },
+    {
+      "file": "glb_assets/arena_reset_beacon.glb",
+      "name": "Arena Reset Beacon",
+      "template": "arena_node",
+      "gameplay_use": "Arena mechanism pieces for boss encounters and phase mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.9,
+          1.9,
+          1.15
+        ]
+      },
+      "tags": [
+        "arena_node",
+        "green"
+      ],
+      "size_bytes": 15080
+    }
+  ]
+}

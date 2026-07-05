@@ -1,0 +1,304 @@
+{
+  "pack_name": "Destructible + Debris GLB Pack v1",
+  "pack_slug": "08_destructible_debris_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:56.730215+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Breakable props, rubble, and debris proxies for destruction states.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/cracked_wall_section.glb",
+      "name": "Cracked Wall Section",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "red"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/broken_crate_debris.glb",
+      "name": "Broken Crate Debris",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "orange"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/shattered_pot_debris.glb",
+      "name": "Shattered Pot Debris",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "yellow"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/splintered_barrel_debris.glb",
+      "name": "Splintered Barrel Debris",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "green"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/stone_rubble_small.glb",
+      "name": "Stone Rubble Small",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "blue"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/stone_rubble_large.glb",
+      "name": "Stone Rubble Large",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "purple"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/metal_scrap_pile.glb",
+      "name": "Metal Scrap Pile",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "white"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/glass_shard_scatter.glb",
+      "name": "Glass Shard Scatter",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "gold"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/charred_wood_debris.glb",
+      "name": "Charred Wood Debris",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "red"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/collapsed_roof_debris.glb",
+      "name": "Collapsed Roof Debris",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "orange"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/boss_armor_shard_pile.glb",
+      "name": "Boss Armor Shard Pile",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "red"
+      ],
+      "size_bytes": 7996
+    },
+    {
+      "file": "glb_assets/data_fragment_debris.glb",
+      "name": "Data Fragment Debris",
+      "template": "debris",
+      "gameplay_use": "Breakable props, rubble, and debris proxies for destruction states.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.297
+        ],
+        "size": [
+          1.32,
+          1.01,
+          0.454
+        ]
+      },
+      "tags": [
+        "debris",
+        "green"
+      ],
+      "size_bytes": 7996
+    }
+  ]
+}

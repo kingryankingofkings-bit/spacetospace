@@ -1,0 +1,27 @@
+{
+  "prefab_id": "string",
+  "source_zip": "string",
+  "source_asset": "string",
+  "category": [
+    "static_prop",
+    "environment_module",
+    "pickup",
+    "interactable",
+    "character",
+    "monster",
+    "boss",
+    "vehicle",
+    "vfx",
+    "ui_marker",
+    "audio_cue"
+  ],
+  "components": {
+    "render_mesh": true,
+    "collider": "box|sphere|capsule|cylinder|mesh|compound|none",
+    "scripts": []
+  },
+  "tags": [],
+  "layers": [],
+  "lod_policy": "none|auto_static|manual_character|boss_custom",
+  "qa_status": "pending"
+}

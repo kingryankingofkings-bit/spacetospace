@@ -1,0 +1,315 @@
+{
+  "pack_name": "Accessibility + Readability Markers GLB Pack v1",
+  "roadmap_pack_number": 17,
+  "created_utc": "2026-07-05T07:46:56.207583+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "notes": [
+    "All assets are real static low-poly GLB meshes.",
+    "They are browser-game prototype assets.",
+    "They are not rigged, animated, scripted, or engine-prefabbed yet.",
+    "Use manifest and colliders as first-pass metadata for engine import."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/01_high_contrast_outline_ring.glb",
+      "name": "High Contrast Outline Ring",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.715
+        ],
+        "size": [
+          1.36,
+          1.16,
+          1.43
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "outline",
+        "white"
+      ],
+      "size_bytes": 11760
+    },
+    {
+      "file": "glb_assets/02_enemy_target_arrow.glb",
+      "name": "Enemy Target Arrow",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.76
+        ],
+        "size": [
+          1.16,
+          1.16,
+          1.52
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "arrow",
+        "red"
+      ],
+      "size_bytes": 8944
+    },
+    {
+      "file": "glb_assets/03_interact_icon_marker.glb",
+      "name": "Interact Icon Marker",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.76
+        ],
+        "size": [
+          1.16,
+          1.16,
+          1.52
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "objective",
+        "yellow"
+      ],
+      "size_bytes": 8948
+    },
+    {
+      "file": "glb_assets/04_climbable_surface_marker.glb",
+      "name": "Climbable Surface Marker",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.76
+        ],
+        "size": [
+          1.16,
+          1.16,
+          1.52
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "arrow",
+        "green"
+      ],
+      "size_bytes": 8948
+    },
+    {
+      "file": "glb_assets/05_vault_marker.glb",
+      "name": "Vault Marker",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.76
+        ],
+        "size": [
+          1.16,
+          1.16,
+          1.52
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "arrow",
+        "blue"
+      ],
+      "size_bytes": 8948
+    },
+    {
+      "file": "glb_assets/06_audio_visualizer_beacon.glb",
+      "name": "Audio Visualizer Beacon",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.428
+        ],
+        "size": [
+          1.16,
+          1.16,
+          0.855
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "audio_visualizer",
+        "purple"
+      ],
+      "size_bytes": 9728
+    },
+    {
+      "file": "glb_assets/07_colorblind_safe_blue_marker.glb",
+      "name": "Colorblind Safe Blue Marker",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.715
+        ],
+        "size": [
+          1.36,
+          1.16,
+          1.43
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "outline",
+        "blue"
+      ],
+      "size_bytes": 11760
+    },
+    {
+      "file": "glb_assets/08_danger_exclamation_marker.glb",
+      "name": "Danger Exclamation Marker",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.527
+        ],
+        "size": [
+          1.16,
+          1.16,
+          1.055
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "exclamation",
+        "red"
+      ],
+      "size_bytes": 9684
+    },
+    {
+      "file": "glb_assets/09_objective_beam_marker.glb",
+      "name": "Objective Beam Marker",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.76
+        ],
+        "size": [
+          1.16,
+          1.16,
+          1.52
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "objective",
+        "yellow"
+      ],
+      "size_bytes": 8948
+    },
+    {
+      "file": "glb_assets/10_ally_marker.glb",
+      "name": "Ally Marker",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.76
+        ],
+        "size": [
+          1.16,
+          1.16,
+          1.52
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "objective",
+        "green"
+      ],
+      "size_bytes": 8948
+    },
+    {
+      "file": "glb_assets/11_path_breadcrumb_marker.glb",
+      "name": "Path Breadcrumb Marker",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.76
+        ],
+        "size": [
+          1.16,
+          1.16,
+          1.52
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "path",
+        "cyan"
+      ],
+      "size_bytes": 8948
+    },
+    {
+      "file": "glb_assets/12_safe_zone_boundary.glb",
+      "name": "Safe Zone Boundary",
+      "category": "accessibility_readability_marker",
+      "gameplay_use": "accessibility + readability markers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.488
+        ],
+        "size": [
+          1.55,
+          1.55,
+          0.975
+        ]
+      },
+      "tags": [
+        "accessibility_readability_marker",
+        "safe_zone",
+        "green"
+      ],
+      "size_bytes": 13140
+    }
+  ]
+}

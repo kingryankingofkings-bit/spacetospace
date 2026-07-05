@@ -1,0 +1,304 @@
+{
+  "pack_name": "Puzzle Mechanisms GLB Pack v1",
+  "pack_slug": "07_puzzle_mechanisms_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:56.636105+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/lever_switch_basic.glb",
+      "name": "Lever Switch Basic",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.51
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.02
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "red"
+      ],
+      "size_bytes": 4916
+    },
+    {
+      "file": "glb_assets/rune_dial_rotator.glb",
+      "name": "Rune Dial Rotator",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.246
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.493
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "orange"
+      ],
+      "size_bytes": 6480
+    },
+    {
+      "file": "glb_assets/key_socket_stone.glb",
+      "name": "Key Socket Stone",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.325
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.65
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "yellow"
+      ],
+      "size_bytes": 5096
+    },
+    {
+      "file": "glb_assets/elemental_orb_socket.glb",
+      "name": "Elemental Orb Socket",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.325
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.65
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "green"
+      ],
+      "size_bytes": 5092
+    },
+    {
+      "file": "glb_assets/three_symbol_pillar.glb",
+      "name": "Three Symbol Pillar",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.37
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.74
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "blue"
+      ],
+      "size_bytes": 7384
+    },
+    {
+      "file": "glb_assets/rotating_mirror_device.glb",
+      "name": "Rotating Mirror Device",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.37
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.74
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "blue"
+      ],
+      "size_bytes": 7384
+    },
+    {
+      "file": "glb_assets/pressure_tile_ancient.glb",
+      "name": "Pressure Tile Ancient",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.37
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.74
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "white"
+      ],
+      "size_bytes": 7368
+    },
+    {
+      "file": "glb_assets/sequence_button_blue.glb",
+      "name": "Sequence Button Blue",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.37
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.74
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "gold"
+      ],
+      "size_bytes": 7372
+    },
+    {
+      "file": "glb_assets/timing_crystal_node.glb",
+      "name": "Timing Crystal Node",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.37
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.74
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "red"
+      ],
+      "size_bytes": 7380
+    },
+    {
+      "file": "glb_assets/locked_mechanism_box.glb",
+      "name": "Locked Mechanism Box",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.37
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.74
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "orange"
+      ],
+      "size_bytes": 7384
+    },
+    {
+      "file": "glb_assets/gear_crank_puzzle.glb",
+      "name": "Gear Crank Puzzle",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.37
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.74
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "yellow"
+      ],
+      "size_bytes": 7384
+    },
+    {
+      "file": "glb_assets/bridge_power_relay.glb",
+      "name": "Bridge Power Relay",
+      "template": "puzzle",
+      "gameplay_use": "Interactive puzzle props for locks, levers, dials, and sequence mechanics.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.37
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.74
+        ]
+      },
+      "tags": [
+        "puzzle",
+        "green"
+      ],
+      "size_bytes": 7384
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "pack_name": "Crafting Workstations GLB Pack v1",
+  "roadmap_pack_number": 15,
+  "created_utc": "2026-07-05T07:46:55.967630+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "notes": [
+    "All assets are real static low-poly GLB meshes.",
+    "They are browser-game prototype assets.",
+    "They are not rigged, animated, scripted, or engine-prefabbed yet.",
+    "Use manifest and colliders as first-pass metadata for engine import."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/01_alchemy_table.glb",
+      "name": "Alchemy Table",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.6
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.19
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "alchemy",
+        "green"
+      ],
+      "size_bytes": 7516
+    },
+    {
+      "file": "glb_assets/02_blacksmith_station.glb",
+      "name": "Blacksmith Station",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.743
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.475
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "blacksmith",
+        "orange"
+      ],
+      "size_bytes": 5568
+    },
+    {
+      "file": "glb_assets/03_enchanting_altar.glb",
+      "name": "Enchanting Altar",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.723
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.435
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "enchanting",
+        "purple"
+      ],
+      "size_bytes": 10384
+    },
+    {
+      "file": "glb_assets/04_cooking_station.glb",
+      "name": "Cooking Station",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.637
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.265
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "cooking",
+        "orange"
+      ],
+      "size_bytes": 6480
+    },
+    {
+      "file": "glb_assets/05_loom_station.glb",
+      "name": "Loom Station",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.84
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.67
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "loom",
+        "blue"
+      ],
+      "size_bytes": 4956
+    },
+    {
+      "file": "glb_assets/06_tannery_rack.glb",
+      "name": "Tannery Rack",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.817
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.625
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "tannery",
+        "leather"
+      ],
+      "size_bytes": 6492
+    },
+    {
+      "file": "glb_assets/07_jewelcraft_bench.glb",
+      "name": "Jewelcraft Bench",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.563
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.115
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "jewelcraft",
+        "cyan"
+      ],
+      "size_bytes": 8828
+    },
+    {
+      "file": "glb_assets/08_engineering_bench.glb",
+      "name": "Engineering Bench",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.63
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.25
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "engineering",
+        "blue"
+      ],
+      "size_bytes": 8588
+    },
+    {
+      "file": "glb_assets/09_salvage_grinder.glb",
+      "name": "Salvage Grinder",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.605
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.2
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "salvage",
+        "red"
+      ],
+      "size_bytes": 7788
+    },
+    {
+      "file": "glb_assets/10_armor_dye_station.glb",
+      "name": "Armor Dye Station",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.603
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.195
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "dye",
+        "blue"
+      ],
+      "size_bytes": 6212
+    },
+    {
+      "file": "glb_assets/11_inscription_desk.glb",
+      "name": "Inscription Desk",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.542
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.073
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "inscription",
+        "bone"
+      ],
+      "size_bytes": 5620
+    },
+    {
+      "file": "glb_assets/12_upgrade_forge.glb",
+      "name": "Upgrade Forge",
+      "category": "crafting_workstation",
+      "gameplay_use": "crafting workstations asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.587
+        ],
+        "size": [
+          1.6,
+          0.9,
+          1.164
+        ]
+      },
+      "tags": [
+        "crafting_workstation",
+        "upgrade",
+        "yellow"
+      ],
+      "size_bytes": 9460
+    }
+  ]
+}

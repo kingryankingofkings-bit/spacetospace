@@ -1,0 +1,31 @@
+{
+  "entity_id": "string",
+  "rig_type": "humanoid|quadruped|hovering|prop_mechanism|none",
+  "clips_required": [],
+  "state_machine": {
+    "states": [
+      "idle",
+      "move",
+      "attack",
+      "hit",
+      "stagger",
+      "death"
+    ],
+    "parameters": [
+      "speed",
+      "isGrounded",
+      "isAggro",
+      "attackType",
+      "healthNormalized",
+      "phase"
+    ]
+  },
+  "event_markers": [
+    "active_start",
+    "active_end",
+    "footstep_l",
+    "footstep_r",
+    "vfx_spawn",
+    "audio_cue"
+  ]
+}

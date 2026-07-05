@@ -1,12 +1,14 @@
-import React, { useState, useRef, useMemo, useEffect } from 'react';
-import { Engine, Scene, useBeforeRender, useScene } from 'react-babylonjs';
-import { Vector3, Color3, Color4, VertexBuffer, GroundMesh, ParticleSystem, GPUParticleSystem, Texture, DefaultRenderingPipeline, SSAO2RenderingPipeline, CubeTexture, ShadowGenerator, DirectionalLight, SceneLoader, AssetContainer, Scene as BabylonScene, Matrix, Quaternion, Axis, KhronosTextureContainer2, ImageProcessingConfiguration, GlowLayer, VolumetricLightScatteringPostProcess } from '@babylonjs/core';
-import '@babylonjs/loaders';
-import { useToolStore } from '../store/toolStore';
+import React, { useRef, useMemo, useEffect, useState } from 'react';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { useGLTF, Environment, Html } from '@react-three/drei';
+import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
+import { Physics, useBox, useSphere } from '@react-three/cannon';
+import * as THREE from 'three';
 import { useMultiplayerStore } from '../store/multiplayerStore';
-import { playBGM, playHitSound } from "../utils/AudioEngine";
 import { WeatherSystem } from './WeatherSystem';
 import { getCdnAssetPath } from '../utils/AssetManager';
+import { getAssetByType } from '../utils/AssetRegistry';
+import { useState } from 'react';
 
 export interface Player {
   id: string;
@@ -15,6 +17,7 @@ export interface Player {
   z: number;
   modelFile?: string;
   zone?: string;
+  appearance?: any;
   appearance?: any;
 }
 
@@ -26,86 +29,6 @@ export interface WorldObject {
   z: number;
 }
 
-// Global cache to avoid re-parsing GLBs
-const assetContainerCache: Record<string, Promise<AssetContainer>> = {};
-const loadAssetContainer = (scene: BabylonScene, rootUrl: string, filename: string) => {
-  const key = rootUrl + filename;
-  if (!assetContainerCache[key]) {
-    assetContainerCache[key] = SceneLoader.LoadAssetContainerAsync(rootUrl, filename, scene);
-  }
-  return assetContainerCache[key];
-};
-
-const OptimizedModel: React.FC<{ 
-  rootUrl: string, 
-  sceneFilename: string, 
-  name: string, 
-  scaleToDimension?: number,
-  scaling?: Vector3,
-  onModelLoaded?: (model: { meshes: any[], animationGroups: any[] }) => void 
-}> = ({ rootUrl, sceneFilename, name, scaleToDimension, scaling, onModelLoaded }) => {
-  const scene = useScene();
-  const nodeRef = useRef<any>(null);
-  const instanceRef = useRef<any>(null);
-
-  useEffect(() => {
-    if (!scene || !nodeRef.current) return;
-    let isMounted = true;
-    
-    loadAssetContainer(scene, rootUrl, sceneFilename).then(container => {
-      if (!isMounted) return;
-      
-      const instance = container.instantiateModelsToScene(n => `${name}-${n}`, false);
-      instanceRef.current = instance;
-      
-      instance.rootNodes.forEach(n => {
-        n.parent = nodeRef.current;
-      });
-      
-      if (scaleToDimension) {
-        let min = new Vector3(Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE);
-        let max = new Vector3(-Number.MAX_VALUE, -Number.MAX_VALUE, -Number.MAX_VALUE);
-        instance.rootNodes.forEach(n => {
-          const meshes = n.getChildMeshes(false);
-          if (n.getClassName() === "Mesh" || n.getClassName() === "InstancedMesh") meshes.push(n as any);
-          meshes.forEach(m => {
-            m.computeWorldMatrix(true);
-            const boundingBox = m.getBoundingInfo().boundingBox;
-            min = Vector3.Minimize(min, boundingBox.minimumWorld);
-            max = Vector3.Maximize(max, boundingBox.maximumWorld);
-          });
-        });
-        const size = max.subtract(min);
-        const maxDim = Math.max(size.x, size.y, size.z);
-        if (maxDim > 0) {
-          const scale = scaleToDimension / maxDim;
-          nodeRef.current.scaling = new Vector3(scale, scale, scale);
-        }
-      }
-
-      if (onModelLoaded) {
-        const allMeshes: any[] = [];
-        instance.rootNodes.forEach(node => {
-           allMeshes.push(...node.getChildMeshes(false));
-           if (node.getClassName() === "Mesh" || node.getClassName() === "InstancedMesh") allMeshes.push(node);
-        });
-        onModelLoaded({ meshes: allMeshes, animationGroups: instance.animationGroups });
-      }
-    });
-
-    return () => {
-      isMounted = false;
-      if (instanceRef.current) {
-        instanceRef.current.rootNodes.forEach((n: any) => n.dispose());
-        instanceRef.current.skeletons?.forEach((s: any) => s.dispose());
-        instanceRef.current.animationGroups?.forEach((a: any) => a.dispose());
-      }
-    };
-  }, [scene, rootUrl, sceneFilename, name, scaleToDimension]);
-
-  return <transformNode ref={nodeRef} name={name} scaling={scaling} />;
-};
-
 export interface WorldRendererProps {
   localPlayerId?: string | null;
   players?: Player[];
@@ -115,637 +38,475 @@ export interface WorldRendererProps {
   worldObjects?: WorldObject[];
 
   sendMove?: (x: number, y: number, z: number) => void;
-  sendTerraform?: (x: number, z: number, height: number) => void;
-  sendPlaceObject?: (type: string, x: number, y: number, z: number) => void;
   sendAttack?: (targetId: string) => void;
   setInteractingNpcId?: (id: string | null) => void;
 }
 
-const SceneEffects: React.FC<{ currentZone?: string }> = ({ currentZone }) => {
-  const scene = useScene();
+// ------------------------------------------------------------------
+// UTILS
+// ------------------------------------------------------------------
+
+const OptimizedModel: React.FC<{ 
+  url: string, 
+  scaleToDimension?: number,
+  scaling?: [number, number, number],
+  colorTint?: string
+}> = ({ url, scaleToDimension, scaling, colorTint }) => {
+  const { scene } = useGLTF(url);
+  const clone = useMemo(() => scene.clone(), [scene]);
+  
   useEffect(() => {
-    if (!scene) return;
-    const camera = scene.activeCamera;
-    if (!camera) return;
-    
-    // KTX2 and Basis Configuration
-    (KhronosTextureContainer2.URLConfig as any) = {
-      jsDecoderModule: "https://cdn.babylonjs.com/ktx2Decoder.js",
-      wasmUASTC: "https://cdn.babylonjs.com/babylon.ktx2Decoder.wasm",
-      wasmMSCTranscoder: "https://cdn.babylonjs.com/msc_basis_transcoder.wasm",
-      jsMSCTranscoder: "https://cdn.babylonjs.com/msc_basis_transcoder.js"
-    };
-
-      // Post Process Pipeline
-      const pipeline = new DefaultRenderingPipeline("defaultPipeline", true, scene, [camera]);
-      pipeline.fxaaEnabled = true;
-      pipeline.bloomEnabled = true;
-      pipeline.bloomThreshold = 0.5;
-      pipeline.bloomWeight = 0.5;
-      
-      pipeline.imageProcessingEnabled = true;
-      pipeline.imageProcessing.toneMappingEnabled = true;
-      pipeline.imageProcessing.toneMappingType = ImageProcessingConfiguration.TONEMAPPING_ACES;
-      pipeline.imageProcessing.exposure = 1.2;
-      pipeline.imageProcessing.contrast = 1.1;
-      
-      pipeline.depthOfFieldEnabled = true;
-      pipeline.depthOfField.focusDistance = 2000;
-      pipeline.depthOfField.focalLength = 50;
-      pipeline.depthOfField.fStop = 1.4;
-
-    const ssao = new SSAO2RenderingPipeline("ssao", scene, 0.75, [camera]);
-    ssao.radius = 2.5;
-    ssao.totalStrength = 1.5;
-    ssao.base = 0.5;
-
-    // IBL Environment
-    const envTexture = CubeTexture.CreateFromPrefilteredData("https://assets.babylonjs.com/environments/environmentSpecular.env", scene);
-    scene.environmentTexture = envTexture;
-    
-    // Atmospheric Fog
-    scene.fogMode = BabylonScene.FOGMODE_EXP2;
-    scene.fogDensity = 0.003;
-    scene.fogColor = new Color3(0.15, 0.18, 0.25); // Will dynamically update below based on biome, but setting a cool baseline
-
-    // Glow Layer
-    if (!scene.getGlowLayerByName("glow")) {
-        const gl = new GlowLayer("glow", scene, {
-            mainTextureSamples: 4,
-            blurKernelSize: 32
-        });
-        gl.intensity = 1.2;
-    }
-
-    let vls: VolumetricLightScatteringPostProcess | null = null;
-    let shadowGenerator: ShadowGenerator | null = null;
-    let observer: any = null;
-
-    // Shadows
-    const dirLight = scene.getLightByName("dir-light") as DirectionalLight;
-    if (dirLight && !dirLight.metadata?.hasShadows) {
-      dirLight.metadata = { hasShadows: true };
-      
-      // Volumetric Light (God Rays)
-      vls = new VolumetricLightScatteringPostProcess("vls", 1.0, camera, undefined, 100, Texture.BILINEAR_SAMPLINGMODE, scene.getEngine(), false);
-      if (vls.mesh && vls.mesh.material) {
-        (vls.mesh.material as any).unlit = true;
-      }
-      if (vls.mesh) {
-        vls.mesh.scaling = new Vector3(20, 20, 20); // Scale the light mesh
-        vls.mesh.position = dirLight.position;
-      }
-      
-      shadowGenerator = new ShadowGenerator(2048, dirLight);
-      shadowGenerator.useContactHardeningShadow = true;
-      shadowGenerator.filteringQuality = ShadowGenerator.QUALITY_HIGH;
-      shadowGenerator.contactHardeningLightSizeUVRatio = 0.05;
-
-      observer = scene.onNewMeshAddedObservable.add((mesh) => {
-        if (mesh.name !== "skyBox" && mesh.name !== "ground" && !mesh.name.includes("LOD") && mesh.getBoundingInfo().boundingSphere.radius > 1.0) {
-          shadowGenerator!.addShadowCaster(mesh, false);
-        }
-        if (mesh.name === "ground") {
-          mesh.receiveShadows = true;
-        }
-      });
-    }
-
-    return () => {
-      pipeline.dispose();
-      ssao.dispose();
-      envTexture.dispose();
-      if (vls) vls.dispose(camera);
-      if (shadowGenerator) shadowGenerator.dispose();
-      if (observer) scene.onNewMeshAddedObservable.remove(observer);
-      if (dirLight) dirLight.metadata = null;
-    };
-  }, [scene]);
-
-  useEffect(() => {
-    if (scene) {
-      playBGM(scene, currentZone || "exploration");
-    }
-  }, [scene, currentZone]);
-
-  return null;
-};
-
-const AestheticModApplier: React.FC = () => {
-  const scene = useScene();
-  const localMods = useToolStore(state => state.localMods);
-
-  useEffect(() => {
-    if (!scene) return;
-
-    Object.entries(localMods).forEach(([entityId, mod]) => {
-      const mesh = scene.meshes.find(m => m.name === `npc-${entityId}` || m.name === `obj-${entityId}` || m.name === `player-${entityId}`);
-      if (!mesh) return;
-
-      if (mod.scaleMod !== undefined) {
-        mesh.scaling = new Vector3(mod.scaleMod, mod.scaleMod, mod.scaleMod);
-      }
-
-      if (mod.colorTint) {
-        const color = Color3.FromHexString(mod.colorTint);
-        const meshesToTint = [mesh, ...mesh.getChildMeshes()];
-        meshesToTint.forEach(m => {
-          if (m.material) {
-            if ((m.material as any).albedoColor) {
-              (m.material as any).albedoColor = color;
-            } else if ((m.material as any).diffuseColor) {
-              (m.material as any).diffuseColor = color;
-            }
-          }
-        });
-      }
-
-      scene.particleSystems.forEach(ps => {
-        if (ps.emitter === mesh && ps.name !== `vfx-${mod.vfx}`) {
-          ps.dispose();
-        }
-      });
-
-      if (mod.vfx && mod.vfx !== 'None') {
-        const existingPs = scene.particleSystems.find(ps => ps.emitter === mesh && ps.name === `vfx-${mod.vfx}`);
-        if (!existingPs) {
-          const ps = new GPUParticleSystem(`vfx-${mod.vfx}`, { capacity: 2000 }, scene);
-          ps.emitter = mesh;
-          ps.particleTexture = new Texture("https://assets.babylonjs.com/textures/flare.png", scene);
-          
-          if (mod.vfx === 'flame') {
-            ps.color1 = new Color4(1, 0.5, 0, 1);
-            ps.color2 = new Color4(1, 0, 0, 1);
-            ps.colorDead = new Color4(0, 0, 0, 0);
-            ps.minSize = 0.1;
-            ps.maxSize = 0.5;
-            ps.minLifeTime = 0.3;
-            ps.maxLifeTime = 1.5;
-            ps.emitRate = 100;
-            ps.blendMode = ParticleSystem.BLENDMODE_ADD;
-            ps.gravity = new Vector3(0, 5, 0);
-            ps.direction1 = new Vector3(-1, 2, -1);
-            ps.direction2 = new Vector3(1, 2, 1);
-          } else if (mod.vfx === 'sparkle') {
-            ps.color1 = new Color4(1, 1, 0, 1);
-            ps.color2 = new Color4(1, 1, 1, 1);
-            ps.colorDead = new Color4(0, 0, 0, 0);
-            ps.minSize = 0.05;
-            ps.maxSize = 0.2;
-            ps.emitRate = 50;
-            ps.gravity = new Vector3(0, 0, 0);
-            ps.direction1 = new Vector3(-1, -1, -1);
-            ps.direction2 = new Vector3(1, 1, 1);
-          } else if (mod.vfx === 'aura') {
-            ps.color1 = new Color4(0, 0.8, 1, 0.5);
-            ps.color2 = new Color4(0, 0.2, 1, 0.5);
-            ps.colorDead = new Color4(0, 0, 0, 0);
-            ps.minSize = 0.5;
-            ps.maxSize = 1.5;
-            ps.emitRate = 20;
-            ps.gravity = new Vector3(0, 2, 0);
-            ps.direction1 = new Vector3(0, 1, 0);
-            ps.direction2 = new Vector3(0, 2, 0);
-          }
-          ps.start();
+    clone.traverse((child) => {
+      if ((child as THREE.Mesh).isMesh) {
+        child.castShadow = true;
+        child.receiveShadow = true;
+        if (colorTint) {
+          const mat = (child as THREE.Mesh).material as THREE.MeshStandardMaterial;
+          mat.color.set(colorTint);
         }
       }
     });
+  }, [clone, colorTint]);
 
-  }, [scene, localMods]);
+  const scale = scaling || (scaleToDimension ? [scaleToDimension, scaleToDimension, scaleToDimension] : [1, 1, 1]);
+  return <primitive object={clone} scale={scale} />;
+};
+
+const PhysicsBox: React.FC<{ position: [number, number, number], args: [number, number, number] }> = ({ position, args }) => {
+  useBox(() => ({ type: 'Static', args, position }));
+  return null;
+};
+
+// ------------------------------------------------------------------
+// SCENE SETUP & MODULAR ENVIRONMENT
+// ------------------------------------------------------------------
+
+const SceneSetup: React.FC = () => {
+  return (
+    <>
+      {/* High-End IBL Lighting */}
+      <Environment preset="dawn" background blur={0.8} />
+      
+      <ambientLight intensity={0.4} />
+      <directionalLight
+        castShadow
+        position={[30, 50, -30]}
+        intensity={2.0}
+        shadow-mapSize={[1024, 1024]}
+        shadow-camera-left={-50}
+        shadow-camera-right={50}
+        shadow-camera-top={50}
+        shadow-camera-bottom={-50}
+        shadow-bias={-0.0001}
+      />
+    </>
+  );
+};
+
+const AdvancedArena: React.FC = () => {
+  const floorUrl = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "modular_arena_floor_4x4.glb");
+  const wallUrl = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "modular_wall_2x2.glb");
+  const stairsUrl = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "arena_stairs.glb");
+  const jumpPadUrl = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "jump_pad.glb");
+  const acidPoolUrl = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "acid_pool.glb");
+  const roundPlatformUrl = getCdnAssetPath("/models/modular_environment_shop_quest_glb_pack_v1/glb_assets/", "mod_platform_round.glb");
+
+  const tileSize = 8;
+  const elements = [];
+
+  // Central 3x3 Floor
+  for (let x = -1; x <= 1; x++) {
+    for (let z = -1; z <= 1; z++) {
+      elements.push(
+        <group key={`floor-${x}-${z}`} position={[x * tileSize, 0, z * tileSize]}>
+          <OptimizedModel url={`${floorUrl.rootUrl}${floorUrl.sceneFilename}`} scaling={[1, 1, 1]} />
+        </group>
+      );
+    }
+  }
+
+  // Elevated North Platform (2x2)
+  for (let x = -1; x <= 0; x++) {
+    for (let z = -3; z <= -2; z++) {
+      elements.push(
+        <group key={`plat-n-${x}-${z}`} position={[x * tileSize + tileSize/2, 4, z * tileSize]}>
+          <OptimizedModel url={`${floorUrl.rootUrl}${floorUrl.sceneFilename}`} scaling={[1, 1, 1]} />
+        </group>
+      );
+    }
+  }
+
+  // Stairs connecting Central to North
+  elements.push(
+    <group key="stairs-north" position={[0, 0, -1.5 * tileSize]}>
+      <OptimizedModel url={`${stairsUrl.rootUrl}${stairsUrl.sceneFilename}`} scaling={[2, 2, 2]} />
+    </group>
+  );
+
+  // South Hazard Zone
+  elements.push(
+    <group key="acid-pool" position={[0, 0.1, 2 * tileSize]}>
+      <OptimizedModel url={`${acidPoolUrl.rootUrl}${acidPoolUrl.sceneFilename}`} scaling={[2, 1, 2]} />
+    </group>
+  );
+
+  // East Jump Pad
+  elements.push(
+    <group key="jump-pad" position={[2 * tileSize, 0.1, 0]}>
+      <OptimizedModel url={`${jumpPadUrl.rootUrl}${jumpPadUrl.sceneFilename}`} scaling={[1, 1, 1]} />
+    </group>
+  );
+
+    // West Round Platform
+    elements.push(
+      <group key="round_platform" position={[-tileSize * 2, 0.1, 0]}>
+        <OptimizedModel url={`${roundPlatformUrl.rootUrl}${roundPlatformUrl.sceneFilename}`} scaling={[1, 1, 1]} />
+      </group>
+    );
+
+    // Static Decor: Banners
+    const banner = getAssetByType('banner_faction');
+    elements.push(
+      <group key="banner1" position={[-tileSize, 2, tileSize]}>
+        <OptimizedModel url={`${banner.rootUrl}${banner.sceneFilename}`} scaling={[1, 1, 1]} />
+      </group>
+    );
+    elements.push(
+      <group key="banner2" position={[tileSize, 2, tileSize]}>
+        <OptimizedModel url={`${banner.rootUrl}${banner.sceneFilename}`} scaling={[1, 1, 1]} />
+      </group>
+    );
+
+  return (
+    <group>
+      {elements}
+      {/* Physics Colliders */}
+      {/* Main Floor */}
+      <PhysicsBox position={[0, -0.5, 0]} args={[tileSize * 3, 1, tileSize * 3]} />
+      {/* Elevated Platform */}
+      <PhysicsBox position={[0, 3.5, -2.5 * tileSize]} args={[tileSize * 2, 1, tileSize * 2]} />
+      {/* West Platform */}
+      <PhysicsBox position={[-2 * tileSize, 1.5, 0]} args={[tileSize, 1, tileSize]} />
+      {/* South Hazard floor to prevent falling through if the model doesn't have one */}
+      <PhysicsBox position={[0, -0.5, 2 * tileSize]} args={[tileSize, 1, tileSize]} />
+      {/* East Jump Pad floor */}
+      <PhysicsBox position={[2 * tileSize, -0.5, 0]} args={[tileSize, 1, tileSize]} />
+    </group>
+  );
+};
+
+// ------------------------------------------------------------------
+// PLAYERS & CAMERAS
+// ------------------------------------------------------------------
+
+const CameraRig: React.FC<{ target: THREE.Group | null }> = ({ target }) => {
+  const { camera } = useThree();
+
+  useFrame(() => {
+    if (target) {
+      // 3rd Person MMORPG Follow Camera
+      const offset = new THREE.Vector3(0, 8, 15);
+      const desiredPos = target.position.clone().add(offset);
+      camera.position.lerp(desiredPos, 0.1); // Smooth follow
+      
+      const lookAtPos = target.position.clone();
+      lookAtPos.y += 2; // Look slightly above feet
+      
+      const currentLookAt = new THREE.Vector3(0, 0, -1).applyQuaternion(camera.quaternion).add(camera.position);
+      currentLookAt.lerp(lookAtPos, 0.1);
+      camera.lookAt(currentLookAt);
+    }
+  });
 
   return null;
+};
+
+const WeaponSwingHitbox: React.FC<{
+  position: [number, number, number];
+  rotation: [number, number, number];
+  onHit?: (targetId: string) => void;
+}> = ({ position, rotation, onHit }) => {
+  const hitTargets = useRef<Set<string>>(new Set());
+
+  useBox(() => ({
+    type: 'Static', // Doesn't move physics engine, just detects
+    isTrigger: true,
+    args: [3, 2, 3], // Large hitbox for swing
+    position,
+    rotation,
+    onCollide: (e) => {
+      const targetId = e.body.userData?.id;
+      if (e.body.userData?.type === 'enemy' && targetId) {
+        if (!hitTargets.current.has(targetId)) {
+          hitTargets.current.add(targetId);
+          if (onHit) onHit(targetId);
+        }
+      }
+    }
+  }));
+  
+  return null; // Invisible trigger volume
+};
+
+const ProjectileHitbox: React.FC<{
+  id: number;
+  startPosition: [number, number, number];
+  direction: [number, number, number];
+  onHit?: (targetId: string, projectileId: number) => void;
+}> = ({ id, startPosition, direction, onHit }) => {
+  const [ref] = useSphere(() => ({
+    mass: 1,
+    type: 'Dynamic',
+    isTrigger: true,
+    args: [0.5],
+    position: startPosition,
+    velocity: [direction[0] * 40, direction[1] * 40, direction[2] * 40],
+    onCollide: (e) => {
+      const targetId = e.body.userData?.id;
+      if (e.body.userData?.type === 'enemy' && targetId) {
+        if (onHit) onHit(targetId, id);
+      }
+    }
+  }));
+
+  return (
+    <mesh ref={ref as any}>
+      <sphereGeometry args={[0.5]} />
+      <meshStandardMaterial color="#00f0ff" emissive="#00f0ff" emissiveIntensity={2} />
+    </mesh>
+  );
+};
+
+const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, z: number) => void }> = ({ player, sendMove }) => {
+  const ref = useRef<THREE.Group>(null);
+  const targetPos = useMemo(() => new THREE.Vector3(player.x, player.y, player.z), [player.x, player.y, player.z]);
+  
+  // Use a ref for the camera rig
+  const keys = useRef<{ [key: string]: boolean }>({});
+  const lastSend = useRef<number>(0);
+  
+  const [swings, setSwings] = useState<{id: number, pos: [number,number,number], rot: [number,number,number]}[]>([]);
+  const swingIdRef = useRef(0);
+  
+  const [projectiles, setProjectiles] = useState<{id: number, pos: [number,number,number], dir: [number,number,number]}[]>([]);
+  const projIdRef = useRef(0);
+  
+  const sendAttack = useMultiplayerStore(state => state.sendAttack);
+  const sendGatherNode = useMultiplayerStore(state => state.sendGatherNode);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => { keys.current[e.key.toLowerCase()] = true; };
+    const handleKeyUp = (e: KeyboardEvent) => { keys.current[e.key.toLowerCase()] = false; };
+    const handleMouseDown = (e: MouseEvent) => {
+      // Prevent attacking if clicking UI
+      if ((e.target as HTMLElement).tagName === 'BUTTON' || (e.target as HTMLElement).tagName === 'INPUT') return;
+      if (e.button === 0 && ref.current) {
+        const id = swingIdRef.current++;
+        const pPos = ref.current.position;
+        const angle = ref.current.rotation.y;
+        const sPos: [number,number,number] = [
+          pPos.x + Math.sin(angle) * 2.0,
+          pPos.y + 1,
+          pPos.z + Math.cos(angle) * 2.0
+        ];
+        const sRot: [number,number,number] = [0, angle, 0];
+        
+        setSwings(prev => [...prev, { id, pos: sPos, rot: sRot }]);
+        
+        setTimeout(() => {
+          setSwings(prev => prev.filter(s => s.id !== id));
+        }, 200);
+      } else if (e.button === 2 && ref.current) {
+        // Right click - Fire Projectile
+        e.preventDefault();
+        const id = projIdRef.current++;
+        const pPos = ref.current.position;
+        const angle = ref.current.rotation.y;
+        
+        const sPos: [number,number,number] = [
+          pPos.x + Math.sin(angle) * 1.5,
+          pPos.y + 1,
+          pPos.z + Math.cos(angle) * 1.5
+        ];
+        const dir: [number,number,number] = [Math.sin(angle), 0, Math.cos(angle)];
+        
+        setProjectiles(prev => [...prev, { id, pos: sPos, dir }]);
+        
+        setTimeout(() => {
+          setProjectiles(prev => prev.filter(p => p.id !== id));
+        }, 2000);
+      }
+    };
+    
+    const handleContextMenu = (e: MouseEvent) => e.preventDefault();
+    
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keyup', handleKeyUp);
+    window.addEventListener('mousedown', handleMouseDown);
+    window.addEventListener('contextmenu', handleContextMenu);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('keyup', handleKeyUp);
+      window.removeEventListener('mousedown', handleMouseDown);
+      window.removeEventListener('contextmenu', handleContextMenu);
+    };
+  }, []);
+
+  useFrame((_state, delta) => {
+    if (!ref.current) return;
+
+    let movedLocally = false;
+    const speed = 15;
+    const pos = ref.current.position.clone();
+
+    if (keys.current['w']) { pos.z -= speed * delta; movedLocally = true; }
+    if (keys.current['s']) { pos.z += speed * delta; movedLocally = true; }
+    if (keys.current['a']) { pos.x -= speed * delta; movedLocally = true; }
+    if (keys.current['d']) { pos.x += speed * delta; movedLocally = true; }
+
+    if (movedLocally) {
+      ref.current.position.copy(pos);
+      
+      // Face movement direction
+      const angle = Math.atan2(pos.x - ref.current.position.x, pos.z - ref.current.position.z);
+      if (keys.current['a'] || keys.current['d']) {
+        ref.current.rotation.y = angle;
+      }
+      
+      // Network sync (Rate limited to ~10 ticks per sec)
+      const now = Date.now();
+      if (now - lastSend.current > 100 && sendMove) {
+        sendMove(pos.x, pos.y, pos.z);
+        lastSend.current = now;
+      }
+    } else {
+      // Server reconciliation lerp if not actively moving
+      ref.current.position.lerp(targetPos, 5 * delta);
+    }
+  });
+
+  const asset = getCdnAssetPath("/models/sector_characters_glb_pack_v4/", player.modelFile || "spark.glb");
+
+  return (
+    <>
+      <group ref={ref}>
+        <OptimizedModel url={`${asset.rootUrl}${asset.sceneFilename}`} scaleToDimension={2.5} />
+      </group>
+      <CameraRig target={ref.current} />
+      {swings.map(s => (
+        <WeaponSwingHitbox key={s.id} position={s.pos} rotation={s.rot} onHit={sendAttack} />
+      ))}
+      {projectiles.map(p => (
+        <ProjectileHitbox 
+          key={p.id} 
+          id={p.id} 
+          startPosition={p.pos} 
+          direction={p.dir} 
+          onHit={(targetId, pId) => {
+            sendAttack(targetId);
+            setProjectiles(prev => prev.filter(proj => proj.id !== pId)); // Destroy on hit
+          }} 
+        />
+      ))}
+    </>
+  );
 };
 
 const RemotePlayer: React.FC<{ player: Player }> = ({ player }) => {
-  const nodeRef = useRef<any>(null);
-  const targetPos = useMemo(() => new Vector3(player.x, player.y, player.z), [player.x, player.y, player.z]);
-  const initialPos = useMemo(() => targetPos.clone(), []);
-
-  const scene = useScene();
-  const localMods = useToolStore(state => state.localMods);
-  const mod = localMods[player.id];
-
-  const baseScale = 2.5;
-  const scaleToDimension = mod?.scaleMod ? baseScale * mod.scaleMod : baseScale;
-
-  useBeforeRender((scene) => {
-    if (nodeRef.current) {
-      const currentPos = nodeRef.current.position;
-      const deltaTime = scene.getEngine().getDeltaTime() / 1000;
-      Vector3.LerpToRef(currentPos, targetPos, 10 * deltaTime, currentPos);
-    }
-  });
-
-  useEffect(() => {
-    if (!scene || !nodeRef.current || !mod?.vfx || mod.vfx === 'None') return;
-
-    if (mod.vfx === 'aura') return; // Auras are handled via mesh in render
-
-    const particleSystem = new GPUParticleSystem("particles", { capacity: 2000 }, scene);
-    particleSystem.particleTexture = new Texture("https://assets.babylonjs.com/textures/flare.png", scene);
-    particleSystem.emitter = nodeRef.current; 
-    
-    if (mod.vfx === 'flame') {
-      particleSystem.color1 = new Color4(1, 0.5, 0, 1.0);
-      particleSystem.color2 = new Color4(1, 0.2, 0, 1.0);
-      particleSystem.colorDead = new Color4(0, 0, 0, 0.0);
-      particleSystem.gravity = new Vector3(0, 5, 0);
-      particleSystem.direction1 = new Vector3(-1, 8, 1);
-      particleSystem.direction2 = new Vector3(1, 8, -1);
-    } else if (mod.vfx === 'sparkle') {
-      particleSystem.color1 = new Color4(1, 1, 0, 1.0);
-      particleSystem.color2 = new Color4(1, 0.8, 0, 1.0);
-      particleSystem.colorDead = new Color4(0, 0, 0, 0.0);
-      particleSystem.gravity = new Vector3(0, 2, 0);
-    }
-
-    particleSystem.minSize = 0.1 * scaleToDimension;
-    particleSystem.maxSize = 0.5 * scaleToDimension;
-    particleSystem.minLifeTime = 0.3;
-    particleSystem.maxLifeTime = 1.5;
-    particleSystem.emitRate = 50;
-    
-    particleSystem.start();
-
-    return () => {
-      particleSystem.dispose();
-    };
-  }, [scene, mod?.vfx, scaleToDimension]);
-
-  return (
-    <transformNode ref={nodeRef} name={`player-${player.id}`} position={initialPos}>
-      {mod?.vfx === 'aura' && (
-        <sphere name={`aura-${player.id}`} diameter={scaleToDimension * 2} position={new Vector3(0, scaleToDimension / 2, 0)}>
-          <standardMaterial name={`aura-mat-${player.id}`} alpha={0.2} emissiveColor={mod?.colorTint ? Color3.FromHexString(mod.colorTint) : new Color3(1, 1, 1)} />
-        </sphere>
-      )}
-      <OptimizedModel 
-        name={`model-player-${player.id}`} 
-        {...getCdnAssetPath("/models/sector_characters_glb_pack_v4/", player.modelFile || "spark.glb")}
-        scaleToDimension={scaleToDimension}
-        onModelLoaded={(model) => {
-          if (mod?.colorTint && model.meshes) {
-            const tint = Color3.FromHexString(mod.colorTint);
-            model.meshes.forEach(mesh => {
-              if (mesh.material) {
-                // @ts-ignore
-                if (mesh.material.albedoColor) mesh.material.albedoColor = tint;
-                // @ts-ignore
-                else if (mesh.material.diffuseColor) mesh.material.diffuseColor = tint;
-              }
-            });
-          }
-        }}
-      />
-    </transformNode>
-  );
-};
-
-const RemoteNpc: React.FC<{ npc: Player }> = ({ npc }) => {
-  const nodeRef = useRef<any>(null);
-  const targetPos = useMemo(() => new Vector3(npc.x, npc.y, npc.z), [npc.x, npc.y, npc.z]);
-  const initialPos = useMemo(() => targetPos.clone(), []);
+  const ref = useRef<THREE.Group>(null);
+  const targetPos = useMemo(() => new THREE.Vector3(player.x, player.y, player.z), [player.x, player.y, player.z]);
   
-  const scene = useScene();
-  const localMods = useToolStore(state => state.localMods);
-  const mod = localMods[npc.id];
+  useBox(() => ({ 
+    mass: 1, 
+    type: 'Kinematic', 
+    position: [player.x, player.y, player.z], 
+    args: [1, 2, 1],
+    userData: { id: player.id, type: 'enemy' }
+  }), ref);
 
-  const baseScale = 3;
-  const scaleToDimension = mod?.scaleMod ? baseScale * mod.scaleMod : baseScale;
-
-  useBeforeRender((scene) => {
-    if (nodeRef.current) {
-      const currentPos = nodeRef.current.position;
-      const deltaTime = scene.getEngine().getDeltaTime() / 1000;
-      Vector3.LerpToRef(currentPos, targetPos, 10 * deltaTime, currentPos);
-
-      const camera = scene.activeCamera;
-      if (camera) {
-        const dist = Vector3.DistanceSquared(currentPos, camera.globalPosition);
-        nodeRef.current.isEnabled(dist < 40000); // Cull if further than 200 units
-      }
+  useFrame((_state, delta) => {
+    if (ref.current) {
+      ref.current.position.lerp(targetPos, 10 * delta);
     }
   });
 
-  useEffect(() => {
-    if (!scene || !nodeRef.current || !mod?.vfx || mod.vfx === 'None') return;
-
-    const particleSystem = new GPUParticleSystem("particles", { capacity: 2000 }, scene);
-    particleSystem.particleTexture = new Texture("https://assets.babylonjs.com/textures/flare.png", scene);
-    particleSystem.emitter = nodeRef.current; 
-    
-    if (mod?.vfx === 'flame') {
-      particleSystem.color1 = new Color4(1, 0.5, 0, 1.0);
-      particleSystem.color2 = new Color4(1, 0.2, 0, 1.0);
-      particleSystem.colorDead = new Color4(0, 0, 0, 0.0);
-      particleSystem.gravity = new Vector3(0, 5, 0);
-      particleSystem.direction1 = new Vector3(-1, 8, 1);
-      particleSystem.direction2 = new Vector3(1, 8, -1);
-    } else if (mod?.vfx === 'sparkle') {
-      particleSystem.color1 = new Color4(1, 1, 0, 1.0);
-      particleSystem.color2 = new Color4(1, 0.8, 0, 1.0);
-      particleSystem.colorDead = new Color4(0, 0, 0, 0.0);
-      particleSystem.gravity = new Vector3(0, 2, 0);
-    } else if ((npc as any).specialAura === 'divine_frost') {
-      particleSystem.color1 = new Color4(0.8, 0.9, 1.0, 1.0);
-      particleSystem.color2 = new Color4(0.4, 0.8, 1.0, 1.0);
-      particleSystem.colorDead = new Color4(0, 0, 0, 0.0);
-      particleSystem.gravity = new Vector3(0, -2, 0);
-      particleSystem.direction1 = new Vector3(-2, 2, 2);
-      particleSystem.direction2 = new Vector3(2, 2, -2);
-      particleSystem.emitRate = 200;
-    }
-
-    particleSystem.minSize = 0.1 * scaleToDimension;
-    particleSystem.maxSize = 0.5 * scaleToDimension;
-    particleSystem.minLifeTime = 0.3;
-    particleSystem.maxLifeTime = 1.5;
-    
-    if (!mod?.vfx && (npc as any).specialAura !== 'divine_frost') {
-      particleSystem.dispose();
-      return;
-    }
-
-    particleSystem.start();
-
-    return () => {
-      particleSystem.dispose();
-    };
-  }, [scene, mod?.vfx, (npc as any).specialAura, scaleToDimension]);
-
+  const asset = getCdnAssetPath("/models/sector_characters_glb_pack_v4/", player.modelFile || "spark.glb");
   return (
-    <transformNode ref={nodeRef} name={`npc-${npc.id}`} position={initialPos}>
-      {(npc as any).specialAura === 'divine_frost' && (
-        <plane name={`portrait-${npc.id}`} position={new Vector3(0, 4.5, 0)} width={3} height={3} billboardMode={7}>
-          <standardMaterial name={`mat-portrait-${npc.id}`} disableLighting={true}>
-            <texture url="/torinn.png" assignTo="emissiveTexture" />
-            <texture url="/torinn.png" assignTo="diffuseTexture" hasAlpha={true} />
-          </standardMaterial>
-        </plane>
-      )}
-      <OptimizedModel 
-        name={`model-npc-${npc.id}`} 
-        {...getCdnAssetPath("/models/sector_characters_glb_pack_v4/", npc.modelFile || "elder_kaelen.glb")}
-        scaleToDimension={scaleToDimension}
-        onModelLoaded={(model) => {
-          if (model.animationGroups && model.animationGroups.length > 0) {
-            // Play the first animation (usually Idle or Walk) on loop
-            model.animationGroups[0].play(true);
-          }
-          if (mod?.colorTint && model.meshes) {
-            const tint = Color3.FromHexString(mod.colorTint);
-            model.meshes.forEach(mesh => {
-              if (mesh.material) {
-                // @ts-ignore
-                if (mesh.material.albedoColor) mesh.material.albedoColor = tint;
-                // @ts-ignore
-                else if (mesh.material.diffuseColor) mesh.material.diffuseColor = tint;
-              }
-            });
-          }
-        }}
-      />
-    </transformNode>
+    <group ref={ref}>
+      <OptimizedModel url={`${asset.rootUrl}${asset.sceneFilename}`} scaleToDimension={2.5} />
+    </group>
   );
 };
 
-const RemoteBoss: React.FC<{ boss: any }> = ({ boss }) => {
-  const nodeRef = useRef<any>(null);
-  const targetPos = useMemo(() => new Vector3(boss.x, boss.y, boss.z), [boss.x, boss.y, boss.z]);
+const NPC: React.FC<{ npc: any, setInteractingNpcId?: (id: string | null) => void }> = ({ npc, setInteractingNpcId }) => {
+  const ref = useRef<THREE.Group>(null);
+  const [hovered, setHovered] = useState(false);
+  const [inRange, setInRange] = useState(false);
   
-  const scene = useScene();
-  const localMods = useToolStore(state => state.localMods);
-  const mod = localMods[boss.id];
+  useBox(() => ({
+    mass: 1,
+    type: 'Kinematic',
+    position: [npc.x, npc.y, npc.z],
+    args: [1, 2, 1],
+    userData: { id: npc.id, type: 'enemy' }
+  }), ref);
 
-  const baseScale = 10;
-  const scaleToDimension = mod?.scaleMod ? baseScale * mod.scaleMod : baseScale;
-
-  useBeforeRender((scene) => {
-    if (nodeRef.current) {
-      const currentPos = nodeRef.current.position;
-      const deltaTime = scene.getEngine().getDeltaTime() / 1000;
-      Vector3.LerpToRef(currentPos, targetPos, 5 * deltaTime, currentPos);
+  useFrame(() => {
+    const state = useMultiplayerStore.getState();
+    const local = state.players.find(p => p.id === state.sessionId);
+    if (local && ref.current) {
+      const dist = ref.current.position.distanceTo(new THREE.Vector3(local.x, local.y, local.z));
+      if (dist < 10 && !inRange) setInRange(true);
+      if (dist >= 10 && inRange) setInRange(false);
     }
   });
 
-  useEffect(() => {
-    if (!scene || !nodeRef.current || !mod?.vfx || mod.vfx === 'None') return;
-
-    if (mod.vfx === 'aura') return; 
-
-    const particleSystem = new GPUParticleSystem("particles", { capacity: 3000 }, scene);
-    particleSystem.particleTexture = new Texture("https://assets.babylonjs.com/textures/flare.png", scene);
-    particleSystem.emitter = nodeRef.current; 
-    
-    if (mod.vfx === 'flame') {
-      particleSystem.color1 = new Color4(1, 0.5, 0, 1.0);
-      particleSystem.color2 = new Color4(1, 0.2, 0, 1.0);
-      particleSystem.colorDead = new Color4(0, 0, 0, 0.0);
-      particleSystem.gravity = new Vector3(0, 15, 0);
-      particleSystem.direction1 = new Vector3(-2, 12, 2);
-      particleSystem.direction2 = new Vector3(2, 12, -2);
-    } else if (mod.vfx === 'sparkle') {
-      particleSystem.color1 = new Color4(1, 1, 0, 1.0);
-      particleSystem.color2 = new Color4(1, 0.8, 0, 1.0);
-      particleSystem.colorDead = new Color4(0, 0, 0, 0.0);
-      particleSystem.gravity = new Vector3(0, 5, 0);
+  const onClick = (e: any) => {
+    e.stopPropagation();
+    if (inRange && setInteractingNpcId) {
+      setInteractingNpcId(npc.id || npc.name || 'Elder');
     }
+  };
 
-    particleSystem.minSize = 0.5 * scaleToDimension;
-    particleSystem.maxSize = 2.0 * scaleToDimension;
-    particleSystem.minLifeTime = 0.5;
-    particleSystem.maxLifeTime = 2.0;
-    particleSystem.emitRate = 200;
-    
-    particleSystem.start();
-
-    return () => {
-      particleSystem.dispose();
-    };
-  }, [scene, mod?.vfx, scaleToDimension]);
-
+  const asset = getCdnAssetPath("/models/sector_characters_glb_pack_v4/", npc.modelFile || "bot.glb");
   return (
-    <transformNode ref={nodeRef} name={`node-boss_${boss.id}`} position={targetPos}>
-      {mod?.vfx === 'aura' && (
-        <sphere name={`aura-${boss.id}`} diameter={scaleToDimension * 2.5} position={new Vector3(0, scaleToDimension / 2, 0)}>
-          <standardMaterial name={`aura-mat-${boss.id}`} alpha={0.15} emissiveColor={mod?.colorTint ? Color3.FromHexString(mod.colorTint) : new Color3(1, 1, 1)} />
-        </sphere>
+    <group 
+      ref={ref} 
+      position={[npc.x, npc.y, npc.z]} 
+      onClick={onClick}
+      onPointerOver={(e) => { e.stopPropagation(); setHovered(true); }}
+      onPointerOut={(e) => { setHovered(false); }}
+    >
+      <OptimizedModel url={`${asset.rootUrl}${asset.sceneFilename}`} scaleToDimension={2.5} />
+      {inRange && (
+        <Html position={[0, 4, 0]} center zIndexRange={[100, 0]}>
+          <div 
+            style={{ 
+              background: 'rgba(0,0,0,0.8)', 
+              color: 'white', 
+              padding: '4px 8px', 
+              borderRadius: '4px', 
+              border: '1px solid #f59e0b',
+              pointerEvents: 'none',
+              whiteSpace: 'nowrap',
+              transform: hovered ? 'scale(1.1)' : 'scale(1)',
+              transition: 'transform 0.2s',
+              fontFamily: 'sans-serif',
+              fontSize: '12px'
+            }}
+          >
+            <span style={{ color: '#f59e0b', fontWeight: 'bold', marginRight: '4px' }}>[Click]</span>
+            Interact {npc.name ? `with ${npc.name}` : ''}
+          </div>
+        </Html>
       )}
-      <OptimizedModel
-        name={`boss-model-${boss.id}`}
-        {...getCdnAssetPath("/models/free_flow_creatures_and_bosses_glb_pack_v3/", boss.modelFile || "boss_01_ascendant_colossus.glb")}
-        scaling={new Vector3(scaleToDimension, scaleToDimension, scaleToDimension)}
-        onModelLoaded={(model) => {
-          if (mod?.colorTint && model.meshes) {
-            const tint = Color3.FromHexString(mod.colorTint);
-            model.meshes.forEach(mesh => {
-              if (mesh.material) {
-                // @ts-ignore
-                if (mesh.material.albedoColor) mesh.material.albedoColor = tint;
-                // @ts-ignore
-                else if (mesh.material.diffuseColor) mesh.material.diffuseColor = tint;
-              }
-            });
-          }
-        }}
-      />
-      {boss.shieldActive && (
-        <sphere name={`shield-${boss.id}`} diameter={scaleToDimension * 1.5} position={new Vector3(0, scaleToDimension / 2, 0)}>
-          <standardMaterial name={`shield-mat-${boss.id}`} alpha={0.3} diffuseColor={new Color3(0, 1, 1)} emissiveColor={new Color3(0, 0.5, 0.5)} />
-        </sphere>
-      )}
-    </transformNode>
+    </group>
   );
 };
 
-const InstancedWorldObjects: React.FC<{ objects: WorldObject[] }> = ({ objects }) => {
-  const scene = useScene();
-  const localMods = useToolStore(state => state.localMods);
-
-  useEffect(() => {
-    if (!scene) return;
-
-    let isMounted = true;
-    const treeAssets = getCdnAssetPath("/models/free_flow_creatures_and_bosses_glb_pack_v3/", "01_gnarl_maw.glb");
-    const rockAssets = getCdnAssetPath("/models/free_flow_creatures_and_bosses_glb_pack_v3/", "02_grid_rusher.glb");
-    
-    const activeParticleSystems: any[] = [];
-
-    const applyThinInstances = (container: AssetContainer, items: WorldObject[], isTree: boolean) => {
-      const instance = container.instantiateModelsToScene(name => `base-${isTree ? 'tree' : 'rock'}-${name}`, false);
-      const root = instance.rootNodes[0];
-      (root as any).position = new Vector3(0, -1000, 0); 
-      
-      const meshes = instance.rootNodes.flatMap(n => {
-        const m = n.getChildMeshes(false);
-        if (n.getClassName() === "Mesh") m.push(n as any);
-        return m;
-      });
-
-      const matrices = new Float32Array(items.length * 16);
-      
-      items.forEach((obj, i) => {
-        const mod = localMods[obj.id];
-        let baseScale = 1;
-        let rotY = 0;
-
-        if (isTree) {
-          let hash = 0;
-          for (let j = 0; j < obj.id.length; j++) hash = Math.imul(31, hash) + obj.id.charCodeAt(j) | 0;
-          const rand = Math.abs(hash) / 2147483648;
-          baseScale = 1 + rand * 0.5;
-          rotY = rand * Math.PI * 2;
-        }
-
-        const scale = mod?.scaleMod ? baseScale * mod.scaleMod : baseScale;
-        const finalScale = isTree ? scale * 2 : scale * 1.5;
-
-        const matrix = Matrix.Compose(
-          new Vector3(finalScale, finalScale, finalScale),
-          Quaternion.RotationAxis(Axis.Y, rotY),
-          new Vector3(obj.x, obj.y, obj.z)
-        );
-        matrix.copyToArray(matrices, i * 16);
-
-        if (mod?.vfx && mod.vfx !== 'None') {
-          const ps = new GPUParticleSystem("particles", { capacity: 500 }, scene);
-          ps.particleTexture = new Texture("https://assets.babylonjs.com/textures/flare.png", scene);
-          ps.emitter = new Vector3(obj.x, obj.y, obj.z); 
-          
-          if (mod.vfx === 'flame') {
-            ps.color1 = new Color4(1, 0.5, 0, 1.0);
-            ps.color2 = new Color4(1, 0.2, 0, 1.0);
-            ps.colorDead = new Color4(0, 0, 0, 0.0);
-            ps.gravity = new Vector3(0, 5, 0);
-          } else if (mod.vfx === 'sparkle') {
-            ps.color1 = new Color4(1, 1, 0, 1.0);
-            ps.color2 = new Color4(1, 0.8, 0, 1.0);
-            ps.colorDead = new Color4(0, 0, 0, 0.0);
-            ps.gravity = new Vector3(0, 2, 0);
-          }
-          ps.minSize = 0.2 * scale;
-          ps.maxSize = 0.8 * scale;
-          ps.minLifeTime = 0.3;
-          ps.maxLifeTime = 1.5;
-          ps.emitRate = 50;
-          ps.start();
-          activeParticleSystems.push(ps);
-        }
-      });
-
-      meshes.forEach(mesh => {
-        if (mesh.getTotalVertices() > 0) {
-          (mesh as any).thinInstanceSetBuffer("matrix", matrices, 16, false);
-          mesh.doNotSyncBoundingInfo = true;
-          mesh.alwaysSelectAsActiveMesh = true;
-        }
-      });
-      
-      return instance;
-    };
-
-    const trees = objects.filter(o => o.type === 'tree' || o.type === 'Asset 1');
-    const rocks = objects.filter(o => o.type !== 'tree' && o.type !== 'Asset 1');
-    
-    let treeInstance: any = null;
-    let rockInstance: any = null;
-
-    if (trees.length > 0) {
-      loadAssetContainer(scene, treeAssets.rootUrl, treeAssets.sceneFilename).then(container => {
-        if (isMounted) treeInstance = applyThinInstances(container, trees, true);
-      });
-    }
-
-    if (rocks.length > 0) {
-      loadAssetContainer(scene, rockAssets.rootUrl, rockAssets.sceneFilename).then(container => {
-        if (isMounted) rockInstance = applyThinInstances(container, rocks, false);
-      });
-    }
-
-    return () => {
-      isMounted = false;
-      if (treeInstance) treeInstance.rootNodes.forEach((n: any) => n.dispose());
-      if (rockInstance) rockInstance.rootNodes.forEach((n: any) => n.dispose());
-      activeParticleSystems.forEach(ps => ps.dispose());
-    };
-  }, [scene, objects, localMods]);
-
-  return null;
-};
-
-const LocalPlayer: React.FC<{ targetPos: Vector3, isAttacking: boolean, modelFile?: string, worldTime: 'day' | 'night' }> = ({ targetPos, isAttacking, modelFile, worldTime }) => {
-  const nodeRef = useRef<any>(null);
-  const initialPos = useMemo(() => new Vector3(targetPos.x, targetPos.y - 1, targetPos.z), []);
-  const actualTarget = useMemo(() => new Vector3(targetPos.x, targetPos.y - 1, targetPos.z), [targetPos.x, targetPos.y, targetPos.z]);
-  
-  useBeforeRender((scene) => {
-    if (nodeRef.current) {
-      const currentPos = nodeRef.current.position;
-      const deltaTime = scene.getEngine().getDeltaTime() / 1000;
-      const speed = isAttacking ? 25 : 10;
-      Vector3.LerpToRef(currentPos, actualTarget, speed * deltaTime, currentPos);
-    }
-  });
-
-  return (
-    <transformNode ref={nodeRef} name="local-player" position={initialPos}>
-      {worldTime === 'night' && (
-        <pointLight name="lantern" intensity={2.0} position={new Vector3(0, 3, 0)} diffuse={new Color3(1, 0.8, 0.5)} range={30} />
-      )}
-      <OptimizedModel 
-        name="model-local-player" 
-        {...getCdnAssetPath("/models/sector_characters_glb_pack_v4/", modelFile || "spark.glb")}
-        scaleToDimension={2.5}
-        onModelLoaded={(model) => {
-          if (model.animationGroups && model.animationGroups.length > 0) {
-            model.animationGroups[0].play(true);
-          }
-        }}
-      />
-    </transformNode>
-  );
-};
+// ------------------------------------------------------------------
+// MAIN RENDERER
+// ------------------------------------------------------------------
 
 
 
@@ -764,289 +525,53 @@ const ResourceNodeRender: React.FC<{ node: any }> = ({ node }) => {
 };
 
 
-export const WorldRenderer: React.FC<WorldRendererProps> = ({ 
-  setInteractingNpcId
-}) => {
+export const WorldRenderer: React.FC<WorldRendererProps> = ({ setInteractingNpcId }) => {
   const localPlayerId = useMultiplayerStore(state => state.sessionId);
   const players = useMultiplayerStore(state => state.players);
+  const sendMove = useMultiplayerStore(state => state.sendMove);
   const worldNpcs = useMultiplayerStore(state => state.worldNpcs);
   const bosses = useMultiplayerStore(state => state.bosses);
   const worldObjects = useMultiplayerStore(state => state.worldObjects);
-  const worldTime = useMultiplayerStore(state => state.worldTime);
-  const resourceNodes = useMultiplayerStore(state => state.resourceNodes);
 
-  const sendMove = useMultiplayerStore(state => state.sendMove);
-  const sendTerraform = useMultiplayerStore(state => state.sendTerraform);
-  const sendPlaceObject = useMultiplayerStore(state => state.sendPlaceObject);
-  const sendAttack = useMultiplayerStore(state => state.sendAttack);
-  const sendGatherNode = useMultiplayerStore(state => state.sendGatherNode);
-  // @ts-ignore
-  if (sendGatherNode) {}
-
-  const [localPlayerPos, setLocalPlayerPos] = useState<Vector3>(new Vector3(0, 1, 0));
-  const [isAttacking, setIsAttacking] = useState<boolean>(false);
-  
   const localPlayer = players.find(p => p.id === localPlayerId);
   const remotePlayers = players.filter(p => p.id !== localPlayerId);
-  const currentZone = localPlayer?.zone || "urban_core";
-
-  useEffect(() => {
-    if (localPlayer) {
-      setLocalPlayerPos(new Vector3(localPlayer.x, localPlayer.y || 1, localPlayer.z));
-    }
-  }, [localPlayer?.x, localPlayer?.y, localPlayer?.z]);
-
-  const playersRef = useRef(players);
-  const worldNpcsRef = useRef(worldNpcs);
-  const bossesRef = useRef(bosses);
-  
-  useEffect(() => { playersRef.current = players; }, [players]);
-  useEffect(() => { worldNpcsRef.current = worldNpcs; }, [worldNpcs]);
-  useEffect(() => { bossesRef.current = bosses; }, [bosses]);
-
-  useEffect(() => {
-    const handleRemoteAttack = (e: any) => {
-      const data = e.detail;
-      const scene = groundRef.current?.getScene();
-      if (scene) {
-        let target = playersRef.current.find(p => p.id === data.targetId) || worldNpcsRef.current.find(n => n.id === data.targetId) || bossesRef.current.find(b => b.id === data.targetId);
-        if (target) {
-          playHitSound(scene, new Vector3(target.x, target.y + 1, target.z));
-        }
-      }
-    };
-    window.addEventListener('remote_attack', handleRemoteAttack);
-    return () => window.removeEventListener('remote_attack', handleRemoteAttack);
-  }, []);
-  
-  const activeTool = useToolStore((state) => state.activeTool);
-  const brushSize = useToolStore((state) => state.brushSize);
-  const selectedAssetId = useToolStore((state) => state.selectedAssetId);
-
-  const biomeColors = useMemo(() => {
-    switch (currentZone) {
-      case 'eastern_wilds': return { sky: new Color3(0.02, 0.05, 0.02), ground: new Color3(0.1, 0.6, 0.2) };
-      case 'geothermal_abyss': return { sky: new Color3(0.1, 0.01, 0.01), ground: new Color3(0.6, 0.1, 0.1) };
-      case 'cosmic_layer': return { sky: new Color3(0, 0, 0), ground: new Color3(0.3, 0.3, 0.35) };
-      default: return { sky: new Color3(0.02, 0.02, 0.05), ground: new Color3(0.0, 0.5, 1.0) };
-    }
-  }, [currentZone]);
-  const setSelectedEntityId = useToolStore((state) => state.setSelectedEntityId);
-  
-  const groundRef = useRef<GroundMesh>(null);
-
-  const handlePointerDown = (_evt: any, pickInfo: any) => {
-    if (pickInfo && pickInfo.hit && pickInfo.pickedMesh) {
-      if (activeTool === 'mod') {
-        let currentNode = pickInfo.pickedMesh;
-        let foundId: string | null = null;
-        while (currentNode) {
-          if (currentNode.name && currentNode.name.startsWith('npc-')) {
-            foundId = currentNode.name.replace('npc-', '');
-            break;
-          }
-          if (currentNode.name && currentNode.name.startsWith('obj-')) {
-            foundId = currentNode.name.replace('obj-', '');
-            break;
-          }
-          if (currentNode.name && currentNode.name.startsWith('player-')) {
-            foundId = currentNode.name.replace('player-', '');
-            break;
-          }
-          if (currentNode.name && currentNode.name.startsWith('node-boss_')) {
-            foundId = currentNode.name.replace('node-', '');
-            break;
-          }
-          currentNode = currentNode.parent;
-        }
-        
-        if (foundId) {
-          setSelectedEntityId(foundId);
-        } else if (pickInfo.pickedMesh.name === "world-grid") {
-          setSelectedEntityId(null);
-        }
-        return;
-      }
-
-      if (activeTool === 'select') {
-        let currentNode = pickInfo.pickedMesh;
-        let foundNpcId: string | null = null;
-        while (currentNode) {
-          if (currentNode.name && currentNode.name.startsWith('npc-')) {
-            foundNpcId = currentNode.name.replace('npc-', '');
-            break;
-          }
-          currentNode = currentNode.parent;
-        }
-        
-        if (foundNpcId) {
-          if (setInteractingNpcId) setInteractingNpcId(foundNpcId);
-          return;
-        }
-      }
-
-      if (pickInfo.pickedMesh.name === "world-grid") {
-        const point = pickInfo.pickedPoint;
-        if (point) {
-          if (activeTool === 'select') {
-            if (setInteractingNpcId) setInteractingNpcId(null);
-            setLocalPlayerPos(new Vector3(point.x, 1, point.z));
-            if (sendMove) {
-              sendMove(point.x, point.y, point.z);
-            }
-          } else if (activeTool === 'place') {
-            console.log("Placing object at", point);
-            if (sendPlaceObject) {
-              sendPlaceObject(selectedAssetId, point.x, point.y, point.z);
-            }
-          } else if (activeTool === 'terraform') {
-            console.log("Terraforming at", point);
-            const heightIncrease = 2; // Arbitrary terraform height step
-            if (sendTerraform) {
-              sendTerraform(point.x, point.z, heightIncrease);
-            }
-            
-            // Modify local ground vertices
-            if (groundRef.current) {
-              const mesh = groundRef.current;
-              const positions = mesh.getVerticesData(VertexBuffer.PositionKind);
-              if (positions) {
-                const radius = brushSize;
-                let updated = false;
-                for (let i = 0; i < positions.length; i += 3) {
-                  const vx = positions[i];
-                  const vz = positions[i + 2];
-                  const dx = vx - point.x;
-                  const dz = vz - point.z;
-                  if (dx * dx + dz * dz < radius * radius) {
-                    positions[i + 1] += heightIncrease;
-                    updated = true;
-                  }
-                }
-                if (updated) {
-                  mesh.updateVerticesData(VertexBuffer.PositionKind, positions);
-                  mesh.createNormals(false);
-                }
-              }
-            }
-          } else if (activeTool === 'attack') {
-            console.log("Attacking towards", point);
-            let bestTargetId: string | null = null;
-            let bestTargetPos: Vector3 | null = null;
-            let minDistance = 15; // Max snap distance
-
-            const checkTargets = (targets: any[]) => {
-              targets.forEach(t => {
-                const tPos = new Vector3(t.x, t.y + 1, t.z);
-                const dist = Vector3.Distance(point, tPos);
-                if (dist < minDistance) {
-                  minDistance = dist;
-                  bestTargetId = t.id;
-                  bestTargetPos = tPos;
-                }
-              });
-            };
-
-            checkTargets(players);
-            if (worldNpcs) checkTargets(worldNpcs);
-
-            if (bestTargetId && bestTargetPos) {
-              setIsAttacking(true);
-              setLocalPlayerPos(bestTargetPos);
-              if (sendAttack) {
-                sendAttack(bestTargetId);
-                const scene = groundRef.current?.getScene();
-                if (scene) playHitSound(scene, bestTargetPos);
-              }
-              setTimeout(() => setIsAttacking(false), 500);
-            }
-          }
-        }
-      }
-    }
-  };
 
   return (
-    <div style={{ width: '100vw', height: '100vh', display: 'flex', overflow: 'hidden' }}>
-      <Engine antialias adaptToDeviceRatio canvasId="babylon-canvas" style={{ width: '100%', height: '100%', outline: 'none' }}>
-        <Scene clearColor={new Color4(biomeColors.sky.r, biomeColors.sky.g, biomeColors.sky.b, 1)} onPointerDown={handlePointerDown}>
-          
-          <arcRotateCamera
-            name="main-camera"
-            alpha={Math.PI / 4}
-            beta={Math.PI / 3}
-            radius={150}
-            target={localPlayerPos}
-            lowerRadiusLimit={10}
-            upperRadiusLimit={1000}
-            wheelPrecision={50}
-          />
-          
-          <SceneEffects currentZone={currentZone} />
-          <WeatherSystem />
-          <AestheticModApplier />
+    <div style={{ width: '100vw', height: '100vh', background: '#000' }}>
+      <Canvas shadows camera={{ position: [0, 15, 20], fov: 60 }}>
+        
+        <SceneSetup />
+        <WeatherSystem />
 
-          <hemisphericLight
-            name="hemi-light"
-            direction={new Vector3(0, 1, 0)}
-            intensity={worldTime === 'night' ? 0.0 : 0.6}
-            groundColor={new Color3(0.1, 0.1, 0.2)}
-          />
-          
-          <directionalLight
-            name="dir-light"
-            direction={new Vector3(-1, -2, -1)}
-            intensity={worldTime === 'night' ? 0.0 : 0.8}
-            position={new Vector3(20, 100, 20)}
-          />
+        <Physics gravity={[0, 0, 0]}>
+          <AdvancedArena />
 
-          <box name="skybox" size={5000} infiniteDistance={true}>
-            <standardMaterial
-              name="skybox-material"
-              backFaceCulling={false}
-              disableLighting={true}
-              emissiveColor={worldTime === 'night' ? new Color3(0.0, 0.0, 0.0) : biomeColors.sky}
-            />
-          </box>
+          {worldObjects && worldObjects.map((obj: any) => {
+            const asset = getAssetByType(obj.type || 'wooden_crate');
+            const scale = obj.s || 1;
+            return (
+              <group key={obj.id} position={[obj.x, obj.y || 0, obj.z]} rotation={[0, obj.r || 0, 0]}>
+                <OptimizedModel url={`${asset.rootUrl}${asset.sceneFilename}`} scaling={[scale, scale, scale]} colorTint={obj.color} />
+              </group>
+            );
+          })}
 
-          <ground ref={groundRef} name="world-grid" width={2000} height={2000} subdivisions={100} updatable={true}>
-            <pbrMaterial
-              name="grid-material"
-              albedoColor={biomeColors.ground}
-              metallic={0.1}
-              roughness={0.7}
-              alpha={1.0}
-            />
-          </ground>
-          
-          {/* Local Player */}
-          <LocalPlayer targetPos={localPlayerPos} isAttacking={isAttacking} modelFile={localPlayer?.modelFile} worldTime={worldTime} />
+          {localPlayer && (
+            <LocalPlayer player={localPlayer} sendMove={sendMove} />
+          )}
 
-          {/* Remote Players */}
-          {remotePlayers.map(p => (
-            <RemotePlayer key={p.id} player={p} />
-          ))}
+          {remotePlayers.map(p => <RemotePlayer key={p.id} player={p} />)}
+          {bosses.map(b => <RemotePlayer key={b.id} player={{...b, modelFile: 'boss.glb'}} />)}
+          {worldNpcs.map(npc => <NPC key={npc.id} npc={npc} setInteractingNpcId={setInteractingNpcId} />)}
+        </Physics>
 
-          {/* Remote NPCs */}
-          {worldNpcs.map(npc => (
-            <RemoteNpc key={npc.id} npc={npc} />
-          ))}
+        {/* High-End Post-Processing */}
+        <EffectComposer>
+          <Bloom luminanceThreshold={1} intensity={1.5} />
+          <Vignette eskil={false} offset={0.1} darkness={1.1} />
+        </EffectComposer>
 
-          {/* Bosses */}
-          {bosses.map(boss => (
-            <RemoteBoss key={boss.id} boss={boss} />
-          ))}
-
-          {/* World Objects using ThinInstances */}
-          <InstancedWorldObjects objects={worldObjects} />
-
-          {resourceNodes && resourceNodes.map((node: any) => (
-          <ResourceNodeRender key={node.id} node={node} />
-        ))}
-        </Scene>
-      </Engine>
+      </Canvas>
     </div>
   );
 };
-
-export default WorldRenderer;

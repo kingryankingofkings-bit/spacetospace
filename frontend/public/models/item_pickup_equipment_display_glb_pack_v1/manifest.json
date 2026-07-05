@@ -1,0 +1,1935 @@
+{
+  "pack_name": "Item Pickup + Equipment Display GLB Pack v1",
+  "created_utc": "2026-07-05T05:56:16.420021+00:00",
+  "format": "GLB",
+  "asset_count": 75,
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Designed to visually represent large item tables through reusable archetypes.",
+    "Use material swaps, rarity glows, and metadata to map many item records onto these models.",
+    "Assets are not rigged or animated."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/weapon_pickup_short_sword_common.glb",
+      "name": "Short Sword Pickup - Common",
+      "category": "weapon_pickups",
+      "archetype": "sword",
+      "gameplay_use": "basic sword visual archetype",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.19
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.38
+        ]
+      },
+      "tags": [
+        "weapon",
+        "sword",
+        "common"
+      ],
+      "size_bytes": 13880
+    },
+    {
+      "file": "glb_assets/weapon_pickup_long_sword_uncommon.glb",
+      "name": "Long Sword Pickup - Uncommon",
+      "category": "weapon_pickups",
+      "archetype": "sword",
+      "gameplay_use": "long sword visual archetype",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.19
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.38
+        ]
+      },
+      "tags": [
+        "weapon",
+        "sword",
+        "uncommon"
+      ],
+      "size_bytes": 14464
+    },
+    {
+      "file": "glb_assets/weapon_pickup_greatsword_rare.glb",
+      "name": "Greatsword Pickup - Rare",
+      "category": "weapon_pickups",
+      "archetype": "sword",
+      "gameplay_use": "two-handed sword visual archetype",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.565
+        ],
+        "size": [
+          1.65,
+          1.65,
+          3.13
+        ]
+      },
+      "tags": [
+        "weapon",
+        "greatsword",
+        "rare"
+      ],
+      "size_bytes": 11820
+    },
+    {
+      "file": "glb_assets/weapon_pickup_obsidian_blade_epic.glb",
+      "name": "Obsidian Blade Pickup - Epic",
+      "category": "weapon_pickups",
+      "archetype": "sword",
+      "gameplay_use": "dark blade visual archetype",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.19
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.38
+        ]
+      },
+      "tags": [
+        "weapon",
+        "sword",
+        "epic"
+      ],
+      "size_bytes": 14080
+    },
+    {
+      "file": "glb_assets/weapon_pickup_gilded_sword_legendary.glb",
+      "name": "Gilded Sword Pickup - Legendary",
+      "category": "weapon_pickups",
+      "archetype": "sword",
+      "gameplay_use": "legendary sword visual archetype",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.19
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.38
+        ]
+      },
+      "tags": [
+        "weapon",
+        "sword",
+        "legendary"
+      ],
+      "size_bytes": 13648
+    },
+    {
+      "file": "glb_assets/weapon_pickup_hand_axe_common.glb",
+      "name": "Hand Axe Pickup - Common",
+      "category": "weapon_pickups",
+      "archetype": "axe",
+      "gameplay_use": "single axe pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.935
+        ],
+        "size": [
+          1.45,
+          1.45,
+          1.87
+        ]
+      },
+      "tags": [
+        "weapon",
+        "axe",
+        "common"
+      ],
+      "size_bytes": 11368
+    },
+    {
+      "file": "glb_assets/weapon_pickup_battle_axe_uncommon.glb",
+      "name": "Battle Axe Pickup - Uncommon",
+      "category": "weapon_pickups",
+      "archetype": "axe",
+      "gameplay_use": "double axe pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.935
+        ],
+        "size": [
+          1.45,
+          1.45,
+          1.87
+        ]
+      },
+      "tags": [
+        "weapon",
+        "axe",
+        "uncommon"
+      ],
+      "size_bytes": 11952
+    },
+    {
+      "file": "glb_assets/weapon_pickup_war_axe_rare.glb",
+      "name": "War Axe Pickup - Rare",
+      "category": "weapon_pickups",
+      "archetype": "axe",
+      "gameplay_use": "heavy axe pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.935
+        ],
+        "size": [
+          1.45,
+          1.45,
+          1.87
+        ]
+      },
+      "tags": [
+        "weapon",
+        "axe",
+        "rare"
+      ],
+      "size_bytes": 14204
+    },
+    {
+      "file": "glb_assets/weapon_pickup_executioner_axe_legendary.glb",
+      "name": "Executioner Axe Pickup - Legendary",
+      "category": "weapon_pickups",
+      "archetype": "axe",
+      "gameplay_use": "legendary heavy axe pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.935
+        ],
+        "size": [
+          1.45,
+          1.45,
+          1.87
+        ]
+      },
+      "tags": [
+        "weapon",
+        "axe",
+        "legendary"
+      ],
+      "size_bytes": 15448
+    },
+    {
+      "file": "glb_assets/weapon_pickup_mace_common.glb",
+      "name": "Mace Pickup - Common",
+      "category": "weapon_pickups",
+      "archetype": "mace",
+      "gameplay_use": "blunt weapon pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.45,
+          1.45,
+          1.71
+        ]
+      },
+      "tags": [
+        "weapon",
+        "mace",
+        "common"
+      ],
+      "size_bytes": 12460
+    },
+    {
+      "file": "glb_assets/weapon_pickup_spiked_mace_rare.glb",
+      "name": "Spiked Mace Pickup - Rare",
+      "category": "weapon_pickups",
+      "archetype": "mace",
+      "gameplay_use": "spiked blunt weapon pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.45,
+          1.45,
+          1.71
+        ]
+      },
+      "tags": [
+        "weapon",
+        "mace",
+        "rare"
+      ],
+      "size_bytes": 17440
+    },
+    {
+      "file": "glb_assets/weapon_pickup_morningstar_epic.glb",
+      "name": "Morningstar Pickup - Epic",
+      "category": "weapon_pickups",
+      "archetype": "mace",
+      "gameplay_use": "epic spiked mace pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.45,
+          1.45,
+          1.71
+        ]
+      },
+      "tags": [
+        "weapon",
+        "mace",
+        "epic"
+      ],
+      "size_bytes": 20448
+    },
+    {
+      "file": "glb_assets/weapon_pickup_spear_common.glb",
+      "name": "Spear Pickup - Common",
+      "category": "weapon_pickups",
+      "archetype": "spear",
+      "gameplay_use": "spear pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.7
+        ]
+      },
+      "tags": [
+        "weapon",
+        "spear",
+        "common"
+      ],
+      "size_bytes": 11356
+    },
+    {
+      "file": "glb_assets/weapon_pickup_halberd_rare.glb",
+      "name": "Halberd Pickup - Rare",
+      "category": "weapon_pickups",
+      "archetype": "spear",
+      "gameplay_use": "polearm pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.7
+        ]
+      },
+      "tags": [
+        "weapon",
+        "polearm",
+        "rare"
+      ],
+      "size_bytes": 11936
+    },
+    {
+      "file": "glb_assets/weapon_pickup_crystal_lance_epic.glb",
+      "name": "Crystal Lance Pickup - Epic",
+      "category": "weapon_pickups",
+      "archetype": "spear",
+      "gameplay_use": "crystal spear pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.7
+        ]
+      },
+      "tags": [
+        "weapon",
+        "lance",
+        "epic"
+      ],
+      "size_bytes": 11340
+    },
+    {
+      "file": "glb_assets/weapon_pickup_short_bow_common.glb",
+      "name": "Short Bow Pickup - Common",
+      "category": "weapon_pickups",
+      "archetype": "bow",
+      "gameplay_use": "bow pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.062
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.125
+        ]
+      },
+      "tags": [
+        "weapon",
+        "bow",
+        "common"
+      ],
+      "size_bytes": 12172
+    },
+    {
+      "file": "glb_assets/weapon_pickup_hunter_bow_uncommon.glb",
+      "name": "Hunter Bow Pickup - Uncommon",
+      "category": "weapon_pickups",
+      "archetype": "bow",
+      "gameplay_use": "hunter bow pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.062
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.125
+        ]
+      },
+      "tags": [
+        "weapon",
+        "bow",
+        "uncommon"
+      ],
+      "size_bytes": 14224
+    },
+    {
+      "file": "glb_assets/weapon_pickup_arcane_bow_epic.glb",
+      "name": "Arcane Bow Pickup - Epic",
+      "category": "weapon_pickups",
+      "archetype": "bow",
+      "gameplay_use": "magic bow pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.062
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.125
+        ]
+      },
+      "tags": [
+        "weapon",
+        "bow",
+        "epic"
+      ],
+      "size_bytes": 15344
+    },
+    {
+      "file": "glb_assets/weapon_pickup_apprentice_staff_common.glb",
+      "name": "Apprentice Staff Pickup - Common",
+      "category": "weapon_pickups",
+      "archetype": "staff",
+      "gameplay_use": "staff pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.078
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.415
+        ]
+      },
+      "tags": [
+        "weapon",
+        "staff",
+        "common"
+      ],
+      "size_bytes": 16116
+    },
+    {
+      "file": "glb_assets/weapon_pickup_druid_staff_uncommon.glb",
+      "name": "Druid Staff Pickup - Uncommon",
+      "category": "weapon_pickups",
+      "archetype": "staff",
+      "gameplay_use": "nature staff pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.078
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.415
+        ]
+      },
+      "tags": [
+        "weapon",
+        "staff",
+        "uncommon"
+      ],
+      "size_bytes": 17280
+    },
+    {
+      "file": "glb_assets/weapon_pickup_void_staff_epic.glb",
+      "name": "Void Staff Pickup - Epic",
+      "category": "weapon_pickups",
+      "archetype": "staff",
+      "gameplay_use": "void staff pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.078
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.415
+        ]
+      },
+      "tags": [
+        "weapon",
+        "staff",
+        "epic"
+      ],
+      "size_bytes": 16088
+    },
+    {
+      "file": "glb_assets/weapon_pickup_sun_staff_mythic.glb",
+      "name": "Sun Staff Pickup - Mythic",
+      "category": "weapon_pickups",
+      "archetype": "staff",
+      "gameplay_use": "mythic staff pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.125
+        ],
+        "size": [
+          1.45,
+          1.45,
+          2.509
+        ]
+      },
+      "tags": [
+        "weapon",
+        "staff",
+        "mythic"
+      ],
+      "size_bytes": 20004
+    },
+    {
+      "file": "glb_assets/weapon_pickup_dagger_common.glb",
+      "name": "Dagger Pickup - Common",
+      "category": "weapon_pickups",
+      "archetype": "dagger",
+      "gameplay_use": "small blade pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.73
+        ],
+        "size": [
+          1.11,
+          1.11,
+          1.46
+        ]
+      },
+      "tags": [
+        "weapon",
+        "dagger",
+        "common"
+      ],
+      "size_bytes": 11616
+    },
+    {
+      "file": "glb_assets/weapon_pickup_warhammer_rare.glb",
+      "name": "Warhammer Pickup - Rare",
+      "category": "weapon_pickups",
+      "archetype": "hammer",
+      "gameplay_use": "heavy hammer pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.89
+        ],
+        "size": [
+          1.57,
+          1.57,
+          1.78
+        ]
+      },
+      "tags": [
+        "weapon",
+        "hammer",
+        "rare"
+      ],
+      "size_bytes": 11068
+    },
+    {
+      "file": "glb_assets/weapon_pickup_scythe_epic.glb",
+      "name": "Scythe Pickup - Epic",
+      "category": "weapon_pickups",
+      "archetype": "scythe",
+      "gameplay_use": "scythe pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.183
+        ],
+        "size": [
+          1.65,
+          1.65,
+          2.366
+        ]
+      },
+      "tags": [
+        "weapon",
+        "scythe",
+        "epic"
+      ],
+      "size_bytes": 12596
+    },
+    {
+      "file": "glb_assets/shield_pickup_round_common.glb",
+      "name": "Round Shield Pickup - Common",
+      "category": "shield_pickups",
+      "archetype": "shield",
+      "gameplay_use": "basic shield pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.647
+        ],
+        "size": [
+          1.41,
+          1.41,
+          1.293
+        ]
+      },
+      "tags": [
+        "shield",
+        "common"
+      ],
+      "size_bytes": 11812
+    },
+    {
+      "file": "glb_assets/shield_pickup_kite_uncommon.glb",
+      "name": "Kite Shield Pickup - Uncommon",
+      "category": "shield_pickups",
+      "archetype": "shield",
+      "gameplay_use": "kite shield pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.7
+        ],
+        "size": [
+          1.41,
+          1.41,
+          1.4
+        ]
+      },
+      "tags": [
+        "shield",
+        "uncommon"
+      ],
+      "size_bytes": 11180
+    },
+    {
+      "file": "glb_assets/shield_pickup_tower_rare.glb",
+      "name": "Tower Shield Pickup - Rare",
+      "category": "shield_pickups",
+      "archetype": "shield",
+      "gameplay_use": "large shield pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.7
+        ],
+        "size": [
+          1.41,
+          1.41,
+          1.4
+        ]
+      },
+      "tags": [
+        "shield",
+        "rare"
+      ],
+      "size_bytes": 10208
+    },
+    {
+      "file": "glb_assets/shield_pickup_aegis_legendary.glb",
+      "name": "Aegis Shield Pickup - Legendary",
+      "category": "shield_pickups",
+      "archetype": "shield",
+      "gameplay_use": "legendary shield pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.697
+        ],
+        "size": [
+          1.41,
+          1.41,
+          1.395
+        ]
+      },
+      "tags": [
+        "shield",
+        "legendary"
+      ],
+      "size_bytes": 15820
+    },
+    {
+      "file": "glb_assets/armor_pickup_helmet_common.glb",
+      "name": "Helmet Pickup - Common",
+      "category": "armor_pickups",
+      "archetype": "helmet",
+      "gameplay_use": "helmet item pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.488
+        ],
+        "size": [
+          1.17,
+          1.17,
+          0.975
+        ]
+      },
+      "tags": [
+        "armor",
+        "helmet",
+        "common"
+      ],
+      "size_bytes": 11172
+    },
+    {
+      "file": "glb_assets/armor_pickup_horned_helmet_rare.glb",
+      "name": "Horned Helmet Pickup - Rare",
+      "category": "armor_pickups",
+      "archetype": "helmet",
+      "gameplay_use": "rare helmet item pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.52
+        ],
+        "size": [
+          1.17,
+          1.17,
+          1.04
+        ]
+      },
+      "tags": [
+        "armor",
+        "helmet",
+        "rare"
+      ],
+      "size_bytes": 12780
+    },
+    {
+      "file": "glb_assets/armor_pickup_crown_helmet_legendary.glb",
+      "name": "Crown-Helm Pickup - Legendary",
+      "category": "armor_pickups",
+      "archetype": "helmet",
+      "gameplay_use": "legendary helmet item pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.522
+        ],
+        "size": [
+          1.17,
+          1.17,
+          1.044
+        ]
+      },
+      "tags": [
+        "armor",
+        "helmet",
+        "legendary"
+      ],
+      "size_bytes": 16288
+    },
+    {
+      "file": "glb_assets/armor_pickup_chestplate_common.glb",
+      "name": "Chestplate Pickup - Common",
+      "category": "armor_pickups",
+      "archetype": "chest",
+      "gameplay_use": "chest armor pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.745
+        ],
+        "size": [
+          1.51,
+          1.51,
+          1.49
+        ]
+      },
+      "tags": [
+        "armor",
+        "chest",
+        "common"
+      ],
+      "size_bytes": 10776
+    },
+    {
+      "file": "glb_assets/armor_pickup_reinforced_chestplate_uncommon.glb",
+      "name": "Reinforced Chestplate Pickup - Uncommon",
+      "category": "armor_pickups",
+      "archetype": "chest",
+      "gameplay_use": "reinforced chest armor pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.745
+        ],
+        "size": [
+          1.51,
+          1.51,
+          1.49
+        ]
+      },
+      "tags": [
+        "armor",
+        "chest",
+        "uncommon"
+      ],
+      "size_bytes": 11564
+    },
+    {
+      "file": "glb_assets/armor_pickup_runic_chestplate_epic.glb",
+      "name": "Runic Chestplate Pickup - Epic",
+      "category": "armor_pickups",
+      "archetype": "chest",
+      "gameplay_use": "epic chest armor pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.745
+        ],
+        "size": [
+          1.51,
+          1.51,
+          1.49
+        ]
+      },
+      "tags": [
+        "armor",
+        "chest",
+        "epic"
+      ],
+      "size_bytes": 13012
+    },
+    {
+      "file": "glb_assets/armor_pickup_godplate_godly.glb",
+      "name": "Godplate Pickup - Godly",
+      "category": "armor_pickups",
+      "archetype": "chest",
+      "gameplay_use": "godly chest armor pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.913
+        ],
+        "size": [
+          1.51,
+          1.51,
+          1.825
+        ]
+      },
+      "tags": [
+        "armor",
+        "chest",
+        "godly"
+      ],
+      "size_bytes": 14996
+    },
+    {
+      "file": "glb_assets/armor_pickup_gauntlets_common.glb",
+      "name": "Gauntlets Pickup - Common",
+      "category": "armor_pickups",
+      "archetype": "gauntlets",
+      "gameplay_use": "glove/gauntlet pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.415
+        ],
+        "size": [
+          1.17,
+          1.17,
+          0.83
+        ]
+      },
+      "tags": [
+        "armor",
+        "gauntlets",
+        "common"
+      ],
+      "size_bytes": 13016
+    },
+    {
+      "file": "glb_assets/armor_pickup_boots_common.glb",
+      "name": "Boots Pickup - Common",
+      "category": "armor_pickups",
+      "archetype": "boots",
+      "gameplay_use": "boots pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.21
+        ],
+        "size": [
+          1.21,
+          1.21,
+          0.42
+        ]
+      },
+      "tags": [
+        "armor",
+        "boots",
+        "common"
+      ],
+      "size_bytes": 10676
+    },
+    {
+      "file": "glb_assets/armor_pickup_belt_uncommon.glb",
+      "name": "Belt Pickup - Uncommon",
+      "category": "armor_pickups",
+      "archetype": "belt",
+      "gameplay_use": "belt pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.27
+        ],
+        "size": [
+          1.11,
+          1.11,
+          0.54
+        ]
+      },
+      "tags": [
+        "armor",
+        "belt",
+        "uncommon"
+      ],
+      "size_bytes": 14040
+    },
+    {
+      "file": "glb_assets/armor_pickup_cape_rare.glb",
+      "name": "Cape Pickup - Rare",
+      "category": "armor_pickups",
+      "archetype": "cape",
+      "gameplay_use": "cape pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.687
+        ],
+        "size": [
+          1.21,
+          1.21,
+          1.374
+        ]
+      },
+      "tags": [
+        "armor",
+        "cape",
+        "rare"
+      ],
+      "size_bytes": 12476
+    },
+    {
+      "file": "glb_assets/accessory_pickup_ring_common.glb",
+      "name": "Ring Pickup - Common",
+      "category": "accessory_pickups",
+      "archetype": "ring",
+      "gameplay_use": "ring pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.393
+        ],
+        "size": [
+          0.93,
+          0.93,
+          0.786
+        ]
+      },
+      "tags": [
+        "accessory",
+        "ring",
+        "common"
+      ],
+      "size_bytes": 12568
+    },
+    {
+      "file": "glb_assets/accessory_pickup_ring_mythic.glb",
+      "name": "Ring Pickup - Mythic",
+      "category": "accessory_pickups",
+      "archetype": "ring",
+      "gameplay_use": "mythic ring pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.407
+        ],
+        "size": [
+          1.05,
+          1.05,
+          0.815
+        ]
+      },
+      "tags": [
+        "accessory",
+        "ring",
+        "mythic"
+      ],
+      "size_bytes": 15244
+    },
+    {
+      "file": "glb_assets/accessory_pickup_amulet_uncommon.glb",
+      "name": "Amulet Pickup - Uncommon",
+      "category": "accessory_pickups",
+      "archetype": "amulet",
+      "gameplay_use": "amulet pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.523
+        ],
+        "size": [
+          1.05,
+          1.05,
+          1.045
+        ]
+      },
+      "tags": [
+        "accessory",
+        "amulet",
+        "uncommon"
+      ],
+      "size_bytes": 14180
+    },
+    {
+      "file": "glb_assets/accessory_pickup_amulet_epic.glb",
+      "name": "Amulet Pickup - Epic",
+      "category": "accessory_pickups",
+      "archetype": "amulet",
+      "gameplay_use": "epic amulet pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.523
+        ],
+        "size": [
+          1.05,
+          1.05,
+          1.045
+        ]
+      },
+      "tags": [
+        "accessory",
+        "amulet",
+        "epic"
+      ],
+      "size_bytes": 14124
+    },
+    {
+      "file": "glb_assets/loot_chest_common.glb",
+      "name": "Loot Chest - Common",
+      "category": "loot_containers",
+      "archetype": "chest",
+      "gameplay_use": "common loot container",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.032,
+          0.448
+        ],
+        "size": [
+          1.268,
+          0.915,
+          0.896
+        ]
+      },
+      "tags": [
+        "loot",
+        "chest",
+        "common"
+      ],
+      "size_bytes": 4680
+    },
+    {
+      "file": "glb_assets/loot_chest_rare.glb",
+      "name": "Loot Chest - Rare",
+      "category": "loot_containers",
+      "archetype": "chest",
+      "gameplay_use": "rare loot container",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.032,
+          0.448
+        ],
+        "size": [
+          1.268,
+          0.915,
+          0.896
+        ]
+      },
+      "tags": [
+        "loot",
+        "chest",
+        "rare"
+      ],
+      "size_bytes": 4676
+    },
+    {
+      "file": "glb_assets/loot_chest_legendary.glb",
+      "name": "Loot Chest - Legendary",
+      "category": "loot_containers",
+      "archetype": "chest",
+      "gameplay_use": "legendary loot container",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.032,
+          0.448
+        ],
+        "size": [
+          1.268,
+          0.915,
+          0.896
+        ]
+      },
+      "tags": [
+        "loot",
+        "chest",
+        "legendary"
+      ],
+      "size_bytes": 4684
+    },
+    {
+      "file": "glb_assets/loot_chest_locked.glb",
+      "name": "Locked Loot Chest",
+      "category": "loot_containers",
+      "archetype": "chest",
+      "gameplay_use": "locked chest container",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.046,
+          0.448
+        ],
+        "size": [
+          1.268,
+          0.942,
+          0.896
+        ]
+      },
+      "tags": [
+        "loot",
+        "chest",
+        "locked"
+      ],
+      "size_bytes": 8008
+    },
+    {
+      "file": "glb_assets/loot_chest_boss_reward.glb",
+      "name": "Boss Reward Chest",
+      "category": "loot_containers",
+      "archetype": "chest",
+      "gameplay_use": "boss reward chest",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.542
+        ],
+        "size": [
+          1.77,
+          1.77,
+          1.083
+        ]
+      },
+      "tags": [
+        "loot",
+        "boss_reward",
+        "godly"
+      ],
+      "size_bytes": 13000
+    },
+    {
+      "file": "glb_assets/rarity_base_common.glb",
+      "name": "Rarity Base - Common",
+      "category": "rarity_markers",
+      "archetype": "rarity_base",
+      "gameplay_use": "common item ground marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.052
+        ],
+        "size": [
+          1.37,
+          1.37,
+          0.104
+        ]
+      },
+      "tags": [
+        "rarity",
+        "common"
+      ],
+      "size_bytes": 7796
+    },
+    {
+      "file": "glb_assets/rarity_base_uncommon.glb",
+      "name": "Rarity Base - Uncommon",
+      "category": "rarity_markers",
+      "archetype": "rarity_base",
+      "gameplay_use": "uncommon item ground marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.052
+        ],
+        "size": [
+          1.37,
+          1.37,
+          0.104
+        ]
+      },
+      "tags": [
+        "rarity",
+        "uncommon"
+      ],
+      "size_bytes": 7800
+    },
+    {
+      "file": "glb_assets/rarity_base_rare.glb",
+      "name": "Rarity Base - Rare",
+      "category": "rarity_markers",
+      "archetype": "rarity_base",
+      "gameplay_use": "rare item ground marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.052
+        ],
+        "size": [
+          1.37,
+          1.37,
+          0.104
+        ]
+      },
+      "tags": [
+        "rarity",
+        "rare"
+      ],
+      "size_bytes": 7796
+    },
+    {
+      "file": "glb_assets/rarity_base_epic.glb",
+      "name": "Rarity Base - Epic",
+      "category": "rarity_markers",
+      "archetype": "rarity_base",
+      "gameplay_use": "epic item ground marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.052
+        ],
+        "size": [
+          1.37,
+          1.37,
+          0.104
+        ]
+      },
+      "tags": [
+        "rarity",
+        "epic"
+      ],
+      "size_bytes": 7784
+    },
+    {
+      "file": "glb_assets/rarity_base_legendary.glb",
+      "name": "Rarity Base - Legendary",
+      "category": "rarity_markers",
+      "archetype": "rarity_base",
+      "gameplay_use": "legendary item ground marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.052
+        ],
+        "size": [
+          1.37,
+          1.37,
+          0.104
+        ]
+      },
+      "tags": [
+        "rarity",
+        "legendary"
+      ],
+      "size_bytes": 7804
+    },
+    {
+      "file": "glb_assets/rarity_base_mythic.glb",
+      "name": "Rarity Base - Mythic",
+      "category": "rarity_markers",
+      "archetype": "rarity_base",
+      "gameplay_use": "mythic item ground marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.052
+        ],
+        "size": [
+          1.37,
+          1.37,
+          0.104
+        ]
+      },
+      "tags": [
+        "rarity",
+        "mythic"
+      ],
+      "size_bytes": 7796
+    },
+    {
+      "file": "glb_assets/rarity_base_godly.glb",
+      "name": "Rarity Base - Godly",
+      "category": "rarity_markers",
+      "archetype": "rarity_base",
+      "gameplay_use": "godly item ground marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.052
+        ],
+        "size": [
+          1.37,
+          1.37,
+          0.104
+        ]
+      },
+      "tags": [
+        "rarity",
+        "godly"
+      ],
+      "size_bytes": 7800
+    },
+    {
+      "file": "glb_assets/loot_beam_common.glb",
+      "name": "Loot Beam - Common",
+      "category": "rarity_markers",
+      "archetype": "loot_beam",
+      "gameplay_use": "common vertical loot beam proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.295
+        ],
+        "size": [
+          1.01,
+          1.01,
+          2.59
+        ]
+      },
+      "tags": [
+        "loot_beam",
+        "common"
+      ],
+      "size_bytes": 8544
+    },
+    {
+      "file": "glb_assets/loot_beam_uncommon.glb",
+      "name": "Loot Beam - Uncommon",
+      "category": "rarity_markers",
+      "archetype": "loot_beam",
+      "gameplay_use": "uncommon vertical loot beam proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.295
+        ],
+        "size": [
+          1.01,
+          1.01,
+          2.59
+        ]
+      },
+      "tags": [
+        "loot_beam",
+        "uncommon"
+      ],
+      "size_bytes": 8548
+    },
+    {
+      "file": "glb_assets/loot_beam_rare.glb",
+      "name": "Loot Beam - Rare",
+      "category": "rarity_markers",
+      "archetype": "loot_beam",
+      "gameplay_use": "rare vertical loot beam proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.295
+        ],
+        "size": [
+          1.01,
+          1.01,
+          2.59
+        ]
+      },
+      "tags": [
+        "loot_beam",
+        "rare"
+      ],
+      "size_bytes": 8544
+    },
+    {
+      "file": "glb_assets/loot_beam_epic.glb",
+      "name": "Loot Beam - Epic",
+      "category": "rarity_markers",
+      "archetype": "loot_beam",
+      "gameplay_use": "epic vertical loot beam proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.295
+        ],
+        "size": [
+          1.01,
+          1.01,
+          2.59
+        ]
+      },
+      "tags": [
+        "loot_beam",
+        "epic"
+      ],
+      "size_bytes": 8528
+    },
+    {
+      "file": "glb_assets/loot_beam_legendary.glb",
+      "name": "Loot Beam - Legendary",
+      "category": "rarity_markers",
+      "archetype": "loot_beam",
+      "gameplay_use": "legendary vertical loot beam proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.295
+        ],
+        "size": [
+          1.01,
+          1.01,
+          2.59
+        ]
+      },
+      "tags": [
+        "loot_beam",
+        "legendary"
+      ],
+      "size_bytes": 8552
+    },
+    {
+      "file": "glb_assets/loot_beam_mythic.glb",
+      "name": "Loot Beam - Mythic",
+      "category": "rarity_markers",
+      "archetype": "loot_beam",
+      "gameplay_use": "mythic vertical loot beam proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.295
+        ],
+        "size": [
+          1.01,
+          1.01,
+          2.59
+        ]
+      },
+      "tags": [
+        "loot_beam",
+        "mythic"
+      ],
+      "size_bytes": 8544
+    },
+    {
+      "file": "glb_assets/loot_beam_godly.glb",
+      "name": "Loot Beam - Godly",
+      "category": "rarity_markers",
+      "archetype": "loot_beam",
+      "gameplay_use": "godly vertical loot beam proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.295
+        ],
+        "size": [
+          1.01,
+          1.01,
+          2.59
+        ]
+      },
+      "tags": [
+        "loot_beam",
+        "godly"
+      ],
+      "size_bytes": 8548
+    },
+    {
+      "file": "glb_assets/reward_pedestal_stone.glb",
+      "name": "Stone Reward Pedestal",
+      "category": "display_pedestals",
+      "archetype": "pedestal",
+      "gameplay_use": "generic reward pedestal",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.565
+        ],
+        "size": [
+          1.24,
+          1.209,
+          1.13
+        ]
+      },
+      "tags": [
+        "pedestal",
+        "reward"
+      ],
+      "size_bytes": 4632
+    },
+    {
+      "file": "glb_assets/reward_pedestal_legendary.glb",
+      "name": "Legendary Reward Pedestal",
+      "category": "display_pedestals",
+      "archetype": "pedestal",
+      "gameplay_use": "high-rarity reward pedestal",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.662
+        ],
+        "size": [
+          1.49,
+          1.49,
+          1.324
+        ]
+      },
+      "tags": [
+        "pedestal",
+        "legendary"
+      ],
+      "size_bytes": 9988
+    },
+    {
+      "file": "glb_assets/display_weapon_stand_single.glb",
+      "name": "Single Weapon Display Stand",
+      "category": "display_stands",
+      "archetype": "display",
+      "gameplay_use": "shop/display stand for one weapon",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.72
+        ],
+        "size": [
+          1.0,
+          0.7,
+          1.44
+        ]
+      },
+      "tags": [
+        "display",
+        "weapon"
+      ],
+      "size_bytes": 3756
+    },
+    {
+      "file": "glb_assets/display_weapon_wall_rack.glb",
+      "name": "Weapon Wall Rack",
+      "category": "display_stands",
+      "archetype": "display",
+      "gameplay_use": "wall-mounted weapon display",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.168,
+          0.85
+        ],
+        "size": [
+          2.2,
+          0.455,
+          1.35
+        ]
+      },
+      "tags": [
+        "display",
+        "rack",
+        "weapon"
+      ],
+      "size_bytes": 4252
+    },
+    {
+      "file": "glb_assets/display_armor_mannequin.glb",
+      "name": "Armor Display Mannequin",
+      "category": "display_stands",
+      "archetype": "display",
+      "gameplay_use": "shop armor display mannequin",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.075
+        ],
+        "size": [
+          1.0,
+          0.9,
+          2.15
+        ]
+      },
+      "tags": [
+        "display",
+        "armor"
+      ],
+      "size_bytes": 5976
+    },
+    {
+      "file": "glb_assets/display_ring_case.glb",
+      "name": "Ring Display Case",
+      "category": "display_stands",
+      "archetype": "display",
+      "gameplay_use": "jewelry display case",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.278
+        ],
+        "size": [
+          1.1,
+          0.65,
+          0.556
+        ]
+      },
+      "tags": [
+        "display",
+        "jewelry"
+      ],
+      "size_bytes": 6948
+    },
+    {
+      "file": "glb_assets/display_item_rotator_base.glb",
+      "name": "Item Rotator Base",
+      "category": "display_stands",
+      "archetype": "display",
+      "gameplay_use": "animated item display base placeholder",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.19
+        ],
+        "size": [
+          1.04,
+          1.024,
+          0.38
+        ]
+      },
+      "tags": [
+        "display",
+        "rotator"
+      ],
+      "size_bytes": 8900
+    },
+    {
+      "file": "glb_assets/inventory_bag_pickup.glb",
+      "name": "Inventory Bag Pickup",
+      "category": "pickup_containers",
+      "archetype": "bag",
+      "gameplay_use": "generic dropped bag pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.473
+        ],
+        "size": [
+          1.15,
+          1.15,
+          0.834
+        ]
+      },
+      "tags": [
+        "pickup",
+        "bag"
+      ],
+      "size_bytes": 8396
+    },
+    {
+      "file": "glb_assets/gold_coin_stack.glb",
+      "name": "Gold Coin Stack",
+      "category": "currency_pickups",
+      "archetype": "currency",
+      "gameplay_use": "currency pickup",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.262
+        ],
+        "size": [
+          0.756,
+          0.745,
+          0.51
+        ]
+      },
+      "tags": [
+        "currency",
+        "gold"
+      ],
+      "size_bytes": 12788
+    },
+    {
+      "file": "glb_assets/gem_cluster_blue.glb",
+      "name": "Blue Gem Cluster",
+      "category": "currency_pickups",
+      "archetype": "currency",
+      "gameplay_use": "gem/crafting currency pickup",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.425
+        ],
+        "size": [
+          0.72,
+          0.685,
+          0.85
+        ]
+      },
+      "tags": [
+        "currency",
+        "gems"
+      ],
+      "size_bytes": 3940
+    },
+    {
+      "file": "glb_assets/crafting_material_bundle.glb",
+      "name": "Crafting Material Bundle",
+      "category": "crafting_pickups",
+      "archetype": "crafting",
+      "gameplay_use": "generic crafting material bundle",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.081,
+          0.059,
+          0.183
+        ],
+        "size": [
+          1.088,
+          0.573,
+          0.255
+        ]
+      },
+      "tags": [
+        "crafting",
+        "material"
+      ],
+      "size_bytes": 4980
+    },
+    {
+      "file": "glb_assets/recipe_scroll_pickup.glb",
+      "name": "Recipe Scroll Pickup",
+      "category": "crafting_pickups",
+      "archetype": "crafting",
+      "gameplay_use": "recipe/blueprint pickup",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.278
+        ],
+        "size": [
+          1.66,
+          0.936,
+          0.443
+        ]
+      },
+      "tags": [
+        "recipe",
+        "crafting"
+      ],
+      "size_bytes": 7316
+    }
+  ]
+}

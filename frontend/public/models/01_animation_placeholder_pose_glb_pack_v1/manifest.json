@@ -1,0 +1,304 @@
+{
+  "pack_name": "Animation Placeholder Pose GLB Pack v1",
+  "pack_slug": "01_animation_placeholder_pose_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:56.173803+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Static pose reference placeholders for later rigging/animation work.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/biped_idle_pose.glb",
+      "name": "Biped Idle Pose",
+      "template": "humanoid_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.965
+        ],
+        "size": [
+          1.25,
+          1.237,
+          1.93
+        ]
+      },
+      "tags": [
+        "humanoid_pose",
+        "red"
+      ],
+      "size_bytes": 18284
+    },
+    {
+      "file": "glb_assets/biped_run_pose_a.glb",
+      "name": "Biped Run Pose A",
+      "template": "humanoid_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.965
+        ],
+        "size": [
+          1.25,
+          1.237,
+          1.93
+        ]
+      },
+      "tags": [
+        "humanoid_pose",
+        "orange"
+      ],
+      "size_bytes": 18260
+    },
+    {
+      "file": "glb_assets/biped_run_pose_b.glb",
+      "name": "Biped Run Pose B",
+      "template": "humanoid_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.965
+        ],
+        "size": [
+          1.25,
+          1.237,
+          1.93
+        ]
+      },
+      "tags": [
+        "humanoid_pose",
+        "yellow"
+      ],
+      "size_bytes": 18288
+    },
+    {
+      "file": "glb_assets/biped_light_attack_pose.glb",
+      "name": "Biped Light Attack Pose",
+      "template": "humanoid_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.965
+        ],
+        "size": [
+          1.25,
+          1.237,
+          1.93
+        ]
+      },
+      "tags": [
+        "humanoid_pose",
+        "green"
+      ],
+      "size_bytes": 18272
+    },
+    {
+      "file": "glb_assets/biped_heavy_slam_pose.glb",
+      "name": "Biped Heavy Slam Pose",
+      "template": "humanoid_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.965
+        ],
+        "size": [
+          1.25,
+          1.237,
+          1.93
+        ]
+      },
+      "tags": [
+        "humanoid_pose",
+        "blue"
+      ],
+      "size_bytes": 18272
+    },
+    {
+      "file": "glb_assets/biped_jump_pose.glb",
+      "name": "Biped Jump Pose",
+      "template": "humanoid_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.965
+        ],
+        "size": [
+          1.25,
+          1.237,
+          1.93
+        ]
+      },
+      "tags": [
+        "humanoid_pose",
+        "purple"
+      ],
+      "size_bytes": 18284
+    },
+    {
+      "file": "glb_assets/biped_hit_react_pose.glb",
+      "name": "Biped Hit React Pose",
+      "template": "humanoid_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.965
+        ],
+        "size": [
+          1.25,
+          1.237,
+          1.93
+        ]
+      },
+      "tags": [
+        "humanoid_pose",
+        "white"
+      ],
+      "size_bytes": 18272
+    },
+    {
+      "file": "glb_assets/biped_death_pose.glb",
+      "name": "Biped Death Pose",
+      "template": "humanoid_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.965
+        ],
+        "size": [
+          1.25,
+          1.237,
+          1.93
+        ]
+      },
+      "tags": [
+        "humanoid_pose",
+        "gold"
+      ],
+      "size_bytes": 18248
+    },
+    {
+      "file": "glb_assets/quadruped_idle_pose.glb",
+      "name": "Quadruped Idle Pose",
+      "template": "quadruped_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.312,
+          0.0,
+          0.533
+        ],
+        "size": [
+          2.175,
+          1.536,
+          1.065
+        ]
+      },
+      "tags": [
+        "quadruped_pose",
+        "red"
+      ],
+      "size_bytes": 19648
+    },
+    {
+      "file": "glb_assets/quadruped_pounce_pose.glb",
+      "name": "Quadruped Pounce Pose",
+      "template": "quadruped_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.312,
+          0.0,
+          0.533
+        ],
+        "size": [
+          2.175,
+          1.536,
+          1.065
+        ]
+      },
+      "tags": [
+        "quadruped_pose",
+        "orange"
+      ],
+      "size_bytes": 19652
+    },
+    {
+      "file": "glb_assets/monster_roar_pose.glb",
+      "name": "Monster Roar Pose",
+      "template": "humanoid_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.965
+        ],
+        "size": [
+          1.25,
+          1.237,
+          1.93
+        ]
+      },
+      "tags": [
+        "humanoid_pose",
+        "yellow"
+      ],
+      "size_bytes": 18272
+    },
+    {
+      "file": "glb_assets/vendor_talk_pose.glb",
+      "name": "Vendor Talk Pose",
+      "template": "humanoid_pose",
+      "gameplay_use": "Static pose reference placeholders for later rigging/animation work.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.965
+        ],
+        "size": [
+          1.25,
+          1.237,
+          1.93
+        ]
+      },
+      "tags": [
+        "humanoid_pose",
+        "green"
+      ],
+      "size_bytes": 18284
+    }
+  ]
+}

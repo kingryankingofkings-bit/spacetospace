@@ -18,7 +18,6 @@ export interface Player {
 interface MultiplayerState {
   players: Player[];
   worldObjects: any[];
-  terrainMods: any[];
   worldNpcs: any[];
   bosses: any[];
   combo: number;
@@ -37,8 +36,6 @@ interface MultiplayerState {
   worldTime: 'day' | 'night';
 
   sendMove: (x: number, y: number, z: number) => void;
-  sendPlaceObject: (type: string, x: number, y: number, z: number) => void;
-  sendTerraform: (x: number, z: number, height: number) => void;
   sendAttack: (targetId: string) => void;
   sendAbility: (abilityId: string, targetId?: string, x?: number, y?: number, z?: number) => void;
   sendFastTravel: (zone: string) => void;
@@ -68,7 +65,6 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
   return {
     players: [],
     worldObjects: [],
-    terrainMods: [],
     worldNpcs: [],
     bosses: [],
     combo: 0,
@@ -91,16 +87,7 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
         sharedWs.send(JSON.stringify({ type: 'move', x, y, z }));
       }
     },
-    sendPlaceObject: (type, x, y, z) => {
-      if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
-        sharedWs.send(JSON.stringify({ type: 'place_object', object: { id: Math.random().toString(36).substr(2, 9), type, x, y, z } }));
-      }
-    },
-    sendTerraform: (x, z, height) => {
-      if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
-        sharedWs.send(JSON.stringify({ type: 'terraform', terrain: { x, z, height } }));
-      }
-    },
+
     sendAttack: (targetId) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
         sharedWs.send(JSON.stringify({ type: 'attack', targetId }));
@@ -224,7 +211,6 @@ export const initMultiplayer = () => {
         currency: pCurrency,
         resourceNodes: data.resourceNodes || [],
         worldObjects: data.worldObjects || data.objects || [],
-        terrainMods: data.terrainMods || data.terrain || [],
         worldNpcs: data.npcs || [],
         bosses: data.bosses || [],
         ...(data.combo !== undefined ? { combo: data.combo } : {}),
@@ -271,10 +257,6 @@ export const initMultiplayer = () => {
       set((state) => ({ worldObjects: [...state.worldObjects, data.object] }));
     } else if (data.type === 'remove_object' || data.type === 'object_removed') {
       set((state) => ({ worldObjects: state.worldObjects.filter((o) => o.id !== data.id) }));
-    } else if (data.type === 'terrain_mods_update') {
-      set({ terrainMods: data.terrainMods });
-    } else if (data.type === 'terraform') {
-      set((state) => ({ terrainMods: [...state.terrainMods, data.terrain] }));
     } else if (data.type === 'npc_update') {
       set({ worldNpcs: data.npcs || [] });
     } else if (data.type === "boss_update") {

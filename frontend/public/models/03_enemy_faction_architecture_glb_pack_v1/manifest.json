@@ -1,0 +1,304 @@
+{
+  "pack_name": "Enemy Faction Architecture GLB Pack v1",
+  "pack_slug": "03_enemy_faction_architecture_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:56.331646+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/corporate_security_gate.glb",
+      "name": "Corporate Security Gate",
+      "template": "gate",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.025,
+          1.245
+        ],
+        "size": [
+          2.0,
+          0.35,
+          2.49
+        ]
+      },
+      "tags": [
+        "gate",
+        "red"
+      ],
+      "size_bytes": 9776
+    },
+    {
+      "file": "glb_assets/forge_control_tower.glb",
+      "name": "Forge Control Tower",
+      "template": "tower",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.025
+        ],
+        "size": [
+          1.1,
+          1.1,
+          2.05
+        ]
+      },
+      "tags": [
+        "tower",
+        "orange"
+      ],
+      "size_bytes": 11060
+    },
+    {
+      "file": "glb_assets/undead_altar_gate.glb",
+      "name": "Undead Altar Gate",
+      "template": "gate",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.025,
+          1.245
+        ],
+        "size": [
+          2.0,
+          0.35,
+          2.49
+        ]
+      },
+      "tags": [
+        "gate",
+        "yellow"
+      ],
+      "size_bytes": 9780
+    },
+    {
+      "file": "glb_assets/anomaly_breach_gate.glb",
+      "name": "Anomaly Breach Gate",
+      "template": "gate",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.025,
+          1.245
+        ],
+        "size": [
+          2.0,
+          0.35,
+          2.49
+        ]
+      },
+      "tags": [
+        "gate",
+        "purple"
+      ],
+      "size_bytes": 9780
+    },
+    {
+      "file": "glb_assets/parasite_hive_pylon.glb",
+      "name": "Parasite Hive Pylon",
+      "template": "tower",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.025
+        ],
+        "size": [
+          1.1,
+          1.1,
+          2.05
+        ]
+      },
+      "tags": [
+        "tower",
+        "blue"
+      ],
+      "size_bytes": 11060
+    },
+    {
+      "file": "glb_assets/data_corruption_arch.glb",
+      "name": "Data Corruption Arch",
+      "template": "gate",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.025,
+          1.245
+        ],
+        "size": [
+          2.0,
+          0.35,
+          2.49
+        ]
+      },
+      "tags": [
+        "gate",
+        "purple"
+      ],
+      "size_bytes": 9780
+    },
+    {
+      "file": "glb_assets/resonance_tower.glb",
+      "name": "Resonance Tower",
+      "template": "tower",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.025
+        ],
+        "size": [
+          1.1,
+          1.1,
+          2.05
+        ]
+      },
+      "tags": [
+        "tower",
+        "white"
+      ],
+      "size_bytes": 11044
+    },
+    {
+      "file": "glb_assets/chimera_growth_pod_tower.glb",
+      "name": "Chimera Growth Pod Tower",
+      "template": "tower",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.025
+        ],
+        "size": [
+          1.1,
+          1.1,
+          2.05
+        ]
+      },
+      "tags": [
+        "tower",
+        "gold"
+      ],
+      "size_bytes": 11048
+    },
+    {
+      "file": "glb_assets/sky_warden_bastion_gate.glb",
+      "name": "Sky Warden Bastion Gate",
+      "template": "gate",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.025,
+          1.245
+        ],
+        "size": [
+          2.0,
+          0.35,
+          2.49
+        ]
+      },
+      "tags": [
+        "gate",
+        "red"
+      ],
+      "size_bytes": 9776
+    },
+    {
+      "file": "glb_assets/order_epochalypse_relic_gate.glb",
+      "name": "Order Epochalypse Relic Gate",
+      "template": "gate",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.025,
+          1.245
+        ],
+        "size": [
+          2.0,
+          0.35,
+          2.49
+        ]
+      },
+      "tags": [
+        "gate",
+        "orange"
+      ],
+      "size_bytes": 9780
+    },
+    {
+      "file": "glb_assets/scrap_bandit_watchtower.glb",
+      "name": "Scrap Bandit Watchtower",
+      "template": "tower",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.025
+        ],
+        "size": [
+          1.1,
+          1.1,
+          2.05
+        ]
+      },
+      "tags": [
+        "tower",
+        "yellow"
+      ],
+      "size_bytes": 11060
+    },
+    {
+      "file": "glb_assets/void_cult_pylon.glb",
+      "name": "Void Cult Pylon",
+      "template": "tower",
+      "gameplay_use": "Faction-specific gates, towers, nests, pylons, and hostile infrastructure.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.025
+        ],
+        "size": [
+          1.1,
+          1.1,
+          2.05
+        ]
+      },
+      "tags": [
+        "tower",
+        "purple"
+      ],
+      "size_bytes": 11060
+    }
+  ]
+}
