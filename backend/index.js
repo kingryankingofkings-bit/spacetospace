@@ -30,10 +30,6 @@ let agonesSDK = null;
 
 const localActivePlayers = new Map();
 
-const aiMonitor = new AiTelemetryMonitor(() => ({
-  players: localActivePlayers, npcs: npcs, spatialGrid: new Map()
-}));
-aiMonitor.startMonitoring();
 resourceNodeManager.initializeNodes();
 
 const app = express();
@@ -47,7 +43,7 @@ app.use(express.static(frontendDistPath));
 authManager.setupRoutes(app);
 
 // Catch-all route to serve React's index.html for client-side routing
-app.get('*', (req, res, next) => {
+app.get('/(.*)', (req, res, next) => {
   if (req.path.startsWith('/api/')) return next();
   res.sendFile(path.join(frontendDistPath, 'index.html'));
 });
@@ -71,6 +67,11 @@ let npcs = npcData.map(n => ({
   nextWanderTime: 0,
   lastAttackTime: 0
 }));
+
+const aiMonitor = new AiTelemetryMonitor(() => ({
+  players: localActivePlayers, npcs: npcs, spatialGrid: new Map()
+}));
+aiMonitor.startMonitoring();
 
 const activeCompanions = new Map(); // Key: sessionId, Value: companionObject
 const activePets = new Map();       // Key: sessionId, Value: petObject
