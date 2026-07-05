@@ -43,7 +43,7 @@ app.use(express.static(frontendDistPath));
 authManager.setupRoutes(app);
 
 // Catch-all route to serve React's index.html for client-side routing
-app.get('/(.*)', (req, res, next) => {
+app.get(/.*/, (req, res, next) => {
   if (req.path.startsWith('/api/')) return next();
   res.sendFile(path.join(frontendDistPath, 'index.html'));
 });
