@@ -3,6 +3,7 @@ const http = require("http");
 const cors = require("cors");
 const { WebSocketServer } = require("ws");
 const fs = require("fs");
+const path = require("path");
 const db = require("./db");
 const authManager = require("./authManager");
 const AgonesSDK = require('@google-cloud/agones-sdk');
@@ -39,7 +40,17 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: '10kb' }));
 
+// Serve frontend static files
+const frontendDistPath = path.join(__dirname, '../frontend/dist');
+app.use(express.static(frontendDistPath));
+
 authManager.setupRoutes(app);
+
+// Catch-all route to serve React's index.html for client-side routing
+app.get('*', (req, res, next) => {
+  if (req.path.startsWith('/api/')) return next();
+  res.sendFile(path.join(frontendDistPath, 'index.html'));
+});
 
 const server = http.createServer(app);
 const wss = new WebSocketServer({ server });

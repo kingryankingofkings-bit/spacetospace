@@ -12,7 +12,7 @@ export const Login: React.FC<{ onLoginSuccess: () => void }> = ({ onLoginSuccess
     setError(null);
     try {
       const endpoint = isRegistering ? '/api/auth/register' : '/api/auth/login';
-      const baseUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:2567';
+      const baseUrl = import.meta.env.VITE_BACKEND_URL || (window.location.hostname === 'localhost' ? 'http://localhost:2567' : '');
       const res = await fetch(`${baseUrl}${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

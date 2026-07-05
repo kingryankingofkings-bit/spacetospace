@@ -21,7 +21,9 @@ export const useMultiplayer = () => {
 
   useEffect(() => {
     if (!sharedWs) {
-      const wsUrl = import.meta.env.VITE_WS_URL || 'ws://localhost:2567';
+      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+      const defaultWsUrl = window.location.hostname === 'localhost' ? 'ws://localhost:2567' : `${protocol}//${window.location.host}`;
+      const wsUrl = import.meta.env.VITE_WS_URL || defaultWsUrl;
       sharedWs = new WebSocket(wsUrl);
       sharedWs.onopen = () => console.log('Connected to server');
       sharedWs.onclose = () => console.log('Disconnected from server');
