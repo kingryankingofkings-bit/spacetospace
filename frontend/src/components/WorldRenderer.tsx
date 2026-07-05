@@ -8,7 +8,6 @@ import { useMultiplayerStore } from '../store/multiplayerStore';
 import { WeatherSystem } from './WeatherSystem';
 import { getCdnAssetPath } from '../utils/AssetManager';
 import { getAssetByType } from '../utils/AssetRegistry';
-import { useState } from 'react';
 
 export interface Player {
   id: string;
@@ -17,7 +16,6 @@ export interface Player {
   z: number;
   modelFile?: string;
   zone?: string;
-  appearance?: any;
   appearance?: any;
 }
 
@@ -105,7 +103,6 @@ const SceneSetup: React.FC = () => {
 
 const AdvancedArena: React.FC = () => {
   const floorUrl = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "modular_arena_floor_4x4.glb");
-  const wallUrl = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "modular_wall_2x2.glb");
   const stairsUrl = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "arena_stairs.glb");
   const jumpPadUrl = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "jump_pad.glb");
   const acidPoolUrl = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "acid_pool.glb");
@@ -292,7 +289,6 @@ const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, 
   const projIdRef = useRef(0);
   
   const sendAttack = useMultiplayerStore(state => state.sendAttack);
-  const sendGatherNode = useMultiplayerStore(state => state.sendGatherNode);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => { keys.current[e.key.toLowerCase()] = true; };
@@ -475,7 +471,7 @@ const NPC: React.FC<{ npc: any, setInteractingNpcId?: (id: string | null) => voi
       position={[npc.x, npc.y, npc.z]} 
       onClick={onClick}
       onPointerOver={(e) => { e.stopPropagation(); setHovered(true); }}
-      onPointerOut={(e) => { setHovered(false); }}
+      onPointerOut={() => { setHovered(false); }}
     >
       <OptimizedModel url={`${asset.rootUrl}${asset.sceneFilename}`} scaleToDimension={2.5} />
       {inRange && (
@@ -507,23 +503,6 @@ const NPC: React.FC<{ npc: any, setInteractingNpcId?: (id: string | null) => voi
 // ------------------------------------------------------------------
 // MAIN RENDERER
 // ------------------------------------------------------------------
-
-
-
-const ResourceNodeRender: React.FC<{ node: any }> = ({ node }) => {
-  const isHerb = node.type === 'herb_node';
-  const color = isHerb ? Color3.Green() : new Color3(0.5, 0.5, 0.5);
-  return (
-    <box 
-      name={`node-${node.id}`} 
-      position={new Vector3(node.x, node.y || 0.5, node.z)} 
-      size={isHerb ? 1 : 2}
-    >
-      <standardMaterial name={`mat-${node.id}`} diffuseColor={color} />
-    </box>
-  );
-};
-
 
 export const WorldRenderer: React.FC<WorldRendererProps> = ({ setInteractingNpcId }) => {
   const localPlayerId = useMultiplayerStore(state => state.sessionId);
