@@ -610,12 +610,12 @@ const InstancedWorldObjects: React.FC<{ objects: WorldObject[] }> = ({ objects }
     const treeAssets = getCdnAssetPath("/models/free_flow_creatures_and_bosses_glb_pack_v3/", "01_gnarl_maw.glb");
     const rockAssets = getCdnAssetPath("/models/free_flow_creatures_and_bosses_glb_pack_v3/", "02_grid_rusher.glb");
     
-    const activeParticleSystems: ParticleSystem[] = [];
+    const activeParticleSystems: any[] = [];
 
     const applyThinInstances = (container: AssetContainer, items: WorldObject[], isTree: boolean) => {
       const instance = container.instantiateModelsToScene(name => `base-${isTree ? 'tree' : 'rock'}-${name}`, false);
       const root = instance.rootNodes[0];
-      root.position = new Vector3(0, -1000, 0); 
+      (root as any).position = new Vector3(0, -1000, 0); 
       
       const meshes = instance.rootNodes.flatMap(n => {
         const m = n.getChildMeshes(false);
@@ -676,7 +676,7 @@ const InstancedWorldObjects: React.FC<{ objects: WorldObject[] }> = ({ objects }
 
       meshes.forEach(mesh => {
         if (mesh.getTotalVertices() > 0) {
-          mesh.thinInstanceSetBuffer("matrix", matrices, 16, false);
+          (mesh as any).thinInstanceSetBuffer("matrix", matrices, 16, false);
           mesh.doNotSyncBoundingInfo = true;
           mesh.alwaysSelectAsActiveMesh = true;
         }
