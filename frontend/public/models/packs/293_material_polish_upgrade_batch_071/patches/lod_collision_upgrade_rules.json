@@ -1,0 +1,35 @@
+{
+  "upgrade_type": "material_polish",
+  "rules": [
+    {
+      "target": "small_pickups",
+      "collider": "sphere_trigger",
+      "lod": "none_or_billboard"
+    },
+    {
+      "target": "static_props",
+      "collider": "box_or_cylinder",
+      "lod": "auto_generate_3_levels"
+    },
+    {
+      "target": "large_environment_modules",
+      "collider": "compound_primitive",
+      "lod": "manual_proxy"
+    },
+    {
+      "target": "creatures",
+      "collider": "capsule_or_compound",
+      "lod": "skinned_mesh_lod_after_rigging"
+    },
+    {
+      "target": "vfx_meshes",
+      "collider": "trigger_only_when_damage_window_active",
+      "lod": "pool_and_scale"
+    },
+    {
+      "target": "water_star_environment",
+      "collider": "none_or_trigger_volume",
+      "lod": "shader_or_plane_proxy"
+    }
+  ]
+}

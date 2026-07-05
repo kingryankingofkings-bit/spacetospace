@@ -1,0 +1,226 @@
+{
+  "pack_number": 73,
+  "pack_name": "The Deprecated Repositories Scrap-Phalanx Variant Pack",
+  "kind": "creature_biome_variants",
+  "created_utc": "2026-07-05T08:06:58.887735+00:00",
+  "source_docs_used": [
+    "geographic_master_guide_basic_area_maps_pack.zip",
+    "geographic_master_guide_detailed_maps.zip",
+    "dawnforge_sublocation_special_events_pack(1).zip",
+    "dawnforge_level_1_40_itemization_pack(1).zip",
+    "dawnforge_character_creator_customization_pack(1).zip",
+    "uploaded geographic master guide image"
+  ],
+  "region": "03 Western Wastes And Arid Plains",
+  "sub_location": "05 The Deprecated Repositories",
+  "theme": "waste",
+  "description": "Biome-adapted creature variants, including palette, VFX, audio tells, and prefab notes.",
+  "counts": {
+    "glb_assets": 5,
+    "textures_png": 8,
+    "audio_wav": 3,
+    "data_files": 4
+  },
+  "assets": [
+    {
+      "file": "glb_assets/01_landmark_anchor.glb",
+      "name": "Landmark Anchor",
+      "asset_kind": "landmark",
+      "theme": "waste",
+      "element_variant": "fire",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "static_world_anchor"
+    },
+    {
+      "file": "glb_assets/02_local_prop_cluster.glb",
+      "name": "Local Prop Cluster",
+      "asset_kind": "prop",
+      "theme": "waste",
+      "element_variant": "fire",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "static_prop_or_debris"
+    },
+    {
+      "file": "glb_assets/03_creature_or_npc_variant.glb",
+      "name": "Creature Or Npc Variant",
+      "asset_kind": "creature",
+      "theme": "waste",
+      "element_variant": "fire",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": true,
+      "script_profile": "creature_variant_base"
+    },
+    {
+      "file": "glb_assets/04_quest_or_system_interactable.glb",
+      "name": "Quest Or System Interactable",
+      "asset_kind": "interactable",
+      "theme": "waste",
+      "element_variant": "fire",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "quest_or_system_interactable"
+    },
+    {
+      "file": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "name": "Water Star Sky Or Liquid Asset",
+      "asset_kind": "liquid_sky",
+      "theme": "waste",
+      "element_variant": "fire",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "environment_surface_or_sky_proxy"
+    }
+  ],
+  "textures": [
+    {
+      "file": "textures/01_the_deprecated_repositories_scrap_phalanx_variant_pack_albedo.png",
+      "pattern": "albedo",
+      "theme": "waste",
+      "material_use": "local surface albedo"
+    },
+    {
+      "file": "textures/02_the_deprecated_repositories_scrap_phalanx_variant_pack_normal_proxy.png",
+      "pattern": "normal_proxy",
+      "theme": "waste",
+      "material_use": "placeholder normal-map proxy"
+    },
+    {
+      "file": "textures/03_the_deprecated_repositories_scrap_phalanx_variant_pack_trim.png",
+      "pattern": "trim",
+      "theme": "waste",
+      "material_use": "architecture/prop trim sheet"
+    },
+    {
+      "file": "textures/04_the_deprecated_repositories_scrap_phalanx_variant_pack_emission.png",
+      "pattern": "emission",
+      "theme": "waste",
+      "material_use": "glowing signage, runes, creatures, UI, and VFX"
+    },
+    {
+      "file": "textures/05_the_deprecated_repositories_scrap_phalanx_variant_pack_decal.png",
+      "pattern": "decal",
+      "theme": "waste",
+      "material_use": "floor/wall decals and quest markers"
+    },
+    {
+      "file": "textures/06_the_deprecated_repositories_scrap_phalanx_variant_pack_water.png",
+      "pattern": "water",
+      "theme": "waste",
+      "material_use": "water/liquid/caustic surface"
+    },
+    {
+      "file": "textures/07_the_deprecated_repositories_scrap_phalanx_variant_pack_starfield.png",
+      "pattern": "starfield",
+      "theme": "waste",
+      "material_use": "skybox/starfield/cosmic overlay"
+    },
+    {
+      "file": "textures/08_the_deprecated_repositories_scrap_phalanx_variant_pack_surface.png",
+      "pattern": "surface",
+      "theme": "waste",
+      "material_use": "secondary local surface variation"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio/the_deprecated_repositories_scrap_phalanx_variant_pack_music_loop.wav",
+      "cue_id": "the_deprecated_repositories_scrap_phalanx_variant_pack_music_loop",
+      "cue_type": "music",
+      "music_mode": "dust-rhythm",
+      "fits_region": "03 Western Wastes And Arid Plains",
+      "fits_sub_location": "05 The Deprecated Repositories",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    },
+    {
+      "file": "audio/the_deprecated_repositories_scrap_phalanx_variant_pack_ambience_loop.wav",
+      "cue_id": "the_deprecated_repositories_scrap_phalanx_variant_pack_ambience_loop",
+      "cue_type": "ambience",
+      "music_mode": "dust-rhythm",
+      "fits_region": "03 Western Wastes And Arid Plains",
+      "fits_sub_location": "05 The Deprecated Repositories",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    },
+    {
+      "file": "audio/the_deprecated_repositories_scrap_phalanx_variant_pack_event_or_pickup_sting.wav",
+      "cue_id": "the_deprecated_repositories_scrap_phalanx_variant_pack_event_or_pickup_sting",
+      "cue_type": "sting",
+      "music_mode": "dust-rhythm",
+      "fits_region": "03 Western Wastes And Arid Plains",
+      "fits_sub_location": "05 The Deprecated Repositories",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    }
+  ],
+  "data_files": [
+    "data/object_and_spawn_plan.json",
+    "data/material_texture_manifest.json",
+    "prefab_specs/prefab_handoff.json",
+    "audio/music_cue_manifest.json"
+  ],
+  "area_references": [
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "05 The Deprecated Repositories",
+      "area": "Index Crypt",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/01_index_crypt_map.png",
+      "shops": "Alchemist: Tonic Cellar Index"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "05 The Deprecated Repositories",
+      "area": "Archive Spine",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/02_archive_spine_map.png",
+      "shops": "Medic: Mender Post Archive; Enchanter: Spellwire Archive"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "05 The Deprecated Repositories",
+      "area": "Deprecated Hall",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/03_deprecated_hall_map.png",
+      "shops": "Marketplace: Trade Circle Deprecated; Food Stall: Lantern Kitchen Deprecated"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "05 The Deprecated Repositories",
+      "area": "Memory Cache Vaults",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/04_memory_cache_vaults_map.png",
+      "shops": "Armor Dye Pack Shop: Dyehouse Memory"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "05 The Deprecated Repositories",
+      "area": "Catalog Rift",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/05_catalog_rift_map.png",
+      "shops": "Curio Shop: Curio Niche Catalog; Medic: Remedy Booth Catalog"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "05 The Deprecated Repositories",
+      "area": "Server Ossuary",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/06_server_ossuary_map.png",
+      "shops": "Tailor: Needlehouse Server"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "05 The Deprecated Repositories",
+      "area": "Quarantine Shelf",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/07_quarantine_shelf_map.png",
+      "shops": "Blacksmith: Smelter of Quarantine"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "05 The Deprecated Repositories",
+      "area": "Retrieval Lift",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/08_retrieval_lift_map.png",
+      "shops": "Inn: The Green Retrieval"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "05 The Deprecated Repositories",
+      "area": "Scribes' Catwalks",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/09_scribes_catwalks_map.png",
+      "shops": "Weapon Skin Shop: Chromaforge Scribes'"
+    }
+  ]
+}

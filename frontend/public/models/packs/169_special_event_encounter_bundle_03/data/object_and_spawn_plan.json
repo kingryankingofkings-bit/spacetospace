@@ -1,0 +1,172 @@
+{
+  "pack_identity": {
+    "pack_number": 169,
+    "title": "Special Event Encounter Bundle 03",
+    "kind": "special_event_bundle",
+    "region": "The Urban Sprawl",
+    "sub_location": "Collapsed Skywalk Lanes",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "Collapsed Skywalk Lanes Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "Collapsed Skywalk Lanes Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Collapsed Skywalk Lanes Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Collapsed Skywalk Lanes Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Collapsed Skywalk Lanes Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Collapsed Skywalk Lanes Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-003",
+      "event_title": "Echo-Split Incident: Collapsed Skywalk Lanes",
+      "world_map_location": "The Urban Sprawl",
+      "sublocation": "Collapsed Skywalk Lanes",
+      "required_player_level": 20,
+      "primary_variant": "Echo-Split Venom-Spitter",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-037",
+      "event_title": "Eclipse-Synced Incident: Coin-Dispenser Arcade",
+      "world_map_location": "The Micro-Transaction Markets",
+      "sublocation": "Coin-Dispenser Arcade",
+      "required_player_level": 23,
+      "primary_variant": "Eclipse-Synced Venom-Spitter",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-071",
+      "event_title": "Spore-Sick Incident: Lava-Tide Walkways",
+      "world_map_location": "The Molten Forge",
+      "sublocation": "Lava-Tide Walkways",
+      "required_player_level": 27,
+      "primary_variant": "Spore-Sick Null Anomaly",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-105",
+      "event_title": "Magnetized Incident: Shattered Syllable Basin",
+      "world_map_location": "The Phonetic Wastes",
+      "sublocation": "Shattered Syllable Basin",
+      "required_player_level": 30,
+      "primary_variant": "Magnetized Venom-Spitter",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-139",
+      "event_title": "Ash-Baptized Incident: Executive Combat Floor",
+      "world_map_location": "The Syndicate Spire",
+      "sublocation": "Executive Combat Floor",
+      "required_player_level": 34,
+      "primary_variant": "Ash-Baptized Nexus Warden",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-173",
+      "event_title": "Data-Forged Incident: Critique Grid Bridge",
+      "world_map_location": "The Marlowe Editing Protocol",
+      "sublocation": "Critique Grid Bridge",
+      "required_player_level": 39,
+      "primary_variant": "Data-Forged Data-Forged Evolvarch",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-207",
+      "event_title": "Ablative Incident: Unrendered Ledge Field",
+      "world_map_location": "The Front-Matter Void",
+      "sublocation": "Unrendered Ledge Field",
+      "required_player_level": 40,
+      "primary_variant": "Ablative Null Anomaly",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

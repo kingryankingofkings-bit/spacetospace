@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 106,
+    "title": "The Sonic Badlands Music Ambience Texture Kit",
+    "kind": "music_ambience_texture",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "02 The Sonic Badlands",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Tuning Fork Expanse",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/01_tuning_fork_expanse_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Color Forge Tuning"
+    },
+    {
+      "source_area": "Standing Wave Gulch",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/02_standing_wave_gulch_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Enchanter: Sigil Loom Standing; Relic Trader: Oldlight Finds Standing"
+    },
+    {
+      "source_area": "Resonance Dunes",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/03_resonance_dunes_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Firstlight Clinic Resonance; General Goods: Supply Post Resonance"
+    },
+    {
+      "source_area": "Feedback Basin",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/04_feedback_basin_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Curio Shop: Lucky Relics Feedback"
+    },
+    {
+      "source_area": "Forkkeeper Outpost",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/05_forkkeeper_outpost_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Surestep Yard Forkkeeper"
+    },
+    {
+      "source_area": "Echo Drift",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/06_echo_drift_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Chromaforge Echo; Stable: Surestep Yard Echo"
+    },
+    {
+      "source_area": "Frequency Wall",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/07_frequency_wall_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Smelter of Frequency; Relic Trader: Heritage Stand Frequency"
+    },
+    {
+      "source_area": "Storm Channel",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Rested Storm; Tailor: Needlehouse Storm"
+    },
+    {
+      "source_area": "Buried Speaker Monolith",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "General Goods: Supply Post Buried; Relic Trader: Relic Reach Buried"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Sonic Badlands Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Sonic Badlands Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Sonic Badlands Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Sonic Badlands Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Sonic Badlands Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Sonic Badlands Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

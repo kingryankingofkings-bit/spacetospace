@@ -1,0 +1,154 @@
+{
+  "pack_identity": {
+    "pack_number": 138,
+    "title": "The Raid Rush Choke Points Shop Item Skin Kit",
+    "kind": "shop_item_skin",
+    "region": "02 Urban Core",
+    "sub_location": "04 The Raid Rush Choke Points",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Raid Rush Choke Points Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Raid Rush Choke Points Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Raid Rush Choke Points Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Raid Rush Choke Points Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Raid Rush Choke Points Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Raid Rush Choke Points Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [
+    {
+      "item_id": "DF-N-0036",
+      "item_name": "Plain Urban Sprawl Gridglass Root Rail Rifle of Hydraulic Burst",
+      "rarity": "Common",
+      "slot": "Ranged Weapon",
+      "gear_family": "Rail Rifle",
+      "world_location": "The Urban Sprawl",
+      "suggested_skin": "urban_electric_ranged_weapon_finish"
+    },
+    {
+      "item_id": "DF-N-0037",
+      "item_name": "Plain Subterranean Grid Civic Iron Aether Magnetic Grapple Gauntlet of Evolution Charge",
+      "rarity": "Common",
+      "slot": "Arm Weapon",
+      "gear_family": "Magnetic Grapple Gauntlet",
+      "world_location": "The Subterranean Grid",
+      "suggested_skin": "urban_electric_arm_weapon_finish"
+    },
+    {
+      "item_id": "DF-N-0038",
+      "item_name": "Plain Subterranean Grid Aether-Wood Aether-Edit Protocol Blade of Scrap Magnetism",
+      "rarity": "Common",
+      "slot": "Main Hand",
+      "gear_family": "Protocol Blade",
+      "world_location": "The Subterranean Grid",
+      "suggested_skin": "urban_electric_main_hand_finish"
+    },
+    {
+      "item_id": "DF-N-0039",
+      "item_name": "Plain Central Pillar Cottonweave Chimera Cape of Combo Grace",
+      "rarity": "Common",
+      "slot": "Back",
+      "gear_family": "Cape",
+      "world_location": "The Central Pillar / Star-Elevator Core",
+      "suggested_skin": "urban_electric_back_finish"
+    },
+    {
+      "item_id": "DF-N-0040",
+      "item_name": "Plain Zenith Spire Tinplate Tuning Chestplate of Projectile Reversal",
+      "rarity": "Common",
+      "slot": "Chest",
+      "gear_family": "Chestplate",
+      "world_location": "The Zenith Spire",
+      "suggested_skin": "urban_electric_chest_finish"
+    }
+  ],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Alchemist, Armor Dye Pack Shop, Blacksmith, Curio Shop, Enchanter, Inn, Medic, Tailor, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

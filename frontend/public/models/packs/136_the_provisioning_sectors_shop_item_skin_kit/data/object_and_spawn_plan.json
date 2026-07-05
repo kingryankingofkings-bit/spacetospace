@@ -1,0 +1,154 @@
+{
+  "pack_identity": {
+    "pack_number": 136,
+    "title": "The Provisioning Sectors Shop Item Skin Kit",
+    "kind": "shop_item_skin",
+    "region": "02 Urban Core",
+    "sub_location": "02 The Provisioning Sectors",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [
+    {
+      "item_id": "DF-N-0026",
+      "item_name": "Plain Central Pillar Cloudhook Brass Thorn Battleaxe of Aerial Juggle",
+      "rarity": "Common",
+      "slot": "Two-Hand Weapon",
+      "gear_family": "Battleaxe",
+      "world_location": "The Central Pillar / Star-Elevator Core",
+      "suggested_skin": "urban_electric_two_hand_weapon_finish"
+    },
+    {
+      "item_id": "DF-N-0027",
+      "item_name": "Plain Central Pillar Ash-Tanned Maelstrom Tuning-Fork Blade of EMP Resistance",
+      "rarity": "Common",
+      "slot": "Main Hand",
+      "gear_family": "Tuning-Fork Blade",
+      "world_location": "The Central Pillar / Star-Elevator Core",
+      "suggested_skin": "urban_electric_main_hand_finish"
+    },
+    {
+      "item_id": "DF-N-0028",
+      "item_name": "Plain Zenith Spire Gridglass Protocol Rail Rifle of Leviathan Pressure",
+      "rarity": "Common",
+      "slot": "Ranged Weapon",
+      "gear_family": "Rail Rifle",
+      "world_location": "The Zenith Spire",
+      "suggested_skin": "urban_electric_ranged_weapon_finish"
+    },
+    {
+      "item_id": "DF-N-0029",
+      "item_name": "Plain Urban Sprawl Civic Iron Alpha Visor of Sevenfold Counter",
+      "rarity": "Common",
+      "slot": "Head",
+      "gear_family": "Visor",
+      "world_location": "The Urban Sprawl",
+      "suggested_skin": "urban_electric_head_finish"
+    },
+    {
+      "item_id": "DF-N-0030",
+      "item_name": "Plain Urban Sprawl Aether-Wood Reverb Mantle of Armor Sunder",
+      "rarity": "Common",
+      "slot": "Shoulders",
+      "gear_family": "Mantle",
+      "world_location": "The Urban Sprawl",
+      "suggested_skin": "urban_electric_shoulders_finish"
+    }
+  ],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Armor Dye Pack Shop, Blacksmith, Curio Shop, Enchanter, Food Stall, Inn, Marketplace, Medic, Relic Trader, Stable, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

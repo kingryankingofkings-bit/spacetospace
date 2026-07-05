@@ -1,0 +1,229 @@
+{
+  "pack_identity": {
+    "pack_number": 26,
+    "title": "Space Elevator World Detail Kit",
+    "kind": "sublocation_world_detail",
+    "region": "01 Cosmic Layer",
+    "sub_location": "04 Space Elevator",
+    "theme": "cosmic"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Surface Nexus",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/04_space_elevator/01_surface_nexus_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Curio Shop: Curio Niche Surface"
+    },
+    {
+      "source_area": "Climber Dock & Launch Bay",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Enchanter: Arcane Polish Climber"
+    },
+    {
+      "source_area": "Emergency Detach Systems",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/04_space_elevator/03_emergency_detach_systems_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Moonlit Emergency"
+    },
+    {
+      "source_area": "Tether Control Node",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/04_space_elevator/04_tether_control_node_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Lantern Kitchen Ter; Stable: Beast Hitch Ter"
+    },
+    {
+      "source_area": "Climber Loading Bay",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/04_space_elevator/05_climber_loading_bay_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Marketplace: Merchant Court Climber"
+    },
+    {
+      "source_area": "Counterweight Platform",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/04_space_elevator/06_counterweight_platform_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Patternsmith Counterweight"
+    },
+    {
+      "source_area": "Stabilizer Arrays",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/04_space_elevator/07_stabilizer_arrays_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Remedy Booth Stabilizer; Mechanic: Spanner Bay Stabilizer"
+    },
+    {
+      "source_area": "Maintenance Collar",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/04_space_elevator/08_maintenance_collar_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Forge of Maintenance; Weapon Skin Shop: Patternsmith Maintenance"
+    },
+    {
+      "source_area": "Integrity Monitor Stations",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/04_space_elevator/09_integrity_monitor_stations_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Mechanic: Boltworks Integrity"
+    },
+    {
+      "source_area": "Upper Tether Junction",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/04_space_elevator/10_upper_tether_junction_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Dyehouse Upper; Alchemist: Elixir Nook Upper"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "Space Elevator Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Space Elevator Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Space Elevator Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Space Elevator Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Space Elevator Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Space Elevator Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Alchemist, Armor Dye Pack Shop, Blacksmith, Curio Shop, Enchanter, Food Stall, Inn, Marketplace, Mechanic, Medic, Stable, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

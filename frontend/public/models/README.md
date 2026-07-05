@@ -1,50 +1,24 @@
-# Free-Flow Creature and Boss GLB Pack
+# Upgrade Packs 223-422 Master
 
-This package contains **13 browser-loadable `.glb` model assets** created for the creature and boss concepts in your prompt.
+This master archive contains **200 individual upgrade ZIP packs**.
 
-## Contents
+These are the second set of 200 packs, built specifically as upgrades across previous textures and low-poly object assets.
 
-```text
-models/
-  creatures/
-    01_gnarl_maw.glb
-    02_grid_rusher.glb
-    03_scrap_phalanx.glb
-    04_siphon_tick.glb
-  bosses/
-    boss_01_ascendant_colossus.glb
-    boss_02_syndicate_lich.glb
-    boss_03_resonant_behemoth.glb
-    boss_04_null_anomaly.glb
-    boss_05_apex_chimera.glb
-    boss_06_resonance_maestro.glb
-    boss_07_data_forged_evolvarch.glb
-    boss_08_ivory_behemoth.glb
-    boss_09_astral_sovereign.glb
-manifest.json
-colliders.json
-MODEL_INDEX.md
-USAGE_NOTES.md
-threejs_loader_example.js
-```
+Aggregate contents:
+- 1200 GLB upgrade overlay/proxy meshes
+- 2400 PNG texture upgrade maps
+- 1000 patch JSON files
+- Target pool detected from previous packs:
+  - 6969 GLB object references
+  - 1983 texture image references
 
-## Asset Type
+Each individual pack includes:
+- `upgrade_glb_overlays/`
+- `texture_upgrades/`
+- `patches/`
+- `manifest.json`
+- `ASSET_INDEX.md`
+- `README.md`
+- `VALIDATION_REPORT.json`
 
-These are **actual `.glb` mesh files**, not images or concept sheets.
-
-They are low-poly, static prototype/gameplay models with embedded materials and named parts. They are suitable as browser-game placeholder/production-base assets, but they are **not rigged or animated yet**.
-
-## Coordinate System
-
-- Y-up
-- Origin near the center of the footprint
-- Forward generally points toward negative Z
-- Scale is arbitrary game units, intended to be convenient for Three.js-style scenes
-
-## Recommended Next Steps
-
-1. Import into Blender for rigging and animation.
-2. Add skeletal bones, animation clips, and hit-reaction variants.
-3. Replace or refine procedural geometry with hand-modeled topology where needed.
-4. Use `manifest.json` for engine metadata and `colliders.json` for initial hitbox tuning.
-5. Enable emissive bloom/postprocessing in the renderer for the glow materials.
+These packs are non-destructive. Antigravity 2.0 should apply them as variant overlays/material patches, not overwrite prior source assets.

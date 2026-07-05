@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 44,
+    "title": "The Whispering Glade World Detail Kit",
+    "kind": "sublocation_world_detail",
+    "region": "04 Eastern Wilds And Ancient Archives",
+    "sub_location": "02 The Whispering Glade",
+    "theme": "wilds"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Echoing Canopy",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/01_echoing_canopy_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Skinworks Echoing; Inn: The Green Echoing"
+    },
+    {
+      "source_area": "Hushbloom Clearing",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/02_hushbloom_clearing_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Marketplace: Trade Circle Hushbloom"
+    },
+    {
+      "source_area": "Listening Stones",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/03_listening_stones_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Relic Trader: Heritage Stand Listening"
+    },
+    {
+      "source_area": "Mistbound Pools",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/04_mistbound_pools_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Shadeworks Mistbound"
+    },
+    {
+      "source_area": "Veilwalk Paths",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/05_veilwalk_paths_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Mount Roost Veilwalk; Weapon Skin Shop: EdgeLacquer Veilwalk"
+    },
+    {
+      "source_area": "Scout Perches",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/06_scout_perches_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "General Goods: Provisions of Scout; Food Stall: Griddle Row Scout"
+    },
+    {
+      "source_area": "Ambush Clearing",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/07_ambush_clearing_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Curio Shop: Curio Niche Ambush"
+    },
+    {
+      "source_area": "Hollow Archives",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/08_hollow_archives_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Wandering Hollow"
+    },
+    {
+      "source_area": "Silent Bloom Gate",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/09_silent_bloom_gate_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Hammer at Silent; Enchanter: Arcane Polish Silent"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Whispering Glade Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Whispering Glade Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Whispering Glade Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Whispering Glade Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Whispering Glade Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Whispering Glade Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Armor Dye Pack Shop, Blacksmith, Curio Shop, Enchanter, Food Stall, General Goods, Inn, Marketplace, Relic Trader, Stable, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

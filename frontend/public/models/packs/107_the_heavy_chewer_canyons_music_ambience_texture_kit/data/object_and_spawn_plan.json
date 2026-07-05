@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 107,
+    "title": "The Heavy Chewer Canyons Music Ambience Texture Kit",
+    "kind": "music_ambience_texture",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "03 The Heavy Chewer Canyons",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Pack Run Gorge",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/01_pack_run_gorge_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Field Surgery Pack"
+    },
+    {
+      "source_area": "Bitewheel Den",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/02_bitewheel_den_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Pigment Loft Bitewheel"
+    },
+    {
+      "source_area": "Scavenger Gate",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/03_scavenger_gate_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Spice Cart Scavenger; Stable: Saddle Gate Scavenger"
+    },
+    {
+      "source_area": "Rift Chasm",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/04_rift_chasm_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Iron Rift"
+    },
+    {
+      "source_area": "Hound Nest Pits",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/05_hound_nest_pits_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Needlehouse Hound"
+    },
+    {
+      "source_area": "Redcliff Overlook",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/06_redcliff_overlook_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Mechanic: Boltworks Redcliff; Armor Dye Pack Shop: Pigment Loft Redcliff"
+    },
+    {
+      "source_area": "Ravine Conveyor",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/07_ravine_conveyor_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Hammer at Ravine"
+    },
+    {
+      "source_area": "Bone-Metal Pass",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/08_bone_metal_pass_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Chromaforge Bone-Metal"
+    },
+    {
+      "source_area": "Kill Zone Basin",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/09_kill_zone_basin_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Beast Hitch Kill; Blacksmith: Hammer at Kill"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

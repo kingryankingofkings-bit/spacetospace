@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 184,
+    "title": "Special Event Encounter Bundle 18",
+    "kind": "special_event_bundle",
+    "region": "The Subterranean Grid",
+    "sub_location": "Dead Platform Twelve",
+    "theme": "transit"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Dead Platform Twelve Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Dead Platform Twelve Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Dead Platform Twelve Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Dead Platform Twelve Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "Dead Platform Twelve Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "Dead Platform Twelve Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-018",
+      "event_title": "Eclipse-Synced Incident: Dead Platform Twelve",
+      "world_map_location": "The Subterranean Grid",
+      "sublocation": "Dead Platform Twelve",
+      "required_player_level": 22,
+      "primary_variant": "Eclipse-Synced Aegis Carapace",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-052",
+      "event_title": "Glass-Hardened Incident: Vine-Swing Nave",
+      "world_map_location": "The Canopy Portrait Halls",
+      "sublocation": "Vine-Swing Nave",
+      "required_player_level": 25,
+      "primary_variant": "Glass-Hardened Siphon-Ticks",
+      "hazard_profile": "root snares, moving beast-platforms, and canopy traversal pressure"
+    },
+    {
+      "event_id": "SEV-086",
+      "event_title": "Tide-Broken Incident: Ash Flat Expanse",
+      "world_map_location": "The Playa of Ash",
+      "sublocation": "Ash Flat Expanse",
+      "required_player_level": 28,
+      "primary_variant": "Tide-Broken Gnarl-Maws",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-120",
+      "event_title": "Sovereign-Touched Incident: Trench Observation Ring",
+      "world_map_location": "The Abyssal Trench",
+      "sublocation": "Trench Observation Ring",
+      "required_player_level": 31,
+      "primary_variant": "Sovereign-Touched Null Anomaly",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-154",
+      "event_title": "Warden-Fused Incident: Half-Built Vault Floor",
+      "world_map_location": "The Deprecated Repositories",
+      "sublocation": "Half-Built Vault Floor",
+      "required_player_level": 36,
+      "primary_variant": "Warden-Fused Null Anomaly",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-188",
+      "event_title": "Phase-Bound Incident: Zero-G Debris Lane",
+      "world_map_location": "The Orbital Tether Station",
+      "sublocation": "Zero-G Debris Lane",
+      "required_player_level": 40,
+      "primary_variant": "Phase-Bound Astral Sovereign",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

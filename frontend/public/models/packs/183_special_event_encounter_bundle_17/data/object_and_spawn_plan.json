@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 183,
+    "title": "Special Event Encounter Bundle 17",
+    "kind": "special_event_bundle",
+    "region": "The Subterranean Grid",
+    "sub_location": "Express-Line Switchroom",
+    "theme": "transit"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Express-Line Switchroom Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Express-Line Switchroom Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Express-Line Switchroom Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Express-Line Switchroom Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Express-Line Switchroom Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "Express-Line Switchroom Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-017",
+      "event_title": "Spore-Sick Incident: Express-Line Switchroom",
+      "world_map_location": "The Subterranean Grid",
+      "sublocation": "Express-Line Switchroom",
+      "required_player_level": 21,
+      "primary_variant": "Spore-Sick Scrap-Phalanx",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-051",
+      "event_title": "Sonic-Scarred Incident: Mural Vestibule",
+      "world_map_location": "The Canopy Portrait Halls",
+      "sublocation": "Mural Vestibule",
+      "required_player_level": 25,
+      "primary_variant": "Sonic-Scarred Gnarl-Maws",
+      "hazard_profile": "root snares, moving beast-platforms, and canopy traversal pressure"
+    },
+    {
+      "event_id": "SEV-085",
+      "event_title": "Ash-Baptized Incident: Junkyard Minotaur Turn",
+      "world_map_location": "The Scrap-Yard Labyrinth",
+      "sublocation": "Junkyard Minotaur Turn",
+      "required_player_level": 28,
+      "primary_variant": "Ash-Baptized Null Anomaly",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-119",
+      "event_title": "Warden-Fused Incident: Deep Signal Relay",
+      "world_map_location": "The Abyssal Trench",
+      "sublocation": "Deep Signal Relay",
+      "required_player_level": 31,
+      "primary_variant": "Warden-Fused Nexus Warden",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-153",
+      "event_title": "Venom-Laced Incident: Fragmented Core Node",
+      "world_map_location": "The Deprecated Repositories",
+      "sublocation": "Fragmented Core Node",
+      "required_player_level": 36,
+      "primary_variant": "Venom-Laced Syndicate Lich",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-187",
+      "event_title": "Ablative Incident: Curvature View Deck",
+      "world_map_location": "The Orbital Tether Station",
+      "sublocation": "Curvature View Deck",
+      "required_player_level": 40,
+      "primary_variant": "Ablative Syndicate Lich",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

@@ -1,0 +1,229 @@
+{
+  "pack_identity": {
+    "pack_number": 64,
+    "title": "The Provisioning Sectors Tremor-Fiend Variant Pack",
+    "kind": "creature_biome_variants",
+    "region": "02 Urban Core",
+    "sub_location": "02 The Provisioning Sectors",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Bulk Forges & Fabricators",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/01_bulk_forges_and_fabricators_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Beast Hitch Bulk"
+    },
+    {
+      "source_area": "Agri-Domes & Hydro Farms",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/02_agri_domes_and_hydro_farms_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Steelhouse Agri-Domes; Curio Shop: Curio Niche Agri-Domes"
+    },
+    {
+      "source_area": "Logistics Depots",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/03_logistics_depots_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Remedy Booth Logistics; Armor Dye Pack Shop: Color Forge Logistics"
+    },
+    {
+      "source_area": "Ration Houses & Kitchens",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/04_ration_houses_and_kitchens_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Enchanter: Arcane Polish Ration"
+    },
+    {
+      "source_area": "Vendor Lanes",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/05_vendor_lanes_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Relic Trader: Heritage Stand Vendor"
+    },
+    {
+      "source_area": "Rooftop Bazaars",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/06_rooftop_bazaars_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Dyehouse Rooftop"
+    },
+    {
+      "source_area": "Loading Platforms",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/07_loading_platforms_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Marketplace: Open Market Loading"
+    },
+    {
+      "source_area": "Cold Storage Towers",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Lantern Kitchen Cold"
+    },
+    {
+      "source_area": "Freight Transfer Courts",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Patternsmith Freight; Relic Trader: Oldlight Finds Freight"
+    },
+    {
+      "source_area": "Service Alleys",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/10_service_alleys_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Rested Service"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Provisioning Sectors Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

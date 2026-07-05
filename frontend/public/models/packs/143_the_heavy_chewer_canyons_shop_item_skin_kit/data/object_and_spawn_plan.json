@@ -1,0 +1,154 @@
+{
+  "pack_identity": {
+    "pack_number": 143,
+    "title": "The Heavy Chewer Canyons Shop Item Skin Kit",
+    "kind": "shop_item_skin",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "03 The Heavy Chewer Canyons",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Heavy Chewer Canyons Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [
+    {
+      "item_id": "DF-N-0061",
+      "item_name": "Tuned Urban Sprawl Aether-Wood Junkyard Mask of Low-Gravity Lift",
+      "rarity": "Uncommon",
+      "slot": "Head",
+      "gear_family": "Mask",
+      "world_location": "The Urban Sprawl",
+      "suggested_skin": "waste_fire_head_finish"
+    },
+    {
+      "item_id": "DF-N-0062",
+      "item_name": "Tuned Subterranean Grid Cottonweave Asteroid Pauldrons of Kinetic Absorption",
+      "rarity": "Uncommon",
+      "slot": "Shoulders",
+      "gear_family": "Pauldrons",
+      "world_location": "The Subterranean Grid",
+      "suggested_skin": "waste_fire_shoulders_finish"
+    },
+    {
+      "item_id": "DF-N-0063",
+      "item_name": "Tuned On-Demand Arteries Tinplate Flux Belt of Dream Memory",
+      "rarity": "Uncommon",
+      "slot": "Waist",
+      "gear_family": "Belt",
+      "world_location": "The On-Demand Arteries",
+      "suggested_skin": "waste_fire_waist_finish"
+    },
+    {
+      "item_id": "DF-N-0064",
+      "item_name": "Tuned Urban Sprawl Wirehide Briar Twin Daggers of Flow Retention",
+      "rarity": "Uncommon",
+      "slot": "Dual Weapon",
+      "gear_family": "Twin Daggers",
+      "world_location": "The Urban Sprawl",
+      "suggested_skin": "waste_fire_dual_weapon_finish"
+    },
+    {
+      "item_id": "DF-N-0065",
+      "item_name": "Tuned Subterranean Grid Cloudhook Brass Thermal Gravity Lance of Siphon Guard",
+      "rarity": "Uncommon",
+      "slot": "Two-Hand Weapon",
+      "gear_family": "Gravity Lance",
+      "world_location": "The Subterranean Grid",
+      "suggested_skin": "waste_fire_two_hand_weapon_finish"
+    }
+  ],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Armor Dye Pack Shop, Blacksmith, Food Stall, Inn, Mechanic, Medic, Stable, Tailor, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

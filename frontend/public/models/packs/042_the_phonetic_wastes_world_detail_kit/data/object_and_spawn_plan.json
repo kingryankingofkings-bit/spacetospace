@@ -1,0 +1,229 @@
+{
+  "pack_identity": {
+    "pack_number": 42,
+    "title": "The Phonetic Wastes World Detail Kit",
+    "kind": "sublocation_world_detail",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "10 The Phonetic Wastes",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Consonant Ridge",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/01_consonant_ridge_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Enchanter: Sigil Loom Consonant; Tailor: Stitchmark Consonant"
+    },
+    {
+      "source_area": "Vowel Dunes",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/02_vowel_dunes_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Alchemist: Tonic Cellar Vowel; General Goods: Provisions of Vowel"
+    },
+    {
+      "source_area": "Lexicon Flats",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/03_lexicon_flats_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Shadeworks Lexicon"
+    },
+    {
+      "source_area": "Syllable Sink",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/04_syllable_sink_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Skinworks Syllable; Relic Trader: Heritage Stand Syllable"
+    },
+    {
+      "source_area": "Humming Obelisk",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/05_humming_obelisk_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "General Goods: Supply Post Humming; Stable: Beast Hitch Humming"
+    },
+    {
+      "source_area": "Accent Basin",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/06_accent_basin_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Thread & Hem Accent"
+    },
+    {
+      "source_area": "Glyph Mirage",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/07_glyph_mirage_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Ember Glyph"
+    },
+    {
+      "source_area": "Pronunciation Gate",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/08_pronunciation_gate_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Cloak and Cord Pronunciation"
+    },
+    {
+      "source_area": "Sonic Dust Storm",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/09_sonic_dust_storm_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Spice Cart Sonic"
+    },
+    {
+      "source_area": "Echo Forum",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/10_echo_forum_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Hammer at Echo; Inn: The Ember Echo"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Phonetic Wastes Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Phonetic Wastes Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Phonetic Wastes Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Phonetic Wastes Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Phonetic Wastes Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Phonetic Wastes Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Alchemist, Armor Dye Pack Shop, Blacksmith, Enchanter, Food Stall, General Goods, Inn, Relic Trader, Stable, Tailor, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

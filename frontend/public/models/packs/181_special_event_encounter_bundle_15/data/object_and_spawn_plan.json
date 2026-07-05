@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 181,
+    "title": "Special Event Encounter Bundle 15",
+    "kind": "special_event_bundle",
+    "region": "The Central Pillar / Star-Elevator Core",
+    "sub_location": "Dawnforge Descent Gate",
+    "theme": "neutral"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "Dawnforge Descent Gate Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "Dawnforge Descent Gate Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Dawnforge Descent Gate Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Dawnforge Descent Gate Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Dawnforge Descent Gate Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Dawnforge Descent Gate Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-015",
+      "event_title": "Sonic-Scarred Incident: Dawnforge Descent Gate",
+      "world_map_location": "The Central Pillar / Star-Elevator Core",
+      "sublocation": "Dawnforge Descent Gate",
+      "required_player_level": 21,
+      "primary_variant": "Sonic-Scarred Null Anomaly",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-049",
+      "event_title": "Ash-Baptized Incident: Sanctuary Feeding Run",
+      "world_map_location": "The Pachyderm Sanctuaries",
+      "sublocation": "Sanctuary Feeding Run",
+      "required_player_level": 24,
+      "primary_variant": "Ash-Baptized Aegis Carapace",
+      "hazard_profile": "root snares, moving beast-platforms, and canopy traversal pressure"
+    },
+    {
+      "event_id": "SEV-083",
+      "event_title": "Sovereign-Touched Incident: Crushed Starship Stack",
+      "world_map_location": "The Scrap-Yard Labyrinth",
+      "sublocation": "Crushed Starship Stack",
+      "required_player_level": 28,
+      "primary_variant": "Sovereign-Touched Nexus Swarmers",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-117",
+      "event_title": "Phase-Bound Incident: Pressure-Slow Arena",
+      "world_map_location": "The Abyssal Trench",
+      "sublocation": "Pressure-Slow Arena",
+      "required_player_level": 31,
+      "primary_variant": "Phase-Bound Scrap-Stalker",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-151",
+      "event_title": "Ablative Incident: Exposed Code Frameworks",
+      "world_map_location": "The Deprecated Repositories",
+      "sublocation": "Exposed Code Frameworks",
+      "required_player_level": 36,
+      "primary_variant": "Ablative Null Anomaly",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-185",
+      "event_title": "Rhythm-Warped Incident: Lunar Drill Bunker",
+      "world_map_location": "The Lunar Readiness Base",
+      "sublocation": "Lunar Drill Bunker",
+      "required_player_level": 40,
+      "primary_variant": "Rhythm-Warped Null Anomaly",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

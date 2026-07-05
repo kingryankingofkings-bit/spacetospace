@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 112,
+    "title": "The Burning Playa Music Ambience Texture Kit",
+    "kind": "music_ambience_texture",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "08 The Burning Playa",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Inferno Circuit",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/08_the_burning_playa/01_inferno_circuit_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Lantern Kitchen Inferno"
+    },
+    {
+      "source_area": "Ember Camp",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/08_the_burning_playa/02_ember_camp_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Skinworks Ember"
+    },
+    {
+      "source_area": "Pyre Ring",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/08_the_burning_playa/03_pyre_ring_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Needlehouse Pyre; Enchanter: Runelight Pyre"
+    },
+    {
+      "source_area": "Firewheel Parade Route",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/08_the_burning_playa/04_firewheel_parade_route_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Iron Firewheel"
+    },
+    {
+      "source_area": "Night Basin",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/08_the_burning_playa/05_night_basin_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Beast Hitch Night"
+    },
+    {
+      "source_area": "Spark Gate",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/08_the_burning_playa/06_spark_gate_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Relic Trader: Heritage Stand Spark"
+    },
+    {
+      "source_area": "Smoke Towers",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/08_the_burning_playa/07_smoke_towers_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Mechanic: Repair Dock Smoke"
+    },
+    {
+      "source_area": "Furnace Idol",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/08_the_burning_playa/08_furnace_idol_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Anvil of Furnace; Tailor: Thread & Hem Furnace"
+    },
+    {
+      "source_area": "Saltscar Ridge Lookout",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/08_the_burning_playa/09_saltscar_ridge_lookout_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Shadeworks Saltscar; Tailor: Stitchmark Saltscar"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Burning Playa Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Burning Playa Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Burning Playa Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Burning Playa Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Burning Playa Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Burning Playa Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

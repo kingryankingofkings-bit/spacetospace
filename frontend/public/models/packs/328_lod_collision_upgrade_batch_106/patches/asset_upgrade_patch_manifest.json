@@ -1,0 +1,346 @@
+{
+  "pack_number": 328,
+  "pack_name": "LOD + Collision Upgrade Batch 106",
+  "created_utc": "2026-07-05T09:12:57.707184+00:00",
+  "upgrade_scope": "Upgrades across prior generated textures and low-poly objects.",
+  "source_target_pool_summary": {
+    "detected_glb_targets_total": 6969,
+    "detected_texture_targets_total": 1983,
+    "this_pack_target_glb_refs": 32,
+    "this_pack_target_texture_refs": 32
+  },
+  "target_assets_sample": [
+    {
+      "source_zip": "free_flow_creatures_and_bosses_glb_pack_v3.zip",
+      "path_in_zip": "models/bosses/boss_09_astral_sovereign.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/01_bryn_gearmantle_fixer_from_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/02_tamsin_skyharrow_tactician_near_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/03_nyra_dubwater_diver_near_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/04_quill_ashvein_scout_near_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/05_luma_brightlock_sentinel_near_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/06_sarai_cinderholt_ranger_from_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/07_soren_rootborne_mechanist_at_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/08_edda_voxmere_tamer_from_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/09_nix_gantryn_oracle_of_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/10_quill_gearmantle_archivist_of_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/11_draven_gearmantle_ranger_near_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/12_zerin_riftwalker_tamer_of_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/13_elo_nullborne_specialist_under_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/14_rook_gravesong_oracle_at_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/15_tamsin_voxmere_operator_at_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/16_ossa_riftwalker_fixer_under_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/17_maelis_whispercoil_responder_from_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/18_bryn_brightlock_runner_near_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/19_ilyra_echohand_specialist_at_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/20_sable_cragwarden_diver_of_arrival.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/01_calder_ironwake_diver_at_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/02_tamsin_wayfare_warden_from_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/03_brant_voidrill_tactician_under_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/04_edda_whispercoil_keeper_at_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/05_dax_mossguard_herald_near_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/06_tamsin_trenchmark_archivist_near_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/07_luma_voxmere_cartographer_under_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/08_ren_skyharrow_guide_from_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/09_astra_voidrill_courier_under_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/10_astra_gravesong_navigator_near_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/11_yara_holloway_captain_from_waystone.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "079_the_emerald_canopy_sanctuary_null_anomaly_variant_pack.zip",
+      "path_in_zip": "textures/01_the_emerald_canopy_sanctuary_null_anomaly_variant_pack_albedo.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "079_the_emerald_canopy_sanctuary_null_anomaly_variant_pack.zip",
+      "path_in_zip": "textures/02_the_emerald_canopy_sanctuary_null_anomaly_variant_pack_normal_proxy.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "079_the_emerald_canopy_sanctuary_null_anomaly_variant_pack.zip",
+      "path_in_zip": "textures/03_the_emerald_canopy_sanctuary_null_anomaly_variant_pack_trim.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "079_the_emerald_canopy_sanctuary_null_anomaly_variant_pack.zip",
+      "path_in_zip": "textures/04_the_emerald_canopy_sanctuary_null_anomaly_variant_pack_emission.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "079_the_emerald_canopy_sanctuary_null_anomaly_variant_pack.zip",
+      "path_in_zip": "textures/05_the_emerald_canopy_sanctuary_null_anomaly_variant_pack_decal.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "079_the_emerald_canopy_sanctuary_null_anomaly_variant_pack.zip",
+      "path_in_zip": "textures/06_the_emerald_canopy_sanctuary_null_anomaly_variant_pack_water.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "079_the_emerald_canopy_sanctuary_null_anomaly_variant_pack.zip",
+      "path_in_zip": "textures/07_the_emerald_canopy_sanctuary_null_anomaly_variant_pack_starfield.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "079_the_emerald_canopy_sanctuary_null_anomaly_variant_pack.zip",
+      "path_in_zip": "textures/08_the_emerald_canopy_sanctuary_null_anomaly_variant_pack_surface.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "080_the_whispering_glade_nexus_swarmers_variant_pack.zip",
+      "path_in_zip": "textures/01_the_whispering_glade_nexus_swarmers_variant_pack_albedo.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "080_the_whispering_glade_nexus_swarmers_variant_pack.zip",
+      "path_in_zip": "textures/02_the_whispering_glade_nexus_swarmers_variant_pack_normal_proxy.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "080_the_whispering_glade_nexus_swarmers_variant_pack.zip",
+      "path_in_zip": "textures/03_the_whispering_glade_nexus_swarmers_variant_pack_trim.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "080_the_whispering_glade_nexus_swarmers_variant_pack.zip",
+      "path_in_zip": "textures/04_the_whispering_glade_nexus_swarmers_variant_pack_emission.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "080_the_whispering_glade_nexus_swarmers_variant_pack.zip",
+      "path_in_zip": "textures/05_the_whispering_glade_nexus_swarmers_variant_pack_decal.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "080_the_whispering_glade_nexus_swarmers_variant_pack.zip",
+      "path_in_zip": "textures/06_the_whispering_glade_nexus_swarmers_variant_pack_water.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "080_the_whispering_glade_nexus_swarmers_variant_pack.zip",
+      "path_in_zip": "textures/07_the_whispering_glade_nexus_swarmers_variant_pack_starfield.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "080_the_whispering_glade_nexus_swarmers_variant_pack.zip",
+      "path_in_zip": "textures/08_the_whispering_glade_nexus_swarmers_variant_pack_surface.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "081_the_canopy_portrait_halls_scrap_stalker_variant_pack.zip",
+      "path_in_zip": "textures/01_the_canopy_portrait_halls_scrap_stalker_variant_pack_albedo.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "081_the_canopy_portrait_halls_scrap_stalker_variant_pack.zip",
+      "path_in_zip": "textures/02_the_canopy_portrait_halls_scrap_stalker_variant_pack_normal_proxy.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "081_the_canopy_portrait_halls_scrap_stalker_variant_pack.zip",
+      "path_in_zip": "textures/03_the_canopy_portrait_halls_scrap_stalker_variant_pack_trim.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "081_the_canopy_portrait_halls_scrap_stalker_variant_pack.zip",
+      "path_in_zip": "textures/04_the_canopy_portrait_halls_scrap_stalker_variant_pack_emission.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "081_the_canopy_portrait_halls_scrap_stalker_variant_pack.zip",
+      "path_in_zip": "textures/05_the_canopy_portrait_halls_scrap_stalker_variant_pack_decal.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "081_the_canopy_portrait_halls_scrap_stalker_variant_pack.zip",
+      "path_in_zip": "textures/06_the_canopy_portrait_halls_scrap_stalker_variant_pack_water.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "081_the_canopy_portrait_halls_scrap_stalker_variant_pack.zip",
+      "path_in_zip": "textures/07_the_canopy_portrait_halls_scrap_stalker_variant_pack_starfield.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "081_the_canopy_portrait_halls_scrap_stalker_variant_pack.zip",
+      "path_in_zip": "textures/08_the_canopy_portrait_halls_scrap_stalker_variant_pack_surface.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "082_the_infinite_archives_sylvan_juggernaut_variant_pack.zip",
+      "path_in_zip": "textures/01_the_infinite_archives_sylvan_juggernaut_variant_pack_albedo.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "082_the_infinite_archives_sylvan_juggernaut_variant_pack.zip",
+      "path_in_zip": "textures/02_the_infinite_archives_sylvan_juggernaut_variant_pack_normal_proxy.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "082_the_infinite_archives_sylvan_juggernaut_variant_pack.zip",
+      "path_in_zip": "textures/03_the_infinite_archives_sylvan_juggernaut_variant_pack_trim.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "082_the_infinite_archives_sylvan_juggernaut_variant_pack.zip",
+      "path_in_zip": "textures/04_the_infinite_archives_sylvan_juggernaut_variant_pack_emission.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "082_the_infinite_archives_sylvan_juggernaut_variant_pack.zip",
+      "path_in_zip": "textures/05_the_infinite_archives_sylvan_juggernaut_variant_pack_decal.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "082_the_infinite_archives_sylvan_juggernaut_variant_pack.zip",
+      "path_in_zip": "textures/06_the_infinite_archives_sylvan_juggernaut_variant_pack_water.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "082_the_infinite_archives_sylvan_juggernaut_variant_pack.zip",
+      "path_in_zip": "textures/07_the_infinite_archives_sylvan_juggernaut_variant_pack_starfield.png",
+      "asset_type": "texture_image"
+    },
+    {
+      "source_zip": "082_the_infinite_archives_sylvan_juggernaut_variant_pack.zip",
+      "path_in_zip": "textures/08_the_infinite_archives_sylvan_juggernaut_variant_pack_surface.png",
+      "asset_type": "texture_image"
+    }
+  ],
+  "recommended_patch_operations": [
+    "apply_texture_overlay",
+    "add_emissive_material_variant",
+    "add_weathering_or_edgewear_mask",
+    "attach_low_poly_overlay_mesh_as_child_prefab",
+    "generate_or_replace_lod_proxy",
+    "update_collider_bounds_if_overlay_changes_silhouette",
+    "add biome or element-specific material variant",
+    "register upgraded prefab as non-destructive variant of original asset"
+  ],
+  "do_not_duplicate_source_assets": true,
+  "non_destructive_variant_naming": "UPG_328_lod_collision_{source_prefab_id}"
+}

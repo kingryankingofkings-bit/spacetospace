@@ -1,0 +1,229 @@
+{
+  "pack_identity": {
+    "pack_number": 67,
+    "title": "The Front Matter Void Null Anomaly Variant Pack",
+    "kind": "creature_biome_variants",
+    "region": "02 Urban Core",
+    "sub_location": "05 The Front Matter Void",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Reality Fracture Edge",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Smelter of Reality; General Goods: Provisions of Reality"
+    },
+    {
+      "source_area": "Blank-Load Terraces",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/02_blank_load_terraces_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "none"
+    },
+    {
+      "source_area": "Null Plaza",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/03_null_plaza_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Enchanter: Arcane Polish Null; General Goods: Provisions of Null"
+    },
+    {
+      "source_area": "Data Tear Corridor",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/04_data_tear_corridor_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Saddle Gate Data"
+    },
+    {
+      "source_area": "Anomaly Plaza",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/05_anomaly_plaza_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "General Goods: Loadout Depot Anomaly; Armor Dye Pack Shop: Shadeworks Anomaly"
+    },
+    {
+      "source_area": "Geometry Spill",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/06_geometry_spill_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Chromaforge Geometry"
+    },
+    {
+      "source_area": "Static Bridge",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/07_static_bridge_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Curio Shop: Lucky Relics Static"
+    },
+    {
+      "source_area": "Voidwatch Platform",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/08_voidwatch_platform_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Spice Cart Voidwatch; Alchemist: Remedy House Voidwatch"
+    },
+    {
+      "source_area": "Fracture Beacon",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/09_fracture_beacon_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Color Forge Fracture"
+    },
+    {
+      "source_area": "Emergency Seal Gate",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/10_emergency_seal_gate_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Iron Emergency"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Front Matter Void Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Front Matter Void Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Front Matter Void Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Front Matter Void Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Front Matter Void Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Front Matter Void Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

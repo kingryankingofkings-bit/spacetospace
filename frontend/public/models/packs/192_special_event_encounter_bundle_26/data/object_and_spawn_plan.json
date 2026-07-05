@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 192,
+    "title": "Special Event Encounter Bundle 26",
+    "kind": "special_event_bundle",
+    "region": "The Raid-Rush Choke Points",
+    "sub_location": "Barricade Gate Alpha",
+    "theme": "neutral"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "Barricade Gate Alpha Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "Barricade Gate Alpha Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "Barricade Gate Alpha Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Barricade Gate Alpha Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Barricade Gate Alpha Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Barricade Gate Alpha Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-026",
+      "event_title": "Phase-Bound Incident: Barricade Gate Alpha",
+      "world_map_location": "The Raid-Rush Choke Points",
+      "sublocation": "Barricade Gate Alpha",
+      "required_player_level": 22,
+      "primary_variant": "Phase-Bound Aegis Carapace",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-060",
+      "event_title": "Grav-Torn Incident: Twilight Elite Clearing",
+      "world_map_location": "The Whispering Glade",
+      "sublocation": "Twilight Elite Clearing",
+      "required_player_level": 26,
+      "primary_variant": "Grav-Torn Iron-Jaw Hound",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-094",
+      "event_title": "Echo-Split Incident: Visibility-Zero Storm",
+      "world_map_location": "The Burning Playa",
+      "sublocation": "Visibility-Zero Storm",
+      "required_player_level": 29,
+      "primary_variant": "Echo-Split Tremor-Fiend",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-128",
+      "event_title": "Eclipse-Synced Incident: Rhyme-Locked Blast Doors",
+      "world_map_location": "The Rhyming Labyrinths",
+      "sublocation": "Rhyme-Locked Blast Doors",
+      "required_player_level": 32,
+      "primary_variant": "Eclipse-Synced Aegis Carapace",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-162",
+      "event_title": "Chrome-Maw Incident: Biome Projector Chamber",
+      "world_map_location": "The Voyage Incubator",
+      "sublocation": "Biome Projector Chamber",
+      "required_player_level": 37,
+      "primary_variant": "Chrome-Maw Null Anomaly",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-196",
+      "event_title": "Sonic-Scarred Incident: Missing Terrain Span",
+      "world_map_location": "The Canceled Supabase",
+      "sublocation": "Missing Terrain Span",
+      "required_player_level": 40,
+      "primary_variant": "Sonic-Scarred Null Anomaly",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 75,
+    "title": "The Playa Of Ash Iron-Jaw Hound Variant Pack",
+    "kind": "creature_biome_variants",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "07 The Playa Of Ash",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Ash Mirror Flats",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/01_ash_mirror_flats_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Mender Post Ash; Mechanic: Spanner Bay Ash"
+    },
+    {
+      "source_area": "Dustline Camp",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/02_dustline_camp_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Pigment Loft Dustline"
+    },
+    {
+      "source_area": "Sculpture Ring",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/03_sculpture_ring_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Marketplace: Bazaar Lane Sculpture; Curio Shop: Lucky Relics Sculpture"
+    },
+    {
+      "source_area": "Suntrack Road",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Spice Cart Suntrack; Weapon Skin Shop: Skinworks Suntrack"
+    },
+    {
+      "source_area": "Supply Beacon Row",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/05_supply_beacon_row_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Moonlit Supply; Medic: Remedy Booth Supply"
+    },
+    {
+      "source_area": "Mirage Yard",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/06_mirage_yard_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Cloak and Cord Mirage"
+    },
+    {
+      "source_area": "Waystation Halo",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/07_waystation_halo_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Steelhouse Waystation; Stable: Saddle Gate Waystation"
+    },
+    {
+      "source_area": "Dry Basin Reach",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/08_dry_basin_reach_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Chromaforge Dry"
+    },
+    {
+      "source_area": "Bonewind Ridge",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/09_bonewind_ridge_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Saddle Gate Bonewind; Curio Shop: Echo Trinkets Bonewind"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Playa Of Ash Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Playa Of Ash Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Playa Of Ash Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Playa Of Ash Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Playa Of Ash Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Playa Of Ash Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 197,
+    "title": "Special Event Encounter Bundle 31",
+    "kind": "special_event_bundle",
+    "region": "The On-Demand Arteries",
+    "sub_location": "RideShare Roofway",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "RideShare Roofway Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "RideShare Roofway Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "RideShare Roofway Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "RideShare Roofway Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "RideShare Roofway Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "RideShare Roofway Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-031",
+      "event_title": "Tide-Broken Incident: RideShare Roofway",
+      "world_map_location": "The On-Demand Arteries",
+      "sublocation": "RideShare Roofway",
+      "required_player_level": 23,
+      "primary_variant": "Tide-Broken Iron-Jaw Hound",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-065",
+      "event_title": "Sovereign-Touched Incident: Arena Evolution Core",
+      "world_map_location": "The Evolution Arenas",
+      "sublocation": "Arena Evolution Core",
+      "required_player_level": 26,
+      "primary_variant": "Sovereign-Touched Iron-Jaw Hound",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-099",
+      "event_title": "Phase-Bound Incident: Badlands Drum Line",
+      "world_map_location": "The Sonic Badlands",
+      "sublocation": "Badlands Drum Line",
+      "required_player_level": 29,
+      "primary_variant": "Phase-Bound Null Anomaly",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-133",
+      "event_title": "Rhythm-Warped Incident: Dr. Blake Monitor Bay",
+      "world_map_location": "Sector 6 Quarantine",
+      "sublocation": "Dr. Blake Monitor Bay",
+      "required_player_level": 32,
+      "primary_variant": "Rhythm-Warped Nexus Swarmers",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-167",
+      "event_title": "Grav-Torn Incident: Even-Floor Ceiling Walk",
+      "world_map_location": "The Alternating Archives",
+      "sublocation": "Even-Floor Ceiling Walk",
+      "required_player_level": 39,
+      "primary_variant": "Grav-Torn Data-Forged Evolvarch",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-201",
+      "event_title": "Overcharged Incident: Hidden Canopy Entrance",
+      "world_map_location": "The Infinite Archives",
+      "sublocation": "Hidden Canopy Entrance",
+      "required_player_level": 40,
+      "primary_variant": "Overcharged Null Anomaly",
+      "hazard_profile": "root snares, moving beast-platforms, and canopy traversal pressure"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

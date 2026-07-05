@@ -1,0 +1,154 @@
+{
+  "pack_identity": {
+    "pack_number": 166,
+    "title": "The Wayfora Archipelago Shop Item Skin Kit",
+    "kind": "shop_item_skin",
+    "region": "06 Geothermal Abyss",
+    "sub_location": "03 The Wayfora Archipelago",
+    "theme": "geothermal"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [
+    {
+      "item_id": "DF-N-0001",
+      "item_name": "Plain Central Pillar Wirehide K-0NG Pauldrons of Briar Binding",
+      "rarity": "Common",
+      "slot": "Shoulders",
+      "gear_family": "Pauldrons",
+      "world_location": "The Central Pillar / Star-Elevator Core",
+      "suggested_skin": "geothermal_magma_shoulders_finish"
+    },
+    {
+      "item_id": "DF-N-0002",
+      "item_name": "Plain Zenith Spire Cloudhook Brass Exosphere Belt of Afterimage Echo",
+      "rarity": "Common",
+      "slot": "Waist",
+      "gear_family": "Belt",
+      "world_location": "The Zenith Spire",
+      "suggested_skin": "geothermal_magma_waist_finish"
+    },
+    {
+      "item_id": "DF-N-0003",
+      "item_name": "Plain Zenith Spire Ash-Tanned Scavenger Cape of Starwell Sync",
+      "rarity": "Common",
+      "slot": "Back",
+      "gear_family": "Cape",
+      "world_location": "The Zenith Spire",
+      "suggested_skin": "geothermal_magma_back_finish"
+    },
+    {
+      "item_id": "DF-N-0004",
+      "item_name": "Plain Provisioning Sectors Gridglass Counterweight Chestplate of Vine Pull",
+      "rarity": "Common",
+      "slot": "Chest",
+      "gear_family": "Chestplate",
+      "world_location": "The Provisioning Sectors",
+      "suggested_skin": "geothermal_magma_chest_finish"
+    },
+    {
+      "item_id": "DF-N-0005",
+      "item_name": "Plain Urban Sprawl Civic Iron Stutter Magnetic Grapple Gauntlet of Thermal Shock",
+      "rarity": "Common",
+      "slot": "Arm Weapon",
+      "gear_family": "Magnetic Grapple Gauntlet",
+      "world_location": "The Urban Sprawl",
+      "suggested_skin": "geothermal_magma_arm_weapon_finish"
+    }
+  ],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Armor Dye Pack Shop, Blacksmith, Food Stall, General Goods, Inn, Marketplace, Medic, Tailor, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

@@ -1,0 +1,154 @@
+{
+  "pack_identity": {
+    "pack_number": 144,
+    "title": "The Shut Down Academies Shop Item Skin Kit",
+    "kind": "shop_item_skin",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "04 The Shut Down Academies",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [
+    {
+      "item_id": "DF-N-0066",
+      "item_name": "Plain Central Pillar Ash-Tanned Front-Matter Vine Scythe of Phase-Step",
+      "rarity": "Common",
+      "slot": "Two-Hand Weapon",
+      "gear_family": "Vine Scythe",
+      "world_location": "The Central Pillar / Star-Elevator Core",
+      "suggested_skin": "waste_fire_two_hand_weapon_finish"
+    },
+    {
+      "item_id": "DF-N-0067",
+      "item_name": "Plain Urban Sprawl Gridglass Apex Flux Staff of Dawnforge Resolve",
+      "rarity": "Common",
+      "slot": "Two-Hand Focus",
+      "gear_family": "Flux Staff",
+      "world_location": "The Urban Sprawl",
+      "suggested_skin": "waste_fire_two_hand_focus_finish"
+    },
+    {
+      "item_id": "DF-N-0068",
+      "item_name": "Plain Central Pillar Civic Iron Tempo Helm of Protocol Revision",
+      "rarity": "Common",
+      "slot": "Head",
+      "gear_family": "Helm",
+      "world_location": "The Central Pillar / Star-Elevator Core",
+      "suggested_skin": "waste_fire_head_finish"
+    },
+    {
+      "item_id": "DF-N-0069",
+      "item_name": "Plain Central Pillar Aether-Wood Handler Exo-Rig of Critical Timing",
+      "rarity": "Common",
+      "slot": "Chest",
+      "gear_family": "Exo-Rig",
+      "world_location": "The Central Pillar / Star-Elevator Core",
+      "suggested_skin": "waste_fire_chest_finish"
+    },
+    {
+      "item_id": "DF-N-0070",
+      "item_name": "Plain Raid-Rush Choke Points Cottonweave Tether Bracers of Tempo Control",
+      "rarity": "Common",
+      "slot": "Wrists",
+      "gear_family": "Bracers",
+      "world_location": "The Raid-Rush Choke Points",
+      "suggested_skin": "waste_fire_wrists_finish"
+    }
+  ],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Alchemist, Armor Dye Pack Shop, Blacksmith, General Goods, Inn, Marketplace, Mechanic, Medic, Relic Trader, Stable, Tailor, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

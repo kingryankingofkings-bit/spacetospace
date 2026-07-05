@@ -1,0 +1,229 @@
+{
+  "pack_identity": {
+    "pack_number": 68,
+    "title": "The Micro Markets Nexus Swarmers Variant Pack",
+    "kind": "creature_biome_variants",
+    "region": "02 Urban Core",
+    "sub_location": "06 The Micro Markets",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Bazaar Ring",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/06_the_micro_markets/01_bazaar_ring_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Pigment Loft Bazaar"
+    },
+    {
+      "source_area": "Street Bazaar & Stalls",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/06_the_micro_markets/02_street_bazaar_and_stalls_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Wandering Street"
+    },
+    {
+      "source_area": "Black-Market Alleys",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/06_the_micro_markets/03_black_market_alleys_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Needlehouse Black-Market"
+    },
+    {
+      "source_area": "Pawn Arcades",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/06_the_micro_markets/04_pawn_arcades_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Smelter of Pawn"
+    },
+    {
+      "source_area": "Loot & Gear Bazaars",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/06_the_micro_markets/05_loot_and_gear_bazaars_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Curio Shop: Curio Niche Loot; Blacksmith: Anvil of Loot"
+    },
+    {
+      "source_area": "Prize Drop Plaza",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/06_the_micro_markets/06_prize_drop_plaza_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "none"
+    },
+    {
+      "source_area": "Hidden Exchange Court",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/06_the_micro_markets/07_hidden_exchange_court_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Mechanic: Cog & Weld Hidden"
+    },
+    {
+      "source_area": "Vendor Stack Towers",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/06_the_micro_markets/08_vendor_stack_towers_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Enchanter: Arcane Polish Vendor"
+    },
+    {
+      "source_area": "Transit Kiosk Row",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Skinworks Transit; Relic Trader: Antique Vault Transit"
+    },
+    {
+      "source_area": "Rooftop Safehouse",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Mount Roost Rooftop"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Micro Markets Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Micro Markets Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Micro Markets Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Micro Markets Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Micro Markets Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Micro Markets Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

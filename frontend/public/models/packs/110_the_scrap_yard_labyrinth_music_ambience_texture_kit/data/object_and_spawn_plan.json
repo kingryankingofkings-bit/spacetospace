@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 110,
+    "title": "The Scrap Yard Labyrinth Music Ambience Texture Kit",
+    "kind": "music_ambience_texture",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "06 The Scrap Yard Labyrinth",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "The Hull Maze",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/01_the_hull_maze_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Patternsmith "
+    },
+    {
+      "source_area": "Magnet Spires",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/02_magnet_spires_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Shadeworks Magnet"
+    },
+    {
+      "source_area": "Salvager Row",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/03_salvager_row_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "General Goods: Provisions of Salvager"
+    },
+    {
+      "source_area": "Graveyard Basin",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/04_graveyard_basin_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Quiet Graveyard"
+    },
+    {
+      "source_area": "Crane Forest",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/05_crane_forest_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Smelter of Crane"
+    },
+    {
+      "source_area": "Reactor Pit",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/06_reactor_pit_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Surestep Yard Reactor"
+    },
+    {
+      "source_area": "Wreck Gate",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/07_wreck_gate_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Thread & Hem Wreck; Blacksmith: Forge of Wreck"
+    },
+    {
+      "source_area": "Compass Jam Sector",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/08_compass_jam_sector_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Enchanter: Arcane Polish Compass; Blacksmith: Forge of Compass"
+    },
+    {
+      "source_area": "The Iron Maelstrom",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/09_the_iron_maelstrom_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Spice Cart ; Marketplace: Bazaar Lane "
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

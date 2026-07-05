@@ -1,0 +1,226 @@
+{
+  "pack_number": 36,
+  "pack_name": "The Shut Down Academies World Detail Kit",
+  "kind": "sublocation_world_detail",
+  "created_utc": "2026-07-05T08:06:54.673506+00:00",
+  "source_docs_used": [
+    "geographic_master_guide_basic_area_maps_pack.zip",
+    "geographic_master_guide_detailed_maps.zip",
+    "dawnforge_sublocation_special_events_pack(1).zip",
+    "dawnforge_level_1_40_itemization_pack(1).zip",
+    "dawnforge_character_creator_customization_pack(1).zip",
+    "uploaded geographic master guide image"
+  ],
+  "region": "03 Western Wastes And Arid Plains",
+  "sub_location": "04 The Shut Down Academies",
+  "theme": "waste",
+  "description": "Full local dressing kit with landmark props, local hazards, creature variants, textures, and area music.",
+  "counts": {
+    "glb_assets": 5,
+    "textures_png": 8,
+    "audio_wav": 3,
+    "data_files": 4
+  },
+  "assets": [
+    {
+      "file": "glb_assets/01_landmark_anchor.glb",
+      "name": "Landmark Anchor",
+      "asset_kind": "landmark",
+      "theme": "waste",
+      "element_variant": "fire",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "static_world_anchor"
+    },
+    {
+      "file": "glb_assets/02_local_prop_cluster.glb",
+      "name": "Local Prop Cluster",
+      "asset_kind": "prop",
+      "theme": "waste",
+      "element_variant": "fire",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "static_prop_or_debris"
+    },
+    {
+      "file": "glb_assets/03_creature_or_npc_variant.glb",
+      "name": "Creature Or Npc Variant",
+      "asset_kind": "creature",
+      "theme": "waste",
+      "element_variant": "fire",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": true,
+      "script_profile": "creature_variant_base"
+    },
+    {
+      "file": "glb_assets/04_quest_or_system_interactable.glb",
+      "name": "Quest Or System Interactable",
+      "asset_kind": "interactable",
+      "theme": "waste",
+      "element_variant": "fire",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "quest_or_system_interactable"
+    },
+    {
+      "file": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "name": "Water Star Sky Or Liquid Asset",
+      "asset_kind": "liquid_sky",
+      "theme": "waste",
+      "element_variant": "fire",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "environment_surface_or_sky_proxy"
+    }
+  ],
+  "textures": [
+    {
+      "file": "textures/01_the_shut_down_academies_world_detail_kit_albedo.png",
+      "pattern": "albedo",
+      "theme": "waste",
+      "material_use": "local surface albedo"
+    },
+    {
+      "file": "textures/02_the_shut_down_academies_world_detail_kit_normal_proxy.png",
+      "pattern": "normal_proxy",
+      "theme": "waste",
+      "material_use": "placeholder normal-map proxy"
+    },
+    {
+      "file": "textures/03_the_shut_down_academies_world_detail_kit_trim.png",
+      "pattern": "trim",
+      "theme": "waste",
+      "material_use": "architecture/prop trim sheet"
+    },
+    {
+      "file": "textures/04_the_shut_down_academies_world_detail_kit_emission.png",
+      "pattern": "emission",
+      "theme": "waste",
+      "material_use": "glowing signage, runes, creatures, UI, and VFX"
+    },
+    {
+      "file": "textures/05_the_shut_down_academies_world_detail_kit_decal.png",
+      "pattern": "decal",
+      "theme": "waste",
+      "material_use": "floor/wall decals and quest markers"
+    },
+    {
+      "file": "textures/06_the_shut_down_academies_world_detail_kit_water.png",
+      "pattern": "water",
+      "theme": "waste",
+      "material_use": "water/liquid/caustic surface"
+    },
+    {
+      "file": "textures/07_the_shut_down_academies_world_detail_kit_starfield.png",
+      "pattern": "starfield",
+      "theme": "waste",
+      "material_use": "skybox/starfield/cosmic overlay"
+    },
+    {
+      "file": "textures/08_the_shut_down_academies_world_detail_kit_surface.png",
+      "pattern": "surface",
+      "theme": "waste",
+      "material_use": "secondary local surface variation"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio/the_shut_down_academies_world_detail_kit_music_loop.wav",
+      "cue_id": "the_shut_down_academies_world_detail_kit_music_loop",
+      "cue_type": "music",
+      "music_mode": "dust-rhythm",
+      "fits_region": "03 Western Wastes And Arid Plains",
+      "fits_sub_location": "04 The Shut Down Academies",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    },
+    {
+      "file": "audio/the_shut_down_academies_world_detail_kit_ambience_loop.wav",
+      "cue_id": "the_shut_down_academies_world_detail_kit_ambience_loop",
+      "cue_type": "ambience",
+      "music_mode": "dust-rhythm",
+      "fits_region": "03 Western Wastes And Arid Plains",
+      "fits_sub_location": "04 The Shut Down Academies",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    },
+    {
+      "file": "audio/the_shut_down_academies_world_detail_kit_event_or_pickup_sting.wav",
+      "cue_id": "the_shut_down_academies_world_detail_kit_event_or_pickup_sting",
+      "cue_type": "sting",
+      "music_mode": "dust-rhythm",
+      "fits_region": "03 Western Wastes And Arid Plains",
+      "fits_sub_location": "04 The Shut Down Academies",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    }
+  ],
+  "data_files": [
+    "data/object_and_spawn_plan.json",
+    "data/material_texture_manifest.json",
+    "prefab_specs/prefab_handoff.json",
+    "audio/music_cue_manifest.json"
+  ],
+  "area_references": [
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "04 The Shut Down Academies",
+      "area": "War College Court",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/01_war_college_court_map.png",
+      "shops": "Blacksmith: Steelhouse War"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "04 The Shut Down Academies",
+      "area": "Simulation Hall",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall_map.png",
+      "shops": "Tailor: Cloak and Cord Simulation; Marketplace: Open Market Simulation"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "04 The Shut Down Academies",
+      "area": "Command Terrace",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/03_command_terrace_map.png",
+      "shops": "Inn: The Ember Command; Mechanic: Spanner Bay Command"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "04 The Shut Down Academies",
+      "area": "Silent Lecture Dome",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/04_silent_lecture_dome_map.png",
+      "shops": "Medic: Firstlight Clinic Silent; General Goods: Loadout Depot Silent"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "04 The Shut Down Academies",
+      "area": "Drill Quadrant",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/05_drill_quadrant_map.png",
+      "shops": "Weapon Skin Shop: Skinworks Drill; Relic Trader: Antique Vault Drill"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "04 The Shut Down Academies",
+      "area": "Dormitory Ruins",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/06_dormitory_ruins_map.png",
+      "shops": "Stable: Saddle Gate Dormitory"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "04 The Shut Down Academies",
+      "area": "Archive Tower",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/07_archive_tower_map.png",
+      "shops": "Armor Dye Pack Shop: Pigment Loft Archive; Inn: The Wandering Archive"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "04 The Shut Down Academies",
+      "area": "Scholar Gate",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/08_scholar_gate_map.png",
+      "shops": "Alchemist: Glassleaf Phials Scholar"
+    },
+    {
+      "region": "03 Western Wastes And Arid Plains",
+      "sub_location": "04 The Shut Down Academies",
+      "area": "Tactical Overlook",
+      "map_file": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/09_tactical_overlook_map.png",
+      "shops": "Marketplace: Open Market Tactical"
+    }
+  ]
+}

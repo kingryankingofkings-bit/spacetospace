@@ -1,0 +1,233 @@
+{
+  "pack_number": 103,
+  "pack_name": "The Front Matter Void Music Ambience Texture Kit",
+  "kind": "music_ambience_texture",
+  "created_utc": "2026-07-05T08:07:02.316253+00:00",
+  "source_docs_used": [
+    "geographic_master_guide_basic_area_maps_pack.zip",
+    "geographic_master_guide_detailed_maps.zip",
+    "dawnforge_sublocation_special_events_pack(1).zip",
+    "dawnforge_level_1_40_itemization_pack(1).zip",
+    "dawnforge_character_creator_customization_pack(1).zip",
+    "uploaded geographic master guide image"
+  ],
+  "region": "02 Urban Core",
+  "sub_location": "05 The Front Matter Void",
+  "theme": "urban",
+  "description": "Sub-location loop music, ambient beds, stingers, star/water/sky/liquid textures, decals, and material maps.",
+  "counts": {
+    "glb_assets": 5,
+    "textures_png": 8,
+    "audio_wav": 3,
+    "data_files": 4
+  },
+  "assets": [
+    {
+      "file": "glb_assets/01_starfield_sky_water_preview.glb",
+      "name": "Starfield Sky Water Preview",
+      "asset_kind": "liquid_sky",
+      "theme": "urban",
+      "element_variant": "electric",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "environment_surface_or_sky_proxy"
+    },
+    {
+      "file": "glb_assets/02_music_trigger_totem.glb",
+      "name": "Music Trigger Totem",
+      "asset_kind": "interactable",
+      "theme": "urban",
+      "element_variant": "electric",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "quest_or_system_interactable"
+    },
+    {
+      "file": "glb_assets/03_ambient_object_cluster.glb",
+      "name": "Ambient Object Cluster",
+      "asset_kind": "prop",
+      "theme": "urban",
+      "element_variant": "electric",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "static_prop_or_debris"
+    },
+    {
+      "file": "glb_assets/04_soundscape_landmark.glb",
+      "name": "Soundscape Landmark",
+      "asset_kind": "landmark",
+      "theme": "urban",
+      "element_variant": "electric",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "static_world_anchor"
+    },
+    {
+      "file": "glb_assets/05_ambient_creature_listener.glb",
+      "name": "Ambient Creature Listener",
+      "asset_kind": "creature",
+      "theme": "urban",
+      "element_variant": "electric",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": true,
+      "script_profile": "creature_variant_base"
+    }
+  ],
+  "textures": [
+    {
+      "file": "textures/01_the_front_matter_void_music_ambience_texture_kit_albedo.png",
+      "pattern": "albedo",
+      "theme": "urban",
+      "material_use": "local surface albedo"
+    },
+    {
+      "file": "textures/02_the_front_matter_void_music_ambience_texture_kit_normal_proxy.png",
+      "pattern": "normal_proxy",
+      "theme": "urban",
+      "material_use": "placeholder normal-map proxy"
+    },
+    {
+      "file": "textures/03_the_front_matter_void_music_ambience_texture_kit_trim.png",
+      "pattern": "trim",
+      "theme": "urban",
+      "material_use": "architecture/prop trim sheet"
+    },
+    {
+      "file": "textures/04_the_front_matter_void_music_ambience_texture_kit_emission.png",
+      "pattern": "emission",
+      "theme": "urban",
+      "material_use": "glowing signage, runes, creatures, UI, and VFX"
+    },
+    {
+      "file": "textures/05_the_front_matter_void_music_ambience_texture_kit_decal.png",
+      "pattern": "decal",
+      "theme": "urban",
+      "material_use": "floor/wall decals and quest markers"
+    },
+    {
+      "file": "textures/06_the_front_matter_void_music_ambience_texture_kit_water.png",
+      "pattern": "water",
+      "theme": "urban",
+      "material_use": "water/liquid/caustic surface"
+    },
+    {
+      "file": "textures/07_the_front_matter_void_music_ambience_texture_kit_starfield.png",
+      "pattern": "starfield",
+      "theme": "urban",
+      "material_use": "skybox/starfield/cosmic overlay"
+    },
+    {
+      "file": "textures/08_the_front_matter_void_music_ambience_texture_kit_surface.png",
+      "pattern": "surface",
+      "theme": "urban",
+      "material_use": "secondary local surface variation"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio/the_front_matter_void_music_ambience_texture_kit_music_loop.wav",
+      "cue_id": "the_front_matter_void_music_ambience_texture_kit_music_loop",
+      "cue_type": "music",
+      "music_mode": "neon",
+      "fits_region": "02 Urban Core",
+      "fits_sub_location": "05 The Front Matter Void",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    },
+    {
+      "file": "audio/the_front_matter_void_music_ambience_texture_kit_ambience_loop.wav",
+      "cue_id": "the_front_matter_void_music_ambience_texture_kit_ambience_loop",
+      "cue_type": "ambience",
+      "music_mode": "neon",
+      "fits_region": "02 Urban Core",
+      "fits_sub_location": "05 The Front Matter Void",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    },
+    {
+      "file": "audio/the_front_matter_void_music_ambience_texture_kit_event_or_pickup_sting.wav",
+      "cue_id": "the_front_matter_void_music_ambience_texture_kit_event_or_pickup_sting",
+      "cue_type": "sting",
+      "music_mode": "neon",
+      "fits_region": "02 Urban Core",
+      "fits_sub_location": "05 The Front Matter Void",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    }
+  ],
+  "data_files": [
+    "data/object_and_spawn_plan.json",
+    "data/material_texture_manifest.json",
+    "prefab_specs/prefab_handoff.json",
+    "audio/music_cue_manifest.json"
+  ],
+  "area_references": [
+    {
+      "region": "02 Urban Core",
+      "sub_location": "05 The Front Matter Void",
+      "area": "Reality Fracture Edge",
+      "map_file": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge_map.png",
+      "shops": "Blacksmith: Smelter of Reality; General Goods: Provisions of Reality"
+    },
+    {
+      "region": "02 Urban Core",
+      "sub_location": "05 The Front Matter Void",
+      "area": "Blank-Load Terraces",
+      "map_file": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/02_blank_load_terraces_map.png",
+      "shops": "none"
+    },
+    {
+      "region": "02 Urban Core",
+      "sub_location": "05 The Front Matter Void",
+      "area": "Null Plaza",
+      "map_file": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/03_null_plaza_map.png",
+      "shops": "Enchanter: Arcane Polish Null; General Goods: Provisions of Null"
+    },
+    {
+      "region": "02 Urban Core",
+      "sub_location": "05 The Front Matter Void",
+      "area": "Data Tear Corridor",
+      "map_file": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/04_data_tear_corridor_map.png",
+      "shops": "Stable: Saddle Gate Data"
+    },
+    {
+      "region": "02 Urban Core",
+      "sub_location": "05 The Front Matter Void",
+      "area": "Anomaly Plaza",
+      "map_file": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/05_anomaly_plaza_map.png",
+      "shops": "General Goods: Loadout Depot Anomaly; Armor Dye Pack Shop: Shadeworks Anomaly"
+    },
+    {
+      "region": "02 Urban Core",
+      "sub_location": "05 The Front Matter Void",
+      "area": "Geometry Spill",
+      "map_file": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/06_geometry_spill_map.png",
+      "shops": "Weapon Skin Shop: Chromaforge Geometry"
+    },
+    {
+      "region": "02 Urban Core",
+      "sub_location": "05 The Front Matter Void",
+      "area": "Static Bridge",
+      "map_file": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/07_static_bridge_map.png",
+      "shops": "Curio Shop: Lucky Relics Static"
+    },
+    {
+      "region": "02 Urban Core",
+      "sub_location": "05 The Front Matter Void",
+      "area": "Voidwatch Platform",
+      "map_file": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/08_voidwatch_platform_map.png",
+      "shops": "Food Stall: Spice Cart Voidwatch; Alchemist: Remedy House Voidwatch"
+    },
+    {
+      "region": "02 Urban Core",
+      "sub_location": "05 The Front Matter Void",
+      "area": "Fracture Beacon",
+      "map_file": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/09_fracture_beacon_map.png",
+      "shops": "Armor Dye Pack Shop: Color Forge Fracture"
+    },
+    {
+      "region": "02 Urban Core",
+      "sub_location": "05 The Front Matter Void",
+      "area": "Emergency Seal Gate",
+      "map_file": "area_maps/sub_locations/02_urban_core/05_the_front_matter_void/10_emergency_seal_gate_map.png",
+      "shops": "Inn: The Iron Emergency"
+    }
+  ]
+}

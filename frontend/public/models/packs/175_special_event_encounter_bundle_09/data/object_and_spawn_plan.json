@@ -1,0 +1,172 @@
+{
+  "pack_identity": {
+    "pack_number": 175,
+    "title": "Special Event Encounter Bundle 09",
+    "kind": "special_event_bundle",
+    "region": "The Zenith Spire",
+    "sub_location": "Star-Elevator Spine",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Star-Elevator Spine Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "Star-Elevator Spine Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "Star-Elevator Spine Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "Star-Elevator Spine Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "Star-Elevator Spine Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "Star-Elevator Spine Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-009",
+      "event_title": "Warden-Fused Incident: Star-Elevator Spine",
+      "world_map_location": "The Zenith Spire",
+      "sublocation": "Star-Elevator Spine",
+      "required_player_level": 21,
+      "primary_variant": "Warden-Fused Aegis Carapace",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-043",
+      "event_title": "Ablative Incident: Upper Canopy Safe Nests",
+      "world_map_location": "The Emerald Canopy Sanctuary",
+      "sublocation": "Upper Canopy Safe Nests",
+      "required_player_level": 24,
+      "primary_variant": "Ablative Apex Chimera",
+      "hazard_profile": "root snares, moving beast-platforms, and canopy traversal pressure"
+    },
+    {
+      "event_id": "SEV-077",
+      "event_title": "Null-Branded Incident: Hydraulic Hammer Row",
+      "world_map_location": "The Magma-Core Forges",
+      "sublocation": "Hydraulic Hammer Row",
+      "required_player_level": 27,
+      "primary_variant": "Null-Branded Nexus Warden",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-111",
+      "event_title": "Overcharged Incident: Luxury Pier Ruins",
+      "world_map_location": "The Wayfora Archipelago",
+      "sublocation": "Luxury Pier Ruins",
+      "required_player_level": 30,
+      "primary_variant": "Overcharged Tremor-Fiend",
+      "hazard_profile": "pressure shifts, tidal knockback, and slow-motion parry timing"
+    },
+    {
+      "event_id": "SEV-145",
+      "event_title": "Chrome-Maw Incident: Reality-Tear Recovery Room",
+      "world_map_location": "The Anomaly Ward",
+      "sublocation": "Reality-Tear Recovery Room",
+      "required_player_level": 34,
+      "primary_variant": "Chrome-Maw Void Anomaly",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-179",
+      "event_title": "Chrome-Maw Incident: Data-Fauna Migration Path",
+      "world_map_location": "The Pocket-Monster Data Plains",
+      "sublocation": "Data-Fauna Migration Path",
+      "required_player_level": 40,
+      "primary_variant": "Chrome-Maw Syndicate Lich",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-213",
+      "event_title": "Ash-Baptized Incident: Undead Command Gallery",
+      "world_map_location": "The Lich's Court",
+      "sublocation": "Undead Command Gallery",
+      "required_player_level": 40,
+      "primary_variant": "Ash-Baptized Syndicate Lich",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

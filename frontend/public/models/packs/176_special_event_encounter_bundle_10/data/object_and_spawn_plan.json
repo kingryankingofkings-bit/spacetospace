@@ -1,0 +1,172 @@
+{
+  "pack_identity": {
+    "pack_number": 176,
+    "title": "Special Event Encounter Bundle 10",
+    "kind": "special_event_bundle",
+    "region": "The Zenith Spire",
+    "sub_location": "Oligarch Glass Suite",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Null Anomaly",
+      "local_variant": "Oligarch Glass Suite Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "Oligarch Glass Suite Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "Oligarch Glass Suite Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "Oligarch Glass Suite Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "Oligarch Glass Suite Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "Oligarch Glass Suite Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-010",
+      "event_title": "Sovereign-Touched Incident: Oligarch Glass Suite",
+      "world_map_location": "The Zenith Spire",
+      "sublocation": "Oligarch Glass Suite",
+      "required_player_level": 21,
+      "primary_variant": "Sovereign-Touched Iron-Jaw Hound",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-044",
+      "event_title": "Phase-Bound Incident: Sanctuary Water Steps",
+      "world_map_location": "The Emerald Canopy Sanctuary",
+      "sublocation": "Sanctuary Water Steps",
+      "required_player_level": 24,
+      "primary_variant": "Phase-Bound Aegis Carapace",
+      "hazard_profile": "root snares, moving beast-platforms, and canopy traversal pressure"
+    },
+    {
+      "event_id": "SEV-078",
+      "event_title": "Rhythm-Warped Incident: Anvil Timing Hall",
+      "world_map_location": "The Magma-Core Forges",
+      "sublocation": "Anvil Timing Hall",
+      "required_player_level": 27,
+      "primary_variant": "Rhythm-Warped Null Anomaly",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-112",
+      "event_title": "Bark-Crowned Incident: Tidal Wash Arena",
+      "world_map_location": "The Wayfora Archipelago",
+      "sublocation": "Tidal Wash Arena",
+      "required_player_level": 30,
+      "primary_variant": "Bark-Crowned Aegis Carapace",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-146",
+      "event_title": "Bark-Crowned Incident: Hard-Light Data Bridge",
+      "world_map_location": "The EPI-Center",
+      "sublocation": "Hard-Light Data Bridge",
+      "required_player_level": 36,
+      "primary_variant": "Bark-Crowned Data-Forged Evolvarch",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-180",
+      "event_title": "Eclipse-Synced Incident: Mega-Evolution Hazard Ring",
+      "world_map_location": "The Pocket-Monster Data Plains",
+      "sublocation": "Mega-Evolution Hazard Ring",
+      "required_player_level": 40,
+      "primary_variant": "Eclipse-Synced Astral Sovereign",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-214",
+      "event_title": "Tide-Broken Incident: Cracking Court Bridge",
+      "world_map_location": "The Lich's Court",
+      "sublocation": "Cracking Court Bridge",
+      "required_player_level": 40,
+      "primary_variant": "Tide-Broken Astral Sovereign",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

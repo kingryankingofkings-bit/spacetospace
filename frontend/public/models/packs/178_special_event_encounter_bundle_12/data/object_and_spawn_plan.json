@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 178,
+    "title": "Special Event Encounter Bundle 12",
+    "kind": "special_event_bundle",
+    "region": "The Central Pillar / Star-Elevator Core",
+    "sub_location": "Broken Ventilation Spine",
+    "theme": "neutral"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "Broken Ventilation Spine Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "Broken Ventilation Spine Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "Broken Ventilation Spine Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "Broken Ventilation Spine Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "Broken Ventilation Spine Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Broken Ventilation Spine Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-012",
+      "event_title": "Ash-Baptized Incident: Broken Ventilation Spine",
+      "world_map_location": "The Central Pillar / Star-Elevator Core",
+      "sublocation": "Broken Ventilation Spine",
+      "required_player_level": 21,
+      "primary_variant": "Ash-Baptized Tremor-Fiend",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-046",
+      "event_title": "Warden-Fused Incident: Titan Footfall Basin",
+      "world_map_location": "The Pachyderm Sanctuaries",
+      "sublocation": "Titan Footfall Basin",
+      "required_player_level": 24,
+      "primary_variant": "Warden-Fused Gnarl-Maws",
+      "hazard_profile": "root snares, moving beast-platforms, and canopy traversal pressure"
+    },
+    {
+      "event_id": "SEV-080",
+      "event_title": "Ablative Incident: Core Armory Vault",
+      "world_map_location": "The Magma-Core Forges",
+      "sublocation": "Core Armory Vault",
+      "required_player_level": 27,
+      "primary_variant": "Ablative Iron-Jaw Hound",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-114",
+      "event_title": "Rhythm-Warped Incident: Island-Hop Rope Route",
+      "world_map_location": "The Wayfora Archipelago",
+      "sublocation": "Island-Hop Rope Route",
+      "required_player_level": 31,
+      "primary_variant": "Rhythm-Warped Sylvan Juggernaut",
+      "hazard_profile": "pressure shifts, tidal knockback, and slow-motion parry timing"
+    },
+    {
+      "event_id": "SEV-148",
+      "event_title": "Null-Branded Incident: Drafting Server Wall",
+      "world_map_location": "The EPI-Center",
+      "sublocation": "Drafting Server Wall",
+      "required_player_level": 36,
+      "primary_variant": "Null-Branded Null Anomaly",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-182",
+      "event_title": "Bark-Crowned Incident: Broken Launch Gantry",
+      "world_map_location": "The Lunar Readiness Base",
+      "sublocation": "Broken Launch Gantry",
+      "required_player_level": 40,
+      "primary_variant": "Bark-Crowned Data-Forged Evolvarch",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

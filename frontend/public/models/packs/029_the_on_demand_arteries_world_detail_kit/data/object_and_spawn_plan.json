@@ -1,0 +1,229 @@
+{
+  "pack_identity": {
+    "pack_number": 29,
+    "title": "The On Demand Arteries World Detail Kit",
+    "kind": "sublocation_world_detail",
+    "region": "02 Urban Core",
+    "sub_location": "03 The On Demand Arteries",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Express Fulfillment Towers",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/01_express_fulfillment_towers_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Silver Express; Marketplace: Merchant Court Express"
+    },
+    {
+      "source_area": "Flash Manufactories",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/02_flash_manufactories_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Marketplace: Trade Circle Flash"
+    },
+    {
+      "source_area": "Same-Day Foundries",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/03_same_day_foundries_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Skinworks Same-Day"
+    },
+    {
+      "source_area": "Adaptive Warehouses",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/04_adaptive_warehouses_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Hammer at Adaptive"
+    },
+    {
+      "source_area": "Skyway Exchange Loop",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/05_skyway_exchange_loop_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Curio Shop: Curio Niche Skyway"
+    },
+    {
+      "source_area": "Mag-Rail Merge",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/06_mag_rail_merge_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Shadeworks Mag-Rail; Weapon Skin Shop: Skinworks Mag-Rail"
+    },
+    {
+      "source_area": "Delivery Drone Port",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/07_delivery_drone_port_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Enchanter: Arcane Polish Delivery"
+    },
+    {
+      "source_area": "Overpass Clash Zone",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/08_overpass_clash_zone_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Mechanic: Repair Dock Overpass"
+    },
+    {
+      "source_area": "Transit Ramp Nexus",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/09_transit_ramp_nexus_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "none"
+    },
+    {
+      "source_area": "Toll Gate Cluster",
+      "map_file_reference": "area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/10_toll_gate_cluster_map.png",
+      "suggested_objects": [
+        "urban_landmark_anchor",
+        "urban_navigation_prop",
+        "urban_electric_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Surestep Yard Toll"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The On Demand Arteries Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The On Demand Arteries Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The On Demand Arteries Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The On Demand Arteries Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The On Demand Arteries Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The On Demand Arteries Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Armor Dye Pack Shop, Blacksmith, Curio Shop, Enchanter, Inn, Marketplace, Mechanic, Stable, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

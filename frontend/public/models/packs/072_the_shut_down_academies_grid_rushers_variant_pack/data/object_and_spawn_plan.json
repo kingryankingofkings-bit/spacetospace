@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 72,
+    "title": "The Shut Down Academies Grid-Rushers Variant Pack",
+    "kind": "creature_biome_variants",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "04 The Shut Down Academies",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "War College Court",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/01_war_college_court_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Steelhouse War"
+    },
+    {
+      "source_area": "Simulation Hall",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Cloak and Cord Simulation; Marketplace: Open Market Simulation"
+    },
+    {
+      "source_area": "Command Terrace",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/03_command_terrace_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Ember Command; Mechanic: Spanner Bay Command"
+    },
+    {
+      "source_area": "Silent Lecture Dome",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/04_silent_lecture_dome_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Firstlight Clinic Silent; General Goods: Loadout Depot Silent"
+    },
+    {
+      "source_area": "Drill Quadrant",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/05_drill_quadrant_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Skinworks Drill; Relic Trader: Antique Vault Drill"
+    },
+    {
+      "source_area": "Dormitory Ruins",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/06_dormitory_ruins_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Saddle Gate Dormitory"
+    },
+    {
+      "source_area": "Archive Tower",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/07_archive_tower_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Pigment Loft Archive; Inn: The Wandering Archive"
+    },
+    {
+      "source_area": "Scholar Gate",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/08_scholar_gate_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Alchemist: Glassleaf Phials Scholar"
+    },
+    {
+      "source_area": "Tactical Overlook",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/09_tactical_overlook_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Marketplace: Open Market Tactical"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Shut Down Academies Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Grid-Rushers",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

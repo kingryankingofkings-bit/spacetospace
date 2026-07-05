@@ -1,0 +1,31 @@
+{
+  "upgrade_type": "emissive_glow",
+  "theme": "geothermal",
+  "element": "magma",
+  "material_profiles": [
+    {
+      "profile_id": "emissive_glow_geothermal_opaque_surface",
+      "maps": {
+        "albedo": "texture_upgrades/01_emissive_glow_albedo_upgrade.png",
+        "normal_proxy": "texture_upgrades/02_emissive_glow_normal_detail_proxy.png",
+        "roughness": "texture_upgrades/03_emissive_glow_roughness_variation.png",
+        "decal": "texture_upgrades/08_emissive_glow_decal_upgrade_sheet.png"
+      }
+    },
+    {
+      "profile_id": "emissive_glow_geothermal_emissive_detail",
+      "maps": {
+        "emission": "texture_upgrades/04_emissive_glow_emission_overlay.png",
+        "mask": "texture_upgrades/06_emissive_glow_biome_tint_mask.png"
+      },
+      "engine_notes": "Use additive/emissive shader or high emissive factor in engine."
+    },
+    {
+      "profile_id": "emissive_glow_geothermal_water_star_environment",
+      "maps": {
+        "overlay": "texture_upgrades/07_emissive_glow_water_star_overlay.png"
+      },
+      "engine_notes": "Use for water, stars, sky overlays, caustics, foam, cosmic fields, and liquid detail."
+    }
+  ]
+}

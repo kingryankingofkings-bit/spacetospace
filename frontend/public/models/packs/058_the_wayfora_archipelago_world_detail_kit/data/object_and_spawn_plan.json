@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 58,
+    "title": "The Wayfora Archipelago World Detail Kit",
+    "kind": "sublocation_world_detail",
+    "region": "06 Geothermal Abyss",
+    "sub_location": "03 The Wayfora Archipelago",
+    "theme": "geothermal"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Arrival Harbor",
+      "map_file_reference": "area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor_map.png",
+      "suggested_objects": [
+        "geothermal_landmark_anchor",
+        "geothermal_navigation_prop",
+        "geothermal_magma_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Hammer at Arrival"
+    },
+    {
+      "source_area": "Waystone Pier",
+      "map_file_reference": "area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier_map.png",
+      "suggested_objects": [
+        "geothermal_landmark_anchor",
+        "geothermal_navigation_prop",
+        "geothermal_magma_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "General Goods: Loadout Depot Waystone"
+    },
+    {
+      "source_area": "Tempest Lookout",
+      "map_file_reference": "area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/03_tempest_lookout_map.png",
+      "suggested_objects": [
+        "geothermal_landmark_anchor",
+        "geothermal_navigation_prop",
+        "geothermal_magma_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Field Surgery Tempest"
+    },
+    {
+      "source_area": "Ember Cay",
+      "map_file_reference": "area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/04_ember_cay_map.png",
+      "suggested_objects": [
+        "geothermal_landmark_anchor",
+        "geothermal_navigation_prop",
+        "geothermal_magma_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Moonlit Ember"
+    },
+    {
+      "source_area": "Tideglass Lagoon",
+      "map_file_reference": "area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/05_tideglass_lagoon_map.png",
+      "suggested_objects": [
+        "geothermal_landmark_anchor",
+        "geothermal_navigation_prop",
+        "geothermal_magma_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Chromaforge Tideglass"
+    },
+    {
+      "source_area": "Zephyr Bridge",
+      "map_file_reference": "area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/06_zephyr_bridge_map.png",
+      "suggested_objects": [
+        "geothermal_landmark_anchor",
+        "geothermal_navigation_prop",
+        "geothermal_magma_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Marketplace: Trade Circle Zephyr; General Goods: Provisions of Zephyr"
+    },
+    {
+      "source_area": "Elemental Shrine Ring",
+      "map_file_reference": "area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/07_elemental_shrine_ring_map.png",
+      "suggested_objects": [
+        "geothermal_landmark_anchor",
+        "geothermal_navigation_prop",
+        "geothermal_magma_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Needlehouse Elemental"
+    },
+    {
+      "source_area": "Transit Beacon",
+      "map_file_reference": "area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/08_transit_beacon_map.png",
+      "suggested_objects": [
+        "geothermal_landmark_anchor",
+        "geothermal_navigation_prop",
+        "geothermal_magma_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Pigment Loft Transit"
+    },
+    {
+      "source_area": "Outer Breakwater",
+      "map_file_reference": "area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater_map.png",
+      "suggested_objects": [
+        "geothermal_landmark_anchor",
+        "geothermal_navigation_prop",
+        "geothermal_magma_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Hotplate Outer"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Wayfora Archipelago Magma Variant",
+      "element": "magma",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "geothermal_albedo",
+        "geothermal_emission",
+        "magma_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Armor Dye Pack Shop, Blacksmith, Food Stall, General Goods, Inn, Marketplace, Medic, Tailor, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

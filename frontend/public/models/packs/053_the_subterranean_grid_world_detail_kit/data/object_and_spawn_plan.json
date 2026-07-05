@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 53,
+    "title": "The Subterranean Grid World Detail Kit",
+    "kind": "sublocation_world_detail",
+    "region": "05 Deep Transit System",
+    "sub_location": "01 The Subterranean Grid",
+    "theme": "transit"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Central Transfer Well",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/01_the_subterranean_grid/01_central_transfer_well_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Relic Trader: Relic Reach Central; Inn: The Quiet Central"
+    },
+    {
+      "source_area": "Platform Cluster Alpha",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/01_the_subterranean_grid/02_platform_cluster_alpha_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Patternsmith Platform"
+    },
+    {
+      "source_area": "Maintenance Loop",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Mechanic: Repair Dock Maintenance; Alchemist: Glassleaf Phials Maintenance"
+    },
+    {
+      "source_area": "Relay Control Station",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "General Goods: Pack & Barrel Relay"
+    },
+    {
+      "source_area": "Signal Bridge",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/01_the_subterranean_grid/05_signal_bridge_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Forge of Signal"
+    },
+    {
+      "source_area": "Abandoned Siding",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/01_the_subterranean_grid/06_abandoned_siding_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Spice Cart Abandoned; Medic: Field Surgery Abandoned"
+    },
+    {
+      "source_area": "Freight Vault",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/01_the_subterranean_grid/07_freight_vault_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Color Forge Freight; General Goods: Pack & Barrel Freight"
+    },
+    {
+      "source_area": "Emergency Shelter Platform",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/01_the_subterranean_grid/08_emergency_shelter_platform_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Alchemist: Glassleaf Phials Emergency; Tailor: Stitchmark Emergency"
+    },
+    {
+      "source_area": "Deep Terminal Gate",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/01_the_subterranean_grid/09_deep_terminal_gate_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Iron Deep"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Subterranean Grid Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Subterranean Grid Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Subterranean Grid Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Subterranean Grid Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Subterranean Grid Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Subterranean Grid Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Alchemist, Armor Dye Pack Shop, Blacksmith, Food Stall, General Goods, Inn, Mechanic, Medic, Relic Trader, Tailor, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

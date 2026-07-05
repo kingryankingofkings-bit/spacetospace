@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 200,
+    "title": "Special Event Encounter Bundle 34",
+    "kind": "special_event_bundle",
+    "region": "The On-Demand Arteries",
+    "sub_location": "Overpass Leap Chain",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Null Anomaly",
+      "local_variant": "Overpass Leap Chain Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "Overpass Leap Chain Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "Overpass Leap Chain Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "Overpass Leap Chain Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "Overpass Leap Chain Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "Overpass Leap Chain Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Null Anomaly",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-034",
+      "event_title": "Glass-Hardened Incident: Overpass Leap Chain",
+      "world_map_location": "The On-Demand Arteries",
+      "sublocation": "Overpass Leap Chain",
+      "required_player_level": 23,
+      "primary_variant": "Glass-Hardened Aegis Carapace",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-068",
+      "event_title": "Tide-Broken Incident: Pack-Hunter Ledge",
+      "world_map_location": "The Heavy-Chewer Canyons",
+      "sublocation": "Pack-Hunter Ledge",
+      "required_player_level": 26,
+      "primary_variant": "Tide-Broken Tremor-Fiend",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-102",
+      "event_title": "Sovereign-Touched Incident: Crystalline Word Shards",
+      "world_map_location": "The Phonetic Wastes",
+      "sublocation": "Crystalline Word Shards",
+      "required_player_level": 29,
+      "primary_variant": "Sovereign-Touched Tremor-Fiend",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-136",
+      "event_title": "Warden-Fused Incident: Pristine Glass Lobby",
+      "world_map_location": "The Syndicate Spire",
+      "sublocation": "Pristine Glass Lobby",
+      "required_player_level": 34,
+      "primary_variant": "Warden-Fused Aegis Carapace",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-170",
+      "event_title": "Venom-Laced Incident: Inverted Reading Chamber",
+      "world_map_location": "The Alternating Archives",
+      "sublocation": "Inverted Reading Chamber",
+      "required_player_level": 39,
+      "primary_variant": "Venom-Laced Data-Forged Evolvarch",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-204",
+      "event_title": "Null-Branded Incident: History Preservation Vault",
+      "world_map_location": "The Infinite Archives",
+      "sublocation": "History Preservation Vault",
+      "required_player_level": 40,
+      "primary_variant": "Null-Branded Astral Sovereign",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}
