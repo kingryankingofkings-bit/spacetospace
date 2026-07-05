@@ -1,6 +1,6 @@
 const { pool, redisClient, connectServices } = require('./dbConnection');
 
-connectServices().catch(console.error);
+const connectPromise = connectServices().catch(console.error);
 
 async function getUser(id) {
   const cached = await redisClient.get(`user:${id}`);
@@ -135,5 +135,5 @@ module.exports = {
   getUser, saveUser, saveInventory,
   getObjects, getObject, saveObject, deleteObject,
   getTerrain, saveTerrain,
-  redisClient, pool
+  redisClient, pool, connectPromise
 };

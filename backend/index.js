@@ -1637,6 +1637,12 @@ server.listen(port, async () => {
   console.log(`[GameServer] Listening on http://localhost:${port}`);
   
   try {
+    await db.connectPromise;
+  } catch(e) {
+    console.error("Failed to initialize database:", e);
+  }
+  
+  try {
     agonesSDK = new AgonesSDK();
     await agonesSDK.connect();
     await agonesSDK.ready();
