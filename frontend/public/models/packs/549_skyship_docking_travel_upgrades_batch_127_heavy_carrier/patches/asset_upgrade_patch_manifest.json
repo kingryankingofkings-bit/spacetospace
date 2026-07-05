@@ -1,0 +1,470 @@
+{
+  "pack_number": 549,
+  "pack_name": "Skyship Docking Travel Upgrades Batch 127 - Heavy Carrier",
+  "created_utc": "2026-07-05T09:42:37.689029+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_docking_travel",
+  "theme": "deep_water",
+  "element": "tide",
+  "skyship_class_profile": {
+    "class": "heavy_carrier",
+    "scale": 2.05,
+    "role": "large deck carrier and spawn platform"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/02_bitewheel_den/20_rook_skyharrow_diver_under_bitewheel.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/03_scavenger_gate/04_vela_cragwarden_medic_from_scavenger.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/03_scavenger_gate/11_thorne_cragwarden_warden_from_scavenger.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/05_hound_nest_pits/02_calder_cragwarden_diver_from_hound.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/05_hound_nest_pits/13_eryk_cragwarden_scout_of_hound.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/05_hound_nest_pits/18_dax_trenchmark_warden_of_hound.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/06_redcliff_overlook/01_eryk_skyharrow_engineer_from_redcliff.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/06_redcliff_overlook/02_lyric_signalborn_engineer_under_redcliff.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/06_redcliff_overlook/09_tamsin_skyharrow_tamer_under_redcliff.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/06_redcliff_overlook/11_maven_stormhush_warden_near_redcliff.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/07_ravine_conveyor/14_quill_gravesong_engineer_from_ravine.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/07_ravine_conveyor/17_vela_cinderholt_warden_under_ravine.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/07_ravine_conveyor/18_elo_skyharrow_herald_under_ravine.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/08_bone_metal_pass/09_vale_trenchmark_warden_from_bone_metal.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/08_bone_metal_pass/20_calder_dubwater_engineer_at_bone_metal.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/09_kill_zone_basin/09_dax_spirebound_warden_from_kill.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/09_kill_zone_basin/11_juno_cragwarden_mechanist_of_kill.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/09_kill_zone_basin/15_lyric_skyharrow_captain_of_kill.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/01_tuning_fork_expanse/01_isolde_ironwake_engineer_under_tuning.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/01_tuning_fork_expanse/05_varren_skyharrow_runner_at_tuning.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "212_global_corporate_hazard_label_kit.zip",
+      "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "212_global_corporate_hazard_label_kit.zip",
+      "path_in_zip": "glb_assets/04_quest_or_system_interactable.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "212_global_corporate_hazard_label_kit.zip",
+      "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "213_global_sky_warden_heraldry_kit.zip",
+      "path_in_zip": "glb_assets/01_landmark_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "213_global_sky_warden_heraldry_kit.zip",
+      "path_in_zip": "glb_assets/02_local_prop_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "213_global_sky_warden_heraldry_kit.zip",
+      "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "213_global_sky_warden_heraldry_kit.zip",
+      "path_in_zip": "glb_assets/04_quest_or_system_interactable.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "213_global_sky_warden_heraldry_kit.zip",
+      "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "214_global_order_of_the_epochalypse_corruption_kit.zip",
+      "path_in_zip": "glb_assets/01_landmark_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "214_global_order_of_the_epochalypse_corruption_kit.zip",
+      "path_in_zip": "glb_assets/02_local_prop_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "214_global_order_of_the_epochalypse_corruption_kit.zip",
+      "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "214_global_order_of_the_epochalypse_corruption_kit.zip",
+      "path_in_zip": "glb_assets/04_quest_or_system_interactable.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "214_global_order_of_the_epochalypse_corruption_kit.zip",
+      "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "215_global_vendor_audio_ui_cues_kit.zip",
+      "path_in_zip": "glb_assets/01_landmark_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "215_global_vendor_audio_ui_cues_kit.zip",
+      "path_in_zip": "glb_assets/02_local_prop_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "215_global_vendor_audio_ui_cues_kit.zip",
+      "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "215_global_vendor_audio_ui_cues_kit.zip",
+      "path_in_zip": "glb_assets/04_quest_or_system_interactable.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "215_global_vendor_audio_ui_cues_kit.zip",
+      "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "216_global_biome_transition_blend_kit.zip",
+      "path_in_zip": "glb_assets/01_landmark_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "216_global_biome_transition_blend_kit.zip",
+      "path_in_zip": "glb_assets/02_local_prop_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "202_global_starfields_space_debris_kit.zip",
+      "path_in_zip": "textures/01_global_starfields_space_debris_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "202_global_starfields_space_debris_kit.zip",
+      "path_in_zip": "textures/02_global_starfields_space_debris_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "202_global_starfields_space_debris_kit.zip",
+      "path_in_zip": "textures/03_global_starfields_space_debris_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "202_global_starfields_space_debris_kit.zip",
+      "path_in_zip": "textures/04_global_starfields_space_debris_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "202_global_starfields_space_debris_kit.zip",
+      "path_in_zip": "textures/05_global_starfields_space_debris_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "202_global_starfields_space_debris_kit.zip",
+      "path_in_zip": "textures/06_global_starfields_space_debris_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "202_global_starfields_space_debris_kit.zip",
+      "path_in_zip": "textures/07_global_starfields_space_debris_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "202_global_starfields_space_debris_kit.zip",
+      "path_in_zip": "textures/08_global_starfields_space_debris_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "203_global_material_trim_sheet_kit.zip",
+      "path_in_zip": "textures/01_global_material_trim_sheet_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "203_global_material_trim_sheet_kit.zip",
+      "path_in_zip": "textures/02_global_material_trim_sheet_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "203_global_material_trim_sheet_kit.zip",
+      "path_in_zip": "textures/03_global_material_trim_sheet_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "203_global_material_trim_sheet_kit.zip",
+      "path_in_zip": "textures/04_global_material_trim_sheet_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "203_global_material_trim_sheet_kit.zip",
+      "path_in_zip": "textures/05_global_material_trim_sheet_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "203_global_material_trim_sheet_kit.zip",
+      "path_in_zip": "textures/06_global_material_trim_sheet_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "203_global_material_trim_sheet_kit.zip",
+      "path_in_zip": "textures/07_global_material_trim_sheet_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "203_global_material_trim_sheet_kit.zip",
+      "path_in_zip": "textures/08_global_material_trim_sheet_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "204_global_creature_race_texture_atlas_kit.zip",
+      "path_in_zip": "textures/01_global_creature_race_texture_atlas_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "204_global_creature_race_texture_atlas_kit.zip",
+      "path_in_zip": "textures/02_global_creature_race_texture_atlas_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "204_global_creature_race_texture_atlas_kit.zip",
+      "path_in_zip": "textures/03_global_creature_race_texture_atlas_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "204_global_creature_race_texture_atlas_kit.zip",
+      "path_in_zip": "textures/04_global_creature_race_texture_atlas_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

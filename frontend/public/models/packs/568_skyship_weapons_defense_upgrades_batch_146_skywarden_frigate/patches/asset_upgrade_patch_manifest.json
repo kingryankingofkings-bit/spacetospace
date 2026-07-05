@@ -1,0 +1,451 @@
+{
+  "pack_number": 568,
+  "pack_name": "Skyship Weapons Defense Upgrades Batch 146 - Skywarden Frigate",
+  "created_utc": "2026-07-05T09:42:39.216093+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_weapons_defense",
+  "theme": "urban_neon",
+  "element": "electric",
+  "skyship_class_profile": {
+    "class": "skywarden_frigate",
+    "scale": 1.75,
+    "role": "military escort"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/17_makoa_emberkin_specialist_near_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/18_auren_whispercoil_specialist_from_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/19_elo_voxmere_engineer_at_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/20_nyra_voidrill_scout_from_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/02_main_observation_dome/03_kiva_rootborne_warden_of_main.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/02_main_observation_dome/05_kael_cragwarden_broker_of_main.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/03_pressure_gate/12_noor_skyharrow_cartographer_under_pressure.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/04_coral_laboratory/12_mirek_nullborne_engineer_under_coral.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/05_deepwater_causeway/06_zerin_cragwarden_specialist_of_deepwater.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/05_deepwater_causeway/10_lyric_skyharrow_keeper_near_deepwater.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/05_deepwater_causeway/12_dax_stormhush_warden_near_deepwater.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/01_ossa_skyharrow_guide_near_ballast.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/04_lyric_echohand_warden_of_ballast.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/08_tamsin_runeclasp_engineer_at_ballast.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/12_lyric_trenchmark_warden_at_ballast.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/01_keir_chromabell_warden_under_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/04_bryn_skyharrow_smith_of_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/10_zerin_starfall_engineer_from_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/11_nix_skyharrow_warden_near_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/12_orin_mossguard_warden_from_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/03_dub_pools/13_zerin_chromabell_oracle_of_dub.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/03_dub_pools/14_rook_gravesong_responder_from_dub.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/03_dub_pools/15_lyric_gearmantle_engineer_under_dub.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/03_dub_pools/16_rook_ashvein_warden_under_dub.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/03_dub_pools/17_eryk_latchward_watcher_of_dub.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/03_dub_pools/18_tovin_cinderholt_guide_of_dub.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/03_dub_pools/19_tamsin_deepwell_herald_near_dub.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/03_dub_pools/20_auren_signalborn_tamer_from_dub.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/01_ilyra_deepwell_medic_near_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/02_juno_signalborn_keeper_under_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/03_kael_glassroot_marshal_at_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/04_asha_dubwater_responder_at_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/05_juno_gearmantle_engineer_of_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/06_ossa_latchward_mechanist_near_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/07_maven_nullborne_runner_near_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/08_selka_ashvein_diver_from_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/09_ossa_emberkin_smith_near_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/10_lyric_echohand_specialist_near_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/11_edda_frostrelay_pilgrim_of_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza/12_lio_emberkin_oracle_of_riddim.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "179_special_event_encounter_bundle_13.zip",
+      "path_in_zip": "textures/01_special_event_encounter_bundle_13_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "179_special_event_encounter_bundle_13.zip",
+      "path_in_zip": "textures/02_special_event_encounter_bundle_13_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "179_special_event_encounter_bundle_13.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_13_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "179_special_event_encounter_bundle_13.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_13_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "179_special_event_encounter_bundle_13.zip",
+      "path_in_zip": "textures/05_special_event_encounter_bundle_13_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "179_special_event_encounter_bundle_13.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_13_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "179_special_event_encounter_bundle_13.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_13_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "179_special_event_encounter_bundle_13.zip",
+      "path_in_zip": "textures/08_special_event_encounter_bundle_13_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "180_special_event_encounter_bundle_14.zip",
+      "path_in_zip": "textures/01_special_event_encounter_bundle_14_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "180_special_event_encounter_bundle_14.zip",
+      "path_in_zip": "textures/02_special_event_encounter_bundle_14_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "180_special_event_encounter_bundle_14.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_14_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "180_special_event_encounter_bundle_14.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_14_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "180_special_event_encounter_bundle_14.zip",
+      "path_in_zip": "textures/05_special_event_encounter_bundle_14_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "180_special_event_encounter_bundle_14.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_14_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "180_special_event_encounter_bundle_14.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_14_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "180_special_event_encounter_bundle_14.zip",
+      "path_in_zip": "textures/08_special_event_encounter_bundle_14_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "181_special_event_encounter_bundle_15.zip",
+      "path_in_zip": "textures/01_special_event_encounter_bundle_15_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "181_special_event_encounter_bundle_15.zip",
+      "path_in_zip": "textures/02_special_event_encounter_bundle_15_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "181_special_event_encounter_bundle_15.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_15_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "181_special_event_encounter_bundle_15.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_15_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

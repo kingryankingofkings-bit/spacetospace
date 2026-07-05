@@ -1,0 +1,454 @@
+{
+  "pack_number": 429,
+  "pack_name": "Skyship Docking Travel Upgrades Batch 007 - Heavy Carrier",
+  "created_utc": "2026-07-05T09:42:28.147400+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_docking_travel",
+  "theme": "deep_water",
+  "element": "tide",
+  "skyship_class_profile": {
+    "class": "heavy_carrier",
+    "scale": 2.05,
+    "role": "large deck carrier and spawn platform"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/12_tamsin_gravesong_watcher_from_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/13_vexa_gearmantle_cartographer_under_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/14_calder_riftwalker_engineer_from_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/15_nyra_holloway_mechanist_from_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/16_kael_deepwell_watcher_at_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/17_makoa_emberkin_specialist_near_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/18_auren_whispercoil_specialist_from_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/19_elo_voxmere_engineer_at_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/20_nyra_voidrill_scout_from_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/02_main_observation_dome/03_kiva_rootborne_warden_of_main.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/02_main_observation_dome/05_kael_cragwarden_broker_of_main.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/03_pressure_gate/12_noor_skyharrow_cartographer_under_pressure.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/04_coral_laboratory/12_mirek_nullborne_engineer_under_coral.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/05_deepwater_causeway/06_zerin_cragwarden_specialist_of_deepwater.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/05_deepwater_causeway/10_lyric_skyharrow_keeper_near_deepwater.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/05_deepwater_causeway/12_dax_stormhush_warden_near_deepwater.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/01_ossa_skyharrow_guide_near_ballast.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/04_lyric_echohand_warden_of_ballast.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/08_tamsin_runeclasp_engineer_at_ballast.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/12_lyric_trenchmark_warden_at_ballast.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/10_thorne_stormhush_cartographer_under_cold.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/11_edda_starfall_medic_under_cold.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/12_lio_dubwater_ranger_of_cold.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/13_keir_starfall_smith_of_cold.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/14_sarai_mossguard_marshal_near_cold.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/15_kiva_starfall_broker_from_cold.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/16_noor_trenchmark_fixer_from_cold.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/17_luma_wayfare_custodian_near_cold.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/18_nyra_voxmere_fixer_under_cold.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/19_elo_runeclasp_cartographer_at_cold.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/08_cold_storage_towers/20_rook_nullborne_broker_at_cold.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/01_bex_trenchmark_specialist_at_freight.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/02_lyric_runeclasp_oracle_under_freight.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/03_nix_echohand_courier_near_freight.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/04_cassian_echohand_courier_of_freight.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/05_vale_gantryn_marshal_from_freight.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/06_calder_ashvein_tamer_near_freight.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/07_calder_voxmere_scout_at_freight.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/08_rook_deepwell_diver_near_freight.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/09_yara_chromabell_scout_under_freight.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "268_lod_collision_upgrade_batch_046.zip",
+      "path_in_zip": "texture_upgrades/07_lod_collision_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "268_lod_collision_upgrade_batch_046.zip",
+      "path_in_zip": "texture_upgrades/08_lod_collision_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "268_lod_collision_upgrade_batch_046.zip",
+      "path_in_zip": "texture_upgrades/09_lod_collision_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "268_lod_collision_upgrade_batch_046.zip",
+      "path_in_zip": "texture_upgrades/10_lod_collision_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "268_lod_collision_upgrade_batch_046.zip",
+      "path_in_zip": "texture_upgrades/11_lod_collision_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "268_lod_collision_upgrade_batch_046.zip",
+      "path_in_zip": "texture_upgrades/12_lod_collision_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/01_biome_recolor_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/02_biome_recolor_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/03_biome_recolor_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/04_biome_recolor_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/05_biome_recolor_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/06_biome_recolor_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/07_biome_recolor_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/08_biome_recolor_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/09_biome_recolor_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/10_biome_recolor_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/11_biome_recolor_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/12_biome_recolor_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "270_item_weapon_finish_upgrade_batch_048.zip",
+      "path_in_zip": "texture_upgrades/01_item_weapon_finish_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "270_item_weapon_finish_upgrade_batch_048.zip",
+      "path_in_zip": "texture_upgrades/02_item_weapon_finish_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

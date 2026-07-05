@@ -1,0 +1,863 @@
+{
+  "apply_to": {
+    "skyship_targets": [
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_042_sera_cloudmere.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "cloud",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_043_thane_rhythmfall.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_044_vale_dawnhook.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_045_xara_skyrill.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_046_yorin_noxwind.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_047_zaya_glasswake.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_048_rixx_rootwing.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_049_mora_sparkline.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_050_jun_galesong.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_01_WISP_RUNNER_wisp_runner.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_02_CLOUDLACE_COURIER_cloudlace_courier.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "cloud",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_03_RAINNEEDLE_PATROL_rainneedle_patrol_skiff.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_04_SKYHOOK_CUTTER_skyhook_cutter.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_05_SILVERWING_CORVETTE_silverwing_corvette.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_06_MERCY_BARQUE_mercy_barque.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_07_THUNDERLINE_DROPSHIP_thunderline_dropship.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_08_TEMPEST_FRIGATE_tempest_frigate.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_09_DAWNLIFT_HAULER_dawnlift_hauler.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_10_AERIE_CRUISER_aerie_cruiser.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_11_STORMCROWN_DREADNOUGHT_stormcrown_dreadnought.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_12_COVENANT_ARK_CARRIER_covenant_ark_carrier.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/asset_manifest.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/godly_class_rewards.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/postgame_quests.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/rank_ladder.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/sky_wardens_roster.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/skyship_catalog.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/manifest.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK(1).zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/03b_nexus_warden_evolved.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK(1).zip",
+        "path_in_zip": "sector_characters_glb_pack_v4/iron_warden.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/02_tamsin_skyharrow_tactician_near_arrival.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/20_sable_cragwarden_diver_of_arrival.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/02_tamsin_wayfare_warden_from_waystone.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/08_ren_skyharrow_guide_from_waystone.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/12_ren_dubwater_warden_from_waystone.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/03_tempest_lookout/08_asha_signalborn_warden_near_tempest.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      }
+    ],
+    "world_object_targets": [
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/09_lio_emberkin_fixer_at_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/10_maelis_wayfare_specialist_of_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/11_isolde_rootborne_specialist_from_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/12_orin_dubwater_ranger_near_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/13_rook_starfall_ranger_from_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/14_nix_latchward_pilgrim_from_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/15_ren_deepwell_operator_under_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/16_makoa_cinderholt_responder_near_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/17_cassian_starfall_warden_of_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/18_soren_gearmantle_operator_from_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/19_nix_skyharrow_operator_near_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/06_tempo_fields/20_makoa_echohand_specialist_at_tempo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/01_draven_nullborne_tamer_of_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/02_yara_glassroot_warden_at_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/03_luma_ashvein_sentinel_of_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/04_rook_signalborn_operator_from_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/05_bryn_tideforged_warden_at_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/06_korra_voxmere_specialist_from_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/07_luma_glassroot_marshal_near_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/08_nyra_echohand_tactician_under_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/09_orin_runeclasp_responder_from_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/10_maelis_gantryn_navigator_under_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/11_pax_emberkin_cartographer_at_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/12_calder_dubwater_tactician_under_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/13_ren_dubwater_keeper_of_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/14_korra_brightlock_mechanist_at_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/15_sable_dubwater_navigator_of_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/16_vela_frostrelay_broker_under_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/17_maelis_emberkin_captain_near_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/18_maven_glassroot_smith_near_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/19_maven_deepwell_ranger_under_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts/20_tamsin_ironwake_navigator_from_meditation.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/08_dub_cascades/01_edda_brightlock_broker_near_dub.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/08_dub_cascades/02_selka_skyharrow_archivist_near_dub.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/08_dub_cascades/03_ossa_glassroot_mechanist_near_dub.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/08_dub_cascades/04_ilyra_whispercoil_operator_near_dub.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "258_lod_collision_upgrade_batch_036.zip",
+        "path_in_zip": "texture_upgrades/11_lod_collision_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "258_lod_collision_upgrade_batch_036.zip",
+        "path_in_zip": "texture_upgrades/12_lod_collision_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/01_biome_recolor_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/02_biome_recolor_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/03_biome_recolor_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/04_biome_recolor_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/05_biome_recolor_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/06_biome_recolor_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/07_biome_recolor_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/08_biome_recolor_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/09_biome_recolor_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/10_biome_recolor_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/11_biome_recolor_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "259_biome_recolor_upgrade_batch_037.zip",
+        "path_in_zip": "texture_upgrades/12_biome_recolor_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/01_item_weapon_finish_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/02_item_weapon_finish_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/03_item_weapon_finish_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/04_item_weapon_finish_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/05_item_weapon_finish_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/06_item_weapon_finish_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/07_item_weapon_finish_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/08_item_weapon_finish_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/09_item_weapon_finish_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/10_item_weapon_finish_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/11_item_weapon_finish_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "260_item_weapon_finish_upgrade_batch_038.zip",
+        "path_in_zip": "texture_upgrades/12_item_weapon_finish_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "261_creature_skin_element_upgrade_batch_039.zip",
+        "path_in_zip": "texture_upgrades/01_creature_skin_element_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "261_creature_skin_element_upgrade_batch_039.zip",
+        "path_in_zip": "texture_upgrades/02_creature_skin_element_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "261_creature_skin_element_upgrade_batch_039.zip",
+        "path_in_zip": "texture_upgrades/03_creature_skin_element_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "261_creature_skin_element_upgrade_batch_039.zip",
+        "path_in_zip": "texture_upgrades/04_creature_skin_element_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "261_creature_skin_element_upgrade_batch_039.zip",
+        "path_in_zip": "texture_upgrades/05_creature_skin_element_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "261_creature_skin_element_upgrade_batch_039.zip",
+        "path_in_zip": "texture_upgrades/06_creature_skin_element_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "261_creature_skin_element_upgrade_batch_039.zip",
+        "path_in_zip": "texture_upgrades/07_creature_skin_element_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "261_creature_skin_element_upgrade_batch_039.zip",
+        "path_in_zip": "texture_upgrades/08_creature_skin_element_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "261_creature_skin_element_upgrade_batch_039.zip",
+        "path_in_zip": "texture_upgrades/09_creature_skin_element_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "261_creature_skin_element_upgrade_batch_039.zip",
+        "path_in_zip": "texture_upgrades/10_creature_skin_element_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      }
+    ]
+  },
+  "priority": [
+    "skyships and skyship-adjacent docks",
+    "world landmark objects",
+    "modular environment pieces",
+    "shop/town props",
+    "water/star/cloud visuals",
+    "creature or item materials only if tagged compatible"
+  ]
+}

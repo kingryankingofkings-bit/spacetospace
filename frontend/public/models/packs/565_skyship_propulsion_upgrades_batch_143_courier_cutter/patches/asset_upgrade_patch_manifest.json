@@ -1,0 +1,468 @@
+{
+  "pack_number": 565,
+  "pack_name": "Skyship Propulsion Upgrades Batch 143 - Courier Cutter",
+  "created_utc": "2026-07-05T09:42:38.978309+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_propulsion_upgrades",
+  "theme": "deep_water",
+  "element": "tide",
+  "skyship_class_profile": {
+    "class": "courier_cutter",
+    "scale": 1.1,
+    "role": "cargo runner and messenger craft"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_11_STORMCROWN_DREADNOUGHT_stormcrown_dreadnought.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_12_COVENANT_ARK_CARRIER_covenant_ark_carrier.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/asset_manifest.json",
+      "asset_type": "metadata_json",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/godly_class_rewards.json",
+      "asset_type": "metadata_json",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/postgame_quests.json",
+      "asset_type": "metadata_json",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/rank_ladder.json",
+      "asset_type": "metadata_json",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/sky_wardens_roster.json",
+      "asset_type": "metadata_json",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/skyship_catalog.json",
+      "asset_type": "metadata_json",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/manifest.json",
+      "asset_type": "metadata_json",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "MASTER_ALL_GLB_ASSETS_PACK(1).zip",
+      "path_in_zip": "concept_monsters_proper_glb_pack_v2/03b_nexus_warden_evolved.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "MASTER_ALL_GLB_ASSETS_PACK(1).zip",
+      "path_in_zip": "sector_characters_glb_pack_v4/iron_warden.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/02_tamsin_skyharrow_tactician_near_arrival.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/20_sable_cragwarden_diver_of_arrival.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/02_tamsin_wayfare_warden_from_waystone.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/08_ren_skyharrow_guide_from_waystone.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/12_ren_dubwater_warden_from_waystone.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/03_tempest_lookout/08_asha_signalborn_warden_near_tempest.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/05_tideglass_lagoon/16_quill_skyharrow_archivist_near_tideglass.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/06_zephyr_bridge/09_mirek_cragwarden_diver_under_zephyr.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/07_elemental_shrine_ring/05_ossa_cragwarden_runner_of_elemental.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/02_noor_ironwake_responder_at_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/03_pax_echohand_broker_at_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/04_orin_skyharrow_keeper_from_meter.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/05_vexa_wayfare_tamer_under_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/06_quill_latchward_herald_under_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/07_soren_signalborn_herald_under_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/08_vela_signalborn_broker_from_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/09_keir_gantryn_watcher_of_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/10_noor_tideforged_keeper_from_meter.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/11_thorne_starfall_keeper_at_meter.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/12_mirek_glassroot_custodian_under_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/13_maven_signalborn_responder_from_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/14_lyric_brightlock_custodian_of_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/15_lyric_ashvein_custodian_of_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/16_isolde_ashvein_watcher_under_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/17_auren_deepwell_smith_under_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/18_calder_mossguard_tactician_at_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/19_dax_nullborne_captain_of_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk/20_pax_voxmere_courier_from_meter.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/05_glass_tongue_corridor/01_maelis_trenchmark_medic_of_glass.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "153_the_canopy_portrait_halls_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/08_the_canopy_portrait_halls_shop_item_skin_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/01_the_infinite_archives_shop_item_skin_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/02_the_infinite_archives_shop_item_skin_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/03_the_infinite_archives_shop_item_skin_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/04_the_infinite_archives_shop_item_skin_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/05_the_infinite_archives_shop_item_skin_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/06_the_infinite_archives_shop_item_skin_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/07_the_infinite_archives_shop_item_skin_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/08_the_infinite_archives_shop_item_skin_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/01_the_voyage_incubator_shop_item_skin_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/02_the_voyage_incubator_shop_item_skin_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/03_the_voyage_incubator_shop_item_skin_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/04_the_voyage_incubator_shop_item_skin_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/05_the_voyage_incubator_shop_item_skin_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/06_the_voyage_incubator_shop_item_skin_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/07_the_voyage_incubator_shop_item_skin_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/08_the_voyage_incubator_shop_item_skin_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/01_the_lichs_court_shop_item_skin_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/02_the_lichs_court_shop_item_skin_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/03_the_lichs_court_shop_item_skin_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

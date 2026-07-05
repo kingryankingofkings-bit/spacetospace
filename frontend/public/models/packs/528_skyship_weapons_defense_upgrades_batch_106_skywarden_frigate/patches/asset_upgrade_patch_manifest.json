@@ -1,0 +1,448 @@
+{
+  "pack_number": 528,
+  "pack_name": "Skyship Weapons Defense Upgrades Batch 106 - Skywarden Frigate",
+  "created_utc": "2026-07-05T09:42:36.023806+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_weapons_defense",
+  "theme": "urban_neon",
+  "element": "electric",
+  "skyship_class_profile": {
+    "class": "skywarden_frigate",
+    "scale": 1.75,
+    "role": "military escort"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/04_the_echoing_galleries/15_lyric_cragwarden_guide_from.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/05_the_chainless_bridges/02_astra_deepwell_warden_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/05_the_chainless_bridges/06_brant_skyharrow_marshal_near.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/05_the_chainless_bridges/09_maven_cragwarden_ranger_under.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/06_the_ghostly_menagerie/09_dax_cragwarden_smith_near.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/06_the_ghostly_menagerie/12_vela_starfall_warden_from.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/06_the_ghostly_menagerie/17_vela_nullborne_warden_at.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/07_the_necromantic_gardens/01_lio_skyharrow_guide_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/07_the_necromantic_gardens/04_ren_skyharrow_engineer_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/07_the_necromantic_gardens/08_kiva_frostrelay_warden_under.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/07_the_necromantic_gardens/17_zerin_starfall_warden_at.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/08_the_rift_sanctum/03_kael_skyharrow_warden_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/08_the_rift_sanctum/08_makoa_cragwarden_scout_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/08_the_rift_sanctum/09_keir_skyharrow_guide_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/08_the_rift_sanctum/17_makoa_chromabell_warden_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/09_the_silent_audience/15_noor_dubwater_engineer_at.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/05_the_voyage_incubator/01_the_incubation_rings/01_orin_ironwake_warden_at.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/05_the_voyage_incubator/01_the_incubation_rings/20_pax_echohand_warden_at.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/05_the_voyage_incubator/02_the_acceleration_lanes/07_eryk_cragwarden_watcher_at.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/05_the_voyage_incubator/03_the_growth_laboratories/02_maelis_skyharrow_diver_at.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/03_sculpture_ring/13_noor_emberkin_runner_under_sculpture.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/03_sculpture_ring/14_quill_trenchmark_watcher_at_sculpture.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/03_sculpture_ring/15_selka_nullborne_runner_from_sculpture.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/03_sculpture_ring/16_kiva_emberkin_broker_near_sculpture.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/03_sculpture_ring/17_zerin_emberkin_responder_near_sculpture.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/03_sculpture_ring/18_auren_spirebound_sentinel_from_sculpture.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/03_sculpture_ring/19_lio_ashvein_custodian_from_sculpture.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/03_sculpture_ring/20_lio_echohand_herald_from_sculpture.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/01_varren_cragwarden_keeper_of_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/02_pax_nullborne_specialist_of_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/03_calder_starfall_fixer_at_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/04_dax_brightlock_courier_near_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/05_ossa_ashvein_engineer_from_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/06_kiva_frostrelay_cartographer_near_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/07_ilyra_latchward_sentinel_of_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/08_maelis_ashvein_pilgrim_from_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/09_juno_holloway_herald_at_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/10_bryn_ironwake_pilgrim_at_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/11_orin_gantryn_specialist_at_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/04_suntrack_road/12_vale_voidrill_herald_near_suntrack.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "026_space_elevator_world_detail_kit.zip",
+      "path_in_zip": "textures/02_space_elevator_world_detail_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "026_space_elevator_world_detail_kit.zip",
+      "path_in_zip": "textures/03_space_elevator_world_detail_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "026_space_elevator_world_detail_kit.zip",
+      "path_in_zip": "textures/04_space_elevator_world_detail_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "026_space_elevator_world_detail_kit.zip",
+      "path_in_zip": "textures/05_space_elevator_world_detail_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "026_space_elevator_world_detail_kit.zip",
+      "path_in_zip": "textures/06_space_elevator_world_detail_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "026_space_elevator_world_detail_kit.zip",
+      "path_in_zip": "textures/07_space_elevator_world_detail_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "026_space_elevator_world_detail_kit.zip",
+      "path_in_zip": "textures/08_space_elevator_world_detail_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "027_the_zenith_spire_world_detail_kit.zip",
+      "path_in_zip": "textures/01_the_zenith_spire_world_detail_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "027_the_zenith_spire_world_detail_kit.zip",
+      "path_in_zip": "textures/02_the_zenith_spire_world_detail_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "027_the_zenith_spire_world_detail_kit.zip",
+      "path_in_zip": "textures/03_the_zenith_spire_world_detail_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "027_the_zenith_spire_world_detail_kit.zip",
+      "path_in_zip": "textures/04_the_zenith_spire_world_detail_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "027_the_zenith_spire_world_detail_kit.zip",
+      "path_in_zip": "textures/05_the_zenith_spire_world_detail_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "027_the_zenith_spire_world_detail_kit.zip",
+      "path_in_zip": "textures/06_the_zenith_spire_world_detail_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "027_the_zenith_spire_world_detail_kit.zip",
+      "path_in_zip": "textures/07_the_zenith_spire_world_detail_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "027_the_zenith_spire_world_detail_kit.zip",
+      "path_in_zip": "textures/08_the_zenith_spire_world_detail_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "028_the_provisioning_sectors_world_detail_kit.zip",
+      "path_in_zip": "textures/01_the_provisioning_sectors_world_detail_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "028_the_provisioning_sectors_world_detail_kit.zip",
+      "path_in_zip": "textures/02_the_provisioning_sectors_world_detail_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "028_the_provisioning_sectors_world_detail_kit.zip",
+      "path_in_zip": "textures/03_the_provisioning_sectors_world_detail_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "028_the_provisioning_sectors_world_detail_kit.zip",
+      "path_in_zip": "textures/04_the_provisioning_sectors_world_detail_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "028_the_provisioning_sectors_world_detail_kit.zip",
+      "path_in_zip": "textures/05_the_provisioning_sectors_world_detail_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

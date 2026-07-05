@@ -1,0 +1,450 @@
+{
+  "pack_number": 561,
+  "pack_name": "Water Star Cloud Visual Upgrades Batch 139 - Arkship",
+  "created_utc": "2026-07-05T09:42:38.653906+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "water_star_cloud_visuals",
+  "theme": "waste_scrap",
+  "element": "dustfire",
+  "skyship_class_profile": {
+    "class": "arkship",
+    "scale": 2.8,
+    "role": "city-sized travel hub"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/01_bulk_forges_and_fabricators/12_ren_skyharrow_archivist_of_bulk.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/02_agri_domes_and_hydro_farms/06_noor_echohand_engineer_near_agri_domes.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/02_agri_domes_and_hydro_farms/07_zerin_skyharrow_mechanist_at_agri_domes.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/02_agri_domes_and_hydro_farms/12_maelis_cragwarden_pilgrim_near_agri_domes.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/02_agri_domes_and_hydro_farms/15_zerin_skyharrow_ranger_at_agri_domes.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/02_agri_domes_and_hydro_farms/18_bex_cragwarden_diver_from_agri_domes.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/02_agri_domes_and_hydro_farms/20_elo_skyharrow_warden_from_agri_domes.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/03_logistics_depots/08_vela_deepwell_warden_at_logistics.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/03_logistics_depots/12_yara_skyharrow_mechanist_of_logistics.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/04_ration_houses_and_kitchens/01_maelis_skyharrow_broker_of_ration.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/04_ration_houses_and_kitchens/18_maven_gravesong_engineer_at_ration.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/05_vendor_lanes/06_noor_deepwell_engineer_at_vendor.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/05_vendor_lanes/07_pax_voidrill_warden_near_vendor.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/05_vendor_lanes/08_maelis_skyharrow_keeper_near_vendor.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/05_vendor_lanes/10_ilyra_nullborne_engineer_at_vendor.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/05_vendor_lanes/16_lio_deepwell_warden_of_vendor.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/06_rooftop_bazaars/01_nix_cragwarden_runner_near_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/06_rooftop_bazaars/13_asha_cragwarden_engineer_at_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/06_rooftop_bazaars/15_zerin_cragwarden_pilgrim_of_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/06_rooftop_bazaars/17_tamsin_skyharrow_cartographer_from_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "402_water_star_environment_upgrade_batch_180.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_water_star_environment_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "402_water_star_environment_upgrade_batch_180.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_water_star_environment_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "402_water_star_environment_upgrade_batch_180.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_water_star_environment_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_material_polish_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_material_polish_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_material_polish_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_material_polish_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_material_polish_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_material_polish_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_texture_remaster_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_texture_remaster_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_texture_remaster_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_texture_remaster_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_texture_remaster_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_texture_remaster_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_low_poly_silhouette_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_low_poly_silhouette_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_low_poly_silhouette_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_low_poly_silhouette_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_low_poly_silhouette_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/01_weathering_wear_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/02_weathering_wear_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/03_weathering_wear_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/04_weathering_wear_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/05_weathering_wear_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/06_weathering_wear_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/07_weathering_wear_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/08_weathering_wear_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/09_weathering_wear_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/10_weathering_wear_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/11_weathering_wear_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/12_weathering_wear_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "278_lod_collision_upgrade_batch_056.zip",
+      "path_in_zip": "texture_upgrades/01_lod_collision_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "278_lod_collision_upgrade_batch_056.zip",
+      "path_in_zip": "texture_upgrades/02_lod_collision_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "278_lod_collision_upgrade_batch_056.zip",
+      "path_in_zip": "texture_upgrades/03_lod_collision_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "278_lod_collision_upgrade_batch_056.zip",
+      "path_in_zip": "texture_upgrades/04_lod_collision_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "278_lod_collision_upgrade_batch_056.zip",
+      "path_in_zip": "texture_upgrades/05_lod_collision_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "278_lod_collision_upgrade_batch_056.zip",
+      "path_in_zip": "texture_upgrades/06_lod_collision_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "278_lod_collision_upgrade_batch_056.zip",
+      "path_in_zip": "texture_upgrades/07_lod_collision_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "278_lod_collision_upgrade_batch_056.zip",
+      "path_in_zip": "texture_upgrades/08_lod_collision_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

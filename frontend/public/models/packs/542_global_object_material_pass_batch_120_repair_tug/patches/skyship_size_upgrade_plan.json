@@ -1,0 +1,29 @@
+{
+  "skyship_class": "repair_tug",
+  "scale_profile": 1.0,
+  "role": "utility tow and field repair",
+  "recommended_prefab_children": [
+    "skyship_hull",
+    "skyship_engine",
+    "skyship_rigging",
+    "skyship_deck",
+    "skyship_defense",
+    "skyship_dock"
+  ],
+  "size_rules": {
+    "crew_slots": 3,
+    "weapon_mounts": 0,
+    "cargo_slots": 4
+  },
+  "engine_components_to_add": [
+    "SkyshipClassComponent",
+    "DockingSocketSet",
+    "BoardingRampTrigger",
+    "EngineVFXSocket",
+    "HullMaterialVariant",
+    "ShipLiveryVariant",
+    "DamageStateVisuals",
+    "LODGroup",
+    "NavObstacleOrVehicleCollider"
+  ]
+}

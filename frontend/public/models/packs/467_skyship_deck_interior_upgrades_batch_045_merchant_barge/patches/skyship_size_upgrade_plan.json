@@ -1,0 +1,29 @@
+{
+  "skyship_class": "merchant_barge",
+  "scale_profile": 1.5,
+  "role": "trade, supplies, shop route",
+  "recommended_prefab_children": [
+    "skyship_hull",
+    "skyship_engine",
+    "skyship_rigging",
+    "skyship_deck",
+    "skyship_defense",
+    "skyship_dock"
+  ],
+  "size_rules": {
+    "crew_slots": 6,
+    "weapon_mounts": 1,
+    "cargo_slots": 8
+  },
+  "engine_components_to_add": [
+    "SkyshipClassComponent",
+    "DockingSocketSet",
+    "BoardingRampTrigger",
+    "EngineVFXSocket",
+    "HullMaterialVariant",
+    "ShipLiveryVariant",
+    "DamageStateVisuals",
+    "LODGroup",
+    "NavObstacleOrVehicleCollider"
+  ]
+}

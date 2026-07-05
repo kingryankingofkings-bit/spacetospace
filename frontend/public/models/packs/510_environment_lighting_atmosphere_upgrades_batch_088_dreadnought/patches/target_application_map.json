@@ -1,0 +1,774 @@
+{
+  "apply_to": {
+    "skyship_targets": [
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/skyship_catalog.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/manifest.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK(1).zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/03b_nexus_warden_evolved.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK(1).zip",
+        "path_in_zip": "sector_characters_glb_pack_v4/iron_warden.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/02_tamsin_skyharrow_tactician_near_arrival.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/20_sable_cragwarden_diver_of_arrival.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/02_tamsin_wayfare_warden_from_waystone.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/08_ren_skyharrow_guide_from_waystone.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/12_ren_dubwater_warden_from_waystone.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/03_tempest_lookout/08_asha_signalborn_warden_near_tempest.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/05_tideglass_lagoon/16_quill_skyharrow_archivist_near_tideglass.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/06_zephyr_bridge/09_mirek_cragwarden_diver_under_zephyr.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/07_elemental_shrine_ring/05_ossa_cragwarden_runner_of_elemental.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/07_elemental_shrine_ring/11_selka_nullborne_engineer_at_elemental.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "engine"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/01_sable_gravesong_engineer_near_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "engine",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/02_edda_signalborn_engineer_of_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "engine",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/03_vexa_skyharrow_mechanist_near_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/05_isolde_riftwalker_warden_under_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/06_kiva_nullborne_warden_near_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/12_luma_skyharrow_watcher_from_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/14_korra_cragwarden_ranger_under_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/18_keir_cragwarden_mechanist_at_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/01_lio_emberkin_cartographer_of_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/02_rook_voxmere_sentinel_under_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/03_ossa_gantryn_keeper_at_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/04_isolde_glassroot_fixer_under_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/05_quill_chromabell_tamer_at_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/06_orin_echohand_watcher_under_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/07_dax_tideforged_marshal_from_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/08_lio_voxmere_mechanist_near_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/09_ren_latchward_keeper_at_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/10_isolde_dubwater_herald_of_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock",
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/11_auren_nullborne_courier_under_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/12_tamsin_gravesong_watcher_from_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/13_vexa_gearmantle_cartographer_under_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/14_calder_riftwalker_engineer_from_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "dock",
+          "engine"
+        ]
+      }
+    ],
+    "world_object_targets": [
+      {
+        "source_zip": "10_town_exterior_structures_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/small_house_facade.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "10_town_exterior_structures_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/town_fountain.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "10_town_exterior_structures_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/town_gate_small.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "10_town_exterior_structures_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/village_well.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "10_town_exterior_structures_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/watch_post_tower.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "10_town_exterior_structures_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_skin_shop_exterior.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/aerial_juggle_dummy.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/armored_training_dummy.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/basic_training_dummy.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/combo_meter_obelisk.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/counter_timing_target.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/grapple_training_anchor.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/heavy_slam_practice_plate.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/moving_target_proxy.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/parry_training_dummy.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/ranged_target_board.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/rhythm_parry_metronome.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vault_practice_barrier.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/telegraph_counter_prompt_marker.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/telegraph_projectile_indicator.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/telegraph_rectangular_zone.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/telegraph_warning_circle_large.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/telegraph_warning_circle_small.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/telegraph_warning_cone.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/telegraph_warning_line.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_acid_splash.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_aerial_juggle_trail.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_armor_break_shards.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_bark_armor_regrowth.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_barrier_wall.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_bass_drop_ring.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_arcane_purple.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_healing_green.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_laser_red.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_block_spark.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_boss_phase_explosion.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "356_emissive_glow_upgrade_batch_134.zip",
+        "path_in_zip": "texture_upgrades/07_emissive_glow_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "356_emissive_glow_upgrade_batch_134.zip",
+        "path_in_zip": "texture_upgrades/08_emissive_glow_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "356_emissive_glow_upgrade_batch_134.zip",
+        "path_in_zip": "texture_upgrades/09_emissive_glow_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "356_emissive_glow_upgrade_batch_134.zip",
+        "path_in_zip": "texture_upgrades/10_emissive_glow_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "356_emissive_glow_upgrade_batch_134.zip",
+        "path_in_zip": "texture_upgrades/11_emissive_glow_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "356_emissive_glow_upgrade_batch_134.zip",
+        "path_in_zip": "texture_upgrades/12_emissive_glow_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/01_weathering_wear_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/02_weathering_wear_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/03_weathering_wear_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/04_weathering_wear_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/05_weathering_wear_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/06_weathering_wear_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/07_weathering_wear_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/08_weathering_wear_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/09_weathering_wear_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/10_weathering_wear_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/11_weathering_wear_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "357_weathering_wear_upgrade_batch_135.zip",
+        "path_in_zip": "texture_upgrades/12_weathering_wear_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/01_lod_collision_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/02_lod_collision_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/03_lod_collision_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/04_lod_collision_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/05_lod_collision_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/06_lod_collision_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/07_lod_collision_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/08_lod_collision_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/09_lod_collision_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/10_lod_collision_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/11_lod_collision_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "358_lod_collision_upgrade_batch_136.zip",
+        "path_in_zip": "texture_upgrades/12_lod_collision_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+        "path_in_zip": "texture_upgrades/01_biome_recolor_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+        "path_in_zip": "texture_upgrades/02_biome_recolor_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+        "path_in_zip": "texture_upgrades/03_biome_recolor_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+        "path_in_zip": "texture_upgrades/04_biome_recolor_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+        "path_in_zip": "texture_upgrades/05_biome_recolor_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+        "path_in_zip": "texture_upgrades/06_biome_recolor_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      }
+    ]
+  },
+  "priority": [
+    "skyships and skyship-adjacent docks",
+    "world landmark objects",
+    "modular environment pieces",
+    "shop/town props",
+    "water/star/cloud visuals",
+    "creature or item materials only if tagged compatible"
+  ]
+}

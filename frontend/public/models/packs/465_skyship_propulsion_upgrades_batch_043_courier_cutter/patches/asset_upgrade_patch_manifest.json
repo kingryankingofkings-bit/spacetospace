@@ -1,0 +1,549 @@
+{
+  "pack_number": 465,
+  "pack_name": "Skyship Propulsion Upgrades Batch 043 - Courier Cutter",
+  "created_utc": "2026-07-05T09:42:31.007472+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_propulsion_upgrades",
+  "theme": "waste_scrap",
+  "element": "dustfire",
+  "skyship_class_profile": {
+    "class": "courier_cutter",
+    "scale": 1.1,
+    "role": "cargo runner and messenger craft"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/05_drill_quadrant/01_cassian_chromabell_warden_from_drill.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/05_drill_quadrant/10_bryn_cragwarden_sentinel_from_drill.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/06_dormitory_ruins/10_thorne_gantryn_engineer_from_dormitory.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/07_archive_tower/03_yara_trenchmark_warden_under_archive.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/07_archive_tower/08_quill_skyharrow_tactician_near_archive.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/07_archive_tower/14_bex_cragwarden_engineer_near_archive.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/07_archive_tower/20_calder_dubwater_engineer_under_archive.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/08_scholar_gate/10_sable_skyharrow_guide_near_scholar.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/01_pack_run_gorge/07_kiva_skyharrow_guide_near_pack.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/02_bitewheel_den/03_juno_brightlock_engineer_near_bitewheel.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/02_bitewheel_den/10_noor_tideforged_warden_from_bitewheel.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/02_bitewheel_den/16_asha_cragwarden_marshal_under_bitewheel.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/02_bitewheel_den/20_rook_skyharrow_diver_under_bitewheel.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/03_scavenger_gate/04_vela_cragwarden_medic_from_scavenger.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/03_scavenger_gate/11_thorne_cragwarden_warden_from_scavenger.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/05_hound_nest_pits/02_calder_cragwarden_diver_from_hound.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/05_hound_nest_pits/13_eryk_cragwarden_scout_of_hound.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/05_hound_nest_pits/18_dax_trenchmark_warden_of_hound.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/06_redcliff_overlook/01_eryk_skyharrow_engineer_from_redcliff.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/06_redcliff_overlook/02_lyric_signalborn_engineer_under_redcliff.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-046_ilyra_highroot.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-047_sahel_meridian.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-048_bracca_halforn.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-049_captain_aurex_dawnhelm.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-050_marshal_veyra_solis.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/headquarters/SWHQ-001_aerie_of_the_dawnshield.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-001_sparrowhook_scout_skiff.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-002_cloudneedle_patrol_boat.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "cloud",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-003_dawn_courier.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-004_cloudhook_cutter.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "cloud",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-005_bronze_gull_brig.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-006_tempest_frigate.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-007_aegiswing_escort.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-008_stormglass_carrier.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-009_highwind_dreadnought.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-010_aether_titan_barge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-011_moonwake_medical_ark.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-012_warden_horizon_command_ark.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/headquarters/SW_HQ_001_the_aerie_of_oaths.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_001_ari_stormvale.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "044_the_whispering_glade_world_detail_kit.zip",
+      "path_in_zip": "textures/08_the_whispering_glade_world_detail_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+      "path_in_zip": "textures/01_the_canopy_portrait_halls_world_detail_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+      "path_in_zip": "textures/02_the_canopy_portrait_halls_world_detail_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+      "path_in_zip": "textures/03_the_canopy_portrait_halls_world_detail_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+      "path_in_zip": "textures/04_the_canopy_portrait_halls_world_detail_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+      "path_in_zip": "textures/05_the_canopy_portrait_halls_world_detail_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+      "path_in_zip": "textures/06_the_canopy_portrait_halls_world_detail_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+      "path_in_zip": "textures/07_the_canopy_portrait_halls_world_detail_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+      "path_in_zip": "textures/08_the_canopy_portrait_halls_world_detail_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+      "path_in_zip": "textures/01_the_infinite_archives_world_detail_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+      "path_in_zip": "textures/02_the_infinite_archives_world_detail_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+      "path_in_zip": "textures/03_the_infinite_archives_world_detail_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+      "path_in_zip": "textures/04_the_infinite_archives_world_detail_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+      "path_in_zip": "textures/05_the_infinite_archives_world_detail_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+      "path_in_zip": "textures/06_the_infinite_archives_world_detail_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+      "path_in_zip": "textures/07_the_infinite_archives_world_detail_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+      "path_in_zip": "textures/08_the_infinite_archives_world_detail_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "047_the_voyage_incubator_world_detail_kit.zip",
+      "path_in_zip": "textures/01_the_voyage_incubator_world_detail_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "047_the_voyage_incubator_world_detail_kit.zip",
+      "path_in_zip": "textures/02_the_voyage_incubator_world_detail_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "047_the_voyage_incubator_world_detail_kit.zip",
+      "path_in_zip": "textures/03_the_voyage_incubator_world_detail_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

@@ -1,24 +1,25 @@
-# Upgrade Packs 223-422 Master
+# World Visual + Skyship Upgrade Packs 423-622
 
-This master archive contains **200 individual upgrade ZIP packs**.
-
-These are the second set of 200 packs, built specifically as upgrades across previous textures and low-poly object assets.
+This archive contains **200 individual ZIP upgrade packs**.
 
 Aggregate contents:
-- 1200 GLB upgrade overlay/proxy meshes
-- 2400 PNG texture upgrade maps
-- 1000 patch JSON files
-- Target pool detected from previous packs:
-  - 6969 GLB object references
-  - 1983 texture image references
+- 2000 GLB upgrade modules
+- 2400 PNG texture upgrades
+- 1200 patch/config JSON files
 
-Each individual pack includes:
-- `upgrade_glb_overlays/`
-- `texture_upgrades/`
-- `patches/`
-- `manifest.json`
-- `ASSET_INDEX.md`
-- `README.md`
-- `VALIDATION_REPORT.json`
+Special focus:
+- world object visual polish
+- water, stars, clouds, sky, and atmosphere layers
+- skyship upgrades across multiple sizes:
+  - micro sky skiff
+  - scout sloop
+  - courier cutter
+  - patrol corvette
+  - merchant barge
+  - Sky Warden frigate
+  - heavy carrier
+  - dreadnought
+  - arkship
+  - repair tug
 
-These packs are non-destructive. Antigravity 2.0 should apply them as variant overlays/material patches, not overwrite prior source assets.
+These packs are non-destructive upgrade layers. They reference previous assets and tell Antigravity 2.0 / the engine pipeline how to create upgraded variants.

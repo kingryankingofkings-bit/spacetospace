@@ -7656,6 +7656,16 @@ export type AssetType =
   | '04_water_star_environment_overlay_4'
   | '05_water_star_environment_overlay_5'
   | '06_water_star_environment_overlay_6'
+  | '01_world_facade'
+  | '02_world_prop_polish'
+  | '03_world_landmark_light'
+  | '04_atmosphere'
+  | '05_skyship_hull'
+  | '06_skyship_engine'
+  | '07_skyship_rigging'
+  | '08_skyship_deck'
+  | '09_skyship_defense'
+  | '10_skyship_dock'
   | 'chord_weaver'
   | 'commander_solis'
   | 'director_vance'
@@ -15341,6 +15351,16 @@ export const ASSET_REGISTRY: Record<string, { rootUrl: string, sceneFilename: st
   '04_water_star_environment_overlay_4': getCdnAssetPath('/models/packs/422_water_star_environment_upgrade_batch_200/upgrade_glb_overlays/', '04_water_star_environment_overlay_4.glb'),
   '05_water_star_environment_overlay_5': getCdnAssetPath('/models/packs/422_water_star_environment_upgrade_batch_200/upgrade_glb_overlays/', '05_water_star_environment_overlay_5.glb'),
   '06_water_star_environment_overlay_6': getCdnAssetPath('/models/packs/422_water_star_environment_upgrade_batch_200/upgrade_glb_overlays/', '06_water_star_environment_overlay_6.glb'),
+  '01_world_facade': getCdnAssetPath('/models/packs/622_global_object_material_pass_batch_200_repair_tug/upgrade_glb_modules/', '01_world_facade.glb'),
+  '02_world_prop_polish': getCdnAssetPath('/models/packs/622_global_object_material_pass_batch_200_repair_tug/upgrade_glb_modules/', '02_world_prop_polish.glb'),
+  '03_world_landmark_light': getCdnAssetPath('/models/packs/622_global_object_material_pass_batch_200_repair_tug/upgrade_glb_modules/', '03_world_landmark_light.glb'),
+  '04_atmosphere': getCdnAssetPath('/models/packs/622_global_object_material_pass_batch_200_repair_tug/upgrade_glb_modules/', '04_atmosphere.glb'),
+  '05_skyship_hull': getCdnAssetPath('/models/packs/622_global_object_material_pass_batch_200_repair_tug/upgrade_glb_modules/', '05_skyship_hull.glb'),
+  '06_skyship_engine': getCdnAssetPath('/models/packs/622_global_object_material_pass_batch_200_repair_tug/upgrade_glb_modules/', '06_skyship_engine.glb'),
+  '07_skyship_rigging': getCdnAssetPath('/models/packs/622_global_object_material_pass_batch_200_repair_tug/upgrade_glb_modules/', '07_skyship_rigging.glb'),
+  '08_skyship_deck': getCdnAssetPath('/models/packs/622_global_object_material_pass_batch_200_repair_tug/upgrade_glb_modules/', '08_skyship_deck.glb'),
+  '09_skyship_defense': getCdnAssetPath('/models/packs/622_global_object_material_pass_batch_200_repair_tug/upgrade_glb_modules/', '09_skyship_defense.glb'),
+  '10_skyship_dock': getCdnAssetPath('/models/packs/622_global_object_material_pass_batch_200_repair_tug/upgrade_glb_modules/', '10_skyship_dock.glb'),
   'chord_weaver': getCdnAssetPath('/models/sector_characters_glb_pack_v4/', 'chord_weaver.glb'),
   'commander_solis': getCdnAssetPath('/models/sector_characters_glb_pack_v4/', 'commander_solis.glb'),
   'director_vance': getCdnAssetPath('/models/sector_characters_glb_pack_v4/', 'director_vance.glb'),

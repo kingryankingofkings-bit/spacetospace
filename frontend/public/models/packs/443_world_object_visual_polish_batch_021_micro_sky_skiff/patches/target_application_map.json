@@ -1,0 +1,847 @@
+{
+  "apply_to": {
+    "skyship_targets": [
+      {
+        "source_zip": "213_global_sky_warden_heraldry_kit.zip",
+        "path_in_zip": "textures/07_global_sky_warden_heraldry_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "warden",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "213_global_sky_warden_heraldry_kit.zip",
+        "path_in_zip": "textures/08_global_sky_warden_heraldry_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "214_global_order_of_the_epochalypse_corruption_kit.zip",
+        "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "215_global_vendor_audio_ui_cues_kit.zip",
+        "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "216_global_biome_transition_blend_kit.zip",
+        "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "217_global_weather_decal_kit.zip",
+        "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "218_global_underwater_caustic_kit.zip",
+        "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "219_global_lava_and_heat_kit.zip",
+        "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "220_global_archive_data_glyph_kit.zip",
+        "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "221_global_transit_neon_line_kit.zip",
+        "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "222_global_final_polish_miscellany_kit.zip",
+        "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_detailed_maps.zip",
+        "path_in_zip": "geographic_master_guide_detailed_maps/02_sub_locations/01_cosmic_layer/03_the_orbital_tether_station.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/data/godly_rewards.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/data/order_epochalypse_cell_matrix.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/data/postgame_quests.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/data/rank_system.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/data/sky_warden_npc_roster.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/data/skyship_registry.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "ship",
+          "skyship",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/manifest.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-001_mira_vale.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-002_kesh_anovar.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-003_tali_reed.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-004_orren_pike.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-005_saffa_linn.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-006_brix_thorn.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-007_naelo_korr.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-008_vesha_pryn.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-009_juno_marrow.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-010_elian_skye.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-011_rook_tallis.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-012_maeve_quill.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-013_corr_vantik.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-014_ilyx_vorn.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-015_salen_oru.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-016_aya_gearhart.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-017_grom_fenwick.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      }
+    ],
+    "world_object_targets": [
+      {
+        "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_creature_skin_element_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_creature_skin_element_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_creature_skin_element_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_water_star_environment_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_water_star_environment_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_water_star_environment_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_water_star_environment_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_water_star_environment_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_water_star_environment_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "343_material_polish_upgrade_batch_121.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_material_polish_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "343_material_polish_upgrade_batch_121.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_material_polish_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "343_material_polish_upgrade_batch_121.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_material_polish_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "343_material_polish_upgrade_batch_121.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_material_polish_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "343_material_polish_upgrade_batch_121.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_material_polish_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "343_material_polish_upgrade_batch_121.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_material_polish_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "344_texture_remaster_upgrade_batch_122.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_texture_remaster_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "344_texture_remaster_upgrade_batch_122.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_texture_remaster_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "344_texture_remaster_upgrade_batch_122.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_texture_remaster_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "344_texture_remaster_upgrade_batch_122.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_texture_remaster_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "344_texture_remaster_upgrade_batch_122.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_texture_remaster_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "344_texture_remaster_upgrade_batch_122.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_texture_remaster_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "345_low_poly_silhouette_upgrade_batch_123.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_low_poly_silhouette_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "345_low_poly_silhouette_upgrade_batch_123.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_low_poly_silhouette_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "345_low_poly_silhouette_upgrade_batch_123.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_low_poly_silhouette_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "345_low_poly_silhouette_upgrade_batch_123.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_low_poly_silhouette_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "345_low_poly_silhouette_upgrade_batch_123.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_low_poly_silhouette_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "345_low_poly_silhouette_upgrade_batch_123.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_low_poly_silhouette_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "346_emissive_glow_upgrade_batch_124.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_emissive_glow_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "346_emissive_glow_upgrade_batch_124.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_emissive_glow_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "346_emissive_glow_upgrade_batch_124.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_emissive_glow_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "346_emissive_glow_upgrade_batch_124.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_emissive_glow_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "346_emissive_glow_upgrade_batch_124.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_emissive_glow_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "346_emissive_glow_upgrade_batch_124.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_emissive_glow_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "347_weathering_wear_upgrade_batch_125.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_weathering_wear_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "347_weathering_wear_upgrade_batch_125.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_weathering_wear_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "347_weathering_wear_upgrade_batch_125.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_weathering_wear_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "042_the_phonetic_wastes_world_detail_kit.zip",
+        "path_in_zip": "textures/07_the_phonetic_wastes_world_detail_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "042_the_phonetic_wastes_world_detail_kit.zip",
+        "path_in_zip": "textures/08_the_phonetic_wastes_world_detail_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "043_the_emerald_canopy_sanctuary_world_detail_kit.zip",
+        "path_in_zip": "textures/01_the_emerald_canopy_sanctuary_world_detail_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "043_the_emerald_canopy_sanctuary_world_detail_kit.zip",
+        "path_in_zip": "textures/02_the_emerald_canopy_sanctuary_world_detail_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "043_the_emerald_canopy_sanctuary_world_detail_kit.zip",
+        "path_in_zip": "textures/03_the_emerald_canopy_sanctuary_world_detail_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "043_the_emerald_canopy_sanctuary_world_detail_kit.zip",
+        "path_in_zip": "textures/04_the_emerald_canopy_sanctuary_world_detail_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "043_the_emerald_canopy_sanctuary_world_detail_kit.zip",
+        "path_in_zip": "textures/05_the_emerald_canopy_sanctuary_world_detail_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "043_the_emerald_canopy_sanctuary_world_detail_kit.zip",
+        "path_in_zip": "textures/06_the_emerald_canopy_sanctuary_world_detail_kit_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "043_the_emerald_canopy_sanctuary_world_detail_kit.zip",
+        "path_in_zip": "textures/07_the_emerald_canopy_sanctuary_world_detail_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "043_the_emerald_canopy_sanctuary_world_detail_kit.zip",
+        "path_in_zip": "textures/08_the_emerald_canopy_sanctuary_world_detail_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "044_the_whispering_glade_world_detail_kit.zip",
+        "path_in_zip": "textures/01_the_whispering_glade_world_detail_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "044_the_whispering_glade_world_detail_kit.zip",
+        "path_in_zip": "textures/02_the_whispering_glade_world_detail_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "044_the_whispering_glade_world_detail_kit.zip",
+        "path_in_zip": "textures/03_the_whispering_glade_world_detail_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "044_the_whispering_glade_world_detail_kit.zip",
+        "path_in_zip": "textures/04_the_whispering_glade_world_detail_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "044_the_whispering_glade_world_detail_kit.zip",
+        "path_in_zip": "textures/05_the_whispering_glade_world_detail_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "044_the_whispering_glade_world_detail_kit.zip",
+        "path_in_zip": "textures/06_the_whispering_glade_world_detail_kit_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "044_the_whispering_glade_world_detail_kit.zip",
+        "path_in_zip": "textures/07_the_whispering_glade_world_detail_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "044_the_whispering_glade_world_detail_kit.zip",
+        "path_in_zip": "textures/08_the_whispering_glade_world_detail_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+        "path_in_zip": "textures/01_the_canopy_portrait_halls_world_detail_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+        "path_in_zip": "textures/02_the_canopy_portrait_halls_world_detail_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+        "path_in_zip": "textures/03_the_canopy_portrait_halls_world_detail_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+        "path_in_zip": "textures/04_the_canopy_portrait_halls_world_detail_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+        "path_in_zip": "textures/05_the_canopy_portrait_halls_world_detail_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+        "path_in_zip": "textures/06_the_canopy_portrait_halls_world_detail_kit_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+        "path_in_zip": "textures/07_the_canopy_portrait_halls_world_detail_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+        "path_in_zip": "textures/08_the_canopy_portrait_halls_world_detail_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "textures/01_the_infinite_archives_world_detail_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "textures/02_the_infinite_archives_world_detail_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "textures/03_the_infinite_archives_world_detail_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "textures/04_the_infinite_archives_world_detail_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "textures/05_the_infinite_archives_world_detail_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "textures/06_the_infinite_archives_world_detail_kit_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "textures/07_the_infinite_archives_world_detail_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "textures/08_the_infinite_archives_world_detail_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "047_the_voyage_incubator_world_detail_kit.zip",
+        "path_in_zip": "textures/01_the_voyage_incubator_world_detail_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "047_the_voyage_incubator_world_detail_kit.zip",
+        "path_in_zip": "textures/02_the_voyage_incubator_world_detail_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      }
+    ]
+  },
+  "priority": [
+    "skyships and skyship-adjacent docks",
+    "world landmark objects",
+    "modular environment pieces",
+    "shop/town props",
+    "water/star/cloud visuals",
+    "creature or item materials only if tagged compatible"
+  ]
+}

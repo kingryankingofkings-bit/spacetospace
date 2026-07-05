@@ -1,0 +1,462 @@
+{
+  "pack_number": 483,
+  "pack_name": "World Object Visual Polish Batch 061 - Micro Sky Skiff",
+  "created_utc": "2026-07-05T09:42:32.452030+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "world_object_visual_polish",
+  "theme": "transit_cyan",
+  "element": "magnetic",
+  "skyship_class_profile": {
+    "class": "micro_sky_skiff",
+    "scale": 0.72,
+    "role": "solo scout, courier, personal traversal"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/01_bex_gearmantle_operator_at_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/02_makoa_frostrelay_responder_near_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/03_juno_dubwater_specialist_of_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "water",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/04_vela_ashvein_guide_from_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/05_maelis_whispercoil_scout_from_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/06_vela_brightlock_pilgrim_at_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/07_makoa_gantryn_broker_near_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/08_nyra_frostrelay_cartographer_near_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/09_varren_trenchmark_archivist_from_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/10_selka_gearmantle_keeper_near_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/11_korra_cinderholt_scout_near_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/12_tamsin_gearmantle_medic_from_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/13_keir_glassroot_cartographer_from_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/14_juno_holloway_broker_near_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/15_makoa_stormhush_herald_at_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/16_ren_trenchmark_cartographer_from_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/17_vale_cinderholt_oracle_near_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "15_crafting_workstations_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/08_engineering_bench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "09_mounts_vehicles_travel_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/airship_boarding_ramp.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "ship",
+        "airship"
+      ]
+    },
+    {
+      "source_zip": "09_mounts_vehicles_travel_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/sky_glider.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_evolution_data_ring.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_finisher_starburst.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_fire_burst.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_fireball_projectile.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_flame_wall_segment.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_freeze_status_ring.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_frost_nova_ring.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_grapple_line.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_gravity_pull_ring.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_ground_slam_crack.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_healing_circle.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_ice_shard_projectile.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_ice_spike_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_impact_burst_large.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_impact_burst_small.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_leaf_heal_swirl.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_lightning_bolt.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_overclock_sparks.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_parry_flash.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_phase_shift_afterimage.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "195_special_event_encounter_bundle_29.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_29_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "195_special_event_encounter_bundle_29.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_29_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "195_special_event_encounter_bundle_29.zip",
+      "path_in_zip": "textures/08_special_event_encounter_bundle_29_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "196_special_event_encounter_bundle_30.zip",
+      "path_in_zip": "textures/01_special_event_encounter_bundle_30_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "196_special_event_encounter_bundle_30.zip",
+      "path_in_zip": "textures/02_special_event_encounter_bundle_30_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "196_special_event_encounter_bundle_30.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_30_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "196_special_event_encounter_bundle_30.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_30_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "196_special_event_encounter_bundle_30.zip",
+      "path_in_zip": "textures/05_special_event_encounter_bundle_30_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "196_special_event_encounter_bundle_30.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_30_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "196_special_event_encounter_bundle_30.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_30_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "196_special_event_encounter_bundle_30.zip",
+      "path_in_zip": "textures/08_special_event_encounter_bundle_30_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "197_special_event_encounter_bundle_31.zip",
+      "path_in_zip": "textures/01_special_event_encounter_bundle_31_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "197_special_event_encounter_bundle_31.zip",
+      "path_in_zip": "textures/02_special_event_encounter_bundle_31_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "197_special_event_encounter_bundle_31.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_31_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "197_special_event_encounter_bundle_31.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_31_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "197_special_event_encounter_bundle_31.zip",
+      "path_in_zip": "textures/05_special_event_encounter_bundle_31_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "197_special_event_encounter_bundle_31.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_31_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "197_special_event_encounter_bundle_31.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_31_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "197_special_event_encounter_bundle_31.zip",
+      "path_in_zip": "textures/08_special_event_encounter_bundle_31_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "198_special_event_encounter_bundle_32.zip",
+      "path_in_zip": "textures/01_special_event_encounter_bundle_32_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

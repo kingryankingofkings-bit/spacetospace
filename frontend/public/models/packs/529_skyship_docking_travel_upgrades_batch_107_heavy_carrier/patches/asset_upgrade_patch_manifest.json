@@ -1,0 +1,484 @@
+{
+  "pack_number": 529,
+  "pack_name": "Skyship Docking Travel Upgrades Batch 107 - Heavy Carrier",
+  "created_utc": "2026-07-05T09:42:36.103229+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_docking_travel",
+  "theme": "waste_scrap",
+  "element": "dustfire",
+  "skyship_class_profile": {
+    "class": "heavy_carrier",
+    "scale": 2.05,
+    "role": "large deck carrier and spawn platform"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/10_emergency_seal_gate/14_vale_chromabell_warden_from_emergency.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/01_barricaded_funnels/02_juno_skyharrow_operator_under_barricaded.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/01_barricaded_funnels/03_vale_chromabell_engineer_of_barricaded.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/01_barricaded_funnels/08_orin_rootborne_warden_from_barricaded.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/02_turret_lines/19_bex_ironwake_warden_from_turret.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/03_drone_nests/18_asha_gearmantle_engineer_at_drone.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/04_kill_corridors/08_kiva_wayfare_warden_from_kill.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/03_yara_tideforged_engineer_under_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/05_vela_gravesong_warden_from_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/11_draven_skyharrow_oracle_of_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/15_vexa_cinderholt_warden_at_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/19_nyra_gantryn_engineer_near_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/06_tactical_control_bunker/03_eryk_echohand_engineer_under_tactical.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/06_tactical_control_bunker/20_makoa_signalborn_engineer_under_tactical.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/07_fallback_node/11_bryn_gravesong_warden_at_fallback.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/08_siege_ramp_access/18_ilyra_rootborne_engineer_of_siege.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/09_security_wall_segment/05_ossa_ashvein_engineer_from_security.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/09_security_wall_segment/08_astra_voidrill_engineer_under_security.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/09_security_wall_segment/16_noor_cragwarden_navigator_under_security.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/09_security_wall_segment/17_luma_stormhush_engineer_near_security.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "411_creature_skin_element_upgrade_batch_189.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_creature_skin_element_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "412_water_star_environment_upgrade_batch_190.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_water_star_environment_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "412_water_star_environment_upgrade_batch_190.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_water_star_environment_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "412_water_star_environment_upgrade_batch_190.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_water_star_environment_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "412_water_star_environment_upgrade_batch_190.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_water_star_environment_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "412_water_star_environment_upgrade_batch_190.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_water_star_environment_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "412_water_star_environment_upgrade_batch_190.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_water_star_environment_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "413_material_polish_upgrade_batch_191.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_material_polish_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "413_material_polish_upgrade_batch_191.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_material_polish_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "413_material_polish_upgrade_batch_191.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_material_polish_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "413_material_polish_upgrade_batch_191.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_material_polish_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "413_material_polish_upgrade_batch_191.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_material_polish_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "413_material_polish_upgrade_batch_191.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_material_polish_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "414_texture_remaster_upgrade_batch_192.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_texture_remaster_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "414_texture_remaster_upgrade_batch_192.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_texture_remaster_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "414_texture_remaster_upgrade_batch_192.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_texture_remaster_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "414_texture_remaster_upgrade_batch_192.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_texture_remaster_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "414_texture_remaster_upgrade_batch_192.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_texture_remaster_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "414_texture_remaster_upgrade_batch_192.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_texture_remaster_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "415_low_poly_silhouette_upgrade_batch_193.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_low_poly_silhouette_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+      "path_in_zip": "texture_upgrades/03_creature_skin_element_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+      "path_in_zip": "texture_upgrades/04_creature_skin_element_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+      "path_in_zip": "texture_upgrades/05_creature_skin_element_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+      "path_in_zip": "texture_upgrades/06_creature_skin_element_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+      "path_in_zip": "texture_upgrades/07_creature_skin_element_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+      "path_in_zip": "texture_upgrades/08_creature_skin_element_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+      "path_in_zip": "texture_upgrades/09_creature_skin_element_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+      "path_in_zip": "texture_upgrades/10_creature_skin_element_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+      "path_in_zip": "texture_upgrades/11_creature_skin_element_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "341_creature_skin_element_upgrade_batch_119.zip",
+      "path_in_zip": "texture_upgrades/12_creature_skin_element_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+      "path_in_zip": "texture_upgrades/01_water_star_environment_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+      "path_in_zip": "texture_upgrades/02_water_star_environment_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+      "path_in_zip": "texture_upgrades/03_water_star_environment_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+      "path_in_zip": "texture_upgrades/04_water_star_environment_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+      "path_in_zip": "texture_upgrades/05_water_star_environment_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+      "path_in_zip": "texture_upgrades/06_water_star_environment_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+      "path_in_zip": "texture_upgrades/07_water_star_environment_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+      "path_in_zip": "texture_upgrades/08_water_star_environment_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+      "path_in_zip": "texture_upgrades/09_water_star_environment_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "342_water_star_environment_upgrade_batch_120.zip",
+      "path_in_zip": "texture_upgrades/10_water_star_environment_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

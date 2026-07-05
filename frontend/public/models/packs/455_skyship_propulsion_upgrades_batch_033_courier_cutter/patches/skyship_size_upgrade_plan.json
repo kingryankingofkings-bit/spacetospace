@@ -1,0 +1,29 @@
+{
+  "skyship_class": "courier_cutter",
+  "scale_profile": 1.1,
+  "role": "cargo runner and messenger craft",
+  "recommended_prefab_children": [
+    "skyship_hull",
+    "skyship_engine",
+    "skyship_rigging",
+    "skyship_deck",
+    "skyship_defense",
+    "skyship_dock"
+  ],
+  "size_rules": {
+    "crew_slots": 3,
+    "weapon_mounts": 1,
+    "cargo_slots": 3
+  },
+  "engine_components_to_add": [
+    "SkyshipClassComponent",
+    "DockingSocketSet",
+    "BoardingRampTrigger",
+    "EngineVFXSocket",
+    "HullMaterialVariant",
+    "ShipLiveryVariant",
+    "DamageStateVisuals",
+    "LODGroup",
+    "NavObstacleOrVehicleCollider"
+  ]
+}

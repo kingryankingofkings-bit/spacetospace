@@ -1,0 +1,449 @@
+{
+  "pack_number": 593,
+  "pack_name": "World Object Visual Polish Batch 171 - Micro Sky Skiff",
+  "created_utc": "2026-07-05T09:42:41.270170+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "world_object_visual_polish",
+  "theme": "waste_scrap",
+  "element": "dustfire",
+  "skyship_class_profile": {
+    "class": "micro_sky_skiff",
+    "scale": 0.72,
+    "role": "solo scout, courier, personal traversal"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/08_transit_lift_core/12_ossa_skyharrow_mechanist_at_transit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/08_transit_lift_core/17_edda_skyharrow_operator_from_transit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/08_transit_lift_core/19_quill_cragwarden_oracle_near_transit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/09_spire_plaza/19_tovin_mossguard_warden_at_spire.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/10_maintenance_conduits/15_calder_cragwarden_broker_of_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/11_power_plant/03_juno_skyharrow_specialist_under_power.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/11_power_plant/12_ren_chromabell_warden_of_power.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/11_power_plant/19_ren_ironwake_warden_from_power.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/11_power_plant/20_nix_spirebound_engineer_near_power.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/12_life_support_and_recycling/08_brant_cragwarden_watcher_of_life.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/12_life_support_and_recycling/12_asha_spirebound_engineer_near_life.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/01_surface_nexus/11_mirek_spirebound_warden_of_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/01_surface_nexus/13_tamsin_latchward_warden_under_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/01_surface_nexus/17_yara_gravesong_engineer_at_surface.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/01_bex_gearmantle_operator_at_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/02_makoa_frostrelay_responder_near_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/03_juno_dubwater_specialist_of_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "water",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/04_vela_ashvein_guide_from_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/05_maelis_whispercoil_scout_from_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay/06_vela_brightlock_pilgrim_at_climber.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock",
+        "cosmic"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "393_material_polish_upgrade_batch_171.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_material_polish_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "393_material_polish_upgrade_batch_171.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_material_polish_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "393_material_polish_upgrade_batch_171.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_material_polish_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "393_material_polish_upgrade_batch_171.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_material_polish_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "393_material_polish_upgrade_batch_171.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_material_polish_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "394_texture_remaster_upgrade_batch_172.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_texture_remaster_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "394_texture_remaster_upgrade_batch_172.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_texture_remaster_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "394_texture_remaster_upgrade_batch_172.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_texture_remaster_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "394_texture_remaster_upgrade_batch_172.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_texture_remaster_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "394_texture_remaster_upgrade_batch_172.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_texture_remaster_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "394_texture_remaster_upgrade_batch_172.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_texture_remaster_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "395_low_poly_silhouette_upgrade_batch_173.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_low_poly_silhouette_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "395_low_poly_silhouette_upgrade_batch_173.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_low_poly_silhouette_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "395_low_poly_silhouette_upgrade_batch_173.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_low_poly_silhouette_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "395_low_poly_silhouette_upgrade_batch_173.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_low_poly_silhouette_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "395_low_poly_silhouette_upgrade_batch_173.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_low_poly_silhouette_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "395_low_poly_silhouette_upgrade_batch_173.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_low_poly_silhouette_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "396_emissive_glow_upgrade_batch_174.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_emissive_glow_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "396_emissive_glow_upgrade_batch_174.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_emissive_glow_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "396_emissive_glow_upgrade_batch_174.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_emissive_glow_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "206_global_armor_dye_material_kit.zip",
+      "path_in_zip": "textures/03_global_armor_dye_material_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "206_global_armor_dye_material_kit.zip",
+      "path_in_zip": "textures/04_global_armor_dye_material_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "206_global_armor_dye_material_kit.zip",
+      "path_in_zip": "textures/05_global_armor_dye_material_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "206_global_armor_dye_material_kit.zip",
+      "path_in_zip": "textures/06_global_armor_dye_material_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "206_global_armor_dye_material_kit.zip",
+      "path_in_zip": "textures/07_global_armor_dye_material_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "206_global_armor_dye_material_kit.zip",
+      "path_in_zip": "textures/08_global_armor_dye_material_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "207_global_shop_signage_kit.zip",
+      "path_in_zip": "textures/01_global_shop_signage_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "207_global_shop_signage_kit.zip",
+      "path_in_zip": "textures/02_global_shop_signage_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "207_global_shop_signage_kit.zip",
+      "path_in_zip": "textures/03_global_shop_signage_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "207_global_shop_signage_kit.zip",
+      "path_in_zip": "textures/04_global_shop_signage_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "207_global_shop_signage_kit.zip",
+      "path_in_zip": "textures/05_global_shop_signage_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "207_global_shop_signage_kit.zip",
+      "path_in_zip": "textures/06_global_shop_signage_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "207_global_shop_signage_kit.zip",
+      "path_in_zip": "textures/07_global_shop_signage_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "207_global_shop_signage_kit.zip",
+      "path_in_zip": "textures/08_global_shop_signage_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "208_global_quest_decal_and_marker_kit.zip",
+      "path_in_zip": "textures/01_global_quest_decal_and_marker_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "208_global_quest_decal_and_marker_kit.zip",
+      "path_in_zip": "textures/02_global_quest_decal_and_marker_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "208_global_quest_decal_and_marker_kit.zip",
+      "path_in_zip": "textures/03_global_quest_decal_and_marker_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "208_global_quest_decal_and_marker_kit.zip",
+      "path_in_zip": "textures/04_global_quest_decal_and_marker_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "208_global_quest_decal_and_marker_kit.zip",
+      "path_in_zip": "textures/05_global_quest_decal_and_marker_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "208_global_quest_decal_and_marker_kit.zip",
+      "path_in_zip": "textures/06_global_quest_decal_and_marker_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

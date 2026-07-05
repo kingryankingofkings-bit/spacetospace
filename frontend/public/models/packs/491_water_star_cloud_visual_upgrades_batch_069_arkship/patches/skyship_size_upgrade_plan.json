@@ -1,0 +1,29 @@
+{
+  "skyship_class": "arkship",
+  "scale_profile": 2.8,
+  "role": "city-sized travel hub",
+  "recommended_prefab_children": [
+    "skyship_hull",
+    "skyship_engine",
+    "skyship_rigging",
+    "skyship_deck",
+    "skyship_defense",
+    "skyship_dock"
+  ],
+  "size_rules": {
+    "crew_slots": 40,
+    "weapon_mounts": 10,
+    "cargo_slots": 40
+  },
+  "engine_components_to_add": [
+    "SkyshipClassComponent",
+    "DockingSocketSet",
+    "BoardingRampTrigger",
+    "EngineVFXSocket",
+    "HullMaterialVariant",
+    "ShipLiveryVariant",
+    "DamageStateVisuals",
+    "LODGroup",
+    "NavObstacleOrVehicleCollider"
+  ]
+}
