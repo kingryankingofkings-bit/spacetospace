@@ -1,4 +1,4 @@
-import React, { useRef, useMemo, useEffect, useState } from 'react';
+import React, { useRef, useMemo, useEffect, useState, Suspense } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useGLTF, Environment, Html } from '@react-three/drei';
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
@@ -518,7 +518,7 @@ export const WorldRenderer: React.FC<WorldRendererProps> = ({ setInteractingNpcI
   return (
     <div style={{ width: '100vw', height: '100vh', background: '#000' }}>
       <Canvas shadows camera={{ position: [0, 15, 20], fov: 60 }}>
-        
+        <Suspense fallback={null}>
         <SceneSetup />
         <WeatherSystem />
 
@@ -549,7 +549,7 @@ export const WorldRenderer: React.FC<WorldRendererProps> = ({ setInteractingNpcI
           <Bloom luminanceThreshold={1} intensity={1.5} />
           <Vignette eskil={false} offset={0.1} darkness={1.1} />
         </EffectComposer>
-
+        </Suspense>
       </Canvas>
     </div>
   );
