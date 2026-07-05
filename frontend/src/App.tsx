@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { WorldRenderer } from './components/WorldRenderer';
-import { ToolsPanel } from './components/ToolsPanel';
-import { PropertiesPanel } from './components/PropertiesPanel';
-import { AssetsPanel } from './components/AssetsPanel';
+
 import { CombatHUD } from './components/CombatHUD';
 import { MapPanel } from './components/MapPanel';
 import { CharacterCreator } from './components/CharacterCreator';
@@ -95,6 +93,12 @@ function App() {
         >
           SPAWN LICH
         </button>
+        <button 
+          className="bg-black/50 hover:bg-orange-500/50 text-orange-500 hover:text-white border border-orange-500/50 px-3 py-1 rounded text-xs font-mono transition-colors"
+          onClick={() => sendSpawnBoss('torinn_rhogar')}
+        >
+          SPAWN TORINN
+        </button>
       </div>
 
       {showMap && (
@@ -123,46 +127,32 @@ function App() {
 
       <QuestTracker />
 
-      {/* UI Overlay */}
+      {/* Game UI Overlay */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 10, pointerEvents: 'none', display: 'flex', flexDirection: 'column' }}>
         
-        {/* Top Navbar Placeholder */}
-        <div style={{ height: '50px', background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(10px)', display: 'flex', alignItems: 'center', padding: '0 20px', color: 'white', pointerEvents: 'auto', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
-          <h1 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 600, letterSpacing: '1px' }}>ANTIGRAVITY RPG BUILDER</h1>
-          <div style={{ marginLeft: 'auto', fontSize: '0.9rem', color: '#00ff88' }}>
+        {/* Top Navbar */}
+        <div style={{ height: '40px', display: 'flex', alignItems: 'center', padding: '0 20px', color: 'white', pointerEvents: 'none' }}>
+          <div style={{ marginLeft: 'auto', fontSize: '0.9rem', color: '#00ff88', textShadow: '0px 1px 2px rgba(0,0,0,0.8)' }}>
             Multiplayer: {playerCount} connected
           </div>
         </div>
 
-        {/* Main Content Area */}
+        {/* Floating Panels Container */}
         <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
-          
-          {/* Left Sidebar */}
-          <div style={{ padding: '20px', pointerEvents: 'auto' }}>
-            <ToolsPanel />
-          </div>
-
           {/* Center (Empty to click through to canvas) */}
           <div style={{ flex: 1 }} />
 
-          {/* Right Sidebar */}
+          {/* Right Sidebar - Player Menus */}
           <div style={{ padding: '20px', pointerEvents: 'auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <PropertiesPanel />
             <button 
               onClick={() => setShowAreaMap(true)}
-              style={{ padding: '10px', background: '#ffd700', color: 'black', fontWeight: 'bold', border: 'none', cursor: 'pointer', borderRadius: '4px' }}
+              style={{ padding: '10px', background: '#ffd700', color: 'black', fontWeight: 'bold', border: 'none', cursor: 'pointer', borderRadius: '4px', opacity: 0.8 }}
             >
               Test Premium Area Map
             </button>
             {showInventory && <InventoryPanel />}
             {showCrafting && <CraftingPanel />}
           </div>
-
-        </div>
-
-        {/* Bottom Panel */}
-        <div style={{ padding: '20px', pointerEvents: 'auto', paddingBottom: '30px' }}>
-          <AssetsPanel />
         </div>
 
       </div>

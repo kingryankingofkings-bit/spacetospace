@@ -6,7 +6,7 @@ const BOSS_CONFIGS = {
   "ascendant_colossus": {
     name: "The Ascendant Colossus",
     maxHp: 180000,
-    model: "boss_01_ascendant_colossus.glb",
+    model: "boss_01_ascendant_colossus",
     phases: [
       { threshold: 1.0, title: "Phase 1: Armored Stone", speed: 0.3 },
       { threshold: 0.5, title: "Phase 2: Pure Energy", speed: 0.8 }
@@ -78,7 +78,7 @@ const BOSS_CONFIGS = {
   "syndicate_lich": {
     name: "The Syndicate Lich",
     maxHp: 500000,
-    model: "01_gnarl_maw.glb", // Using gnarl maw model as placeholder for lich
+    model: "boss_02_syndicate_lich",
     phases: [
       { threshold: 1.0, title: "Phase 1: Combo-Locked Barrier" }
     ],
@@ -114,7 +114,48 @@ const BOSS_CONFIGS = {
   "apex_chimera": { name: "The Apex Chimera", maxHp: 70000, model: "boss_01_ascendant_colossus.glb", phases: [{ threshold: 1.0, title: "Phase 1" }] },
   "null_anomaly": { name: "The Null Anomaly", maxHp: 100000, model: "boss_01_ascendant_colossus.glb", phases: [{ threshold: 1.0, title: "Phase 1" }] },
   "data_forged_evolvarch": { name: "The Data-Forged Evolvarch", maxHp: 300000, model: "boss_01_ascendant_colossus.glb", phases: [{ threshold: 1.0, title: "Phase 1" }] },
-  "astral_sovereign": { name: "The Astral Sovereign", maxHp: 1000000, model: "boss_01_ascendant_colossus.glb", phases: [{ threshold: 1.0, title: "Phase 1" }] }
+  "astral_sovereign": { name: "The Astral Sovereign", maxHp: 1000000, model: "boss_01_ascendant_colossus", phases: [{ threshold: 1.0, title: "Phase 1" }] },
+  "torinn_rhogar": {
+    name: "Torinn Rhogar",
+    maxHp: 200000,
+    model: "torinn_rhogar_proxy_LOD0",
+    phases: [
+      { threshold: 1.0, title: "Phase 1: Dragonborn Warrior", speed: 0.5 }
+    ],
+    init: (boss) => {
+      boss.currentPhase = 0;
+      boss.telegraphs = [];
+      boss.lastAttackTime = Date.now();
+    },
+    tick: (boss, players, broadcast) => {
+      const now = Date.now();
+      const speed = boss.phases[boss.currentPhase].speed;
+      let closestPlayer = null;
+      let minDistance = Infinity;
+      
+      for (const [id, p] of players.entries()) {
+        if (p.zone !== boss.zone) continue;
+        const dist = Math.sqrt(Math.pow(p.x - boss.x, 2) + Math.pow(p.z - boss.z, 2));
+        if (dist < minDistance) {
+          minDistance = dist;
+          closestPlayer = p;
+        }
+      }
+      
+      if (closestPlayer && minDistance < 50) {
+        if (minDistance < 5 && now - boss.lastAttackTime > 3000 && boss.telegraphs.length === 0) {
+          boss.lastAttackTime = now;
+          boss.telegraphs.push({ x: closestPlayer.x, z: closestPlayer.z, radius: 5, duration: 1500, endTime: now + 1500, damage: 30 });
+          broadcast({ type: "boss_telegraph", bossId: boss.id, x: closestPlayer.x, z: closestPlayer.z, radius: 5, duration: 1500 }, null, boss.zone);
+        } else {
+          const dx = closestPlayer.x - boss.x;
+          const dz = closestPlayer.z - boss.z;
+          boss.x += (dx / minDistance) * speed;
+          boss.z += (dz / minDistance) * speed;
+        }
+      }
+    }
+  }
 };
 
 function spawnBoss(type, zone, x, z) {

@@ -381,8 +381,10 @@ const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, 
     }
   });
 
-  const asset = getCdnAssetPath("/models/sector_characters_glb_pack_v4/", player.modelFile || "spark.glb");
-
+  let asset = getAssetByType(player.modelFile as any);
+  if (!asset) {
+    asset = getCdnAssetPath("/models/sector_characters_glb_pack_v4/", player.modelFile || "spark.glb");
+  }
   return (
     <>
       <group ref={ref}>
@@ -426,8 +428,10 @@ const RemotePlayer: React.FC<{ player: Player }> = ({ player }) => {
     }
   });
 
-  const asset = getCdnAssetPath("/models/sector_characters_glb_pack_v4/", player.modelFile || "spark.glb");
-  return (
+  let asset = getAssetByType(player.modelFile as any);
+  if (!asset) {
+    asset = getCdnAssetPath("/models/sector_characters_glb_pack_v4/", player.modelFile || "spark.glb");
+  }  return (
     <group ref={ref}>
       <OptimizedModel url={`${asset.rootUrl}${asset.sceneFilename}`} scaleToDimension={2.5} />
     </group>
@@ -540,7 +544,7 @@ export const WorldRenderer: React.FC<WorldRendererProps> = ({ setInteractingNpcI
           )}
 
           {remotePlayers.map(p => <RemotePlayer key={p.id} player={p} />)}
-          {bosses.map(b => <RemotePlayer key={b.id} player={{...b, modelFile: 'boss.glb'}} />)}
+          {bosses.map(b => <RemotePlayer key={b.id} player={{...b, modelFile: b.modelFile || 'boss_01_ascendant_colossus'}} />)}
           {worldNpcs.map(npc => <NPC key={npc.id} npc={npc} setInteractingNpcId={setInteractingNpcId} />)}
         </Physics>
 
