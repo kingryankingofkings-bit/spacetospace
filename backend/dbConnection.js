@@ -7,11 +7,16 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL || 'postgres://postgres:password@localhost:5432/world',
 });
 
-const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
+let redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
+
+// Auto-correct Upstash URLs to use the secure TLS protocol
+if (redisUrl.includes('upstash') && redisUrl.startsWith('redis://')) {
+  redisUrl = redisUrl.replace('redis://', 'rediss://');
+}
+
 const redisOptions = { url: redisUrl };
 
-// Upstash and Render's managed Redis require explicit TLS config for node-redis
-if (redisUrl.startsWith('rediss://') || redisUrl.includes('upstash')) {
+if (redisUrl.startsWith('rediss://')) {
   redisOptions.socket = {
     tls: true,
     rejectUnauthorized: false
