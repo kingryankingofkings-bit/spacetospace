@@ -10,6 +10,8 @@ let QUEST_DEFINITIONS = [];
 let SUBQUEST_DEFINITIONS = [];
 let MAP_COVERAGE_DEFINITIONS = [];
 let LOCATION_COVERAGE_LEDGER = [];
+let POSTGAME_QUESTS = [];
+let GODLY_REWARDS = [];
 
 function loadQuestData() {
   try {
@@ -35,6 +37,18 @@ function loadQuestData() {
     if (fs.existsSync(locationCoveragePath)) {
       LOCATION_COVERAGE_LEDGER = JSON.parse(fs.readFileSync(locationCoveragePath, 'utf8'));
       console.log(`Loaded ${LOCATION_COVERAGE_LEDGER.length} location coverage ledger entries.`);
+    }
+
+    const postgameQuestsPath = path.join(__dirname, 'data', 'postgame_quests.json');
+    if (fs.existsSync(postgameQuestsPath)) {
+      POSTGAME_QUESTS = JSON.parse(fs.readFileSync(postgameQuestsPath, 'utf8'));
+      console.log(`Loaded ${POSTGAME_QUESTS.length} postgame quests.`);
+    }
+
+    const godlyRewardsPath = path.join(__dirname, 'data', 'godly_rewards.json');
+    if (fs.existsSync(godlyRewardsPath)) {
+      GODLY_REWARDS = JSON.parse(fs.readFileSync(godlyRewardsPath, 'utf8'));
+      console.log(`Loaded ${GODLY_REWARDS.length} godly rewards.`);
     }
   } catch (err) {
     console.error("Error loading quest data:", err);
@@ -95,6 +109,27 @@ function getMapCoverageDef(questId) {
  */
 function getLocationCoverageDef(locationName) {
   return LOCATION_COVERAGE_LEDGER.find(lc => lc.world_map_location === locationName);
+}
+
+/**
+ * Returns a specific postgame quest definition.
+ */
+function getPostgameQuestDef(questId) {
+  return POSTGAME_QUESTS.find(q => q.quest_id === questId);
+}
+
+/**
+ * Returns all postgame quests for Torinn Rhogar.
+ */
+function getTorinnPostgameQuests() {
+  return POSTGAME_QUESTS.filter(q => q.giver === 'Torinn Rhogar');
+}
+
+/**
+ * Returns a specific Godly Reward by item_id or quest_id.
+ */
+function getGodlyReward(questId) {
+  return GODLY_REWARDS.find(gr => gr.quest_id === questId);
 }
 
 /**
@@ -173,11 +208,54 @@ function completeSubquest(sessionId, questId, subquestNumber) {
   };
 }
 
+/**
+ * Event hook when a player changes zones.
+ */
+function onZoneChange(sessionId, zoneId) {
+  // TODO: Check MAP_COVERAGE_DEFINITIONS to see if this triggers an exploration subquest
+  // Example: if zoneId matches a location in map coverage, award subquest XP.
+  // This is a placeholder to prevent crashes from index.js
+}
+
+/**
+ * Event hook when a player kills an enemy.
+ */
+function onEnemyDeath(sessionId, enemyId, isBoss) {
+  // TODO: Check active quests to see if killing this enemy completes a subquest
+  // Example: 'defeat 10 monsters' or 'defeat boss X'
+  // This is a placeholder to prevent crashes from index.js
+}
+
+/**
+ * Adds a quest to a player's active quest list.
+ */
+function addQuest(sessionId, questId) {
+  if (playersRef && broadcastRef) {
+     const player = playersRef.get(sessionId);
+     if (player) {
+        if (!player.activeQuests) player.activeQuests = [];
+        if (!player.completedQuests) player.completedQuests = [];
+        
+        if (!player.activeQuests.includes(questId) && !player.completedQuests.includes(questId)) {
+           player.activeQuests.push(questId);
+           broadcastRef({ type: "quest_updated", questId, status: "active" }, { sessionId });
+           console.log(`[Quest] Assinged ${questId} to ${sessionId}`);
+        }
+     }
+  }
+}
+
 module.exports = {
   init,
   completeSubquest,
   getQuestDef,
   getSubquestDef,
   getMapCoverageDef,
-  getLocationCoverageDef
+  getLocationCoverageDef,
+  onZoneChange,
+  onEnemyDeath,
+  addQuest,
+  getPostgameQuestDef,
+  getTorinnPostgameQuests,
+  getGodlyReward
 };

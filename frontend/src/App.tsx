@@ -5,7 +5,6 @@ import { PropertiesPanel } from './components/PropertiesPanel';
 import { AssetsPanel } from './components/AssetsPanel';
 import { CombatHUD } from './components/CombatHUD';
 import { MapPanel } from './components/MapPanel';
-import { ClassSelector } from './components/ClassSelector';
 import { CharacterCreator } from './components/CharacterCreator';
 import { SkillTreePanel } from './components/SkillTreePanel';
 import { ActionBar } from './components/ActionBar';
@@ -13,6 +12,8 @@ import BossHUD from './components/BossHUD';
 import { DialoguePanel, NarrativeOverlay } from './components/DialoguePanel';
 import { QuestTracker } from './components/QuestTracker';
 import { InventoryPanel } from './components/InventoryPanel';
+import { CraftingPanel } from './components/CraftingPanel';
+import MapViewer from './components/MapViewer';
 import { useMultiplayerStore, initMultiplayer } from './store/multiplayerStore';
 import { Login } from './components/Login';
 
@@ -22,6 +23,8 @@ function App() {
   const [showMap, setShowMap] = useState(false);
   const [showSkillTree, setShowSkillTree] = useState(false);
   const [showInventory, setShowInventory] = useState(false);
+  const [showCrafting, setShowCrafting] = useState(false);
+  const [showAreaMap, setShowAreaMap] = useState(false);
   const [isAppearanceDone, setIsAppearanceDone] = useState(false);
 
   useEffect(() => {
@@ -34,6 +37,8 @@ function App() {
   const playerCount = useMultiplayerStore(state => state.players.length);
   const sendSpawnBoss = useMultiplayerStore(state => state.sendSpawnBoss);
   const sendAcceptQuest = useMultiplayerStore(state => state.sendAcceptQuest);
+  const selectClass = useMultiplayerStore(state => state.selectClass);
+  const sendAppearance = useMultiplayerStore(state => state.sendAppearance);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -44,6 +49,8 @@ function App() {
         setShowSkillTree(prev => !prev);
       } else if (e.key.toLowerCase() === 'i') {
         setShowInventory(prev => !prev);
+      } else if (e.key.toLowerCase() === 'c') {
+        setShowCrafting(prev => !prev);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -62,8 +69,13 @@ function App() {
         />
       </div>
 
-      {!playerClass && !isAppearanceDone && <CharacterCreator onComplete={() => setIsAppearanceDone(true)} />}
-      {!playerClass && isAppearanceDone && <ClassSelector />}
+      {!playerClass && !isAppearanceDone && <CharacterCreator onComplete={(data: any) => {
+        sendAppearance(data);
+        if (data.charClass) {
+          selectClass(data.charClass.toLowerCase().replace(/ /g, '_'));
+        }
+        setIsAppearanceDone(true);
+      }} />}
 
       <CombatHUD />
       <BossHUD />
@@ -136,7 +148,14 @@ function App() {
           {/* Right Sidebar */}
           <div style={{ padding: '20px', pointerEvents: 'auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <PropertiesPanel />
+            <button 
+              onClick={() => setShowAreaMap(true)}
+              style={{ padding: '10px', background: '#ffd700', color: 'black', fontWeight: 'bold', border: 'none', cursor: 'pointer', borderRadius: '4px' }}
+            >
+              Test Premium Area Map
+            </button>
             {showInventory && <InventoryPanel />}
+            {showCrafting && <CraftingPanel />}
           </div>
 
         </div>
@@ -147,6 +166,14 @@ function App() {
         </div>
 
       </div>
+
+      {showAreaMap && (
+        <MapViewer 
+          mapUrl="/maps/area_maps/sub_locations/02_urban_core/06_the_micro_markets/03_black_market_alleys_map.webp"
+          mapTitle="Black Market Alleys"
+          onClose={() => setShowAreaMap(false)}
+        />
+      )}
     </div>
   );
 }

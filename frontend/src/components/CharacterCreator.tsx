@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import catalog from '../data/customization_catalog.json';
 
-type Step = 'Identity' | 'Body' | 'Origin' | 'Skin' | 'Face' | 'Hair';
-const STEPS: Step[] = ['Identity', 'Body', 'Origin', 'Skin', 'Face', 'Hair'];
+type Step = 'Identity' | 'Body' | 'Origin' | 'Skin' | 'Face' | 'Hair' | 'Class';
+const STEPS: Step[] = ['Identity', 'Body', 'Origin', 'Skin', 'Face', 'Hair', 'Class'];
 
 interface CharacterCreatorProps {
-  onComplete: () => void;
+  onComplete: (data: any) => void;
 }
 
 export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }) => {
@@ -22,14 +22,15 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
     facePreset: '',
     facialHair: '',
     hairStyle: '',
-    hairColor: ''
+    hairColor: '',
+    charClass: ''
   });
 
   const handleNext = () => {
     if (currentStepIndex < STEPS.length - 1) {
       setCurrentStepIndex(currentStepIndex + 1);
     } else {
-      onComplete();
+      onComplete(selections);
     }
   };
 
@@ -222,6 +223,26 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
             </div>
           </div>
         );
+
+      case 'Class':
+        return (
+          <div className="flex flex-col gap-6 h-full">
+            <h2 className="text-2xl text-cyan-300 font-bold">Combat Specialization</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 overflow-y-auto custom-scrollbar flex-1 pr-2">
+              {catalog.classes.map((cls: any) => (
+                <div 
+                  key={cls[0]}
+                  onClick={() => updateSelection('charClass', cls[0])}
+                  className={`p-4 rounded border cursor-pointer transition-all ${selections.charClass === cls[0] ? 'bg-cyan-900/40 border-cyan-400 text-white shadow-[0_0_15px_rgba(0,255,255,0.3)]' : 'bg-black/50 border-gray-700 text-gray-400 hover:border-gray-500'}`}
+                >
+                  <div className="font-bold text-lg text-cyan-400 mb-1">{cls[0]}</div>
+                  <div className="text-sm font-semibold mb-2">{cls[1]}</div>
+                  <div className="text-xs text-gray-400 italic">{cls[2]}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
     }
   };
 
@@ -268,7 +289,7 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
               onClick={handleNext}
               className="px-8 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded font-bold uppercase tracking-wider transition-all shadow-[0_0_15px_rgba(0,255,255,0.4)]"
             >
-              {currentStepIndex === STEPS.length - 1 ? 'Select Class' : 'Next Step'}
+              {currentStepIndex === STEPS.length - 1 ? 'Finalize Wayfinder' : 'Next Step'}
             </button>
           </div>
         </div>

@@ -14,22 +14,30 @@ const initializeAbilities = require("./abilities/generatedAbilities");
 const { applyDamage, handleDeath, StatusEffects } = require("./combatSystem");
 const questManager = require("./questManager");
 const specialEventsManager = require("./specialEventsManager");
+const dialogueManager = require("./dialogueManager");
+const economyManager = require("./economyManager");
+const ecologySystem = require("./ecologySystem");
 const AiTelemetryMonitor = require("./aiMonitor");
 const killSwitch = require("./killSwitch");
 const companionData = require("./companionData");
 const petData = require("./petData");
+const craftingManager = require("./craftingManager");
+const resourceNodeManager = require("./resourceNodeManager");
 
 
 let agonesSDK = null;
 
+const localActivePlayers = new Map();
+
 const aiMonitor = new AiTelemetryMonitor(() => ({
-  players: new Map(), npcs: [], spatialGrid: new Map()
+  players: localActivePlayers, npcs: npcs, spatialGrid: new Map()
 }));
 aiMonitor.startMonitoring();
+resourceNodeManager.initializeNodes();
 
 const app = express();
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ limit: '10kb' }));
 
 authManager.setupRoutes(app);
 
@@ -126,21 +134,64 @@ async function getPlayersInInterestArea(zone, x, z) {
 const pubSubClient = db.redisClient.duplicate();
 pubSubClient.connect().then(() => {
   pubSubClient.subscribe('game_broadcast', (message) => {
-    const { data, zone, x, z } = JSON.parse(message);
-    const msgStr = JSON.stringify(data);
-    wss.clients.forEach(client => {
-      if (client.readyState === 1) client.send(msgStr);
-    });
+    try {
+      const { data, zone, x, z } = JSON.parse(message);
+      
+      // Delta update local active players cache
+      if (data.type === "join" && data.player) {
+        localActivePlayers.set(data.sessionId, data.player);
+      } else if (data.type === "leave" && data.sessionId) {
+        localActivePlayers.delete(data.sessionId);
+      } else if (data.type === "move" && data.position && data.sessionId) {
+        const p = localActivePlayers.get(data.sessionId);
+        if (p) {
+          p.x = data.position.x;
+          p.y = data.position.y;
+          p.z = data.position.z;
+        }
+      } else if (data.type === "player_updated" && data.player) {
+        localActivePlayers.set(data.sessionId, data.player);
+      }
+
+      const msgStr = JSON.stringify(data);
+      wss.clients.forEach(client => {
+        if (client.readyState === 1) client.send(msgStr);
+      });
+    } catch (e) {
+      console.error("Broadcast parse error", e);
+    }
   });
-});
+}).catch(console.error);
 
 function broadcast(data, excludeWs = null, zone = null, x = null, z = null) {
-  db.redisClient.publish('game_broadcast', JSON.stringify({ data, zone, x, z }));
+  try {
+    db.redisClient.publish('game_broadcast', JSON.stringify({ data, zone, x, z })).catch(e => console.error("Broadcast publish error", e));
+  } catch(err) {
+    console.error("ReferenceError in broadcast:", err);
+  }
 }
 
 function broadcastSpatial(cell, data) {
-  db.redisClient.publish('game_broadcast', JSON.stringify({ data, cell }));
+  try {
+    db.redisClient.publish('game_broadcast', JSON.stringify({ data, cell })).catch(e => console.error("BroadcastSpatial publish error", e));
+  } catch(err) {
+    console.error("ReferenceError in broadcastSpatial:", err);
+  }
 }
+
+let globalWorldTime = 'day';
+setInterval(() => {
+  globalWorldTime = globalWorldTime === 'day' ? 'night' : 'day';
+  broadcast({ type: "world_time_update", time: globalWorldTime });
+}, 5 * 60 * 1000); // 5 minutes day, 5 minutes night
+
+setInterval(() => {
+  const respawns = ecologySystem.tickRespawn(npcs);
+  for (const newNpc of respawns) {
+    npcs.push(newNpc);
+    broadcast({ type: "npc_spawned", npc: newNpc }, null, newNpc.zone);
+  }
+}, 60 * 1000); // 1 minute ecology heartbeat
 
 async function updateAgonesPlayerCount() {
   if (agonesSDK) {
@@ -176,12 +227,10 @@ setInterval(async () => {
   if (sessionIdsToFetch.size === 0) return;
 
   const sessionIdsArray = Array.from(sessionIdsToFetch);
-  const playersData = await db.redisClient.hmGet('active_players', sessionIdsArray);
   const players = new Map();
-  sessionIdsArray.forEach((id, i) => {
-    if (playersData[i]) {
-      players.set(id, JSON.parse(playersData[i]));
-    }
+  sessionIdsArray.forEach((id) => {
+    const p = localActivePlayers.get(id);
+    if (p) players.set(id, p);
   });
   
   const playersByCell = {};
@@ -268,7 +317,7 @@ setInterval(async () => {
       const targetNpc = npcs.find(n => n.id === companion.targetId);
       if (targetNpc && targetNpc.health > 0 && getDistance(companion, targetNpc) < 20) {
         companion.lastAttackTime = now;
-        applyDamage(targetNpc, companion.level * 15, broadcast, companion.id);
+        applyDamage(targetNpc, companion.level * 15, 0, true, false, companion);
         if (targetNpc.health <= 0) {
           companion.targetId = null;
         }
@@ -297,7 +346,7 @@ setInterval(async () => {
         } else {
           if (effect.type === StatusEffects.STUN) isStunned = true;
           if (effect.type === StatusEffects.DOT && now - (effect.lastTick || 0) > 1000) {
-            const targetHp = applyDamage(npc, effect.amount, 0, true, false);
+            const targetHp = applyDamage(npc, effect.amount, 0, true, false, null);
             effect.lastTick = now;
             if (targetHp <= 0) {
                handleDeath(npc, true);
@@ -310,7 +359,24 @@ setInterval(async () => {
     
     if (isStunned) return;
 
-    let closestPlayer = null;
+      if (npc.state === 'STAGGER') {
+        if (now > (npc.staggerEndTime || 0)) {
+          npc.state = 'IDLE';
+        } else {
+          // If NPC is staggering, do nothing else and ensure they get broadcasted this frame if they just got hit
+          const cell = getSpatialKey(npc.zone, npc.x, npc.z);
+          if (!movedNpcsByCell[cell]) movedNpcsByCell[cell] = [];
+          if (!movedNpcsByCell[cell].some(n => n.id === npc.id)) {
+             movedNpcsByCell[cell].push({ 
+               id: npc.id, x: Number(npc.x.toFixed(2)), y: Number(npc.y.toFixed(2)), z: Number(npc.z.toFixed(2)), 
+               hp: npc.hp, modelFile: npc.modelFile, zone: npc.zone, state: npc.state 
+             });
+          }
+          return;
+        }
+      }
+  
+      let closestPlayer = null;
     let minDistance = Infinity;
     
     const cx = isNaN(parseFloat(npc.x)) ? 0 : Math.floor(parseFloat(npc.x) / CELL_SIZE);
@@ -334,47 +400,73 @@ setInterval(async () => {
 
     const prevState = npc.state;
 
-    if (closestPlayer && minDistance < 15) {
-      if (minDistance < 2) {
-        npc.state = 'ATTACK';
-        if (now - (npc.lastAttackTime || 0) > 2000) {
-          const hp = applyDamage(closestPlayer, 10, 0, false, false);
-          if (hp <= 0) handleDeath(closestPlayer, false);
-          
-          closestPlayer.lastCombatTime = now;
-          db.redisClient.hSet('active_players', closestPlayer.sessionId, JSON.stringify(closestPlayer)).catch(console.error);
-
-          broadcast({ type: "combat_update", targetId: closestPlayer.sessionId, attackerId: npc.id, targetHealth: hp }, null, npc.zone, npc.x, npc.z);
-          broadcast({ type: "attack", sessionId: npc.id, targetId: closestPlayer.sessionId }, null, npc.zone, npc.x, npc.z);
-          npc.lastAttackTime = now;
+    if (npc.state === 'TELEGRAPH') {
+      if (now >= npc.telegraphEndTime) {
+        if (npc.targetPlayer) {
+           const target = npc.targetPlayer;
+           const dist = getDistance(npc, target);
+           if (dist < 3) {
+              const hp = applyDamage(target, 10, npc.comboIndex || 0, false, false, npc);
+              if (hp <= 0) handleDeath(target, false);
+              target.lastCombatTime = now;
+              db.redisClient.hSet('active_players', target.sessionId, JSON.stringify(target)).catch(console.error);
+              broadcast({ type: "combat_update", targetId: target.sessionId, attackerId: npc.id, targetHealth: hp }, null, npc.zone, npc.x, npc.z);
+              broadcast({ type: "attack", sessionId: npc.id, targetId: target.sessionId }, null, npc.zone, npc.x, npc.z);
+           }
         }
-      } else {
-        npc.state = 'CHASE';
-        const dx = closestPlayer.x - npc.x;
-        const dz = closestPlayer.z - npc.z;
-        const dist = Math.sqrt(dx * dx + dz * dz);
-        npc.x += (dx / dist) * 0.5;
-        npc.z += (dz / dist) * 0.5;
-        moved = true;
+        npc.state = 'RECOVERY';
+        npc.recoveryEndTime = now + 500;
+        npc.lastAttackTime = now;
+      }
+    } else if (npc.state === 'RECOVERY') {
+      if (now >= npc.recoveryEndTime) {
+        npc.state = 'IDLE';
       }
     } else {
-      if (!npc.nextWanderTime || now > npc.nextWanderTime) {
-        npc.state = 'WANDER';
-        npc.wanderTargetX = npc.x + (Math.random() - 0.5) * 10;
-        npc.wanderTargetZ = npc.z + (Math.random() - 0.5) * 10;
-        npc.nextWanderTime = now + 3000 + Math.random() * 4000;
-      }
-      
-      if (npc.state === 'WANDER') {
-        const dx = npc.wanderTargetX - npc.x;
-        const dz = npc.wanderTargetZ - npc.z;
-        const dist = Math.sqrt(dx * dx + dz * dz);
-        if (dist > 0.5) {
-          npc.x += (dx / dist) * 0.2;
-          npc.z += (dz / dist) * 0.2;
-          moved = true;
+      const aggroRange = globalWorldTime === 'night' ? 45 : 15;
+      if (closestPlayer && minDistance < aggroRange) {
+        if (minDistance < 2) {
+          if (now - (npc.lastAttackTime || 0) > 2000) {
+            npc.state = 'TELEGRAPH';
+            npc.comboIndex = (npc.comboIndex || 0) % (npc.attackChain ? npc.attackChain.length : 1);
+            const attackType = npc.attackChain ? npc.attackChain[npc.comboIndex] : 'light';
+            const duration = attackType === 'heavy' ? 1500 : 800;
+            npc.comboIndex++;
+            npc.telegraphEndTime = now + duration;
+            npc.targetPlayer = closestPlayer;
+            broadcast({ type: "npc_telegraph", sessionId: npc.id, duration, attackType, targetId: closestPlayer.sessionId }, null, npc.zone, npc.x, npc.z);
+          } else {
+            npc.state = 'IDLE';
+          }
         } else {
-          npc.state = 'IDLE';
+          npc.state = 'CHASE';
+          const dx = closestPlayer.x - npc.x;
+          const dz = closestPlayer.z - npc.z;
+          const dist = Math.sqrt(dx * dx + dz * dz);
+          const speed = globalWorldTime === 'night' ? 1.5 : 0.5;
+          npc.x += (dx / dist) * speed;
+          npc.z += (dz / dist) * speed;
+          moved = true;
+        }
+      } else {
+        if (!npc.nextWanderTime || now > npc.nextWanderTime) {
+          npc.state = 'WANDER';
+          npc.wanderTargetX = npc.x + (Math.random() - 0.5) * 10;
+          npc.wanderTargetZ = npc.z + (Math.random() - 0.5) * 10;
+          npc.nextWanderTime = now + 3000 + Math.random() * 4000;
+        }
+        
+        if (npc.state === 'WANDER') {
+          const dx = npc.wanderTargetX - npc.x;
+          const dz = npc.wanderTargetZ - npc.z;
+          const dist = Math.sqrt(dx * dx + dz * dz);
+          if (dist > 0.5) {
+            npc.x += (dx / dist) * 0.2;
+            npc.z += (dz / dist) * 0.2;
+            moved = true;
+          } else {
+            npc.state = 'IDLE';
+          }
         }
       }
     }
@@ -395,9 +487,33 @@ setInterval(async () => {
   });
 
   for (const player of players.values()) {
-    if (player.combo > 0 && player.lastAttackTime && (now - player.lastAttackTime > 3000)) {
-      player.combo = 0;
-      broadcast({ type: "move", sessionId: player.id || player.sessionId, position: { x: player.x, y: player.y, z: player.z, id: player.sessionId || player.id } }, null, player.zone, player.x, player.z);
+    // 1. Combo Decay
+    if (player.combo > 0 && player.lastAttackTime && (now - player.lastAttackTime > 3500)) {
+      if (!player.lastComboDecayTime) player.lastComboDecayTime = now;
+      if (now - player.lastComboDecayTime >= 500) { 
+         player.combo = Math.max(0, player.combo - 1);
+         player.lastComboDecayTime = now;
+         // Broadcast combo update to client
+         broadcast({ type: "combat_update", targetId: player.id || player.sessionId, combo: player.combo }, null, player.zone, player.x, player.z);
+      }
+    } else {
+       player.lastComboDecayTime = null; 
+    }
+
+    // 2. Shield Regeneration
+    if (player.lastHitTime && (now - player.lastHitTime > 5000)) {
+       let maxShield = 0;
+       if (player.gear) {
+          player.gear.forEach(item => maxShield += (item.shield || 0));
+       }
+       if (maxShield > 0 && (player.shield === undefined || player.shield < maxShield)) {
+          if (!player.lastShieldRegenTime) player.lastShieldRegenTime = now;
+          if (now - player.lastShieldRegenTime >= 1000) { 
+             player.shield = Math.min(maxShield, (player.shield || 0) + Math.max(1, Math.floor(maxShield * 0.1))); // 10% max shield per sec
+             player.lastShieldRegenTime = now;
+             broadcast({ type: "combat_update", targetId: player.id || player.sessionId, targetShield: player.shield }, null, player.zone, player.x, player.z);
+          }
+       }
     }
   }
 
@@ -458,7 +574,8 @@ wss.on("connection", (ws) => {
             players: await getPlayersInInterestArea(position.zone, position.x || 0, position.z || 0),
             objects: await db.getObjects(),
             terrain: await db.getTerrain(),
-            npcs: npcs.filter(n => n.zone === position.zone && getDistance(n, position) < CELL_SIZE * 2)
+            npcs: npcs.filter(n => n.zone === position.zone && getDistance(n, position) < CELL_SIZE * 2),
+            resourceNodes: resourceNodeManager.getActiveNodesInZone(position.zone)
           }));
           
           if (position.activeCompanion) {
@@ -568,7 +685,7 @@ wss.on("connection", (ws) => {
           player.lastMoveTime = now;
           
           const maxSpeed = 50;
-          const allowedDist = Math.max(maxSpeed * dt, 5.0);
+          const allowedDist = (maxSpeed * dt) + 0.5;
           const proposedPos = { x: parseFloat(data.x ?? player.x), y: parseFloat(data.y ?? player.y), z: parseFloat(data.z ?? player.z) };
           
           if (isNaN(proposedPos.x) || isNaN(proposedPos.y) || isNaN(proposedPos.z)) return;
@@ -588,6 +705,17 @@ wss.on("connection", (ws) => {
           broadcast({ type: "move", sessionId, position: { x: player.x, y: player.y, z: player.z, id: sessionId } }, ws, player.zone, player.x, player.z);
         }
       }
+      else if (data.type === "set_appearance") {
+          const sessionId = ws.sessionId;
+          const playerStr = await db.redisClient.hGet('active_players', sessionId);
+          if (playerStr) {
+            const player = JSON.parse(playerStr);
+            player.appearance = data.appearance;
+            await db.saveUser(sessionId, player);
+            await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+            broadcast({ type: "player_updated", sessionId, player }, ws, player.zone, player.x, player.z);
+          }
+        }
       else if (data.type === "select_class") {
         const sessionId = ws.sessionId;
         const playerStr = await db.redisClient.hGet('active_players', sessionId);
@@ -628,123 +756,236 @@ wss.on("connection", (ws) => {
         await db.saveObject(obj);
         broadcast(data);
       }
-      else if (data.type === "pickup_loot") {
+      else if (data.type === "interact_npc") {
+        const npc = npcs.find(n => n.id === data.npcId);
         const sessionId = ws.sessionId;
         const playerStr = await db.redisClient.hGet('active_players', sessionId);
-        if (!playerStr || !data.item || !data.item.id) return;
-        const player = JSON.parse(playerStr);
-        
-        const worldObjId = data.item.id;
-        const worldObj = await db.getObject(worldObjId);
-        
-        if (!worldObj) {
-           ws.send(JSON.stringify({ type: "error", message: "Item does not exist or already picked up." }));
-           return;
-        }
+        if (npc && playerStr) {
+          let player = JSON.parse(playerStr);
+          if (!player.choices) player.choices = {};
+          if (!player.factionReputation) player.factionReputation = {};
 
-        const dist = getDistance(player, worldObj);
-        if (dist > 10) {
-           ws.send(JSON.stringify({ type: "error", message: "Too far to pick up." }));
-           return;
-        }
-
-        const itemType = worldObj.type;
-        const def = getItemDef(itemType);
-        
-        if (!player.inventory) player.inventory = [];
-        
-        let currentWeight = 0;
-        player.inventory.forEach(i => {
-           currentWeight += (getItemDef(i.itemId).weight * i.quantity);
-        });
-        
-        if (currentWeight + def.weight > MAX_WEIGHT) {
-           ws.send(JSON.stringify({ type: "error", message: "Inventory too heavy." }));
-           return;
-        }
-
-        let added = false;
-        if (def.maxStack > 1) {
-           const existingSlot = player.inventory.find(i => i.itemId === itemType && i.quantity < def.maxStack);
-           if (existingSlot) {
-              const space = def.maxStack - existingSlot.quantity;
-              if (space >= 1) {
-                 existingSlot.quantity += 1;
-                 added = true;
+          if (npc.dialogueTree) {
+            const nodeId = data.choiceId || "start";
+            const node = npc.dialogueTree[nodeId];
+            if (node) {
+              if (node.addChoice) player.choices[node.addChoice] = true;
+              if (node.addFactionRep) {
+                const { faction, amount } = node.addFactionRep;
+                player.factionReputation[faction] = (player.factionReputation[faction] || 0) + amount;
               }
+              if (node.action === "vendor_open") {
+                const economyManager = require('./economyManager');
+                const vendorInv = economyManager.getVendorInventory(npc.vendorType || "general");
+                ws.send(JSON.stringify({ type: "vendor_inventory", items: vendorInv, npcId: npc.id }));
+              }
+              if (node.action === "heal") {
+                player.hp = player.maxHp;
+                ws.send(JSON.stringify({ type: "combat_update", targetId: sessionId, targetHealth: player.hp }));
+              }
+              if (node.action === "accept_quest" && node.questId) {
+                const questManager = require('./questManager');
+                questManager.addQuest(sessionId, node.questId);
+              }
+              
+              const availableChoices = (node.choices || []).filter(c => {
+                if (c.reqChoice && !player.choices[c.reqChoice]) return false;
+                if (c.reqFaction) {
+                   const rep = player.factionReputation[c.reqFaction.faction] || 0;
+                   if (rep < c.reqFaction.min) return false;
+                }
+                return true;
+              });
+
+              await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+              await db.saveUser(sessionId, player);
+
+              ws.send(JSON.stringify({ 
+                type: "npc_dialogue_tree", 
+                npcId: npc.id, 
+                text: node.text, 
+                choices: availableChoices 
+              }));
+            }
+          } else if (npc.dialogue && npc.dialogue.length > 0) {
+            // Fallback for simple NPCs
+            const dialogueLine = npc.dialogue[Math.floor(Math.random() * npc.dialogue.length)];
+            ws.send(JSON.stringify({ type: "npc_dialogue", npcId: npc.id, text: dialogueLine }));
+          }
+        }
+      }
+      else if (data.type === "interact_wild_pet") {
+        const sessionId = ws.sessionId;
+        const playerStr = await db.redisClient.hGet('active_players', sessionId);
+        if (playerStr && data.petId) {
+           const player = JSON.parse(playerStr);
+           if (!player.unlockedPets) player.unlockedPets = [];
+           if (petData.PET_DB[data.petId] && !player.unlockedPets.includes(data.petId)) {
+              player.unlockedPets.push(data.petId);
+              ws.send(JSON.stringify({ type: "pet_unlocked", pet: petData.PET_DB[data.petId] }));
+              await db.saveUser(sessionId, player);
+              await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+              broadcast({ type: "player_updated", sessionId, player }, ws, player.zone, player.x, player.z);
            }
         }
+      }
+      else if (data.type === "pickup_loot") {
+        const sessionId = ws.sessionId;
+        const worldObjId = data.item ? data.item.id : null;
+        if (!worldObjId) return;
         
-        if (!added) {
-           let emptySlot = -1;
-           const occupiedSlots = new Set(player.inventory.map(i => i.slot));
-           for (let i = 0; i < MAX_INVENTORY_SLOTS; i++) {
-              if (!occupiedSlots.has(i)) {
-                 emptySlot = i;
-                 break;
-              }
-           }
+        const client = await db.pool.connect();
+        try {
+           await client.query('BEGIN');
+           await client.query('SELECT id FROM users WHERE id = $1 FOR UPDATE', [sessionId]);
            
-           if (emptySlot === -1) {
-              ws.send(JSON.stringify({ type: "error", message: "Inventory full." }));
+           const { rows: objRows } = await client.query('SELECT * FROM world_objects WHERE id = $1 FOR UPDATE', [worldObjId]);
+           if (objRows.length === 0) {
+              await client.query('ROLLBACK');
+              ws.send(JSON.stringify({ type: "error", message: "Item does not exist or already picked up." }));
               return;
            }
            
-           player.inventory.push({
-              instanceId: Math.random().toString(36).substring(2, 15),
-              itemId: itemType,
-              quantity: 1,
-              slot: emptySlot
+           const playerStr = await db.redisClient.hGet('active_players', sessionId);
+           if (!playerStr) {
+              await client.query('ROLLBACK');
+              return;
+           }
+           const player = JSON.parse(playerStr);
+           const worldObj = objRows[0];
+           
+           const dist = getDistance(player, worldObj);
+           if (dist > 10) {
+              await client.query('ROLLBACK');
+              ws.send(JSON.stringify({ type: "error", message: "Too far to pick up." }));
+              return;
+           }
+           
+           const itemType = worldObj.type;
+           const def = getItemDef(itemType);
+           
+           if (!player.inventory) player.inventory = [];
+           
+           let currentWeight = 0;
+           player.inventory.forEach(i => {
+              currentWeight += (getItemDef(i.itemId).weight * i.quantity);
            });
+           
+           if (currentWeight + def.weight > MAX_WEIGHT) {
+              await client.query('ROLLBACK');
+              ws.send(JSON.stringify({ type: "error", message: "Inventory too heavy." }));
+              return;
+           }
+
+           let added = false;
+           if (def.maxStack > 1) {
+              const existingSlot = player.inventory.find(i => i.itemId === itemType && i.quantity < def.maxStack);
+              if (existingSlot) {
+                 const space = def.maxStack - existingSlot.quantity;
+                 if (space >= 1) {
+                    existingSlot.quantity += 1;
+                    added = true;
+                 }
+              }
+           }
+           
+           if (!added) {
+              let emptySlot = -1;
+              const occupiedSlots = new Set(player.inventory.map(i => i.slot));
+              for (let i = 0; i < MAX_INVENTORY_SLOTS; i++) {
+                 if (!occupiedSlots.has(i)) {
+                    emptySlot = i;
+                    break;
+                 }
+              }
+              
+              if (emptySlot === -1) {
+                 await client.query('ROLLBACK');
+                 ws.send(JSON.stringify({ type: "error", message: "Inventory full." }));
+                 return;
+              }
+              
+              player.inventory.push({
+                 instanceId: Math.random().toString(36).substring(2, 15),
+                 itemId: itemType,
+                 quantity: 1,
+                 slot: emptySlot
+              });
+           }
+           
+           await db.deleteObject(worldObjId, client);
+           await db.saveInventory(sessionId, player.inventory, client);
+           await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+           await client.query('COMMIT');
+           
+           broadcast({ type: "remove_object", objectId: worldObjId });
+           ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
+        } catch (err) {
+           await client.query('ROLLBACK');
+           console.error("pickup_loot error", err);
+        } finally {
+           client.release();
         }
-        
-        await db.deleteObject(worldObjId);
-        await db.saveInventory(sessionId, player.inventory);
-        await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
-        broadcast({ type: "remove_object", objectId: worldObjId });
-        
-        ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
       }
       else if (data.type === "drop_item") {
         const sessionId = ws.sessionId;
-        const playerStr = await db.redisClient.hGet('active_players', sessionId);
-        if (!playerStr) return;
-        const player = JSON.parse(playerStr);
+        const client = await db.pool.connect();
+        try {
+           await client.query('BEGIN');
+           await client.query('SELECT id FROM users WHERE id = $1 FOR UPDATE', [sessionId]);
+           
+           const playerStr = await db.redisClient.hGet('active_players', sessionId);
+           if (!playerStr) { await client.query('ROLLBACK'); return; }
+           const player = JSON.parse(playerStr);
 
-        const { instanceId, quantity } = data;
-        if (quantity < 1) return; // exploit fix
-        
-        const index = player.inventory.findIndex(i => i.instanceId === instanceId);
-        if (index === -1) {
-           ws.send(JSON.stringify({ type: "error", message: "Item not found in inventory." }));
-           return;
-        }
-        
-        const item = player.inventory[index];
-        const dropQty = Math.min(quantity || 1, item.quantity);
-        
-        item.quantity -= dropQty;
-        if (item.quantity <= 0) {
-           player.inventory.splice(index, 1);
-        }
-        
-        await db.saveInventory(sessionId, player.inventory);
-        await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
-        ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
-        
-        const MAX_DROPS = 100;
-        const actualDrops = Math.min(dropQty, MAX_DROPS);
-        for (let i = 0; i < actualDrops; i++) {
-           const objId = "drop_" + Math.random().toString(36).substring(2, 15);
-           const newObj = {
-              id: objId,
-              type: item.itemId,
-              x: player.x + (Math.random() - 0.5) * 2,
-              y: player.y,
-              z: player.z + (Math.random() - 0.5) * 2
-           };
-           await db.saveObject(newObj);
-           broadcast({ type: "place_object", object: newObj });
+           const { instanceId, quantity } = data;
+           if (quantity < 1) { await client.query('ROLLBACK'); return; } // exploit fix
+           
+           const index = player.inventory.findIndex(i => i.instanceId === instanceId);
+           if (index === -1) {
+              await client.query('ROLLBACK');
+              ws.send(JSON.stringify({ type: "error", message: "Item not found in inventory." }));
+              return;
+           }
+           
+           const item = player.inventory[index];
+           const dropQty = Math.min(quantity || 1, item.quantity);
+           
+           item.quantity -= dropQty;
+           if (item.quantity <= 0) {
+              player.inventory.splice(index, 1);
+           }
+           
+           await db.saveInventory(sessionId, player.inventory, client);
+           await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+           
+           const MAX_DROPS = 100;
+           const actualDrops = Math.min(dropQty, MAX_DROPS);
+           const objectsToDrop = [];
+           for (let i = 0; i < actualDrops; i++) {
+              const objId = "drop_" + Math.random().toString(36).substring(2, 15);
+              const newObj = {
+                 id: objId,
+                 type: item.itemId,
+                 x: player.x + (Math.random() - 0.5) * 2,
+                 y: player.y,
+                 z: player.z + (Math.random() - 0.5) * 2
+              };
+              await db.saveObject(newObj, client);
+              objectsToDrop.push(newObj);
+           }
+           
+           await client.query('COMMIT');
+           
+           ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
+           for (const o of objectsToDrop) {
+              broadcast({ type: "place_object", object: o });
+           }
+        } catch (err) {
+           await client.query('ROLLBACK');
+           console.error("drop_item error", err);
+        } finally {
+           client.release();
         }
       }
       else if (data.type === "trade_request") {
@@ -805,126 +1046,256 @@ wss.on("connection", (ws) => {
          if (trade.target === sessionId) trade.targetAccepted = true;
          
          if (trade.initAccepted && trade.targetAccepted) {
-            const p1Str = await db.redisClient.hGet('active_players', trade.initiator);
-            const p2Str = await db.redisClient.hGet('active_players', trade.target);
-            if (!p1Str || !p2Str) return;
-            const p1 = JSON.parse(p1Str);
-            const p2 = JSON.parse(p2Str);
+            if (trade.processing) return;
+            trade.processing = true;
             
-            const validateItems = (player, tradeItems) => {
-               for (const ti of tradeItems) {
-                  const item = player.inventory.find(i => i.instanceId === ti.instanceId);
-                  if (!item || item.quantity < ti.quantity || ti.quantity < 1) return false;
+            const client = await db.pool.connect();
+            try {
+               await client.query('BEGIN');
+               const sortedIds = [trade.initiator, trade.target].sort();
+               await client.query('SELECT id FROM users WHERE id = ANY($1) FOR UPDATE', [sortedIds]);
+               
+               const p1Str = await db.redisClient.hGet('active_players', trade.initiator);
+               const p2Str = await db.redisClient.hGet('active_players', trade.target);
+               if (!p1Str || !p2Str) {
+                  await client.query('ROLLBACK');
+                  return;
                }
-               return true;
-            };
-            
-            if (!validateItems(p1, trade.initItems) || !validateItems(p2, trade.targetItems)) {
-               activeTrades.delete(data.tradeId);
-               const msg = JSON.stringify({ type: "error", message: "Trade failed: invalid items." });
-               wss.clients.forEach(c => {
-                 if (c.sessionId === trade.initiator || c.sessionId === trade.target) c.send(msg);
-               });
-               return;
-            }
-            
-            const processTradeItems = (fromPlayer, toPlayer, tradeItems) => {
-               for (const ti of tradeItems) {
-                  const index = fromPlayer.inventory.findIndex(i => i.instanceId === ti.instanceId);
-                  const item = fromPlayer.inventory[index];
-                  
-                  item.quantity -= ti.quantity;
-                  if (item.quantity <= 0) {
-                     fromPlayer.inventory.splice(index, 1);
+               const p1 = JSON.parse(p1Str);
+               const p2 = JSON.parse(p2Str);
+               
+               const validateItems = (player, tradeItems) => {
+                  for (const ti of tradeItems) {
+                     const item = player.inventory.find(i => i.instanceId === ti.instanceId);
+                     if (!item || item.quantity < ti.quantity || ti.quantity < 1) return false;
                   }
-                  
-                  const def = getItemDef(item.itemId);
-                  let added = false;
-                  if (def.maxStack > 1) {
-                     const existingSlot = toPlayer.inventory.find(i => i.itemId === item.itemId && i.quantity < def.maxStack);
-                     if (existingSlot && existingSlot.quantity + ti.quantity <= def.maxStack) {
-                        existingSlot.quantity += ti.quantity;
-                        added = true;
+                  return true;
+               };
+               
+               if (!validateItems(p1, trade.initItems) || !validateItems(p2, trade.targetItems)) {
+                  await client.query('ROLLBACK');
+                  activeTrades.delete(data.tradeId);
+                  const msg = JSON.stringify({ type: "error", message: "Trade failed: invalid items." });
+                  wss.clients.forEach(c => {
+                    if (c.sessionId === trade.initiator || c.sessionId === trade.target) c.send(msg);
+                  });
+                  return;
+               }
+               
+               const processTradeItems = (fromPlayer, toPlayer, tradeItems) => {
+                  for (const ti of tradeItems) {
+                     const index = fromPlayer.inventory.findIndex(i => i.instanceId === ti.instanceId);
+                     const item = fromPlayer.inventory[index];
+                     
+                     item.quantity -= ti.quantity;
+                     if (item.quantity <= 0) {
+                        fromPlayer.inventory.splice(index, 1);
                      }
-                  }
-                  if (!added) {
-                     let emptySlot = -1;
-                     const occupiedSlots = new Set(toPlayer.inventory.map(i => i.slot));
-                     for (let s = 0; s < MAX_INVENTORY_SLOTS; s++) {
-                        if (!occupiedSlots.has(s)) {
-                           emptySlot = s;
-                           break;
+                     
+                     const def = getItemDef(item.itemId);
+                     let added = false;
+                     if (def.maxStack > 1) {
+                        const existingSlot = toPlayer.inventory.find(i => i.itemId === item.itemId && i.quantity < def.maxStack);
+                        if (existingSlot && existingSlot.quantity + ti.quantity <= def.maxStack) {
+                           existingSlot.quantity += ti.quantity;
+                           added = true;
                         }
                      }
-                     if (emptySlot !== -1) {
-                        toPlayer.inventory.push({
-                           instanceId: Math.random().toString(36).substring(2, 15),
-                           itemId: item.itemId,
-                           quantity: ti.quantity,
-                           slot: emptySlot
-                        });
+                     if (!added) {
+                        let emptySlot = -1;
+                        const occupiedSlots = new Set(toPlayer.inventory.map(i => i.slot));
+                        for (let s = 0; s < MAX_INVENTORY_SLOTS; s++) {
+                           if (!occupiedSlots.has(s)) {
+                              emptySlot = s;
+                              break;
+                           }
+                        }
+                        if (emptySlot !== -1) {
+                           toPlayer.inventory.push({
+                              instanceId: Math.random().toString(36).substring(2, 15),
+                              itemId: item.itemId,
+                              quantity: ti.quantity,
+                              slot: emptySlot
+                           });
+                        }
                      }
                   }
-               }
-            };
-            
-            processTradeItems(p1, p2, trade.initItems);
-            processTradeItems(p2, p1, trade.targetItems);
-            
-            await db.saveInventory(p1.id, p1.inventory);
-            await db.saveInventory(p2.id, p2.inventory);
-            
-            await db.redisClient.hSet('active_players', p1.id, JSON.stringify(p1));
-            await db.redisClient.hSet('active_players', p2.id, JSON.stringify(p2));
-            
-            activeTrades.delete(data.tradeId);
-            
-            wss.clients.forEach(c => {
-               if (c.sessionId === trade.initiator) c.send(JSON.stringify({ type: "inventory_updated", inventory: p1.inventory }));
-               if (c.sessionId === trade.target) c.send(JSON.stringify({ type: "inventory_updated", inventory: p2.inventory }));
-            });
+               };
+               
+               processTradeItems(p1, p2, trade.initItems);
+               processTradeItems(p2, p1, trade.targetItems);
+               
+               await db.saveInventory(p1.id, p1.inventory, client);
+               await db.saveInventory(p2.id, p2.inventory, client);
+               
+               await db.redisClient.hSet('active_players', p1.id, JSON.stringify(p1));
+               await db.redisClient.hSet('active_players', p2.id, JSON.stringify(p2));
+               
+               await client.query('COMMIT');
+               
+               activeTrades.delete(data.tradeId);
+               
+               wss.clients.forEach(c => {
+                  if (c.sessionId === trade.initiator) c.send(JSON.stringify({ type: "inventory_updated", inventory: p1.inventory }));
+                  if (c.sessionId === trade.target) c.send(JSON.stringify({ type: "inventory_updated", inventory: p2.inventory }));
+               });
+            } catch (err) {
+               await client.query('ROLLBACK');
+               console.error("trade_accept error", err);
+            } finally {
+               client.release();
+            }
          }
+      }
+      else if (data.type === "craft") {
+        const sessionId = ws.sessionId;
+        const client = await db.pool.connect();
+        try {
+           await client.query('BEGIN');
+           await client.query('SELECT id FROM users WHERE id = $1 FOR UPDATE', [sessionId]);
+           
+           const playerStr = await db.redisClient.hGet('active_players', sessionId);
+           if (!playerStr) { await client.query('ROLLBACK'); return; }
+           const player = JSON.parse(playerStr);
+           const { recipeId } = data;
+           
+           let reqs = [];
+           let output = null;
+           if (recipeId === 'beast_oil') {
+               reqs = [{ type: 'herb_node', count: 2 }, { type: 'data_core_node', count: 1 }];
+               output = 'beast_oil';
+           } else if (recipeId === 'health_potion') {
+               reqs = [{ type: 'herb_node', count: 3 }];
+               output = 'health_potion';
+           }
+           
+           if (output) {
+              let hasMaterials = true;
+              for (const req of reqs) {
+                 const count = player.inventory.filter(i => i.itemId === req.type || i.type === req.type).length;
+                 if (count < req.count) hasMaterials = false;
+              }
+              if (hasMaterials) {
+                 for (const req of reqs) {
+                    for (let i=0; i<req.count; i++) {
+                       const idx = player.inventory.findIndex(inv => inv.itemId === req.type || inv.type === req.type);
+                       if (idx > -1) player.inventory.splice(idx, 1);
+                    }
+                 }
+                 const itemDef = getItemDef(output) || { name: output, description: "Crafted item" };
+                 player.inventory.push({ instanceId: "item_" + Date.now() + Math.random(), itemId: output, ...itemDef });
+                 await db.saveInventory(player.id, player.inventory, client);
+                 await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+                 await client.query('COMMIT');
+                 
+                 ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
+                 ws.send(JSON.stringify({ type: "chat", sender: "System", message: `Crafted ${output}` }));
+              } else {
+                 await client.query('ROLLBACK');
+                 ws.send(JSON.stringify({ type: "error", message: "Insufficient materials." }));
+              }
+           } else {
+              await client.query('ROLLBACK');
+           }
+        } catch (err) {
+           await client.query('ROLLBACK');
+           console.error("craft error", err);
+        } finally {
+           client.release();
+        }
       }
       else if (data.type === "use_item") {
         const sessionId = ws.sessionId;
-        const playerStr = await db.redisClient.hGet('active_players', sessionId);
-        if (!playerStr) return;
-        const player = JSON.parse(playerStr);
-        
-        const { instanceId } = data;
-        const index = player.inventory.findIndex(i => i.instanceId === instanceId);
-        
-        if (index === -1) {
-           ws.send(JSON.stringify({ type: "error", message: "Item not found." }));
-           return;
-        }
-        
-        const item = player.inventory[index];
-        const featureId = 'item_' + item.itemId;
-
-        if (killSwitch.isDisabled(featureId)) {
-           ws.send(JSON.stringify({ type: "error", message: "Item temporarily disabled for maintenance." }));
-           return;
-        }
-        
+        const client = await db.pool.connect();
         try {
-          if (item.itemId === 'potion_health') {
-             player.health = Math.min(100, player.health + 25);
-             ws.send(JSON.stringify({ type: "player_updated", health: player.health }));
-             
-             item.quantity -= 1;
-             if (item.quantity <= 0) {
-                player.inventory.splice(index, 1);
+           await client.query('BEGIN');
+           await client.query('SELECT id FROM users WHERE id = $1 FOR UPDATE', [sessionId]);
+           
+           const playerStr = await db.redisClient.hGet('active_players', sessionId);
+           if (!playerStr) { await client.query('ROLLBACK'); return; }
+           const player = JSON.parse(playerStr);
+           
+           const { instanceId } = data;
+           const index = player.inventory.findIndex(i => i.instanceId === instanceId);
+           
+           if (index === -1) {
+              await client.query('ROLLBACK');
+              ws.send(JSON.stringify({ type: "error", message: "Item not found." }));
+              return;
+           }
+           
+           const item = player.inventory[index];
+           const featureId = 'item_' + item.itemId;
+
+           if (killSwitch.isDisabled(featureId)) {
+              await client.query('ROLLBACK');
+              ws.send(JSON.stringify({ type: "error", message: "Item temporarily disabled for maintenance." }));
+              return;
+           }
+           
+           try {
+             if (item.itemId === 'potion_health') {
+                player.health = Math.min(100, player.health + 25);
+                
+                item.quantity -= 1;
+                if (item.quantity <= 0) {
+                   player.inventory.splice(index, 1);
+                }
+                await db.saveInventory(sessionId, player.inventory, client);
+                await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+                await client.query('COMMIT');
+                
+                ws.send(JSON.stringify({ type: "player_updated", health: player.health }));
+                ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
+             } else if (item.itemId.startsWith('dye_')) {
+                 if (!player.appearance) player.appearance = {};
+                 if (!player.appearance.dyes) player.appearance.dyes = {};
+                 
+                 // Extract color from dye id (e.g. dye_crimson_red -> crimson_red)
+                 const color = item.itemId.replace('dye_', '');
+                 // For now apply dye globally to 'armor' slot
+                 player.appearance.dyes['armor'] = color;
+                 
+                 item.quantity -= 1;
+                 if (item.quantity <= 0) {
+                    player.inventory.splice(index, 1);
+                 }
+                 await db.saveInventory(sessionId, player.inventory, client);
+                 await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+                 await client.query('COMMIT');
+                 
+                 ws.send(JSON.stringify({ type: "player_updated", appearance: player.appearance }));
+                 ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
+                 ws.send(JSON.stringify({ type: "system_message", text: `Applied ${color} dye!` }));
+              } else if (item.itemId.startsWith('skin_')) {
+                 if (!player.appearance) player.appearance = {};
+                 player.appearance.weaponSkin = item.itemId.replace('skin_', '');
+                 
+                 item.quantity -= 1;
+                 if (item.quantity <= 0) {
+                    player.inventory.splice(index, 1);
+                 }
+                 await db.saveInventory(sessionId, player.inventory, client);
+                 await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+                 await client.query('COMMIT');
+                 
+                 ws.send(JSON.stringify({ type: "player_updated", appearance: player.appearance }));
+                 ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
+                 ws.send(JSON.stringify({ type: "system_message", text: `Applied weapon skin!` }));
+              } else {
+                await client.query('ROLLBACK');
+                ws.send(JSON.stringify({ type: "error", message: "Item cannot be used." }));
              }
-             await db.saveInventory(sessionId, player.inventory);
-             await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
-             ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
-          } else {
-             ws.send(JSON.stringify({ type: "error", message: "Item cannot be used." }));
-          }
-        } catch (e) {
-          killSwitch.disableFeature(featureId);
-          ws.send(JSON.stringify({ type: "error", message: "Item encountered a fatal error and has been disabled." }));
+           } catch (e) {
+             await client.query('ROLLBACK');
+             killSwitch.disableFeature(featureId);
+             ws.send(JSON.stringify({ type: "error", message: "Item encountered a fatal error and has been disabled." }));
+           }
+        } catch (err) {
+           await client.query('ROLLBACK');
+           console.error("use_item error", err);
+        } finally {
+           client.release();
         }
       }
       else if (data.type === "terraform") {
@@ -933,18 +1304,19 @@ wss.on("connection", (ws) => {
         broadcast(data);
       }
       else if (data.type === "attack") {
+        const now = Date.now();
+        const ATTACK_COOLDOWN_MS = 300; 
+        if (ws.lastAttackTime && now - ws.lastAttackTime < ATTACK_COOLDOWN_MS) {
+            ws.send(JSON.stringify({ type: "error", message: "Attacking too fast." }));
+            return;
+        }
+        ws.lastAttackTime = now;
+
         const attackerSessionId = ws.sessionId;
         const attackerStr = await db.redisClient.hGet('active_players', attackerSessionId);
         
         if (attackerStr) {
           const attacker = JSON.parse(attackerStr);
-          const ATTACK_COOLDOWN_MS = 300; 
-          
-          const now = Date.now();
-          if (attacker.lastAttackTime && now - attacker.lastAttackTime < ATTACK_COOLDOWN_MS) {
-              ws.send(JSON.stringify({ type: "error", message: "Attacking too fast." }));
-              return;
-          }
           
           attacker.lastAttackTime = now;
           await db.redisClient.hSet('active_players', attackerSessionId, JSON.stringify(attacker));
@@ -972,11 +1344,26 @@ wss.on("connection", (ws) => {
             }
             
             if (dist < 15 || isBoss) {
-              let damage = 10;
-              const targetHp = applyDamage(target, damage, attacker.combo, isNpc, isBoss);
+              // Populate gear for attacker
+              if (attacker.inventory && Array.isArray(attacker.inventory)) {
+                attacker.gear = attacker.inventory
+                  .filter(i => i.slot && i.slot !== 'bag')
+                  .map(i => getItemDef(i.itemId));
+              }
+
+              // Populate gear for target if player
+              if (!isNpc && !isBoss && target.inventory && Array.isArray(target.inventory)) {
+                target.gear = target.inventory
+                  .filter(i => i.slot && i.slot !== 'bag')
+                  .map(i => getItemDef(i.itemId));
+              }
+
+              let damage = (attacker.level || 1) * 10;
+              const targetHp = applyDamage(target, damage, attacker.combo, isNpc, isBoss, attacker);
               if (!isBoss && targetHp <= 0) {
                  handleDeath(target, isNpc);
-                 const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+                 const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
+                 economyManager.addCurrency(attacker, Math.floor(Math.random() * 5) + 1);
                  if (xpRes.leveledUp) {
                    ws.send(JSON.stringify({ type: "level_up", newLevel: xpRes.newLevel }));
                    broadcast({ type: "player_level_up", sessionId: attackerSessionId, newLevel: xpRes.newLevel }, ws, attacker.zone);
@@ -995,7 +1382,8 @@ wss.on("connection", (ws) => {
               } else if (isBoss && targetHp <= 0) {
                  const actualBoss = getBoss(target.id);
                  const bossType = actualBoss ? actualBoss.type : "unknown";
-                 const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+                 const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
+                 economyManager.addCurrency(attacker, Math.floor(Math.random() * 50) + 10);
                  if (xpRes.leveledUp) {
                    ws.send(JSON.stringify({ type: "level_up", newLevel: xpRes.newLevel }));
                    broadcast({ type: "player_level_up", sessionId: attackerSessionId, newLevel: xpRes.newLevel }, ws, attacker.zone);
@@ -1084,6 +1472,64 @@ wss.on("connection", (ws) => {
           ws.send(JSON.stringify({ type: "error", message: "Ability encountered a fatal error and has been disabled." }));
         }
       }
+      else if (data.type === "gather_node") {
+          const sessionId = ws.sessionId;
+          const playerStr = await db.redisClient.hGet('active_players', sessionId);
+          if (playerStr) {
+              const player = JSON.parse(playerStr);
+              const itemType = resourceNodeManager.gatherNode(data.nodeId, player);
+              if (itemType) {
+                  const newItem = {
+                      id: "item_" + Date.now() + "_" + Math.floor(Math.random() * 1000),
+                      type: itemType,
+                      itemId: itemType,
+                      quantity: 1
+                  };
+                  if (!player.inventory) player.inventory = [];
+                  player.inventory.push(newItem);
+                  await db.saveUser(sessionId, player);
+                  ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
+                  ws.send(JSON.stringify({ type: "system_message", text: "Gathered " + itemType }));
+              }
+          }
+      }
+      else if (data.type === "craft_recipe") {
+          const sessionId = ws.sessionId;
+          const playerStr = await db.redisClient.hGet('active_players', sessionId);
+          if (playerStr) {
+              const player = JSON.parse(playerStr);
+              const result = craftingManager.craftRecipe(player, data.recipeId);
+              if (result.success) {
+                  await db.saveUser(sessionId, player);
+                  ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
+                  ws.send(JSON.stringify({ type: "system_message", text: "Crafted successfully!" }));
+              } else {
+                  ws.send(JSON.stringify({ type: "error", message: result.message }));
+              }
+          }
+      }
+      else if (data.type === "buy_item") {
+          const sessionId = ws.sessionId;
+          const playerStr = await db.redisClient.hGet('active_players', sessionId);
+          if (playerStr) {
+              const player = JSON.parse(playerStr);
+              const cost = data.price;
+              if (economyManager.deductCurrency(player, cost)) {
+                  if (!player.inventory) player.inventory = [];
+                  player.inventory.push({
+                      id: "item_" + Date.now() + "_" + Math.floor(Math.random() * 1000),
+                      type: data.itemId,
+                      itemId: data.itemId,
+                      quantity: 1
+                  });
+                  await db.saveUser(sessionId, player);
+                  ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
+                  ws.send(JSON.stringify({ type: "currency_updated", currency: player.currency }));
+              } else {
+                  ws.send(JSON.stringify({ type: "error", message: "Not enough currency." }));
+              }
+          }
+      }
       else if (data.type === "collect_pet") {
         const sessionId = ws.sessionId;
         if (!sessionId) return;
@@ -1120,8 +1566,52 @@ wss.on("connection", (ws) => {
           }
         }
       }
+      else if (data.type === "chat") {
+        if (typeof data.message === "string") {
+            const sanitized = data.message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            broadcast({ type: "chat", sessionId: ws.sessionId, message: sanitized }, ws);
+        }
+      }
+      else if (data.type === "npc_dialogue") {
+        const node = dialogueManager.getDialogueNode(data.treeId || "default_merchant", data.nodeId);
+        ws.send(JSON.stringify({ type: "dialogue_node", node }));
+      }
+      else if (data.type === "vendor_buy") {
+        const vendorInv = economyManager.getVendorInventory(data.vendorType || "general");
+        const itemToBuy = vendorInv.find(i => i.itemId === data.itemId);
+        
+        if (itemToBuy) {
+          const client = await db.pool.connect();
+          try {
+             await client.query('BEGIN');
+             await client.query('SELECT id FROM users WHERE id = $1 FOR UPDATE', [ws.sessionId]);
+             const playerStr = await db.redisClient.hGet('active_players', ws.sessionId);
+             if (playerStr) {
+               const player = JSON.parse(playerStr);
+               if (economyManager.canAfford(player, itemToBuy.price)) {
+                 economyManager.deductCurrency(player, itemToBuy.price);
+                 if (!player.inventory) player.inventory = [];
+                 player.inventory.push({ instanceId: `item_${Date.now()}`, itemId: data.itemId, quantity: 1, slot: player.inventory.length });
+                 await db.redisClient.hSet('active_players', ws.sessionId, JSON.stringify(player));
+                 ws.send(JSON.stringify({ type: "inventory_updated", inventory: player.inventory }));
+                 ws.send(JSON.stringify({ type: "currency_updated", currency: player.currency }));
+                 await client.query('COMMIT');
+               } else {
+                 await client.query('ROLLBACK');
+                 ws.send(JSON.stringify({ type: "error", message: "Not enough gold." }));
+               }
+             } else {
+               await client.query('ROLLBACK');
+             }
+          } catch(e) {
+             await client.query('ROLLBACK');
+          } finally {
+             client.release();
+          }
+        }
+      }
     } catch (err) {
-      console.error("Invalid message:", err.message);
+      console.error("Invalid message:", err ? err.message : "Unknown error");
     }
   });
 
@@ -1157,6 +1647,27 @@ server.listen(port, async () => {
   } catch (e) {
     console.log('Agones SDK not available, running locally');
     agonesSDK = null;
+  }
+
+  try {
+    const numObjectsRes = await db.pool.query('SELECT COUNT(*) FROM world_objects');
+    if (parseInt(numObjectsRes.rows[0].count) === 0) {
+      console.log('Seeding initial resource nodes...');
+      const types = ['iron_node', 'herb_node', 'data_core_node'];
+      for (let i = 0; i < 50; i++) {
+        const type = types[Math.floor(Math.random() * types.length)];
+        const obj = { id: `resource_${Date.now()}_${i}`, type, x: (Math.random() - 0.5) * 500, y: 0, z: (Math.random() - 0.5) * 500 };
+        await db.saveObject(obj);
+      }
+    }
+  } catch (e) {
+    console.error('Error seeding resources:', e);
+  }
+  try {
+    const { rows: worldObjs } = await db.pool.query('SELECT * FROM world_objects');
+    ecologySystem.init(worldObjs);
+  } catch(e) {
+    console.error('Error initializing ecologySystem:', e);
   }
 
   initializeAbilities(db, broadcast, npcs, { get: async (id) => JSON.parse(await db.redisClient.hGet('active_players', id)) });

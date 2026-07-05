@@ -428,6 +428,47 @@ try {
   console.error("Failed to load special event loot:", err);
 }
 
+try {
+  const fullCatalogPath = path.join(__dirname, 'data', 'full_item_catalog.json');
+  if (fs.existsSync(fullCatalogPath)) {
+    const fullCatalog = JSON.parse(fs.readFileSync(fullCatalogPath, 'utf8'));
+    for (const item of fullCatalog) {
+      if (!item.item_id) continue;
+      ITEM_DB[item.item_id] = {
+        maxStack: item.item_category === 'Consumable' || item.item_category === 'Material' ? 99 : 1,
+        weight: item.armor_weight_class === 'Heavy' ? 10.0 : (item.armor_weight_class === 'Medium' ? 7.0 : 5.0),
+        type: item.item_category || 'Misc',
+        power: item.item_power || 1,
+        name: item.item_name,
+        rarity: item.rarity,
+        requiredLevel: item.required_level
+      };
+    }
+    console.log(`Loaded ${fullCatalog.length} items from full_item_catalog.json`);
+  }
+  
+  const godlyCatalogPath = path.join(__dirname, 'data', 'godly_level_40_uniques.json');
+  if (fs.existsSync(godlyCatalogPath)) {
+    const godlyCatalog = JSON.parse(fs.readFileSync(godlyCatalogPath, 'utf8'));
+    for (const item of godlyCatalog) {
+      if (!item.item_id) continue;
+      ITEM_DB[item.item_id] = {
+        maxStack: 1,
+        weight: item.armor_weight_class === 'Heavy' ? 10.0 : 5.0,
+        type: item.item_category || 'Misc',
+        power: item.item_power || 100,
+        name: item.item_name,
+        rarity: item.rarity,
+        requiredLevel: item.required_level,
+        godlySet: item.godly_set
+      };
+    }
+    console.log(`Loaded ${godlyCatalog.length} items from godly_level_40_uniques.json`);
+  }
+} catch (err) {
+  console.error("Failed to load expanded item catalogs:", err);
+}
+
 module.exports = {
   ITEM_DB,
   getItemDef,

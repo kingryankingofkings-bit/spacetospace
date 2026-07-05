@@ -4,11 +4,13 @@ import { useMultiplayerStore } from '../store/multiplayerStore';
 interface DialoguePanelProps {
   npcName?: string;
   text?: string;
+  choices?: { label: string, next: string | null }[];
+  onChoice?: (next: string | null) => void;
   onAcceptQuest?: () => void;
   onClose?: () => void;
 }
 
-export const DialoguePanel: React.FC<DialoguePanelProps> = ({ npcName, text, onAcceptQuest, onClose }) => {
+export const DialoguePanel: React.FC<DialoguePanelProps> = ({ npcName, text, choices, onChoice, onAcceptQuest, onClose }) => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -37,23 +39,37 @@ export const DialoguePanel: React.FC<DialoguePanelProps> = ({ npcName, text, onA
           "{text}"
         </p>
 
-        {/* Actions */}
-        <div className="flex justify-center gap-4">
-          {onAcceptQuest && (
-            <button 
-              onClick={onAcceptQuest}
-              className="px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-full font-semibold uppercase tracking-wide text-sm transition-all shadow-[0_0_20px_rgba(79,70,229,0.4)] hover:shadow-[0_0_25px_rgba(79,70,229,0.6)] hover:-translate-y-0.5 active:translate-y-0"
-            >
-              Accept Quest
-            </button>
-          )}
-          {onClose && (
-            <button
-              onClick={onClose}
-              className="px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full font-semibold uppercase tracking-wide text-sm transition-all backdrop-blur hover:-translate-y-0.5 active:translate-y-0"
-            >
-              Dismiss
-            </button>
+        {/* Actions / Choices */}
+        <div className="flex flex-col justify-center items-center gap-3 w-full max-w-md mx-auto">
+          {choices && choices.length > 0 ? (
+            choices.map((c, i) => (
+              <button
+                key={i}
+                onClick={() => onChoice && onChoice(c.next)}
+                className="w-full px-6 py-3 bg-white/5 hover:bg-white/20 text-white rounded-lg font-semibold tracking-wide transition-all backdrop-blur border border-white/10 hover:border-white/30 hover:-translate-y-0.5 active:translate-y-0 text-left"
+              >
+                {c.label}
+              </button>
+            ))
+          ) : (
+            <div className="flex justify-center gap-4">
+              {onAcceptQuest && (
+                <button 
+                  onClick={onAcceptQuest}
+                  className="px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-full font-semibold uppercase tracking-wide text-sm transition-all shadow-[0_0_20px_rgba(79,70,229,0.4)] hover:shadow-[0_0_25px_rgba(79,70,229,0.6)] hover:-translate-y-0.5 active:translate-y-0"
+                >
+                  Accept Quest
+                </button>
+              )}
+              {onClose && (
+                <button
+                  onClick={onClose}
+                  className="px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full font-semibold uppercase tracking-wide text-sm transition-all backdrop-blur hover:-translate-y-0.5 active:translate-y-0"
+                >
+                  Dismiss
+                </button>
+              )}
+            </div>
           )}
         </div>
       </div>
@@ -64,6 +80,9 @@ export const DialoguePanel: React.FC<DialoguePanelProps> = ({ npcName, text, onA
 export const NarrativeOverlay: React.FC = () => {
   const dialogueTrigger = useMultiplayerStore(state => state.dialogueTrigger);
   const clearDialogueTrigger = useMultiplayerStore(state => state.clearDialogueTrigger);
+  const dialogueTree = useMultiplayerStore(state => state.dialogueTree);
+  const clearDialogueTree = useMultiplayerStore(state => state.clearDialogueTree);
+  const sendDialogueChoice = useMultiplayerStore(state => state.sendDialogueChoice);
 
   useEffect(() => {
     if (dialogueTrigger) {
@@ -73,6 +92,25 @@ export const NarrativeOverlay: React.FC = () => {
       return () => clearTimeout(timer);
     }
   }, [dialogueTrigger, clearDialogueTrigger]);
+
+  if (dialogueTree) {
+    return (
+      <div className="fixed bottom-10 left-1/2 -translate-x-1/2 w-[80%] z-50 pointer-events-none flex justify-center">
+        <DialoguePanel 
+          npcName="NPC" 
+          text={dialogueTree.text}
+          choices={dialogueTree.choices}
+          onChoice={(next) => {
+            if (next) {
+              sendDialogueChoice(dialogueTree.npcId, next);
+            } else {
+              clearDialogueTree();
+            }
+          }}
+        />
+      </div>
+    );
+  }
 
   if (!dialogueTrigger) return null;
 

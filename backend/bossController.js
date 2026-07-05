@@ -1,5 +1,5 @@
-// Boss Controller - Manages complex boss AI, phases, and unique mechanics
 const activeBosses = new Map();
+const combatSystem = require('./combatSystem');
 
 // Boss Definitions
 const BOSS_CONFIGS = {
@@ -13,13 +13,37 @@ const BOSS_CONFIGS = {
     ],
     init: (boss) => {
       boss.currentPhase = 0;
+      boss.telegraphs = [];
+      boss.lastAttackTime = Date.now();
     },
     tick: (boss, players, broadcast) => {
+      const now = Date.now();
       // Phase transition check
       const hpPercent = boss.hp / boss.maxHp;
       if (boss.currentPhase === 0 && hpPercent <= 0.5) {
         boss.currentPhase = 1;
         broadcast({ type: "boss_phase_transition", bossId: boss.id, phase: 1, title: boss.phases[1].title }, null, boss.zone);
+        
+        // Huge AoE on phase transition
+        boss.telegraphs.push({ x: boss.x, z: boss.z, radius: 25, duration: 4000, endTime: now + 4000, damage: 100 });
+        broadcast({ type: "boss_telegraph", bossId: boss.id, x: boss.x, z: boss.z, radius: 25, duration: 4000 }, null, boss.zone);
+      }
+      
+      // Process Telegraphs
+      for (let i = boss.telegraphs.length - 1; i >= 0; i--) {
+        const t = boss.telegraphs[i];
+        if (now >= t.endTime) {
+           for (const [id, p] of players.entries()) {
+             if (p.zone !== boss.zone) continue;
+             const dist = Math.sqrt(Math.pow(p.x - t.x, 2) + Math.pow(p.z - t.z, 2));
+             if (dist <= t.radius) {
+                const hp = combatSystem.applyDamage(p, t.damage, 0, false, false, boss);
+                if (hp <= 0) combatSystem.handleDeath(p, false);
+                broadcast({ type: "combat_update", targetId: p.sessionId, attackerId: boss.id, targetHealth: hp }, null, boss.zone, boss.x, boss.z);
+             }
+           }
+           boss.telegraphs.splice(i, 1);
+        }
       }
       
       // Basic chase logic based on phase speed
@@ -37,10 +61,17 @@ const BOSS_CONFIGS = {
       }
       
       if (closestPlayer && minDistance < 50) {
-        const dx = closestPlayer.x - boss.x;
-        const dz = closestPlayer.z - boss.z;
-        boss.x += (dx / minDistance) * speed;
-        boss.z += (dz / minDistance) * speed;
+        if (minDistance < 5 && now - boss.lastAttackTime > 3000 && boss.telegraphs.length === 0) {
+          // Standard telegraph attack
+          boss.lastAttackTime = now;
+          boss.telegraphs.push({ x: closestPlayer.x, z: closestPlayer.z, radius: 5, duration: 1500, endTime: now + 1500, damage: 30 });
+          broadcast({ type: "boss_telegraph", bossId: boss.id, x: closestPlayer.x, z: closestPlayer.z, radius: 5, duration: 1500 }, null, boss.zone);
+        } else {
+          const dx = closestPlayer.x - boss.x;
+          const dz = closestPlayer.z - boss.z;
+          boss.x += (dx / minDistance) * speed;
+          boss.z += (dz / minDistance) * speed;
+        }
       }
     }
   },

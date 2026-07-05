@@ -1,0 +1,130 @@
+.map-viewer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(10, 10, 15, 0.95);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+}
+
+.map-viewer-header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+  z-index: 10;
+}
+
+.map-viewer-title {
+  color: #f0e6d2;
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.map-viewer-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.map-btn {
+  background: rgba(40, 40, 50, 0.8);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  color: #ffd700;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.map-btn:hover {
+  background: rgba(80, 80, 90, 0.9);
+  border-color: #ffd700;
+}
+
+.map-scale-label {
+  color: #a0a0a0;
+  font-family: monospace;
+  min-width: 60px;
+  text-align: center;
+}
+
+.map-close-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 100, 100, 0.5);
+  color: #ff8888;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+.map-close-btn:hover {
+  background: rgba(255, 100, 100, 0.1);
+  border-color: #ff8888;
+}
+
+.map-viewer-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-viewer-container:active {
+  cursor: grabbing;
+}
+
+.map-drag-area {
+  display: inline-block;
+  transform-origin: center center;
+  touch-action: none;
+}
+
+.map-image-wrapper {
+  position: relative;
+  display: inline-block;
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 40px rgba(0,0,0,0.8);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-image-content {
+  display: block;
+  max-width: 90vw;
+  max-height: 80vh;
+  object-fit: contain;
+  filter: contrast(1.1) brightness(0.9);
+}
+
+.map-shader-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: 
+    radial-gradient(circle at center, transparent 30%, rgba(30, 20, 10, 0.6) 100%),
+    url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)" opacity="0.08"/></svg>');
+  mix-blend-mode: multiply;
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.8);
+}

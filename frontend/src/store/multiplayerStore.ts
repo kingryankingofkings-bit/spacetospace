@@ -29,8 +29,12 @@ interface MultiplayerState {
   unlockedSkills: string[];
   inventory: any[];
   activeQuests: any[];
+  currency: number;
+  resourceNodes: any[];
   dialogueTrigger: any | null;
+  dialogueTree: any | null;
   sessionId: string | null;
+  worldTime: 'day' | 'night';
 
   sendMove: (x: number, y: number, z: number) => void;
   sendPlaceObject: (type: string, x: number, y: number, z: number) => void;
@@ -38,12 +42,19 @@ interface MultiplayerState {
   sendAttack: (targetId: string) => void;
   sendAbility: (abilityId: string, targetId?: string, x?: number, y?: number, z?: number) => void;
   sendFastTravel: (zone: string) => void;
+  sendAppearance: (appearance: any) => void;
   selectClass: (classId: string) => void;
   unlockSkill: (skillId: string) => void;
   sendSpawnBoss: (bossType: string) => void;
   sendPickupLoot: (item: any) => void;
   sendAcceptQuest: (questId: string) => void;
   clearDialogueTrigger: () => void;
+  sendDialogueChoice: (npcId: string, choiceId: string) => void;
+  clearDialogueTree: () => void;
+  sendCraftRecipe: (recipeId: string) => void;
+  sendBuyItem: (itemId: string, price: number) => void;
+  sendGatherNode: (nodeId: string) => void;
+  sendUseItem: (instanceId: string) => void;
 }
 
 let sharedWs: WebSocket | null = null;
@@ -68,8 +79,12 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
     unlockedSkills: [],
     inventory: [],
     activeQuests: [],
+    currency: 0,
+    resourceNodes: [],
     dialogueTrigger: null,
+    dialogueTree: null,
     sessionId: null,
+    worldTime: 'day',
 
     sendMove: (x, y, z) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
@@ -101,6 +116,11 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
         sharedWs.send(JSON.stringify({ type: 'fast_travel', zone }));
       }
     },
+    sendAppearance: (appearance) => {
+      if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
+        sharedWs.send(JSON.stringify({ type: 'set_appearance', appearance }));
+      }
+    },
     selectClass: (classId) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
         sharedWs.send(JSON.stringify({ type: 'select_class', classId }));
@@ -123,11 +143,35 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
     },
     sendAcceptQuest: (questId) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
-        sharedWs.send(JSON.stringify({ type: 'accept_quest', questId }));
+        sharedWs.send(JSON.stringify({ type: "accept_quest", questId }));
       }
     },
-    clearDialogueTrigger: () => {
-      set({ dialogueTrigger: null });
+    clearDialogueTrigger: () => set({ dialogueTrigger: null }),
+    sendDialogueChoice: (npcId: string, choiceId: string) => {
+      if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
+        sharedWs.send(JSON.stringify({ type: "interact_npc", npcId, choiceId }));
+      }
+    },
+    clearDialogueTree: () => set({ dialogueTree: null }),
+    sendCraftRecipe: (recipeId) => {
+      if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
+        sharedWs.send(JSON.stringify({ type: 'craft_recipe', recipeId }));
+      }
+    },
+    sendBuyItem: (itemId, price) => {
+      if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
+        sharedWs.send(JSON.stringify({ type: 'buy_item', itemId, price }));
+      }
+    },
+    sendGatherNode: (nodeId) => {
+      if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
+        sharedWs.send(JSON.stringify({ type: 'gather_node', nodeId }));
+      }
+    },
+    sendUseItem: (instanceId) => {
+      if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
+        sharedWs.send(JSON.stringify({ type: 'use_item', instanceId }));
+      }
     }
   };
 });
@@ -155,7 +199,7 @@ export const initMultiplayer = () => {
     if (data.type === 'init') {
       const mappedPlayers = (data.players || []).map((p: any) => ({ id: p[0], ...p[1] }));
       
-      let pClass = null, pLevel = 1, pSkillPoints = 0, pUnlocked = [], pInv = [];
+      let pClass = null, pLevel = 1, pSkillPoints = 0, pUnlocked = [], pInv = [], pCurrency = 0;
       const localPlayer = mappedPlayers.find((p: any) => p.id === data.sessionId);
       if (localPlayer) {
         pClass = localPlayer.playerClass || null;
@@ -163,6 +207,7 @@ export const initMultiplayer = () => {
         pSkillPoints = localPlayer.skillPoints || 0;
         pUnlocked = localPlayer.unlockedSkills || [];
         pInv = localPlayer.inventory || [];
+        pCurrency = localPlayer.currency || 0;
       }
 
       set({
@@ -173,6 +218,8 @@ export const initMultiplayer = () => {
         skillPoints: pSkillPoints,
         unlockedSkills: pUnlocked,
         inventory: pInv,
+        currency: pCurrency,
+        resourceNodes: data.resourceNodes || [],
         worldObjects: data.worldObjects || data.objects || [],
         terrainMods: data.terrainMods || data.terrain || [],
         worldNpcs: data.npcs || [],
@@ -190,6 +237,19 @@ export const initMultiplayer = () => {
           p.id === data.sessionId ? { ...p, ...data.position } : p
         )
       }));
+    } else if (data.type === 'attack') {
+      set((state) => ({
+        players: state.players.map((p) =>
+          p.id === data.sessionId ? { ...p, lastAttackTime: Date.now() } : p
+        )
+      }));
+      window.dispatchEvent(new CustomEvent('remote_attack', { detail: data }));
+    } else if (data.type === 'currency_updated') {
+      set({ currency: data.currency });
+    } else if (data.type === 'spawn_resource_node') {
+      set((state) => ({ resourceNodes: [...state.resourceNodes, data.node] }));
+    } else if (data.type === 'despawn_resource_node') {
+      set((state) => ({ resourceNodes: state.resourceNodes.filter((n: any) => n.id !== data.nodeId) }));
     } else if (data.type === 'player_updated') {
       set((state) => ({
         players: state.players.map((p) =>
@@ -231,12 +291,14 @@ export const initMultiplayer = () => {
         ...(data.combo !== undefined ? { combo: data.combo } : {}),
         ...(data.health !== undefined ? { health: data.health } : {})
       }));
-    } else if (data.type === 'attack') {
-      window.dispatchEvent(new CustomEvent('remote_attack', { detail: data }));
     } else if (data.type === 'quest_update') {
       set({ activeQuests: data.quests || [] });
-    } else if (data.type === 'dialogue_trigger') {
-      set({ dialogueTrigger: { npcName: data.npcName, text: data.text, timestamp: Date.now() } });
+    } else if (data.type === 'npc_dialogue') {
+      set({ dialogueTrigger: { npcName: data.npcId, text: data.text, timestamp: Date.now() } });
+    } else if (data.type === 'npc_dialogue_tree') {
+      set({ dialogueTree: { npcId: data.npcId, text: data.text, choices: data.choices, timestamp: Date.now() } });
+    } else if (data.type === 'world_time_update') {
+      set({ worldTime: data.time });
     }
   };
 };

@@ -12,6 +12,7 @@ const redisClient = createClient({
 });
 
 redisClient.on('error', (err) => console.error('Redis Client Error', err));
+pool.on('error', (err) => console.error('Unexpected error on idle client', err));
 
 async function connectServices() {
   await redisClient.connect();
