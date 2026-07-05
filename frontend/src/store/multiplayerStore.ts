@@ -182,7 +182,8 @@ export const initMultiplayer = () => {
   if (isInitialized || !authToken) return;
   isInitialized = true;
 
-  sharedWs = new WebSocket('ws://localhost:2567');
+  const wsUrl = import.meta.env.VITE_WS_URL || 'ws://localhost:2567';
+  sharedWs = new WebSocket(wsUrl);
   sharedWs.onopen = () => {
     console.log('Connected to server');
     sharedWs?.send(JSON.stringify({ type: 'join', token: authToken, color: '#00ff88' }));

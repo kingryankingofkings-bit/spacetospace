@@ -12,7 +12,8 @@ export const Login: React.FC<{ onLoginSuccess: () => void }> = ({ onLoginSuccess
     setError(null);
     try {
       const endpoint = isRegistering ? '/api/auth/register' : '/api/auth/login';
-      const res = await fetch(`http://localhost:2567${endpoint}`, {
+      const baseUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:2567';
+      const res = await fetch(`${baseUrl}${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
