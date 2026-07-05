@@ -1,7 +1,7 @@
 const { Pool } = require('pg');
 const { createClient } = require('redis');
 const pgMigrate = require('node-pg-migrate');
-const migrate = pgMigrate.default || pgMigrate;
+const migrate = pgMigrate.runner || pgMigrate.default || pgMigrate;
 const path = require('path');
 
 const pool = new Pool({
