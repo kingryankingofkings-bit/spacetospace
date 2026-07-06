@@ -753,26 +753,20 @@ wss.on("connection", (ws) => {
           broadcast({ type: "move", sessionId, position: { x: player.x, y: player.y, z: player.z, id: sessionId } }, ws, player.zone, player.x, player.z);
         }
       }
-      else if (data.type === "set_appearance") {
-          const sessionId = ws.sessionId;
-          const playerStr = await db.redisClient.hGet('active_players', sessionId);
-          if (playerStr) {
-            const player = JSON.parse(playerStr);
-            player.appearance = data.appearance;
-            await db.saveUser(sessionId, player);
-            await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
-            broadcast({ type: "player_updated", sessionId, player }, ws, player.zone, player.x, player.z);
-          }
-        }
-      else if (data.type === "select_class") {
+      else if (data.type === "finalize_character") {
         const sessionId = ws.sessionId;
         const playerStr = await db.redisClient.hGet('active_players', sessionId);
         if (playerStr) {
           const player = JSON.parse(playerStr);
-          player.playerClass = data.classId;
-          ws.send(JSON.stringify({ type: "class_selected", classId: data.classId }));
+          if (data.appearance) player.appearance = data.appearance;
+          if (data.classId) player.playerClass = data.classId;
+          
           await db.saveUser(sessionId, player);
           await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+          
+          if (data.classId) {
+             ws.send(JSON.stringify({ type: "class_selected", classId: data.classId }));
+          }
           broadcast({ type: "player_updated", sessionId, player }, ws, player.zone, player.x, player.z);
         }
       }

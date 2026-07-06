@@ -17,6 +17,8 @@ import { CraftingPanel } from './components/CraftingPanel';
 import { useMultiplayerStore, initMultiplayer } from './store/multiplayerStore';
 import { Login } from './components/Login';
 import { GraphicsSettingsPanel } from './components/GraphicsSettingsPanel';
+import { useKeyboardControls } from '@react-three/drei';
+import { Controls } from './store/InputManager';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(!!localStorage.getItem('auth_token'));
@@ -43,20 +45,35 @@ function App() {
   const sendAppearance = useMultiplayerStore(state => state.sendAppearance);
 
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement).tagName)) return;
-      if (e.key.toLowerCase() === 'm') {
-        setShowMap(prev => !prev);
-      } else if (e.key.toLowerCase() === 'k') {
-        setShowSkillTree(prev => !prev);
-      } else if (e.key.toLowerCase() === 'i') {
-        setShowInventory(prev => !prev);
-      } else if (e.key.toLowerCase() === 'c') {
-        setShowCrafting(prev => !prev);
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    if (playerClass) {
+      setIsAppearanceDone(true);
+    }
+  }, [playerClass]);
+
+  const [sub] = useKeyboardControls<Controls>();
+
+  useEffect(() => {
+    return sub((state) => state.map, (pressed) => {
+      if (pressed && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') setShowMap(prev => !prev);
+    });
+  }, []);
+
+  useEffect(() => {
+    return sub((state) => state.skilltree, (pressed) => {
+      if (pressed && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') setShowSkillTree(prev => !prev);
+    });
+  }, []);
+
+  useEffect(() => {
+    return sub((state) => state.inventory, (pressed) => {
+      if (pressed && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') setShowInventory(prev => !prev);
+    });
+  }, []);
+
+  useEffect(() => {
+    return sub((state) => state.crafting, (pressed) => {
+      if (pressed && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') setShowCrafting(prev => !prev);
+    });
   }, []);
 
   return (
@@ -76,10 +93,8 @@ function App() {
       </div>
 
       {isAuthenticated && !playerClass && !isAppearanceDone && <Suspense fallback={null}><CharacterCreator onComplete={(data: any) => {
-        sendAppearance(data);
-        if (data.charClass) {
-          selectClass(data.charClass.toLowerCase().replace(/ /g, '_'));
-        }
+        const classId = data.charClass ? data.charClass.toLowerCase().replace(/ /g, '_') : null;
+        useMultiplayerStore.getState().finalizeCharacter(data, classId);
         setIsAppearanceDone(true);
       }} /></Suspense>}
 

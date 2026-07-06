@@ -1,6 +1,6 @@
 import React, { useRef, useMemo, useEffect, useState, Suspense } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { useGLTF, Environment, Html, Instances, Instance, Billboard, useTexture } from '@react-three/drei';
+import { useGLTF, Environment, Html, Instances, Instance, Billboard, useTexture, useKeyboardControls } from '@react-three/drei';
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
 import { Physics, useBox, useSphere } from '@react-three/cannon';
 import * as THREE from 'three';
@@ -10,6 +10,10 @@ import { WeatherSystem } from './WeatherSystem';
 import { getCdnAssetPath } from '../utils/AssetManager';
 import { getAssetByType } from '../utils/AssetRegistry';
 import { ProceduralTerrain } from './ProceduralTerrain';
+import { Controls } from '../store/InputManager';
+import { playerPositions, npcPositions, bossPositions } from '../store/transientStore';
+import { ParticleManager, useParticleStore } from './ParticleManager';
+import { playHitSound } from '../utils/AudioEngine';
 
 const holoHeadMap: Record<string, string> = {
   "Masculine Presentation": "holo_head_masc_1783307851588.png",
@@ -221,23 +225,54 @@ const SceneSetup: React.FC = () => {
 // PLAYERS & CAMERAS
 // ------------------------------------------------------------------
 
+import { AudioEngine } from '../utils/AudioEngine';
+
 const CameraRig: React.FC<{ targetRef: React.RefObject<THREE.Group> }> = ({ targetRef }) => {
-  const { camera } = useThree();
+  const { camera, scene } = useThree();
+
+  useEffect(() => {
+    AudioEngine.init(camera);
+  }, [camera]);
 
   // Reusable vectors to optimize GC pressure by avoiding allocations in useFrame
   const offsetRef = useRef(new THREE.Vector3(0, 8, 15));
   const desiredPosRef = useRef(new THREE.Vector3());
   const lookAtPosRef = useRef(new THREE.Vector3());
   const currentLookAtRef = useRef(new THREE.Vector3());
+  const raycaster = useMemo(() => new THREE.Raycaster(), []);
+  const rayDir = useRef(new THREE.Vector3());
 
   useFrame(() => {
     if (targetRef.current) {
       // 3rd Person MMORPG Follow Camera
-      desiredPosRef.current.copy(targetRef.current.position).add(offsetRef.current);
-      camera.position.lerp(desiredPosRef.current, 0.1); // Smooth follow
-      
       lookAtPosRef.current.copy(targetRef.current.position);
       lookAtPosRef.current.y += 2; // Look slightly above feet
+
+      desiredPosRef.current.copy(targetRef.current.position).add(offsetRef.current);
+      
+      // Collision-aware camera: Raycast from player head to desired camera position
+      rayDir.current.subVectors(desiredPosRef.current, lookAtPosRef.current);
+      const dist = rayDir.current.length();
+      rayDir.current.normalize();
+      
+      raycaster.set(lookAtPosRef.current, rayDir.current);
+      
+      // Intersect only with environment meshes, skip players/triggers if possible
+      // In this simple approach, we intersect with the whole scene, 
+      // but in a full build we would use layers (e.g. object.layers.enable(1)).
+      const intersects = raycaster.intersectObjects(scene.children, true);
+      
+      let finalCameraPos = desiredPosRef.current;
+      for (const hit of intersects) {
+        // Ignore hits that are too close, or UI elements, or other players
+        if (hit.distance < dist && hit.object.type === "Mesh" && !hit.object.userData?.isTrigger && !hit.object.userData?.isPlayer) {
+          // Move camera slightly in front of the hit point
+          finalCameraPos = hit.point.clone().sub(rayDir.current.clone().multiplyScalar(0.5));
+          break;
+        }
+      }
+
+      camera.position.lerp(finalCameraPos, 0.1); // Smooth follow
       
       currentLookAtRef.current.set(0, 0, -1).applyQuaternion(camera.quaternion).add(camera.position);
       currentLookAtRef.current.lerp(lookAtPosRef.current, 0.1);
@@ -266,6 +301,16 @@ const WeaponSwingHitbox: React.FC<{
       if (e.body.userData?.type === 'enemy' && targetId) {
         if (!hitTargets.current.has(targetId)) {
           hitTargets.current.add(targetId);
+          // Emit particles on hit
+          useParticleStore.getState().emit(
+            [e.body.position.x, e.body.position.y + 1, e.body.position.z],
+            [0, 5, 0],
+            20,
+            '#ff8800',
+            0.5,
+            0.5
+          );
+          playHitSound([e.body.position.x, e.body.position.y, e.body.position.z]);
           if (onHit) onHit(targetId);
         }
       }
@@ -291,6 +336,15 @@ const ProjectileHitbox: React.FC<{
     onCollide: (e) => {
       const targetId = e.body.userData?.id;
       if (e.body.userData?.type === 'enemy' && targetId) {
+        useParticleStore.getState().emit(
+          [e.body.position.x, e.body.position.y + 1, e.body.position.z],
+          [0, 2, 0],
+          15,
+          '#00f0ff',
+          0.3,
+          0.4
+        );
+        playHitSound([e.body.position.x, e.body.position.y, e.body.position.z]);
         if (onHit) onHit(targetId, id);
       }
     }
@@ -304,38 +358,62 @@ const ProjectileHitbox: React.FC<{
   );
 };
 
+const spriteLayerGeo = new THREE.PlaneGeometry(3, 4.5);
+
 const SpriteLayer: React.FC<{ file: string, color: string, zOffset: number }> = ({ file, color, zOffset }) => {
   const tex = useTexture(file);
+  
+  const mat = useMemo(() => {
+    return new THREE.MeshStandardMaterial({
+      map: tex,
+      transparent: true,
+      side: THREE.DoubleSide,
+      blending: THREE.AdditiveBlending,
+      color: color,
+      emissive: color,
+      emissiveIntensity: 0.5
+    });
+  }, [tex, color]);
+
+  useEffect(() => {
+    return () => {
+      mat.dispose();
+    };
+  }, [mat]);
+
   return (
-    <mesh position={[0, 2.5, zOffset]}>
-      <planeGeometry args={[3, 4.5]} />
-      <meshStandardMaterial 
-        map={tex} 
-        transparent={true} 
-        side={THREE.DoubleSide} 
-        blending={THREE.AdditiveBlending}
-        color={color}
-        emissive={color}
-        emissiveIntensity={0.5}
-      />
-    </mesh>
+    <mesh position={[0, 2.5, zOffset]} geometry={spriteLayerGeo} material={mat} />
   );
 };
+
+const flatSpriteGeo = new THREE.PlaneGeometry(3, 4.5);
+const spriteBorderGeo = new THREE.PlaneGeometry(3.2, 4.7);
+const borderMat = new THREE.MeshBasicMaterial({ color: "#00f0ff", transparent: true, opacity: 0.3, side: THREE.DoubleSide });
 
 const FlatSprite: React.FC<{ appearance: any }> = ({ appearance }) => {
   const imgFile = appearance.portraitUrl || `/images/character_creator/hero_androgynous_1783304800858.png`;
   const texture = useTexture(imgFile);
+  
+  const mat = useMemo(() => {
+    return new THREE.MeshStandardMaterial({
+      map: texture,
+      transparent: true,
+      side: THREE.DoubleSide,
+      emissive: "#111"
+    });
+  }, [texture]);
+
+  useEffect(() => {
+    return () => {
+      mat.dispose();
+    };
+  }, [mat]);
+
   return (
     <Billboard follow={true} lockX={false} lockY={false} lockZ={false}>
-      <mesh position={[0, 2.5, 0]}>
-        <planeGeometry args={[3, 4.5]} />
-        <meshStandardMaterial map={texture} transparent={true} side={THREE.DoubleSide} emissive={"#111"} />
-      </mesh>
+      <mesh position={[0, 2.5, 0]} geometry={flatSpriteGeo} material={mat} />
       {/* Frame border */}
-      <mesh position={[0, 2.5, -0.05]}>
-        <planeGeometry args={[3.2, 4.7]} />
-        <meshBasicMaterial color="#00f0ff" transparent opacity={0.3} side={THREE.DoubleSide} />
-      </mesh>
+      <mesh position={[0, 2.5, -0.05]} geometry={spriteBorderGeo} material={borderMat} />
     </Billboard>
   );
 };
@@ -376,12 +454,23 @@ const PlayerSprite: React.FC<{ appearance: any }> = ({ appearance }) => {
 };
 
 const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, z: number) => void }> = ({ player, sendMove }) => {
-  const ref = useRef<THREE.Group>(null);
+  const [ref, api] = useBox(() => ({ 
+    mass: 1, 
+    type: 'Dynamic', 
+    position: [player.x, player.y + 5, player.z], 
+    fixedRotation: true,
+    args: [1, 2, 1] // rough bounding box for character
+  }));
   const targetPos = useMemo(() => new THREE.Vector3(player.x, player.y, player.z), [player.x, player.y, player.z]);
   
-  // Use a ref for the camera rig
-  const keys = useRef<{ [key: string]: boolean }>({});
+  const [sub, get] = useKeyboardControls<Controls>();
   const lastSend = useRef<number>(0);
+  
+  const velocity = useRef([0,0,0]);
+  useEffect(() => {
+    const unsubscribe = api.velocity.subscribe((v) => (velocity.current = v));
+    return unsubscribe;
+  }, [api.velocity]);
   
   const [swings, setSwings] = useState<{id: number, pos: [number,number,number], rot: [number,number,number]}[]>([]);
   const swingIdRef = useRef(0);
@@ -393,15 +482,17 @@ const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, 
   const previewAppearance = useMultiplayerStore(state => state.previewAppearance);
 
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => { keys.current[e.key.toLowerCase()] = true; };
-    const handleKeyUp = (e: KeyboardEvent) => { keys.current[e.key.toLowerCase()] = false; };
     const handleMouseDown = (e: MouseEvent) => {
       // Prevent attacking if clicking UI
       if ((e.target as HTMLElement).tagName === 'BUTTON' || (e.target as HTMLElement).tagName === 'INPUT') return;
-      if (e.button === 0 && ref.current) {
+      
+      const mesh = ref.current as any;
+      if (!mesh) return;
+
+      if (e.button === 0) {
         const id = swingIdRef.current++;
-        const pPos = ref.current.position;
-        const angle = ref.current.rotation.y;
+        const pPos = mesh.position;
+        const angle = mesh.rotation.y;
         const sPos: [number,number,number] = [
           pPos.x + Math.sin(angle) * 2.0,
           pPos.y + 1,
@@ -414,12 +505,12 @@ const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, 
         setTimeout(() => {
           setSwings(prev => prev.filter(s => s.id !== id));
         }, 200);
-      } else if (e.button === 2 && ref.current) {
+      } else if (e.button === 2) {
         // Right click - Fire Projectile
         e.preventDefault();
         const id = projIdRef.current++;
-        const pPos = ref.current.position;
-        const angle = ref.current.rotation.y;
+        const pPos = mesh.position;
+        const angle = mesh.rotation.y;
         
         const sPos: [number,number,number] = [
           pPos.x + Math.sin(angle) * 1.5,
@@ -438,48 +529,60 @@ const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, 
     
     const handleContextMenu = (e: MouseEvent) => e.preventDefault();
     
-    window.addEventListener('keydown', handleKeyDown);
-    window.addEventListener('keyup', handleKeyUp);
     window.addEventListener('mousedown', handleMouseDown);
     window.addEventListener('contextmenu', handleContextMenu);
     return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      window.removeEventListener('keyup', handleKeyUp);
       window.removeEventListener('mousedown', handleMouseDown);
       window.removeEventListener('contextmenu', handleContextMenu);
     };
-  }, []);
+  }, [ref]);
 
   useFrame((_state, delta) => {
-    if (!ref.current) return;
+    const mesh = ref.current as any;
+    if (!mesh) return;
 
-    let movedLocally = false;
+    const { forward, backward, left, right, jump } = get();
+    
+    let vx = 0;
+    let vz = 0;
     const speed = 15;
-    const pos = ref.current.position.clone();
 
-    if (keys.current['w']) { pos.z -= speed * delta; movedLocally = true; }
-    if (keys.current['s']) { pos.z += speed * delta; movedLocally = true; }
-    if (keys.current['a']) { pos.x -= speed * delta; movedLocally = true; }
-    if (keys.current['d']) { pos.x += speed * delta; movedLocally = true; }
+    if (forward) vz -= speed;
+    if (backward) vz += speed;
+    if (left) vx -= speed;
+    if (right) vx += speed;
+
+    api.velocity.set(vx, velocity.current[1], vz);
+
+    if (jump && Math.abs(velocity.current[1]) < 0.1) {
+      api.velocity.set(vx, 10, vz);
+    }
+    
+    let movedLocally = vx !== 0 || vz !== 0 || jump;
 
     if (movedLocally) {
-      ref.current.position.copy(pos);
-      
       // Face movement direction
-      const angle = Math.atan2(pos.x - ref.current.position.x, pos.z - ref.current.position.z);
-      if (keys.current['a'] || keys.current['d']) {
-        ref.current.rotation.y = angle;
+      if (vx !== 0 || vz !== 0) {
+        const angle = Math.atan2(vx, vz);
+        // api.rotation applies to the physics body, but we might just visually rotate the mesh inside
+        mesh.rotation.y = angle;
       }
       
       // Network sync (Rate limited to ~10 ticks per sec)
       const now = Date.now();
       if (now - lastSend.current > 100 && sendMove) {
-        sendMove(pos.x, pos.y, pos.z);
+        sendMove(mesh.position.x, mesh.position.y, mesh.position.z);
         lastSend.current = now;
       }
     } else {
       // Server reconciliation lerp if not actively moving
-      ref.current.position.lerp(targetPos, 5 * delta);
+      // Note: Modifying physics position directly can cause jitter if colliding, 
+      // but since we are authority on our position locally, it's mostly for correcting drift.
+      const dist = mesh.position.distanceTo(targetPos);
+      if (dist > 5) {
+        // Hard snap if desynced by a lot
+        api.position.set(targetPos.x, targetPos.y, targetPos.z);
+      }
     }
   });
 
@@ -519,7 +622,7 @@ const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, 
   );
 };
 
-const RemotePlayer: React.FC<{ player: Player }> = ({ player }) => {
+const RemotePlayer: React.FC<{ player: Player, isBoss?: boolean }> = ({ player, isBoss }) => {
   const targetPos = useMemo(() => new THREE.Vector3(player.x, player.y, player.z), [player.x, player.y, player.z]);
   const currentPos = useRef(new THREE.Vector3(player.x, player.y, player.z));
   
@@ -534,6 +637,10 @@ const RemotePlayer: React.FC<{ player: Player }> = ({ player }) => {
 
   // Update physics body position directly rather than modifying the mesh ref to prevent desync
   useFrame((_state, delta) => {
+    const posData = isBoss ? bossPositions.get(player.id) : playerPositions.get(player.id);
+    if (posData) {
+      targetPos.set(posData.targetX, posData.targetY, posData.targetZ);
+    }
     currentPos.current.lerp(targetPos, 10 * delta);
     api.position.set(currentPos.current.x, currentPos.current.y, currentPos.current.z);
   });
@@ -571,6 +678,10 @@ const NPC: React.FC<{ npc: any, setInteractingNpcId?: (id: string | null) => voi
 
   // Update physics body position directly rather than modifying the mesh ref to prevent desync
   useFrame((_state, delta) => {
+    const posData = npcPositions.get(npc.id);
+    if (posData) {
+      targetPos.set(posData.targetX, posData.targetY, posData.targetZ);
+    }
     currentPos.current.lerp(targetPos, 10 * delta);
     api.position.set(currentPos.current.x, currentPos.current.y, currentPos.current.z);
 
@@ -655,12 +766,11 @@ const CharacterCreatorPreview: React.FC = () => {
   const localPlayerId = useMultiplayerStore(state => state.sessionId);
   const players = useMultiplayerStore(state => state.players);
   
-  const hasLocalPlayer = players.some(p => p.id === localPlayerId);
+  const playerClass = useMultiplayerStore(state => state.playerClass);
 
-  // If localPlayer exists, LocalPlayer component already renders it.
-  // We only render this fallback preview if the player hasn't fully joined yet
-  // but they are actively customizing their character.
-  if (hasLocalPlayer || !previewAppearance) return null;
+  // If playerClass is set, they've finished character creation and LocalPlayer will render.
+  // We only render this fallback preview if they are actively customizing their character.
+  if (playerClass || !previewAppearance) return null;
 
   // Render a standalone preview character with a static camera rig
   // Need a ref to attach the camera rig to
@@ -688,6 +798,7 @@ const StaticPreviewRig: React.FC = () => {
 const PlayersList: React.FC = () => {
   const localPlayerId = useMultiplayerStore(state => state.sessionId);
   const players = useMultiplayerStore(state => state.players);
+  const playerClass = useMultiplayerStore(state => state.playerClass);
   const sendMove = useMultiplayerStore(state => state.sendMove);
 
   const localPlayer = players.find(p => p.id === localPlayerId);
@@ -696,7 +807,7 @@ const PlayersList: React.FC = () => {
   return (
     <>
       <CharacterCreatorPreview />
-      {localPlayer && (
+      {localPlayer && playerClass && (
         <LocalPlayer player={localPlayer} sendMove={sendMove} />
       )}
       {remotePlayers.map(p => <RemotePlayer key={p.id} player={p} />)}
@@ -712,6 +823,7 @@ const BossesList: React.FC = () => {
         <RemotePlayer 
           key={b.id} 
           player={{...b, modelFile: b.modelFile || 'boss_01_ascendant_colossus'}} 
+          isBoss={true}
         />
       ))}
     </>
@@ -747,6 +859,7 @@ export const WorldRenderer: React.FC<WorldRendererProps> = React.memo(({ setInte
         <Suspense fallback={null}>
           <SceneSetup />
           <WeatherSystem />
+          <ParticleManager maxParticles={2000} />
 
           <Physics gravity={[0, -30, 0]}>
             <ProceduralTerrain />

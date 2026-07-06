@@ -465,7 +465,7 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="absolute inset-0"
-        style={{ background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(8px)' }}
+        style={{ background: 'transparent' }}
       />
       
       <motion.div 
@@ -473,7 +473,7 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         className="aaa-panel flex"
-        style={{ width: '95%', maxWidth: '1400px', height: '90%', padding: 0, overflow: 'hidden' }}
+        style={{ width: '95%', maxWidth: '1400px', height: '90%', padding: 0, overflow: 'hidden', background: 'transparent', border: 'none', boxShadow: 'none' }}
       >
         {/* Sidebar Steps */}
         <div style={{ width: '300px', background: 'rgba(0,0,0,0.6)', borderRight: '1px solid var(--panel-border)', padding: '40px 24px', display: 'flex', flexDirection: 'column' }}>
@@ -510,8 +510,11 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
           </div>
         </div>
 
+        {/* 3D Preview Placeholder */}
+        {renderPreview()}
+
         {/* Main Content Area */}
-        <div className="flex-col" style={{ flex: 1, padding: '40px', overflow: 'hidden' }}>
+        <div className="flex-col" style={{ flex: 1, padding: '40px', overflow: 'hidden', background: 'rgba(0,0,0,0.6)' }}>
           <div style={{ flex: 1, overflow: 'hidden' }}>
             <AnimatePresence mode="wait">
               <React.Fragment key={currentStep}>

@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { updateTransientPlayer, updateTransientNpc, updateTransientBoss } from './transientStore';
 
 export interface Player {
   id: string;
@@ -108,18 +109,13 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
         sharedWs.send(JSON.stringify({ type: 'fast_travel', zone }));
       }
     },
-    sendAppearance: (appearance) => {
+    finalizeCharacter: (appearance, classId) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
-        sharedWs.send(JSON.stringify({ type: 'set_appearance', appearance }));
+        sharedWs.send(JSON.stringify({ type: 'finalize_character', appearance, classId }));
       }
       set({ previewAppearance: null }); // clear preview after saving
     },
     setPreviewAppearance: (appearance) => set({ previewAppearance: appearance }),
-    selectClass: (classId) => {
-      if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
-        sharedWs.send(JSON.stringify({ type: 'select_class', classId }));
-      }
-    },
     unlockSkill: (skillId) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
         sharedWs.send(JSON.stringify({ type: 'unlock_skill', skillId }));
@@ -194,7 +190,7 @@ export const initMultiplayer = () => {
     const set = useMultiplayerStore.setState;
 
     if (data.type === 'init') {
-      const mappedPlayers = (data.players || []).map((p: any) => ({ id: p[0], ...p[1] }));
+      const mappedPlayers = (data.players || []).map((p: any) => ({ id: p.sessionId, ...p }));
       
       let pClass = null, pLevel = 1, pSkillPoints = 0, pUnlocked = [], pInv = [], pCurrency = 0;
       const localPlayer = mappedPlayers.find((p: any) => p.id === data.sessionId);
@@ -206,6 +202,11 @@ export const initMultiplayer = () => {
         pInv = localPlayer.inventory || [];
         pCurrency = localPlayer.currency || 0;
       }
+
+      // Init transient store
+      mappedPlayers.forEach((p: any) => updateTransientPlayer(p.id, p.x, p.y, p.z));
+      (data.npcs || []).forEach((n: any) => updateTransientNpc(n.id, n.x, n.y, n.z));
+      (data.bosses || []).forEach((b: any) => updateTransientBoss(b.id, b.x, b.y, b.z));
 
       set({
         sessionId: data.sessionId,
@@ -224,15 +225,13 @@ export const initMultiplayer = () => {
         ...(data.health !== undefined ? { health: data.health } : {})
       });
     } else if (data.type === 'join') {
+      updateTransientPlayer(data.sessionId, data.player.x, data.player.y, data.player.z);
       set((state) => ({ players: [...state.players, { id: data.sessionId, ...data.player }] }));
     } else if (data.type === 'leave') {
       set((state) => ({ players: state.players.filter((p) => p.id !== data.sessionId) }));
     } else if (data.type === 'move') {
-      set((state) => ({
-        players: state.players.map((p) =>
-          p.id === data.sessionId ? { ...p, ...data.position } : p
-        )
-      }));
+      updateTransientPlayer(data.sessionId, data.position.x, data.position.y, data.position.z);
+      // DO NOT trigger React re-renders by mutating `players` array
     } else if (data.type === 'attack') {
       set((state) => ({
         players: state.players.map((p) =>

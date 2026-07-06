@@ -4,6 +4,7 @@ import * as THREE from 'three';
 import { getCdnAssetPath } from '../utils/AssetManager';
 import { getAssetByType } from '../utils/AssetRegistry';
 import { useGLTF, Instances, Instance } from '@react-three/drei';
+import { StartArea } from './StartArea';
 
 // A deterministic random number generator to ensure consistent foliage/building placement
 const seededRandom = (x: number, z: number, seed = 1) => {
@@ -126,6 +127,9 @@ export const ProceduralTerrain: React.FC = () => {
 
       {/* Grid helper for scale reference */}
       <gridHelper args={[1000, 200, 0x000000, 0x000000]} position={[0, 0.01, 0]} material-opacity={0.1} material-transparent />
+
+      {/* Starting Hub Area */}
+      <StartArea />
 
       {/* Procedurally Placed Decorations */}
       {foliageInstances.length > 0 && <InstancedModel url={treeUrl} instances={foliageInstances} />}
