@@ -1,0 +1,337 @@
+{
+  "pack_number": 912,
+  "action": "create non-destructive upgraded prefab variants",
+  "target_references_sample": [
+    {
+      "source_zip": "268_lod_collision_upgrade_batch_046.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "texture_upgrades/06_biome_recolor_biome_tint_mask.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "269_biome_recolor_upgrade_batch_047.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "270_item_weapon_finish_upgrade_batch_048.zip",
+      "path_in_zip": "texture_upgrades/07_item_weapon_finish_water_star_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "weapon",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "271_creature_skin_element_upgrade_batch_049.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_creature_skin_element_overlay_1.glb",
+      "asset_type": "glb",
+      "tags": [
+        "creature"
+      ]
+    },
+    {
+      "source_zip": "271_creature_skin_element_upgrade_batch_049.zip",
+      "path_in_zip": "texture_upgrades/08_creature_skin_element_decal_upgrade_sheet.png",
+      "asset_type": "png",
+      "tags": [
+        "creature",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "272_water_star_environment_upgrade_batch_050.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_water_star_environment_overlay_2.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "272_water_star_environment_upgrade_batch_050.zip",
+      "path_in_zip": "texture_upgrades/09_water_star_environment_trim_upgrade_sheet.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "273_material_polish_upgrade_batch_051.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_material_polish_overlay_3.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "273_material_polish_upgrade_batch_051.zip",
+      "path_in_zip": "texture_upgrades/10_material_polish_creature_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "creature",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "274_texture_remaster_upgrade_batch_052.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_texture_remaster_overlay_4.glb",
+      "asset_type": "glb",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "274_texture_remaster_upgrade_batch_052.zip",
+      "path_in_zip": "texture_upgrades/11_texture_remaster_object_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "275_low_poly_silhouette_upgrade_batch_053.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_low_poly_silhouette_overlay_5.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "275_low_poly_silhouette_upgrade_batch_053.zip",
+      "path_in_zip": "texture_upgrades/12_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "276_emissive_glow_upgrade_batch_054.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_emissive_glow_overlay_6.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "276_emissive_glow_upgrade_batch_054.zip",
+      "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "texture_upgrades/01_weathering_wear_albedo_upgrade.png",
+      "asset_type": "png",
+      "tags": [
+        "weather",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "277_weathering_wear_upgrade_batch_055.zip",
+      "path_in_zip": "patches/material_upgrade_profiles.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "278_lod_collision_upgrade_batch_056.zip",
+      "path_in_zip": "texture_upgrades/02_lod_collision_normal_detail_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "278_lod_collision_upgrade_batch_056.zip",
+      "path_in_zip": "patches/prefab_upgrade_instructions.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "279_biome_recolor_upgrade_batch_057.zip",
+      "path_in_zip": "texture_upgrades/03_biome_recolor_roughness_variation.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "279_biome_recolor_upgrade_batch_057.zip",
+      "path_in_zip": "patches/lod_collision_upgrade_rules.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "280_item_weapon_finish_upgrade_batch_058.zip",
+      "path_in_zip": "texture_upgrades/04_item_weapon_finish_emission_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "weapon",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "280_item_weapon_finish_upgrade_batch_058.zip",
+      "path_in_zip": "patches/texture_application_map.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "281_creature_skin_element_upgrade_batch_059.zip",
+      "path_in_zip": "texture_upgrades/05_creature_skin_element_edge_wear_mask.png",
+      "asset_type": "png",
+      "tags": [
+        "creature",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "281_creature_skin_element_upgrade_batch_059.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "282_water_star_environment_upgrade_batch_060.zip",
+      "path_in_zip": "texture_upgrades/06_water_star_environment_biome_tint_mask.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "282_water_star_environment_upgrade_batch_060.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "283_material_polish_upgrade_batch_061.zip",
+      "path_in_zip": "texture_upgrades/07_material_polish_water_star_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "284_texture_remaster_upgrade_batch_062.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_texture_remaster_overlay_1.glb",
+      "asset_type": "glb",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "284_texture_remaster_upgrade_batch_062.zip",
+      "path_in_zip": "texture_upgrades/08_texture_remaster_decal_upgrade_sheet.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "285_low_poly_silhouette_upgrade_batch_063.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_low_poly_silhouette_overlay_2.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "285_low_poly_silhouette_upgrade_batch_063.zip",
+      "path_in_zip": "texture_upgrades/09_low_poly_silhouette_trim_upgrade_sheet.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "286_emissive_glow_upgrade_batch_064.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_emissive_glow_overlay_3.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "286_emissive_glow_upgrade_batch_064.zip",
+      "path_in_zip": "texture_upgrades/10_emissive_glow_creature_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "creature",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "287_weathering_wear_upgrade_batch_065.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_weathering_wear_overlay_4.glb",
+      "asset_type": "glb",
+      "tags": [
+        "weather"
+      ]
+    },
+    {
+      "source_zip": "287_weathering_wear_upgrade_batch_065.zip",
+      "path_in_zip": "texture_upgrades/11_weathering_wear_object_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "weather",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "288_lod_collision_upgrade_batch_066.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_lod_collision_overlay_5.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "288_lod_collision_upgrade_batch_066.zip",
+      "path_in_zip": "texture_upgrades/12_lod_collision_water_star_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "289_biome_recolor_upgrade_batch_067.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_biome_recolor_overlay_6.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "289_biome_recolor_upgrade_batch_067.zip",
+      "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "290_item_weapon_finish_upgrade_batch_068.zip",
+      "path_in_zip": "texture_upgrades/01_item_weapon_finish_albedo_upgrade.png",
+      "asset_type": "png",
+      "tags": [
+        "weapon",
+        "texture"
+      ]
+    }
+  ],
+  "required_components": [
+    "MaterialVariantSet",
+    "VFXLifetime",
+    "AbilityTriggerBinding",
+    "MonsterSkinRandomizer",
+    "CombatFlowProfile",
+    "DynamicCombatCameraTrigger",
+    "WeatherSunProfile",
+    "CharacterQualityMaterialPatch",
+    "HighTierEquipmentAffixBinding",
+    "SupportNPCAssistBinding"
+  ],
+  "validation": [
+    "random monster skin table returns no duplicate within recent window",
+    "combat camera blends without breaking input",
+    "class ability VFX spawns on correct socket",
+    "weather/sun LUT changes are reversible",
+    "high tier weapon and armor auras are optional prefab children",
+    "support NPC assist marker does not block navigation"
+  ]
+}

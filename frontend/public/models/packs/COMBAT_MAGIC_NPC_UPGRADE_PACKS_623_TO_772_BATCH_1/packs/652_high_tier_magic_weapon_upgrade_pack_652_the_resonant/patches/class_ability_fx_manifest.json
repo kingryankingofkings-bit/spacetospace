@@ -1,0 +1,29 @@
+{
+  "class": "The Resonant",
+  "combat_style": "Rhythm-Based Area of Effect",
+  "subclass": "Sub-Bass Architect",
+  "specialization": "Acoustic Shielding",
+  "resource": "Decibel Charges",
+  "selected_ability": "Sub-Woofer Slam",
+  "ability_pool_sample": [
+    "Metric Strike",
+    "Sub-Woofer Slam",
+    "The Bass Drop",
+    "Tectonic Shift",
+    "The Soundscape",
+    "The Master Mixer",
+    "The Festival Headliner"
+  ],
+  "level_progression_coverage": "Designed to bind to level 1-40 talent tree abilities and capstones.",
+  "fx_modules": {
+    "cast": "glb_modules/01_ability_vfx_module.glb",
+    "trail_texture": "texture_upgrades/10_combat_flow_trail.png",
+    "ability_atlas": "texture_upgrades/04_player_class_ability_atlas.png",
+    "audio": "audio_cues/special_attack_cast.wav"
+  },
+  "implementation_notes": [
+    "Use shared class VFX controller with per-ability material overrides.",
+    "Bind major ability VFX to cooldown, finisher, aura, and ultimate activation events.",
+    "For subclass abilities, select color and timing from class resource and selected specialization."
+  ]
+}

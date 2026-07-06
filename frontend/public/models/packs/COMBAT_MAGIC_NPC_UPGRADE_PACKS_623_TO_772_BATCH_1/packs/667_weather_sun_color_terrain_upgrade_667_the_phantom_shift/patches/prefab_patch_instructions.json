@@ -1,0 +1,531 @@
+{
+  "pack_number": 667,
+  "family": "weather_sun_terrain",
+  "class": "The Phantom-Shift",
+  "monster": "The Aegis Carapace",
+  "boss": "The Resonant Behemoth",
+  "support_npc": "Echo the Weaver",
+  "source_targets": {
+    "glb_targets": [
+      {
+        "source_zip": "462_global_object_material_pass_batch_040_repair_tug.zip",
+        "path_in_zip": "upgrade_glb_modules/02_world_prop_polish.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "462_global_object_material_pass_batch_040_repair_tug.zip",
+        "path_in_zip": "upgrade_glb_modules/09_skyship_defense.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "463_world_object_visual_polish_batch_041_micro_sky_skiff.zip",
+        "path_in_zip": "upgrade_glb_modules/06_skyship_engine.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "464_skyship_hull_size_variants_batch_042_scout_sloop.zip",
+        "path_in_zip": "upgrade_glb_modules/03_world_landmark_light.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "464_skyship_hull_size_variants_batch_042_scout_sloop.zip",
+        "path_in_zip": "upgrade_glb_modules/10_skyship_dock.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "465_skyship_propulsion_upgrades_batch_043_courier_cutter.zip",
+        "path_in_zip": "upgrade_glb_modules/07_skyship_rigging.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "466_skyship_sail_balloon_rigging_batch_044_patrol_corvette.zip",
+        "path_in_zip": "upgrade_glb_modules/04_atmosphere.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "467_skyship_deck_interior_upgrades_batch_045_merchant_barge.zip",
+        "path_in_zip": "upgrade_glb_modules/01_world_facade.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "467_skyship_deck_interior_upgrades_batch_045_merchant_barge.zip",
+        "path_in_zip": "upgrade_glb_modules/08_skyship_deck.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "468_skyship_weapons_defense_upgrades_batch_046_skywarden_frigate.zip",
+        "path_in_zip": "upgrade_glb_modules/05_skyship_hull.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "469_skyship_docking_travel_upgrades_batch_047_heavy_carrier.zip",
+        "path_in_zip": "upgrade_glb_modules/02_world_prop_polish.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "469_skyship_docking_travel_upgrades_batch_047_heavy_carrier.zip",
+        "path_in_zip": "upgrade_glb_modules/09_skyship_defense.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "470_environment_lighting_atmosphere_upgrades_batch_048_dreadnought.zip",
+        "path_in_zip": "upgrade_glb_modules/06_skyship_engine.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "471_water_star_cloud_visual_upgrades_batch_049_arkship.zip",
+        "path_in_zip": "upgrade_glb_modules/03_world_landmark_light.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "471_water_star_cloud_visual_upgrades_batch_049_arkship.zip",
+        "path_in_zip": "upgrade_glb_modules/10_skyship_dock.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "472_global_object_material_pass_batch_050_repair_tug.zip",
+        "path_in_zip": "upgrade_glb_modules/07_skyship_rigging.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "473_world_object_visual_polish_batch_051_micro_sky_skiff.zip",
+        "path_in_zip": "upgrade_glb_modules/04_atmosphere.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "474_skyship_hull_size_variants_batch_052_scout_sloop.zip",
+        "path_in_zip": "upgrade_glb_modules/01_world_facade.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "474_skyship_hull_size_variants_batch_052_scout_sloop.zip",
+        "path_in_zip": "upgrade_glb_modules/08_skyship_deck.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "475_skyship_propulsion_upgrades_batch_053_courier_cutter.zip",
+        "path_in_zip": "upgrade_glb_modules/05_skyship_hull.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "476_skyship_sail_balloon_rigging_batch_054_patrol_corvette.zip",
+        "path_in_zip": "upgrade_glb_modules/02_world_prop_polish.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "476_skyship_sail_balloon_rigging_batch_054_patrol_corvette.zip",
+        "path_in_zip": "upgrade_glb_modules/09_skyship_defense.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "477_skyship_deck_interior_upgrades_batch_055_merchant_barge.zip",
+        "path_in_zip": "upgrade_glb_modules/06_skyship_engine.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "478_skyship_weapons_defense_upgrades_batch_056_skywarden_frigate.zip",
+        "path_in_zip": "upgrade_glb_modules/03_world_landmark_light.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "478_skyship_weapons_defense_upgrades_batch_056_skywarden_frigate.zip",
+        "path_in_zip": "upgrade_glb_modules/10_skyship_dock.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "479_skyship_docking_travel_upgrades_batch_057_heavy_carrier.zip",
+        "path_in_zip": "upgrade_glb_modules/07_skyship_rigging.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "480_environment_lighting_atmosphere_upgrades_batch_058_dreadnought.zip",
+        "path_in_zip": "upgrade_glb_modules/04_atmosphere.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "481_water_star_cloud_visual_upgrades_batch_059_arkship.zip",
+        "path_in_zip": "upgrade_glb_modules/01_world_facade.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "163_the_revision_labs_shop_item_skin_kit.zip",
+        "path_in_zip": "textures/05_the_revision_labs_shop_item_skin_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "164_the_molten_forge_shop_item_skin_kit.zip",
+        "path_in_zip": "textures/04_the_molten_forge_shop_item_skin_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "165_the_abyssal_trench_shop_item_skin_kit.zip",
+        "path_in_zip": "textures/03_the_abyssal_trench_shop_item_skin_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "166_the_wayfora_archipelago_shop_item_skin_kit.zip",
+        "path_in_zip": "textures/02_the_wayfora_archipelago_shop_item_skin_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "167_special_event_encounter_bundle_01.zip",
+        "path_in_zip": "textures/01_special_event_encounter_bundle_01_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "167_special_event_encounter_bundle_01.zip",
+        "path_in_zip": "textures/08_special_event_encounter_bundle_01_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "168_special_event_encounter_bundle_02.zip",
+        "path_in_zip": "textures/07_special_event_encounter_bundle_02_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "169_special_event_encounter_bundle_03.zip",
+        "path_in_zip": "textures/06_special_event_encounter_bundle_03_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "170_special_event_encounter_bundle_04.zip",
+        "path_in_zip": "textures/05_special_event_encounter_bundle_04_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "171_special_event_encounter_bundle_05.zip",
+        "path_in_zip": "textures/04_special_event_encounter_bundle_05_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "172_special_event_encounter_bundle_06.zip",
+        "path_in_zip": "textures/03_special_event_encounter_bundle_06_trim.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "173_special_event_encounter_bundle_07.zip",
+        "path_in_zip": "textures/02_special_event_encounter_bundle_07_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "174_special_event_encounter_bundle_08.zip",
+        "path_in_zip": "textures/01_special_event_encounter_bundle_08_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "174_special_event_encounter_bundle_08.zip",
+        "path_in_zip": "textures/08_special_event_encounter_bundle_08_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "175_special_event_encounter_bundle_09.zip",
+        "path_in_zip": "textures/07_special_event_encounter_bundle_09_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "176_special_event_encounter_bundle_10.zip",
+        "path_in_zip": "textures/06_special_event_encounter_bundle_10_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "177_special_event_encounter_bundle_11.zip",
+        "path_in_zip": "textures/05_special_event_encounter_bundle_11_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "178_special_event_encounter_bundle_12.zip",
+        "path_in_zip": "textures/04_special_event_encounter_bundle_12_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "179_special_event_encounter_bundle_13.zip",
+        "path_in_zip": "textures/03_special_event_encounter_bundle_13_trim.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "180_special_event_encounter_bundle_14.zip",
+        "path_in_zip": "textures/02_special_event_encounter_bundle_14_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "181_special_event_encounter_bundle_15.zip",
+        "path_in_zip": "textures/01_special_event_encounter_bundle_15_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "181_special_event_encounter_bundle_15.zip",
+        "path_in_zip": "textures/08_special_event_encounter_bundle_15_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "182_special_event_encounter_bundle_16.zip",
+        "path_in_zip": "textures/07_special_event_encounter_bundle_16_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "183_special_event_encounter_bundle_17.zip",
+        "path_in_zip": "textures/06_special_event_encounter_bundle_17_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      }
+    ],
+    "audio_targets": [
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "audio/the_infinite_archives_world_detail_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "048_the_lichs_court_world_detail_kit.zip",
+        "path_in_zip": "audio/the_lichs_court_world_detail_kit_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "051_the_magma_core_forges_world_detail_kit.zip",
+        "path_in_zip": "audio/the_magma_core_forges_world_detail_kit_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "053_the_subterranean_grid_world_detail_kit.zip",
+        "path_in_zip": "audio/the_subterranean_grid_world_detail_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "055_the_revision_labs_world_detail_kit.zip",
+        "path_in_zip": "audio/the_revision_labs_world_detail_kit_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "058_the_wayfora_archipelago_world_detail_kit.zip",
+        "path_in_zip": "audio/the_wayfora_archipelago_world_detail_kit_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "060_planet_defense_perimeter_grid_rushers_variant_pack.zip",
+        "path_in_zip": "audio/planet_defense_perimeter_grid_rushers_variant_pack_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "062_space_elevator_siphon_ticks_variant_pack.zip",
+        "path_in_zip": "audio/space_elevator_siphon_ticks_variant_pack_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      }
+    ],
+    "metadata_targets": [
+      {
+        "source_zip": "325_low_poly_silhouette_upgrade_batch_103.zip",
+        "path_in_zip": "patches/texture_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "326_emissive_glow_upgrade_batch_104.zip",
+        "path_in_zip": "patches/texture_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "327_weathering_wear_upgrade_batch_105.zip",
+        "path_in_zip": "patches/texture_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "328_lod_collision_upgrade_batch_106.zip",
+        "path_in_zip": "patches/texture_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "329_biome_recolor_upgrade_batch_107.zip",
+        "path_in_zip": "patches/texture_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "330_item_weapon_finish_upgrade_batch_108.zip",
+        "path_in_zip": "patches/texture_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "331_creature_skin_element_upgrade_batch_109.zip",
+        "path_in_zip": "patches/texture_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "332_water_star_environment_upgrade_batch_110.zip",
+        "path_in_zip": "patches/texture_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      }
+    ]
+  },
+  "antigravity_2_0_tasks": [
+    "Create non-destructive upgraded prefab variants.",
+    "Apply random monster skin tables at spawn time.",
+    "Bind player class ability VFX to level progression and subclass specialization.",
+    "Attach high-tier weapon/armor GLBs and material maps to item prefabs.",
+    "Add combat-start camera trigger using camera rules.",
+    "Add weather, sun color, terrain, and nature material overrides.",
+    "QA duplicate monster appearances across a 50-spawn encounter sample."
+  ]
+}

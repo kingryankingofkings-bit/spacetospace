@@ -1,0 +1,1042 @@
+{
+  "target_pool_summary": {
+    "monster_targets_detected": 1029,
+    "character_targets_detected": 6249,
+    "gear_targets_detected": 448,
+    "vfx_targets_detected": 151,
+    "texture_targets_detected": 6759
+  },
+  "target_references": {
+    "monster_boss_targets": [
+      {
+        "source_zip": "086_the_pocket_monster_plains_siphon_ticks_variant_pack.zip",
+        "path_in_zip": "textures/04_the_pocket_monster_plains_siphon_ticks_variant_pack_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "086_the_pocket_monster_plains_siphon_ticks_variant_pack.zip",
+        "path_in_zip": "textures/05_the_pocket_monster_plains_siphon_ticks_variant_pack_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "086_the_pocket_monster_plains_siphon_ticks_variant_pack.zip",
+        "path_in_zip": "textures/06_the_pocket_monster_plains_siphon_ticks_variant_pack_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "086_the_pocket_monster_plains_siphon_ticks_variant_pack.zip",
+        "path_in_zip": "textures/07_the_pocket_monster_plains_siphon_ticks_variant_pack_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "086_the_pocket_monster_plains_siphon_ticks_variant_pack.zip",
+        "path_in_zip": "textures/08_the_pocket_monster_plains_siphon_ticks_variant_pack_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "087_the_magma_core_forges_iron_jaw_hound_variant_pack.zip",
+        "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "088_the_reggae_dub_oasis_tremor_fiend_variant_pack.zip",
+        "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "089_the_subterranean_grid_venom_spitter_variant_pack.zip",
+        "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "090_the_private_quarantine_aegis_carapace_variant_pack.zip",
+        "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "091_the_revision_labs_null_anomaly_variant_pack.zip",
+        "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "092_the_molten_forge_nexus_swarmers_variant_pack.zip",
+        "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "093_the_abyssal_trench_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "094_the_wayfora_archipelago_sylvan_juggernaut_variant_pack.zip",
+        "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "095_lunar_readiness_base_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "096_planet_defense_perimeter_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "097_orbital_tether_station_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "098_space_elevator_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "099_the_zenith_spire_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "100_the_provisioning_sectors_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "101_the_on_demand_arteries_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "102_the_raid_rush_choke_points_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "103_the_front_matter_void_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "104_the_micro_markets_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "105_the_resonant_peaks_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "106_the_sonic_badlands_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "107_the_heavy_chewer_canyons_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "108_the_shut_down_academies_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "109_the_deprecated_repositories_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "110_the_scrap_yard_labyrinth_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "111_the_playa_of_ash_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "112_the_burning_playa_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "113_the_rhyming_labyrinths_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "114_the_phonetic_wastes_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "115_the_emerald_canopy_sanctuary_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "116_the_whispering_glade_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "117_the_canopy_portrait_halls_music_ambience_texture_kit.zip",
+        "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      }
+    ],
+    "character_npc_targets": [
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/08_vendor_stack_towers/18_nyra_latchward_tactician_from_vendor.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/08_vendor_stack_towers/19_zerin_starfall_guide_of_vendor.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/08_vendor_stack_towers/20_astra_gearmantle_ranger_from_vendor.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/01_bryn_gearmantle_tactician_near_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/02_draven_signalborn_herald_near_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/03_elo_voxmere_specialist_of_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/04_rook_emberkin_courier_near_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/05_draven_deepwell_broker_from_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/06_nix_cinderholt_pilgrim_from_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/07_korra_tideforged_custodian_near_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/08_isolde_trenchmark_pilgrim_under_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/09_lyric_ashvein_engineer_at_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/10_maven_latchward_scout_from_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/11_calder_brightlock_mechanist_near_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/12_talia_ironwake_sentinel_from_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/13_tamsin_rootborne_tamer_of_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/14_ren_latchward_oracle_from_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/15_calder_nullborne_ranger_at_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/16_yara_wayfare_specialist_near_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/17_elo_latchward_ranger_from_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/18_makoa_ashvein_custodian_under_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/19_edda_starfall_sentinel_near_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/09_transit_kiosk_row/20_elo_riftwalker_ranger_near_transit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse/01_tamsin_wayfare_tamer_at_rooftop.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      }
+    ],
+    "gear_targets": [
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_item_weapon_finish_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_item_weapon_finish_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/01_item_weapon_finish_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/02_item_weapon_finish_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/03_item_weapon_finish_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/04_item_weapon_finish_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/05_item_weapon_finish_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/06_item_weapon_finish_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/07_item_weapon_finish_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/08_item_weapon_finish_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/09_item_weapon_finish_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/10_item_weapon_finish_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/11_item_weapon_finish_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+        "path_in_zip": "texture_upgrades/12_item_weapon_finish_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_item_weapon_finish_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_item_weapon_finish_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_item_weapon_finish_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_item_weapon_finish_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_item_weapon_finish_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_item_weapon_finish_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+        "path_in_zip": "texture_upgrades/01_item_weapon_finish_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+        "path_in_zip": "texture_upgrades/02_item_weapon_finish_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+        "path_in_zip": "texture_upgrades/03_item_weapon_finish_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+        "path_in_zip": "texture_upgrades/04_item_weapon_finish_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      }
+    ],
+    "vfx_camera_combat_targets": [
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_vault_kick_trail.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_venom_projectile.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_void_rift_core.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_zero_g_field_bubble.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "12_audio_placeholder_cue_pack_v1.zip",
+        "path_in_zip": "cue_groups/combat.json",
+        "asset_type": "data_or_script",
+        "tags": [
+          "combat"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_acid_splash.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_aerial_juggle_trail.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_armor_break_shards.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "armor",
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_bark_armor_regrowth.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "armor",
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_barrier_wall.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_bass_drop_ring.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_arcane_purple.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_healing_green.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_laser_red.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_block_spark.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_boss_phase_explosion.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_buff_aura_gold.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_burning_ground_patch.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_chain_lightning_arc.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_checkpoint_flare.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_combo_multiplier_orbit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_corrosion_status_drip.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_cosmic_meteor_warning.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_cross_slash.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/07_delivery_drone_port_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/08_overpass_clash_zone_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/09_transit_ramp_nexus_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/10_toll_gate_cluster_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/04_the_raid_rush_choke_points/01_barricaded_funnels_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/04_the_raid_rush_choke_points/02_turret_lines_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/04_the_raid_rush_choke_points/03_drone_nests_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/04_the_raid_rush_choke_points/04_kill_corridors_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/04_the_raid_rush_choke_points/06_tactical_control_bunker_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/04_the_raid_rush_choke_points/07_fallback_node_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/04_the_raid_rush_choke_points/08_siege_ramp_access_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/04_the_raid_rush_choke_points/09_security_wall_segment_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/04_the_raid_rush_choke_points/10_emergency_med_station_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/02_blank_load_terraces_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/03_null_plaza_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/04_data_tear_corridor_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/05_anomaly_plaza_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/06_geometry_spill_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/07_static_bridge_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/08_voidwatch_platform_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/09_fracture_beacon_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/10_emergency_seal_gate_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      }
+    ]
+  },
+  "source_context": "WorldData.md plus prior generated asset packs"
+}

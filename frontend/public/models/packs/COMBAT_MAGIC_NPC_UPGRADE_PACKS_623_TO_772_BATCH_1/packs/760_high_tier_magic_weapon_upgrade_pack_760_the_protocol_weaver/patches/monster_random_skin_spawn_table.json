@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Venom-Spitter",
+  "element_context": "reality",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_venom_spitter_reality_01",
+      "display_name": "Overcharged The Venom-Spitter 01",
+      "weight": 4.67,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 1.074
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_02",
+      "display_name": "Bark-Crowned The Venom-Spitter 02",
+      "weight": 4.46,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "gold noon",
+        "scale_jitter": 0.958
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_03",
+      "display_name": "Echo-Split The Venom-Spitter 03",
+      "weight": 4.456,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "gold noon",
+        "scale_jitter": 1.06
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_04",
+      "display_name": "Null-Branded The Venom-Spitter 04",
+      "weight": 4.09,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.105
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_05",
+      "display_name": "Rhythm-Warped The Venom-Spitter 05",
+      "weight": 3.915,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "crystal",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.0
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_06",
+      "display_name": "Grav-Torn The Venom-Spitter 06",
+      "weight": 3.76,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "crystal",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.005
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_07",
+      "display_name": "Ablative The Venom-Spitter 07",
+      "weight": 3.659,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.978
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_08",
+      "display_name": "Phase-Bound The Venom-Spitter 08",
+      "weight": 3.654,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.063
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_09",
+      "display_name": "Venom-Laced The Venom-Spitter 09",
+      "weight": 3.399,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 0.988
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_10",
+      "display_name": "Warden-Fused The Venom-Spitter 10",
+      "weight": 3.343,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 0.929
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_11",
+      "display_name": "Sovereign-Touched The Venom-Spitter 11",
+      "weight": 3.254,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.059
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_12",
+      "display_name": "Data-Forged The Venom-Spitter 12",
+      "weight": 3.046,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "crystal",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.0
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_13",
+      "display_name": "Ash-Baptized The Venom-Spitter 13",
+      "weight": 2.587,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "hide",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.009
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_14",
+      "display_name": "Tide-Broken The Venom-Spitter 14",
+      "weight": 2.786,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "gold noon",
+        "scale_jitter": 0.921
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_15",
+      "display_name": "Magnetized The Venom-Spitter 15",
+      "weight": 2.639,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.086
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_16",
+      "display_name": "Sonic-Scarred The Venom-Spitter 16",
+      "weight": 2.151,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 0.957
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_17",
+      "display_name": "Glass-Hardened The Venom-Spitter 17",
+      "weight": 2.248,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "crystal",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 0.956
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_18",
+      "display_name": "Spore-Sick The Venom-Spitter 18",
+      "weight": 1.788,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.092
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_19",
+      "display_name": "Chrome-Maw The Venom-Spitter 19",
+      "weight": 1.669,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 0.981
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_20",
+      "display_name": "Eclipse-Synced The Venom-Spitter 20",
+      "weight": 1.616,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.097
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_21",
+      "display_name": "Overcharged The Venom-Spitter 21",
+      "weight": 1.394,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "crystal",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 0.933
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_22",
+      "display_name": "Bark-Crowned The Venom-Spitter 22",
+      "weight": 1.516,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 0.938
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_23",
+      "display_name": "Echo-Split The Venom-Spitter 23",
+      "weight": 1.029,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "void",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.051
+      }
+    },
+    {
+      "skin_id": "the_venom_spitter_reality_24",
+      "display_name": "Null-Branded The Venom-Spitter 24",
+      "weight": 0.904,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "hide",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.008
+      }
+    }
+  ]
+}

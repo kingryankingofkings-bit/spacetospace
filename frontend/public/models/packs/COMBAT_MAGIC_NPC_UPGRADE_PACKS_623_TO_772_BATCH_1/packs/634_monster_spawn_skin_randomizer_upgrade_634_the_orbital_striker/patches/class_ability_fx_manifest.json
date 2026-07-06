@@ -1,0 +1,29 @@
+{
+  "class": "The Orbital Striker",
+  "combat_style": "Aerial Specialist / Mobility",
+  "subclass": "Grav-Architect",
+  "specialization": "Frictionless Dash",
+  "resource": "Altitude Charges",
+  "selected_ability": "The Exosphere Stasis",
+  "ability_pool_sample": [
+    "Thruster-Strike",
+    "Anti-Grav Uppercut",
+    "The Grav-Lift",
+    "Orbital Singularity",
+    "The Exosphere Stasis",
+    "The Master Aviator",
+    "The Rod of God"
+  ],
+  "level_progression_coverage": "Designed to bind to level 1-40 talent tree abilities and capstones.",
+  "fx_modules": {
+    "cast": "glb_modules/01_ability_vfx_module.glb",
+    "trail_texture": "texture_upgrades/10_combat_flow_trail.png",
+    "ability_atlas": "texture_upgrades/04_player_class_ability_atlas.png",
+    "audio": "audio_cues/special_attack_cast.wav"
+  },
+  "implementation_notes": [
+    "Use shared class VFX controller with per-ability material overrides.",
+    "Bind major ability VFX to cooldown, finisher, aura, and ultimate activation events.",
+    "For subclass abilities, select color and timing from class resource and selected specialization."
+  ]
+}

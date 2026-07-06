@@ -1,0 +1,304 @@
+{
+  "pack_name": "Combat Training + Practice GLB Pack v1",
+  "pack_slug": "12_combat_training_practice_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:57.007360+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Training dummies, targets, timing props, and tutorial combat markers.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/basic_training_dummy.glb",
+      "name": "Basic Training Dummy",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.918
+        ],
+        "size": [
+          1.2,
+          0.36,
+          1.825
+        ]
+      },
+      "tags": [
+        "training",
+        "red"
+      ],
+      "size_bytes": 10120
+    },
+    {
+      "file": "glb_assets/armored_training_dummy.glb",
+      "name": "Armored Training Dummy",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.918
+        ],
+        "size": [
+          1.2,
+          0.36,
+          1.825
+        ]
+      },
+      "tags": [
+        "training",
+        "orange"
+      ],
+      "size_bytes": 10124
+    },
+    {
+      "file": "glb_assets/parry_training_dummy.glb",
+      "name": "Parry Training Dummy",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.918
+        ],
+        "size": [
+          1.2,
+          0.36,
+          1.825
+        ]
+      },
+      "tags": [
+        "training",
+        "yellow"
+      ],
+      "size_bytes": 10124
+    },
+    {
+      "file": "glb_assets/counter_timing_target.glb",
+      "name": "Counter Timing Target",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.06,
+          0.85
+        ],
+        "size": [
+          0.9,
+          0.24,
+          1.7
+        ]
+      },
+      "tags": [
+        "training",
+        "green"
+      ],
+      "size_bytes": 10088
+    },
+    {
+      "file": "glb_assets/ranged_target_board.glb",
+      "name": "Ranged Target Board",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.06,
+          0.85
+        ],
+        "size": [
+          0.9,
+          0.24,
+          1.7
+        ]
+      },
+      "tags": [
+        "training",
+        "blue"
+      ],
+      "size_bytes": 10088
+    },
+    {
+      "file": "glb_assets/moving_target_proxy.glb",
+      "name": "Moving Target Proxy",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.06,
+          0.85
+        ],
+        "size": [
+          0.9,
+          0.24,
+          1.7
+        ]
+      },
+      "tags": [
+        "training",
+        "purple"
+      ],
+      "size_bytes": 10088
+    },
+    {
+      "file": "glb_assets/combo_meter_obelisk.glb",
+      "name": "Combo Meter Obelisk",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.918
+        ],
+        "size": [
+          1.2,
+          0.36,
+          1.825
+        ]
+      },
+      "tags": [
+        "training",
+        "white"
+      ],
+      "size_bytes": 10108
+    },
+    {
+      "file": "glb_assets/vault_practice_barrier.glb",
+      "name": "Vault Practice Barrier",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.918
+        ],
+        "size": [
+          1.2,
+          0.36,
+          1.825
+        ]
+      },
+      "tags": [
+        "training",
+        "blue"
+      ],
+      "size_bytes": 10124
+    },
+    {
+      "file": "glb_assets/aerial_juggle_dummy.glb",
+      "name": "Aerial Juggle Dummy",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.918
+        ],
+        "size": [
+          1.2,
+          0.36,
+          1.825
+        ]
+      },
+      "tags": [
+        "training",
+        "red"
+      ],
+      "size_bytes": 10120
+    },
+    {
+      "file": "glb_assets/heavy_slam_practice_plate.glb",
+      "name": "Heavy Slam Practice Plate",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.918
+        ],
+        "size": [
+          1.2,
+          0.36,
+          1.825
+        ]
+      },
+      "tags": [
+        "training",
+        "blue"
+      ],
+      "size_bytes": 10124
+    },
+    {
+      "file": "glb_assets/grapple_training_anchor.glb",
+      "name": "Grapple Training Anchor",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.918
+        ],
+        "size": [
+          1.2,
+          0.36,
+          1.825
+        ]
+      },
+      "tags": [
+        "training",
+        "yellow"
+      ],
+      "size_bytes": 10124
+    },
+    {
+      "file": "glb_assets/rhythm_parry_metronome.glb",
+      "name": "Rhythm Parry Metronome",
+      "template": "training",
+      "gameplay_use": "Training dummies, targets, timing props, and tutorial combat markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.918
+        ],
+        "size": [
+          1.2,
+          0.36,
+          1.825
+        ]
+      },
+      "tags": [
+        "training",
+        "green"
+      ],
+      "size_bytes": 10124
+    }
+  ]
+}

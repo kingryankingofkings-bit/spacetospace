@@ -1,0 +1,20 @@
+{
+  "class": "The Packmaster",
+  "special_attack": "Sonic Bellow",
+  "combat_flow_hooks": {
+    "preserve_combo_on_vault": true,
+    "preserve_combo_on_camera_cut": true,
+    "buffered_input_ms": 135,
+    "late_cancel_grace_ms": 90,
+    "parry_freeze_frame_ms": 60,
+    "auto_face_priority_target": true,
+    "air_combo_fall_speed_multiplier": 0.82
+  },
+  "magic_resource": {
+    "resource_name": "class_charge",
+    "gain_on_hit": 1,
+    "gain_on_perfect_parry": 3,
+    "spend_on_finisher": 5,
+    "cap": 20
+  }
+}

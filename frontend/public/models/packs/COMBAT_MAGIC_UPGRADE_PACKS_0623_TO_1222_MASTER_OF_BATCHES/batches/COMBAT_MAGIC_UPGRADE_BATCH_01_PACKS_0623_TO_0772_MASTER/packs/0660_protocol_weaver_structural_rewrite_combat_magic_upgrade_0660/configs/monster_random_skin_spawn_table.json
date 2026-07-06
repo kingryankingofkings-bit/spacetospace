@@ -1,0 +1,804 @@
+{
+  "target_monster": "The Aegis Carapace",
+  "rarity_goal": "It should be rare to see two identical monsters.",
+  "algorithm": {
+    "base": "weighted_random_without_recent_replacement",
+    "anti_duplicate_memory": 3,
+    "encounter_seed": "zone_id + encounter_id + spawn_index",
+    "elite_bonus_variance": true
+  },
+  "skin_roll_table": [
+    {
+      "skin_id": "the_aegis_carapace_ash_baptized_urban_00",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Ash-Baptized The Aegis Carapace - Urban",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_overcharged_wilds_01",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Overcharged The Aegis Carapace - Wilds",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_bark_crowned_waste_02",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Bark-Crowned The Aegis Carapace - Waste",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_echo_split_geothermal_03",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Echo-Split The Aegis Carapace - Geothermal",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_null_branded_cosmic_04",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Null-Branded The Aegis Carapace - Cosmic",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_grav_torn_transit_05",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Grav-Torn The Aegis Carapace - Transit",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_tide_broken_deep-water_06",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Tide-Broken The Aegis Carapace - Deep-Water",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_magnetized_archive_07",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Magnetized The Aegis Carapace - Archive",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_sonic_scarred_festival_08",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Sonic-Scarred The Aegis Carapace - Festival",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_glass_hardened_quarantine_09",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Glass-Hardened The Aegis Carapace - Quarantine",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_spore_sick_void_10",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Spore-Sick The Aegis Carapace - Void",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_chrome_maw_storm_11",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Chrome-Maw The Aegis Carapace - Storm",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_ash_baptized_urban_12",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Ash-Baptized The Aegis Carapace - Urban",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_overcharged_wilds_13",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Overcharged The Aegis Carapace - Wilds",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_bark_crowned_waste_14",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Bark-Crowned The Aegis Carapace - Waste",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_echo_split_geothermal_15",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Echo-Split The Aegis Carapace - Geothermal",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_null_branded_cosmic_16",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Null-Branded The Aegis Carapace - Cosmic",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_grav_torn_transit_17",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Grav-Torn The Aegis Carapace - Transit",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_tide_broken_deep-water_18",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Tide-Broken The Aegis Carapace - Deep-Water",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_magnetized_archive_19",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Magnetized The Aegis Carapace - Archive",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_sonic_scarred_festival_20",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Sonic-Scarred The Aegis Carapace - Festival",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_glass_hardened_quarantine_21",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Glass-Hardened The Aegis Carapace - Quarantine",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_spore_sick_void_22",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Spore-Sick The Aegis Carapace - Void",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_chrome_maw_storm_23",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Chrome-Maw The Aegis Carapace - Storm",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_ash_baptized_urban_24",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Ash-Baptized The Aegis Carapace - Urban",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_overcharged_wilds_25",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Overcharged The Aegis Carapace - Wilds",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_bark_crowned_waste_26",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Bark-Crowned The Aegis Carapace - Waste",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_echo_split_geothermal_27",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Echo-Split The Aegis Carapace - Geothermal",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_null_branded_cosmic_28",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Null-Branded The Aegis Carapace - Cosmic",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_grav_torn_transit_29",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Grav-Torn The Aegis Carapace - Transit",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_tide_broken_deep-water_30",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Tide-Broken The Aegis Carapace - Deep-Water",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_magnetized_archive_31",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Magnetized The Aegis Carapace - Archive",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_sonic_scarred_festival_32",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Sonic-Scarred The Aegis Carapace - Festival",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_glass_hardened_quarantine_33",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Glass-Hardened The Aegis Carapace - Quarantine",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_spore_sick_void_34",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Spore-Sick The Aegis Carapace - Void",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_aegis_carapace_chrome_maw_storm_35",
+      "monster_family": "The Aegis Carapace",
+      "display_name": "Chrome-Maw The Aegis Carapace - Storm",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    }
+  ]
+}

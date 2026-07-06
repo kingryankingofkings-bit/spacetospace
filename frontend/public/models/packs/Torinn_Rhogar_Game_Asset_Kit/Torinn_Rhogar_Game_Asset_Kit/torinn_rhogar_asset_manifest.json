@@ -1,0 +1,53 @@
+{
+  "asset_name": "Torinn Rhogar",
+  "asset_slug": "torinn_rhogar",
+  "version": "1.0.0-proxy-and-1080p-upgrade-kit",
+  "species": "dragonborn",
+  "sex": "male",
+  "height_m": 1.93,
+  "class_identity": [
+    "Monk",
+    "Sorcerer",
+    "Divine Frost"
+  ],
+  "visual_lock": {
+    "scales": "shimmering platinum",
+    "face": "semi-long square-jawed draconic face",
+    "hair_equivalent": "thick scaly tendrils decorated with gemstone-studded gold/silver bangles and rings",
+    "clothing": "white tunic and layered monk robe with gold-thread trim",
+    "armor": "solid-gold human-like skull pauldrons",
+    "magic": "white-blue frost lightning with blue-green static mist",
+    "aura": "31F air temperature within 2 mile radius"
+  },
+  "models": {
+    "LOD0": "02_models_glb/torinn_rhogar_proxy_LOD0.glb",
+    "LOD1": "02_models_glb/torinn_rhogar_proxy_LOD1.glb",
+    "LOD2": "02_models_glb/torinn_rhogar_proxy_LOD2.glb"
+  },
+  "textures_1080p": [
+    "03_textures_1080p/torinn_platinum_scales_albedo_1080.png",
+    "03_textures_1080p/torinn_platinum_scales_normal_proxy_1080.png",
+    "03_textures_1080p/torinn_platinum_scales_roughness_1080.png",
+    "03_textures_1080p/torinn_white_gold_robe_albedo_1080.png",
+    "03_textures_1080p/torinn_robe_roughness_1080.png",
+    "03_textures_1080p/torinn_gold_skull_armor_albedo_1080.png",
+    "03_textures_1080p/torinn_gold_skull_metallic_1080.png",
+    "03_textures_1080p/torinn_tendril_ring_gem_albedo_1080.png"
+  ],
+  "vfx": {
+    "fist_static": "04_vfx_1080p/torinn_fist_ice_static_sprite_1080.png",
+    "halo": "04_vfx_1080p/torinn_divine_frost_glyph_halo_1080.png",
+    "mist": "04_vfx_1080p/torinn_blue_green_ignisai_mist_sprite_1080.png",
+    "snowflake_charge": "04_vfx_1080p/torinn_snowflake_charge_sprite_1080.png"
+  },
+  "sockets": [
+    "fist_vfx_L",
+    "fist_vfx_R",
+    "mouth_breath_vfx",
+    "halo_head_vfx",
+    "tail_tip",
+    "shoulder_skull_L",
+    "shoulder_skull_R"
+  ],
+  "honest_scope_note": "Included GLBs are procedural proxy models for blockout/import/testing. Final image-exact quality requires sculpt/retopo/rig pass using the included reference board and checklist."
+}

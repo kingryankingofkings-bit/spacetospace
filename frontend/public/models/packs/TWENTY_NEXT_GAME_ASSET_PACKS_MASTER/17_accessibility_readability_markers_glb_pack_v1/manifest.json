@@ -1,0 +1,304 @@
+{
+  "pack_name": "Accessibility + Readability Markers GLB Pack v1",
+  "pack_slug": "17_accessibility_readability_markers_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:57.298024+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "High-readability combat and navigation markers.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/safe_zone_marker.glb",
+      "name": "Safe Zone Marker",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.058
+        ],
+        "size": [
+          1.7,
+          1.7,
+          0.115
+        ]
+      },
+      "tags": [
+        "readability",
+        "green"
+      ],
+      "size_bytes": 4448
+    },
+    {
+      "file": "glb_assets/danger_zone_marker.glb",
+      "name": "Danger Zone Marker",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.135
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.27
+        ]
+      },
+      "tags": [
+        "readability",
+        "red"
+      ],
+      "size_bytes": 3844
+    },
+    {
+      "file": "glb_assets/enemy_priority_marker.glb",
+      "name": "Enemy Priority Marker",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.135
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.27
+        ]
+      },
+      "tags": [
+        "readability",
+        "yellow"
+      ],
+      "size_bytes": 3844
+    },
+    {
+      "file": "glb_assets/ally_assist_marker.glb",
+      "name": "Ally Assist Marker",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.17,
+          0.24,
+          1.17
+        ]
+      },
+      "tags": [
+        "readability",
+        "green"
+      ],
+      "size_bytes": 6788
+    },
+    {
+      "file": "glb_assets/counter_window_marker.glb",
+      "name": "Counter Window Marker",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.17,
+          0.24,
+          1.17
+        ]
+      },
+      "tags": [
+        "readability",
+        "blue"
+      ],
+      "size_bytes": 6788
+    },
+    {
+      "file": "glb_assets/perfect_dodge_marker.glb",
+      "name": "Perfect Dodge Marker",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.17,
+          0.24,
+          1.17
+        ]
+      },
+      "tags": [
+        "readability",
+        "purple"
+      ],
+      "size_bytes": 6788
+    },
+    {
+      "file": "glb_assets/interactable_outline_marker.glb",
+      "name": "Interactable Outline Marker",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.17,
+          0.24,
+          1.17
+        ]
+      },
+      "tags": [
+        "readability",
+        "white"
+      ],
+      "size_bytes": 6772
+    },
+    {
+      "file": "glb_assets/grapple_target_marker.glb",
+      "name": "Grapple Target Marker",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.17,
+          0.24,
+          1.17
+        ]
+      },
+      "tags": [
+        "readability",
+        "gold"
+      ],
+      "size_bytes": 6776
+    },
+    {
+      "file": "glb_assets/climbable_surface_marker.glb",
+      "name": "Climbable Surface Marker",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.17,
+          0.24,
+          1.17
+        ]
+      },
+      "tags": [
+        "readability",
+        "red"
+      ],
+      "size_bytes": 6784
+    },
+    {
+      "file": "glb_assets/colorblind_shape_triangle.glb",
+      "name": "Colorblind Shape Triangle",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.17,
+          0.24,
+          1.17
+        ]
+      },
+      "tags": [
+        "readability",
+        "orange"
+      ],
+      "size_bytes": 6788
+    },
+    {
+      "file": "glb_assets/colorblind_shape_square.glb",
+      "name": "Colorblind Shape Square",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.17,
+          0.24,
+          1.17
+        ]
+      },
+      "tags": [
+        "readability",
+        "yellow"
+      ],
+      "size_bytes": 6788
+    },
+    {
+      "file": "glb_assets/colorblind_shape_circle.glb",
+      "name": "Colorblind Shape Circle",
+      "template": "readability",
+      "gameplay_use": "High-readability combat and navigation markers.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.17,
+          0.24,
+          1.17
+        ]
+      },
+      "tags": [
+        "readability",
+        "green"
+      ],
+      "size_bytes": 6788
+    }
+  ]
+}

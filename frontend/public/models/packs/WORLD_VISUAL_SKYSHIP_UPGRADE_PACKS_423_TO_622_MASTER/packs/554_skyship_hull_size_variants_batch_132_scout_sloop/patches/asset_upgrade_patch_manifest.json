@@ -1,0 +1,442 @@
+{
+  "pack_number": 554,
+  "pack_name": "Skyship Hull Size Variants Batch 132 - Scout Sloop",
+  "created_utc": "2026-07-05T09:42:38.088997+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_hull_size_variants",
+  "theme": "emerald_wilds",
+  "element": "verdant",
+  "skyship_class_profile": {
+    "class": "scout_sloop",
+    "scale": 0.95,
+    "role": "fast patrol and recon"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/09_summit_watch/12_vale_voxmere_warden_at_summit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/09_summit_watch/15_astra_cragwarden_cartographer_under_summit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/09_summit_watch/20_nix_skyharrow_pilgrim_at_summit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/01_the_central_convergence/01_juno_chromabell_warden_from.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/01_the_central_convergence/03_nix_skyharrow_custodian_under.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/01_the_central_convergence/11_auren_stormhush_engineer_near.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/01_the_central_convergence/18_orin_skyharrow_specialist_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/02_shifting_biome_ring/01_cassian_cinderholt_engineer_of_shifting.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/02_shifting_biome_ring/12_makoa_dubwater_warden_at_shifting.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/02_shifting_biome_ring/13_nyra_cragwarden_responder_under_shifting.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/03_transformation_pylons/17_maelis_cragwarden_custodian_at_transformation.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/04_hazard_cascades/16_isolde_cragwarden_operator_near_hazard.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/05_modular_arena_platforms/07_talia_gravesong_warden_from_modular.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/05_modular_arena_platforms/08_eryk_voidrill_engineer_from_modular.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/07_adaptive_combat_zones/06_juno_deepwell_warden_of_adaptive.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/08_evolution_gates/07_luma_frostrelay_engineer_from_evolution.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/09_the_primal_exodus/01_sarai_cragwarden_marshal_near.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/09_the_primal_exodus/10_selka_mossguard_warden_near.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/09_the_primal_exodus/16_calder_gantryn_engineer_near.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/01_the_eternal_throne_ring/01_kiva_skyharrow_captain_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "153_the_canopy_portrait_halls_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/03_shop_front_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "153_the_canopy_portrait_halls_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/04_shop_guard_or_vendor_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "153_the_canopy_portrait_halls_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/05_dye_liquid_or_reflection_pool.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/01_vendor_counter_terminal.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/02_display_prop_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/03_shop_front_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/04_shop_guard_or_vendor_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/05_dye_liquid_or_reflection_pool.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/01_vendor_counter_terminal.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/02_display_prop_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/03_shop_front_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/04_shop_guard_or_vendor_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/05_dye_liquid_or_reflection_pool.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/01_vendor_counter_terminal.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/02_display_prop_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/03_shop_front_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/04_shop_guard_or_vendor_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/05_dye_liquid_or_reflection_pool.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "157_the_evolution_arenas_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/01_vendor_counter_terminal.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "157_the_evolution_arenas_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/02_display_prop_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+      "path_in_zip": "texture_upgrades/05_biome_recolor_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+      "path_in_zip": "texture_upgrades/06_biome_recolor_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+      "path_in_zip": "texture_upgrades/07_biome_recolor_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+      "path_in_zip": "texture_upgrades/08_biome_recolor_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+      "path_in_zip": "texture_upgrades/09_biome_recolor_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+      "path_in_zip": "texture_upgrades/10_biome_recolor_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+      "path_in_zip": "texture_upgrades/11_biome_recolor_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "359_biome_recolor_upgrade_batch_137.zip",
+      "path_in_zip": "texture_upgrades/12_biome_recolor_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/01_item_weapon_finish_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/02_item_weapon_finish_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/03_item_weapon_finish_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/04_item_weapon_finish_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/05_item_weapon_finish_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/06_item_weapon_finish_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/07_item_weapon_finish_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/08_item_weapon_finish_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/09_item_weapon_finish_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/10_item_weapon_finish_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/11_item_weapon_finish_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "360_item_weapon_finish_upgrade_batch_138.zip",
+      "path_in_zip": "texture_upgrades/12_item_weapon_finish_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

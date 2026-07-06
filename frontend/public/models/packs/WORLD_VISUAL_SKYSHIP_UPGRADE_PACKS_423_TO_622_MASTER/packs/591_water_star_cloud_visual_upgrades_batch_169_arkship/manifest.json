@@ -1,0 +1,235 @@
+{
+  "pack_number": 591,
+  "pack_name": "Water Star Cloud Visual Upgrades Batch 169 - Arkship",
+  "set_name": "World Visual + Skyship Upgrade Packs",
+  "created_utc": "2026-07-05T09:42:41.099234+00:00",
+  "family": "water_star_cloud_visuals",
+  "theme": "cosmic",
+  "element": "astral",
+  "skyship_class": {
+    "class": "arkship",
+    "scale": 2.8,
+    "role": "city-sized travel hub"
+  },
+  "purpose": "Another non-destructive upgrade round for world objects, visuals, and skyships of multiple sizes.",
+  "counts": {
+    "glb_upgrade_modules": 10,
+    "texture_upgrades_png": 12,
+    "patch_json_files": 6,
+    "target_skyship_refs": 36,
+    "target_world_object_refs": 36,
+    "target_texture_refs": 36
+  },
+  "glb_assets": [
+    {
+      "file": "upgrade_glb_modules/01_world_facade.glb",
+      "role": "world_facade",
+      "theme": "cosmic",
+      "skyship_class": null,
+      "purpose": "visual upgrade module, overlay, prefab child, or replacement proxy",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_modules/02_world_prop_polish.glb",
+      "role": "world_prop_polish",
+      "theme": "cosmic",
+      "skyship_class": null,
+      "purpose": "visual upgrade module, overlay, prefab child, or replacement proxy",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_modules/03_world_landmark_light.glb",
+      "role": "world_landmark_light",
+      "theme": "cosmic",
+      "skyship_class": null,
+      "purpose": "visual upgrade module, overlay, prefab child, or replacement proxy",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_modules/04_atmosphere.glb",
+      "role": "atmosphere",
+      "theme": "cosmic",
+      "skyship_class": null,
+      "purpose": "visual upgrade module, overlay, prefab child, or replacement proxy",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_modules/05_skyship_hull.glb",
+      "role": "skyship_hull",
+      "theme": "cosmic",
+      "skyship_class": "arkship",
+      "purpose": "visual upgrade module, overlay, prefab child, or replacement proxy",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_modules/06_skyship_engine.glb",
+      "role": "skyship_engine",
+      "theme": "cosmic",
+      "skyship_class": "arkship",
+      "purpose": "visual upgrade module, overlay, prefab child, or replacement proxy",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_modules/07_skyship_rigging.glb",
+      "role": "skyship_rigging",
+      "theme": "cosmic",
+      "skyship_class": "arkship",
+      "purpose": "visual upgrade module, overlay, prefab child, or replacement proxy",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_modules/08_skyship_deck.glb",
+      "role": "skyship_deck",
+      "theme": "cosmic",
+      "skyship_class": "arkship",
+      "purpose": "visual upgrade module, overlay, prefab child, or replacement proxy",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_modules/09_skyship_defense.glb",
+      "role": "skyship_defense",
+      "theme": "cosmic",
+      "skyship_class": "arkship",
+      "purpose": "visual upgrade module, overlay, prefab child, or replacement proxy",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_modules/10_skyship_dock.glb",
+      "role": "skyship_dock",
+      "theme": "cosmic",
+      "skyship_class": "arkship",
+      "purpose": "visual upgrade module, overlay, prefab child, or replacement proxy",
+      "glb_header_ok": true
+    }
+  ],
+  "texture_assets": [
+    {
+      "file": "texture_upgrades/01_world_albedo_plus.png",
+      "pattern": "world_albedo_plus",
+      "theme": "cosmic",
+      "intended_slots": [
+        "world_objects",
+        "environment_props",
+        "architecture"
+      ]
+    },
+    {
+      "file": "texture_upgrades/02_world_trim_plus.png",
+      "pattern": "world_trim_plus",
+      "theme": "cosmic",
+      "intended_slots": [
+        "modular_kits",
+        "building_trim",
+        "shopfronts"
+      ]
+    },
+    {
+      "file": "texture_upgrades/03_world_emission_plus.png",
+      "pattern": "world_emission_plus",
+      "theme": "cosmic",
+      "intended_slots": [
+        "lights",
+        "runes",
+        "tech_panels",
+        "cosmic_objects"
+      ]
+    },
+    {
+      "file": "texture_upgrades/04_world_normal_proxy_plus.png",
+      "pattern": "world_normal_proxy_plus",
+      "theme": "cosmic",
+      "intended_slots": [
+        "all_world_objects"
+      ]
+    },
+    {
+      "file": "texture_upgrades/05_skyship_hull_albedo.png",
+      "pattern": "skyship_hull_albedo",
+      "theme": "cosmic",
+      "intended_slots": [
+        "skyship_hull",
+        "ship_panels"
+      ]
+    },
+    {
+      "file": "texture_upgrades/06_skyship_edgewear_mask.png",
+      "pattern": "skyship_edgewear_mask",
+      "theme": "cosmic",
+      "intended_slots": [
+        "skyship_hull",
+        "skyship_metal",
+        "weapon_mounts"
+      ]
+    },
+    {
+      "file": "texture_upgrades/07_skyship_sail_fabric.png",
+      "pattern": "skyship_sail_fabric",
+      "theme": "cosmic",
+      "intended_slots": [
+        "sails",
+        "balloons",
+        "canvas",
+        "banners"
+      ]
+    },
+    {
+      "file": "texture_upgrades/08_skyship_engine_glow.png",
+      "pattern": "skyship_engine_glow",
+      "theme": "cosmic",
+      "intended_slots": [
+        "thrusters",
+        "engine_cores",
+        "reactors"
+      ]
+    },
+    {
+      "file": "texture_upgrades/09_skyship_banner_decal.png",
+      "pattern": "skyship_banner_decal",
+      "theme": "cosmic",
+      "intended_slots": [
+        "faction_flags",
+        "ship_livery",
+        "deck_signage"
+      ]
+    },
+    {
+      "file": "texture_upgrades/10_cloud_layer.png",
+      "pattern": "cloud_layer",
+      "theme": "cosmic",
+      "intended_slots": [
+        "sky",
+        "atmosphere",
+        "weather"
+      ]
+    },
+    {
+      "file": "texture_upgrades/11_starfield_layer.png",
+      "pattern": "starfield_layer",
+      "theme": "cosmic",
+      "intended_slots": [
+        "space",
+        "night_sky",
+        "cosmic"
+      ]
+    },
+    {
+      "file": "texture_upgrades/12_water_reflection_layer.png",
+      "pattern": "water_reflection_layer",
+      "theme": "cosmic",
+      "intended_slots": [
+        "water",
+        "ocean",
+        "cloud_reflection",
+        "liquid_surface"
+      ]
+    }
+  ],
+  "patch_files": [
+    "patches/asset_upgrade_patch_manifest.json",
+    "patches/skyship_size_upgrade_plan.json",
+    "patches/material_visual_upgrade_plan.json",
+    "patches/prefab_variant_patch.json",
+    "patches/qa_validation_plan.json",
+    "patches/target_application_map.json"
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 196,
+    "title": "Special Event Encounter Bundle 30",
+    "kind": "special_event_bundle",
+    "region": "The Raid-Rush Choke Points",
+    "sub_location": "Fallback Ammunition Yard",
+    "theme": "neutral"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Fallback Ammunition Yard Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Fallback Ammunition Yard Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Fallback Ammunition Yard Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Fallback Ammunition Yard Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "Fallback Ammunition Yard Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "Fallback Ammunition Yard Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Iron-Jaw Hound",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-030",
+      "event_title": "Ash-Baptized Incident: Fallback Ammunition Yard",
+      "world_map_location": "The Raid-Rush Choke Points",
+      "sublocation": "Fallback Ammunition Yard",
+      "required_player_level": 23,
+      "primary_variant": "Ash-Baptized Aegis Carapace",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-064",
+      "event_title": "Warden-Fused Incident: Elemental Hazard Crown",
+      "world_map_location": "The Evolution Arenas",
+      "sublocation": "Elemental Hazard Crown",
+      "required_player_level": 26,
+      "primary_variant": "Warden-Fused Apex Chimera",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-098",
+      "event_title": "Ablative Incident: Shockwave Relay Stones",
+      "world_map_location": "The Sonic Badlands",
+      "sublocation": "Shockwave Relay Stones",
+      "required_player_level": 29,
+      "primary_variant": "Ablative Tremor-Fiend",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-132",
+      "event_title": "Null-Branded Incident: Shattered Operating Theater",
+      "world_map_location": "Sector 6 Quarantine",
+      "sublocation": "Shattered Operating Theater",
+      "required_player_level": 32,
+      "primary_variant": "Null-Branded Scrap-Stalker",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-166",
+      "event_title": "Null-Branded Incident: Odd-Floor Gravity Stack",
+      "world_map_location": "The Alternating Archives",
+      "sublocation": "Odd-Floor Gravity Stack",
+      "required_player_level": 38,
+      "primary_variant": "Null-Branded Null Anomaly",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-200",
+      "event_title": "Eclipse-Synced Incident: Reverting Floor Gauntlet",
+      "world_map_location": "The Canceled Supabase",
+      "sublocation": "Reverting Floor Gauntlet",
+      "required_player_level": 40,
+      "primary_variant": "Eclipse-Synced Data-Forged Evolvarch",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

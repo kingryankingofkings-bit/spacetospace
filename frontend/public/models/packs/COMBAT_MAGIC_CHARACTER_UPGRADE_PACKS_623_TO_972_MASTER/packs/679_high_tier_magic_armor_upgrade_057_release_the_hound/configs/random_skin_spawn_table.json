@@ -1,0 +1,1437 @@
+{
+  "monster_family": "The Siphon-Ticks",
+  "boss_context": "The Syndicate Lich",
+  "skin_variants": [
+    {
+      "skin_id": "the_siphon_ticks_gravity_01_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 01",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_02_common",
+      "display_name": "Gravity Siphon-Ticks Variant 02",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_03_rare",
+      "display_name": "Gravity Siphon-Ticks Variant 03",
+      "rarity": "rare",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_04_rare",
+      "display_name": "Gravity Siphon-Ticks Variant 04",
+      "rarity": "rare",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_05_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 05",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_06_common",
+      "display_name": "Gravity Siphon-Ticks Variant 06",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_07_epic",
+      "display_name": "Gravity Siphon-Ticks Variant 07",
+      "rarity": "epic",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_08_common",
+      "display_name": "Gravity Siphon-Ticks Variant 08",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_09_common",
+      "display_name": "Gravity Siphon-Ticks Variant 09",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_10_common",
+      "display_name": "Gravity Siphon-Ticks Variant 10",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_11_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 11",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_12_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 12",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_13_rare",
+      "display_name": "Gravity Siphon-Ticks Variant 13",
+      "rarity": "rare",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_14_common",
+      "display_name": "Gravity Siphon-Ticks Variant 14",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_15_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 15",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_16_epic",
+      "display_name": "Gravity Siphon-Ticks Variant 16",
+      "rarity": "epic",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_17_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 17",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_18_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 18",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_19_epic",
+      "display_name": "Gravity Siphon-Ticks Variant 19",
+      "rarity": "epic",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_20_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 20",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_21_common",
+      "display_name": "Gravity Siphon-Ticks Variant 21",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_22_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 22",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_23_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 23",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_24_common",
+      "display_name": "Gravity Siphon-Ticks Variant 24",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_25_rare",
+      "display_name": "Gravity Siphon-Ticks Variant 25",
+      "rarity": "rare",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_26_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 26",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_27_common",
+      "display_name": "Gravity Siphon-Ticks Variant 27",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_28_rare",
+      "display_name": "Gravity Siphon-Ticks Variant 28",
+      "rarity": "rare",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_29_rare",
+      "display_name": "Gravity Siphon-Ticks Variant 29",
+      "rarity": "rare",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_30_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 30",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_31_rare",
+      "display_name": "Gravity Siphon-Ticks Variant 31",
+      "rarity": "rare",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_32_common",
+      "display_name": "Gravity Siphon-Ticks Variant 32",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_33_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 33",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_34_common",
+      "display_name": "Gravity Siphon-Ticks Variant 34",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_35_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 35",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_36_rare",
+      "display_name": "Gravity Siphon-Ticks Variant 36",
+      "rarity": "rare",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_37_epic",
+      "display_name": "Gravity Siphon-Ticks Variant 37",
+      "rarity": "epic",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_38_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 38",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_39_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 39",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_40_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 40",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_41_rare",
+      "display_name": "Gravity Siphon-Ticks Variant 41",
+      "rarity": "rare",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_42_common",
+      "display_name": "Gravity Siphon-Ticks Variant 42",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_43_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 43",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_44_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 44",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_45_epic",
+      "display_name": "Gravity Siphon-Ticks Variant 45",
+      "rarity": "epic",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_46_common",
+      "display_name": "Gravity Siphon-Ticks Variant 46",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_47_common",
+      "display_name": "Gravity Siphon-Ticks Variant 47",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_48_rare",
+      "display_name": "Gravity Siphon-Ticks Variant 48",
+      "rarity": "rare",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_49_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 49",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_50_common",
+      "display_name": "Gravity Siphon-Ticks Variant 50",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_51_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 51",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_52_common",
+      "display_name": "Gravity Siphon-Ticks Variant 52",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_53_common",
+      "display_name": "Gravity Siphon-Ticks Variant 53",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_54_epic",
+      "display_name": "Gravity Siphon-Ticks Variant 54",
+      "rarity": "epic",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_55_common",
+      "display_name": "Gravity Siphon-Ticks Variant 55",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_56_common",
+      "display_name": "Gravity Siphon-Ticks Variant 56",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_57_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 57",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_58_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 58",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_59_common",
+      "display_name": "Gravity Siphon-Ticks Variant 59",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_60_common",
+      "display_name": "Gravity Siphon-Ticks Variant 60",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_61_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 61",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_62_common",
+      "display_name": "Gravity Siphon-Ticks Variant 62",
+      "rarity": "common",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_63_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 63",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_gravity_64_uncommon",
+      "display_name": "Gravity Siphon-Ticks Variant 64",
+      "rarity": "uncommon",
+      "element": "gravity",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    }
+  ],
+  "randomization_algorithm": {
+    "method": "weighted_seeded_hash",
+    "seed_inputs": [
+      "spawn_guid",
+      "encounter_id",
+      "world_region",
+      "difficulty",
+      "time_bucket"
+    ],
+    "nearby_duplicate_rejection": true,
+    "rare_identical_rule": {
+      "max_same_skin_per_encounter": 1,
+      "allow_duplicate_only_after_distinct_skins_seen": 8,
+      "duplicate_exception_for_swarm_size_above": 20
+    }
+  },
+  "runtime_outputs": [
+    "selected_albedo",
+    "selected_emission",
+    "selected_decal",
+    "selected_material_variant",
+    "selected_glb_overlay"
+  ]
+}

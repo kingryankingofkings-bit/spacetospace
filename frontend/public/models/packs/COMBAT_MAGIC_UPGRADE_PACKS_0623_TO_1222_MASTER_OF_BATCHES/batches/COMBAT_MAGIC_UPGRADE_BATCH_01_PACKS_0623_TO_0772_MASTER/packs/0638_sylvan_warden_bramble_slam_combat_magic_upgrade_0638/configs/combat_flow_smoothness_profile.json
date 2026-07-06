@@ -1,0 +1,21 @@
+{
+  "profile_id": "flow_0638_sylvan_warden",
+  "input_buffer_ms": 165,
+  "combo_grace_ms": 800,
+  "camera_ease_in_ms": 280,
+  "camera_ease_out_ms": 430,
+  "hitstop_light_ms": 28,
+  "hitstop_heavy_ms": 52,
+  "cancel_windows": {
+    "light_to_dodge": "early",
+    "light_to_parry": "mid",
+    "heavy_to_vault": "late",
+    "finisher_to_camera_recenter": "after_active_frames"
+  },
+  "smoothness_goals": [
+    "no dead inputs during hitstop",
+    "mid-air follow-ups preserve facing",
+    "dynamic camera does not steal player control",
+    "assist NPC and pet procs should extend, not interrupt, combo flow"
+  ]
+}

@@ -1,0 +1,804 @@
+{
+  "target_monster": "The Scrap-Phalanx",
+  "rarity_goal": "It should be rare to see two identical monsters.",
+  "algorithm": {
+    "base": "weighted_random_without_recent_replacement",
+    "anti_duplicate_memory": 3,
+    "encounter_seed": "zone_id + encounter_id + spawn_index",
+    "elite_bonus_variance": true
+  },
+  "skin_roll_table": [
+    {
+      "skin_id": "the_scrap_phalanx_grav_torn_void_00",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Grav-Torn The Scrap-Phalanx - Void",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_tide_broken_storm_01",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Tide-Broken The Scrap-Phalanx - Storm",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_magnetized_urban_02",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Magnetized The Scrap-Phalanx - Urban",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_sonic_scarred_wilds_03",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Sonic-Scarred The Scrap-Phalanx - Wilds",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_glass_hardened_waste_04",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Glass-Hardened The Scrap-Phalanx - Waste",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_spore_sick_geothermal_05",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Spore-Sick The Scrap-Phalanx - Geothermal",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_chrome_maw_cosmic_06",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Chrome-Maw The Scrap-Phalanx - Cosmic",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_ash_baptized_transit_07",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Ash-Baptized The Scrap-Phalanx - Transit",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_overcharged_deep-water_08",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Overcharged The Scrap-Phalanx - Deep-Water",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_bark_crowned_archive_09",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Bark-Crowned The Scrap-Phalanx - Archive",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_echo_split_festival_10",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Echo-Split The Scrap-Phalanx - Festival",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_null_branded_quarantine_11",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Null-Branded The Scrap-Phalanx - Quarantine",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_grav_torn_void_12",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Grav-Torn The Scrap-Phalanx - Void",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_tide_broken_storm_13",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Tide-Broken The Scrap-Phalanx - Storm",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_magnetized_urban_14",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Magnetized The Scrap-Phalanx - Urban",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_sonic_scarred_wilds_15",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Sonic-Scarred The Scrap-Phalanx - Wilds",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_glass_hardened_waste_16",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Glass-Hardened The Scrap-Phalanx - Waste",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_spore_sick_geothermal_17",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Spore-Sick The Scrap-Phalanx - Geothermal",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_chrome_maw_cosmic_18",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Chrome-Maw The Scrap-Phalanx - Cosmic",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_ash_baptized_transit_19",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Ash-Baptized The Scrap-Phalanx - Transit",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_overcharged_deep-water_20",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Overcharged The Scrap-Phalanx - Deep-Water",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_bark_crowned_archive_21",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Bark-Crowned The Scrap-Phalanx - Archive",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_echo_split_festival_22",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Echo-Split The Scrap-Phalanx - Festival",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_null_branded_quarantine_23",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Null-Branded The Scrap-Phalanx - Quarantine",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_grav_torn_void_24",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Grav-Torn The Scrap-Phalanx - Void",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_tide_broken_storm_25",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Tide-Broken The Scrap-Phalanx - Storm",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_magnetized_urban_26",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Magnetized The Scrap-Phalanx - Urban",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_sonic_scarred_wilds_27",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Sonic-Scarred The Scrap-Phalanx - Wilds",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_glass_hardened_waste_28",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Glass-Hardened The Scrap-Phalanx - Waste",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_spore_sick_geothermal_29",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Spore-Sick The Scrap-Phalanx - Geothermal",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_chrome_maw_cosmic_30",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Chrome-Maw The Scrap-Phalanx - Cosmic",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_ash_baptized_transit_31",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Ash-Baptized The Scrap-Phalanx - Transit",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_overcharged_deep-water_32",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Overcharged The Scrap-Phalanx - Deep-Water",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_bark_crowned_archive_33",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Bark-Crowned The Scrap-Phalanx - Archive",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_echo_split_festival_34",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Echo-Split The Scrap-Phalanx - Festival",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_scrap_phalanx_null_branded_quarantine_35",
+      "monster_family": "The Scrap-Phalanx",
+      "display_name": "Null-Branded The Scrap-Phalanx - Quarantine",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    }
+  ]
+}

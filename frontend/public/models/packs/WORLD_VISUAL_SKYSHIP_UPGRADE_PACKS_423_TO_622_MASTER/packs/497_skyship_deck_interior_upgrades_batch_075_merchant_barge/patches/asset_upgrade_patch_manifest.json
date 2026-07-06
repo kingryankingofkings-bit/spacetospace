@@ -1,0 +1,500 @@
+{
+  "pack_number": 497,
+  "pack_name": "Skyship Deck Interior Upgrades Batch 075 - Merchant Barge",
+  "created_utc": "2026-07-05T09:42:33.565926+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_deck_interiors",
+  "theme": "waste_scrap",
+  "element": "dustfire",
+  "skyship_class_profile": {
+    "class": "merchant_barge",
+    "scale": 1.5,
+    "role": "trade, supplies, shop route"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/06_avalanche_steps/14_bex_skyharrow_cartographer_near_avalanche.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/06_avalanche_steps/15_nyra_glassroot_engineer_from_avalanche.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/07_choir_pass/07_eryk_glassroot_engineer_from_choir.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/08_watcher_ledge/05_bex_cragwarden_courier_at_watcher.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/09_resonance_towers/03_orin_cragwarden_marshal_under_resonance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/09_resonance_towers/07_astra_ironwake_warden_near_resonance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/09_resonance_towers/09_luma_skyharrow_watcher_under_resonance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/09_resonance_towers/16_varren_trenchmark_warden_at_resonance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/10_deep_echo_cavern/01_tamsin_gravesong_engineer_under_deep.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/10_deep_echo_cavern/02_zerin_ironwake_warden_of_deep.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/10_deep_echo_cavern/07_auren_skyharrow_responder_from_deep.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/10_deep_echo_cavern/12_kiva_cragwarden_mechanist_under_deep.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/01_bazaar_ring/01_orin_trenchmark_warden_of_bazaar.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/01_bazaar_ring/04_ren_echohand_engineer_of_bazaar.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/02_street_bazaar_and_stalls/01_juno_emberkin_warden_near_street.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/02_street_bazaar_and_stalls/02_maelis_skyharrow_tamer_near_street.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/02_street_bazaar_and_stalls/10_mirek_glassroot_warden_from_street.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/02_street_bazaar_and_stalls/11_kael_riftwalker_warden_from_street.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/02_street_bazaar_and_stalls/12_ren_skyharrow_watcher_at_street.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/02_street_bazaar_and_stalls/15_sable_starfall_warden_from_street.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "star"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "421_creature_skin_element_upgrade_batch_199.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_creature_skin_element_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "421_creature_skin_element_upgrade_batch_199.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_creature_skin_element_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "421_creature_skin_element_upgrade_batch_199.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_creature_skin_element_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "421_creature_skin_element_upgrade_batch_199.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_creature_skin_element_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "421_creature_skin_element_upgrade_batch_199.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_creature_skin_element_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "422_water_star_environment_upgrade_batch_200.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_water_star_environment_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "422_water_star_environment_upgrade_batch_200.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_water_star_environment_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "422_water_star_environment_upgrade_batch_200.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_water_star_environment_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "422_water_star_environment_upgrade_batch_200.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_water_star_environment_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "422_water_star_environment_upgrade_batch_200.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_water_star_environment_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "422_water_star_environment_upgrade_batch_200.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_water_star_environment_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-001_mira_vale.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-002_kesh_anovar.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-003_tali_reed.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-004_orren_pike.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-005_saffa_linn.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-006_brix_thorn.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-007_naelo_korr.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-008_vesha_pryn.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-009_juno_marrow.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/05_low_poly_silhouette_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/06_low_poly_silhouette_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/07_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/08_low_poly_silhouette_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/09_low_poly_silhouette_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/10_low_poly_silhouette_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/11_low_poly_silhouette_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/12_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/01_emissive_glow_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/02_emissive_glow_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/03_emissive_glow_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/04_emissive_glow_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/05_emissive_glow_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/06_emissive_glow_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/07_emissive_glow_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/08_emissive_glow_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/09_emissive_glow_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/10_emissive_glow_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/11_emissive_glow_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "406_emissive_glow_upgrade_batch_184.zip",
+      "path_in_zip": "texture_upgrades/12_emissive_glow_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

@@ -1,0 +1,328 @@
+{
+  "pack_number": 1066,
+  "action": "create non-destructive upgraded prefab variants",
+  "target_references_sample": [
+    {
+      "source_zip": "168_special_event_encounter_bundle_02.zip",
+      "path_in_zip": "data/object_and_spawn_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_03_trim.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_04_starfield.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "171_special_event_encounter_bundle_05.zip",
+      "path_in_zip": "glb_assets/03_event_trigger_node.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "171_special_event_encounter_bundle_05.zip",
+      "path_in_zip": "audio/special_event_encounter_bundle_05_event_or_pickup_sting.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "172_special_event_encounter_bundle_06.zip",
+      "path_in_zip": "textures/02_special_event_encounter_bundle_06_normal_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "172_special_event_encounter_bundle_06.zip",
+      "path_in_zip": "audio/music_cue_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "173_special_event_encounter_bundle_07.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_07_water.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "174_special_event_encounter_bundle_08.zip",
+      "path_in_zip": "glb_assets/02_event_elite_variant.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "174_special_event_encounter_bundle_08.zip",
+      "path_in_zip": "audio/special_event_encounter_bundle_08_ambience_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "175_special_event_encounter_bundle_09.zip",
+      "path_in_zip": "textures/01_special_event_encounter_bundle_09_albedo.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "175_special_event_encounter_bundle_09.zip",
+      "path_in_zip": "prefab_specs/prefab_handoff.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "176_special_event_encounter_bundle_10.zip",
+      "path_in_zip": "textures/05_special_event_encounter_bundle_10_decal.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "177_special_event_encounter_bundle_11.zip",
+      "path_in_zip": "glb_assets/01_event_arena_anchor.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "177_special_event_encounter_bundle_11.zip",
+      "path_in_zip": "audio/special_event_encounter_bundle_11_music_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "178_special_event_encounter_bundle_12.zip",
+      "path_in_zip": "glb_assets/05_event_sky_or_hazard_field.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "178_special_event_encounter_bundle_12.zip",
+      "path_in_zip": "data/material_texture_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "179_special_event_encounter_bundle_13.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_13_emission.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "179_special_event_encounter_bundle_13.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "180_special_event_encounter_bundle_14.zip",
+      "path_in_zip": "textures/08_special_event_encounter_bundle_14_surface.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "181_special_event_encounter_bundle_15.zip",
+      "path_in_zip": "glb_assets/04_event_hazard_cluster.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "181_special_event_encounter_bundle_15.zip",
+      "path_in_zip": "data/object_and_spawn_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "182_special_event_encounter_bundle_16.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_16_trim.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "182_special_event_encounter_bundle_16.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "183_special_event_encounter_bundle_17.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_17_starfield.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "184_special_event_encounter_bundle_18.zip",
+      "path_in_zip": "glb_assets/03_event_trigger_node.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "184_special_event_encounter_bundle_18.zip",
+      "path_in_zip": "audio/special_event_encounter_bundle_18_event_or_pickup_sting.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "185_special_event_encounter_bundle_19.zip",
+      "path_in_zip": "textures/02_special_event_encounter_bundle_19_normal_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "185_special_event_encounter_bundle_19.zip",
+      "path_in_zip": "audio/music_cue_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "186_special_event_encounter_bundle_20.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_20_water.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "187_special_event_encounter_bundle_21.zip",
+      "path_in_zip": "glb_assets/02_event_elite_variant.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "187_special_event_encounter_bundle_21.zip",
+      "path_in_zip": "audio/special_event_encounter_bundle_21_ambience_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "188_special_event_encounter_bundle_22.zip",
+      "path_in_zip": "textures/01_special_event_encounter_bundle_22_albedo.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "188_special_event_encounter_bundle_22.zip",
+      "path_in_zip": "prefab_specs/prefab_handoff.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "189_special_event_encounter_bundle_23.zip",
+      "path_in_zip": "textures/05_special_event_encounter_bundle_23_decal.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "190_special_event_encounter_bundle_24.zip",
+      "path_in_zip": "glb_assets/01_event_arena_anchor.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "190_special_event_encounter_bundle_24.zip",
+      "path_in_zip": "audio/special_event_encounter_bundle_24_music_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "191_special_event_encounter_bundle_25.zip",
+      "path_in_zip": "glb_assets/05_event_sky_or_hazard_field.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "191_special_event_encounter_bundle_25.zip",
+      "path_in_zip": "data/material_texture_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "192_special_event_encounter_bundle_26.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_26_emission.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "192_special_event_encounter_bundle_26.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    }
+  ],
+  "required_components": [
+    "MaterialVariantSet",
+    "VFXLifetime",
+    "AbilityTriggerBinding",
+    "MonsterSkinRandomizer",
+    "CombatFlowProfile",
+    "DynamicCombatCameraTrigger",
+    "WeatherSunProfile",
+    "CharacterQualityMaterialPatch",
+    "HighTierEquipmentAffixBinding",
+    "SupportNPCAssistBinding"
+  ],
+  "validation": [
+    "random monster skin table returns no duplicate within recent window",
+    "combat camera blends without breaking input",
+    "class ability VFX spawns on correct socket",
+    "weather/sun LUT changes are reversible",
+    "high tier weapon and armor auras are optional prefab children",
+    "support NPC assist marker does not block navigation"
+  ]
+}

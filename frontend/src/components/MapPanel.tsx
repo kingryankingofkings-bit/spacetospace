@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MAPS } from '../data/mapConfig';
 import { useMultiplayerStore } from '../store/multiplayerStore';
+import { motion } from 'framer-motion';
 
 interface MapPanelProps {
   onClose: () => void;
@@ -19,128 +20,126 @@ export const MapPanel: React.FC<MapPanelProps> = ({ onClose }) => {
   if (!currentMap) return null;
 
   return (
-    <div style={{
-      position: 'absolute', inset: 0, zIndex: 100,
-      background: 'rgba(0, 0, 0, 0.8)',
-      backdropFilter: 'blur(20px)',
-      display: 'flex', flexDirection: 'column',
-      alignItems: 'center', justifyContent: 'center',
-      color: 'white', fontFamily: 'Outfit, sans-serif'
-    }}>
+    <div className="fixed inset-0 z-100 flex items-center justify-center">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="absolute inset-0"
+        style={{ background: 'rgba(0, 0, 0, 0.9)', backdropFilter: 'blur(20px)' }}
+      />
       
       {/* Header / Navigation */}
-      <div style={{ position: 'absolute', top: '40px', left: '40px', display: 'flex', gap: '20px', alignItems: 'center' }}>
+      <div className="absolute z-50 flex items-center gap-4" style={{ top: '40px', left: '40px' }}>
         {currentMapId !== 'world_map' && (
           <button 
             onClick={() => setCurrentMapId('world_map')}
-            style={{
-              background: 'rgba(0, 255, 136, 0.2)', border: '1px solid #00ff88',
-              color: '#00ff88', padding: '10px 20px', borderRadius: '8px', cursor: 'pointer',
-              fontWeight: 'bold', fontSize: '14px', backdropFilter: 'blur(5px)'
-            }}
+            className="aaa-button"
+            style={{ padding: '8px 16px', fontSize: '0.8rem' }}
           >
             ← Back to World Map
           </button>
         )}
-        <h2 style={{ margin: 0, fontSize: '24px', letterSpacing: '2px', textTransform: 'uppercase' }}>
+        <h2 style={{ margin: 0, fontSize: '2rem', letterSpacing: '4px', textTransform: 'uppercase', color: 'var(--accent-primary)', textShadow: '0 0 15px var(--accent-primary-glow)' }}>
           {currentMap.name}
         </h2>
       </div>
 
+      <button 
+        onClick={onClose}
+        className="aaa-button absolute z-50 flex items-center justify-center"
+        style={{ top: '40px', right: '40px', width: '48px', height: '48px', padding: 0, borderRadius: '50%', fontSize: '1.5rem' }}
+      >
+        ✕
+      </button>
+
       {/* Map Container */}
-      <div style={{
-        position: 'relative',
-        width: '80%', height: '80%',
-        maxWidth: '1200px',
-        backgroundImage: `url(${currentMap.imageUrl})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center',
-        backgroundSize: 'contain',
-        borderRadius: '16px',
-        boxShadow: '0 0 50px rgba(0, 255, 136, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.1)'
-      }}>
-        
-        {/* Close Button */}
-        <button 
-          onClick={onClose}
-          style={{
-            position: 'absolute', top: '20px', right: '20px',
-            background: 'rgba(255, 255, 255, 0.1)', border: 'none',
-            color: 'white', fontSize: '24px', cursor: 'pointer',
-            width: '40px', height: '40px', borderRadius: '50%',
-            backdropFilter: 'blur(5px)'
-          }}
-        >
-          ×
-        </button>
+      <motion.div 
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ type: 'spring', damping: 25, stiffness: 120 }}
+        className="aaa-panel relative"
+        style={{
+          width: '85%', height: '80%',
+          maxWidth: '1400px',
+          padding: 0,
+          background: 'rgba(0, 0, 0, 0.5)',
+          overflow: 'hidden'
+        }}
+      >
+        <div style={{
+          position: 'absolute', inset: '24px',
+          backgroundImage: `url(${currentMap.imageUrl})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          backgroundSize: 'contain',
+        }}>
+          {/* Hotspots */}
+          {currentMap.hotspots.map(hotspot => {
+            const isCurrent = currentZone === hotspot.targetId;
+            const isDrillDown = hotspot.type === 'drill_down';
+            
+            return (
+              <motion.div 
+                key={hotspot.id}
+                whileHover={{ scale: 1.15, zIndex: 10 }}
+                style={{
+                  position: 'absolute',
+                  top: hotspot.top,
+                  left: hotspot.left,
+                  transform: 'translate(-50%, -50%)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  cursor: 'pointer',
+                  filter: 'drop-shadow(0px 4px 10px rgba(0,0,0,0.8))'
+                }}
+                onClick={() => {
+                  if (isDrillDown) {
+                    setCurrentMapId(hotspot.targetId);
+                  } else if (hotspot.type === 'fast_travel') {
+                    onFastTravel(hotspot.targetId);
+                    onClose();
+                  }
+                }}
+              >
+                {/* Marker Icon */}
+                <div style={{
+                  width: isDrillDown ? '40px' : '24px', 
+                  height: isDrillDown ? '40px' : '24px',
+                  borderRadius: isDrillDown ? '8px' : '50%',
+                  background: isCurrent ? 'var(--accent-primary)' : (isDrillDown ? 'rgba(0, 150, 255, 0.4)' : 'rgba(255, 255, 255, 0.2)'),
+                  boxShadow: isCurrent ? '0 0 20px var(--accent-primary-glow)' : 'inset 0 0 10px rgba(255,255,255,0.5)',
+                  border: isCurrent ? '2px solid white' : '1px solid rgba(255,255,255,0.5)',
+                  marginBottom: '12px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  color: 'white', fontWeight: 'bold', fontSize: isDrillDown ? '1.5rem' : '1rem',
+                  backdropFilter: 'blur(4px)'
+                }}>
+                  {isDrillDown && '+'}
+                </div>
 
-        {/* Hotspots */}
-        {currentMap.hotspots.map(hotspot => (
-          <div 
-            key={hotspot.id}
-            style={{
-              position: 'absolute',
-              top: hotspot.top,
-              left: hotspot.left,
-              transform: 'translate(-50%, -50%)',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              cursor: 'pointer',
-              transition: 'transform 0.2s, filter 0.2s',
-              filter: 'drop-shadow(0px 0px 10px rgba(0,0,0,0.8))'
-            }}
-            onClick={() => {
-              if (hotspot.type === 'drill_down') {
-                setCurrentMapId(hotspot.targetId);
-              } else if (hotspot.type === 'fast_travel') {
-                onFastTravel(hotspot.targetId);
-                onClose();
-              }
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translate(-50%, -50%) scale(1.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'translate(-50%, -50%) scale(1)';
-            }}
-          >
-            {/* Marker Icon */}
-            <div style={{
-              width: hotspot.type === 'drill_down' ? '32px' : '20px', 
-              height: hotspot.type === 'drill_down' ? '32px' : '20px',
-              borderRadius: hotspot.type === 'drill_down' ? '8px' : '50%',
-              background: currentZone === hotspot.targetId 
-                ? '#00ff88' 
-                : (hotspot.type === 'drill_down' ? 'rgba(0, 150, 255, 0.6)' : 'rgba(255, 255, 255, 0.5)'),
-              boxShadow: currentZone === hotspot.targetId ? '0 0 20px #00ff88' : 'none',
-              border: '2px solid white',
-              marginBottom: '8px',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              color: 'white', fontWeight: 'bold'
-            }}>
-              {hotspot.type === 'drill_down' && '+'}
-            </div>
-
-            {/* Label */}
-            <div style={{
-              background: 'rgba(0, 0, 0, 0.8)',
-              padding: '6px 12px',
-              borderRadius: '20px',
-              fontSize: '14px',
-              fontWeight: hotspot.type === 'drill_down' ? 'bold' : 'normal',
-              whiteSpace: 'nowrap',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
-              color: hotspot.type === 'drill_down' ? '#00bfff' : 'white'
-            }}>
-              {hotspot.name}
-              {currentZone === hotspot.targetId && <span style={{ color: '#00ff88', marginLeft: '8px' }}>(You are here)</span>}
-            </div>
-          </div>
-        ))}
-        
-      </div>
+                {/* Label */}
+                <div style={{
+                  background: 'rgba(10, 10, 15, 0.9)',
+                  padding: '8px 16px',
+                  borderRadius: '24px',
+                  fontSize: '0.85rem',
+                  fontWeight: isDrillDown ? 800 : 600,
+                  whiteSpace: 'nowrap',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  color: isDrillDown ? 'var(--accent-primary)' : 'white',
+                  textTransform: 'uppercase',
+                  letterSpacing: '1px',
+                  boxShadow: '0 4px 15px rgba(0,0,0,0.8)'
+                }}>
+                  {hotspot.name}
+                  {isCurrent && <span style={{ color: 'var(--text-muted)', marginLeft: '8px' }}>(ACTIVE)</span>}
+                </div>
+              </motion.div>
+            )
+          })}
+        </div>
+      </motion.div>
     </div>
   );
 };

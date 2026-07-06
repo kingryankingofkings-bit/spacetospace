@@ -1,0 +1,15 @@
+{
+  "pack_number": 817,
+  "variant_prefix": "UPG_817_support_npc_assists",
+  "actions": [
+    "Import GLB upgrade modules as optional child prefabs.",
+    "Import PNGs as material overlays and skin atlases.",
+    "Create non-destructive monster/boss/player/support NPC prefab variants.",
+    "Bind random_skin_spawn_table.json to monster spawn controller.",
+    "Bind dynamic_camera_trigger_profile.json to combat camera manager.",
+    "Bind combat_flow_smoothness_tuning.json to player controller and animation state machine.",
+    "Bind special_attack_upgrade_manifest.json to ability prefab generator.",
+    "Generate addressable labels by entity, class, boss, NPC, and theme."
+  ],
+  "do_not_overwrite_original_assets": true
+}

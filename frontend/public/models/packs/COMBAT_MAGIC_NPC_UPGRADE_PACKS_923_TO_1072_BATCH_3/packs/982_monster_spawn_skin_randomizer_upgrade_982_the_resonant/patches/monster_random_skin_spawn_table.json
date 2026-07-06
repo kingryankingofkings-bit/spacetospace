@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Tremor-Fiend",
+  "element_context": "sonic",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_tremor_fiend_sonic_01",
+      "display_name": "Ablative The Tremor-Fiend 01",
+      "weight": 4.632,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 0.93
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_02",
+      "display_name": "Phase-Bound The Tremor-Fiend 02",
+      "weight": 4.655,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "crystal",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.079
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_03",
+      "display_name": "Venom-Laced The Tremor-Fiend 03",
+      "weight": 4.216,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 0.924
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_04",
+      "display_name": "Warden-Fused The Tremor-Fiend 04",
+      "weight": 4.379,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.079
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_05",
+      "display_name": "Sovereign-Touched The Tremor-Fiend 05",
+      "weight": 4.238,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "scrap",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.035
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_06",
+      "display_name": "Data-Forged The Tremor-Fiend 06",
+      "weight": 3.991,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "jagged",
+        "armor_growth": "scrap",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.022
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_07",
+      "display_name": "Ash-Baptized The Tremor-Fiend 07",
+      "weight": 3.677,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "scrap",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.001
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_08",
+      "display_name": "Tide-Broken The Tremor-Fiend 08",
+      "weight": 3.392,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 1.022
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_09",
+      "display_name": "Magnetized The Tremor-Fiend 09",
+      "weight": 3.411,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.006
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_10",
+      "display_name": "Sonic-Scarred The Tremor-Fiend 10",
+      "weight": 3.43,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 0.999
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_11",
+      "display_name": "Glass-Hardened The Tremor-Fiend 11",
+      "weight": 3.031,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "void",
+        "weather_tint": "gold noon",
+        "scale_jitter": 1.075
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_12",
+      "display_name": "Spore-Sick The Tremor-Fiend 12",
+      "weight": 2.879,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "gold noon",
+        "scale_jitter": 0.929
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_13",
+      "display_name": "Chrome-Maw The Tremor-Fiend 13",
+      "weight": 2.743,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "scrap",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.101
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_14",
+      "display_name": "Eclipse-Synced The Tremor-Fiend 14",
+      "weight": 2.79,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "hide",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 0.945
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_15",
+      "display_name": "Overcharged The Tremor-Fiend 15",
+      "weight": 2.659,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "bark",
+        "weather_tint": "gold noon",
+        "scale_jitter": 1.03
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_16",
+      "display_name": "Bark-Crowned The Tremor-Fiend 16",
+      "weight": 2.225,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "jagged",
+        "armor_growth": "bark",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.034
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_17",
+      "display_name": "Echo-Split The Tremor-Fiend 17",
+      "weight": 2.054,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "crystal",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.088
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_18",
+      "display_name": "Null-Branded The Tremor-Fiend 18",
+      "weight": 1.951,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.018
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_19",
+      "display_name": "Rhythm-Warped The Tremor-Fiend 19",
+      "weight": 1.766,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 1.017
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_20",
+      "display_name": "Grav-Torn The Tremor-Fiend 20",
+      "weight": 1.471,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "wide",
+        "armor_growth": "crystal",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.106
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_21",
+      "display_name": "Ablative The Tremor-Fiend 21",
+      "weight": 1.486,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.943
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_22",
+      "display_name": "Phase-Bound The Tremor-Fiend 22",
+      "weight": 1.374,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.992
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_23",
+      "display_name": "Venom-Laced The Tremor-Fiend 23",
+      "weight": 1.015,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.015
+      }
+    },
+    {
+      "skin_id": "the_tremor_fiend_sonic_24",
+      "display_name": "Warden-Fused The Tremor-Fiend 24",
+      "weight": 1.014,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "hide",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 1.084
+      }
+    }
+  ]
+}

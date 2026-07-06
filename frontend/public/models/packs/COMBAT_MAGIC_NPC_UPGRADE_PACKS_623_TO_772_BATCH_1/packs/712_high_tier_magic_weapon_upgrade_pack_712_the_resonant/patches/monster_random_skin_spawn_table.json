@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Scrap-Stalker",
+  "element_context": "sonic",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_scrap_stalker_sonic_01",
+      "display_name": "Glass-Hardened The Scrap-Stalker 01",
+      "weight": 4.566,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "scrap",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 0.941
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_02",
+      "display_name": "Spore-Sick The Scrap-Stalker 02",
+      "weight": 4.674,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "crystal",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 0.929
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_03",
+      "display_name": "Chrome-Maw The Scrap-Stalker 03",
+      "weight": 4.509,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 1.035
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_04",
+      "display_name": "Eclipse-Synced The Scrap-Stalker 04",
+      "weight": 4.045,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 1.002
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_05",
+      "display_name": "Overcharged The Scrap-Stalker 05",
+      "weight": 3.934,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.053
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_06",
+      "display_name": "Bark-Crowned The Scrap-Stalker 06",
+      "weight": 3.742,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.077
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_07",
+      "display_name": "Echo-Split The Scrap-Stalker 07",
+      "weight": 3.541,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.038
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_08",
+      "display_name": "Null-Branded The Scrap-Stalker 08",
+      "weight": 3.548,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.089
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_09",
+      "display_name": "Rhythm-Warped The Scrap-Stalker 09",
+      "weight": 3.334,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 1.0
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_10",
+      "display_name": "Grav-Torn The Scrap-Stalker 10",
+      "weight": 3.309,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "jagged",
+        "armor_growth": "bark",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.005
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_11",
+      "display_name": "Ablative The Scrap-Stalker 11",
+      "weight": 3.203,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 0.955
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_12",
+      "display_name": "Phase-Bound The Scrap-Stalker 12",
+      "weight": 3.078,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 0.971
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_13",
+      "display_name": "Venom-Laced The Scrap-Stalker 13",
+      "weight": 2.684,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "void",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.108
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_14",
+      "display_name": "Warden-Fused The Scrap-Stalker 14",
+      "weight": 2.805,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 1.062
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_15",
+      "display_name": "Sovereign-Touched The Scrap-Stalker 15",
+      "weight": 2.339,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.051
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_16",
+      "display_name": "Data-Forged The Scrap-Stalker 16",
+      "weight": 2.215,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "hide",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 1.064
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_17",
+      "display_name": "Ash-Baptized The Scrap-Stalker 17",
+      "weight": 2.149,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "crystal",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.043
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_18",
+      "display_name": "Tide-Broken The Scrap-Stalker 18",
+      "weight": 2.122,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.047
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_19",
+      "display_name": "Magnetized The Scrap-Stalker 19",
+      "weight": 1.669,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "wide",
+        "armor_growth": "crystal",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 0.939
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_20",
+      "display_name": "Sonic-Scarred The Scrap-Stalker 20",
+      "weight": 1.625,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "void",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.017
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_21",
+      "display_name": "Glass-Hardened The Scrap-Stalker 21",
+      "weight": 1.578,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "hide",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.011
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_22",
+      "display_name": "Spore-Sick The Scrap-Stalker 22",
+      "weight": 1.227,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.087
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_23",
+      "display_name": "Chrome-Maw The Scrap-Stalker 23",
+      "weight": 1.264,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.028
+      }
+    },
+    {
+      "skin_id": "the_scrap_stalker_sonic_24",
+      "display_name": "Eclipse-Synced The Scrap-Stalker 24",
+      "weight": 0.957,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "crystal",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 1.108
+      }
+    }
+  ]
+}

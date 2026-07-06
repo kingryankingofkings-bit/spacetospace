@@ -1,0 +1,480 @@
+{
+  "pack_number": 938,
+  "family": "player_class_ability_fx",
+  "class": "The Sylvan Warden",
+  "monster": "The Scrap-Phalanx",
+  "boss": "The Resonance Maestro",
+  "support_npc": "Tidespeaker Nami",
+  "source_targets": {
+    "glb_targets": [
+      {
+        "source_zip": "424_skyship_hull_size_variants_batch_002_scout_sloop.zip",
+        "path_in_zip": "upgrade_glb_modules/05_skyship_hull.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "425_skyship_propulsion_upgrades_batch_003_courier_cutter.zip",
+        "path_in_zip": "upgrade_glb_modules/02_world_prop_polish.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "425_skyship_propulsion_upgrades_batch_003_courier_cutter.zip",
+        "path_in_zip": "upgrade_glb_modules/09_skyship_defense.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "426_skyship_sail_balloon_rigging_batch_004_patrol_corvette.zip",
+        "path_in_zip": "upgrade_glb_modules/06_skyship_engine.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "427_skyship_deck_interior_upgrades_batch_005_merchant_barge.zip",
+        "path_in_zip": "upgrade_glb_modules/03_world_landmark_light.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "427_skyship_deck_interior_upgrades_batch_005_merchant_barge.zip",
+        "path_in_zip": "upgrade_glb_modules/10_skyship_dock.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "428_skyship_weapons_defense_upgrades_batch_006_skywarden_frigate.zip",
+        "path_in_zip": "upgrade_glb_modules/07_skyship_rigging.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "429_skyship_docking_travel_upgrades_batch_007_heavy_carrier.zip",
+        "path_in_zip": "upgrade_glb_modules/04_atmosphere.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "431_water_star_cloud_visual_upgrades_batch_009_arkship.zip",
+        "path_in_zip": "upgrade_glb_modules/01_world_facade.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "431_water_star_cloud_visual_upgrades_batch_009_arkship.zip",
+        "path_in_zip": "upgrade_glb_modules/08_skyship_deck.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "432_global_object_material_pass_batch_010_repair_tug.zip",
+        "path_in_zip": "upgrade_glb_modules/05_skyship_hull.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "433_world_object_visual_polish_batch_011_micro_sky_skiff.zip",
+        "path_in_zip": "upgrade_glb_modules/02_world_prop_polish.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "433_world_object_visual_polish_batch_011_micro_sky_skiff.zip",
+        "path_in_zip": "upgrade_glb_modules/09_skyship_defense.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "434_skyship_hull_size_variants_batch_012_scout_sloop.zip",
+        "path_in_zip": "upgrade_glb_modules/06_skyship_engine.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "435_skyship_propulsion_upgrades_batch_013_courier_cutter.zip",
+        "path_in_zip": "upgrade_glb_modules/03_world_landmark_light.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "435_skyship_propulsion_upgrades_batch_013_courier_cutter.zip",
+        "path_in_zip": "upgrade_glb_modules/10_skyship_dock.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "436_skyship_sail_balloon_rigging_batch_014_patrol_corvette.zip",
+        "path_in_zip": "upgrade_glb_modules/07_skyship_rigging.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "upgrade_glb_modules/04_atmosphere.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "upgrade_glb_modules/01_world_facade.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "upgrade_glb_modules/08_skyship_deck.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "439_skyship_docking_travel_upgrades_batch_017_heavy_carrier.zip",
+        "path_in_zip": "upgrade_glb_modules/05_skyship_hull.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "440_environment_lighting_atmosphere_upgrades_batch_018_dreadnought.zip",
+        "path_in_zip": "upgrade_glb_modules/02_world_prop_polish.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "440_environment_lighting_atmosphere_upgrades_batch_018_dreadnought.zip",
+        "path_in_zip": "upgrade_glb_modules/09_skyship_defense.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "441_water_star_cloud_visual_upgrades_batch_019_arkship.zip",
+        "path_in_zip": "upgrade_glb_modules/06_skyship_engine.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "442_global_object_material_pass_batch_020_repair_tug.zip",
+        "path_in_zip": "upgrade_glb_modules/03_world_landmark_light.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "442_global_object_material_pass_batch_020_repair_tug.zip",
+        "path_in_zip": "upgrade_glb_modules/10_skyship_dock.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "443_world_object_visual_polish_batch_021_micro_sky_skiff.zip",
+        "path_in_zip": "upgrade_glb_modules/07_skyship_rigging.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "444_skyship_hull_size_variants_batch_022_scout_sloop.zip",
+        "path_in_zip": "upgrade_glb_modules/04_atmosphere.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/01_intake_checkpoint_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/08_emergency_purge_system_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/05_deep_transit_system/03_the_revision_labs/06_prototype_theater_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/04_luminroot_shrine_clearing_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/02_hushbloom_clearing_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/09_silent_bloom_gate_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/03_the_canopy_portrait_halls/07_the_trap_floor_hall_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/05_the_voyage_incubator/03_the_growth_laboratories_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/01_the_eternal_throne_ring_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/08_the_rift_sanctum_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/06_spectator_spires_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/04_research_pens_alpha_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/09_the_magma_core_forges/02_the_hammer_halls_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/09_the_magma_core_forges/09_forgeward_gate_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/07_meditation_huts_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/05_resonance_basin_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/02_standing_wave_gulch_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/07_ravine_conveyor_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/05_drill_quadrant_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/03_deprecated_hall_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/01_the_hull_maze_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/06_the_scrap_yard_labyrinth/08_compass_jam_sector_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      }
+    ],
+    "audio_targets": [
+      {
+        "source_zip": "210_global_boss_arena_floor_markings_kit.zip",
+        "path_in_zip": "audio/global_boss_arena_floor_markings_kit_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "boss"
+        ]
+      },
+      {
+        "source_zip": "212_global_corporate_hazard_label_kit.zip",
+        "path_in_zip": "audio/global_corporate_hazard_label_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "214_global_order_of_the_epochalypse_corruption_kit.zip",
+        "path_in_zip": "audio/global_order_of_the_epochalypse_corruption_kit_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "217_global_weather_decal_kit.zip",
+        "path_in_zip": "audio/global_weather_decal_kit_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "weather"
+        ]
+      },
+      {
+        "source_zip": "219_global_lava_and_heat_kit.zip",
+        "path_in_zip": "audio/global_lava_and_heat_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "221_global_transit_neon_line_kit.zip",
+        "path_in_zip": "audio/global_transit_neon_line_kit_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "12_audio_placeholder_cue_pack_v1.zip",
+        "path_in_zip": "audio_wav/block_clang.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "12_audio_placeholder_cue_pack_v1.zip",
+        "path_in_zip": "audio_wav/monster_roar_boss.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "monster",
+          "boss"
+        ]
+      }
+    ],
+    "metadata_targets": [
+      {
+        "source_zip": "478_skyship_weapons_defense_upgrades_batch_056_skywarden_frigate.zip",
+        "path_in_zip": "patches/skyship_size_upgrade_plan.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "479_skyship_docking_travel_upgrades_batch_057_heavy_carrier.zip",
+        "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "479_skyship_docking_travel_upgrades_batch_057_heavy_carrier.zip",
+        "path_in_zip": "VALIDATION_REPORT.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "480_environment_lighting_atmosphere_upgrades_batch_058_dreadnought.zip",
+        "path_in_zip": "manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "481_water_star_cloud_visual_upgrades_batch_059_arkship.zip",
+        "path_in_zip": "patches/target_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "482_global_object_material_pass_batch_060_repair_tug.zip",
+        "path_in_zip": "patches/qa_validation_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "483_world_object_visual_polish_batch_061_micro_sky_skiff.zip",
+        "path_in_zip": "patches/prefab_variant_patch.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "484_skyship_hull_size_variants_batch_062_scout_sloop.zip",
+        "path_in_zip": "patches/material_visual_upgrade_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      }
+    ]
+  },
+  "antigravity_2_0_tasks": [
+    "Create non-destructive upgraded prefab variants.",
+    "Apply random monster skin tables at spawn time.",
+    "Bind player class ability VFX to level progression and subclass specialization.",
+    "Attach high-tier weapon/armor GLBs and material maps to item prefabs.",
+    "Add combat-start camera trigger using camera rules.",
+    "Add weather, sun color, terrain, and nature material overrides.",
+    "QA duplicate monster appearances across a 50-spawn encounter sample."
+  ]
+}

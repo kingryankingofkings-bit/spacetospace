@@ -1,0 +1,47 @@
+{
+  "trigger_glb": "glb_upgrades/05_dynamic_camera_trigger.glb",
+  "combat_start_conditions": [
+    "enemy_aggro",
+    "player_attack_landed",
+    "boss_intro_started",
+    "special_event_triggered"
+  ],
+  "profiles": {
+    "standard_horde": {
+      "fov": 63,
+      "distance": 6.8,
+      "height": 2.4,
+      "lag": 0.12,
+      "shake": 0.08
+    },
+    "boss": {
+      "fov": 70,
+      "distance": 9.5,
+      "height": 3.5,
+      "lag": 0.18,
+      "shake": 0.12
+    },
+    "aerial_combo": {
+      "fov": 74,
+      "distance": 7.2,
+      "height": 4.8,
+      "lag": 0.08,
+      "shake": 0.05
+    },
+    "special_attack": {
+      "fov": 66,
+      "distance": 5.5,
+      "height": 2.8,
+      "lag": 0.04,
+      "shake": 0.18
+    }
+  },
+  "smoothness": {
+    "input_buffer_ms": 135,
+    "soft_lock_blend_ms": 180,
+    "target_switch_blend_ms": 220,
+    "combat_exit_delay_ms": 4200,
+    "avoid_wall_clip": true,
+    "telegraph_priority_framing": true
+  }
+}

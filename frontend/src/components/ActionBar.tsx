@@ -11,7 +11,6 @@ export const ActionBar: React.FC = () => {
   const [cooldowns, setCooldowns] = useState<Record<string, { expires: number, total: number }>>({});
   const [activeAbilityId, setActiveAbilityId] = useState<string | null>(null);
 
-  // Extract the first 4 "Active" unlocked skills
   const activeAbilities = React.useMemo(() => {
     if (!playerClass || !CLASSES[playerClass]) return [];
     
@@ -44,7 +43,6 @@ export const ActionBar: React.FC = () => {
   const handleUseAbility = (ability: any) => {
     if (!ability) return;
     
-    // Check cooldown
     if (cooldowns[ability.id] && cooldowns[ability.id].expires > Date.now()) {
       return; 
     }
@@ -73,16 +71,7 @@ export const ActionBar: React.FC = () => {
   if (!playerClass) return null;
 
   return (
-    <div style={{
-      position: 'absolute',
-      bottom: '30px',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      display: 'flex',
-      gap: '16px',
-      zIndex: 100,
-      pointerEvents: 'auto'
-    }}>
+    <div className="absolute flex gap-4 z-100 pointer-events-auto" style={{ bottom: '40px', left: '50%', transform: 'translateX(-50%)' }}>
       {activeAbilities.map((ability, index) => {
         const cd = ability && cooldowns[ability.id];
         const remainingCd = cd ? Math.max(0, cd.expires - Date.now()) : 0;
@@ -93,39 +82,36 @@ export const ActionBar: React.FC = () => {
         return (
           <motion.div 
             key={index}
-            whileHover={ability && !isOnCooldown ? { scale: 1.05, y: -5 } : {}}
+            whileHover={ability && !isOnCooldown ? { scale: 1.1, y: -5 } : {}}
             whileTap={ability && !isOnCooldown ? { scale: 0.95 } : {}}
-            animate={isActive ? { scale: [1, 0.8, 1.1, 1] } : {}}
+            animate={isActive ? { scale: [1, 0.8, 1.2, 1] } : {}}
             onClick={() => handleUseAbility(ability)}
+            className="aaa-panel"
             style={{
-              width: '64px',
-              height: '64px',
-              background: 'rgba(10, 10, 15, 0.85)',
-              backdropFilter: 'blur(16px)',
-              border: ability 
-                ? isOnCooldown 
-                  ? '1px solid rgba(255, 255, 255, 0.1)' 
-                  : '1px solid rgba(0, 240, 255, 0.4)' 
-                : '1px solid rgba(255, 255, 255, 0.05)',
-              borderRadius: '8px',
+              width: '80px',
+              height: '80px',
+              padding: 0,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               cursor: ability && !isOnCooldown ? 'pointer' : 'default',
-              position: 'relative',
-              overflow: 'hidden',
-              boxShadow: ability && !isOnCooldown ? '0 0 20px rgba(0, 240, 255, 0.15), inset 0 0 10px rgba(0, 240, 255, 0.1)' : '0 4px 10px rgba(0,0,0,0.5)',
+              border: ability 
+                ? isOnCooldown 
+                  ? '1px solid var(--panel-border)' 
+                  : '1px solid var(--accent-primary)' 
+                : '1px solid rgba(255, 255, 255, 0.05)',
+              boxShadow: ability && !isOnCooldown ? '0 0 20px var(--accent-primary-glow), inset 0 0 10px rgba(0, 240, 255, 0.2)' : '0 10px 20px rgba(0,0,0,0.8)',
+              background: ability && !isOnCooldown ? 'rgba(0, 240, 255, 0.1)' : 'var(--panel-bg)'
             }}
           >
             {/* Slot Number */}
             <div style={{
               position: 'absolute',
-              top: '4px',
-              left: '6px',
-              color: ability && !isOnCooldown ? 'rgba(0, 240, 255, 0.8)' : 'rgba(255,255,255,0.3)',
-              fontSize: '0.75rem',
-              fontWeight: '900',
-              fontFamily: "'Outfit', sans-serif"
+              top: '6px',
+              left: '8px',
+              color: ability && !isOnCooldown ? 'var(--accent-primary)' : 'var(--text-muted)',
+              fontSize: '0.85rem',
+              fontWeight: 900
             }}>
               {index + 1}
             </div>
@@ -133,13 +119,12 @@ export const ActionBar: React.FC = () => {
             {/* Ability Icon Placeholder */}
             {ability && (
               <div style={{
-                color: isOnCooldown ? 'rgba(255,255,255,0.3)' : 'white',
-                fontSize: '0.85rem',
+                color: isOnCooldown ? 'var(--text-muted)' : 'var(--text-main)',
+                fontSize: '1rem',
                 textAlign: 'center',
-                padding: '4px',
-                fontWeight: '800',
-                fontFamily: "'Outfit', sans-serif",
-                letterSpacing: '1px'
+                fontWeight: 800,
+                letterSpacing: '1px',
+                zIndex: 10
               }}>
                 {ability.name.split(' ').map((w: string) => w[0]).join('')}
               </div>
@@ -162,7 +147,8 @@ export const ActionBar: React.FC = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    backdropFilter: 'grayscale(100%)'
+                    backdropFilter: 'grayscale(100%)',
+                    zIndex: 5
                   }}
                 >
                   <span style={{
@@ -170,10 +156,9 @@ export const ActionBar: React.FC = () => {
                     top: '50%',
                     transform: 'translateY(-50%)',
                     color: 'white',
-                    fontWeight: '900',
-                    fontSize: '1rem',
-                    textShadow: '0 0 8px black',
-                    fontFamily: "'Outfit', sans-serif"
+                    fontWeight: 900,
+                    fontSize: '1.2rem',
+                    textShadow: '0 0 10px black'
                   }}>
                     {Math.ceil(remainingCd / 1000)}
                   </span>

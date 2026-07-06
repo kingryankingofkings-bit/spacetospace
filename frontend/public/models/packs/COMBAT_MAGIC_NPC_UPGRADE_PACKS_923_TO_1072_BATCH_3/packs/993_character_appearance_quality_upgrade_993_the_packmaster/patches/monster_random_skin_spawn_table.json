@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Iron-Jaw Hound",
+  "element_context": "pack",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_iron_jaw_hound_pack_01",
+      "display_name": "Warden-Fused The Iron-Jaw Hound 01",
+      "weight": 4.576,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "crystal",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.045
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_02",
+      "display_name": "Sovereign-Touched The Iron-Jaw Hound 02",
+      "weight": 4.398,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 0.979
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_03",
+      "display_name": "Data-Forged The Iron-Jaw Hound 03",
+      "weight": 4.217,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "crystal",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.002
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_04",
+      "display_name": "Ash-Baptized The Iron-Jaw Hound 04",
+      "weight": 4.237,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.946
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_05",
+      "display_name": "Tide-Broken The Iron-Jaw Hound 05",
+      "weight": 4.07,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 0.983
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_06",
+      "display_name": "Magnetized The Iron-Jaw Hound 06",
+      "weight": 3.939,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 1.01
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_07",
+      "display_name": "Sonic-Scarred The Iron-Jaw Hound 07",
+      "weight": 3.787,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 0.986
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_08",
+      "display_name": "Glass-Hardened The Iron-Jaw Hound 08",
+      "weight": 3.482,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.038
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_09",
+      "display_name": "Spore-Sick The Iron-Jaw Hound 09",
+      "weight": 3.526,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.106
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_10",
+      "display_name": "Chrome-Maw The Iron-Jaw Hound 10",
+      "weight": 3.343,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "hide",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.051
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_11",
+      "display_name": "Eclipse-Synced The Iron-Jaw Hound 11",
+      "weight": 3.148,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.935
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_12",
+      "display_name": "Overcharged The Iron-Jaw Hound 12",
+      "weight": 2.823,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 1.097
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_13",
+      "display_name": "Bark-Crowned The Iron-Jaw Hound 13",
+      "weight": 2.949,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "jagged",
+        "armor_growth": "bark",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 0.964
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_14",
+      "display_name": "Echo-Split The Iron-Jaw Hound 14",
+      "weight": 2.535,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "crystal",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 0.987
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_15",
+      "display_name": "Null-Branded The Iron-Jaw Hound 15",
+      "weight": 2.303,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 0.999
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_16",
+      "display_name": "Rhythm-Warped The Iron-Jaw Hound 16",
+      "weight": 2.34,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.039
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_17",
+      "display_name": "Grav-Torn The Iron-Jaw Hound 17",
+      "weight": 1.973,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "crystal",
+        "weather_tint": "gold noon",
+        "scale_jitter": 1.047
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_18",
+      "display_name": "Ablative The Iron-Jaw Hound 18",
+      "weight": 2.105,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.11
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_19",
+      "display_name": "Phase-Bound The Iron-Jaw Hound 19",
+      "weight": 1.993,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 0.926
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_20",
+      "display_name": "Venom-Laced The Iron-Jaw Hound 20",
+      "weight": 1.826,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 1.066
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_21",
+      "display_name": "Warden-Fused The Iron-Jaw Hound 21",
+      "weight": 1.401,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "void",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.027
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_22",
+      "display_name": "Sovereign-Touched The Iron-Jaw Hound 22",
+      "weight": 1.233,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.013
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_23",
+      "display_name": "Data-Forged The Iron-Jaw Hound 23",
+      "weight": 1.039,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 0.943
+      }
+    },
+    {
+      "skin_id": "the_iron_jaw_hound_pack_24",
+      "display_name": "Ash-Baptized The Iron-Jaw Hound 24",
+      "weight": 0.973,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 0.951
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "class": "Apex Mutator",
+  "combat_style": "Adaptive Brawler",
+  "subclass": "Chimera Strand",
+  "specialization": "Feral Regeneration",
+  "primary_ability": "The Anomaly Virus",
+  "resource": "Evolution Points",
+  "ability_vfx": {
+    "cast_module": "glb_modules/01_class_special_attack_vfx.glb",
+    "emission_map": "texture_upgrades/01_class_ability_emission.png",
+    "glyph_sheet": "texture_upgrades/02_subclass_talent_glyph_sheet.png",
+    "cast_audio": "audio_cues/01_special_attack_cast.wav",
+    "impact_audio": "audio_cues/02_magic_impact.wav",
+    "engine_profile": {
+      "spawn_socket": "hands_or_weapon_tip",
+      "lifetime_ms": 770,
+      "blend_mode": "additive_emissive",
+      "hitstop_ms": 59,
+      "combo_safe_cancel_window_ms": 180
+    }
+  },
+  "all_class_subclasses": [
+    "Biomech Beast",
+    "Chimera Strand",
+    "Data-Code Deviant",
+    "Primal Catalyst"
+  ],
+  "all_class_specializations": [
+    "Cyber-Strike",
+    "Scrap-Armor",
+    "Venomous Adaptation",
+    "Feral Regeneration",
+    "Recursive Evolution",
+    "Corrupted File",
+    "Earth-Shaker",
+    "Apex Predator"
+  ],
+  "coverage_note": "Across the 600-pack set, class, subclass, specialization, and level-tree ability coverage is rotated through all ten player classes."
+}

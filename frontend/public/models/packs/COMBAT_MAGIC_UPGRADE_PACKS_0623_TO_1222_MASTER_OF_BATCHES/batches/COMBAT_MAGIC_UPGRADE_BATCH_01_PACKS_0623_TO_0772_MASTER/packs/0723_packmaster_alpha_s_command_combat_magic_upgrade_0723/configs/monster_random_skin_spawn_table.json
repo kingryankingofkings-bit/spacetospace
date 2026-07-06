@@ -1,0 +1,804 @@
+{
+  "target_monster": "The Sylvan Juggernaut",
+  "rarity_goal": "It should be rare to see two identical monsters.",
+  "algorithm": {
+    "base": "weighted_random_without_recent_replacement",
+    "anti_duplicate_memory": 3,
+    "encounter_seed": "zone_id + encounter_id + spawn_index",
+    "elite_bonus_variance": true
+  },
+  "skin_roll_table": [
+    {
+      "skin_id": "the_sylvan_juggernaut_echo_split_deep-water_00",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Echo-Split The Sylvan Juggernaut - Deep-Water",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_null_branded_archive_01",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Null-Branded The Sylvan Juggernaut - Archive",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_grav_torn_festival_02",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Grav-Torn The Sylvan Juggernaut - Festival",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_tide_broken_quarantine_03",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Tide-Broken The Sylvan Juggernaut - Quarantine",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_magnetized_void_04",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Magnetized The Sylvan Juggernaut - Void",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_sonic_scarred_storm_05",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Sonic-Scarred The Sylvan Juggernaut - Storm",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_glass_hardened_urban_06",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Glass-Hardened The Sylvan Juggernaut - Urban",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_spore_sick_wilds_07",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Spore-Sick The Sylvan Juggernaut - Wilds",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_chrome_maw_waste_08",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Chrome-Maw The Sylvan Juggernaut - Waste",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_ash_baptized_geothermal_09",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Ash-Baptized The Sylvan Juggernaut - Geothermal",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_overcharged_cosmic_10",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Overcharged The Sylvan Juggernaut - Cosmic",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_bark_crowned_transit_11",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Bark-Crowned The Sylvan Juggernaut - Transit",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_echo_split_deep-water_12",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Echo-Split The Sylvan Juggernaut - Deep-Water",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_null_branded_archive_13",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Null-Branded The Sylvan Juggernaut - Archive",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_grav_torn_festival_14",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Grav-Torn The Sylvan Juggernaut - Festival",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_tide_broken_quarantine_15",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Tide-Broken The Sylvan Juggernaut - Quarantine",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_magnetized_void_16",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Magnetized The Sylvan Juggernaut - Void",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_sonic_scarred_storm_17",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Sonic-Scarred The Sylvan Juggernaut - Storm",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_glass_hardened_urban_18",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Glass-Hardened The Sylvan Juggernaut - Urban",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_spore_sick_wilds_19",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Spore-Sick The Sylvan Juggernaut - Wilds",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_chrome_maw_waste_20",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Chrome-Maw The Sylvan Juggernaut - Waste",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_ash_baptized_geothermal_21",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Ash-Baptized The Sylvan Juggernaut - Geothermal",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_overcharged_cosmic_22",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Overcharged The Sylvan Juggernaut - Cosmic",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_bark_crowned_transit_23",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Bark-Crowned The Sylvan Juggernaut - Transit",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_echo_split_deep-water_24",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Echo-Split The Sylvan Juggernaut - Deep-Water",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_null_branded_archive_25",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Null-Branded The Sylvan Juggernaut - Archive",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_grav_torn_festival_26",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Grav-Torn The Sylvan Juggernaut - Festival",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_tide_broken_quarantine_27",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Tide-Broken The Sylvan Juggernaut - Quarantine",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_magnetized_void_28",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Magnetized The Sylvan Juggernaut - Void",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_sonic_scarred_storm_29",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Sonic-Scarred The Sylvan Juggernaut - Storm",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_glass_hardened_urban_30",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Glass-Hardened The Sylvan Juggernaut - Urban",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_spore_sick_wilds_31",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Spore-Sick The Sylvan Juggernaut - Wilds",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_chrome_maw_waste_32",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Chrome-Maw The Sylvan Juggernaut - Waste",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_ash_baptized_geothermal_33",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Ash-Baptized The Sylvan Juggernaut - Geothermal",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_overcharged_cosmic_34",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Overcharged The Sylvan Juggernaut - Cosmic",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_bark_crowned_transit_35",
+      "monster_family": "The Sylvan Juggernaut",
+      "display_name": "Bark-Crowned The Sylvan Juggernaut - Transit",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    }
+  ]
+}

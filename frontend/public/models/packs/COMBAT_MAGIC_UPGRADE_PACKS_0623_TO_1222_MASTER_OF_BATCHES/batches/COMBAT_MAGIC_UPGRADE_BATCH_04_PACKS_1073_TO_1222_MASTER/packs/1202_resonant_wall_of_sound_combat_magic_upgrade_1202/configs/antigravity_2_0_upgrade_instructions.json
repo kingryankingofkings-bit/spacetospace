@@ -1,0 +1,358 @@
+{
+  "pack_number": 1202,
+  "action": "create non-destructive upgraded prefab variants",
+  "target_references_sample": [
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/skyships/SKYSHIP_04_SKYHOOK_CUTTER_skyhook_cutter.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_postgame_pack/data/sky_wardens_roster.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "dawnforge_map_coverage_support_pack(1).zip",
+      "path_in_zip": "dawnforge_map_coverage_support_pack/data/quest_to_map_coverage_matrix.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/01_arrival_harbor/10_quill_gearmantle_archivist_of_arrival.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/03_brant_voidrill_tactician_under_waystone.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier/16_draven_starfall_tamer_at_waystone.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/03_tempest_lookout/09_asha_cinderholt_smith_of_tempest.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/04_ember_cay/02_lyric_mossguard_ranger_at_ember.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/04_ember_cay/15_vela_signalborn_guide_from_ember.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/05_tideglass_lagoon/08_quill_brightlock_keeper_under_tideglass.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/06_zephyr_bridge/01_ossa_ashvein_oracle_near_zephyr.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/06_zephyr_bridge/14_kiva_wayfare_guide_from_zephyr.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/07_elemental_shrine_ring/07_makoa_stormhush_archivist_under_elemental.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/07_elemental_shrine_ring/20_talia_voidrill_navigator_at_elemental.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/08_transit_beacon/13_calder_spirebound_ranger_near_transit.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/06_kiva_nullborne_warden_near_outer.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/19_bex_runeclasp_scout_under_outer.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/12_tamsin_gravesong_watcher_from_surface.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/02_main_observation_dome/05_kael_cragwarden_broker_of_main.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/02_main_observation_dome/18_draven_emberkin_fixer_under_main.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/03_pressure_gate/11_orin_echohand_responder_at_pressure.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/04_coral_laboratory/04_eryk_voxmere_tamer_of_coral.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/04_coral_laboratory/17_ilyra_chromabell_guide_from_coral.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/05_deepwater_causeway/10_lyric_skyharrow_keeper_near_deepwater.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/03_maelis_holloway_watcher_of_ballast.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/16_sable_nullborne_diver_at_ballast.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/09_tovin_latchward_ranger_under_trench.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/08_floodlock_annex/02_ossa_nullborne_cartographer_from_floodlock.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/08_floodlock_annex/15_thorne_emberkin_fixer_under_floodlock.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/09_the_abyss_crown/08_pax_glassroot_archivist_at.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/01_crater_gate/01_noor_tideforged_guide_near_crater.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/01_crater_gate/14_ren_whispercoil_responder_at_crater.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/02_chainlift_gantry/07_kael_trenchmark_tactician_of_chainlift.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/02_chainlift_gantry/20_sarai_skyharrow_keeper_under_chainlift.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/03_main_crucible/13_elo_stormhush_pilgrim_at_main.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/04_slag_spillway/06_vexa_rootborne_engineer_from_slag.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/04_slag_spillway/19_astra_spirebound_navigator_under_slag.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/05_hammer_floor/12_maelis_gravesong_broker_under_hammer.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/06_foundry_vault/05_korra_chromabell_responder_of_foundry.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/06_foundry_vault/18_auren_chromabell_oracle_from_foundry.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/07_heat_sink_towers/11_maven_cinderholt_specialist_from_heat.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/08_ore_switchyard/04_vexa_whispercoil_responder_of_ore.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc"
+      ]
+    }
+  ],
+  "required_components": [
+    "MaterialVariantSet",
+    "VFXLifetime",
+    "AbilityTriggerBinding",
+    "MonsterSkinRandomizer",
+    "CombatFlowProfile",
+    "DynamicCombatCameraTrigger",
+    "WeatherSunProfile",
+    "CharacterQualityMaterialPatch",
+    "HighTierEquipmentAffixBinding",
+    "SupportNPCAssistBinding"
+  ],
+  "validation": [
+    "random monster skin table returns no duplicate within recent window",
+    "combat camera blends without breaking input",
+    "class ability VFX spawns on correct socket",
+    "weather/sun LUT changes are reversible",
+    "high tier weapon and armor auras are optional prefab children",
+    "support NPC assist marker does not block navigation"
+  ]
+}

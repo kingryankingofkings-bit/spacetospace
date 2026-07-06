@@ -13,6 +13,8 @@ export interface Player {
   unlockedSkills?: string[];
   inventory?: any[];
   quests?: any[];
+  appearance?: any;
+  previewAppearance?: any;
 }
 
 interface MultiplayerState {
@@ -34,12 +36,14 @@ interface MultiplayerState {
   dialogueTree: any | null;
   sessionId: string | null;
   worldTime: 'day' | 'night';
+  previewAppearance: any | null;
 
   sendMove: (x: number, y: number, z: number) => void;
   sendAttack: (targetId: string) => void;
   sendAbility: (abilityId: string, targetId?: string, x?: number, y?: number, z?: number) => void;
   sendFastTravel: (zone: string) => void;
   sendAppearance: (appearance: any) => void;
+  setPreviewAppearance: (appearance: any) => void;
   selectClass: (classId: string) => void;
   unlockSkill: (skillId: string) => void;
   sendSpawnBoss: (bossType: string) => void;
@@ -81,6 +85,7 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
     dialogueTree: null,
     sessionId: null,
     worldTime: 'day',
+    previewAppearance: null,
 
     sendMove: (x, y, z) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
@@ -107,7 +112,9 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
         sharedWs.send(JSON.stringify({ type: 'set_appearance', appearance }));
       }
+      set({ previewAppearance: null }); // clear preview after saving
     },
+    setPreviewAppearance: (appearance) => set({ previewAppearance: appearance }),
     selectClass: (classId) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
         sharedWs.send(JSON.stringify({ type: 'select_class', classId }));
@@ -258,7 +265,19 @@ export const initMultiplayer = () => {
     } else if (data.type === 'remove_object' || data.type === 'object_removed') {
       set((state) => ({ worldObjects: state.worldObjects.filter((o) => o.id !== data.id) }));
     } else if (data.type === 'npc_update') {
-      set({ worldNpcs: data.npcs || [] });
+      set((state) => {
+        const newNpcs = [...state.worldNpcs];
+        (data.npcs || []).forEach((updatedNpc: any) => {
+          const idx = newNpcs.findIndex((n) => n.id === updatedNpc.id);
+          if (idx !== -1) newNpcs[idx] = { ...newNpcs[idx], ...updatedNpc };
+          else newNpcs.push(updatedNpc);
+        });
+        return { worldNpcs: newNpcs };
+      });
+    } else if (data.type === 'npc_spawned') {
+      set((state) => ({ worldNpcs: [...state.worldNpcs, data.npc] }));
+    } else if (data.type === 'npc_despawned') {
+      set((state) => ({ worldNpcs: state.worldNpcs.filter(n => n.id !== data.npcId) }));
     } else if (data.type === "boss_update") {
       set({ bosses: data.bosses || [] });
     } else if (data.type === "boss_spawned") {

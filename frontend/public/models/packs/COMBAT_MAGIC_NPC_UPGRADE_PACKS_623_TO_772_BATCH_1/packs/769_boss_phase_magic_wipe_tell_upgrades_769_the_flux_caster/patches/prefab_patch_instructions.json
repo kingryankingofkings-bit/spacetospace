@@ -1,0 +1,551 @@
+{
+  "pack_number": 769,
+  "family": "boss_phase_magic",
+  "class": "The Flux-Caster",
+  "monster": "The Scrap-Phalanx",
+  "boss": "The Null Anomaly",
+  "support_npc": "Kaelia of the Roots",
+  "source_targets": {
+    "glb_targets": [
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/04_reset_hall/12_vela_gantryn_tamer_from_reset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/04_reset_hall/19_thorne_cragwarden_scout_from_reset.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/05_temporal_scaffold/06_sable_deepwell_fixer_at_temporal.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/05_temporal_scaffold/13_yara_wayfare_warden_at_temporal.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/05_temporal_scaffold/20_lio_mossguard_keeper_of_temporal.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/06_prototype_theater/07_talia_stormhush_watcher_at_prototype.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/06_prototype_theater/14_astra_frostrelay_tactician_of_prototype.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/07_recovery_loop/01_soren_rootborne_pilgrim_at_recovery.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/07_recovery_loop/08_talia_latchward_tactician_of_recovery.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/07_recovery_loop/15_kiva_rootborne_mechanist_under_recovery.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/08_observation_catwalk/02_ren_frostrelay_engineer_at_observation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/08_observation_catwalk/09_edda_emberkin_operator_near_observation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/08_observation_catwalk/16_kiva_whispercoil_tamer_of_observation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/09_final_reversion_gate/03_ossa_chromabell_broker_under_final.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/09_final_reversion_gate/10_calder_latchward_watcher_at_final.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/03_the_revision_labs/09_final_reversion_gate/17_sable_trenchmark_pilgrim_from_final.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/01_intake_checkpoint/04_cassian_voxmere_courier_near_intake.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/01_intake_checkpoint/11_elo_signalborn_tactician_under_intake.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/01_intake_checkpoint/18_quill_echohand_custodian_from_intake.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/02_isolation_wing_alpha/05_bex_chromabell_herald_under_isolation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/02_isolation_wing_alpha/12_talia_mossguard_oracle_from_isolation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/02_isolation_wing_alpha/19_mirek_spirebound_custodian_under_isolation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/03_decon_corridor/06_thorne_stormhush_medic_of_decon.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/03_decon_corridor/13_dax_latchward_broker_near_decon.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/03_decon_corridor/20_keir_nullborne_specialist_under_decon.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/04_observation_ring/07_luma_starfall_herald_of_observation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/04_observation_ring/14_kael_holloway_ranger_near_observation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/05_sedation_ward/01_noor_ashvein_diver_of_sedation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "426_skyship_sail_balloon_rigging_batch_004_patrol_corvette.zip",
+        "path_in_zip": "texture_upgrades/05_skyship_hull_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "426_skyship_sail_balloon_rigging_batch_004_patrol_corvette.zip",
+        "path_in_zip": "texture_upgrades/12_water_reflection_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "427_skyship_deck_interior_upgrades_batch_005_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/07_skyship_sail_fabric.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "428_skyship_weapons_defense_upgrades_batch_006_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/02_world_trim_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "428_skyship_weapons_defense_upgrades_batch_006_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/09_skyship_banner_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "429_skyship_docking_travel_upgrades_batch_007_heavy_carrier.zip",
+        "path_in_zip": "texture_upgrades/04_world_normal_proxy_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "429_skyship_docking_travel_upgrades_batch_007_heavy_carrier.zip",
+        "path_in_zip": "texture_upgrades/11_starfield_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "431_water_star_cloud_visual_upgrades_batch_009_arkship.zip",
+        "path_in_zip": "texture_upgrades/06_skyship_edgewear_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "432_global_object_material_pass_batch_010_repair_tug.zip",
+        "path_in_zip": "texture_upgrades/01_world_albedo_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "432_global_object_material_pass_batch_010_repair_tug.zip",
+        "path_in_zip": "texture_upgrades/08_skyship_engine_glow.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "433_world_object_visual_polish_batch_011_micro_sky_skiff.zip",
+        "path_in_zip": "texture_upgrades/03_world_emission_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "433_world_object_visual_polish_batch_011_micro_sky_skiff.zip",
+        "path_in_zip": "texture_upgrades/10_cloud_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "434_skyship_hull_size_variants_batch_012_scout_sloop.zip",
+        "path_in_zip": "texture_upgrades/05_skyship_hull_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "434_skyship_hull_size_variants_batch_012_scout_sloop.zip",
+        "path_in_zip": "texture_upgrades/12_water_reflection_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "435_skyship_propulsion_upgrades_batch_013_courier_cutter.zip",
+        "path_in_zip": "texture_upgrades/07_skyship_sail_fabric.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "436_skyship_sail_balloon_rigging_batch_014_patrol_corvette.zip",
+        "path_in_zip": "texture_upgrades/02_world_trim_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "436_skyship_sail_balloon_rigging_batch_014_patrol_corvette.zip",
+        "path_in_zip": "texture_upgrades/09_skyship_banner_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/04_world_normal_proxy_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/11_starfield_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/06_skyship_edgewear_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "439_skyship_docking_travel_upgrades_batch_017_heavy_carrier.zip",
+        "path_in_zip": "texture_upgrades/01_world_albedo_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "439_skyship_docking_travel_upgrades_batch_017_heavy_carrier.zip",
+        "path_in_zip": "texture_upgrades/08_skyship_engine_glow.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "440_environment_lighting_atmosphere_upgrades_batch_018_dreadnought.zip",
+        "path_in_zip": "texture_upgrades/03_world_emission_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "440_environment_lighting_atmosphere_upgrades_batch_018_dreadnought.zip",
+        "path_in_zip": "texture_upgrades/10_cloud_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      }
+    ],
+    "audio_targets": [
+      {
+        "source_zip": "136_the_provisioning_sectors_shop_item_skin_kit.zip",
+        "path_in_zip": "audio/the_provisioning_sectors_shop_item_skin_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "138_the_raid_rush_choke_points_shop_item_skin_kit.zip",
+        "path_in_zip": "audio/the_raid_rush_choke_points_shop_item_skin_kit_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "141_the_resonant_peaks_shop_item_skin_kit.zip",
+        "path_in_zip": "audio/the_resonant_peaks_shop_item_skin_kit_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "143_the_heavy_chewer_canyons_shop_item_skin_kit.zip",
+        "path_in_zip": "audio/the_heavy_chewer_canyons_shop_item_skin_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "145_the_deprecated_repositories_shop_item_skin_kit.zip",
+        "path_in_zip": "audio/the_deprecated_repositories_shop_item_skin_kit_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "148_the_burning_playa_shop_item_skin_kit.zip",
+        "path_in_zip": "audio/the_burning_playa_shop_item_skin_kit_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "150_the_phonetic_wastes_shop_item_skin_kit.zip",
+        "path_in_zip": "audio/the_phonetic_wastes_shop_item_skin_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "152_the_whispering_glade_shop_item_skin_kit.zip",
+        "path_in_zip": "audio/the_whispering_glade_shop_item_skin_kit_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      }
+    ],
+    "metadata_targets": [
+      {
+        "source_zip": "549_skyship_docking_travel_upgrades_batch_127_heavy_carrier.zip",
+        "path_in_zip": "patches/qa_validation_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "550_environment_lighting_atmosphere_upgrades_batch_128_dreadnought.zip",
+        "path_in_zip": "patches/prefab_variant_patch.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "551_water_star_cloud_visual_upgrades_batch_129_arkship.zip",
+        "path_in_zip": "patches/material_visual_upgrade_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "552_global_object_material_pass_batch_130_repair_tug.zip",
+        "path_in_zip": "patches/skyship_size_upgrade_plan.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "553_world_object_visual_polish_batch_131_micro_sky_skiff.zip",
+        "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "553_world_object_visual_polish_batch_131_micro_sky_skiff.zip",
+        "path_in_zip": "VALIDATION_REPORT.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "554_skyship_hull_size_variants_batch_132_scout_sloop.zip",
+        "path_in_zip": "manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "555_skyship_propulsion_upgrades_batch_133_courier_cutter.zip",
+        "path_in_zip": "patches/target_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      }
+    ]
+  },
+  "antigravity_2_0_tasks": [
+    "Create non-destructive upgraded prefab variants.",
+    "Apply random monster skin tables at spawn time.",
+    "Bind player class ability VFX to level progression and subclass specialization.",
+    "Attach high-tier weapon/armor GLBs and material maps to item prefabs.",
+    "Add combat-start camera trigger using camera rules.",
+    "Add weather, sun color, terrain, and nature material overrides.",
+    "QA duplicate monster appearances across a 50-spawn encounter sample."
+  ]
+}

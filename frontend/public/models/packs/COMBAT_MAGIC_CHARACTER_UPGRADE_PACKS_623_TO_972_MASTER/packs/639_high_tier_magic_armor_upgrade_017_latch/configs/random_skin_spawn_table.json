@@ -1,0 +1,1437 @@
+{
+  "monster_family": "The Gnarl-Maws",
+  "boss_context": "The Astral Sovereign",
+  "skin_variants": [
+    {
+      "skin_id": "the_gnarl_maws_sonic_01_rare",
+      "display_name": "Sonic Gnarl-Maws Variant 01",
+      "rarity": "rare",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_02_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 02",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_03_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 03",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_04_common",
+      "display_name": "Sonic Gnarl-Maws Variant 04",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_05_epic",
+      "display_name": "Sonic Gnarl-Maws Variant 05",
+      "rarity": "epic",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_06_common",
+      "display_name": "Sonic Gnarl-Maws Variant 06",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_07_legendary",
+      "display_name": "Sonic Gnarl-Maws Variant 07",
+      "rarity": "legendary",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 1,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_08_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 08",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_09_common",
+      "display_name": "Sonic Gnarl-Maws Variant 09",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_10_common",
+      "display_name": "Sonic Gnarl-Maws Variant 10",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_11_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 11",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_12_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 12",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_13_common",
+      "display_name": "Sonic Gnarl-Maws Variant 13",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_14_common",
+      "display_name": "Sonic Gnarl-Maws Variant 14",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_15_common",
+      "display_name": "Sonic Gnarl-Maws Variant 15",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_16_common",
+      "display_name": "Sonic Gnarl-Maws Variant 16",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_17_common",
+      "display_name": "Sonic Gnarl-Maws Variant 17",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_18_rare",
+      "display_name": "Sonic Gnarl-Maws Variant 18",
+      "rarity": "rare",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_19_common",
+      "display_name": "Sonic Gnarl-Maws Variant 19",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_20_rare",
+      "display_name": "Sonic Gnarl-Maws Variant 20",
+      "rarity": "rare",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_21_common",
+      "display_name": "Sonic Gnarl-Maws Variant 21",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_22_common",
+      "display_name": "Sonic Gnarl-Maws Variant 22",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_23_common",
+      "display_name": "Sonic Gnarl-Maws Variant 23",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_24_common",
+      "display_name": "Sonic Gnarl-Maws Variant 24",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_25_common",
+      "display_name": "Sonic Gnarl-Maws Variant 25",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_26_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 26",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_27_rare",
+      "display_name": "Sonic Gnarl-Maws Variant 27",
+      "rarity": "rare",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_28_common",
+      "display_name": "Sonic Gnarl-Maws Variant 28",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_29_common",
+      "display_name": "Sonic Gnarl-Maws Variant 29",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_30_common",
+      "display_name": "Sonic Gnarl-Maws Variant 30",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_31_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 31",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_32_common",
+      "display_name": "Sonic Gnarl-Maws Variant 32",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_33_epic",
+      "display_name": "Sonic Gnarl-Maws Variant 33",
+      "rarity": "epic",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_34_rare",
+      "display_name": "Sonic Gnarl-Maws Variant 34",
+      "rarity": "rare",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_35_common",
+      "display_name": "Sonic Gnarl-Maws Variant 35",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_36_common",
+      "display_name": "Sonic Gnarl-Maws Variant 36",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_37_common",
+      "display_name": "Sonic Gnarl-Maws Variant 37",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_38_common",
+      "display_name": "Sonic Gnarl-Maws Variant 38",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_39_common",
+      "display_name": "Sonic Gnarl-Maws Variant 39",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_40_common",
+      "display_name": "Sonic Gnarl-Maws Variant 40",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_41_common",
+      "display_name": "Sonic Gnarl-Maws Variant 41",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_42_common",
+      "display_name": "Sonic Gnarl-Maws Variant 42",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_43_common",
+      "display_name": "Sonic Gnarl-Maws Variant 43",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_44_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 44",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_45_common",
+      "display_name": "Sonic Gnarl-Maws Variant 45",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_46_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 46",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_47_common",
+      "display_name": "Sonic Gnarl-Maws Variant 47",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_48_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 48",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_49_epic",
+      "display_name": "Sonic Gnarl-Maws Variant 49",
+      "rarity": "epic",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_50_common",
+      "display_name": "Sonic Gnarl-Maws Variant 50",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_51_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 51",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_52_rare",
+      "display_name": "Sonic Gnarl-Maws Variant 52",
+      "rarity": "rare",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_53_common",
+      "display_name": "Sonic Gnarl-Maws Variant 53",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_54_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 54",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_55_common",
+      "display_name": "Sonic Gnarl-Maws Variant 55",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_56_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 56",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_57_rare",
+      "display_name": "Sonic Gnarl-Maws Variant 57",
+      "rarity": "rare",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_58_epic",
+      "display_name": "Sonic Gnarl-Maws Variant 58",
+      "rarity": "epic",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_59_common",
+      "display_name": "Sonic Gnarl-Maws Variant 59",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_60_epic",
+      "display_name": "Sonic Gnarl-Maws Variant 60",
+      "rarity": "epic",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_61_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 61",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_62_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 62",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_63_common",
+      "display_name": "Sonic Gnarl-Maws Variant 63",
+      "rarity": "common",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_64_uncommon",
+      "display_name": "Sonic Gnarl-Maws Variant 64",
+      "rarity": "uncommon",
+      "element": "sonic",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    }
+  ],
+  "randomization_algorithm": {
+    "method": "weighted_seeded_hash",
+    "seed_inputs": [
+      "spawn_guid",
+      "encounter_id",
+      "world_region",
+      "difficulty",
+      "time_bucket"
+    ],
+    "nearby_duplicate_rejection": true,
+    "rare_identical_rule": {
+      "max_same_skin_per_encounter": 1,
+      "allow_duplicate_only_after_distinct_skins_seen": 8,
+      "duplicate_exception_for_swarm_size_above": 20
+    }
+  },
+  "runtime_outputs": [
+    "selected_albedo",
+    "selected_emission",
+    "selected_decal",
+    "selected_material_variant",
+    "selected_glb_overlay"
+  ]
+}

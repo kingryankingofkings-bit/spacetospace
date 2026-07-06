@@ -1,0 +1,304 @@
+{
+  "pack_name": "LOD Collision + Navigation Helpers GLB Pack v1",
+  "pack_slug": "18_lod_collision_navigation_helpers_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:57.340674+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/collision_box_proxy.glb",
+      "name": "Collision Box Proxy",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "tags": [
+        "collision",
+        "red"
+      ],
+      "size_bytes": 1252
+    },
+    {
+      "file": "glb_assets/collision_sphere_proxy.glb",
+      "name": "Collision Sphere Proxy",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.3
+        ]
+      },
+      "tags": [
+        "collision",
+        "orange"
+      ],
+      "size_bytes": 6884
+    },
+    {
+      "file": "glb_assets/collision_cylinder_proxy.glb",
+      "name": "Collision Cylinder Proxy",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.3
+        ]
+      },
+      "tags": [
+        "collision",
+        "yellow"
+      ],
+      "size_bytes": 2312
+    },
+    {
+      "file": "glb_assets/capsule_collision_proxy.glb",
+      "name": "Capsule Collision Proxy",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.3
+        ]
+      },
+      "tags": [
+        "collision",
+        "green"
+      ],
+      "size_bytes": 2312
+    },
+    {
+      "file": "glb_assets/navmesh_tile_proxy.glb",
+      "name": "Navmesh Tile Proxy",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "tags": [
+        "collision",
+        "blue"
+      ],
+      "size_bytes": 1252
+    },
+    {
+      "file": "glb_assets/spawn_point_marker.glb",
+      "name": "Spawn Point Marker",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.15,
+          1.138,
+          1.3
+        ]
+      },
+      "tags": [
+        "collision",
+        "purple"
+      ],
+      "size_bytes": 8020
+    },
+    {
+      "file": "glb_assets/enemy_spawn_point_marker.glb",
+      "name": "Enemy Spawn Point Marker",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.15,
+          1.138,
+          1.3
+        ]
+      },
+      "tags": [
+        "collision",
+        "white"
+      ],
+      "size_bytes": 8004
+    },
+    {
+      "file": "glb_assets/waypoint_marker.glb",
+      "name": "Waypoint Marker",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.15,
+          1.138,
+          1.3
+        ]
+      },
+      "tags": [
+        "collision",
+        "gold"
+      ],
+      "size_bytes": 8008
+    },
+    {
+      "file": "glb_assets/patrol_route_node.glb",
+      "name": "Patrol Route Node",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "tags": [
+        "collision",
+        "red"
+      ],
+      "size_bytes": 1252
+    },
+    {
+      "file": "glb_assets/trigger_volume_proxy.glb",
+      "name": "Trigger Volume Proxy",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "tags": [
+        "collision",
+        "orange"
+      ],
+      "size_bytes": 1252
+    },
+    {
+      "file": "glb_assets/camera_blocker_proxy.glb",
+      "name": "Camera Blocker Proxy",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "tags": [
+        "collision",
+        "yellow"
+      ],
+      "size_bytes": 1252
+    },
+    {
+      "file": "glb_assets/lod_distance_marker.glb",
+      "name": "LOD Distance Marker",
+      "template": "collision",
+      "gameplay_use": "Visible helper proxies for blockout, navigation, triggers, and LOD planning.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "tags": [
+        "collision",
+        "green"
+      ],
+      "size_bytes": 1252
+    }
+  ]
+}

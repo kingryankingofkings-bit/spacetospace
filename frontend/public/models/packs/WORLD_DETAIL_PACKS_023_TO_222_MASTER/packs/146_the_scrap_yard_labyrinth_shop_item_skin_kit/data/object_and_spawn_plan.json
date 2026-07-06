@@ -1,0 +1,154 @@
+{
+  "pack_identity": {
+    "pack_number": 146,
+    "title": "The Scrap Yard Labyrinth Shop Item Skin Kit",
+    "kind": "shop_item_skin",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "06 The Scrap Yard Labyrinth",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Scrap Yard Labyrinth Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [
+    {
+      "item_id": "DF-N-0076",
+      "item_name": "Plain Raid-Rush Choke Points Civic Iron Red-Pen Pulse Pistols of Sevenfold Counter",
+      "rarity": "Common",
+      "slot": "Dual Ranged",
+      "gear_family": "Pulse Pistols",
+      "world_location": "The Raid-Rush Choke Points",
+      "suggested_skin": "waste_fire_dual_ranged_finish"
+    },
+    {
+      "item_id": "DF-N-0077",
+      "item_name": "Plain Provisioning Sectors Aether-Wood Adaptive Hydraulic Knuckles of Armor Sunder",
+      "rarity": "Common",
+      "slot": "Fist Weapon",
+      "gear_family": "Hydraulic Knuckles",
+      "world_location": "The Provisioning Sectors",
+      "suggested_skin": "waste_fire_fist_weapon_finish"
+    },
+    {
+      "item_id": "DF-N-0078",
+      "item_name": "Plain Central Pillar Cottonweave Sub-Bass Boots of Briar Binding",
+      "rarity": "Common",
+      "slot": "Feet",
+      "gear_family": "Boots",
+      "world_location": "The Central Pillar / Star-Elevator Core",
+      "suggested_skin": "waste_fire_feet_finish"
+    },
+    {
+      "item_id": "DF-N-0079",
+      "item_name": "Plain Zenith Spire Tinplate Heavy-Chewer Mask of Afterimage Echo",
+      "rarity": "Common",
+      "slot": "Head",
+      "gear_family": "Mask",
+      "world_location": "The Zenith Spire",
+      "suggested_skin": "waste_fire_head_finish"
+    },
+    {
+      "item_id": "DF-N-0080",
+      "item_name": "Plain Urban Sprawl Wirehide Grav-Lift Pauldrons of Starwell Sync",
+      "rarity": "Common",
+      "slot": "Shoulders",
+      "gear_family": "Pauldrons",
+      "world_location": "The Urban Sprawl",
+      "suggested_skin": "waste_fire_shoulders_finish"
+    }
+  ],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Armor Dye Pack Shop, Blacksmith, Enchanter, Food Stall, General Goods, Inn, Marketplace, Stable, Tailor, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

@@ -1,0 +1,46 @@
+{
+  "boss": "The Astral Sovereign",
+  "phase_rules": [
+    {
+      "phase": 1,
+      "health_range": [
+        1.0,
+        0.7
+      ],
+      "attack_bias": "learnable baseline",
+      "camera": "wide_readability"
+    },
+    {
+      "phase": 2,
+      "health_range": [
+        0.7,
+        0.4
+      ],
+      "attack_bias": "faster special chaining",
+      "camera": "orbit_with_telegraph_priority"
+    },
+    {
+      "phase": 3,
+      "health_range": [
+        0.4,
+        0.15
+      ],
+      "attack_bias": "summons + arena hazard",
+      "camera": "arena_hazard_awareness"
+    },
+    {
+      "phase": 4,
+      "health_range": [
+        0.15,
+        0.0
+      ],
+      "attack_bias": "desperation ultimate",
+      "camera": "boss_finish_cinematic"
+    }
+  ],
+  "magic_modules": [
+    "glb_upgrades/01_special_attack_vfx.glb",
+    "glb_upgrades/09_high_tier_relic_pedestal.glb"
+  ],
+  "anti_duplicate_skin_rule": "Boss support adds use random skin table but primary boss reserves deterministic phase palette."
+}

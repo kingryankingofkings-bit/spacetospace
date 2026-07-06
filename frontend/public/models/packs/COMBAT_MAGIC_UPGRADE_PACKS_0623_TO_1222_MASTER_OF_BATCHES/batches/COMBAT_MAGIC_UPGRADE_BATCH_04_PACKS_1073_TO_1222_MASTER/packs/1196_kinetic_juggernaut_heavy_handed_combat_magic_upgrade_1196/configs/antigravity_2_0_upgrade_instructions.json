@@ -1,0 +1,339 @@
+{
+  "pack_number": 1196,
+  "action": "create non-destructive upgraded prefab variants",
+  "target_references_sample": [
+    {
+      "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+      "path_in_zip": "texture_upgrades/02_item_weapon_finish_normal_detail_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "weapon",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "410_item_weapon_finish_upgrade_batch_188.zip",
+      "path_in_zip": "patches/prefab_upgrade_instructions.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "411_creature_skin_element_upgrade_batch_189.zip",
+      "path_in_zip": "texture_upgrades/03_creature_skin_element_roughness_variation.png",
+      "asset_type": "png",
+      "tags": [
+        "creature",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "411_creature_skin_element_upgrade_batch_189.zip",
+      "path_in_zip": "patches/lod_collision_upgrade_rules.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "412_water_star_environment_upgrade_batch_190.zip",
+      "path_in_zip": "texture_upgrades/04_water_star_environment_emission_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "412_water_star_environment_upgrade_batch_190.zip",
+      "path_in_zip": "patches/texture_application_map.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "413_material_polish_upgrade_batch_191.zip",
+      "path_in_zip": "texture_upgrades/05_material_polish_edge_wear_mask.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "413_material_polish_upgrade_batch_191.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "414_texture_remaster_upgrade_batch_192.zip",
+      "path_in_zip": "texture_upgrades/06_texture_remaster_biome_tint_mask.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "414_texture_remaster_upgrade_batch_192.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "415_low_poly_silhouette_upgrade_batch_193.zip",
+      "path_in_zip": "texture_upgrades/07_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "416_emissive_glow_upgrade_batch_194.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_emissive_glow_overlay_1.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "416_emissive_glow_upgrade_batch_194.zip",
+      "path_in_zip": "texture_upgrades/08_emissive_glow_decal_upgrade_sheet.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "417_weathering_wear_upgrade_batch_195.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_weathering_wear_overlay_2.glb",
+      "asset_type": "glb",
+      "tags": [
+        "weather"
+      ]
+    },
+    {
+      "source_zip": "417_weathering_wear_upgrade_batch_195.zip",
+      "path_in_zip": "texture_upgrades/09_weathering_wear_trim_upgrade_sheet.png",
+      "asset_type": "png",
+      "tags": [
+        "weather",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "418_lod_collision_upgrade_batch_196.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_lod_collision_overlay_3.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "418_lod_collision_upgrade_batch_196.zip",
+      "path_in_zip": "texture_upgrades/10_lod_collision_creature_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "creature",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "419_biome_recolor_upgrade_batch_197.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_biome_recolor_overlay_4.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "419_biome_recolor_upgrade_batch_197.zip",
+      "path_in_zip": "texture_upgrades/11_biome_recolor_object_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_item_weapon_finish_overlay_5.glb",
+      "asset_type": "glb",
+      "tags": [
+        "weapon"
+      ]
+    },
+    {
+      "source_zip": "420_item_weapon_finish_upgrade_batch_198.zip",
+      "path_in_zip": "texture_upgrades/12_item_weapon_finish_water_star_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "weapon",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "421_creature_skin_element_upgrade_batch_199.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_creature_skin_element_overlay_6.glb",
+      "asset_type": "glb",
+      "tags": [
+        "creature"
+      ]
+    },
+    {
+      "source_zip": "421_creature_skin_element_upgrade_batch_199.zip",
+      "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "422_water_star_environment_upgrade_batch_200.zip",
+      "path_in_zip": "texture_upgrades/01_water_star_environment_albedo_upgrade.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "422_water_star_environment_upgrade_batch_200.zip",
+      "path_in_zip": "patches/material_upgrade_profiles.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "423_world_object_visual_polish_batch_001_micro_sky_skiff.zip",
+      "path_in_zip": "upgrade_glb_modules/08_skyship_deck.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "423_world_object_visual_polish_batch_001_micro_sky_skiff.zip",
+      "path_in_zip": "texture_upgrades/11_starfield_layer.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "424_skyship_hull_size_variants_batch_002_scout_sloop.zip",
+      "path_in_zip": "upgrade_glb_modules/04_atmosphere.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "424_skyship_hull_size_variants_batch_002_scout_sloop.zip",
+      "path_in_zip": "texture_upgrades/07_skyship_sail_fabric.png",
+      "asset_type": "png",
+      "tags": [
+        "skyship",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "424_skyship_hull_size_variants_batch_002_scout_sloop.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "425_skyship_propulsion_upgrades_batch_003_courier_cutter.zip",
+      "path_in_zip": "texture_upgrades/03_world_emission_plus.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "425_skyship_propulsion_upgrades_batch_003_courier_cutter.zip",
+      "path_in_zip": "patches/prefab_variant_patch.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "426_skyship_sail_balloon_rigging_batch_004_patrol_corvette.zip",
+      "path_in_zip": "upgrade_glb_modules/09_skyship_defense.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "426_skyship_sail_balloon_rigging_batch_004_patrol_corvette.zip",
+      "path_in_zip": "texture_upgrades/12_water_reflection_layer.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "427_skyship_deck_interior_upgrades_batch_005_merchant_barge.zip",
+      "path_in_zip": "upgrade_glb_modules/05_skyship_hull.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "427_skyship_deck_interior_upgrades_batch_005_merchant_barge.zip",
+      "path_in_zip": "texture_upgrades/08_skyship_engine_glow.png",
+      "asset_type": "png",
+      "tags": [
+        "skyship",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "428_skyship_weapons_defense_upgrades_batch_006_skywarden_frigate.zip",
+      "path_in_zip": "upgrade_glb_modules/01_world_facade.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "428_skyship_weapons_defense_upgrades_batch_006_skywarden_frigate.zip",
+      "path_in_zip": "texture_upgrades/04_world_normal_proxy_plus.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "428_skyship_weapons_defense_upgrades_batch_006_skywarden_frigate.zip",
+      "path_in_zip": "patches/qa_validation_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "429_skyship_docking_travel_upgrades_batch_007_heavy_carrier.zip",
+      "path_in_zip": "upgrade_glb_modules/10_skyship_dock.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "429_skyship_docking_travel_upgrades_batch_007_heavy_carrier.zip",
+      "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "431_water_star_cloud_visual_upgrades_batch_009_arkship.zip",
+      "path_in_zip": "upgrade_glb_modules/06_skyship_engine.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    }
+  ],
+  "required_components": [
+    "MaterialVariantSet",
+    "VFXLifetime",
+    "AbilityTriggerBinding",
+    "MonsterSkinRandomizer",
+    "CombatFlowProfile",
+    "DynamicCombatCameraTrigger",
+    "WeatherSunProfile",
+    "CharacterQualityMaterialPatch",
+    "HighTierEquipmentAffixBinding",
+    "SupportNPCAssistBinding"
+  ],
+  "validation": [
+    "random monster skin table returns no duplicate within recent window",
+    "combat camera blends without breaking input",
+    "class ability VFX spawns on correct socket",
+    "weather/sun LUT changes are reversible",
+    "high tier weapon and armor auras are optional prefab children",
+    "support NPC assist marker does not block navigation"
+  ]
+}

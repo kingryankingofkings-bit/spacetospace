@@ -1,0 +1,1437 @@
+{
+  "monster_family": "The Grid-Rushers",
+  "boss_context": "The Data-Forged Evolvarch",
+  "skin_variants": [
+    {
+      "skin_id": "the_grid_rushers_glacial_01_rare",
+      "display_name": "Glacial Grid-Rushers Variant 01",
+      "rarity": "rare",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_02_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 02",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_03_common",
+      "display_name": "Glacial Grid-Rushers Variant 03",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_04_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 04",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_05_rare",
+      "display_name": "Glacial Grid-Rushers Variant 05",
+      "rarity": "rare",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_06_common",
+      "display_name": "Glacial Grid-Rushers Variant 06",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_07_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 07",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_08_common",
+      "display_name": "Glacial Grid-Rushers Variant 08",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_09_common",
+      "display_name": "Glacial Grid-Rushers Variant 09",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_10_common",
+      "display_name": "Glacial Grid-Rushers Variant 10",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_11_common",
+      "display_name": "Glacial Grid-Rushers Variant 11",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_12_common",
+      "display_name": "Glacial Grid-Rushers Variant 12",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_13_rare",
+      "display_name": "Glacial Grid-Rushers Variant 13",
+      "rarity": "rare",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_14_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 14",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_15_common",
+      "display_name": "Glacial Grid-Rushers Variant 15",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_16_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 16",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_17_common",
+      "display_name": "Glacial Grid-Rushers Variant 17",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_18_rare",
+      "display_name": "Glacial Grid-Rushers Variant 18",
+      "rarity": "rare",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_19_rare",
+      "display_name": "Glacial Grid-Rushers Variant 19",
+      "rarity": "rare",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_20_common",
+      "display_name": "Glacial Grid-Rushers Variant 20",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_21_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 21",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_22_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 22",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_23_common",
+      "display_name": "Glacial Grid-Rushers Variant 23",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_24_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 24",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_25_common",
+      "display_name": "Glacial Grid-Rushers Variant 25",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_26_epic",
+      "display_name": "Glacial Grid-Rushers Variant 26",
+      "rarity": "epic",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_27_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 27",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_28_common",
+      "display_name": "Glacial Grid-Rushers Variant 28",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_29_rare",
+      "display_name": "Glacial Grid-Rushers Variant 29",
+      "rarity": "rare",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_30_epic",
+      "display_name": "Glacial Grid-Rushers Variant 30",
+      "rarity": "epic",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_31_rare",
+      "display_name": "Glacial Grid-Rushers Variant 31",
+      "rarity": "rare",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_32_common",
+      "display_name": "Glacial Grid-Rushers Variant 32",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_33_common",
+      "display_name": "Glacial Grid-Rushers Variant 33",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_34_common",
+      "display_name": "Glacial Grid-Rushers Variant 34",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_35_rare",
+      "display_name": "Glacial Grid-Rushers Variant 35",
+      "rarity": "rare",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_36_epic",
+      "display_name": "Glacial Grid-Rushers Variant 36",
+      "rarity": "epic",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_37_rare",
+      "display_name": "Glacial Grid-Rushers Variant 37",
+      "rarity": "rare",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_38_epic",
+      "display_name": "Glacial Grid-Rushers Variant 38",
+      "rarity": "epic",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_39_common",
+      "display_name": "Glacial Grid-Rushers Variant 39",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_40_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 40",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_41_common",
+      "display_name": "Glacial Grid-Rushers Variant 41",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_42_rare",
+      "display_name": "Glacial Grid-Rushers Variant 42",
+      "rarity": "rare",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_43_common",
+      "display_name": "Glacial Grid-Rushers Variant 43",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_44_legendary",
+      "display_name": "Glacial Grid-Rushers Variant 44",
+      "rarity": "legendary",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 1,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_45_common",
+      "display_name": "Glacial Grid-Rushers Variant 45",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_46_common",
+      "display_name": "Glacial Grid-Rushers Variant 46",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_47_common",
+      "display_name": "Glacial Grid-Rushers Variant 47",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_48_common",
+      "display_name": "Glacial Grid-Rushers Variant 48",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_49_common",
+      "display_name": "Glacial Grid-Rushers Variant 49",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_50_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 50",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_51_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 51",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_52_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 52",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_53_common",
+      "display_name": "Glacial Grid-Rushers Variant 53",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_54_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 54",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_55_common",
+      "display_name": "Glacial Grid-Rushers Variant 55",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_56_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 56",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_57_common",
+      "display_name": "Glacial Grid-Rushers Variant 57",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_58_common",
+      "display_name": "Glacial Grid-Rushers Variant 58",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_59_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 59",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_60_epic",
+      "display_name": "Glacial Grid-Rushers Variant 60",
+      "rarity": "epic",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_61_common",
+      "display_name": "Glacial Grid-Rushers Variant 61",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_62_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 62",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_63_uncommon",
+      "display_name": "Glacial Grid-Rushers Variant 63",
+      "rarity": "uncommon",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_glacial_64_common",
+      "display_name": "Glacial Grid-Rushers Variant 64",
+      "rarity": "common",
+      "element": "ice",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    }
+  ],
+  "randomization_algorithm": {
+    "method": "weighted_seeded_hash",
+    "seed_inputs": [
+      "spawn_guid",
+      "encounter_id",
+      "world_region",
+      "difficulty",
+      "time_bucket"
+    ],
+    "nearby_duplicate_rejection": true,
+    "rare_identical_rule": {
+      "max_same_skin_per_encounter": 1,
+      "allow_duplicate_only_after_distinct_skins_seen": 8,
+      "duplicate_exception_for_swarm_size_above": 20
+    }
+  },
+  "runtime_outputs": [
+    "selected_albedo",
+    "selected_emission",
+    "selected_decal",
+    "selected_material_variant",
+    "selected_glb_overlay"
+  ]
+}

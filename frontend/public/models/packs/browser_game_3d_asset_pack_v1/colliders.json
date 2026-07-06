@@ -1,0 +1,852 @@
+{
+  "glb_assets/industrial_crate_stack.glb": {
+    "name": "Industrial Crate Stack",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.467,
+        0.4,
+        0.863
+      ],
+      "size": [
+        2.134,
+        1.9,
+        1.725
+      ]
+    },
+    "recommended_use": "cover or destructible clutter"
+  },
+  "glb_assets/hazard_barrier.glb": {
+    "name": "Yellow Hazard Barrier",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.565
+      ],
+      "size": [
+        2.6,
+        0.18,
+        1.13
+      ]
+    },
+    "recommended_use": "vault/block lane object"
+  },
+  "glb_assets/electrified_floor_tile.glb": {
+    "name": "Electrified Floor Tile",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.087
+      ],
+      "size": [
+        2.0,
+        2.0,
+        0.175
+      ]
+    },
+    "recommended_use": "activated shock hazard"
+  },
+  "glb_assets/toxic_gas_vent.glb": {
+    "name": "Toxic Gas Vent",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.538
+      ],
+      "size": [
+        1.44,
+        1.44,
+        1.075
+      ]
+    },
+    "recommended_use": "gas emitter area denial"
+  },
+  "glb_assets/hydraulic_hammer.glb": {
+    "name": "Hydraulic Hammer",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.012
+      ],
+      "size": [
+        1.4,
+        2.4,
+        1.525
+      ]
+    },
+    "recommended_use": "boss weapon or forge prop"
+  },
+  "glb_assets/molten_crucible.glb": {
+    "name": "Molten Crucible",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.42
+      ],
+      "size": [
+        1.8,
+        1.773,
+        0.84
+      ]
+    },
+    "recommended_use": "molten damage pool source"
+  },
+  "glb_assets/assembly_line_segment.glb": {
+    "name": "Assembly Line Segment",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.468
+      ],
+      "size": [
+        3.66,
+        1.35,
+        0.925
+      ]
+    },
+    "recommended_use": "moving stage/platform prop"
+  },
+  "glb_assets/corporate_observation_pod.glb": {
+    "name": "Corporate Observation Pod",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.712
+      ],
+      "size": [
+        2.6,
+        1.6,
+        1.425
+      ]
+    },
+    "recommended_use": "Vance-style glass control suite"
+  },
+  "glb_assets/ancient_tree_trunk.glb": {
+    "name": "Ancient Tree Trunk",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        -0.1,
+        0.0,
+        1.685
+      ],
+      "size": [
+        2.1,
+        1.615,
+        3.37
+      ]
+    },
+    "recommended_use": "cover/climbing marker"
+  },
+  "glb_assets/treetop_safe_platform.glb": {
+    "name": "Treetop Safe Platform",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.837
+      ],
+      "size": [
+        2.7,
+        2.7,
+        1.675
+      ]
+    },
+    "recommended_use": "safe zone platform"
+  },
+  "glb_assets/regenerative_healing_pod.glb": {
+    "name": "Regenerative Healing Pod",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.577
+      ],
+      "size": [
+        1.048,
+        0.951,
+        1.154
+      ]
+    },
+    "recommended_use": "healing source"
+  },
+  "glb_assets/root_snare_patch.glb": {
+    "name": "Root Snare Patch",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.533
+      ],
+      "size": [
+        1.8,
+        1.8,
+        1.066
+      ]
+    },
+    "recommended_use": "temporary immobilization snare"
+  },
+  "glb_assets/mossy_rock_cluster.glb": {
+    "name": "Mossy Rock Cluster",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.135,
+        0.0,
+        0.464
+      ],
+      "size": [
+        1.59,
+        0.99,
+        0.747
+      ]
+    },
+    "recommended_use": "cover/set dressing"
+  },
+  "glb_assets/thruster_upgrade_pickup.glb": {
+    "name": "Thruster Upgrade Pickup",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.304
+      ],
+      "size": [
+        1.03,
+        0.7,
+        1.407
+      ]
+    },
+    "recommended_use": "movement upgrade"
+  },
+  "glb_assets/laser_designator_beacon.glb": {
+    "name": "Laser Designator Beacon",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.536
+      ],
+      "size": [
+        1.15,
+        1.133,
+        1.072
+      ]
+    },
+    "recommended_use": "orbital strike designator"
+  },
+  "glb_assets/orbital_tether_anchor.glb": {
+    "name": "Orbital Tether Anchor",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.1
+      ],
+      "size": [
+        1.54,
+        1.517,
+        2.2
+      ]
+    },
+    "recommended_use": "station set dressing/grapple anchor"
+  },
+  "glb_assets/floating_debris_chunk.glb": {
+    "name": "Floating Debris Chunk",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.007,
+        0.5
+      ],
+      "size": [
+        1.429,
+        1.133,
+        0.792
+      ]
+    },
+    "recommended_use": "zero-g vault point/moving cover"
+  },
+  "glb_assets/meteor_projectile.glb": {
+    "name": "Meteor Projectile",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.484,
+        0.45
+      ],
+      "size": [
+        1.08,
+        1.733,
+        0.675
+      ]
+    },
+    "recommended_use": "counterable astral projectile"
+  },
+  "glb_assets/zero_g_ring_gate.glb": {
+    "name": "Zero-G Ring Gate",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.082
+      ],
+      "size": [
+        2.16,
+        0.25,
+        2.164
+      ]
+    },
+    "recommended_use": "zero gravity transition marker"
+  },
+  "glb_assets/tuning_fork_relic.glb": {
+    "name": "Massive Tuning Fork Relic",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.037
+      ],
+      "size": [
+        1.15,
+        1.133,
+        2.175
+      ]
+    },
+    "recommended_use": "mentor/spellcaster prop"
+  },
+  "glb_assets/sonic_sphere_projectile.glb": {
+    "name": "Sonic Sphere Projectile",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.45
+      ],
+      "size": [
+        1.29,
+        1.27,
+        1.29
+      ]
+    },
+    "recommended_use": "redirectable bouncing sonic projectile"
+  },
+  "glb_assets/shockwave_ring.glb": {
+    "name": "Shockwave Ring",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.08
+      ],
+      "size": [
+        3.34,
+        3.289,
+        0.061
+      ]
+    },
+    "recommended_use": "radial attack warning"
+  },
+  "glb_assets/bass_trap_marker.glb": {
+    "name": "Bass Trap Marker",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.093
+      ],
+      "size": [
+        1.97,
+        1.94,
+        0.185
+      ]
+    },
+    "recommended_use": "rhythm hazard marker"
+  },
+  "glb_assets/subway_train_car_segment.glb": {
+    "name": "Subway Train Car Segment",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.023,
+        0.652
+      ],
+      "size": [
+        4.0,
+        1.295,
+        1.545
+      ]
+    },
+    "recommended_use": "large cover/moving set piece"
+  },
+  "glb_assets/magnetic_grapple_anchor.glb": {
+    "name": "Magnetic Grapple Anchor",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.501
+      ],
+      "size": [
+        0.96,
+        0.945,
+        1.002
+      ]
+    },
+    "recommended_use": "grapple target"
+  },
+  "glb_assets/deployable_turret.glb": {
+    "name": "Deployable Turret",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.325,
+        0.4
+      ],
+      "size": [
+        0.75,
+        1.4,
+        0.8
+      ]
+    },
+    "recommended_use": "deployable turret"
+  },
+  "glb_assets/hacker_console.glb": {
+    "name": "Hacker Console",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.133,
+        0.604
+      ],
+      "size": [
+        0.85,
+        0.615,
+        1.197
+      ]
+    },
+    "recommended_use": "vendor terminal/puzzle object"
+  },
+  "glb_assets/subway_power_node.glb": {
+    "name": "Subway Power Node",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        -0.051,
+        -0.093,
+        0.5
+      ],
+      "size": [
+        2.0,
+        0.735,
+        1.0
+      ]
+    },
+    "recommended_use": "objective/destructible power unit"
+  },
+  "glb_assets/glowing_logic_node.glb": {
+    "name": "Glowing Logic Node",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "size": [
+        1.19,
+        0.995,
+        1.172
+      ]
+    },
+    "recommended_use": "rhythm-sequence strike target"
+  },
+  "glb_assets/reconfigurable_wall_panel.glb": {
+    "name": "Reconfigurable Wall Panel",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.027,
+        0.7
+      ],
+      "size": [
+        1.7,
+        0.235,
+        1.4
+      ]
+    },
+    "recommended_use": "moving architecture tile"
+  },
+  "glb_assets/anti_gravity_barricade.glb": {
+    "name": "Anti-Gravity Barricade",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "size": [
+        2.35,
+        0.24,
+        2.314
+      ]
+    },
+    "recommended_use": "defensive floating barrier"
+  },
+  "glb_assets/hologram_projector.glb": {
+    "name": "Hologram Projector",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.77
+      ],
+      "size": [
+        0.9,
+        0.9,
+        1.54
+      ]
+    },
+    "recommended_use": "NPC projection base"
+  },
+  "glb_assets/deprecated_server_stack.glb": {
+    "name": "Deprecated Server Stack",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.06,
+        0.9
+      ],
+      "size": [
+        1.0,
+        0.72,
+        1.8
+      ]
+    },
+    "recommended_use": "cover/destructible tech prop"
+  },
+  "glb_assets/health_pickup_capsule.glb": {
+    "name": "Health Pickup Capsule",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.55
+      ],
+      "size": [
+        0.89,
+        0.876,
+        1.24
+      ]
+    },
+    "recommended_use": "restores health"
+  },
+  "glb_assets/special_meter_orb.glb": {
+    "name": "Special Meter Orb",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.45
+      ],
+      "size": [
+        1.01,
+        0.867,
+        0.995
+      ]
+    },
+    "recommended_use": "restores combo/special meter"
+  },
+  "glb_assets/combo_multiplier_token.glb": {
+    "name": "Combo Multiplier Token",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.4
+      ],
+      "size": [
+        0.79,
+        0.371,
+        0.778
+      ]
+    },
+    "recommended_use": "temporary combo multiplier boost"
+  },
+  "glb_assets/aoe_warning_cone.glb": {
+    "name": "AOE Warning Cone",
+    "collider_type": "mesh",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.03
+      ],
+      "size": [
+        1.5,
+        1.6,
+        1.477
+      ]
+    },
+    "recommended_use": "cone attack telegraph"
+  },
+  "glb_assets/rift_pull_core.glb": {
+    "name": "Rift Pull Core",
+    "collider_type": "sphere",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.55
+      ],
+      "size": [
+        1.7,
+        1.7,
+        1.497
+      ]
+    },
+    "recommended_use": "gravity pull hazard"
+  },
+  "glb_assets/modular_arena_floor_4x4.glb": {
+    "name": "Modular Arena Floor 4x4",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.155
+      ],
+      "size": [
+        4.1,
+        4.1,
+        0.31
+      ]
+    },
+    "recommended_use": "base floor tile"
+  },
+  "glb_assets/modular_wall_2x2.glb": {
+    "name": "Modular Wall 2x2",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        1.07
+      ],
+      "size": [
+        2.1,
+        0.32,
+        2.14
+      ]
+    },
+    "recommended_use": "basic wall/cover module"
+  },
+  "glb_assets/short_vault_wall.glb": {
+    "name": "Short Vault Wall",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.03,
+        0.405
+      ],
+      "size": [
+        2.0,
+        0.36,
+        0.81
+      ]
+    },
+    "recommended_use": "vault obstacle"
+  },
+  "glb_assets/arena_stairs.glb": {
+    "name": "Arena Stairs",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.375
+      ],
+      "size": [
+        1.6,
+        2.5,
+        0.75
+      ]
+    },
+    "recommended_use": "height transition"
+  },
+  "glb_assets/jump_pad.glb": {
+    "name": "Jump Pad",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.65
+      ],
+      "size": [
+        1.3,
+        1.3,
+        1.3
+      ]
+    },
+    "recommended_use": "launches player upward"
+  },
+  "glb_assets/scrap_blade.glb": {
+    "name": "Scrap Blade",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.011,
+        0.0,
+        1.015
+      ],
+      "size": [
+        0.217,
+        0.228,
+        2.03
+      ]
+    },
+    "recommended_use": "scavenged melee weapon"
+  },
+  "glb_assets/junk_riot_shield.glb": {
+    "name": "Junk Riot Shield",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.053,
+        0.75
+      ],
+      "size": [
+        1.008,
+        0.335,
+        1.35
+      ]
+    },
+    "recommended_use": "Scrap-Phalanx style shield"
+  },
+  "glb_assets/heavy_crossbow.glb": {
+    "name": "Heavy Crossbow",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.775
+      ],
+      "size": [
+        1.4,
+        1.05,
+        1.45
+      ]
+    },
+    "recommended_use": "Kaelen-style support weapon"
+  },
+  "glb_assets/plasma_cannon_module.glb": {
+    "name": "Plasma Cannon Module",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        -0.467,
+        0.32
+      ],
+      "size": [
+        0.45,
+        1.385,
+        0.42
+      ]
+    },
+    "recommended_use": "boss evolution weapon module"
+  },
+  "glb_assets/acid_pool.glb": {
+    "name": "Acid Pool",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.04
+      ],
+      "size": [
+        1.91,
+        1.881,
+        0.08
+      ]
+    },
+    "recommended_use": "damage-over-time pool"
+  },
+  "glb_assets/spike_trap.glb": {
+    "name": "Spike Trap",
+    "collider_type": "box",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.66
+      ],
+      "size": [
+        1.4,
+        1.4,
+        1.32
+      ]
+    },
+    "recommended_use": "floor damage hazard"
+  },
+  "glb_assets/destructible_barrel.glb": {
+    "name": "Destructible Barrel",
+    "collider_type": "cylinder",
+    "bounds": {
+      "center": [
+        0.0,
+        0.0,
+        0.455
+      ],
+      "size": [
+        0.91,
+        0.896,
+        0.91
+      ]
+    },
+    "recommended_use": "explosive/breakable prop"
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Gnarl-Maws",
+  "element_context": "reality",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_gnarl_maws_reality_01",
+      "display_name": "Sovereign-Touched The Gnarl-Maws 01",
+      "weight": 4.849,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.072
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_02",
+      "display_name": "Data-Forged The Gnarl-Maws 02",
+      "weight": 4.389,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.105
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_03",
+      "display_name": "Ash-Baptized The Gnarl-Maws 03",
+      "weight": 4.461,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "hide",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.064
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_04",
+      "display_name": "Tide-Broken The Gnarl-Maws 04",
+      "weight": 4.214,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.009
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_05",
+      "display_name": "Magnetized The Gnarl-Maws 05",
+      "weight": 3.953,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.928
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_06",
+      "display_name": "Sonic-Scarred The Gnarl-Maws 06",
+      "weight": 3.944,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.075
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_07",
+      "display_name": "Glass-Hardened The Gnarl-Maws 07",
+      "weight": 3.92,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.1
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_08",
+      "display_name": "Spore-Sick The Gnarl-Maws 08",
+      "weight": 3.631,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.021
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_09",
+      "display_name": "Chrome-Maw The Gnarl-Maws 09",
+      "weight": 3.431,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 1.074
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_10",
+      "display_name": "Eclipse-Synced The Gnarl-Maws 10",
+      "weight": 3.112,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.068
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_11",
+      "display_name": "Overcharged The Gnarl-Maws 11",
+      "weight": 3.285,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "crystal",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 1.011
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_12",
+      "display_name": "Bark-Crowned The Gnarl-Maws 12",
+      "weight": 2.754,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "wide",
+        "armor_growth": "bone",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 0.937
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_13",
+      "display_name": "Echo-Split The Gnarl-Maws 13",
+      "weight": 2.867,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 1.046
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_14",
+      "display_name": "Null-Branded The Gnarl-Maws 14",
+      "weight": 2.653,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "hide",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 0.953
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_15",
+      "display_name": "Rhythm-Warped The Gnarl-Maws 15",
+      "weight": 2.636,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.045
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_16",
+      "display_name": "Grav-Torn The Gnarl-Maws 16",
+      "weight": 2.293,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "scrap",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.098
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_17",
+      "display_name": "Ablative The Gnarl-Maws 17",
+      "weight": 2.031,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.977
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_18",
+      "display_name": "Phase-Bound The Gnarl-Maws 18",
+      "weight": 2.099,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 0.988
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_19",
+      "display_name": "Venom-Laced The Gnarl-Maws 19",
+      "weight": 1.672,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.931
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_20",
+      "display_name": "Warden-Fused The Gnarl-Maws 20",
+      "weight": 1.856,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "gold noon",
+        "scale_jitter": 1.052
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_21",
+      "display_name": "Sovereign-Touched The Gnarl-Maws 21",
+      "weight": 1.447,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 0.952
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_22",
+      "display_name": "Data-Forged The Gnarl-Maws 22",
+      "weight": 1.427,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.049
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_23",
+      "display_name": "Ash-Baptized The Gnarl-Maws 23",
+      "weight": 1.022,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.085
+      }
+    },
+    {
+      "skin_id": "the_gnarl_maws_reality_24",
+      "display_name": "Tide-Broken The Gnarl-Maws 24",
+      "weight": 0.882,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.085
+      }
+    }
+  ]
+}

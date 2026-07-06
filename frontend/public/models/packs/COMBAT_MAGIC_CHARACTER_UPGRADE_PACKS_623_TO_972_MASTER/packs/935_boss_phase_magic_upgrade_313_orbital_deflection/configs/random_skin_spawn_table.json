@@ -1,0 +1,1437 @@
+{
+  "monster_family": "The Sylvan Juggernaut",
+  "boss_context": "The Null Anomaly",
+  "skin_variants": [
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_01_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 01",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_02_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 02",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_03_legendary",
+      "display_name": "Verdant Sylvan Juggernaut Variant 03",
+      "rarity": "legendary",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 1,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_04_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 04",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_05_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 05",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_06_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 06",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_07_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 07",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_08_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 08",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_09_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 09",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_10_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 10",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_11_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 11",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_12_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 12",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_13_rare",
+      "display_name": "Verdant Sylvan Juggernaut Variant 13",
+      "rarity": "rare",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_14_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 14",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_15_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 15",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_16_epic",
+      "display_name": "Verdant Sylvan Juggernaut Variant 16",
+      "rarity": "epic",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_17_rare",
+      "display_name": "Verdant Sylvan Juggernaut Variant 17",
+      "rarity": "rare",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_18_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 18",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_19_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 19",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_20_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 20",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_21_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 21",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_22_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 22",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_23_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 23",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_24_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 24",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_25_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 25",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_26_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 26",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_27_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 27",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_28_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 28",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_29_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 29",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_30_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 30",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_31_rare",
+      "display_name": "Verdant Sylvan Juggernaut Variant 31",
+      "rarity": "rare",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_32_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 32",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_33_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 33",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_34_epic",
+      "display_name": "Verdant Sylvan Juggernaut Variant 34",
+      "rarity": "epic",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_35_rare",
+      "display_name": "Verdant Sylvan Juggernaut Variant 35",
+      "rarity": "rare",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_36_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 36",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_37_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 37",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_38_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 38",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_39_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 39",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_40_legendary",
+      "display_name": "Verdant Sylvan Juggernaut Variant 40",
+      "rarity": "legendary",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 1,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_41_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 41",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_42_rare",
+      "display_name": "Verdant Sylvan Juggernaut Variant 42",
+      "rarity": "rare",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_43_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 43",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_44_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 44",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_45_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 45",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_46_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 46",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_47_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 47",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_48_epic",
+      "display_name": "Verdant Sylvan Juggernaut Variant 48",
+      "rarity": "epic",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_49_legendary",
+      "display_name": "Verdant Sylvan Juggernaut Variant 49",
+      "rarity": "legendary",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 1,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_50_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 50",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_51_epic",
+      "display_name": "Verdant Sylvan Juggernaut Variant 51",
+      "rarity": "epic",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_52_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 52",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_53_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 53",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_54_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 54",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_55_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 55",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_56_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 56",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_57_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 57",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_58_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 58",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_59_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 59",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_60_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 60",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_61_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 61",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_62_uncommon",
+      "display_name": "Verdant Sylvan Juggernaut Variant 62",
+      "rarity": "uncommon",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_63_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 63",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_verdant_64_common",
+      "display_name": "Verdant Sylvan Juggernaut Variant 64",
+      "rarity": "common",
+      "element": "nature",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    }
+  ],
+  "randomization_algorithm": {
+    "method": "weighted_seeded_hash",
+    "seed_inputs": [
+      "spawn_guid",
+      "encounter_id",
+      "world_region",
+      "difficulty",
+      "time_bucket"
+    ],
+    "nearby_duplicate_rejection": true,
+    "rare_identical_rule": {
+      "max_same_skin_per_encounter": 1,
+      "allow_duplicate_only_after_distinct_skins_seen": 8,
+      "duplicate_exception_for_swarm_size_above": 20
+    }
+  },
+  "runtime_outputs": [
+    "selected_albedo",
+    "selected_emission",
+    "selected_decal",
+    "selected_material_variant",
+    "selected_glb_overlay"
+  ]
+}

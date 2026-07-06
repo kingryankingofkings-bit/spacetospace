@@ -1,0 +1,1034 @@
+{
+  "title": "Echoes of the Dawnforge Character Creation Customization Catalog",
+  "version": "1.0",
+  "generated_utc": "2026-07-04T22:09:33.728068Z",
+  "counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "hairstyles": {
+    "Masculine Presentation Hairstyle Presets": [
+      [
+        "M-H01",
+        "Close-Cropped Wayfinder",
+        "tight low-maintenance crop with clean scalp fade; supports shaved-line glyph decals"
+      ],
+      [
+        "M-H02",
+        "Temple Fade Coils",
+        "short natural coils with tapered sides and adjustable curl density"
+      ],
+      [
+        "M-H03",
+        "Skywright Sweepback",
+        "medium-length swept-back waves with wind-swept volume for aerial silhouettes"
+      ],
+      [
+        "M-H04",
+        "Cindervale Undercut",
+        "hard undercut with top length, oil-slick shine, and optional industrial clip rings"
+      ],
+      [
+        "M-H05",
+        "Rootcourt Locs",
+        "shoulder-length locs with bead slots, vine wraps, and subtle motion physics"
+      ],
+      [
+        "M-H06",
+        "Warrior Topknot",
+        "high tied knot with loose side strands and optional fabric bindings"
+      ],
+      [
+        "M-H07",
+        "Braided Undercrown",
+        "braided top ridge over shaved sides, readable under helmets"
+      ],
+      [
+        "M-H08",
+        "Thick Full Afro",
+        "rounded high-volume afro with adjustable radius and edge definition"
+      ],
+      [
+        "M-H09",
+        "Mohawk Braid",
+        "central braid ridge with shaved sides, designed for aggressive class silhouettes"
+      ],
+      [
+        "M-H10",
+        "Half-Shaved Sidewave",
+        "one shaved side, one side long and wavy; supports asymmetry color masks"
+      ],
+      [
+        "M-H11",
+        "Buzzcut With Etched Lines",
+        "very short buzz with editable etched patterns and faction stripes"
+      ],
+      [
+        "M-H12",
+        "Loose Shoulder Mane",
+        "long unbound hair with combat tie-back toggle for cutscenes"
+      ],
+      [
+        "M-H13",
+        "Data-Slick Backline",
+        "sleek combed-back hair with luminous hard-light parting"
+      ],
+      [
+        "M-H14",
+        "Curly High Volume",
+        "dense, lifted curls with frizz, shine, and moisture sliders"
+      ],
+      [
+        "M-H15",
+        "Lunarch Shaved Crown",
+        "monastic shaved crown with side ring growth and moon-silver accessory points"
+      ]
+    ],
+    "Feminine Presentation Hairstyle Presets": [
+      [
+        "F-H01",
+        "Long Layered Starwell Waves",
+        "long layered waves with adjustable wave depth and cinematic wind response"
+      ],
+      [
+        "F-H02",
+        "Crown Braids",
+        "braided crown with rear fall, bead slots, and ceremonial thread options"
+      ],
+      [
+        "F-H03",
+        "High Combat Ponytail",
+        "high tied ponytail with loose bangs and armor-safe collision profile"
+      ],
+      [
+        "F-H04",
+        "Twin Ember Buns",
+        "two structured buns with optional glowing pins and festival ribbons"
+      ],
+      [
+        "F-H05",
+        "Waist-Length Box Braids",
+        "long box braids with thickness, length, bead, and wrap variants"
+      ],
+      [
+        "F-H06",
+        "Goddess Loc Cascade",
+        "long loc cascade with side part, shells, cuffs, and vine ornaments"
+      ],
+      [
+        "F-H07",
+        "Sharp Pixie Cut",
+        "short sculpted pixie with side texture and confident profile"
+      ],
+      [
+        "F-H08",
+        "Shoulder Curls",
+        "medium shoulder-length curls with ringlet tightness and volume sliders"
+      ],
+      [
+        "F-H09",
+        "Side-Shaved Cascade",
+        "shaved side paired with long falling hair; supports tattoo reveal"
+      ],
+      [
+        "F-H10",
+        "Coil Puff",
+        "high puff of natural coils with adjustable puff height and headband options"
+      ],
+      [
+        "F-H11",
+        "Glass Court Bob",
+        "sleek angular bob with geometric cutline and reflective finish"
+      ],
+      [
+        "F-H12",
+        "Reefwave Locks",
+        "soft oceanic waves with optional pearl clips and tidal gradient dye"
+      ],
+      [
+        "F-H13",
+        "Forest Vine Braid",
+        "single long braid threaded with leaves, charms, or bioluminescent flowers"
+      ],
+      [
+        "F-H14",
+        "Festival Dreadhawk",
+        "raised loc hawk with side braids and bass-reactive glow tips"
+      ],
+      [
+        "F-H15",
+        "Soft Undercut Bob",
+        "rounded bob over a low undercut, subtle enough for noble or rogue looks"
+      ]
+    ],
+    "Androgynous / Nonbinary Presentation Hairstyle Presets": [
+      [
+        "A-H01",
+        "Asymmetrical Meridian Bob",
+        "one side jaw-length, one side cropped; clean readable silhouette"
+      ],
+      [
+        "A-H02",
+        "Short Coils With Fade",
+        "short tight coils, high fade, and adjustable curl pattern"
+      ],
+      [
+        "A-H03",
+        "Long Center-Part Straight",
+        "long straight hair with center part and cloth tie-back toggle"
+      ],
+      [
+        "A-H04",
+        "Dream-Shag",
+        "messy layered shag with dreamlike soft edges and color streak masks"
+      ],
+      [
+        "A-H05",
+        "Wolf Cut",
+        "medium choppy layers with heavy crown volume and tapered neck"
+      ],
+      [
+        "A-H06",
+        "Curly Mullet",
+        "curled top and back, tighter sides, strong motion profile"
+      ],
+      [
+        "A-H07",
+        "Braided Crown / Shaved Nape",
+        "braided crown paired with shaved nape, visible under hoods"
+      ],
+      [
+        "A-H08",
+        "Half Locs / Half Loose",
+        "split construction with locs on one side and loose hair on the other"
+      ],
+      [
+        "A-H09",
+        "Data-Glass Slick",
+        "hyper-sleek reflective hair with hard-light strand highlights"
+      ],
+      [
+        "A-H10",
+        "Zero-G Topknot",
+        "floating upper knot with loose strand physics for orbital scenes"
+      ],
+      [
+        "A-H11",
+        "Tapered Afro",
+        "sculpted tapered afro with adjustable height and silhouette width"
+      ],
+      [
+        "A-H12",
+        "Shoulder Undercut",
+        "shoulder-length top layer over hidden undercut revealed in motion"
+      ],
+      [
+        "A-H13",
+        "Textured Fringe",
+        "short textured fringe with uneven ends and soft face framing"
+      ],
+      [
+        "A-H14",
+        "Microbraid Mesh",
+        "dense microbraids close to scalp with optional geometric parting"
+      ],
+      [
+        "A-H15",
+        "Polished Scalp With Glyphs",
+        "no-hair option with polished scalp, scars, tattoos, or luminous glyph overlays"
+      ]
+    ]
+  },
+  "face_presets": {
+    "Masculine Presentation Face Presets": [
+      [
+        "M-F01",
+        "Meridian Square-Jaw",
+        "broad forehead, strong square jaw, medium brow, balanced nose bridge, neutral lips"
+      ],
+      [
+        "M-F02",
+        "Elderbloom Broad-Cheek",
+        "wide cheekbones, soft rounded jaw, warm eye spacing, broad nose base, full mouth"
+      ],
+      [
+        "M-F03",
+        "Cindervale Anvil-Brow",
+        "heavy brow ridge, compact eyes, angular nose, deep-set cheeks, firm chin"
+      ],
+      [
+        "M-F04",
+        "Pelagos Wave-Cut",
+        "oval face, high cheekbones, smooth jaw taper, wide expressive eyes, soft mouth"
+      ],
+      [
+        "M-F05",
+        "Lunarch Longline",
+        "long narrow face, tall nose bridge, refined jaw, thin lips, calm eyes"
+      ],
+      [
+        "M-F06",
+        "Glass Desert Hawk",
+        "sharp cheek planes, hooked nose option, narrow eyes, strong chin, sun-weathered planes"
+      ],
+      [
+        "M-F07",
+        "Black Meridian Patrician",
+        "symmetrical oval-square blend, straight nose, precise brow, controlled mouth line"
+      ],
+      [
+        "M-F08",
+        "Wayfora Islander",
+        "broad nose, full lips, rounded cheeks, strong neck/jaw transition, relaxed brow"
+      ],
+      [
+        "M-F09",
+        "Syndicate Executive",
+        "narrow angular cheeks, sleek jaw, thin precise lips, high brow arch, implant-ready temples"
+      ],
+      [
+        "M-F10",
+        "Subterranean Railhand",
+        "wide jaw, broken-nose variant support, heavy under-eye texture, practical rugged features"
+      ],
+      [
+        "M-F11",
+        "Resonant Ascetic",
+        "lean face, high cheek hollows, long nose, soft closed-mouth expression, deep eye sockets"
+      ],
+      [
+        "M-F12",
+        "Scrap-Yard Salvager",
+        "asymmetrical jaw, scar-friendly cheek planes, broken brow option, strong nose width"
+      ],
+      [
+        "M-F13",
+        "Dawnforge Classic Hero",
+        "balanced heroic proportions, medium jaw, confident brow, cinematic neutral expression"
+      ],
+      [
+        "M-F14",
+        "First Dream Gentleface",
+        "soft jaw, round cheeks, wide eyes, smooth brow, subtle mouth curve"
+      ],
+      [
+        "M-F15",
+        "Magma-Core Forgemaster",
+        "thick brow, broad nose, dense cheek structure, strong chin, heat-weathered skin normal"
+      ],
+      [
+        "M-F16",
+        "Orbital Pilot",
+        "lean aerodynamic face, narrow jaw, alert eyes, compressed lips, helmet-compatible ears"
+      ],
+      [
+        "M-F17",
+        "Heavy-Chewer Canyon Scout",
+        "sunken cheeks, rugged jaw, wide-set eyes, scar-ready forehead and cheekbones"
+      ],
+      [
+        "M-F18",
+        "Anomaly-Touched",
+        "slightly uncanny symmetry, mismatched eye size option, smooth chin, high forehead"
+      ],
+      [
+        "M-F19",
+        "Verdant Elder",
+        "older facial volume option, smile lines, broad cheek support, wise brow folds"
+      ],
+      [
+        "M-F20",
+        "Young Wayfinder",
+        "youthful rounder face, smaller chin, softer brow, fuller cheeks, clean neutral expression"
+      ]
+    ],
+    "Feminine Presentation Face Presets": [
+      [
+        "F-F01",
+        "Meridian Heartline",
+        "heart-shaped face, soft pointed chin, balanced brow, medium nose, defined lips"
+      ],
+      [
+        "F-F02",
+        "Elderbloom Round-Cheek",
+        "round cheeks, gentle jaw, wide nose option, bright eyes, soft smile line support"
+      ],
+      [
+        "F-F03",
+        "Cindervale Forge-Cut",
+        "angular jaw, strong brow, sharp cheekbones, straight nose, assertive mouth"
+      ],
+      [
+        "F-F04",
+        "Pelagos Pearl Oval",
+        "oval face, smooth cheek slope, large eyes, soft nose bridge, full lips"
+      ],
+      [
+        "F-F05",
+        "Lunarch Silverline",
+        "long delicate face, narrow jaw, high forehead, calm eyes, thin graceful lips"
+      ],
+      [
+        "F-F06",
+        "Glass Desert Mirage",
+        "high cheekbones, almond eyes, pronounced nose bridge, precise chin, sunline texture"
+      ],
+      [
+        "F-F07",
+        "Black Meridian Diplomat",
+        "symmetrical oval, clean jaw, arched brow, controlled mouth, refined nose"
+      ],
+      [
+        "F-F08",
+        "Wayfora Reefborn",
+        "wide cheekbones, full mouth, broad nose, soft chin, warm relaxed expression"
+      ],
+      [
+        "F-F09",
+        "Syndicate Glassmask",
+        "sleek angular face, narrow nose, sharp brow, implant-friendly temples, minimal texture"
+      ],
+      [
+        "F-F10",
+        "Subterranean Spark",
+        "compact face, energetic eyes, rounded chin, strong cheek dimples, expressive mouth"
+      ],
+      [
+        "F-F11",
+        "Resonant Saint",
+        "long oval face, softened jaw, deep eyes, high cheek hollows, serene expression"
+      ],
+      [
+        "F-F12",
+        "Scrap-Yard Raider",
+        "asymmetrical features, scar-ready cheekbones, strong chin, broken-nose variant support"
+      ],
+      [
+        "F-F13",
+        "Dawnforge Champion",
+        "balanced heroic face, defined cheeks, steady brow, cinematic mouth shape"
+      ],
+      [
+        "F-F14",
+        "First Dream Softlight",
+        "gentle round face, large eyes, small chin, smooth nose, subtle wonder expression"
+      ],
+      [
+        "F-F15",
+        "Magma-Core Smith",
+        "broad cheek structure, strong brow, defined jaw, warm nose bridge, heat-weathered skin normal"
+      ],
+      [
+        "F-F16",
+        "Orbital Navigator",
+        "lean face, compact jaw, alert eyes, helmet-clear cheek profile, controlled mouth"
+      ],
+      [
+        "F-F17",
+        "Heavy-Chewer Outrider",
+        "strong cheekbones, narrowed eyes, rugged jawline, sun exposure detail support"
+      ],
+      [
+        "F-F18",
+        "Anomaly-Blessed",
+        "slightly surreal symmetry, mismatched iris height option, smooth cheeks, high forehead"
+      ],
+      [
+        "F-F19",
+        "Verdant Matriarch",
+        "mature face, smile lines, soft under-eye folds, broad cheek support, dignified brow"
+      ],
+      [
+        "F-F20",
+        "Young Starwell Adept",
+        "youthful cheek volume, soft jaw, open eyes, rounded nose tip, clean expression"
+      ]
+    ],
+    "Androgynous / Nonbinary Presentation Face Presets": [
+      [
+        "A-F01",
+        "Balanced Meridian",
+        "balanced oval-square structure, medium jaw, neutral brow, adaptable mouth"
+      ],
+      [
+        "A-F02",
+        "Soft Angular",
+        "gentle cheeks with sharper chin, medium brow, flexible nose and lip proportions"
+      ],
+      [
+        "A-F03",
+        "Broad Gentle",
+        "broad cheeks and jaw with soft eye shape and relaxed mouth"
+      ],
+      [
+        "A-F04",
+        "Sharp Fine-Boned",
+        "narrow cheeks, refined jaw taper, high brow, thin-to-medium lips"
+      ],
+      [
+        "A-F05",
+        "Dream Ambiguous",
+        "smooth age-neutral features, large eyes, low texture, light asymmetry support"
+      ],
+      [
+        "A-F06",
+        "Forged Neutral",
+        "strong brow and chin with softened cheeks and neutral mouth line"
+      ],
+      [
+        "A-F07",
+        "Lunar Minimal",
+        "long face, slim jaw, calm eyes, small mouth, smooth skin normal"
+      ],
+      [
+        "A-F08",
+        "Reef Bright",
+        "round cheeks, open expression, full lips, broad nose option, warm eye spacing"
+      ],
+      [
+        "A-F09",
+        "Syndicate Synthetic",
+        "precise symmetry, clean planes, implant-ready surfaces, controlled expression"
+      ],
+      [
+        "A-F10",
+        "Canyon Weathered",
+        "rugged planes, sunlines, strong nose, cheek scar zones, narrow eyes"
+      ],
+      [
+        "A-F11",
+        "Archivist Calm",
+        "soft rectangular face, thoughtful eyes, relaxed brow, subtle age lines"
+      ],
+      [
+        "A-F12",
+        "Anomaly Split",
+        "controlled asymmetry, one cheek higher, mismatched brow option, uncanny charm"
+      ],
+      [
+        "A-F13",
+        "Canopy Grace",
+        "rounded cheeks, fine chin, wide eyes, soft nose, gentle smile support"
+      ],
+      [
+        "A-F14",
+        "Iron Rail Compact",
+        "compact proportions, squared jaw, straight brow, practical expression"
+      ],
+      [
+        "A-F15",
+        "Orbital Lean",
+        "aerodynamic cheek taper, narrow jaw, alert eyes, helmet-safe ears"
+      ],
+      [
+        "A-F16",
+        "Resonant Mask",
+        "high cheek hollows, serene brow, narrow nose, calm lips"
+      ],
+      [
+        "A-F17",
+        "Dawnforge Neutral Hero",
+        "balanced heroic face with strong customization tolerance across sliders"
+      ],
+      [
+        "A-F18",
+        "Magma Soft-Strong",
+        "broad brow and cheeks paired with softened chin and full mouth"
+      ],
+      [
+        "A-F19",
+        "First Dream Youthful",
+        "smooth, young-adult face with rounded cheeks and adaptable jaw"
+      ],
+      [
+        "A-F20",
+        "Elder Wayfinder",
+        "mature neutral face, age-line support, strong eyes, broad expression range"
+      ]
+    ]
+  },
+  "skin_tones": [
+    "Porcelain rose",
+    "Porcelain neutral",
+    "Pale ivory",
+    "Pale olive",
+    "Light peach",
+    "Light gold",
+    "Light beige",
+    "Light cool sand",
+    "Warm sand",
+    "Golden beige",
+    "Honey tan",
+    "Soft caramel",
+    "Amber brown",
+    "Olive bronze",
+    "Copper bronze",
+    "Warm sienna",
+    "Chestnut",
+    "Red-brown umber",
+    "Mahogany",
+    "Deep walnut",
+    "Espresso",
+    "Deep umber",
+    "Blue-black brown",
+    "Obsidian brown",
+    "Freckled fair overlay",
+    "Sunburnt desert overlay",
+    "Weathered tan overlay",
+    "Saltwater bronze overlay",
+    "Aether pale blue",
+    "Starwell cyan",
+    "Lunar silver",
+    "Void ash",
+    "Moss green",
+    "Verdant bark-brown",
+    "Coral rose",
+    "Reef teal",
+    "Molten ember",
+    "Magma charcoal",
+    "Data-glass white",
+    "Hard-light violet",
+    "Dream lavender",
+    "Anomaly prism",
+    "Dust-gold",
+    "Sonic pearl",
+    "Bioluminescent midnight",
+    "Low-gravity grey",
+    "Cindervale soot",
+    "Scrap-metal bronze"
+  ],
+  "hair_colors": [
+    "black",
+    "soft black",
+    "blue-black",
+    "dark brown",
+    "medium brown",
+    "light brown",
+    "auburn",
+    "copper",
+    "ginger",
+    "strawberry blond",
+    "dark blond",
+    "gold blond",
+    "platinum",
+    "silver",
+    "white",
+    "grey",
+    "salt-and-pepper",
+    "emerald",
+    "moss",
+    "cyan",
+    "aether blue",
+    "violet",
+    "magenta",
+    "rose",
+    "molten orange",
+    "ember red",
+    "deep burgundy",
+    "teal",
+    "lunar chrome",
+    "data-glass iridescent"
+  ],
+  "facial_hair": [
+    [
+      "FH01",
+      "Clean-shaven"
+    ],
+    [
+      "FH02",
+      "Light stubble"
+    ],
+    [
+      "FH03",
+      "Medium stubble"
+    ],
+    [
+      "FH04",
+      "Full short beard"
+    ],
+    [
+      "FH05",
+      "Squared beard"
+    ],
+    [
+      "FH06",
+      "Rounded beard"
+    ],
+    [
+      "FH07",
+      "Long braided beard"
+    ],
+    [
+      "FH08",
+      "Forked beard"
+    ],
+    [
+      "FH09",
+      "Goatee"
+    ],
+    [
+      "FH10",
+      "Chin strap"
+    ],
+    [
+      "FH11",
+      "Mustache thin"
+    ],
+    [
+      "FH12",
+      "Mustache thick"
+    ],
+    [
+      "FH13",
+      "Handlebar mustache"
+    ],
+    [
+      "FH14",
+      "Sideburns"
+    ],
+    [
+      "FH15",
+      "Mutton chops"
+    ],
+    [
+      "FH16",
+      "Beard with bead slots"
+    ],
+    [
+      "FH17",
+      "Scrap-wire beard rings"
+    ],
+    [
+      "FH18",
+      "Verdant moss beard"
+    ],
+    [
+      "FH19",
+      "Lunar frost beard"
+    ],
+    [
+      "FH20",
+      "Patchy scarred beard"
+    ]
+  ],
+  "origins": [
+    [
+      "Meridian Gate / Urban Sprawl",
+      "skyport citizen, courier, guard trainee, refugee organizer",
+      "clean fabrics, sky hooks, brass-blue palettes"
+    ],
+    [
+      "Elderbloom / Verdant Accord",
+      "forest ward, root-court emissary, bio-circuit scout",
+      "leaf motifs, bark textures, bioluminescence"
+    ],
+    [
+      "Cindervale / Iron Crown",
+      "foundry worker, union defector, chainhouse survivor",
+      "heat scars, soot, industrial metal accessories"
+    ],
+    [
+      "Glass Desert / Luminous Expanse",
+      "nomad, mirage scholar, glasssmith apprentice",
+      "sun wraps, reflective fabrics, dust-gold tattoos"
+    ],
+    [
+      "Pelagos / Oceanic Freeports",
+      "diver, pressure-road courier, reef diplomat",
+      "pearls, coral dyes, pressure suit marks"
+    ],
+    [
+      "Lunarch / Hollow Moon",
+      "low-gravity pilgrim, gravity-knight squire, mirrorborn exile",
+      "silver, low-gravity straps, mirrored decals"
+    ],
+    [
+      "Black Meridian",
+      "siege survivor, senator's aide, civil ward organizer",
+      "formal coats, civic badges, null-sigil scars"
+    ],
+    [
+      "First Dream",
+      "dreammarked echo, memory wanderer, schema-born anomaly",
+      "surreal asymmetry, glowing freckles, soft gradients"
+    ],
+    [
+      "Syndicate Dominions",
+      "corporate defector, clinical ward escapee, executive experiment",
+      "sterile whites, glass implants, warning labels"
+    ],
+    [
+      "Scrap-Yard / Deprecated Repositories",
+      "salvager, platform runner, broken-AI technician",
+      "magnetic buckles, mismatched armor, exposed wiring"
+    ],
+    [
+      "Orbital / Cosmic Fronts",
+      "tether station cadet, lunar mechanic, defense ring operator",
+      "thruster rigs, vacuum seals, starfield pigments"
+    ],
+    [
+      "Dawnforge Custodian",
+      "late-game legacy origin, oathkeeper, starwell repair acolyte",
+      "gold-white glyphs, repaired-core motifs, ceremonial wraps"
+    ]
+  ],
+  "classes": [
+    [
+      "Protocol Weaver",
+      "reality manipulation / crowd control",
+      "hard-light glyphs, code tattoos, clean geometric accessories"
+    ],
+    [
+      "Apex Mutator",
+      "adaptive brawler",
+      "bio-digital veins, asymmetrical mutations, evolving texture overlays"
+    ],
+    [
+      "The Resonant",
+      "rhythm-based area damage",
+      "waveform tattoos, speaker charms, bass-reactive hair streaks"
+    ],
+    [
+      "Packmaster",
+      "tag-team grappler",
+      "handler leathers, bite-scar accents, companion collars and charms"
+    ],
+    [
+      "Orbital Striker",
+      "aerial specialist",
+      "thruster harnesses, pilot straps, zero-G hair physics previews"
+    ],
+    [
+      "Scrap-Tek",
+      "biomechanical harasser",
+      "magnetic gauntlets, grease marks, scavenged tech jewelry"
+    ],
+    [
+      "Kinetic Juggernaut",
+      "heavy bruiser",
+      "impact plating, cracked knuckles, compression wraps"
+    ],
+    [
+      "Phantom-Shift",
+      "precision assassin",
+      "phase scars, asymmetric eyes, shadow masks"
+    ],
+    [
+      "Sylvan Warden",
+      "environmental trapper",
+      "bark patterns, vine tattoos, flowers, living accessories"
+    ],
+    [
+      "Flux-Caster",
+      "elemental stance-swapper",
+      "fire/ice gradients, elemental eye glows, arcane jewelry"
+    ]
+  ],
+  "customization_areas": [
+    [
+      "Identity",
+      [
+        "character name",
+        "pronouns",
+        "voice family",
+        "voice pitch",
+        "formal/informal address",
+        "display title",
+        "account privacy"
+      ]
+    ],
+    [
+      "Body foundation",
+      [
+        "body model",
+        "presentation preset",
+        "height",
+        "body mass",
+        "muscle mass",
+        "fat distribution",
+        "shoulders",
+        "chest",
+        "waist",
+        "hips",
+        "leg length",
+        "arm length",
+        "hand/foot scale",
+        "neck length",
+        "posture"
+      ]
+    ],
+    [
+      "Skin",
+      [
+        "natural skin tone",
+        "fantasy skin tone",
+        "undertone",
+        "texture",
+        "pores",
+        "freckles",
+        "moles",
+        "vitiligo patterns",
+        "albinism-safe palette",
+        "sun exposure",
+        "age detail",
+        "body hair"
+      ]
+    ],
+    [
+      "Face",
+      [
+        "face preset",
+        "head shape",
+        "forehead",
+        "brow",
+        "eye shape",
+        "eye depth",
+        "nose bridge",
+        "nose tip",
+        "mouth",
+        "lips",
+        "cheeks",
+        "jaw",
+        "chin",
+        "ears",
+        "teeth",
+        "asymmetry"
+      ]
+    ],
+    [
+      "Hair",
+      [
+        "hairstyle",
+        "scalp pattern",
+        "hairline",
+        "length",
+        "volume",
+        "curl pattern",
+        "primary color",
+        "secondary color",
+        "gradient",
+        "streaks",
+        "metallic dye",
+        "glow dye",
+        "physics intensity"
+      ]
+    ],
+    [
+      "Facial hair",
+      [
+        "style",
+        "density",
+        "length",
+        "curl",
+        "color matching",
+        "beads",
+        "braids",
+        "grey pattern",
+        "scar interruption"
+      ]
+    ],
+    [
+      "Eyes",
+      [
+        "iris color",
+        "sclera color",
+        "pupil shape",
+        "heterochromia",
+        "glow intensity",
+        "blind eye",
+        "ocular implant",
+        "eyelashes",
+        "eyebrows"
+      ]
+    ],
+    [
+      "Marks",
+      [
+        "scars",
+        "burns",
+        "surgical seams",
+        "battle wear",
+        "blemishes",
+        "birthmarks",
+        "tattoos",
+        "war paint",
+        "class glyphs",
+        "faction insignias"
+      ]
+    ],
+    [
+      "Augmentations",
+      [
+        "prosthetic arms",
+        "prosthetic legs",
+        "ocular implants",
+        "neural ports",
+        "spinal braces",
+        "hearing devices",
+        "thruster sockets",
+        "data veins",
+        "aether-core visibility"
+      ]
+    ],
+    [
+      "Accessories",
+      [
+        "earrings",
+        "nose rings",
+        "brow rings",
+        "lip rings",
+        "glasses",
+        "goggles",
+        "masks",
+        "scarves",
+        "charms",
+        "belts",
+        "back trophies",
+        "companion accessories"
+      ]
+    ],
+    [
+      "Voice and animation",
+      [
+        "voice pitch",
+        "combat callout intensity",
+        "laugh",
+        "pain response",
+        "idle stance",
+        "walk",
+        "run",
+        "sprint",
+        "emotes",
+        "victory pose"
+      ]
+    ],
+    [
+      "Starter equipment",
+      [
+        "underlayer",
+        "starter armor silhouette",
+        "class weapon preview",
+        "dye palette",
+        "material wear",
+        "helmet visibility",
+        "cosmetic-only transmog"
+      ]
+    ]
+  ]
+}

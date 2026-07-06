@@ -1,0 +1,1437 @@
+{
+  "monster_family": "The Grid-Rushers",
+  "boss_context": "The Syndicate Lich",
+  "skin_variants": [
+    {
+      "skin_id": "the_grid_rushers_neon_01_common",
+      "display_name": "Neon Grid-Rushers Variant 01",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_02_rare",
+      "display_name": "Neon Grid-Rushers Variant 02",
+      "rarity": "rare",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_03_common",
+      "display_name": "Neon Grid-Rushers Variant 03",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_04_rare",
+      "display_name": "Neon Grid-Rushers Variant 04",
+      "rarity": "rare",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_05_common",
+      "display_name": "Neon Grid-Rushers Variant 05",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_06_rare",
+      "display_name": "Neon Grid-Rushers Variant 06",
+      "rarity": "rare",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_07_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 07",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_08_common",
+      "display_name": "Neon Grid-Rushers Variant 08",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_09_common",
+      "display_name": "Neon Grid-Rushers Variant 09",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_10_rare",
+      "display_name": "Neon Grid-Rushers Variant 10",
+      "rarity": "rare",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_11_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 11",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_12_common",
+      "display_name": "Neon Grid-Rushers Variant 12",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_13_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 13",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_14_legendary",
+      "display_name": "Neon Grid-Rushers Variant 14",
+      "rarity": "legendary",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 1,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_15_common",
+      "display_name": "Neon Grid-Rushers Variant 15",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_16_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 16",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_17_common",
+      "display_name": "Neon Grid-Rushers Variant 17",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_18_common",
+      "display_name": "Neon Grid-Rushers Variant 18",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_19_rare",
+      "display_name": "Neon Grid-Rushers Variant 19",
+      "rarity": "rare",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_20_common",
+      "display_name": "Neon Grid-Rushers Variant 20",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_21_rare",
+      "display_name": "Neon Grid-Rushers Variant 21",
+      "rarity": "rare",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_22_common",
+      "display_name": "Neon Grid-Rushers Variant 22",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_23_epic",
+      "display_name": "Neon Grid-Rushers Variant 23",
+      "rarity": "epic",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 5,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_24_common",
+      "display_name": "Neon Grid-Rushers Variant 24",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_25_common",
+      "display_name": "Neon Grid-Rushers Variant 25",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_26_common",
+      "display_name": "Neon Grid-Rushers Variant 26",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_27_common",
+      "display_name": "Neon Grid-Rushers Variant 27",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_28_common",
+      "display_name": "Neon Grid-Rushers Variant 28",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_29_common",
+      "display_name": "Neon Grid-Rushers Variant 29",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_30_common",
+      "display_name": "Neon Grid-Rushers Variant 30",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_31_common",
+      "display_name": "Neon Grid-Rushers Variant 31",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_32_common",
+      "display_name": "Neon Grid-Rushers Variant 32",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_33_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 33",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_34_common",
+      "display_name": "Neon Grid-Rushers Variant 34",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_35_common",
+      "display_name": "Neon Grid-Rushers Variant 35",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_36_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 36",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_37_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 37",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_38_common",
+      "display_name": "Neon Grid-Rushers Variant 38",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_39_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 39",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_40_common",
+      "display_name": "Neon Grid-Rushers Variant 40",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_41_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 41",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_42_common",
+      "display_name": "Neon Grid-Rushers Variant 42",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_43_common",
+      "display_name": "Neon Grid-Rushers Variant 43",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_44_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 44",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_45_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 45",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_46_common",
+      "display_name": "Neon Grid-Rushers Variant 46",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_47_common",
+      "display_name": "Neon Grid-Rushers Variant 47",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_48_rare",
+      "display_name": "Neon Grid-Rushers Variant 48",
+      "rarity": "rare",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_49_rare",
+      "display_name": "Neon Grid-Rushers Variant 49",
+      "rarity": "rare",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_50_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 50",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_51_common",
+      "display_name": "Neon Grid-Rushers Variant 51",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_52_common",
+      "display_name": "Neon Grid-Rushers Variant 52",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_53_rare",
+      "display_name": "Neon Grid-Rushers Variant 53",
+      "rarity": "rare",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 12,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_54_common",
+      "display_name": "Neon Grid-Rushers Variant 54",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_55_common",
+      "display_name": "Neon Grid-Rushers Variant 55",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_56_common",
+      "display_name": "Neon Grid-Rushers Variant 56",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_57_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 57",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_58_common",
+      "display_name": "Neon Grid-Rushers Variant 58",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_59_common",
+      "display_name": "Neon Grid-Rushers Variant 59",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_60_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 60",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_61_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 61",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_62_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 62",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_63_uncommon",
+      "display_name": "Neon Grid-Rushers Variant 63",
+      "rarity": "uncommon",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 24,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_neon_64_common",
+      "display_name": "Neon Grid-Rushers Variant 64",
+      "rarity": "common",
+      "element": "electric",
+      "albedo": "textures/01_monster_skin_albedo.png",
+      "emission": "textures/02_monster_skin_emission.png",
+      "decal_sheet": "textures/03_random_spawn_decal_sheet.png",
+      "random_weight": 58,
+      "spawn_rules": {
+        "avoid_nearby_duplicate": true,
+        "nearby_duplicate_radius_m": 60,
+        "reject_if_same_skin_seen_recently_seconds": 90,
+        "seed_components": [
+          "spawn_guid",
+          "area_id",
+          "encounter_id",
+          "monster_family",
+          "difficulty_tier"
+        ]
+      }
+    }
+  ],
+  "randomization_algorithm": {
+    "method": "weighted_seeded_hash",
+    "seed_inputs": [
+      "spawn_guid",
+      "encounter_id",
+      "world_region",
+      "difficulty",
+      "time_bucket"
+    ],
+    "nearby_duplicate_rejection": true,
+    "rare_identical_rule": {
+      "max_same_skin_per_encounter": 1,
+      "allow_duplicate_only_after_distinct_skins_seen": 8,
+      "duplicate_exception_for_swarm_size_above": 20
+    }
+  },
+  "runtime_outputs": [
+    "selected_albedo",
+    "selected_emission",
+    "selected_decal",
+    "selected_material_variant",
+    "selected_glb_overlay"
+  ]
+}

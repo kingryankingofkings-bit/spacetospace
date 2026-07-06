@@ -1,0 +1,315 @@
+{
+  "pack_name": "Ambient Wildlife + Critters GLB Pack v1",
+  "roadmap_pack_number": 20,
+  "created_utc": "2026-07-05T07:46:56.539044+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "notes": [
+    "All assets are real static low-poly GLB meshes.",
+    "They are browser-game prototype assets.",
+    "They are not rigged, animated, scripted, or engine-prefabbed yet.",
+    "Use manifest and colliders as first-pass metadata for engine import."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/01_rabbit_critter.glb",
+      "name": "Rabbit Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.32
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.64
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "rabbit",
+        "fur"
+      ],
+      "size_bytes": 13892
+    },
+    {
+      "file": "glb_assets/02_squirrel_critter.glb",
+      "name": "Squirrel Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.32
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.64
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "squirrel",
+        "fur"
+      ],
+      "size_bytes": 13892
+    },
+    {
+      "file": "glb_assets/03_small_deer_critter.glb",
+      "name": "Small Deer Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.32
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.64
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "deer",
+        "fur"
+      ],
+      "size_bytes": 13892
+    },
+    {
+      "file": "glb_assets/04_bird_critter.glb",
+      "name": "Bird Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.409
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.818
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "bird",
+        "blue"
+      ],
+      "size_bytes": 11564
+    },
+    {
+      "file": "glb_assets/05_fish_critter.glb",
+      "name": "Fish Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.14,
+          0.0,
+          0.282
+        ],
+        "size": [
+          1.18,
+          0.9,
+          0.563
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "fish",
+        "blue"
+      ],
+      "size_bytes": 10776
+    },
+    {
+      "file": "glb_assets/06_lizard_critter.glb",
+      "name": "Lizard Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.32
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.64
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "lizard",
+        "green"
+      ],
+      "size_bytes": 13680
+    },
+    {
+      "file": "glb_assets/07_firefly_cluster.glb",
+      "name": "Firefly Cluster",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.409
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.818
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "butterfly",
+        "yellow"
+      ],
+      "size_bytes": 11780
+    },
+    {
+      "file": "glb_assets/08_butterfly_critter.glb",
+      "name": "Butterfly Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.409
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.818
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "butterfly",
+        "purple"
+      ],
+      "size_bytes": 11568
+    },
+    {
+      "file": "glb_assets/09_bat_critter.glb",
+      "name": "Bat Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.409
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.818
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "bat",
+        "black"
+      ],
+      "size_bytes": 11352
+    },
+    {
+      "file": "glb_assets/10_frog_critter.glb",
+      "name": "Frog Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.32
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.64
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "frog",
+        "green"
+      ],
+      "size_bytes": 13680
+    },
+    {
+      "file": "glb_assets/11_crab_critter.glb",
+      "name": "Crab Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.14,
+          0.0,
+          0.282
+        ],
+        "size": [
+          1.18,
+          0.9,
+          0.563
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "crab",
+        "red"
+      ],
+      "size_bytes": 10984
+    },
+    {
+      "file": "glb_assets/12_owl_perch_critter.glb",
+      "name": "Owl Perch Critter",
+      "category": "ambient_wildlife_critter",
+      "gameplay_use": "ambient wildlife + critters asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.409
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.818
+        ]
+      },
+      "tags": [
+        "ambient_wildlife_critter",
+        "bird",
+        "fur"
+      ],
+      "size_bytes": 11564
+    }
+  ]
+}

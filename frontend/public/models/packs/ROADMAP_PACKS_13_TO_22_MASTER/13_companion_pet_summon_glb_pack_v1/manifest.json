@@ -1,0 +1,315 @@
+{
+  "pack_name": "Companion Pet + Summon GLB Pack v1",
+  "roadmap_pack_number": 13,
+  "created_utc": "2026-07-05T07:46:55.705265+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "notes": [
+    "All assets are real static low-poly GLB meshes.",
+    "They are browser-game prototype assets.",
+    "They are not rigged, animated, scripted, or engine-prefabbed yet.",
+    "Use manifest and colliders as first-pass metadata for engine import."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/01_wolf_pup_companion.glb",
+      "name": "Wolf Pup Companion",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.03,
+          0.6
+        ],
+        "size": [
+          1.2,
+          1.26,
+          1.2
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "wolf_pup",
+        "green"
+      ],
+      "size_bytes": 17260
+    },
+    {
+      "file": "glb_assets/02_shadow_cat_familiar.glb",
+      "name": "Shadow Cat Familiar",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.03,
+          0.6
+        ],
+        "size": [
+          1.2,
+          1.26,
+          1.2
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "shadow_cat",
+        "void"
+      ],
+      "size_bytes": 17256
+    },
+    {
+      "file": "glb_assets/03_crystal_familiar.glb",
+      "name": "Crystal Familiar",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.03,
+          0.67
+        ],
+        "size": [
+          1.2,
+          1.26,
+          1.34
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "crystal_familiar",
+        "cyan"
+      ],
+      "size_bytes": 17836
+    },
+    {
+      "file": "glb_assets/04_fire_imp_summon.glb",
+      "name": "Fire Imp Summon",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.03,
+          0.578
+        ],
+        "size": [
+          1.2,
+          1.26,
+          1.157
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "fire_imp",
+        "orange"
+      ],
+      "size_bytes": 17676
+    },
+    {
+      "file": "glb_assets/05_ice_wisp_summon.glb",
+      "name": "Ice Wisp Summon",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.609
+        ],
+        "size": [
+          1.1,
+          1.1,
+          1.218
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "ice_wisp",
+        "ice"
+      ],
+      "size_bytes": 14516
+    },
+    {
+      "file": "glb_assets/06_healing_sprite_orb.glb",
+      "name": "Healing Sprite Orb",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.609
+        ],
+        "size": [
+          1.1,
+          1.1,
+          1.218
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "sprite_orb",
+        "green"
+      ],
+      "size_bytes": 14520
+    },
+    {
+      "file": "glb_assets/07_scout_drone_companion.glb",
+      "name": "Scout Drone Companion",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.67
+        ],
+        "size": [
+          1.39,
+          1.16,
+          1.34
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "drone",
+        "blue"
+      ],
+      "size_bytes": 16340
+    },
+    {
+      "file": "glb_assets/08_thunder_beetle_pet.glb",
+      "name": "Thunder Beetle Pet",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.03,
+          0.48
+        ],
+        "size": [
+          1.2,
+          1.26,
+          0.96
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "beetle",
+        "yellow"
+      ],
+      "size_bytes": 15676
+    },
+    {
+      "file": "glb_assets/09_rootling_sprout_pet.glb",
+      "name": "Rootling Sprout Pet",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.03,
+          0.48
+        ],
+        "size": [
+          1.2,
+          1.26,
+          0.96
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "rootling",
+        "leaf"
+      ],
+      "size_bytes": 15884
+    },
+    {
+      "file": "glb_assets/10_void_mote_familiar.glb",
+      "name": "Void Mote Familiar",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.609
+        ],
+        "size": [
+          1.1,
+          1.1,
+          1.218
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "sprite_orb",
+        "purple"
+      ],
+      "size_bytes": 14524
+    },
+    {
+      "file": "glb_assets/11_clockwork_mini_golem.glb",
+      "name": "Clockwork Mini Golem",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.67
+        ],
+        "size": [
+          1.39,
+          1.16,
+          1.34
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "drone",
+        "steel"
+      ],
+      "size_bytes": 16340
+    },
+    {
+      "file": "glb_assets/12_summon_marker_familiar.glb",
+      "name": "Summon Marker Familiar",
+      "category": "companion_pet_summon",
+      "gameplay_use": "companion pet + summon asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.609
+        ],
+        "size": [
+          1.1,
+          1.1,
+          1.218
+        ]
+      },
+      "tags": [
+        "companion_pet_summon",
+        "sprite_orb",
+        "white"
+      ],
+      "size_bytes": 14308
+    }
+  ]
+}

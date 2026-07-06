@@ -1,0 +1,326 @@
+{
+  "pack_number": 761,
+  "action": "create non-destructive upgraded prefab variants",
+  "target_references_sample": [
+    {
+      "source_zip": "132_planet_defense_perimeter_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/02_display_prop_cluster.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "132_planet_defense_perimeter_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/planet_defense_perimeter_shop_item_skin_kit_ambience_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "133_orbital_tether_station_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/01_orbital_tether_station_shop_item_skin_kit_albedo.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "133_orbital_tether_station_shop_item_skin_kit.zip",
+      "path_in_zip": "prefab_specs/prefab_handoff.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "134_space_elevator_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/05_space_elevator_shop_item_skin_kit_decal.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "135_the_zenith_spire_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/01_vendor_counter_terminal.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "135_the_zenith_spire_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/the_zenith_spire_shop_item_skin_kit_music_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "136_the_provisioning_sectors_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/05_dye_liquid_or_reflection_pool.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "136_the_provisioning_sectors_shop_item_skin_kit.zip",
+      "path_in_zip": "data/material_texture_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "137_the_on_demand_arteries_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/04_the_on_demand_arteries_shop_item_skin_kit_emission.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "137_the_on_demand_arteries_shop_item_skin_kit.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "138_the_raid_rush_choke_points_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/08_the_raid_rush_choke_points_shop_item_skin_kit_surface.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "139_the_front_matter_void_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/04_shop_guard_or_vendor_variant.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "139_the_front_matter_void_shop_item_skin_kit.zip",
+      "path_in_zip": "data/object_and_spawn_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "140_the_micro_markets_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/03_the_micro_markets_shop_item_skin_kit_trim.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "140_the_micro_markets_shop_item_skin_kit.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "141_the_resonant_peaks_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/07_the_resonant_peaks_shop_item_skin_kit_starfield.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "142_the_sonic_badlands_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/03_shop_front_anchor.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "142_the_sonic_badlands_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/the_sonic_badlands_shop_item_skin_kit_event_or_pickup_sting.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "143_the_heavy_chewer_canyons_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/02_the_heavy_chewer_canyons_shop_item_skin_kit_normal_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "143_the_heavy_chewer_canyons_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/music_cue_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "144_the_shut_down_academies_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/06_the_shut_down_academies_shop_item_skin_kit_water.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "145_the_deprecated_repositories_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/02_display_prop_cluster.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "145_the_deprecated_repositories_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/the_deprecated_repositories_shop_item_skin_kit_ambience_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "146_the_scrap_yard_labyrinth_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/01_the_scrap_yard_labyrinth_shop_item_skin_kit_albedo.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "146_the_scrap_yard_labyrinth_shop_item_skin_kit.zip",
+      "path_in_zip": "prefab_specs/prefab_handoff.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "147_the_playa_of_ash_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/05_the_playa_of_ash_shop_item_skin_kit_decal.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "148_the_burning_playa_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/01_vendor_counter_terminal.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "148_the_burning_playa_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/the_burning_playa_shop_item_skin_kit_music_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "149_the_rhyming_labyrinths_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/05_dye_liquid_or_reflection_pool.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "149_the_rhyming_labyrinths_shop_item_skin_kit.zip",
+      "path_in_zip": "data/material_texture_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "150_the_phonetic_wastes_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/04_the_phonetic_wastes_shop_item_skin_kit_emission.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "150_the_phonetic_wastes_shop_item_skin_kit.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "151_the_emerald_canopy_sanctuary_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/08_the_emerald_canopy_sanctuary_shop_item_skin_kit_surface.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "152_the_whispering_glade_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/04_shop_guard_or_vendor_variant.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "152_the_whispering_glade_shop_item_skin_kit.zip",
+      "path_in_zip": "data/object_and_spawn_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "153_the_canopy_portrait_halls_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/03_the_canopy_portrait_halls_shop_item_skin_kit_trim.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "153_the_canopy_portrait_halls_shop_item_skin_kit.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/07_the_infinite_archives_shop_item_skin_kit_starfield.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/03_shop_front_anchor.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/the_voyage_incubator_shop_item_skin_kit_event_or_pickup_sting.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/02_the_lichs_court_shop_item_skin_kit_normal_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    }
+  ],
+  "required_components": [
+    "MaterialVariantSet",
+    "VFXLifetime",
+    "AbilityTriggerBinding",
+    "MonsterSkinRandomizer",
+    "CombatFlowProfile",
+    "DynamicCombatCameraTrigger",
+    "WeatherSunProfile",
+    "CharacterQualityMaterialPatch",
+    "HighTierEquipmentAffixBinding",
+    "SupportNPCAssistBinding"
+  ],
+  "validation": [
+    "random monster skin table returns no duplicate within recent window",
+    "combat camera blends without breaking input",
+    "class ability VFX spawns on correct socket",
+    "weather/sun LUT changes are reversible",
+    "high tier weapon and armor auras are optional prefab children",
+    "support NPC assist marker does not block navigation"
+  ]
+}

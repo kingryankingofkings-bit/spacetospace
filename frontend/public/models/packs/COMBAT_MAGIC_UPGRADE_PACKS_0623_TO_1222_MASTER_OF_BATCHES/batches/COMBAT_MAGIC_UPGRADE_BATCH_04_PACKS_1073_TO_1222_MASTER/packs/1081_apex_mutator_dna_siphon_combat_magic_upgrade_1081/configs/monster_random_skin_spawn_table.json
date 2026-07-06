@@ -1,0 +1,804 @@
+{
+  "target_monster": "The Venom-Spitter",
+  "rarity_goal": "It should be rare to see two identical monsters.",
+  "algorithm": {
+    "base": "weighted_random_without_recent_replacement",
+    "anti_duplicate_memory": 3,
+    "encounter_seed": "zone_id + encounter_id + spawn_index",
+    "elite_bonus_variance": true
+  },
+  "skin_roll_table": [
+    {
+      "skin_id": "the_venom_spitter_overcharged_waste_00",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Overcharged The Venom-Spitter - Waste",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_bark_crowned_geothermal_01",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Bark-Crowned The Venom-Spitter - Geothermal",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_echo_split_cosmic_02",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Echo-Split The Venom-Spitter - Cosmic",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_null_branded_transit_03",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Null-Branded The Venom-Spitter - Transit",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_grav_torn_deep-water_04",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Grav-Torn The Venom-Spitter - Deep-Water",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_tide_broken_archive_05",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Tide-Broken The Venom-Spitter - Archive",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_magnetized_festival_06",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Magnetized The Venom-Spitter - Festival",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_sonic_scarred_quarantine_07",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Sonic-Scarred The Venom-Spitter - Quarantine",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_glass_hardened_void_08",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Glass-Hardened The Venom-Spitter - Void",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_spore_sick_storm_09",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Spore-Sick The Venom-Spitter - Storm",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_chrome_maw_urban_10",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Chrome-Maw The Venom-Spitter - Urban",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_ash_baptized_wilds_11",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Ash-Baptized The Venom-Spitter - Wilds",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_overcharged_waste_12",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Overcharged The Venom-Spitter - Waste",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_bark_crowned_geothermal_13",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Bark-Crowned The Venom-Spitter - Geothermal",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_echo_split_cosmic_14",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Echo-Split The Venom-Spitter - Cosmic",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_null_branded_transit_15",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Null-Branded The Venom-Spitter - Transit",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_grav_torn_deep-water_16",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Grav-Torn The Venom-Spitter - Deep-Water",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_tide_broken_archive_17",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Tide-Broken The Venom-Spitter - Archive",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_magnetized_festival_18",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Magnetized The Venom-Spitter - Festival",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_sonic_scarred_quarantine_19",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Sonic-Scarred The Venom-Spitter - Quarantine",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_glass_hardened_void_20",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Glass-Hardened The Venom-Spitter - Void",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_spore_sick_storm_21",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Spore-Sick The Venom-Spitter - Storm",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_chrome_maw_urban_22",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Chrome-Maw The Venom-Spitter - Urban",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_ash_baptized_wilds_23",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Ash-Baptized The Venom-Spitter - Wilds",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_overcharged_waste_24",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Overcharged The Venom-Spitter - Waste",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_bark_crowned_geothermal_25",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Bark-Crowned The Venom-Spitter - Geothermal",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_echo_split_cosmic_26",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Echo-Split The Venom-Spitter - Cosmic",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_null_branded_transit_27",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Null-Branded The Venom-Spitter - Transit",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_grav_torn_deep-water_28",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Grav-Torn The Venom-Spitter - Deep-Water",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_tide_broken_archive_29",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Tide-Broken The Venom-Spitter - Archive",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_magnetized_festival_30",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Magnetized The Venom-Spitter - Festival",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_sonic_scarred_quarantine_31",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Sonic-Scarred The Venom-Spitter - Quarantine",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_glass_hardened_void_32",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Glass-Hardened The Venom-Spitter - Void",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_spore_sick_storm_33",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Spore-Sick The Venom-Spitter - Storm",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_chrome_maw_urban_34",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Chrome-Maw The Venom-Spitter - Urban",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_venom_spitter_ash_baptized_wilds_35",
+      "monster_family": "The Venom-Spitter",
+      "display_name": "Ash-Baptized The Venom-Spitter - Wilds",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    }
+  ]
+}

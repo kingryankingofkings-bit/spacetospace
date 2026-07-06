@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Void Anomaly",
+  "element_context": "voidtime",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_void_anomaly_voidtime_01",
+      "display_name": "Data-Forged The Void Anomaly 01",
+      "weight": 4.698,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "hide",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.998
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_02",
+      "display_name": "Ash-Baptized The Void Anomaly 02",
+      "weight": 4.69,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "scrap",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 0.955
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_03",
+      "display_name": "Tide-Broken The Void Anomaly 03",
+      "weight": 4.199,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 0.984
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_04",
+      "display_name": "Magnetized The Void Anomaly 04",
+      "weight": 4.062,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.1
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_05",
+      "display_name": "Sonic-Scarred The Void Anomaly 05",
+      "weight": 3.916,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.006
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_06",
+      "display_name": "Glass-Hardened The Void Anomaly 06",
+      "weight": 3.882,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.065
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_07",
+      "display_name": "Spore-Sick The Void Anomaly 07",
+      "weight": 3.652,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.017
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_08",
+      "display_name": "Chrome-Maw The Void Anomaly 08",
+      "weight": 3.716,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "bark",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 1.105
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_09",
+      "display_name": "Eclipse-Synced The Void Anomaly 09",
+      "weight": 3.574,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "void",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 0.933
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_10",
+      "display_name": "Overcharged The Void Anomaly 10",
+      "weight": 3.234,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.109
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_11",
+      "display_name": "Bark-Crowned The Void Anomaly 11",
+      "weight": 3.3,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.018
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_12",
+      "display_name": "Echo-Split The Void Anomaly 12",
+      "weight": 3.022,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.022
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_13",
+      "display_name": "Null-Branded The Void Anomaly 13",
+      "weight": 2.731,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "void",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.032
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_14",
+      "display_name": "Rhythm-Warped The Void Anomaly 14",
+      "weight": 2.695,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.088
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_15",
+      "display_name": "Grav-Torn The Void Anomaly 15",
+      "weight": 2.528,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 1.051
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_16",
+      "display_name": "Ablative The Void Anomaly 16",
+      "weight": 2.375,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.043
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_17",
+      "display_name": "Phase-Bound The Void Anomaly 17",
+      "weight": 2.055,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 1.053
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_18",
+      "display_name": "Venom-Laced The Void Anomaly 18",
+      "weight": 2.102,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "hide",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 0.934
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_19",
+      "display_name": "Warden-Fused The Void Anomaly 19",
+      "weight": 1.942,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.1
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_20",
+      "display_name": "Sovereign-Touched The Void Anomaly 20",
+      "weight": 1.703,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "void",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.09
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_21",
+      "display_name": "Data-Forged The Void Anomaly 21",
+      "weight": 1.441,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.064
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_22",
+      "display_name": "Ash-Baptized The Void Anomaly 22",
+      "weight": 1.504,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.059
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_23",
+      "display_name": "Tide-Broken The Void Anomaly 23",
+      "weight": 1.273,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.055
+      }
+    },
+    {
+      "skin_id": "the_void_anomaly_voidtime_24",
+      "display_name": "Magnetized The Void Anomaly 24",
+      "weight": 1.035,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.936
+      }
+    }
+  ]
+}

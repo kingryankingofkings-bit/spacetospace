@@ -1,0 +1,1439 @@
+{
+  "pack_name": "Modular Environment + Shop + Quest GLB Pack v1",
+  "created_utc": "2026-07-05T05:12:54.032123+00:00",
+  "format": "GLB",
+  "asset_count": 57,
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "These are intended for browser-game prototyping and world-building.",
+    "Assets are not rigged or animated.",
+    "Use colliders.json as a starting point for collision setup."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/mod_floor_stone_4x4.glb",
+      "name": "Modular Stone Floor 4x4",
+      "category": "modular_environment",
+      "gameplay_use": "base floor tile",
+      "collider_type": "box",
+      "tags": [
+        "floor",
+        "module",
+        "tile"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.125
+        ],
+        "size": [
+          4.08,
+          4.08,
+          0.25
+        ]
+      },
+      "size_bytes": 3492
+    },
+    {
+      "file": "glb_assets/mod_floor_wood_4x4.glb",
+      "name": "Modular Wooden Floor 4x4",
+      "category": "modular_environment",
+      "gameplay_use": "interior floor tile",
+      "collider_type": "box",
+      "tags": [
+        "floor",
+        "module",
+        "interior"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.12
+        ],
+        "size": [
+          4.1,
+          4.1,
+          0.24
+        ]
+      },
+      "size_bytes": 3596
+    },
+    {
+      "file": "glb_assets/mod_wall_stone_4x3.glb",
+      "name": "Modular Stone Wall 4x3",
+      "category": "modular_environment",
+      "gameplay_use": "standard wall module",
+      "collider_type": "box",
+      "tags": [
+        "wall",
+        "module",
+        "cover"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          -0.005,
+          1.58
+        ],
+        "size": [
+          4.1,
+          0.37,
+          3.16
+        ]
+      },
+      "size_bytes": 2652
+    },
+    {
+      "file": "glb_assets/mod_wall_wood_4x3.glb",
+      "name": "Modular Wooden Wall 4x3",
+      "category": "modular_environment",
+      "gameplay_use": "interior wood wall module",
+      "collider_type": "box",
+      "tags": [
+        "wall",
+        "module",
+        "interior"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.58
+        ],
+        "size": [
+          4.1,
+          0.28,
+          3.16
+        ]
+      },
+      "size_bytes": 2992
+    },
+    {
+      "file": "glb_assets/mod_half_wall_vault.glb",
+      "name": "Half Wall Vault Module",
+      "category": "modular_environment",
+      "gameplay_use": "vaultable barrier",
+      "collider_type": "box",
+      "tags": [
+        "vault",
+        "obstacle",
+        "arena"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          -0.03,
+          0.58
+        ],
+        "size": [
+          3.05,
+          0.36,
+          1.16
+        ]
+      },
+      "size_bytes": 1952
+    },
+    {
+      "file": "glb_assets/mod_door_frame_stone.glb",
+      "name": "Stone Door Frame",
+      "category": "modular_environment",
+      "gameplay_use": "door opening module",
+      "collider_type": "box",
+      "tags": [
+        "door",
+        "frame",
+        "module"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.602
+        ],
+        "size": [
+          2.75,
+          0.35,
+          3.205
+        ]
+      },
+      "size_bytes": 2496
+    },
+    {
+      "file": "glb_assets/mod_door_wood.glb",
+      "name": "Wooden Door",
+      "category": "modular_environment",
+      "gameplay_use": "interactive door",
+      "collider_type": "box",
+      "tags": [
+        "door",
+        "interior",
+        "wood"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          -0.02,
+          1.375
+        ],
+        "size": [
+          2.2,
+          0.22,
+          2.75
+        ]
+      },
+      "size_bytes": 4212
+    },
+    {
+      "file": "glb_assets/mod_gate_iron_portcullis.glb",
+      "name": "Iron Portcullis Gate",
+      "category": "modular_environment",
+      "gameplay_use": "security gate / dungeon gate",
+      "collider_type": "box",
+      "tags": [
+        "gate",
+        "security",
+        "dungeon"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.55
+        ],
+        "size": [
+          2.7,
+          0.14,
+          3.1
+        ]
+      },
+      "size_bytes": 5164
+    },
+    {
+      "file": "glb_assets/mod_window_arch.glb",
+      "name": "Arched Window",
+      "category": "modular_environment",
+      "gameplay_use": "window module",
+      "collider_type": "box",
+      "tags": [
+        "window",
+        "module",
+        "interior"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          -0.005,
+          1.1
+        ],
+        "size": [
+          2.0,
+          0.23,
+          2.2
+        ]
+      },
+      "size_bytes": 1924
+    },
+    {
+      "file": "glb_assets/mod_stairs_stone_3step.glb",
+      "name": "Stone Stairs 3-Step",
+      "category": "modular_environment",
+      "gameplay_use": "height transition",
+      "collider_type": "box",
+      "tags": [
+        "stairs",
+        "module",
+        "platform"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "size": [
+          3.2,
+          3.0,
+          0.9
+        ]
+      },
+      "size_bytes": 2196
+    },
+    {
+      "file": "glb_assets/mod_ramp_wood.glb",
+      "name": "Wooden Ramp",
+      "category": "modular_environment",
+      "gameplay_use": "walkable incline",
+      "collider_type": "box",
+      "tags": [
+        "ramp",
+        "module",
+        "traversal"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "size": [
+          4.02,
+          1.6,
+          2.0
+        ]
+      },
+      "size_bytes": 2544
+    },
+    {
+      "file": "glb_assets/mod_bridge_rope.glb",
+      "name": "Rope Bridge",
+      "category": "modular_environment",
+      "gameplay_use": "bridge / traversal object",
+      "collider_type": "box",
+      "tags": [
+        "bridge",
+        "traversal",
+        "forest"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.35
+        ],
+        "size": [
+          5.0,
+          1.4,
+          5.1
+        ]
+      },
+      "size_bytes": 4364
+    },
+    {
+      "file": "glb_assets/mod_ladder_wood.glb",
+      "name": "Wooden Ladder",
+      "category": "modular_environment",
+      "gameplay_use": "climbable ladder",
+      "collider_type": "box",
+      "tags": [
+        "ladder",
+        "climbable",
+        "traversal"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.9
+        ],
+        "size": [
+          1.12,
+          0.12,
+          3.8
+        ]
+      },
+      "size_bytes": 6396
+    },
+    {
+      "file": "glb_assets/mod_platform_round.glb",
+      "name": "Round Platform",
+      "category": "modular_environment",
+      "gameplay_use": "generic raised platform",
+      "collider_type": "cylinder",
+      "tags": [
+        "platform",
+        "arena",
+        "module"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.6
+        ],
+        "size": [
+          3.6,
+          3.6,
+          1.2
+        ]
+      },
+      "size_bytes": 3776
+    },
+    {
+      "file": "glb_assets/mod_roof_piece_gable.glb",
+      "name": "Gable Roof Piece",
+      "category": "modular_environment",
+      "gameplay_use": "roof module for interiors/towns",
+      "collider_type": "box",
+      "tags": [
+        "roof",
+        "building",
+        "town"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          2.3
+        ],
+        "size": [
+          6.205,
+          4.737,
+          0.16
+        ]
+      },
+      "size_bytes": 1836
+    },
+    {
+      "file": "glb_assets/mod_fence_wood.glb",
+      "name": "Wooden Fence Segment",
+      "category": "modular_environment",
+      "gameplay_use": "town or field boundary",
+      "collider_type": "box",
+      "tags": [
+        "fence",
+        "town",
+        "boundary"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "size": [
+          3.2,
+          0.12,
+          1.1
+        ]
+      },
+      "size_bytes": 3644
+    },
+    {
+      "file": "glb_assets/mod_barricade_scrap.glb",
+      "name": "Scrap Barricade",
+      "category": "modular_environment",
+      "gameplay_use": "cover / temporary blocker",
+      "collider_type": "box",
+      "tags": [
+        "barricade",
+        "cover",
+        "scrap"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.049,
+          0.598
+        ],
+        "size": [
+          2.605,
+          0.548,
+          1.205
+        ]
+      },
+      "size_bytes": 3316
+    },
+    {
+      "file": "glb_assets/mod_terrain_chunk_rock.glb",
+      "name": "Rock Terrain Chunk",
+      "category": "modular_environment",
+      "gameplay_use": "terrain / cover chunk",
+      "collider_type": "box",
+      "tags": [
+        "terrain",
+        "rock",
+        "cover"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "size": [
+          3.6,
+          2.4,
+          1.6
+        ]
+      },
+      "size_bytes": 3628
+    },
+    {
+      "file": "glb_assets/mod_cliff_face.glb",
+      "name": "Cliff Face Segment",
+      "category": "modular_environment",
+      "gameplay_use": "vertical cliff module",
+      "collider_type": "box",
+      "tags": [
+        "cliff",
+        "terrain",
+        "module"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.093,
+          1.75
+        ],
+        "size": [
+          4.05,
+          1.824,
+          3.5
+        ]
+      },
+      "size_bytes": 3468
+    },
+    {
+      "file": "glb_assets/mod_cave_entrance.glb",
+      "name": "Cave Entrance",
+      "category": "modular_environment",
+      "gameplay_use": "cave doorway module",
+      "collider_type": "box",
+      "tags": [
+        "cave",
+        "entrance",
+        "terrain"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.1,
+          1.75
+        ],
+        "size": [
+          5.0,
+          2.2,
+          3.5
+        ]
+      },
+      "size_bytes": 1944
+    },
+    {
+      "file": "glb_assets/mod_ruin_arch.glb",
+      "name": "Ruined Arch",
+      "category": "modular_environment",
+      "gameplay_use": "ruins set piece / passage",
+      "collider_type": "box",
+      "tags": [
+        "ruin",
+        "arch",
+        "setpiece"
+      ],
+      "bounds": {
+        "center": [
+          0.118,
+          0.026,
+          1.655
+        ],
+        "size": [
+          3.836,
+          0.652,
+          3.39
+        ]
+      },
+      "size_bytes": 4384
+    },
+    {
+      "file": "glb_assets/mod_water_plane.glb",
+      "name": "Water Plane",
+      "category": "modular_environment",
+      "gameplay_use": "water surface tile",
+      "collider_type": "box",
+      "tags": [
+        "water",
+        "plane",
+        "hazard"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.02
+        ],
+        "size": [
+          4.0,
+          4.0,
+          0.04
+        ]
+      },
+      "size_bytes": 1236
+    },
+    {
+      "file": "glb_assets/mod_lava_plane.glb",
+      "name": "Lava Plane",
+      "category": "modular_environment",
+      "gameplay_use": "lava hazard tile",
+      "collider_type": "box",
+      "tags": [
+        "lava",
+        "hazard",
+        "plane"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.03
+        ],
+        "size": [
+          4.02,
+          4.02,
+          0.06
+        ]
+      },
+      "size_bytes": 1956
+    },
+    {
+      "file": "glb_assets/mod_acid_plane.glb",
+      "name": "Acid Plane",
+      "category": "modular_environment",
+      "gameplay_use": "acid hazard tile",
+      "collider_type": "box",
+      "tags": [
+        "acid",
+        "hazard",
+        "plane"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.03
+        ],
+        "size": [
+          4.02,
+          4.02,
+          0.06
+        ]
+      },
+      "size_bytes": 1968
+    },
+    {
+      "file": "glb_assets/mod_interior_room_shell.glb",
+      "name": "Interior Room Shell",
+      "category": "modular_environment",
+      "gameplay_use": "small interior room shell",
+      "collider_type": "box",
+      "tags": [
+        "interior",
+        "room",
+        "shell"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.5
+        ],
+        "size": [
+          6.18,
+          6.18,
+          3.0
+        ]
+      },
+      "size_bytes": 3144
+    },
+    {
+      "file": "glb_assets/shop_counter_basic.glb",
+      "name": "Shop Counter",
+      "category": "shop_interior",
+      "gameplay_use": "vendor counter",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "counter",
+        "vendor"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "size": [
+          2.8,
+          0.8,
+          1.1
+        ]
+      },
+      "size_bytes": 2024
+    },
+    {
+      "file": "glb_assets/shop_shelf_tall.glb",
+      "name": "Tall Shop Shelf",
+      "category": "shop_interior",
+      "gameplay_use": "display shelf",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "shelf",
+        "display"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.2
+        ],
+        "size": [
+          1.6,
+          0.42,
+          2.4
+        ]
+      },
+      "size_bytes": 3664
+    },
+    {
+      "file": "glb_assets/shop_weapon_rack.glb",
+      "name": "Weapon Rack",
+      "category": "shop_interior",
+      "gameplay_use": "weapon display",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "weapon",
+        "rack"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          -0.028,
+          1.05
+        ],
+        "size": [
+          1.9,
+          0.255,
+          2.1
+        ]
+      },
+      "size_bytes": 4368
+    },
+    {
+      "file": "glb_assets/shop_armor_stand.glb",
+      "name": "Armor Stand",
+      "category": "shop_interior",
+      "gameplay_use": "armor display",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "armor",
+        "display"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.013
+        ],
+        "size": [
+          0.9,
+          0.8,
+          2.025
+        ]
+      },
+      "size_bytes": 4512
+    },
+    {
+      "file": "glb_assets/shop_anvil.glb",
+      "name": "Anvil",
+      "category": "shop_interior",
+      "gameplay_use": "blacksmith station",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "blacksmith",
+        "anvil"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.48
+        ],
+        "size": [
+          1.0,
+          0.45,
+          0.96
+        ]
+      },
+      "size_bytes": 2476
+    },
+    {
+      "file": "glb_assets/shop_forge_station.glb",
+      "name": "Forge Station",
+      "category": "shop_interior",
+      "gameplay_use": "blacksmith forge",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "forge",
+        "blacksmith"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.6
+        ],
+        "size": [
+          2.2,
+          1.6,
+          3.2
+        ]
+      },
+      "size_bytes": 3200
+    },
+    {
+      "file": "glb_assets/shop_dye_vat.glb",
+      "name": "Armor Dye Vat",
+      "category": "shop_interior",
+      "gameplay_use": "dye shop station",
+      "collider_type": "cylinder",
+      "tags": [
+        "shop",
+        "dye",
+        "vat"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.522
+        ],
+        "size": [
+          1.4,
+          1.365,
+          1.055
+        ]
+      },
+      "size_bytes": 3648
+    },
+    {
+      "file": "glb_assets/shop_skin_display_mannequin.glb",
+      "name": "Weapon Skin Mannequin",
+      "category": "shop_interior",
+      "gameplay_use": "weapon skin shop display",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "weapon_skin",
+        "display"
+      ],
+      "bounds": {
+        "center": [
+          0.032,
+          0.0,
+          1.072
+        ],
+        "size": [
+          0.963,
+          0.55,
+          2.144
+        ]
+      },
+      "size_bytes": 5980
+    },
+    {
+      "file": "glb_assets/shop_inn_bed.glb",
+      "name": "Inn Bed",
+      "category": "shop_interior",
+      "gameplay_use": "rest furniture",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "inn",
+        "bed"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.343
+        ],
+        "size": [
+          2.2,
+          1.2,
+          0.675
+        ]
+      },
+      "size_bytes": 3300
+    },
+    {
+      "file": "glb_assets/shop_inn_table_round.glb",
+      "name": "Inn Round Table",
+      "category": "shop_interior",
+      "gameplay_use": "inn furniture",
+      "collider_type": "cylinder",
+      "tags": [
+        "shop",
+        "inn",
+        "table"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.493
+        ],
+        "size": [
+          1.4,
+          1.4,
+          0.975
+        ]
+      },
+      "size_bytes": 4188
+    },
+    {
+      "file": "glb_assets/shop_stool.glb",
+      "name": "Stool",
+      "category": "shop_interior",
+      "gameplay_use": "small seat",
+      "collider_type": "cylinder",
+      "tags": [
+        "shop",
+        "seat",
+        "furniture"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.285
+        ],
+        "size": [
+          0.56,
+          0.533,
+          0.57
+        ]
+      },
+      "size_bytes": 4368
+    },
+    {
+      "file": "glb_assets/shop_sign_hanging.glb",
+      "name": "Hanging Shop Sign",
+      "category": "shop_interior",
+      "gameplay_use": "shop exterior/interior signage",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "sign",
+        "exterior"
+      ],
+      "bounds": {
+        "center": [
+          -0.07,
+          0.0,
+          1.0
+        ],
+        "size": [
+          1.54,
+          0.08,
+          2.0
+        ]
+      },
+      "size_bytes": 3280
+    },
+    {
+      "file": "glb_assets/shop_lantern.glb",
+      "name": "Lantern",
+      "category": "shop_interior",
+      "gameplay_use": "light source prop",
+      "collider_type": "cylinder",
+      "tags": [
+        "shop",
+        "light",
+        "lantern"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.587
+        ],
+        "size": [
+          0.4,
+          0.38,
+          0.524
+        ]
+      },
+      "size_bytes": 6164
+    },
+    {
+      "file": "glb_assets/shop_banner.glb",
+      "name": "Shop Banner",
+      "category": "shop_interior",
+      "gameplay_use": "wall decoration / faction signifier",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "banner",
+        "decor"
+      ],
+      "bounds": {
+        "center": [
+          0.5,
+          -0.005,
+          1.2
+        ],
+        "size": [
+          1.1,
+          0.11,
+          2.4
+        ]
+      },
+      "size_bytes": 2760
+    },
+    {
+      "file": "glb_assets/shop_market_stall.glb",
+      "name": "Market Stall",
+      "category": "shop_interior",
+      "gameplay_use": "outdoor vendor stall",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "stall",
+        "vendor"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.25
+        ],
+        "size": [
+          2.4,
+          1.4,
+          2.5
+        ]
+      },
+      "size_bytes": 4292
+    },
+    {
+      "file": "glb_assets/shop_ledger_desk.glb",
+      "name": "Ledger Desk",
+      "category": "shop_interior",
+      "gameplay_use": "merchant bookkeeping desk",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "desk",
+        "merchant"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.59
+        ],
+        "size": [
+          1.4,
+          0.7,
+          1.17
+        ]
+      },
+      "size_bytes": 3308
+    },
+    {
+      "file": "glb_assets/shop_storage_chest.glb",
+      "name": "Storage Chest",
+      "category": "shop_interior",
+      "gameplay_use": "loot / storage furniture",
+      "collider_type": "box",
+      "tags": [
+        "shop",
+        "chest",
+        "storage"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          -0.015,
+          0.506
+        ],
+        "size": [
+          1.363,
+          0.89,
+          1.012
+        ]
+      },
+      "size_bytes": 2768
+    },
+    {
+      "file": "glb_assets/quest_notice_board.glb",
+      "name": "Quest Notice Board",
+      "category": "quest_objects",
+      "gameplay_use": "quest hub board",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "board",
+        "hub"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.6
+        ],
+        "size": [
+          2.2,
+          0.18,
+          3.2
+        ]
+      },
+      "size_bytes": 3852
+    },
+    {
+      "file": "glb_assets/quest_scroll_pedestal.glb",
+      "name": "Quest Scroll Pedestal",
+      "category": "quest_objects",
+      "gameplay_use": "quest acceptance / story trigger",
+      "collider_type": "cylinder",
+      "tags": [
+        "quest",
+        "scroll",
+        "pedestal"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.755
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.51
+        ]
+      },
+      "size_bytes": 4864
+    },
+    {
+      "file": "glb_assets/quest_evidence_crate.glb",
+      "name": "Evidence Crate",
+      "category": "quest_objects",
+      "gameplay_use": "collectible evidence container",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "evidence",
+        "crate"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          -0.025,
+          0.45
+        ],
+        "size": [
+          1.2,
+          1.05,
+          0.9
+        ]
+      },
+      "size_bytes": 1988
+    },
+    {
+      "file": "glb_assets/quest_relic_fragment.glb",
+      "name": "Relic Fragment",
+      "category": "quest_objects",
+      "gameplay_use": "rare collectible / turn-in item",
+      "collider_type": "sphere",
+      "tags": [
+        "quest",
+        "relic",
+        "collectible"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          0.72,
+          0.6,
+          1.12
+        ]
+      },
+      "size_bytes": 3512
+    },
+    {
+      "file": "glb_assets/quest_courier_package.glb",
+      "name": "Courier Package",
+      "category": "quest_objects",
+      "gameplay_use": "delivery quest item",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "delivery",
+        "package"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          -0.015,
+          0.3
+        ],
+        "size": [
+          0.92,
+          0.65,
+          0.6
+        ]
+      },
+      "size_bytes": 4300
+    },
+    {
+      "file": "glb_assets/quest_rescue_cage.glb",
+      "name": "Rescue Cage",
+      "category": "quest_objects",
+      "gameplay_use": "rescue objective / prisoner prop",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "rescue",
+        "cage"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.09
+        ],
+        "size": [
+          1.8,
+          1.8,
+          2.17
+        ]
+      },
+      "size_bytes": 11832
+    },
+    {
+      "file": "glb_assets/quest_signal_flare_beacon.glb",
+      "name": "Signal Flare Beacon",
+      "category": "quest_objects",
+      "gameplay_use": "signal / summon objective",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "signal",
+        "beacon"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.25
+        ],
+        "size": [
+          0.8,
+          0.8,
+          2.5
+        ]
+      },
+      "size_bytes": 3876
+    },
+    {
+      "file": "glb_assets/quest_ritual_stone.glb",
+      "name": "Ritual Stone",
+      "category": "quest_objects",
+      "gameplay_use": "ritual / activation objective",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "ritual",
+        "stone"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.2
+        ],
+        "size": [
+          0.947,
+          0.8,
+          2.4
+        ]
+      },
+      "size_bytes": 3252
+    },
+    {
+      "file": "glb_assets/quest_broken_device.glb",
+      "name": "Broken Device",
+      "category": "quest_objects",
+      "gameplay_use": "repair / scavenging objective",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "device",
+        "repair"
+      ],
+      "bounds": {
+        "center": [
+          -0.05,
+          -0.043,
+          0.45
+        ],
+        "size": [
+          1.599,
+          1.013,
+          0.9
+        ]
+      },
+      "size_bytes": 6152
+    },
+    {
+      "file": "glb_assets/quest_tracking_marker.glb",
+      "name": "Tracking Marker",
+      "category": "quest_objects",
+      "gameplay_use": "waypoint / tracking objective",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "marker",
+        "tracking"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.175
+        ],
+        "size": [
+          0.94,
+          0.94,
+          2.35
+        ]
+      },
+      "size_bytes": 7712
+    },
+    {
+      "file": "glb_assets/quest_objective_flag.glb",
+      "name": "Objective Flag",
+      "category": "quest_objects",
+      "gameplay_use": "capture / location objective",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "flag",
+        "objective"
+      ],
+      "bounds": {
+        "center": [
+          0.41,
+          0.0,
+          1.2
+        ],
+        "size": [
+          0.98,
+          0.16,
+          2.4
+        ]
+      },
+      "size_bytes": 3396
+    },
+    {
+      "file": "glb_assets/quest_boss_key_pedestal.glb",
+      "name": "Boss Key Pedestal",
+      "category": "quest_objects",
+      "gameplay_use": "boss key presentation",
+      "collider_type": "cylinder",
+      "tags": [
+        "quest",
+        "boss_key",
+        "pedestal"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.635
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.27
+        ]
+      },
+      "size_bytes": 3476
+    },
+    {
+      "file": "glb_assets/quest_sealed_door.glb",
+      "name": "Sealed Door",
+      "category": "quest_objects",
+      "gameplay_use": "story gate / locked door",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "door",
+        "locked"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          -0.05,
+          1.5
+        ],
+        "size": [
+          2.4,
+          0.3,
+          3.0
+        ]
+      },
+      "size_bytes": 6488
+    },
+    {
+      "file": "glb_assets/quest_puzzle_switch.glb",
+      "name": "Puzzle Switch",
+      "category": "quest_objects",
+      "gameplay_use": "switch / puzzle interaction",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "switch",
+        "puzzle"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.407
+        ],
+        "size": [
+          0.9,
+          0.9,
+          0.825
+        ]
+      },
+      "size_bytes": 4280
+    },
+    {
+      "file": "glb_assets/quest_pressure_plate.glb",
+      "name": "Pressure Plate",
+      "category": "quest_objects",
+      "gameplay_use": "floor trigger",
+      "collider_type": "box",
+      "tags": [
+        "quest",
+        "pressure_plate",
+        "trigger"
+      ],
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.08
+        ],
+        "size": [
+          1.4,
+          1.4,
+          0.16
+        ]
+      },
+      "size_bytes": 1992
+    }
+  ]
+}

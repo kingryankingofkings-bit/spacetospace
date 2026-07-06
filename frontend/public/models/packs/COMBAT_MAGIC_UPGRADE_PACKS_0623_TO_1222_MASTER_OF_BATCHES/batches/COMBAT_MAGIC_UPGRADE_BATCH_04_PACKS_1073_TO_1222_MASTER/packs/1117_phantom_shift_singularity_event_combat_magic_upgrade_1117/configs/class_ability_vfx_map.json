@@ -1,0 +1,39 @@
+{
+  "class": "Phantom-Shift",
+  "combat_style": "Precision Assassin",
+  "subclass": "Neural-Linker",
+  "specialization": "Synaptic Overload",
+  "primary_ability": "Singularity Event",
+  "resource": "Flux Charges",
+  "ability_vfx": {
+    "cast_module": "glb_modules/01_class_special_attack_vfx.glb",
+    "emission_map": "texture_upgrades/01_class_ability_emission.png",
+    "glyph_sheet": "texture_upgrades/02_subclass_talent_glyph_sheet.png",
+    "cast_audio": "audio_cues/01_special_attack_cast.wav",
+    "impact_audio": "audio_cues/02_magic_impact.wav",
+    "engine_profile": {
+      "spawn_socket": "hands_or_weapon_tip",
+      "lifetime_ms": 890,
+      "blend_mode": "additive_emissive",
+      "hitstop_ms": 43,
+      "combo_safe_cancel_window_ms": 150
+    }
+  },
+  "all_class_subclasses": [
+    "Void-Walker",
+    "Chrono-Blade",
+    "Neural-Linker",
+    "Glass-Cannon"
+  ],
+  "all_class_specializations": [
+    "Phase-Shift Assassination",
+    "Shadow-Anchor",
+    "Temporal Stutter",
+    "Time-Loop",
+    "Synaptic Overload",
+    "Sensory Feedback",
+    "Velocity Scaling",
+    "Momentum Drift"
+  ],
+  "coverage_note": "Across the 600-pack set, class, subclass, specialization, and level-tree ability coverage is rotated through all ten player classes."
+}

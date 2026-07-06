@@ -1,0 +1,552 @@
+{
+  "pack_number": 955,
+  "family": "weather_sun_terrain",
+  "class": "The Scrap-Tek",
+  "monster": "The Venom-Spitter",
+  "boss": "The Resonant Behemoth",
+  "support_npc": "Commander Solis",
+  "source_targets": {
+    "glb_targets": [
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/06_containment_vaults/20_tovin_deepwell_cartographer_at_containment.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/07_quarantine_chapel/07_cassian_spirebound_fixer_of_quarantine.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/07_quarantine_chapel/14_vale_gravesong_scout_under_quarantine.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/08_emergency_purge_system/01_juno_voidrill_watcher_at_emergency.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/08_emergency_purge_system/08_maven_ironwake_pilgrim_from_emergency.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/08_emergency_purge_system/15_mirek_cragwarden_herald_near_emergency.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/09_the_silent_exit/02_juno_emberkin_tactician_near.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/09_the_silent_exit/09_draven_trenchmark_oracle_under.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/02_the_private_quarantine/09_the_silent_exit/16_varren_stormhush_keeper_of.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/01_central_transfer_well/03_keir_dubwater_mechanist_at_central.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/01_central_transfer_well/10_zerin_skyharrow_scout_near_central.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc",
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/01_central_transfer_well/17_maelis_emberkin_mechanist_near_central.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/02_platform_cluster_alpha/04_vexa_cragwarden_ranger_from_platform.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/02_platform_cluster_alpha/11_bex_runeclasp_tactician_from_platform.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/02_platform_cluster_alpha/18_orin_gearmantle_runner_from_platform.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/05_thorne_deepwell_tactician_of_maintenance.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/12_thorne_mossguard_herald_from_maintenance.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/19_varren_nullborne_diver_of_maintenance.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/06_astra_gravesong_courier_of_relay.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/13_quill_signalborn_herald_of_relay.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/20_draven_emberkin_courier_near_relay.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/05_signal_bridge/07_pax_glassroot_herald_from_signal.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/05_signal_bridge/14_bex_echohand_diver_from_signal.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/06_abandoned_siding/01_vela_voxmere_operator_at_abandoned.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/06_abandoned_siding/08_sarai_gearmantle_herald_of_abandoned.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/06_abandoned_siding/15_luma_gravesong_archivist_from_abandoned.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/07_freight_vault/02_calder_mossguard_smith_at_freight.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/07_freight_vault/09_tovin_holloway_pilgrim_at_freight.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+        "path_in_zip": "textures/04_the_canopy_portrait_halls_world_detail_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "textures/03_the_infinite_archives_world_detail_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "047_the_voyage_incubator_world_detail_kit.zip",
+        "path_in_zip": "textures/02_the_voyage_incubator_world_detail_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "048_the_lichs_court_world_detail_kit.zip",
+        "path_in_zip": "textures/01_the_lichs_court_world_detail_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "048_the_lichs_court_world_detail_kit.zip",
+        "path_in_zip": "textures/08_the_lichs_court_world_detail_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+        "path_in_zip": "textures/07_the_evolution_arenas_world_detail_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+        "path_in_zip": "textures/06_the_pocket_monster_plains_world_detail_kit_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "051_the_magma_core_forges_world_detail_kit.zip",
+        "path_in_zip": "textures/05_the_magma_core_forges_world_detail_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "052_the_reggae_dub_oasis_world_detail_kit.zip",
+        "path_in_zip": "textures/04_the_reggae_dub_oasis_world_detail_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "053_the_subterranean_grid_world_detail_kit.zip",
+        "path_in_zip": "textures/03_the_subterranean_grid_world_detail_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "054_the_private_quarantine_world_detail_kit.zip",
+        "path_in_zip": "textures/02_the_private_quarantine_world_detail_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "055_the_revision_labs_world_detail_kit.zip",
+        "path_in_zip": "textures/01_the_revision_labs_world_detail_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "055_the_revision_labs_world_detail_kit.zip",
+        "path_in_zip": "textures/08_the_revision_labs_world_detail_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "056_the_molten_forge_world_detail_kit.zip",
+        "path_in_zip": "textures/07_the_molten_forge_world_detail_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "057_the_abyssal_trench_world_detail_kit.zip",
+        "path_in_zip": "textures/06_the_abyssal_trench_world_detail_kit_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "058_the_wayfora_archipelago_world_detail_kit.zip",
+        "path_in_zip": "textures/05_the_wayfora_archipelago_world_detail_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "059_lunar_readiness_base_gnarl_maws_variant_pack.zip",
+        "path_in_zip": "textures/04_lunar_readiness_base_gnarl_maws_variant_pack_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "060_planet_defense_perimeter_grid_rushers_variant_pack.zip",
+        "path_in_zip": "textures/03_planet_defense_perimeter_grid_rushers_variant_pack_trim.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "061_orbital_tether_station_scrap_phalanx_variant_pack.zip",
+        "path_in_zip": "textures/02_orbital_tether_station_scrap_phalanx_variant_pack_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "062_space_elevator_siphon_ticks_variant_pack.zip",
+        "path_in_zip": "textures/01_space_elevator_siphon_ticks_variant_pack_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "062_space_elevator_siphon_ticks_variant_pack.zip",
+        "path_in_zip": "textures/08_space_elevator_siphon_ticks_variant_pack_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "063_the_zenith_spire_iron_jaw_hound_variant_pack.zip",
+        "path_in_zip": "textures/07_the_zenith_spire_iron_jaw_hound_variant_pack_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "064_the_provisioning_sectors_tremor_fiend_variant_pack.zip",
+        "path_in_zip": "textures/06_the_provisioning_sectors_tremor_fiend_variant_pack_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "065_the_on_demand_arteries_venom_spitter_variant_pack.zip",
+        "path_in_zip": "textures/05_the_on_demand_arteries_venom_spitter_variant_pack_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      }
+    ],
+    "audio_targets": [
+      {
+        "source_zip": "190_special_event_encounter_bundle_24.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_24_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "192_special_event_encounter_bundle_26.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_26_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "195_special_event_encounter_bundle_29.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_29_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "197_special_event_encounter_bundle_31.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_31_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "199_special_event_encounter_bundle_33.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_33_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "202_global_starfields_space_debris_kit.zip",
+        "path_in_zip": "audio/global_starfields_space_debris_kit_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "204_global_creature_race_texture_atlas_kit.zip",
+        "path_in_zip": "audio/global_creature_race_texture_atlas_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "creature",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "206_global_armor_dye_material_kit.zip",
+        "path_in_zip": "audio/global_armor_dye_material_kit_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "armor"
+        ]
+      }
+    ],
+    "metadata_targets": [
+      {
+        "source_zip": "421_creature_skin_element_upgrade_batch_199.zip",
+        "path_in_zip": "patches/texture_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "422_water_star_environment_upgrade_batch_200.zip",
+        "path_in_zip": "patches/texture_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "423_world_object_visual_polish_batch_001_micro_sky_skiff.zip",
+        "path_in_zip": "patches/qa_validation_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "424_skyship_hull_size_variants_batch_002_scout_sloop.zip",
+        "path_in_zip": "patches/prefab_variant_patch.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "425_skyship_propulsion_upgrades_batch_003_courier_cutter.zip",
+        "path_in_zip": "patches/material_visual_upgrade_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "426_skyship_sail_balloon_rigging_batch_004_patrol_corvette.zip",
+        "path_in_zip": "patches/skyship_size_upgrade_plan.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "427_skyship_deck_interior_upgrades_batch_005_merchant_barge.zip",
+        "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "427_skyship_deck_interior_upgrades_batch_005_merchant_barge.zip",
+        "path_in_zip": "VALIDATION_REPORT.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      }
+    ]
+  },
+  "antigravity_2_0_tasks": [
+    "Create non-destructive upgraded prefab variants.",
+    "Apply random monster skin tables at spawn time.",
+    "Bind player class ability VFX to level progression and subclass specialization.",
+    "Attach high-tier weapon/armor GLBs and material maps to item prefabs.",
+    "Add combat-start camera trigger using camera rules.",
+    "Add weather, sun color, terrain, and nature material overrides.",
+    "QA duplicate monster appearances across a 50-spawn encounter sample."
+  ]
+}

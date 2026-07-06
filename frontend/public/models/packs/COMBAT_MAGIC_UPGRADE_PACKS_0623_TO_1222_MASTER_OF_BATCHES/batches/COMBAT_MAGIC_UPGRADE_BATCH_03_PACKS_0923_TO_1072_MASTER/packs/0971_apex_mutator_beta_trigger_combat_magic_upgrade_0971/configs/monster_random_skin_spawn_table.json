@@ -1,0 +1,804 @@
+{
+  "target_monster": "The Gnarl-Maws",
+  "rarity_goal": "It should be rare to see two identical monsters.",
+  "algorithm": {
+    "base": "weighted_random_without_recent_replacement",
+    "anti_duplicate_memory": 3,
+    "encounter_seed": "zone_id + encounter_id + spawn_index",
+    "elite_bonus_variance": true
+  },
+  "skin_roll_table": [
+    {
+      "skin_id": "the_gnarl_maws_chrome_maw_void_00",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Chrome-Maw The Gnarl-Maws - Void",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_ash_baptized_storm_01",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Ash-Baptized The Gnarl-Maws - Storm",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_overcharged_urban_02",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Overcharged The Gnarl-Maws - Urban",
+      "weight": 16,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_bark_crowned_wilds_03",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Bark-Crowned The Gnarl-Maws - Wilds",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_echo_split_waste_04",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Echo-Split The Gnarl-Maws - Waste",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_null_branded_geothermal_05",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Null-Branded The Gnarl-Maws - Geothermal",
+      "weight": 15,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_grav_torn_cosmic_06",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Grav-Torn The Gnarl-Maws - Cosmic",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_tide_broken_transit_07",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Tide-Broken The Gnarl-Maws - Transit",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_magnetized_deep-water_08",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Magnetized The Gnarl-Maws - Deep-Water",
+      "weight": 14,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_scarred_archive_09",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Sonic-Scarred The Gnarl-Maws - Archive",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_glass_hardened_festival_10",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Glass-Hardened The Gnarl-Maws - Festival",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_spore_sick_quarantine_11",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Spore-Sick The Gnarl-Maws - Quarantine",
+      "weight": 13,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_chrome_maw_void_12",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Chrome-Maw The Gnarl-Maws - Void",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_ash_baptized_storm_13",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Ash-Baptized The Gnarl-Maws - Storm",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_overcharged_urban_14",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Overcharged The Gnarl-Maws - Urban",
+      "weight": 12,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_bark_crowned_wilds_15",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Bark-Crowned The Gnarl-Maws - Wilds",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_echo_split_waste_16",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Echo-Split The Gnarl-Maws - Waste",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_null_branded_geothermal_17",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Null-Branded The Gnarl-Maws - Geothermal",
+      "weight": 11,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_grav_torn_cosmic_18",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Grav-Torn The Gnarl-Maws - Cosmic",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_tide_broken_transit_19",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Tide-Broken The Gnarl-Maws - Transit",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_magnetized_deep-water_20",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Magnetized The Gnarl-Maws - Deep-Water",
+      "weight": 10,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_scarred_archive_21",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Sonic-Scarred The Gnarl-Maws - Archive",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_glass_hardened_festival_22",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Glass-Hardened The Gnarl-Maws - Festival",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_spore_sick_quarantine_23",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Spore-Sick The Gnarl-Maws - Quarantine",
+      "weight": 9,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_chrome_maw_void_24",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Chrome-Maw The Gnarl-Maws - Void",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "void",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_ash_baptized_storm_25",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Ash-Baptized The Gnarl-Maws - Storm",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "storm",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_overcharged_urban_26",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Overcharged The Gnarl-Maws - Urban",
+      "weight": 8,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "urban",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_bark_crowned_wilds_27",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Bark-Crowned The Gnarl-Maws - Wilds",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "wilds",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_echo_split_waste_28",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Echo-Split The Gnarl-Maws - Waste",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "waste",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_null_branded_geothermal_29",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Null-Branded The Gnarl-Maws - Geothermal",
+      "weight": 7,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "geothermal",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_grav_torn_cosmic_30",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Grav-Torn The Gnarl-Maws - Cosmic",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "cosmic",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_tide_broken_transit_31",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Tide-Broken The Gnarl-Maws - Transit",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "transit",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_magnetized_deep-water_32",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Magnetized The Gnarl-Maws - Deep-Water",
+      "weight": 6,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "deep-water",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_sonic_scarred_archive_33",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Sonic-Scarred The Gnarl-Maws - Archive",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "archive",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_glass_hardened_festival_34",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Glass-Hardened The Gnarl-Maws - Festival",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "festival",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    },
+    {
+      "skin_id": "the_gnarl_maws_spore_sick_quarantine_35",
+      "monster_family": "The Gnarl-Maws",
+      "display_name": "Spore-Sick The Gnarl-Maws - Quarantine",
+      "weight": 5,
+      "material_overrides": {
+        "albedo": "texture_upgrades/03_monster_skin_albedo.png",
+        "emission": "texture_upgrades/04_monster_skin_emission.png",
+        "biome_tint": "quarantine",
+        "mutation_overlay": "glb_modules/02_monster_random_skin_module.glb"
+      },
+      "spawn_rule": "choose weighted random skin on spawn; never reuse the previous 3 skin_ids in the same encounter unless pool is exhausted",
+      "variance_channels": [
+        "albedo_tint",
+        "emission_color",
+        "horn_scale",
+        "eye_glow",
+        "edge_wear",
+        "scar_pattern",
+        "ambient_particles"
+      ]
+    }
+  ]
+}

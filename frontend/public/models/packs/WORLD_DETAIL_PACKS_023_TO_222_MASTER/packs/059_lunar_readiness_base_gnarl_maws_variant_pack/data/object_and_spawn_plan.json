@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 59,
+    "title": "Lunar Readiness Base Gnarl-Maws Variant Pack",
+    "kind": "creature_biome_variants",
+    "region": "01 Cosmic Layer",
+    "sub_location": "01 Lunar Readiness Base",
+    "theme": "cosmic"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Lunar Command Citadel",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/01_lunar_command_citadel_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Mechanic: Boltworks Lunar; General Goods: Supply Post Lunar"
+    },
+    {
+      "source_area": "Crater Gantry Loop",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/02_crater_gantry_loop_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Field Surgery Crater"
+    },
+    {
+      "source_area": "Surface Launch Gantries",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/03_surface_launch_gantries_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Color Forge Surface"
+    },
+    {
+      "source_area": "Anti-Orbital Battery Grid",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/04_anti_orbital_battery_grid_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Wandering Anti-Orbital; Armor Dye Pack Shop: Color Forge Anti-Orbital"
+    },
+    {
+      "source_area": "Troop Barracks & Armories",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/05_troop_barracks_and_armories_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Smelter of Troop; Weapon Skin Shop: Patternsmith Troop"
+    },
+    {
+      "source_area": "Vehicle Hangars",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/06_vehicle_hangars_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Alchemist: Elixir Nook Vehicle; Tailor: Stitchmark Vehicle"
+    },
+    {
+      "source_area": "Resource Refinery Complex",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/07_resource_refinery_complex_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: EdgeLacquer Resource"
+    },
+    {
+      "source_area": "Helipad & Dropship Pads",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/08_helipad_and_dropship_pads_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Thread & Hem Helipad"
+    },
+    {
+      "source_area": "Maintenance Trenches",
+      "map_file_reference": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/09_maintenance_trenches_map.png",
+      "suggested_objects": [
+        "cosmic_landmark_anchor",
+        "cosmic_navigation_prop",
+        "cosmic_astral_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Saddle Gate Maintenance; Weapon Skin Shop: EdgeLacquer Maintenance"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "Lunar Readiness Base Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "Lunar Readiness Base Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "Lunar Readiness Base Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "Lunar Readiness Base Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Lunar Readiness Base Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Lunar Readiness Base Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

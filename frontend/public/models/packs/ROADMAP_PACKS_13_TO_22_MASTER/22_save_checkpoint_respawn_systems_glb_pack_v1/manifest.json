@@ -1,0 +1,315 @@
+{
+  "pack_name": "Save Checkpoint + Respawn Systems GLB Pack v1",
+  "roadmap_pack_number": 22,
+  "created_utc": "2026-07-05T07:46:56.763060+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "notes": [
+    "All assets are real static low-poly GLB meshes.",
+    "They are browser-game prototype assets.",
+    "They are not rigged, animated, scripted, or engine-prefabbed yet.",
+    "Use manifest and colliders as first-pass metadata for engine import."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/01_save_shrine.glb",
+      "name": "Save Shrine",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.85
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.7
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "save_shrine",
+        "blue"
+      ],
+      "size_bytes": 11008
+    },
+    {
+      "file": "glb_assets/02_respawn_beacon.glb",
+      "name": "Respawn Beacon",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.0
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "respawn_beacon",
+        "green"
+      ],
+      "size_bytes": 10508
+    },
+    {
+      "file": "glb_assets/03_checkpoint_gate.glb",
+      "name": "Checkpoint Gate",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.71
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.42
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "checkpoint_gate",
+        "yellow"
+      ],
+      "size_bytes": 9592
+    },
+    {
+      "file": "glb_assets/04_tutorial_sign.glb",
+      "name": "Tutorial Sign",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.3
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "tutorial_sign",
+        "yellow"
+      ],
+      "size_bytes": 9072
+    },
+    {
+      "file": "glb_assets/05_practice_terminal.glb",
+      "name": "Practice Terminal",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.0
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "practice_terminal",
+        "blue"
+      ],
+      "size_bytes": 10508
+    },
+    {
+      "file": "glb_assets/06_waypoint_compass.glb",
+      "name": "Waypoint Compass",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.0
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "waypoint_compass",
+        "cyan"
+      ],
+      "size_bytes": 10508
+    },
+    {
+      "file": "glb_assets/07_return_portal.glb",
+      "name": "Return Portal",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.902
+        ],
+        "size": [
+          1.61,
+          1.3,
+          1.805
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "return_portal",
+        "purple"
+      ],
+      "size_bytes": 14868
+    },
+    {
+      "file": "glb_assets/08_fast_travel_node.glb",
+      "name": "Fast Travel Node",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.902
+        ],
+        "size": [
+          1.61,
+          1.3,
+          1.805
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "fast_travel_node",
+        "blue"
+      ],
+      "size_bytes": 14868
+    },
+    {
+      "file": "glb_assets/09_death_marker.glb",
+      "name": "Death Marker",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.0
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "death_marker",
+        "red"
+      ],
+      "size_bytes": 10504
+    },
+    {
+      "file": "glb_assets/10_recovery_station.glb",
+      "name": "Recovery Station",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.0
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "recovery_station",
+        "green"
+      ],
+      "size_bytes": 10508
+    },
+    {
+      "file": "glb_assets/11_save_crystal.glb",
+      "name": "Save Crystal",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.85
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.7
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "save_crystal",
+        "cyan"
+      ],
+      "size_bytes": 11008
+    },
+    {
+      "file": "glb_assets/12_mission_board.glb",
+      "name": "Mission Board",
+      "category": "save_checkpoint_respawn_system",
+      "gameplay_use": "save checkpoint + respawn systems asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "size": [
+          1.3,
+          1.3,
+          1.3
+        ]
+      },
+      "tags": [
+        "save_checkpoint_respawn_system",
+        "mission_board",
+        "gold"
+      ],
+      "size_bytes": 9052
+    }
+  ]
+}

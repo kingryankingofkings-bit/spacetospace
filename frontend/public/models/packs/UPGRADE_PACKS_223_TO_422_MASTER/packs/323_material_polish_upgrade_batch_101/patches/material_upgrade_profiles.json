@@ -1,0 +1,31 @@
+{
+  "upgrade_type": "material_polish",
+  "theme": "waste",
+  "element": "fire",
+  "material_profiles": [
+    {
+      "profile_id": "material_polish_waste_opaque_surface",
+      "maps": {
+        "albedo": "texture_upgrades/01_material_polish_albedo_upgrade.png",
+        "normal_proxy": "texture_upgrades/02_material_polish_normal_detail_proxy.png",
+        "roughness": "texture_upgrades/03_material_polish_roughness_variation.png",
+        "decal": "texture_upgrades/08_material_polish_decal_upgrade_sheet.png"
+      }
+    },
+    {
+      "profile_id": "material_polish_waste_emissive_detail",
+      "maps": {
+        "emission": "texture_upgrades/04_material_polish_emission_overlay.png",
+        "mask": "texture_upgrades/06_material_polish_biome_tint_mask.png"
+      },
+      "engine_notes": "Use additive/emissive shader or high emissive factor in engine."
+    },
+    {
+      "profile_id": "material_polish_waste_water_star_environment",
+      "maps": {
+        "overlay": "texture_upgrades/07_material_polish_water_star_overlay.png"
+      },
+      "engine_notes": "Use for water, stars, sky overlays, caustics, foam, cosmic fields, and liquid detail."
+    }
+  ]
+}

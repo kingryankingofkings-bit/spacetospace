@@ -1,0 +1,858 @@
+{
+  "apply_to": {
+    "skyship_targets": [
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/02_planet_defense_perimeter/09_orbital_patrol_squadron_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/02_planet_defense_perimeter/11_patrol_squadron_docks_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "dock",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/03_orbital_tether_station/01_central_docking_ring_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "dock",
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/03_orbital_tether_station/02_cargo_docks_north_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "dock",
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/03_orbital_tether_station/03_cargo_docks_south_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "dock",
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/03_orbital_tether_station/04_passenger_terminal_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/03_orbital_tether_station/05_customs_concourse_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/03_orbital_tether_station/06_fuel_and_repair_depot_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/03_orbital_tether_station/07_maintenance_spires_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/03_orbital_tether_station/08_shuttle_berths_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/03_orbital_tether_station/09_tether_anchor_array_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/03_orbital_tether_station/10_power_core_nexus_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/04_space_elevator/02_climber_dock_and_launch_bay_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "dock",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/04_space_elevator/04_tether_control_node_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/01_cosmic_layer/04_space_elevator/10_upper_tether_junction_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "cosmic"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/headquarters/SW_HQ_001_the_aerie_of_oaths.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_001_ari_stormvale.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_002_belan_aerieson.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_003_cyra_brightmast.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_004_damak_skyrill.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_005_elowen_noxwind.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_006_fenn_glasswake.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_007_ghara_ironwake.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_008_hesh_sparkline.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_009_ilyra_galesong.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_010_joric_firemast.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_011_kael_quillspire.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_012_luma_voidson.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_013_mavik_driftforge.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_014_nyra_aethermark.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_015_orren_stormvale.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_016_pell_aerieson.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_017_quen_brightmast.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_018_rava_skyrill.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_019_solis_noxwind.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "dawnforge_sky_wardens_postgame_pack(1).zip",
+        "path_in_zip": "dawnforge_sky_wardens_postgame_pack/assets/glb/npcs/SW_NPC_020_tavi_glasswake.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden",
+          "forge"
+        ]
+      }
+    ],
+    "world_object_targets": [
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/10_nyra_latchward_ranger_at_storm.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/11_edda_deepwell_operator_under_storm.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/12_maelis_rootborne_courier_of_storm.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/13_asha_starfall_engineer_at_storm.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "engine",
+          "star"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/14_zerin_chromabell_responder_at_storm.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/15_ossa_mossguard_runner_from_storm.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/16_vexa_whispercoil_diver_near_storm.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/17_maelis_glassroot_marshal_from_storm.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/18_draven_latchward_runner_at_storm.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/19_brant_frostrelay_archivist_near_storm.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/08_storm_channel/20_draven_chromabell_broker_near_storm.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/01_brant_skyharrow_warden_of_buried.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky",
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/02_sarai_trenchmark_operator_under_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/03_draven_dubwater_keeper_at_buried.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/04_soren_starfall_archivist_from_buried.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/05_vale_emberkin_runner_of_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/06_lio_ironwake_custodian_of_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/07_ossa_runeclasp_tamer_at_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/08_mirek_holloway_keeper_near_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/09_orin_trenchmark_diver_near_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/10_ren_runeclasp_guide_under_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/11_vexa_wayfare_warden_under_buried.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/12_zerin_starfall_specialist_under_buried.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/13_calder_tideforged_specialist_under_buried.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "forge"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/14_cassian_holloway_warden_at_buried.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "warden"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/15_ossa_nullborne_oracle_from_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/16_astra_stormhush_smith_of_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/17_zerin_riftwalker_courier_of_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/18_keir_gantryn_cartographer_of_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/19_nyra_cinderholt_herald_from_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith/20_lio_emberkin_fixer_at_buried.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/01_echo_crown/01_mirek_trenchmark_courier_at_echo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/01_echo_crown/02_brant_chromabell_operator_near_echo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/01_echo_crown/03_vela_ironwake_custodian_of_echo.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/01_echo_crown/04_sable_starfall_specialist_of_echo.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/01_echo_crown/05_isolde_skyharrow_captain_near_echo.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "sky"
+        ]
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "093_the_abyssal_trench_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "textures/01_the_abyssal_trench_scrap_stalker_variant_pack_albedo.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "093_the_abyssal_trench_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "textures/02_the_abyssal_trench_scrap_stalker_variant_pack_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "093_the_abyssal_trench_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "textures/03_the_abyssal_trench_scrap_stalker_variant_pack_trim.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "093_the_abyssal_trench_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "textures/04_the_abyssal_trench_scrap_stalker_variant_pack_emission.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "093_the_abyssal_trench_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "textures/05_the_abyssal_trench_scrap_stalker_variant_pack_decal.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "093_the_abyssal_trench_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "textures/06_the_abyssal_trench_scrap_stalker_variant_pack_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "093_the_abyssal_trench_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "textures/07_the_abyssal_trench_scrap_stalker_variant_pack_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "093_the_abyssal_trench_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "textures/08_the_abyssal_trench_scrap_stalker_variant_pack_surface.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "094_the_wayfora_archipelago_sylvan_juggernaut_variant_pack.zip",
+        "path_in_zip": "textures/01_the_wayfora_archipelago_sylvan_juggernaut_variant_pack_albedo.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "094_the_wayfora_archipelago_sylvan_juggernaut_variant_pack.zip",
+        "path_in_zip": "textures/02_the_wayfora_archipelago_sylvan_juggernaut_variant_pack_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "094_the_wayfora_archipelago_sylvan_juggernaut_variant_pack.zip",
+        "path_in_zip": "textures/03_the_wayfora_archipelago_sylvan_juggernaut_variant_pack_trim.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "094_the_wayfora_archipelago_sylvan_juggernaut_variant_pack.zip",
+        "path_in_zip": "textures/04_the_wayfora_archipelago_sylvan_juggernaut_variant_pack_emission.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "094_the_wayfora_archipelago_sylvan_juggernaut_variant_pack.zip",
+        "path_in_zip": "textures/05_the_wayfora_archipelago_sylvan_juggernaut_variant_pack_decal.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "094_the_wayfora_archipelago_sylvan_juggernaut_variant_pack.zip",
+        "path_in_zip": "textures/06_the_wayfora_archipelago_sylvan_juggernaut_variant_pack_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "094_the_wayfora_archipelago_sylvan_juggernaut_variant_pack.zip",
+        "path_in_zip": "textures/07_the_wayfora_archipelago_sylvan_juggernaut_variant_pack_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "094_the_wayfora_archipelago_sylvan_juggernaut_variant_pack.zip",
+        "path_in_zip": "textures/08_the_wayfora_archipelago_sylvan_juggernaut_variant_pack_surface.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "095_lunar_readiness_base_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/01_lunar_readiness_base_music_ambience_texture_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "095_lunar_readiness_base_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/02_lunar_readiness_base_music_ambience_texture_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "095_lunar_readiness_base_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/03_lunar_readiness_base_music_ambience_texture_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "095_lunar_readiness_base_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/04_lunar_readiness_base_music_ambience_texture_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "095_lunar_readiness_base_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/05_lunar_readiness_base_music_ambience_texture_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "095_lunar_readiness_base_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/06_lunar_readiness_base_music_ambience_texture_kit_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "095_lunar_readiness_base_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/07_lunar_readiness_base_music_ambience_texture_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "095_lunar_readiness_base_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/08_lunar_readiness_base_music_ambience_texture_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "096_planet_defense_perimeter_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/01_planet_defense_perimeter_music_ambience_texture_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "096_planet_defense_perimeter_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/02_planet_defense_perimeter_music_ambience_texture_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "096_planet_defense_perimeter_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/03_planet_defense_perimeter_music_ambience_texture_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "096_planet_defense_perimeter_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/04_planet_defense_perimeter_music_ambience_texture_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "096_planet_defense_perimeter_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/05_planet_defense_perimeter_music_ambience_texture_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "096_planet_defense_perimeter_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/06_planet_defense_perimeter_music_ambience_texture_kit_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "water"
+        ]
+      },
+      {
+        "source_zip": "096_planet_defense_perimeter_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/07_planet_defense_perimeter_music_ambience_texture_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "star"
+        ]
+      },
+      {
+        "source_zip": "096_planet_defense_perimeter_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/08_planet_defense_perimeter_music_ambience_texture_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "097_orbital_tether_station_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/01_orbital_tether_station_music_ambience_texture_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital"
+        ]
+      },
+      {
+        "source_zip": "097_orbital_tether_station_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/02_orbital_tether_station_music_ambience_texture_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital"
+        ]
+      },
+      {
+        "source_zip": "097_orbital_tether_station_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/03_orbital_tether_station_music_ambience_texture_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital"
+        ]
+      },
+      {
+        "source_zip": "097_orbital_tether_station_music_ambience_texture_kit.zip",
+        "path_in_zip": "textures/04_orbital_tether_station_music_ambience_texture_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "tether",
+          "orbital"
+        ]
+      }
+    ]
+  },
+  "priority": [
+    "skyships and skyship-adjacent docks",
+    "world landmark objects",
+    "modular environment pieces",
+    "shop/town props",
+    "water/star/cloud visuals",
+    "creature or item materials only if tagged compatible"
+  ]
+}

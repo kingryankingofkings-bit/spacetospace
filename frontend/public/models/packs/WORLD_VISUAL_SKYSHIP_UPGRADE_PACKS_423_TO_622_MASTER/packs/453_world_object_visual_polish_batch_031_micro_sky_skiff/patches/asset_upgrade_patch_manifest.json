@@ -1,0 +1,470 @@
+{
+  "pack_number": 453,
+  "pack_name": "World Object Visual Polish Batch 031 - Micro Sky Skiff",
+  "created_utc": "2026-07-05T09:42:30.051698+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "world_object_visual_polish",
+  "theme": "deep_water",
+  "element": "tide",
+  "skyship_class_profile": {
+    "class": "micro_sky_skiff",
+    "scale": 0.72,
+    "role": "solo scout, courier, personal traversal"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/06_scout_perches/18_sable_gearmantle_warden_at_scout.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/07_ambush_clearing/14_maven_spirebound_warden_under_ambush.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/08_hollow_archives/02_astra_cragwarden_broker_near_hollow.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/08_hollow_archives/07_vela_glassroot_engineer_from_hollow.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/08_hollow_archives/09_noor_cragwarden_marshal_under_hollow.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/08_hollow_archives/15_sarai_skyharrow_broker_near_hollow.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/09_silent_bloom_gate/15_auren_skyharrow_mechanist_at_silent.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/09_silent_bloom_gate/17_korra_brightlock_warden_of_silent.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/01_verdant_spire_roost/11_varren_skyharrow_sentinel_near_verdant.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/01_verdant_spire_roost/13_lio_gantryn_engineer_near_verdant.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/02_canopy_arch_bridges/11_yara_cragwarden_broker_under_canopy.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/03_vine_transit_spine/04_lyric_cragwarden_archivist_near_vine.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/03_vine_transit_spine/05_pax_starfall_warden_at_vine.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/03_vine_transit_spine/12_juno_skyharrow_smith_near_vine.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/03_vine_transit_spine/17_vela_cragwarden_cartographer_under_vine.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/04_luminroot_shrine_clearing/01_makoa_frostrelay_engineer_near_luminroot.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/04_luminroot_shrine_clearing/03_juno_skyharrow_warden_at_luminroot.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/04_luminroot_shrine_clearing/11_nix_latchward_warden_of_luminroot.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/04_luminroot_shrine_clearing/18_mirek_voxmere_warden_from_luminroot.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/05_sanctuary_pools/01_maelis_gantryn_warden_of_sanctuary.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "242_water_star_environment_upgrade_batch_020.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_water_star_environment_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "242_water_star_environment_upgrade_batch_020.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_water_star_environment_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "242_water_star_environment_upgrade_batch_020.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_water_star_environment_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "242_water_star_environment_upgrade_batch_020.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_water_star_environment_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "242_water_star_environment_upgrade_batch_020.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_water_star_environment_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "243_material_polish_upgrade_batch_021.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_material_polish_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "243_material_polish_upgrade_batch_021.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_material_polish_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "243_material_polish_upgrade_batch_021.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_material_polish_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "243_material_polish_upgrade_batch_021.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_material_polish_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "243_material_polish_upgrade_batch_021.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_material_polish_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "243_material_polish_upgrade_batch_021.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_material_polish_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "244_texture_remaster_upgrade_batch_022.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_texture_remaster_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "244_texture_remaster_upgrade_batch_022.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_texture_remaster_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "244_texture_remaster_upgrade_batch_022.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_texture_remaster_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "244_texture_remaster_upgrade_batch_022.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_texture_remaster_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "244_texture_remaster_upgrade_batch_022.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_texture_remaster_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "244_texture_remaster_upgrade_batch_022.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_texture_remaster_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "245_low_poly_silhouette_upgrade_batch_023.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_low_poly_silhouette_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "245_low_poly_silhouette_upgrade_batch_023.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_low_poly_silhouette_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "245_low_poly_silhouette_upgrade_batch_023.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_low_poly_silhouette_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "402_water_star_environment_upgrade_batch_180.zip",
+      "path_in_zip": "texture_upgrades/07_water_star_environment_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "402_water_star_environment_upgrade_batch_180.zip",
+      "path_in_zip": "texture_upgrades/08_water_star_environment_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "402_water_star_environment_upgrade_batch_180.zip",
+      "path_in_zip": "texture_upgrades/09_water_star_environment_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "402_water_star_environment_upgrade_batch_180.zip",
+      "path_in_zip": "texture_upgrades/10_water_star_environment_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "402_water_star_environment_upgrade_batch_180.zip",
+      "path_in_zip": "texture_upgrades/11_water_star_environment_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "402_water_star_environment_upgrade_batch_180.zip",
+      "path_in_zip": "texture_upgrades/12_water_star_environment_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/01_material_polish_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/02_material_polish_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/03_material_polish_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/04_material_polish_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/05_material_polish_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/06_material_polish_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/07_material_polish_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/08_material_polish_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/09_material_polish_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/10_material_polish_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/11_material_polish_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/12_material_polish_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/01_texture_remaster_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/02_texture_remaster_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

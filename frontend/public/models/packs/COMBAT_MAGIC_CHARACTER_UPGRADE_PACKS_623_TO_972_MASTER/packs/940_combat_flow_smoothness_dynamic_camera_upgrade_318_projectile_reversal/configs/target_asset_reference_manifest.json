@@ -1,0 +1,1081 @@
+{
+  "target_pool_summary": {
+    "monster_targets_detected": 1029,
+    "character_targets_detected": 6249,
+    "gear_targets_detected": 448,
+    "vfx_targets_detected": 151,
+    "texture_targets_detected": 6759
+  },
+  "target_references": {
+    "monster_boss_targets": [
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_creature_skin_element_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/01_creature_skin_element_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/02_creature_skin_element_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/03_creature_skin_element_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/04_creature_skin_element_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/05_creature_skin_element_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/06_creature_skin_element_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/07_creature_skin_element_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/08_creature_skin_element_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/09_creature_skin_element_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/10_creature_skin_element_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/11_creature_skin_element_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "291_creature_skin_element_upgrade_batch_069.zip",
+        "path_in_zip": "texture_upgrades/12_creature_skin_element_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "292_water_star_environment_upgrade_batch_070.zip",
+        "path_in_zip": "texture_upgrades/10_water_star_environment_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "293_material_polish_upgrade_batch_071.zip",
+        "path_in_zip": "texture_upgrades/10_material_polish_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "294_texture_remaster_upgrade_batch_072.zip",
+        "path_in_zip": "texture_upgrades/10_texture_remaster_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "295_low_poly_silhouette_upgrade_batch_073.zip",
+        "path_in_zip": "texture_upgrades/10_low_poly_silhouette_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "296_emissive_glow_upgrade_batch_074.zip",
+        "path_in_zip": "texture_upgrades/10_emissive_glow_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "297_weathering_wear_upgrade_batch_075.zip",
+        "path_in_zip": "texture_upgrades/10_weathering_wear_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "298_lod_collision_upgrade_batch_076.zip",
+        "path_in_zip": "texture_upgrades/10_lod_collision_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "299_biome_recolor_upgrade_batch_077.zip",
+        "path_in_zip": "texture_upgrades/10_biome_recolor_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/10_item_weapon_finish_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_creature_skin_element_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_creature_skin_element_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_creature_skin_element_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_creature_skin_element_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_creature_skin_element_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_creature_skin_element_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "texture_upgrades/01_creature_skin_element_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "texture_upgrades/02_creature_skin_element_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "texture_upgrades/03_creature_skin_element_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "texture_upgrades/04_creature_skin_element_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "texture_upgrades/05_creature_skin_element_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "texture_upgrades/06_creature_skin_element_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "texture_upgrades/07_creature_skin_element_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+        "path_in_zip": "texture_upgrades/08_creature_skin_element_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skin",
+          "creature"
+        ]
+      }
+    ],
+    "character_npc_targets": [
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/08_thorne_cinderholt_herald_of_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/09_sable_cinderholt_guide_near_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/10_ren_trenchmark_pilgrim_under_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/11_vexa_voidrill_medic_at_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/12_luma_skyharrow_watcher_from_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/13_mirek_ironwake_medic_near_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/14_korra_cragwarden_ranger_under_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/15_astra_riftwalker_navigator_under_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/16_vexa_nullborne_oracle_of_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/17_makoa_wayfare_tamer_near_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/18_keir_cragwarden_mechanist_at_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/19_bex_runeclasp_scout_under_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater/20_nix_ironwake_medic_of_outer.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/01_lio_emberkin_cartographer_of_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/02_rook_voxmere_sentinel_under_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/03_ossa_gantryn_keeper_at_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/04_isolde_glassroot_fixer_under_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/05_quill_chromabell_tamer_at_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/06_orin_echohand_watcher_under_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/07_dax_tideforged_marshal_from_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/08_lio_voxmere_mechanist_near_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/09_ren_latchward_keeper_at_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/10_isolde_dubwater_herald_of_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock/11_auren_nullborne_courier_under_surface.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      }
+    ],
+    "gear_targets": [
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/display_weapon_wall_rack.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_apprentice_staff_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_arcane_bow_epic.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_battle_axe_uncommon.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_crystal_lance_epic.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_dagger_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_druid_staff_uncommon.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_executioner_axe_legendary.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_gilded_sword_legendary.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_greatsword_rare.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_halberd_rare.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_hand_axe_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_hunter_bow_uncommon.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_long_sword_uncommon.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_mace_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_morningstar_epic.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_obsidian_blade_epic.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_scythe_epic.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_short_bow_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_short_sword_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_spear_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_spiked_mace_rare.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_sun_staff_mythic.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_void_staff_epic.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      }
+    ],
+    "vfx_camera_combat_targets": [
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_uppercut_trail.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_vault_kick_trail.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_venom_projectile.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_void_rift_core.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_zero_g_field_bubble.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "12_audio_placeholder_cue_pack_v1.zip",
+        "path_in_zip": "cue_groups/combat.json",
+        "asset_type": "data_or_script",
+        "tags": [
+          "combat"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_acid_splash.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_aerial_juggle_trail.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_armor_break_shards.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "armor",
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_bark_armor_regrowth.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "armor",
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_barrier_wall.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_bass_drop_ring.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_arcane_purple.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_healing_green.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_laser_red.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_block_spark.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_boss_phase_explosion.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_buff_aura_gold.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_burning_ground_patch.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_chain_lightning_arc.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_checkpoint_flare.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_combo_multiplier_orbit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_corrosion_status_drip.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_cosmic_meteor_warning.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "436_skyship_sail_balloon_rigging_batch_014_patrol_corvette.zip",
+        "path_in_zip": "texture_upgrades/12_water_reflection_layer.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/01_world_albedo_plus.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/02_world_trim_plus.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/03_world_emission_plus.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/04_world_normal_proxy_plus.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/05_skyship_hull_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skyship"
+        ]
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/06_skyship_edgewear_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skyship"
+        ]
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/07_skyship_sail_fabric.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skyship"
+        ]
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/08_skyship_engine_glow.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skyship"
+        ]
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/09_skyship_banner_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skyship"
+        ]
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/10_cloud_layer.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/11_starfield_layer.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "437_skyship_deck_interior_upgrades_batch_015_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/12_water_reflection_layer.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/01_world_albedo_plus.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/02_world_trim_plus.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/03_world_emission_plus.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/04_world_normal_proxy_plus.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/05_skyship_hull_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skyship"
+        ]
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/06_skyship_edgewear_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skyship"
+        ]
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/07_skyship_sail_fabric.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skyship"
+        ]
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/08_skyship_engine_glow.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skyship"
+        ]
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/09_skyship_banner_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "skyship"
+        ]
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/10_cloud_layer.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "438_skyship_weapons_defense_upgrades_batch_016_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/11_starfield_layer.png",
+        "asset_type": "texture_image",
+        "tags": []
+      }
+    ]
+  },
+  "source_context": "WorldData.md plus prior generated asset packs"
+}

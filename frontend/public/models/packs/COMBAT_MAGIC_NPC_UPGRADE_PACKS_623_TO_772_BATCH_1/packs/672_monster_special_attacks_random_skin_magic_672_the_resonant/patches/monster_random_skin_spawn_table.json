@@ -1,0 +1,394 @@
+{
+  "monster_family": "Nexus Warden",
+  "element_context": "sonic",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "nexus_warden_sonic_01",
+      "display_name": "Glass-Hardened Nexus Warden 01",
+      "weight": 4.899,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 1.023
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_02",
+      "display_name": "Spore-Sick Nexus Warden 02",
+      "weight": 4.388,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 1.006
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_03",
+      "display_name": "Chrome-Maw Nexus Warden 03",
+      "weight": 4.564,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "wide",
+        "armor_growth": "crystal",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.054
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_04",
+      "display_name": "Eclipse-Synced Nexus Warden 04",
+      "weight": 4.194,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "crystal",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 0.983
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_05",
+      "display_name": "Overcharged Nexus Warden 05",
+      "weight": 4.149,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.029
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_06",
+      "display_name": "Bark-Crowned Nexus Warden 06",
+      "weight": 3.892,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "acid rain",
+        "scale_jitter": 0.973
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_07",
+      "display_name": "Echo-Split Nexus Warden 07",
+      "weight": 3.708,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "void",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 0.939
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_08",
+      "display_name": "Null-Branded Nexus Warden 08",
+      "weight": 3.768,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "bone",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.053
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_09",
+      "display_name": "Rhythm-Warped Nexus Warden 09",
+      "weight": 3.309,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 0.996
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_10",
+      "display_name": "Grav-Torn Nexus Warden 10",
+      "weight": 3.21,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "jagged",
+        "armor_growth": "scrap",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.044
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_11",
+      "display_name": "Ablative Nexus Warden 11",
+      "weight": 3.242,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.015
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_12",
+      "display_name": "Phase-Bound Nexus Warden 12",
+      "weight": 3.126,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 1.003
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_13",
+      "display_name": "Venom-Laced Nexus Warden 13",
+      "weight": 2.946,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "crystal",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.03
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_14",
+      "display_name": "Warden-Fused Nexus Warden 14",
+      "weight": 2.619,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.093
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_15",
+      "display_name": "Sovereign-Touched Nexus Warden 15",
+      "weight": 2.469,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "void",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.098
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_16",
+      "display_name": "Data-Forged Nexus Warden 16",
+      "weight": 2.219,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "hide",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.018
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_17",
+      "display_name": "Ash-Baptized Nexus Warden 17",
+      "weight": 2.036,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.993
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_18",
+      "display_name": "Tide-Broken Nexus Warden 18",
+      "weight": 1.961,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.051
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_19",
+      "display_name": "Magnetized Nexus Warden 19",
+      "weight": 1.964,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "hide",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 0.94
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_20",
+      "display_name": "Sonic-Scarred Nexus Warden 20",
+      "weight": 1.81,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "hide",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.016
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_21",
+      "display_name": "Glass-Hardened Nexus Warden 21",
+      "weight": 1.669,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 1.036
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_22",
+      "display_name": "Spore-Sick Nexus Warden 22",
+      "weight": 1.187,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 1.08
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_23",
+      "display_name": "Chrome-Maw Nexus Warden 23",
+      "weight": 1.202,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "scrap",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.014
+      }
+    },
+    {
+      "skin_id": "nexus_warden_sonic_24",
+      "display_name": "Eclipse-Synced Nexus Warden 24",
+      "weight": 1.096,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.029
+      }
+    }
+  ]
+}

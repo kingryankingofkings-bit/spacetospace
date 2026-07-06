@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Scrap-Phalanx",
+  "element_context": "reality",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_scrap_phalanx_reality_01",
+      "display_name": "Sovereign-Touched The Scrap-Phalanx 01",
+      "weight": 4.597,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.082
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_02",
+      "display_name": "Data-Forged The Scrap-Phalanx 02",
+      "weight": 4.461,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "gold noon",
+        "scale_jitter": 1.008
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_03",
+      "display_name": "Ash-Baptized The Scrap-Phalanx 03",
+      "weight": 4.48,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 1.051
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_04",
+      "display_name": "Tide-Broken The Scrap-Phalanx 04",
+      "weight": 4.12,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "crystal",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.0
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_05",
+      "display_name": "Magnetized The Scrap-Phalanx 05",
+      "weight": 4.197,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 0.937
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_06",
+      "display_name": "Sonic-Scarred The Scrap-Phalanx 06",
+      "weight": 3.843,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "scrap",
+        "weather_tint": "gold noon",
+        "scale_jitter": 0.92
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_07",
+      "display_name": "Glass-Hardened The Scrap-Phalanx 07",
+      "weight": 3.828,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.061
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_08",
+      "display_name": "Spore-Sick The Scrap-Phalanx 08",
+      "weight": 3.707,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.958
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_09",
+      "display_name": "Chrome-Maw The Scrap-Phalanx 09",
+      "weight": 3.269,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.038
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_10",
+      "display_name": "Eclipse-Synced The Scrap-Phalanx 10",
+      "weight": 3.242,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "gold noon",
+        "scale_jitter": 1.085
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_11",
+      "display_name": "Overcharged The Scrap-Phalanx 11",
+      "weight": 3.065,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 0.982
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_12",
+      "display_name": "Bark-Crowned The Scrap-Phalanx 12",
+      "weight": 2.771,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.035
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_13",
+      "display_name": "Echo-Split The Scrap-Phalanx 13",
+      "weight": 2.844,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "acid rain",
+        "scale_jitter": 0.984
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_14",
+      "display_name": "Null-Branded The Scrap-Phalanx 14",
+      "weight": 2.811,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "bone",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.0
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_15",
+      "display_name": "Rhythm-Warped The Scrap-Phalanx 15",
+      "weight": 2.493,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.077
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_16",
+      "display_name": "Grav-Torn The Scrap-Phalanx 16",
+      "weight": 2.406,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.035
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_17",
+      "display_name": "Ablative The Scrap-Phalanx 17",
+      "weight": 2.151,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "crystal",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.028
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_18",
+      "display_name": "Phase-Bound The Scrap-Phalanx 18",
+      "weight": 2.174,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "crystal",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 0.953
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_19",
+      "display_name": "Venom-Laced The Scrap-Phalanx 19",
+      "weight": 1.775,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "bone",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.059
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_20",
+      "display_name": "Warden-Fused The Scrap-Phalanx 20",
+      "weight": 1.609,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 0.924
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_21",
+      "display_name": "Sovereign-Touched The Scrap-Phalanx 21",
+      "weight": 1.554,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 1.046
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_22",
+      "display_name": "Data-Forged The Scrap-Phalanx 22",
+      "weight": 1.187,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.017
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_23",
+      "display_name": "Ash-Baptized The Scrap-Phalanx 23",
+      "weight": 1.108,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "crystal",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.028
+      }
+    },
+    {
+      "skin_id": "the_scrap_phalanx_reality_24",
+      "display_name": "Tide-Broken The Scrap-Phalanx 24",
+      "weight": 0.941,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.109
+      }
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "pack_number": 699,
+  "pack_name": "Support NPC Special Attack + Assist Upgrades 699 - The Flux Caster",
+  "set_name": "Combat Magic NPC Upgrade Packs 623-1222",
+  "batch": 1,
+  "created_utc": "2026-07-05T11:01:37.508336+00:00",
+  "family": "support_npc_specials",
+  "class": "The Flux-Caster",
+  "subclass": "Geo-Mage",
+  "specialization": "Elemental Ward",
+  "selected_ability": "The Avatar of Flux",
+  "monster": "The Scrap-Stalker",
+  "boss": "The Data-Forged Evolvarch",
+  "support_npc": "Orion the Vanguard",
+  "weather": "zero-g starwind",
+  "sun_variant": {
+    "name": "Storm Violet Sun",
+    "rgb": [
+      164,
+      110,
+      255
+    ],
+    "weather": "violet stormfront"
+  },
+  "purpose": "Upgrade pack for monsters, bosses, player/support NPC abilities, high-tier weapons/armor, combat flow, dynamic combat camera, random monster skins, weather, terrain, nature, sun colors, and character appearance quality.",
+  "counts": {
+    "glb_modules": 6,
+    "texture_upgrades_png": 10,
+    "audio_wav": 2,
+    "patch_json_files": 9,
+    "target_glb_refs": 28,
+    "target_texture_refs": 24
+  },
+  "glb_assets": [
+    {
+      "file": "glb_modules/01_ability_vfx_module.glb",
+      "role": "ability_vfx_module",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "family": "support_npc_specials",
+      "glb_header_ok": true,
+      "intended_use": "special attack and magic ability visual proxy"
+    },
+    {
+      "file": "glb_modules/02_monster_skin_attachment.glb",
+      "role": "monster_skin_attachment",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "family": "support_npc_specials",
+      "glb_header_ok": true,
+      "intended_use": "random spawn skin attachment / silhouette variance"
+    },
+    {
+      "file": "glb_modules/03_high_tier_magic_weapon.glb",
+      "role": "high_tier_magic_weapon",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "family": "support_npc_specials",
+      "glb_header_ok": true,
+      "intended_use": "high-tier magic weapon visual upgrade"
+    },
+    {
+      "file": "glb_modules/04_high_tier_magic_armor.glb",
+      "role": "high_tier_magic_armor",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "family": "support_npc_specials",
+      "glb_header_ok": true,
+      "intended_use": "high-tier magic armor visual upgrade"
+    },
+    {
+      "file": "glb_modules/05_combat_start_camera_rig.glb",
+      "role": "combat_start_camera_rig",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "family": "support_npc_specials",
+      "glb_header_ok": true,
+      "intended_use": "dynamic camera trigger proxy for combat start"
+    },
+    {
+      "file": "glb_modules/06_weather_terrain_nature_module.glb",
+      "role": "weather_terrain_nature_module",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "family": "support_npc_specials",
+      "glb_header_ok": true,
+      "intended_use": "weather, terrain, nature, and sun-color support module"
+    }
+  ],
+  "texture_assets": [
+    {
+      "file": "texture_upgrades/01_monster_skin_base.png",
+      "pattern": "monster_skin_base",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "uses": [
+        "monster skins",
+        "boss magic",
+        "player class VFX",
+        "weapons",
+        "armor",
+        "support NPCs",
+        "weather",
+        "terrain",
+        "nature",
+        "combat trails"
+      ]
+    },
+    {
+      "file": "texture_upgrades/02_monster_skin_overlay.png",
+      "pattern": "monster_skin_overlay",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "uses": [
+        "monster skins",
+        "boss magic",
+        "player class VFX",
+        "weapons",
+        "armor",
+        "support NPCs",
+        "weather",
+        "terrain",
+        "nature",
+        "combat trails"
+      ]
+    },
+    {
+      "file": "texture_upgrades/03_boss_magic_emission.png",
+      "pattern": "boss_magic_emission",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "uses": [
+        "monster skins",
+        "boss magic",
+        "player class VFX",
+        "weapons",
+        "armor",
+        "support NPCs",
+        "weather",
+        "terrain",
+        "nature",
+        "combat trails"
+      ]
+    },
+    {
+      "file": "texture_upgrades/04_player_class_ability_atlas.png",
+      "pattern": "player_class_ability_atlas",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "uses": [
+        "monster skins",
+        "boss magic",
+        "player class VFX",
+        "weapons",
+        "armor",
+        "support NPCs",
+        "weather",
+        "terrain",
+        "nature",
+        "combat trails"
+      ]
+    },
+    {
+      "file": "texture_upgrades/05_weapon_relic_finish.png",
+      "pattern": "weapon_relic_finish",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "uses": [
+        "monster skins",
+        "boss magic",
+        "player class VFX",
+        "weapons",
+        "armor",
+        "support NPCs",
+        "weather",
+        "terrain",
+        "nature",
+        "combat trails"
+      ]
+    },
+    {
+      "file": "texture_upgrades/06_armor_relic_finish.png",
+      "pattern": "armor_relic_finish",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "uses": [
+        "monster skins",
+        "boss magic",
+        "player class VFX",
+        "weapons",
+        "armor",
+        "support NPCs",
+        "weather",
+        "terrain",
+        "nature",
+        "combat trails"
+      ]
+    },
+    {
+      "file": "texture_upgrades/07_support_npc_detail.png",
+      "pattern": "support_npc_detail",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "uses": [
+        "monster skins",
+        "boss magic",
+        "player class VFX",
+        "weapons",
+        "armor",
+        "support NPCs",
+        "weather",
+        "terrain",
+        "nature",
+        "combat trails"
+      ]
+    },
+    {
+      "file": "texture_upgrades/08_weather_sun_gradient.png",
+      "pattern": "weather_sun_gradient",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "uses": [
+        "monster skins",
+        "boss magic",
+        "player class VFX",
+        "weapons",
+        "armor",
+        "support NPCs",
+        "weather",
+        "terrain",
+        "nature",
+        "combat trails"
+      ]
+    },
+    {
+      "file": "texture_upgrades/09_terrain_nature_detail.png",
+      "pattern": "terrain_nature_detail",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "uses": [
+        "monster skins",
+        "boss magic",
+        "player class VFX",
+        "weapons",
+        "armor",
+        "support NPCs",
+        "weather",
+        "terrain",
+        "nature",
+        "combat trails"
+      ]
+    },
+    {
+      "file": "texture_upgrades/10_combat_flow_trail.png",
+      "pattern": "combat_flow_trail",
+      "class": "The Flux-Caster",
+      "element": "flux",
+      "uses": [
+        "monster skins",
+        "boss magic",
+        "player class VFX",
+        "weapons",
+        "armor",
+        "support NPCs",
+        "weather",
+        "terrain",
+        "nature",
+        "combat trails"
+      ]
+    }
+  ],
+  "audio_assets": [
+    {
+      "file": "audio_cues/special_attack_cast.wav",
+      "cue_id": "support_npc_special_attack_assist_upgrades_699_the_flux_caster_special_attack_cast",
+      "cue_type": "special_attack_cast",
+      "placeholder_note": "Synthetic placeholder cue; replace with final sound design later."
+    },
+    {
+      "file": "audio_cues/combat_camera_sting.wav",
+      "cue_id": "support_npc_special_attack_assist_upgrades_699_the_flux_caster_combat_camera_sting",
+      "cue_type": "combat_camera_sting",
+      "placeholder_note": "Synthetic placeholder cue; replace with final sound design later."
+    }
+  ],
+  "patch_files": [
+    "patches/class_ability_fx_manifest.json",
+    "patches/monster_random_skin_spawn_table.json",
+    "patches/boss_special_attack_upgrade_plan.json",
+    "patches/high_tier_weapon_armor_manifest.json",
+    "patches/support_npc_magic_upgrade_plan.json",
+    "patches/combat_flow_camera_rules.json",
+    "patches/weather_terrain_sun_rules.json",
+    "patches/spawn_randomizer_rules.json",
+    "patches/prefab_patch_instructions.json"
+  ]
+}

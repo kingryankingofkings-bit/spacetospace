@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Sylvan Juggernaut",
+  "element_context": "pack",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_01",
+      "display_name": "Warden-Fused The Sylvan Juggernaut 01",
+      "weight": 4.845,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.062
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_02",
+      "display_name": "Sovereign-Touched The Sylvan Juggernaut 02",
+      "weight": 4.493,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "scrap",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 1.07
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_03",
+      "display_name": "Data-Forged The Sylvan Juggernaut 03",
+      "weight": 4.484,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.037
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_04",
+      "display_name": "Ash-Baptized The Sylvan Juggernaut 04",
+      "weight": 4.27,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 0.996
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_05",
+      "display_name": "Tide-Broken The Sylvan Juggernaut 05",
+      "weight": 4.251,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.031
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_06",
+      "display_name": "Magnetized The Sylvan Juggernaut 06",
+      "weight": 3.95,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.073
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_07",
+      "display_name": "Sonic-Scarred The Sylvan Juggernaut 07",
+      "weight": 3.835,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "scrap",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.067
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_08",
+      "display_name": "Glass-Hardened The Sylvan Juggernaut 08",
+      "weight": 3.687,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 1.068
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_09",
+      "display_name": "Spore-Sick The Sylvan Juggernaut 09",
+      "weight": 3.466,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "gold noon",
+        "scale_jitter": 0.964
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_10",
+      "display_name": "Chrome-Maw The Sylvan Juggernaut 10",
+      "weight": 3.174,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "bark",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 0.959
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_11",
+      "display_name": "Eclipse-Synced The Sylvan Juggernaut 11",
+      "weight": 3.165,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.037
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_12",
+      "display_name": "Overcharged The Sylvan Juggernaut 12",
+      "weight": 2.804,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.093
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_13",
+      "display_name": "Bark-Crowned The Sylvan Juggernaut 13",
+      "weight": 2.778,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "scrap",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 0.969
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_14",
+      "display_name": "Echo-Split The Sylvan Juggernaut 14",
+      "weight": 2.555,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.081
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_15",
+      "display_name": "Null-Branded The Sylvan Juggernaut 15",
+      "weight": 2.385,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 0.957
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_16",
+      "display_name": "Rhythm-Warped The Sylvan Juggernaut 16",
+      "weight": 2.151,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "bark",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.935
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_17",
+      "display_name": "Grav-Torn The Sylvan Juggernaut 17",
+      "weight": 1.949,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 0.994
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_18",
+      "display_name": "Ablative The Sylvan Juggernaut 18",
+      "weight": 1.94,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 1.033
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_19",
+      "display_name": "Phase-Bound The Sylvan Juggernaut 19",
+      "weight": 1.864,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.929
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_20",
+      "display_name": "Venom-Laced The Sylvan Juggernaut 20",
+      "weight": 1.768,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.008
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_21",
+      "display_name": "Warden-Fused The Sylvan Juggernaut 21",
+      "weight": 1.611,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "crystal",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 0.993
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_22",
+      "display_name": "Sovereign-Touched The Sylvan Juggernaut 22",
+      "weight": 1.398,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "crystal",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.076
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_23",
+      "display_name": "Data-Forged The Sylvan Juggernaut 23",
+      "weight": 1.328,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "scrap",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 0.936
+      }
+    },
+    {
+      "skin_id": "the_sylvan_juggernaut_pack_24",
+      "display_name": "Ash-Baptized The Sylvan Juggernaut 24",
+      "weight": 1.052,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "scrap",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.062
+      }
+    }
+  ]
+}

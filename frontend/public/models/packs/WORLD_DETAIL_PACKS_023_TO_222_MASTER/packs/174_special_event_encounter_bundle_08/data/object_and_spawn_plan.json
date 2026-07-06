@@ -1,0 +1,172 @@
+{
+  "pack_identity": {
+    "pack_number": 174,
+    "title": "Special Event Encounter Bundle 08",
+    "kind": "special_event_bundle",
+    "region": "The Zenith Spire",
+    "sub_location": "Atmospheric Observation Deck",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Atmospheric Observation Deck Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Atmospheric Observation Deck Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "Atmospheric Observation Deck Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "Atmospheric Observation Deck Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "Atmospheric Observation Deck Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "Atmospheric Observation Deck Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-008",
+      "event_title": "Venom-Laced Incident: Atmospheric Observation Deck",
+      "world_map_location": "The Zenith Spire",
+      "sublocation": "Atmospheric Observation Deck",
+      "required_player_level": 21,
+      "primary_variant": "Venom-Laced Null Anomaly",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-042",
+      "event_title": "Grav-Torn Incident: Beast-Back Platforms",
+      "world_map_location": "The Emerald Canopy Sanctuary",
+      "sublocation": "Beast-Back Platforms",
+      "required_player_level": 24,
+      "primary_variant": "Grav-Torn Siphon-Ticks",
+      "hazard_profile": "root snares, moving beast-platforms, and canopy traversal pressure"
+    },
+    {
+      "event_id": "SEV-076",
+      "event_title": "Echo-Split Incident: Molten Iron Rivers",
+      "world_map_location": "The Magma-Core Forges",
+      "sublocation": "Molten Iron Rivers",
+      "required_player_level": 27,
+      "primary_variant": "Echo-Split Nexus Swarmers",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-110",
+      "event_title": "Eclipse-Synced Incident: Slow-Tempo Stage",
+      "world_map_location": "The Reggae-Dub Oasis",
+      "sublocation": "Slow-Tempo Stage",
+      "required_player_level": 30,
+      "primary_variant": "Eclipse-Synced Tremor-Fiend",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-144",
+      "event_title": "Spore-Sick Incident: Floating Equipment Ward",
+      "world_map_location": "The Anomaly Ward",
+      "sublocation": "Floating Equipment Ward",
+      "required_player_level": 34,
+      "primary_variant": "Spore-Sick Nexus Warden",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-178",
+      "event_title": "Spore-Sick Incident: Rhythm-Pattern Grove",
+      "world_map_location": "The Pocket-Monster Data Plains",
+      "sublocation": "Rhythm-Pattern Grove",
+      "required_player_level": 40,
+      "primary_variant": "Spore-Sick Data-Forged Evolvarch",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-212",
+      "event_title": "Data-Forged Incident: Void Abyss Balcony",
+      "world_map_location": "The Lich's Court",
+      "sublocation": "Void Abyss Balcony",
+      "required_player_level": 40,
+      "primary_variant": "Data-Forged Astral Sovereign",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

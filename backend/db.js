@@ -1,13 +1,13 @@
-const { pool, redisClient, connectServices } = require('./dbConnection');
+const dbConnection = require('./dbConnection');
 
-const connectPromise = connectServices().catch(console.error);
+const connectPromise = dbConnection.connectServices().catch(console.error);
 
 async function getUser(id) {
-  const cached = await redisClient.get(`user:${id}`);
+  const cached = await dbConnection.redisClient.get(`user:${id}`);
   if (cached) return JSON.parse(cached);
 
-  const { rows } = await pool.query('SELECT * FROM users WHERE id = $1', [id]);
-  const invRows = await pool.query('SELECT id as "instanceId", item_id as "itemId", quantity, slot FROM inventory_items WHERE user_id = $1 ORDER BY slot ASC', [id]);
+  const { rows } = await dbConnection.pool.query('SELECT * FROM users WHERE id = $1', [id]);
+  const invRows = await dbConnection.pool.query('SELECT id as "instanceId", item_id as "itemId", quantity, slot FROM inventory_items WHERE user_id = $1 ORDER BY slot ASC', [id]);
   
   if (rows.length > 0) {
     const row = rows[0];
@@ -36,7 +36,7 @@ async function getUser(id) {
       factionReputation, choices, appearance,
       currency: row.currency || 0
     };
-    await redisClient.setEx(`user:${id}`, 3600, JSON.stringify(user));
+    await dbConnection.redisClient.setEx(`user:${id}`, 3600, JSON.stringify(user));
     return user;
   }
   return { id, password_hash: null, x: 0, y: 0, z: 0, color: '#ffffff', health: 100, playerClass: null, level: 1, xp: 0, skillPoints: 0, unlockedSkills: [], inventory: [], zone: "urban_core", quests: [], unlockedCompanions: [], activeCompanion: null, unlockedPets: [], activePet: null, factionReputation: {}, choices: {}, appearance: {}, currency: 0 };
@@ -51,7 +51,7 @@ async function saveUser(id, { x, y, z, color, health, playerClass, level, xp, sk
   const choicesStr = choices ? JSON.stringify(choices) : '{}';
   const appearanceStr = appearance ? JSON.stringify(appearance) : '{}';
   
-  await pool.query(
+  await dbConnection.pool.query(
     `INSERT INTO users (id, password_hash, x, y, z, color, health, "playerClass", level, xp, "skillPoints", "unlockedSkills", inventory, zone, quests, "unlockedCompanions", "activeCompanion", "unlockedPets", "activePet", "factionReputation", choices, appearance, currency) 
      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, '[]', $13, $14, $15, $16, $17, $18, $19, $20, $21, $22)
      ON CONFLICT (id) DO UPDATE SET 
@@ -67,11 +67,11 @@ async function saveUser(id, { x, y, z, color, health, playerClass, level, xp, sk
   );
 
   const cachePayload = { id, password_hash, x, y, z, color, health, playerClass, level, xp, skillPoints, unlockedSkills, zone, quests, inventory, unlockedCompanions, activeCompanion, unlockedPets, activePet, factionReputation, choices, appearance, currency };
-  await redisClient.setEx(`user:${id}`, 3600, JSON.stringify(cachePayload));
+  await dbConnection.redisClient.setEx(`user:${id}`, 3600, JSON.stringify(cachePayload));
 }
 
 async function saveInventory(id, inventory, externalClient) {
-  const client = externalClient || await pool.connect();
+  const client = externalClient || await dbConnection.pool.connect();
   const shouldManageTx = !externalClient;
   try {
     if (shouldManageTx) await client.query('BEGIN');
@@ -86,11 +86,11 @@ async function saveInventory(id, inventory, externalClient) {
     }
     if (shouldManageTx) await client.query('COMMIT');
     
-    const cached = await redisClient.get(`user:${id}`);
+    const cached = await dbConnection.redisClient.get(`user:${id}`);
     if (cached) {
       const u = JSON.parse(cached);
       u.inventory = inventory;
-      await redisClient.setEx(`user:${id}`, 3600, JSON.stringify(u));
+      await dbConnection.redisClient.setEx(`user:${id}`, 3600, JSON.stringify(u));
     }
   } catch(e) {
     if (shouldManageTx) await client.query('ROLLBACK');
@@ -101,15 +101,15 @@ async function saveInventory(id, inventory, externalClient) {
 }
 
 async function getObjects() {
-  const { rows } = await pool.query('SELECT * FROM world_objects');
+  const { rows } = await dbConnection.pool.query('SELECT * FROM world_objects');
   return rows;
 }
 async function getObject(id) {
-  const { rows } = await pool.query('SELECT * FROM world_objects WHERE id = $1', [id]);
+  const { rows } = await dbConnection.pool.query('SELECT * FROM world_objects WHERE id = $1', [id]);
   return rows[0];
 }
 async function saveObject(obj, externalClient) {
-  const client = externalClient || pool;
+  const client = externalClient || dbConnection.pool;
   const type = obj.objectType || obj.type || 'unknown';
   await client.query(
     'INSERT INTO world_objects (id, type, x, y, z) VALUES ($1, $2, $3, $4, $5) ON CONFLICT (id) DO UPDATE SET type = EXCLUDED.type, x = EXCLUDED.x, y = EXCLUDED.y, z = EXCLUDED.z',
@@ -117,15 +117,15 @@ async function saveObject(obj, externalClient) {
   );
 }
 async function deleteObject(id, externalClient) {
-  const client = externalClient || pool;
+  const client = externalClient || dbConnection.pool;
   await client.query('DELETE FROM world_objects WHERE id = $1', [id]);
 }
 async function getTerrain() {
-  const { rows } = await pool.query('SELECT * FROM world_terrain');
+  const { rows } = await dbConnection.pool.query('SELECT * FROM world_terrain');
   return rows;
 }
 async function saveTerrain(t) {
-  await pool.query(
+  await dbConnection.pool.query(
     'INSERT INTO world_terrain (x, z, height) VALUES ($1, $2, $3) ON CONFLICT (x, z) DO UPDATE SET height = EXCLUDED.height',
     [t.x, t.z, t.height]
   );
@@ -135,5 +135,7 @@ module.exports = {
   getUser, saveUser, saveInventory,
   getObjects, getObject, saveObject, deleteObject,
   getTerrain, saveTerrain,
-  redisClient, pool, connectPromise
+  get redisClient() { return dbConnection.redisClient; },
+  get pool() { return dbConnection.pool; },
+  get connectPromise() { return connectPromise; }
 };

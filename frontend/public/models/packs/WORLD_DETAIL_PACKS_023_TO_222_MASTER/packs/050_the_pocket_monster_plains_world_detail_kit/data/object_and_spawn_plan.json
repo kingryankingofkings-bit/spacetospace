@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 50,
+    "title": "The Pocket Monster Plains World Detail Kit",
+    "kind": "sublocation_world_detail",
+    "region": "04 Eastern Wilds And Ancient Archives",
+    "sub_location": "08 The Pocket Monster Plains",
+    "theme": "wilds"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Wild Harbor Ranch",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/01_wild_harbor_ranch_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Hammer at Wild; Stable: Mount Roost Wild"
+    },
+    {
+      "source_area": "Trainer's Waystation",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/02_trainers_waystation_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Patternsmith Trainer's"
+    },
+    {
+      "source_area": "Battle Circle Delta",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/03_battle_circle_delta_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "General Goods: Supply Post Battle; Stable: Saddle Gate Battle"
+    },
+    {
+      "source_area": "Research Pens Alpha",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/04_research_pens_alpha_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Alchemist: Remedy House Research; Relic Trader: Oldlight Finds Research"
+    },
+    {
+      "source_area": "Elemental Confluence",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/05_elemental_confluence_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Curio Shop: Curio Niche Elemental"
+    },
+    {
+      "source_area": "Tamer's Gate",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/06_tamers_gate_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Moonlit Tamer's"
+    },
+    {
+      "source_area": "Hatchling Fields",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/07_hatchling_fields_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Relic Trader: Antique Vault Hatchling; Inn: The Iron Hatchling"
+    },
+    {
+      "source_area": "Ancient Root Grove",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/08_ancient_root_grove_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Pigment Loft Ancient"
+    },
+    {
+      "source_area": "Summit Watch",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/09_summit_watch_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Marketplace: Merchant Court Summit; Stable: Saddle Gate Summit"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Pocket Monster Plains Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Pocket Monster Plains Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Pocket Monster Plains Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Pocket Monster Plains Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Pocket Monster Plains Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Pocket Monster Plains Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Alchemist, Armor Dye Pack Shop, Blacksmith, Curio Shop, General Goods, Inn, Marketplace, Relic Trader, Stable, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

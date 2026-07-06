@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Nexus Swarmers",
+  "element_context": "evolution",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_nexus_swarmers_evolution_01",
+      "display_name": "Null-Branded The Nexus Swarmers 01",
+      "weight": 4.729,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "scrap",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 0.937
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_02",
+      "display_name": "Rhythm-Warped The Nexus Swarmers 02",
+      "weight": 4.381,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "scrap",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 0.965
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_03",
+      "display_name": "Grav-Torn The Nexus Swarmers 03",
+      "weight": 4.402,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 0.996
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_04",
+      "display_name": "Ablative The Nexus Swarmers 04",
+      "weight": 4.28,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.076
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_05",
+      "display_name": "Phase-Bound The Nexus Swarmers 05",
+      "weight": 4.199,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "crystal",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.106
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_06",
+      "display_name": "Venom-Laced The Nexus Swarmers 06",
+      "weight": 3.965,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "wide",
+        "armor_growth": "hide",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.981
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_07",
+      "display_name": "Warden-Fused The Nexus Swarmers 07",
+      "weight": 3.839,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.1
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_08",
+      "display_name": "Sovereign-Touched The Nexus Swarmers 08",
+      "weight": 3.765,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.016
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_09",
+      "display_name": "Data-Forged The Nexus Swarmers 09",
+      "weight": 3.39,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "acid rain",
+        "scale_jitter": 0.969
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_10",
+      "display_name": "Ash-Baptized The Nexus Swarmers 10",
+      "weight": 3.399,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "acid rain",
+        "scale_jitter": 0.999
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_11",
+      "display_name": "Tide-Broken The Nexus Swarmers 11",
+      "weight": 3.061,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "hide",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.974
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_12",
+      "display_name": "Magnetized The Nexus Swarmers 12",
+      "weight": 3.071,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "crystal fog",
+        "scale_jitter": 1.038
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_13",
+      "display_name": "Sonic-Scarred The Nexus Swarmers 13",
+      "weight": 2.86,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.931
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_14",
+      "display_name": "Glass-Hardened The Nexus Swarmers 14",
+      "weight": 2.508,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.96
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_15",
+      "display_name": "Spore-Sick The Nexus Swarmers 15",
+      "weight": 2.291,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "crystal",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.102
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_16",
+      "display_name": "Chrome-Maw The Nexus Swarmers 16",
+      "weight": 2.173,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 1.084
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_17",
+      "display_name": "Eclipse-Synced The Nexus Swarmers 17",
+      "weight": 2.335,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.985
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_18",
+      "display_name": "Overcharged The Nexus Swarmers 18",
+      "weight": 2.122,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "scrap",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.99
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_19",
+      "display_name": "Bark-Crowned The Nexus Swarmers 19",
+      "weight": 1.743,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 0.987
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_20",
+      "display_name": "Echo-Split The Nexus Swarmers 20",
+      "weight": 1.488,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.082
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_21",
+      "display_name": "Null-Branded The Nexus Swarmers 21",
+      "weight": 1.656,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 1.05
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_22",
+      "display_name": "Rhythm-Warped The Nexus Swarmers 22",
+      "weight": 1.508,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "scrap",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.046
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_23",
+      "display_name": "Grav-Torn The Nexus Swarmers 23",
+      "weight": 0.982,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.044
+      }
+    },
+    {
+      "skin_id": "the_nexus_swarmers_evolution_24",
+      "display_name": "Ablative The Nexus Swarmers 24",
+      "weight": 0.9,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "hide",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 0.994
+      }
+    }
+  ]
+}

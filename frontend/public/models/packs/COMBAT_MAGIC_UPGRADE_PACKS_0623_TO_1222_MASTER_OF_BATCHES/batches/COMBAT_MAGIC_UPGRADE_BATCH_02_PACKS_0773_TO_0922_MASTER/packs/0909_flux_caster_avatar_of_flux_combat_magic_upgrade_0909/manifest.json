@@ -1,0 +1,335 @@
+{
+  "pack_number": 909,
+  "batch_number": 2,
+  "pack_name": "Flux-Caster Avatar of Flux Combat Magic Upgrade 0909",
+  "created_utc": "2026-07-05T11:02:38.911490+00:00",
+  "purpose": "Combat, magic, monster/boss/player/support NPC, special attack, high-tier gear, combat-flow, dynamic-camera, random monster skin, weather, terrain/nature, sun color, and character-quality upgrade pack.",
+  "worlddata_basis": {
+    "class": "Flux-Caster",
+    "subclass": "Storm-Caller",
+    "specialization": "Crystal Carapace",
+    "ability": "Avatar of Flux",
+    "monster": "The Scrap-Stalker",
+    "boss": "The Ivory Behemoth",
+    "support_npc": "The Grand Archivist",
+    "weather": "tidal surge",
+    "terrain": "root snare",
+    "sun_variant": "festival magenta sun"
+  },
+  "counts": {
+    "glb_modules": 8,
+    "texture_png": 12,
+    "audio_wav": 5,
+    "config_docs": 11
+  },
+  "glb_assets": [
+    {
+      "file": "glb_modules/01_class_special_attack_vfx.glb",
+      "role": "class_special_attack_vfx",
+      "class": "Flux-Caster",
+      "ability": "Avatar of Flux",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/02_monster_random_skin_module.glb",
+      "role": "monster_random_skin_module",
+      "class": "Flux-Caster",
+      "ability": "Avatar of Flux",
+      "monster_or_boss_or_npc": "The Scrap-Stalker",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/03_boss_magic_phase_module.glb",
+      "role": "boss_magic_phase_module",
+      "class": "Flux-Caster",
+      "ability": "Avatar of Flux",
+      "monster_or_boss_or_npc": "The Ivory Behemoth",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/04_high_tier_magic_weapon_aura.glb",
+      "role": "high_tier_magic_weapon_aura",
+      "class": "Flux-Caster",
+      "ability": "Avatar of Flux",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/05_high_tier_magic_armor_aura.glb",
+      "role": "high_tier_magic_armor_aura",
+      "class": "Flux-Caster",
+      "ability": "Avatar of Flux",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/06_dynamic_combat_camera_trigger.glb",
+      "role": "dynamic_combat_camera_trigger",
+      "class": "Flux-Caster",
+      "ability": "Avatar of Flux",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/07_weather_terrain_nature_effect.glb",
+      "role": "weather_terrain_nature_effect",
+      "class": "Flux-Caster",
+      "ability": "Avatar of Flux",
+      "monster_or_boss_or_npc": null,
+      "weather": "tidal surge",
+      "terrain": "root snare",
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/08_support_npc_assist_marker.glb",
+      "role": "support_npc_assist_marker",
+      "class": "Flux-Caster",
+      "ability": "Avatar of Flux",
+      "monster_or_boss_or_npc": "The Grand Archivist",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    }
+  ],
+  "textures": [
+    {
+      "file": "texture_upgrades/01_class_ability_emission.png",
+      "pattern": "class_ability_emission",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/02_subclass_talent_glyph_sheet.png",
+      "pattern": "subclass_talent_glyph_sheet",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/03_monster_skin_albedo.png",
+      "pattern": "monster_skin_albedo",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/04_monster_skin_emission.png",
+      "pattern": "monster_skin_emission",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/05_boss_phase_material.png",
+      "pattern": "boss_phase_material",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/06_weapon_finish.png",
+      "pattern": "weapon_finish",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/07_armor_trim.png",
+      "pattern": "armor_trim",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/08_npc_assist_decal.png",
+      "pattern": "npc_assist_decal",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/09_weather_overlay.png",
+      "pattern": "weather_overlay",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/10_terrain_nature_overlay.png",
+      "pattern": "terrain_nature_overlay",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/11_character_quality_overlay.png",
+      "pattern": "character_quality_overlay",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/12_sun_color_grade_lut.png",
+      "pattern": "sun_color_grade_lut",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio_cues/01_special_attack_cast.wav",
+      "cue_id": "flux_caster_avatar_of_flux_special_attack_cast_0909",
+      "cue_type": "special_attack_cast",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/02_magic_impact.wav",
+      "cue_id": "flux_caster_avatar_of_flux_magic_impact_0909",
+      "cue_type": "magic_impact",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/03_combat_camera_swell.wav",
+      "cue_id": "flux_caster_avatar_of_flux_combat_camera_swell_0909",
+      "cue_type": "combat_camera_swell",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/04_weather_sun_cue.wav",
+      "cue_id": "flux_caster_avatar_of_flux_weather_sun_cue_0909",
+      "cue_type": "weather_sun_cue",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/05_monster_spawn_variance.wav",
+      "cue_id": "flux_caster_avatar_of_flux_monster_spawn_variance_0909",
+      "cue_type": "monster_spawn_variance",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    }
+  ],
+  "data_files": [
+    "configs/class_ability_vfx_map.json",
+    "configs/monster_random_skin_spawn_table.json",
+    "configs/boss_special_attack_upgrade_plan.json",
+    "configs/support_npc_assist_scripts.json",
+    "configs/high_tier_magic_weapon_armor_patch.json",
+    "configs/combat_flow_smoothness_profile.json",
+    "configs/dynamic_combat_camera_trigger.json",
+    "configs/weather_terrain_nature_sun_plan.json",
+    "configs/character_appearance_quality_patch.json",
+    "configs/antigravity_2_0_upgrade_instructions.json",
+    "configs/monster_skin_weights.csv"
+  ],
+  "target_references_sample": [
+    {
+      "source_zip": "476_skyship_sail_balloon_rigging_batch_054_patrol_corvette.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "477_skyship_deck_interior_upgrades_batch_055_merchant_barge.zip",
+      "path_in_zip": "texture_upgrades/03_world_emission_plus.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "477_skyship_deck_interior_upgrades_batch_055_merchant_barge.zip",
+      "path_in_zip": "patches/prefab_variant_patch.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "478_skyship_weapons_defense_upgrades_batch_056_skywarden_frigate.zip",
+      "path_in_zip": "upgrade_glb_modules/09_skyship_defense.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "478_skyship_weapons_defense_upgrades_batch_056_skywarden_frigate.zip",
+      "path_in_zip": "texture_upgrades/12_water_reflection_layer.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "479_skyship_docking_travel_upgrades_batch_057_heavy_carrier.zip",
+      "path_in_zip": "upgrade_glb_modules/05_skyship_hull.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "479_skyship_docking_travel_upgrades_batch_057_heavy_carrier.zip",
+      "path_in_zip": "texture_upgrades/08_skyship_engine_glow.png",
+      "asset_type": "png",
+      "tags": [
+        "skyship",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "480_environment_lighting_atmosphere_upgrades_batch_058_dreadnought.zip",
+      "path_in_zip": "upgrade_glb_modules/01_world_facade.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "480_environment_lighting_atmosphere_upgrades_batch_058_dreadnought.zip",
+      "path_in_zip": "texture_upgrades/04_world_normal_proxy_plus.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "480_environment_lighting_atmosphere_upgrades_batch_058_dreadnought.zip",
+      "path_in_zip": "patches/qa_validation_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "481_water_star_cloud_visual_upgrades_batch_059_arkship.zip",
+      "path_in_zip": "upgrade_glb_modules/10_skyship_dock.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "481_water_star_cloud_visual_upgrades_batch_059_arkship.zip",
+      "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+      "asset_type": "json",
+      "tags": []
+    }
+  ]
+}

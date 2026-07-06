@@ -1,0 +1,508 @@
+{
+  "pack_number": 700,
+  "family": "high_tier_magic_weapons",
+  "class": "The Protocol Weaver",
+  "monster": "The Sylvan Juggernaut",
+  "boss": "The Syndicate Lich",
+  "support_npc": "Director Vance",
+  "source_targets": {
+    "glb_targets": [
+      {
+        "source_zip": "20_ambient_wildlife_critters_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/06_lizard_critter.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "21_weather_environmental_fx_proxy_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/01_rain_column_proxy.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "21_weather_environmental_fx_proxy_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/08_ash_fall_proxy.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "22_save_checkpoint_respawn_systems_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/03_checkpoint_gate.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "22_save_checkpoint_respawn_systems_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/10_recovery_station.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/telegraph_warning_circle_small.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_barrier_wall.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_buff_aura_gold.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_cross_slash.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_fire_burst.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_ground_slam_crack.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_lightning_bolt.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_rhythm_beat_marker.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_spinning_attack_ring.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_zero_g_field_bubble.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "06_animation_placeholder_pose_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/biped_run_pose_a.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "07_ui_hud_worldspace_markers_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/combo_counter_token.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "07_ui_hud_worldspace_markers_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/quest_marker_exclamation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "08_quest_interaction_objects_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/quest_evidence_crate.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "08_quest_interaction_objects_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/quest_ritual_stone.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "09_mounts_vehicles_travel_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/hover_sled.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "09_mounts_vehicles_travel_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/subway_tram_car.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "11_boss_arena_mechanics_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/chimera_feeding_lane_marker.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "11_boss_arena_mechanics_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/phase_lock_obelisk.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "10_enemy_faction_architecture_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/parasite_hive_pylon.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_mounts_vehicles_travel_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/cargo_lift_elevator.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "05_mounts_vehicles_travel_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/small_row_boat.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "02_ui_hud_worldspace_markers_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/health_bar_worldspace.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/02_waystone_pier_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/06_geothermal_abyss/03_the_wayfora_archipelago/09_outer_breakwater_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/05_deep_transit_system/01_the_subterranean_grid/07_freight_vault_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/05_sedation_ward_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/05_deep_transit_system/03_the_revision_labs/03_echo_chamber_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/01_verdant_spire_roost_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/01_the_emerald_canopy_sanctuary/08_mycelial_commune_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/02_the_whispering_glade/06_scout_perches_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/03_the_canopy_portrait_halls/04_the_pressure_plate_bridge_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/09_the_silent_stacks_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/05_the_voyage_incubator/07_the_energy_stabilizers_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/06_the_lichs_court/05_the_chainless_bridges_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/07_the_evolution_arenas/03_transformation_pylons_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/01_wild_harbor_ranch_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/08_the_pocket_monster_plains/08_ancient_root_grove_map.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/09_the_magma_core_forges/06_bridge_of_the_anvils_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/04_riddim_circle_plaza_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/02_summit_causeway_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/09_resonance_towers_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/06_echo_drift_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/03_the_heavy_chewer_canyons/04_rift_chasm_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+        "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/09_tactical_overlook_map.png",
+        "asset_type": "texture_image",
+        "tags": []
+      }
+    ],
+    "audio_targets": [
+      {
+        "source_zip": "069_the_resonant_peaks_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "audio/the_resonant_peaks_scrap_stalker_variant_pack_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "071_the_heavy_chewer_canyons_gnarl_maws_variant_pack.zip",
+        "path_in_zip": "audio/the_heavy_chewer_canyons_gnarl_maws_variant_pack_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "074_the_scrap_yard_labyrinth_siphon_ticks_variant_pack.zip",
+        "path_in_zip": "audio/the_scrap_yard_labyrinth_siphon_ticks_variant_pack_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "076_the_burning_playa_tremor_fiend_variant_pack.zip",
+        "path_in_zip": "audio/the_burning_playa_tremor_fiend_variant_pack_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "078_the_phonetic_wastes_aegis_carapace_variant_pack.zip",
+        "path_in_zip": "audio/the_phonetic_wastes_aegis_carapace_variant_pack_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "081_the_canopy_portrait_halls_scrap_stalker_variant_pack.zip",
+        "path_in_zip": "audio/the_canopy_portrait_halls_scrap_stalker_variant_pack_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "083_the_voyage_incubator_gnarl_maws_variant_pack.zip",
+        "path_in_zip": "audio/the_voyage_incubator_gnarl_maws_variant_pack_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "085_the_evolution_arenas_scrap_phalanx_variant_pack.zip",
+        "path_in_zip": "audio/the_evolution_arenas_scrap_phalanx_variant_pack_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      }
+    ],
+    "metadata_targets": [
+      {
+        "source_zip": "113_the_rhyming_labyrinths_music_ambience_texture_kit.zip",
+        "path_in_zip": "data/object_and_spawn_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "114_the_phonetic_wastes_music_ambience_texture_kit.zip",
+        "path_in_zip": "data/material_texture_manifest.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "115_the_emerald_canopy_sanctuary_music_ambience_texture_kit.zip",
+        "path_in_zip": "prefab_specs/prefab_handoff.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "116_the_whispering_glade_music_ambience_texture_kit.zip",
+        "path_in_zip": "audio/music_cue_manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "117_the_canopy_portrait_halls_music_ambience_texture_kit.zip",
+        "path_in_zip": "manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "118_the_infinite_archives_music_ambience_texture_kit.zip",
+        "path_in_zip": "VALIDATION_REPORT.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "120_the_lichs_court_music_ambience_texture_kit.zip",
+        "path_in_zip": "data/object_and_spawn_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "121_the_evolution_arenas_music_ambience_texture_kit.zip",
+        "path_in_zip": "data/material_texture_manifest.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "texture"
+        ]
+      }
+    ]
+  },
+  "antigravity_2_0_tasks": [
+    "Create non-destructive upgraded prefab variants.",
+    "Apply random monster skin tables at spawn time.",
+    "Bind player class ability VFX to level progression and subclass specialization.",
+    "Attach high-tier weapon/armor GLBs and material maps to item prefabs.",
+    "Add combat-start camera trigger using camera rules.",
+    "Add weather, sun color, terrain, and nature material overrides.",
+    "QA duplicate monster appearances across a 50-spawn encounter sample."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "pack_name": "dawnforge_level_1_40_itemization_pack",
+  "created_for": "Echoes of the Dawnforge",
+  "total_items": 2200,
+  "non_godly_items": 2000,
+  "godly_level_40_uniques": 200,
+  "rarity_ladder": [
+    "Common",
+    "Uncommon",
+    "Rare",
+    "Very Rare",
+    "Super",
+    "Legend",
+    "Ancient",
+    "Mythological",
+    "Godly"
+  ],
+  "levels_covered": [
+    1,
+    40
+  ],
+  "source_files_used": [
+    "ECHOES_OF_THE_DAWNFORGE_250_QUEST_MAIN_STORYLINE(1).md",
+    "World.txt",
+    "dawnforge_map_coverage_support_pack/QUEST_TO_MAP_COVERAGE_MATRIX.csv"
+  ],
+  "constraints": {
+    "level_1_common_only": true,
+    "godly_only_level_40": true,
+    "godly_unique_count": 200,
+    "non_godly_count": 2000,
+    "no_legend_ancient_mythological_before_21": true,
+    "no_ancient_before_26": true,
+    "no_mythological_before_31": true
+  },
+  "files": [
+    "ITEMIZATION_SUPPORT_DOCUMENT.md",
+    "ITEMIZATION_SUPPORT_DOCUMENT.txt",
+    "GODLY_LEVEL_40_UNIQUE_CATALOG.md",
+    "FULL_ITEM_CATALOG.md",
+    "README.md",
+    "tables/FULL_ITEM_CATALOG.csv",
+    "tables/GODLY_LEVEL_40_UNIQUES.csv",
+    "tables/NON_GODLY_LEVEL_1_40_ITEMS.csv",
+    "tables/LEVEL_RARITY_COUNTS.csv",
+    "tables/SOURCE_DISTRIBUTION.csv",
+    "tables/GEAR_TYPE_DISTRIBUTION.csv",
+    "tables/RARITY_POLICY_BY_LEVEL.csv",
+    "data/full_item_catalog.json",
+    "data/godly_level_40_uniques.json",
+    "data/level_rarity_counts.json",
+    "loot_tables/boss_drop.csv",
+    "loot_tables/crafting_pattern.csv",
+    "loot_tables/dungeon_cache.csv",
+    "loot_tables/faction_vendor.csv",
+    "loot_tables/godly_unique_source.csv",
+    "loot_tables/monster_drop.csv",
+    "loot_tables/quest_reward.csv",
+    "loot_tables/random_chest.csv",
+    "loot_tables/shop_inventory.csv",
+    "loot_tables/special_event_drop.csv",
+    "loot_tables/world_secret.csv",
+    "docs/LOOT_AND_RARITY_SYSTEM_RULES.md",
+    "docs/REPRESENTATIVE_ITEM_SAMPLES.md"
+  ]
+}

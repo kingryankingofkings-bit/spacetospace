@@ -1,0 +1,521 @@
+{
+  "pack_number": 983,
+  "family": "full_encounter_polish",
+  "class": "The Packmaster",
+  "monster": "The Nexus Swarmers",
+  "boss": "The Resonance Maestro",
+  "support_npc": "Commander Solis",
+  "source_targets": {
+    "glb_targets": [
+      {
+        "source_zip": "372_water_star_environment_upgrade_batch_150.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_water_star_environment_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "374_texture_remaster_upgrade_batch_152.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_texture_remaster_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_low_poly_silhouette_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "376_emissive_glow_upgrade_batch_154.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_emissive_glow_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "377_weathering_wear_upgrade_batch_155.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_weathering_wear_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weather"
+        ]
+      },
+      {
+        "source_zip": "378_lod_collision_upgrade_batch_156.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_lod_collision_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "379_biome_recolor_upgrade_batch_157.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_biome_recolor_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "381_creature_skin_element_upgrade_batch_159.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_creature_skin_element_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "382_water_star_environment_upgrade_batch_160.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_water_star_environment_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "383_material_polish_upgrade_batch_161.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_material_polish_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_texture_remaster_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "385_low_poly_silhouette_upgrade_batch_163.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_low_poly_silhouette_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "386_emissive_glow_upgrade_batch_164.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_emissive_glow_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "388_lod_collision_upgrade_batch_166.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_lod_collision_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "389_biome_recolor_upgrade_batch_167.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_biome_recolor_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "390_item_weapon_finish_upgrade_batch_168.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_item_weapon_finish_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "391_creature_skin_element_upgrade_batch_169.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_creature_skin_element_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "392_water_star_environment_upgrade_batch_170.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_water_star_environment_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "393_material_polish_upgrade_batch_171.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_material_polish_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "395_low_poly_silhouette_upgrade_batch_173.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_low_poly_silhouette_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "396_emissive_glow_upgrade_batch_174.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_emissive_glow_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "397_weathering_wear_upgrade_batch_175.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_weathering_wear_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weather"
+        ]
+      },
+      {
+        "source_zip": "398_lod_collision_upgrade_batch_176.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_lod_collision_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "399_biome_recolor_upgrade_batch_177.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_biome_recolor_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "400_item_weapon_finish_upgrade_batch_178.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_item_weapon_finish_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "402_water_star_environment_upgrade_batch_180.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_water_star_environment_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "403_material_polish_upgrade_batch_181.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_material_polish_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": []
+      },
+      {
+        "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_texture_remaster_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "texture"
+        ]
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+        "path_in_zip": "textures/06_the_canopy_portrait_halls_world_detail_kit_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+        "path_in_zip": "textures/05_the_infinite_archives_world_detail_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "047_the_voyage_incubator_world_detail_kit.zip",
+        "path_in_zip": "textures/04_the_voyage_incubator_world_detail_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "048_the_lichs_court_world_detail_kit.zip",
+        "path_in_zip": "textures/03_the_lichs_court_world_detail_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+        "path_in_zip": "textures/02_the_evolution_arenas_world_detail_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+        "path_in_zip": "textures/01_the_pocket_monster_plains_world_detail_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+        "path_in_zip": "textures/08_the_pocket_monster_plains_world_detail_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "monster",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "051_the_magma_core_forges_world_detail_kit.zip",
+        "path_in_zip": "textures/07_the_magma_core_forges_world_detail_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "052_the_reggae_dub_oasis_world_detail_kit.zip",
+        "path_in_zip": "textures/06_the_reggae_dub_oasis_world_detail_kit_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "053_the_subterranean_grid_world_detail_kit.zip",
+        "path_in_zip": "textures/05_the_subterranean_grid_world_detail_kit_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "054_the_private_quarantine_world_detail_kit.zip",
+        "path_in_zip": "textures/04_the_private_quarantine_world_detail_kit_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "055_the_revision_labs_world_detail_kit.zip",
+        "path_in_zip": "textures/03_the_revision_labs_world_detail_kit_trim.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "056_the_molten_forge_world_detail_kit.zip",
+        "path_in_zip": "textures/02_the_molten_forge_world_detail_kit_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "057_the_abyssal_trench_world_detail_kit.zip",
+        "path_in_zip": "textures/01_the_abyssal_trench_world_detail_kit_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "057_the_abyssal_trench_world_detail_kit.zip",
+        "path_in_zip": "textures/08_the_abyssal_trench_world_detail_kit_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "058_the_wayfora_archipelago_world_detail_kit.zip",
+        "path_in_zip": "textures/07_the_wayfora_archipelago_world_detail_kit_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "059_lunar_readiness_base_gnarl_maws_variant_pack.zip",
+        "path_in_zip": "textures/06_lunar_readiness_base_gnarl_maws_variant_pack_water.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "060_planet_defense_perimeter_grid_rushers_variant_pack.zip",
+        "path_in_zip": "textures/05_planet_defense_perimeter_grid_rushers_variant_pack_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "061_orbital_tether_station_scrap_phalanx_variant_pack.zip",
+        "path_in_zip": "textures/04_orbital_tether_station_scrap_phalanx_variant_pack_emission.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "062_space_elevator_siphon_ticks_variant_pack.zip",
+        "path_in_zip": "textures/03_space_elevator_siphon_ticks_variant_pack_trim.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "063_the_zenith_spire_iron_jaw_hound_variant_pack.zip",
+        "path_in_zip": "textures/02_the_zenith_spire_iron_jaw_hound_variant_pack_normal_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "064_the_provisioning_sectors_tremor_fiend_variant_pack.zip",
+        "path_in_zip": "textures/01_the_provisioning_sectors_tremor_fiend_variant_pack_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "064_the_provisioning_sectors_tremor_fiend_variant_pack.zip",
+        "path_in_zip": "textures/08_the_provisioning_sectors_tremor_fiend_variant_pack_surface.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "065_the_on_demand_arteries_venom_spitter_variant_pack.zip",
+        "path_in_zip": "textures/07_the_on_demand_arteries_venom_spitter_variant_pack_starfield.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      }
+    ],
+    "audio_targets": [
+      {
+        "source_zip": "109_the_deprecated_repositories_music_ambience_texture_kit.zip",
+        "path_in_zip": "audio/the_deprecated_repositories_music_ambience_texture_kit_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "111_the_playa_of_ash_music_ambience_texture_kit.zip",
+        "path_in_zip": "audio/the_playa_of_ash_music_ambience_texture_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "113_the_rhyming_labyrinths_music_ambience_texture_kit.zip",
+        "path_in_zip": "audio/the_rhyming_labyrinths_music_ambience_texture_kit_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "116_the_whispering_glade_music_ambience_texture_kit.zip",
+        "path_in_zip": "audio/the_whispering_glade_music_ambience_texture_kit_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "118_the_infinite_archives_music_ambience_texture_kit.zip",
+        "path_in_zip": "audio/the_infinite_archives_music_ambience_texture_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "120_the_lichs_court_music_ambience_texture_kit.zip",
+        "path_in_zip": "audio/the_lichs_court_music_ambience_texture_kit_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "123_the_magma_core_forges_music_ambience_texture_kit.zip",
+        "path_in_zip": "audio/the_magma_core_forges_music_ambience_texture_kit_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "125_the_subterranean_grid_music_ambience_texture_kit.zip",
+        "path_in_zip": "audio/the_subterranean_grid_music_ambience_texture_kit_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": [
+          "texture"
+        ]
+      }
+    ],
+    "metadata_targets": [
+      {
+        "source_zip": "491_water_star_cloud_visual_upgrades_batch_069_arkship.zip",
+        "path_in_zip": "patches/material_visual_upgrade_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "492_global_object_material_pass_batch_070_repair_tug.zip",
+        "path_in_zip": "patches/skyship_size_upgrade_plan.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "493_world_object_visual_polish_batch_071_micro_sky_skiff.zip",
+        "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "493_world_object_visual_polish_batch_071_micro_sky_skiff.zip",
+        "path_in_zip": "VALIDATION_REPORT.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "494_skyship_hull_size_variants_batch_072_scout_sloop.zip",
+        "path_in_zip": "manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "495_skyship_propulsion_upgrades_batch_073_courier_cutter.zip",
+        "path_in_zip": "patches/target_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "496_skyship_sail_balloon_rigging_batch_074_patrol_corvette.zip",
+        "path_in_zip": "patches/qa_validation_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "497_skyship_deck_interior_upgrades_batch_075_merchant_barge.zip",
+        "path_in_zip": "patches/prefab_variant_patch.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      }
+    ]
+  },
+  "antigravity_2_0_tasks": [
+    "Create non-destructive upgraded prefab variants.",
+    "Apply random monster skin tables at spawn time.",
+    "Bind player class ability VFX to level progression and subclass specialization.",
+    "Attach high-tier weapon/armor GLBs and material maps to item prefabs.",
+    "Add combat-start camera trigger using camera rules.",
+    "Add weather, sun color, terrain, and nature material overrides.",
+    "QA duplicate monster appearances across a 50-spawn encounter sample."
+  ]
+}

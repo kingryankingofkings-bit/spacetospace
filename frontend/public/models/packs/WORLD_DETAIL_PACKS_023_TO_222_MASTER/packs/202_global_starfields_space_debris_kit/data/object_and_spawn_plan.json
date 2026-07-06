@@ -1,0 +1,108 @@
+{
+  "pack_identity": {
+    "pack_number": 202,
+    "title": "Global Starfields + Space Debris Kit",
+    "kind": "global_starfield_systems",
+    "region": "Global",
+    "sub_location": "All",
+    "theme": "cosmic"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "All Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "All Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "All Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "All Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "All Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "All Astral Variant",
+      "element": "astral",
+      "can_share_base_rig_with": "Scrap-Stalker",
+      "texture_overrides": [
+        "cosmic_albedo",
+        "cosmic_emission",
+        "astral_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

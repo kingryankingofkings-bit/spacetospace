@@ -1,0 +1,15 @@
+{
+  "support_npc": "Director Vance",
+  "assist_module": "glb_modules/08_support_npc_assist_marker.glb",
+  "assist_decal": "texture_upgrades/08_npc_assist_decal.png",
+  "roles": [
+    "off-screen assist",
+    "combat interruption",
+    "combo extension",
+    "safe-zone deploy",
+    "artillery/designator",
+    "healing support"
+  ],
+  "cooldown_seconds": 36,
+  "does_not_break_combo": true
+}

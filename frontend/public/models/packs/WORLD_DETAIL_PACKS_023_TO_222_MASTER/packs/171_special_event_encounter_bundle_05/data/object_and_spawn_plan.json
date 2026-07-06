@@ -1,0 +1,172 @@
+{
+  "pack_identity": {
+    "pack_number": 171,
+    "title": "Special Event Encounter Bundle 05",
+    "kind": "special_event_bundle",
+    "region": "The Urban Sprawl",
+    "sub_location": "Old Wayfinder Stairs",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Old Wayfinder Stairs Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Old Wayfinder Stairs Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Old Wayfinder Stairs Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Old Wayfinder Stairs Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Old Wayfinder Stairs Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "Old Wayfinder Stairs Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-005",
+      "event_title": "Rhythm-Warped Incident: Old Wayfinder Stairs",
+      "world_map_location": "The Urban Sprawl",
+      "sublocation": "Old Wayfinder Stairs",
+      "required_player_level": 20,
+      "primary_variant": "Rhythm-Warped Aegis Carapace",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-039",
+      "event_title": "Echo-Split Incident: Prize-Chest Alley",
+      "world_map_location": "The Micro-Transaction Markets",
+      "sublocation": "Prize-Chest Alley",
+      "required_player_level": 24,
+      "primary_variant": "Echo-Split Aegis Carapace",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-073",
+      "event_title": "Eclipse-Synced Incident: Thermal Updraft Shafts",
+      "world_map_location": "The Molten Forge",
+      "sublocation": "Thermal Updraft Shafts",
+      "required_player_level": 27,
+      "primary_variant": "Eclipse-Synced Iron-Jaw Hound",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-107",
+      "event_title": "Glass-Hardened Incident: Point-of-Sale Barricades",
+      "world_map_location": "The Reggae-Dub Oasis",
+      "sublocation": "Point-of-Sale Barricades",
+      "required_player_level": 30,
+      "primary_variant": "Glass-Hardened Aegis Carapace",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-141",
+      "event_title": "Magnetized Incident: Looping Clinical Hall",
+      "world_map_location": "The Anomaly Ward",
+      "sublocation": "Looping Clinical Hall",
+      "required_player_level": 34,
+      "primary_variant": "Magnetized Null Anomaly",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-175",
+      "event_title": "Tide-Broken Incident: Protocol Judgment Stage",
+      "world_map_location": "The Marlowe Editing Protocol",
+      "sublocation": "Protocol Judgment Stage",
+      "required_player_level": 39,
+      "primary_variant": "Tide-Broken Null Anomaly",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-209",
+      "event_title": "Venom-Laced Incident: Invisible Wall Trial",
+      "world_map_location": "The Front-Matter Void",
+      "sublocation": "Invisible Wall Trial",
+      "required_player_level": 40,
+      "primary_variant": "Venom-Laced Resonant Behemoth",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

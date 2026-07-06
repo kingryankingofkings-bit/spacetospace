@@ -2,6 +2,7 @@ import React from 'react';
 import { CLASSES } from '../data/classConfig';
 import type { SkillNode, SkillTier } from '../data/classConfig';
 import { useMultiplayerStore } from '../store/multiplayerStore';
+import { motion } from 'framer-motion';
 
 interface SkillTreePanelProps {
   onClose: () => void;
@@ -17,123 +18,133 @@ export const SkillTreePanel: React.FC<SkillTreePanelProps> = ({ onClose }) => {
   if (!playerClass) return null;
   const cls = CLASSES[playerClass];
   if (!cls || !cls.skillTree) return (
-    <div className="absolute inset-0 bg-black/80 flex items-center justify-center z-[1000] backdrop-blur-sm">
-      <div className="bg-red-900/50 p-8 rounded border border-red-500 text-red-200">
-        <h2>SKILL TREE UNAVAILABLE</h2>
+    <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/90">
+      <div className="aaa-panel" style={{ border: '1px solid var(--accent-danger)' }}>
+        <h2 style={{ color: 'var(--accent-danger)' }}>SKILL TREE UNAVAILABLE</h2>
         <p>This class does not have an active skill tree yet.</p>
-        <button onClick={onClose} className="mt-4 px-4 py-2 bg-red-600 hover:bg-red-500 text-white rounded">Close</button>
+        <button onClick={onClose} className="aaa-button mt-4">Close</button>
       </div>
     </div>
   );
 
   return (
-    <div className="absolute inset-0 bg-black/90 flex flex-col z-[1000] backdrop-blur-md font-['Orbitron'] p-8 text-white custom-scrollbar overflow-y-auto">
-      <div className="flex justify-between items-center mb-8 border-b border-cyan-500/30 pb-4">
-        <div>
-          <h1 className="text-4xl text-cyan-400 font-bold drop-shadow-[0_0_10px_rgba(0,255,255,0.8)] uppercase">
-            {cls.name} <span className="text-2xl text-gray-400 font-normal">Architecture</span>
-          </h1>
-          <div className="text-cyan-500 text-sm mt-1 uppercase tracking-widest">{cls.combatStyle}</div>
-        </div>
-        <div className="flex items-center gap-6">
-          <div className="text-right">
-            <div className="text-gray-400 text-xs">CURRENT LEVEL</div>
-            <div className="text-2xl font-bold">{level}</div>
-          </div>
-          <div className="text-right">
-            <div className="text-cyan-400 text-xs">SKILL POINTS</div>
-            <div className="text-3xl font-bold text-cyan-300 drop-shadow-[0_0_8px_rgba(0,255,255,1)]">{skillPoints}</div>
-          </div>
-          <button 
-            onClick={onClose}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white transition-colors border border-red-500/30 ml-4"
-          >
-            ✕
-          </button>
-        </div>
-      </div>
-
-      <div className="flex-1 max-w-6xl mx-auto w-full">
-        {cls.skillTree.map((tier: SkillTier, index: number) => (
-          <div key={index} className="mb-12">
-            <h2 className="text-2xl font-bold text-blue-400 mb-6 flex items-center gap-4">
-              {tier.name}
-              <div className="h-px bg-blue-500/30 flex-1"></div>
-              <span className="text-sm text-gray-500 font-normal">Levels {tier.minLevel} - {tier.maxLevel}</span>
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-              {tier.skills.map((skill: SkillNode) => {
-                const isUnlocked = unlockedSkills.includes(skill.id);
-                const canUnlock = level >= skill.level && skillPoints > 0 && !isUnlocked;
-                const isLocked = level < skill.level && !isUnlocked;
-
-                return (
-                  <div 
-                    key={skill.id}
-                    className={`relative p-4 rounded-lg border flex flex-col transition-all duration-300 ${
-                      isUnlocked 
-                        ? 'bg-cyan-900/40 border-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.2)]' 
-                        : isLocked
-                          ? 'bg-gray-900/50 border-gray-700 opacity-60'
-                          : 'bg-blue-900/20 border-blue-500/50 hover:border-cyan-400 cursor-pointer group'
-                    }`}
-                    onClick={() => canUnlock && onUnlockSkill(skill.id)}
-                  >
-                    <div className="flex justify-between items-start mb-2">
-                      <div className="text-xs font-bold px-2 py-1 bg-black/50 rounded text-gray-300">
-                        LVL {skill.level}
-                      </div>
-                      <div className={`text-[10px] font-bold uppercase tracking-wider ${
-                        skill.type.includes('Finisher') ? 'text-red-400' : 
-                        skill.type.includes('Passive') ? 'text-green-400' : 
-                        'text-yellow-400'
-                      }`}>
-                        {skill.type}
-                      </div>
-                    </div>
-                    
-                    <h3 className={`font-bold mb-2 ${isUnlocked ? 'text-cyan-300' : 'text-white group-hover:text-cyan-300'}`}>
-                      {skill.name}
-                    </h3>
-                    
-                    <p className="text-xs text-gray-400 flex-1 leading-relaxed">
-                      {skill.description}
-                    </p>
-
-                    {skill.cooldown && (
-                      <div className="mt-3 text-[10px] text-gray-500 flex items-center gap-1">
-                        ⏱ {skill.cooldown}
-                      </div>
-                    )}
-
-                    {!isUnlocked && canUnlock && (
-                      <div className="absolute inset-0 bg-cyan-500/10 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-lg backdrop-blur-[1px]">
-                        <span className="font-bold text-cyan-300 tracking-widest bg-black/80 px-4 py-2 rounded shadow-lg border border-cyan-500/50">
-                          UNLOCK (1 SP)
-                        </span>
-                      </div>
-                    )}
-                    
-                    {isUnlocked && (
-                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(0,255,255,0.8)] border-2 border-gray-900">
-                        <span className="text-gray-900 text-xs font-bold">✓</span>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="fixed inset-0 z-100 flex flex-col">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="absolute inset-0"
+        style={{ background: 'rgba(0,0,0,0.9)', backdropFilter: 'blur(16px)' }}
+      />
       
-      <style dangerouslySetInnerHTML={{__html: `
-        .custom-scrollbar::-webkit-scrollbar { width: 8px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: rgba(0,0,0,0.2); border-radius: 4px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(0, 255, 255, 0.3); border-radius: 4px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(0, 255, 255, 0.5); }
-      `}} />
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="relative flex-col flex-1"
+        style={{ padding: '40px', overflowY: 'auto' }}
+      >
+        <div className="flex justify-between items-center" style={{ marginBottom: '40px', paddingBottom: '24px', borderBottom: '1px solid var(--panel-border)' }}>
+          <div>
+            <h1 style={{ fontSize: '3rem', color: 'var(--accent-primary)', textShadow: '0 0 20px var(--accent-primary-glow)', margin: 0, textTransform: 'uppercase', letterSpacing: '4px' }}>
+              {cls.name} <span style={{ fontSize: '1.5rem', color: 'var(--text-muted)', fontWeight: 400 }}>ARCHITECTURE</span>
+            </h1>
+            <div style={{ color: 'var(--text-main)', fontSize: '1rem', marginTop: '8px', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 600 }}>{cls.combatStyle}</div>
+          </div>
+          <div className="flex items-center gap-6">
+            <div className="text-right">
+              <div className="aaa-label">CURRENT LEVEL</div>
+              <div style={{ fontSize: '2rem', fontWeight: 800 }}>{level}</div>
+            </div>
+            <div className="text-right">
+              <div className="aaa-label" style={{ color: 'var(--accent-primary)' }}>SKILL POINTS</div>
+              <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--accent-primary)', textShadow: '0 0 15px var(--accent-primary-glow)' }}>{skillPoints}</div>
+            </div>
+            <button 
+              onClick={onClose}
+              className="aaa-button flex items-center justify-center"
+              style={{ width: '48px', height: '48px', padding: 0, borderRadius: '50%', fontSize: '1.5rem', marginLeft: '16px' }}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+
+        <div style={{ maxWidth: '1400px', margin: '0 auto', width: '100%' }}>
+          {cls.skillTree.map((tier: SkillTier, index: number) => (
+            <div key={index} style={{ marginBottom: '64px' }}>
+              <h2 className="flex items-center gap-4" style={{ fontSize: '1.8rem', color: 'var(--accent-secondary)', textShadow: '0 0 10px var(--accent-secondary-glow)', marginBottom: '24px' }}>
+                {tier.name}
+                <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg, var(--accent-secondary), transparent)' }}></div>
+                <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontWeight: 600, letterSpacing: '1px' }}>LEVELS {tier.minLevel} - {tier.maxLevel}</span>
+              </h2>
+              
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+                {tier.skills.map((skill: SkillNode) => {
+                  const isUnlocked = unlockedSkills.includes(skill.id);
+                  const canUnlock = level >= skill.level && skillPoints > 0 && !isUnlocked;
+                  const isLocked = level < skill.level && !isUnlocked;
+
+                  let typeColor = 'var(--accent-primary)';
+                  if (skill.type.includes('Finisher')) typeColor = 'var(--accent-danger)';
+                  if (skill.type.includes('Passive')) typeColor = '#00ff88';
+
+                  return (
+                    <motion.div 
+                      key={skill.id}
+                      whileHover={canUnlock ? { scale: 1.05, y: -5 } : isUnlocked ? { scale: 1.02 } : {}}
+                      className="aaa-panel relative flex-col"
+                      style={{ 
+                        padding: '24px', 
+                        cursor: canUnlock ? 'pointer' : 'default',
+                        opacity: isLocked ? 0.5 : 1,
+                        border: isUnlocked ? '1px solid var(--accent-primary)' : canUnlock ? '1px solid var(--text-muted)' : '',
+                        background: isUnlocked ? 'rgba(0, 240, 255, 0.05)' : ''
+                      }}
+                      onClick={() => canUnlock && onUnlockSkill(skill.id)}
+                    >
+                      <div className="flex justify-between items-start" style={{ marginBottom: '16px' }}>
+                        <div style={{ fontSize: '0.75rem', fontWeight: 800, padding: '4px 8px', background: 'rgba(0,0,0,0.5)', borderRadius: '4px', border: '1px solid var(--panel-border)' }}>
+                          LVL {skill.level}
+                        </div>
+                        <div style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px', color: typeColor }}>
+                          {skill.type}
+                        </div>
+                      </div>
+                      
+                      <h3 style={{ fontWeight: 800, fontSize: '1.2rem', marginBottom: '8px', color: isUnlocked ? 'var(--accent-primary)' : 'var(--text-main)' }}>
+                        {skill.name}
+                      </h3>
+                      
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', flex: 1, lineHeight: 1.6 }}>
+                        {skill.description}
+                      </p>
+
+                      {skill.cooldown && (
+                        <div style={{ marginTop: '16px', fontSize: '0.75rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '4px', fontWeight: 600 }}>
+                          ⏱ {skill.cooldown}
+                        </div>
+                      )}
+
+                      {!isUnlocked && canUnlock && (
+                        <div className="absolute inset-0 flex items-center justify-center" style={{ background: 'rgba(0, 240, 255, 0.1)', opacity: 0, transition: 'opacity 0.2s', borderRadius: '12px', backdropFilter: 'blur(2px)' }} onMouseEnter={e => e.currentTarget.style.opacity = '1'} onMouseLeave={e => e.currentTarget.style.opacity = '0'}>
+                          <span className="aaa-button primary">
+                            UNLOCK (1 SP)
+                          </span>
+                        </div>
+                      )}
+                      
+                      {isUnlocked && (
+                        <div className="absolute flex items-center justify-center" style={{ top: '-12px', right: '-12px', width: '32px', height: '32px', background: 'var(--accent-primary)', borderRadius: '50%', boxShadow: '0 0 15px var(--accent-primary-glow)', border: '2px solid #000' }}>
+                          <span style={{ color: '#000', fontSize: '1rem', fontWeight: 900 }}>✓</span>
+                        </div>
+                      )}
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,0 +1,320 @@
+{
+  "pack_number": 952,
+  "batch_number": 3,
+  "pack_name": "Resonant Acoustic Counter Combat Magic Upgrade 0952",
+  "created_utc": "2026-07-05T11:02:47.078658+00:00",
+  "purpose": "Combat, magic, monster/boss/player/support NPC, special attack, high-tier gear, combat-flow, dynamic-camera, random monster skin, weather, terrain/nature, sun color, and character-quality upgrade pack.",
+  "worlddata_basis": {
+    "class": "Resonant",
+    "subclass": "Sub-Bass Architect",
+    "specialization": "Reverb Deflection",
+    "ability": "Acoustic Counter",
+    "monster": "Nexus Warden",
+    "boss": "The Astral Sovereign",
+    "support_npc": "Director Vance",
+    "weather": "clear dawn",
+    "terrain": "starfield dust",
+    "sun_variant": "ash-orange glare"
+  },
+  "counts": {
+    "glb_modules": 8,
+    "texture_png": 12,
+    "audio_wav": 5,
+    "config_docs": 11
+  },
+  "glb_assets": [
+    {
+      "file": "glb_modules/01_class_special_attack_vfx.glb",
+      "role": "class_special_attack_vfx",
+      "class": "Resonant",
+      "ability": "Acoustic Counter",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "ash-orange glare",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/02_monster_random_skin_module.glb",
+      "role": "monster_random_skin_module",
+      "class": "Resonant",
+      "ability": "Acoustic Counter",
+      "monster_or_boss_or_npc": "Nexus Warden",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "ash-orange glare",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/03_boss_magic_phase_module.glb",
+      "role": "boss_magic_phase_module",
+      "class": "Resonant",
+      "ability": "Acoustic Counter",
+      "monster_or_boss_or_npc": "The Astral Sovereign",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "ash-orange glare",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/04_high_tier_magic_weapon_aura.glb",
+      "role": "high_tier_magic_weapon_aura",
+      "class": "Resonant",
+      "ability": "Acoustic Counter",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "ash-orange glare",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/05_high_tier_magic_armor_aura.glb",
+      "role": "high_tier_magic_armor_aura",
+      "class": "Resonant",
+      "ability": "Acoustic Counter",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "ash-orange glare",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/06_dynamic_combat_camera_trigger.glb",
+      "role": "dynamic_combat_camera_trigger",
+      "class": "Resonant",
+      "ability": "Acoustic Counter",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "ash-orange glare",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/07_weather_terrain_nature_effect.glb",
+      "role": "weather_terrain_nature_effect",
+      "class": "Resonant",
+      "ability": "Acoustic Counter",
+      "monster_or_boss_or_npc": null,
+      "weather": "clear dawn",
+      "terrain": "starfield dust",
+      "sun_variant": "ash-orange glare",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/08_support_npc_assist_marker.glb",
+      "role": "support_npc_assist_marker",
+      "class": "Resonant",
+      "ability": "Acoustic Counter",
+      "monster_or_boss_or_npc": "Director Vance",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "ash-orange glare",
+      "glb_header_ok": true
+    }
+  ],
+  "textures": [
+    {
+      "file": "texture_upgrades/01_class_ability_emission.png",
+      "pattern": "class_ability_emission",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/02_subclass_talent_glyph_sheet.png",
+      "pattern": "subclass_talent_glyph_sheet",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/03_monster_skin_albedo.png",
+      "pattern": "monster_skin_albedo",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/04_monster_skin_emission.png",
+      "pattern": "monster_skin_emission",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/05_boss_phase_material.png",
+      "pattern": "boss_phase_material",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/06_weapon_finish.png",
+      "pattern": "weapon_finish",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/07_armor_trim.png",
+      "pattern": "armor_trim",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/08_npc_assist_decal.png",
+      "pattern": "npc_assist_decal",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/09_weather_overlay.png",
+      "pattern": "weather_overlay",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/10_terrain_nature_overlay.png",
+      "pattern": "terrain_nature_overlay",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/11_character_quality_overlay.png",
+      "pattern": "character_quality_overlay",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/12_sun_color_grade_lut.png",
+      "pattern": "sun_color_grade_lut",
+      "class": "Resonant",
+      "theme": "sonic",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio_cues/01_special_attack_cast.wav",
+      "cue_id": "resonant_acoustic_counter_special_attack_cast_0952",
+      "cue_type": "special_attack_cast",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/02_magic_impact.wav",
+      "cue_id": "resonant_acoustic_counter_magic_impact_0952",
+      "cue_type": "magic_impact",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/03_combat_camera_swell.wav",
+      "cue_id": "resonant_acoustic_counter_combat_camera_swell_0952",
+      "cue_type": "combat_camera_swell",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/04_weather_sun_cue.wav",
+      "cue_id": "resonant_acoustic_counter_weather_sun_cue_0952",
+      "cue_type": "weather_sun_cue",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/05_monster_spawn_variance.wav",
+      "cue_id": "resonant_acoustic_counter_monster_spawn_variance_0952",
+      "cue_type": "monster_spawn_variance",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    }
+  ],
+  "data_files": [
+    "configs/class_ability_vfx_map.json",
+    "configs/monster_random_skin_spawn_table.json",
+    "configs/boss_special_attack_upgrade_plan.json",
+    "configs/support_npc_assist_scripts.json",
+    "configs/high_tier_magic_weapon_armor_patch.json",
+    "configs/combat_flow_smoothness_profile.json",
+    "configs/dynamic_combat_camera_trigger.json",
+    "configs/weather_terrain_nature_sun_plan.json",
+    "configs/character_appearance_quality_patch.json",
+    "configs/antigravity_2_0_upgrade_instructions.json",
+    "configs/monster_skin_weights.csv"
+  ],
+  "target_references_sample": [
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/10_the_reggae_dub_oasis/02_bass_tower_groves_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/06_avalanche_steps_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/02_the_sonic_badlands/09_buried_speaker_monolith_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/04_silent_lecture_dome_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/05_the_deprecated_repositories/08_retrieval_lift_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/07_the_playa_of_ash/03_sculpture_ring_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/08_the_burning_playa/07_smoke_towers_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/03_western_wastes_and_arid_plains/10_the_phonetic_wastes/02_vowel_dunes_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/01_the_zenith_spire/05_command_nexus_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/02_the_provisioning_sectors/06_rooftop_bazaars_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/03_the_on_demand_arteries/09_transit_ramp_nexus_map.png",
+      "asset_type": "png",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/02_urban_core/05_the_front_matter_void/02_blank_load_terraces_map.png",
+      "asset_type": "png",
+      "tags": []
+    }
+  ]
+}

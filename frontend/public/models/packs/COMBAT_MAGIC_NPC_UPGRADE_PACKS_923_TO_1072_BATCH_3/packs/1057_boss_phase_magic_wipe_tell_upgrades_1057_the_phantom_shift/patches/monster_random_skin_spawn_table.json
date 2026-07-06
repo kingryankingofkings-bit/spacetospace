@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Aegis Carapace",
+  "element_context": "voidtime",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_aegis_carapace_voidtime_01",
+      "display_name": "Bark-Crowned The Aegis Carapace 01",
+      "weight": 4.715,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.032
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_02",
+      "display_name": "Echo-Split The Aegis Carapace 02",
+      "weight": 4.612,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 0.935
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_03",
+      "display_name": "Null-Branded The Aegis Carapace 03",
+      "weight": 4.308,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.012
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_04",
+      "display_name": "Rhythm-Warped The Aegis Carapace 04",
+      "weight": 4.218,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "crystal",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.069
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_05",
+      "display_name": "Grav-Torn The Aegis Carapace 05",
+      "weight": 4.015,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "hide",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 1.001
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_06",
+      "display_name": "Ablative The Aegis Carapace 06",
+      "weight": 4.008,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "bark",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 0.974
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_07",
+      "display_name": "Phase-Bound The Aegis Carapace 07",
+      "weight": 3.897,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "bone",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 0.988
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_08",
+      "display_name": "Venom-Laced The Aegis Carapace 08",
+      "weight": 3.622,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.086
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_09",
+      "display_name": "Warden-Fused The Aegis Carapace 09",
+      "weight": 3.278,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 0.925
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_10",
+      "display_name": "Sovereign-Touched The Aegis Carapace 10",
+      "weight": 3.454,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.044
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_11",
+      "display_name": "Data-Forged The Aegis Carapace 11",
+      "weight": 3.098,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "scrap",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.024
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_12",
+      "display_name": "Ash-Baptized The Aegis Carapace 12",
+      "weight": 2.853,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.104
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_13",
+      "display_name": "Tide-Broken The Aegis Carapace 13",
+      "weight": 2.945,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.049
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_14",
+      "display_name": "Magnetized The Aegis Carapace 14",
+      "weight": 2.755,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "hide",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.002
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_15",
+      "display_name": "Sonic-Scarred The Aegis Carapace 15",
+      "weight": 2.635,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.058
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_16",
+      "display_name": "Glass-Hardened The Aegis Carapace 16",
+      "weight": 2.451,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "bark",
+        "weather_tint": "violet stormfront",
+        "scale_jitter": 0.944
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_17",
+      "display_name": "Spore-Sick The Aegis Carapace 17",
+      "weight": 2.104,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "wide",
+        "armor_growth": "scrap",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.049
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_18",
+      "display_name": "Chrome-Maw The Aegis Carapace 18",
+      "weight": 1.955,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "void",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.104
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_19",
+      "display_name": "Eclipse-Synced The Aegis Carapace 19",
+      "weight": 1.721,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 0.95
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_20",
+      "display_name": "Overcharged The Aegis Carapace 20",
+      "weight": 1.53,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "bone",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.084
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_21",
+      "display_name": "Bark-Crowned The Aegis Carapace 21",
+      "weight": 1.496,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "hide",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 0.944
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_22",
+      "display_name": "Echo-Split The Aegis Carapace 22",
+      "weight": 1.228,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.986
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_23",
+      "display_name": "Null-Branded The Aegis Carapace 23",
+      "weight": 1.322,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.922
+      }
+    },
+    {
+      "skin_id": "the_aegis_carapace_voidtime_24",
+      "display_name": "Rhythm-Warped The Aegis Carapace 24",
+      "weight": 1.206,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "wide",
+        "armor_growth": "crystal",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 1.009
+      }
+    }
+  ]
+}

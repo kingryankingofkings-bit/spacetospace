@@ -1,0 +1,226 @@
+{
+  "pack_number": 129,
+  "pack_name": "The Abyssal Trench Music Ambience Texture Kit",
+  "kind": "music_ambience_texture",
+  "created_utc": "2026-07-05T08:07:05.629838+00:00",
+  "source_docs_used": [
+    "geographic_master_guide_basic_area_maps_pack.zip",
+    "geographic_master_guide_detailed_maps.zip",
+    "dawnforge_sublocation_special_events_pack(1).zip",
+    "dawnforge_level_1_40_itemization_pack(1).zip",
+    "dawnforge_character_creator_customization_pack(1).zip",
+    "uploaded geographic master guide image"
+  ],
+  "region": "06 Geothermal Abyss",
+  "sub_location": "02 The Abyssal Trench",
+  "theme": "geothermal",
+  "description": "Sub-location loop music, ambient beds, stingers, star/water/sky/liquid textures, decals, and material maps.",
+  "counts": {
+    "glb_assets": 5,
+    "textures_png": 8,
+    "audio_wav": 3,
+    "data_files": 4
+  },
+  "assets": [
+    {
+      "file": "glb_assets/01_starfield_sky_water_preview.glb",
+      "name": "Starfield Sky Water Preview",
+      "asset_kind": "liquid_sky",
+      "theme": "geothermal",
+      "element_variant": "magma",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "environment_surface_or_sky_proxy"
+    },
+    {
+      "file": "glb_assets/02_music_trigger_totem.glb",
+      "name": "Music Trigger Totem",
+      "asset_kind": "interactable",
+      "theme": "geothermal",
+      "element_variant": "magma",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "quest_or_system_interactable"
+    },
+    {
+      "file": "glb_assets/03_ambient_object_cluster.glb",
+      "name": "Ambient Object Cluster",
+      "asset_kind": "prop",
+      "theme": "geothermal",
+      "element_variant": "magma",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "static_prop_or_debris"
+    },
+    {
+      "file": "glb_assets/04_soundscape_landmark.glb",
+      "name": "Soundscape Landmark",
+      "asset_kind": "landmark",
+      "theme": "geothermal",
+      "element_variant": "magma",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "static_world_anchor"
+    },
+    {
+      "file": "glb_assets/05_ambient_creature_listener.glb",
+      "name": "Ambient Creature Listener",
+      "asset_kind": "creature",
+      "theme": "geothermal",
+      "element_variant": "magma",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": true,
+      "script_profile": "creature_variant_base"
+    }
+  ],
+  "textures": [
+    {
+      "file": "textures/01_the_abyssal_trench_music_ambience_texture_kit_albedo.png",
+      "pattern": "albedo",
+      "theme": "geothermal",
+      "material_use": "local surface albedo"
+    },
+    {
+      "file": "textures/02_the_abyssal_trench_music_ambience_texture_kit_normal_proxy.png",
+      "pattern": "normal_proxy",
+      "theme": "geothermal",
+      "material_use": "placeholder normal-map proxy"
+    },
+    {
+      "file": "textures/03_the_abyssal_trench_music_ambience_texture_kit_trim.png",
+      "pattern": "trim",
+      "theme": "geothermal",
+      "material_use": "architecture/prop trim sheet"
+    },
+    {
+      "file": "textures/04_the_abyssal_trench_music_ambience_texture_kit_emission.png",
+      "pattern": "emission",
+      "theme": "geothermal",
+      "material_use": "glowing signage, runes, creatures, UI, and VFX"
+    },
+    {
+      "file": "textures/05_the_abyssal_trench_music_ambience_texture_kit_decal.png",
+      "pattern": "decal",
+      "theme": "geothermal",
+      "material_use": "floor/wall decals and quest markers"
+    },
+    {
+      "file": "textures/06_the_abyssal_trench_music_ambience_texture_kit_water.png",
+      "pattern": "water",
+      "theme": "geothermal",
+      "material_use": "water/liquid/caustic surface"
+    },
+    {
+      "file": "textures/07_the_abyssal_trench_music_ambience_texture_kit_starfield.png",
+      "pattern": "starfield",
+      "theme": "geothermal",
+      "material_use": "skybox/starfield/cosmic overlay"
+    },
+    {
+      "file": "textures/08_the_abyssal_trench_music_ambience_texture_kit_surface.png",
+      "pattern": "surface",
+      "theme": "geothermal",
+      "material_use": "secondary local surface variation"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio/the_abyssal_trench_music_ambience_texture_kit_music_loop.wav",
+      "cue_id": "the_abyssal_trench_music_ambience_texture_kit_music_loop",
+      "cue_type": "music",
+      "music_mode": "pressure",
+      "fits_region": "06 Geothermal Abyss",
+      "fits_sub_location": "02 The Abyssal Trench",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    },
+    {
+      "file": "audio/the_abyssal_trench_music_ambience_texture_kit_ambience_loop.wav",
+      "cue_id": "the_abyssal_trench_music_ambience_texture_kit_ambience_loop",
+      "cue_type": "ambience",
+      "music_mode": "pressure",
+      "fits_region": "06 Geothermal Abyss",
+      "fits_sub_location": "02 The Abyssal Trench",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    },
+    {
+      "file": "audio/the_abyssal_trench_music_ambience_texture_kit_event_or_pickup_sting.wav",
+      "cue_id": "the_abyssal_trench_music_ambience_texture_kit_event_or_pickup_sting",
+      "cue_type": "sting",
+      "music_mode": "pressure",
+      "fits_region": "06 Geothermal Abyss",
+      "fits_sub_location": "02 The Abyssal Trench",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    }
+  ],
+  "data_files": [
+    "data/object_and_spawn_plan.json",
+    "data/material_texture_manifest.json",
+    "prefab_specs/prefab_handoff.json",
+    "audio/music_cue_manifest.json"
+  ],
+  "area_references": [
+    {
+      "region": "06 Geothermal Abyss",
+      "sub_location": "02 The Abyssal Trench",
+      "area": "Surface Lift Dock",
+      "map_file": "area_maps/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock_map.png",
+      "shops": "Blacksmith: Anvil of Surface"
+    },
+    {
+      "region": "06 Geothermal Abyss",
+      "sub_location": "02 The Abyssal Trench",
+      "area": "Main Observation Dome",
+      "map_file": "area_maps/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/02_main_observation_dome_map.png",
+      "shops": "Medic: Remedy Booth Main"
+    },
+    {
+      "region": "06 Geothermal Abyss",
+      "sub_location": "02 The Abyssal Trench",
+      "area": "Pressure Gate",
+      "map_file": "area_maps/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/03_pressure_gate_map.png",
+      "shops": "Armor Dye Pack Shop: Color Forge Pressure"
+    },
+    {
+      "region": "06 Geothermal Abyss",
+      "sub_location": "02 The Abyssal Trench",
+      "area": "Coral Laboratory",
+      "map_file": "area_maps/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/04_coral_laboratory_map.png",
+      "shops": "Curio Shop: Curio Niche Coral"
+    },
+    {
+      "region": "06 Geothermal Abyss",
+      "sub_location": "02 The Abyssal Trench",
+      "area": "Deepwater Causeway",
+      "map_file": "area_maps/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/05_deepwater_causeway_map.png",
+      "shops": "Inn: The Wandering Deepwater; Mechanic: Repair Dock Deepwater"
+    },
+    {
+      "region": "06 Geothermal Abyss",
+      "sub_location": "02 The Abyssal Trench",
+      "area": "Ballast Spine",
+      "map_file": "area_maps/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine_map.png",
+      "shops": "Food Stall: Griddle Row Ballast; Marketplace: Open Market Ballast"
+    },
+    {
+      "region": "06 Geothermal Abyss",
+      "sub_location": "02 The Abyssal Trench",
+      "area": "Trench Window",
+      "map_file": "area_maps/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window_map.png",
+      "shops": "Enchanter: Arcane Polish Trench; Alchemist: Remedy House Trench"
+    },
+    {
+      "region": "06 Geothermal Abyss",
+      "sub_location": "02 The Abyssal Trench",
+      "area": "Floodlock Annex",
+      "map_file": "area_maps/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/08_floodlock_annex_map.png",
+      "shops": "Tailor: Cloak and Cord Floodlock"
+    },
+    {
+      "region": "06 Geothermal Abyss",
+      "sub_location": "02 The Abyssal Trench",
+      "area": "The Abyss Crown",
+      "map_file": "area_maps/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/09_the_abyss_crown_map.png",
+      "shops": "Weapon Skin Shop: EdgeLacquer "
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "free_flow": {
+    "combo_decay_base_seconds": 2.4,
+    "combo_decay_extended_seconds": 3.15,
+    "hit_pause_light_ms": 35,
+    "hit_pause_heavy_ms": 65,
+    "parry_freeze_ms": 80,
+    "vault_cancel_window_ms": 220,
+    "air_recovery_cancel_window_ms": 260,
+    "target_snap_angle_degrees": 50,
+    "target_snap_distance_m": 7.5
+  },
+  "smoothness_flags": {
+    "camera_cuts_preserve_input_buffer": true,
+    "cinematic_intro_does_not_break_combo": true,
+    "pet_proc_does_not_steal_lockon": true,
+    "npc_assist_counts_as_player_combo_extension": true
+  }
+}

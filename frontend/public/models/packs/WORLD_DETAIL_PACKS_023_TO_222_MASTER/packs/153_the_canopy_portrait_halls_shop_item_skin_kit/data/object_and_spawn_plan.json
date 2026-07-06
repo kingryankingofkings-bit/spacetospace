@@ -1,0 +1,154 @@
+{
+  "pack_identity": {
+    "pack_number": 153,
+    "title": "The Canopy Portrait Halls Shop Item Skin Kit",
+    "kind": "shop_item_skin",
+    "region": "04 Eastern Wilds And Ancient Archives",
+    "sub_location": "03 The Canopy Portrait Halls",
+    "theme": "wilds"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Canopy Portrait Halls Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Canopy Portrait Halls Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Canopy Portrait Halls Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Canopy Portrait Halls Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Canopy Portrait Halls Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Canopy Portrait Halls Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [
+    {
+      "item_id": "DF-N-0990",
+      "item_name": "Plain Anomaly Ward Cindervale Steel Lexicon Visor of Evolution Charge",
+      "rarity": "Common",
+      "slot": "Head",
+      "gear_family": "Visor",
+      "world_location": "The Anomaly Ward",
+      "suggested_skin": "wilds_nature_head_finish"
+    },
+    {
+      "item_id": "DF-N-1033",
+      "item_name": "Plain Abyssal Trench Null-Iron Junkyard Visor of Starwell Sync",
+      "rarity": "Common",
+      "slot": "Head",
+      "gear_family": "Visor",
+      "world_location": "The Abyssal Trench",
+      "suggested_skin": "wilds_nature_head_finish"
+    },
+    {
+      "item_id": "DF-N-1076",
+      "item_name": "Tuned Anomaly Ward Cindervale Steel EPI Tuning-Fork Blade of Sevenfold Counter",
+      "rarity": "Uncommon",
+      "slot": "Main Hand",
+      "gear_family": "Tuning-Fork Blade",
+      "world_location": "The Anomaly Ward",
+      "suggested_skin": "wilds_nature_main_hand_finish"
+    },
+    {
+      "item_id": "DF-N-1119",
+      "item_name": "Supercharged Anomaly Ward Null-Iron EMP Visor of Hound Latch",
+      "rarity": "Super",
+      "slot": "Head",
+      "gear_family": "Visor",
+      "world_location": "The Anomaly Ward",
+      "suggested_skin": "wilds_nature_head_finish"
+    },
+    {
+      "item_id": "DF-N-1162",
+      "item_name": "Hardened Voyage Incubator Cindervale Steel Front-Matter Warhammer of Protocol Revision",
+      "rarity": "Rare",
+      "slot": "Two-Hand Weapon",
+      "gear_family": "Warhammer",
+      "world_location": "The Voyage Incubator",
+      "suggested_skin": "wilds_nature_two_hand_weapon_finish"
+    }
+  ],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Alchemist, Armor Dye Pack Shop, Blacksmith, Curio Shop, General Goods, Inn, Medic, Relic Trader, Stable, Tailor, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

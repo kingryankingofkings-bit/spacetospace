@@ -1,0 +1,34 @@
+{
+  "profile_name": "Torinn_Rhogar_Dynamic_Combat_Camera",
+  "combat_start": {
+    "duration_s": 1.8,
+    "shot": "low-angle push-in from robe hem to skull pauldrons and face",
+    "fov": 42,
+    "shake": 0.06,
+    "vfx_cues": [
+      "cold breath",
+      "hand static ignition"
+    ]
+  },
+  "boss_intro": {
+    "duration_s": 5.5,
+    "beats": [
+      "snow motes slow",
+      "halo glyph appears",
+      "gold skull pauldron close-up",
+      "Torinn opens blue eyes",
+      "fists ignite"
+    ]
+  },
+  "ultimate_camera": {
+    "duration_s": 2.7,
+    "shot": "orbit left-to-right around charged fists and tendrils",
+    "fov": 35,
+    "slow_motion": 0.45
+  },
+  "gameplay_limits": {
+    "do_not_obscure_face": true,
+    "keep_skull_pauldrons_in_frame": true,
+    "max_vfx_screen_coverage": 0.32
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "pack_number": 530,
+  "pack_name": "Environment Lighting Atmosphere Upgrades Batch 108 - Dreadnought",
+  "created_utc": "2026-07-05T09:42:36.180723+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "environment_lighting_atmosphere",
+  "theme": "emerald_wilds",
+  "element": "verdant",
+  "skyship_class_profile": {
+    "class": "dreadnought",
+    "scale": 2.4,
+    "role": "boss-scale warship"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-039_pell_aetheron.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-040_vale_crixon.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-041_fen_larkwire.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-042_lyra_stormhall.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-043_nyx_alara.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-044_rixx_varr.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-045_caldera_wove.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-046_ilyra_highroot.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-047_sahel_meridian.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-048_bracca_halforn.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-049_captain_aurex_dawnhelm.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-050_marshal_veyra_solis.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/headquarters/SWHQ-001_aerie_of_the_dawnshield.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-001_sparrowhook_scout_skiff.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-002_cloudneedle_patrol_boat.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "cloud",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-003_dawn_courier.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-004_cloudhook_cutter.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "cloud",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-005_bronze_gull_brig.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-006_tempest_frigate.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-007_aegiswing_escort.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/07_vale_ashvein_captain_at_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/08_elo_ashvein_captain_of_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/09_edda_holloway_watcher_of_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/10_vale_wayfare_specialist_near_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/11_draven_skyharrow_oracle_of_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/12_rook_frostrelay_captain_near_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/13_makoa_gearmantle_broker_near_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/14_auren_rootborne_tactician_near_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/15_vexa_cinderholt_warden_at_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/16_dax_ashvein_cartographer_near_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/17_isolde_ashvein_oracle_at_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/18_varren_tideforged_marshal_from_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/19_nyra_gantryn_engineer_near_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/05_gatehouse_forts/20_vexa_gearmantle_runner_under_gatehouse.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/06_tactical_control_bunker/01_isolde_nullborne_fixer_of_tactical.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/06_tactical_control_bunker/02_talia_echohand_cartographer_of_tactical.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/06_tactical_control_bunker/03_eryk_echohand_engineer_under_tactical.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/06_tactical_control_bunker/04_nyra_cinderholt_runner_near_tactical.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/06_tactical_control_bunker/05_tovin_cinderholt_pilgrim_of_tactical.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/04_the_raid_rush_choke_points/06_tactical_control_bunker/06_maven_chromabell_courier_near_tactical.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "224_texture_remaster_upgrade_batch_002.zip",
+      "path_in_zip": "texture_upgrades/05_texture_remaster_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "224_texture_remaster_upgrade_batch_002.zip",
+      "path_in_zip": "texture_upgrades/06_texture_remaster_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "224_texture_remaster_upgrade_batch_002.zip",
+      "path_in_zip": "texture_upgrades/07_texture_remaster_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "224_texture_remaster_upgrade_batch_002.zip",
+      "path_in_zip": "texture_upgrades/08_texture_remaster_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "224_texture_remaster_upgrade_batch_002.zip",
+      "path_in_zip": "texture_upgrades/09_texture_remaster_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "224_texture_remaster_upgrade_batch_002.zip",
+      "path_in_zip": "texture_upgrades/10_texture_remaster_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "224_texture_remaster_upgrade_batch_002.zip",
+      "path_in_zip": "texture_upgrades/11_texture_remaster_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "224_texture_remaster_upgrade_batch_002.zip",
+      "path_in_zip": "texture_upgrades/12_texture_remaster_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/01_low_poly_silhouette_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/02_low_poly_silhouette_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/03_low_poly_silhouette_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/04_low_poly_silhouette_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/05_low_poly_silhouette_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/06_low_poly_silhouette_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/07_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/08_low_poly_silhouette_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/09_low_poly_silhouette_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/10_low_poly_silhouette_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/11_low_poly_silhouette_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/12_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

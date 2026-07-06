@@ -1,0 +1,25 @@
+{
+  "tier": "high-tier / relic / mythic / legendary",
+  "weapon_module": "glb_modules/03_high_tier_magic_weapon.glb",
+  "armor_module": "glb_modules/04_high_tier_magic_armor.glb",
+  "weapon_finish_texture": "texture_upgrades/05_weapon_relic_finish.png",
+  "armor_finish_texture": "texture_upgrades/06_armor_relic_finish.png",
+  "stat_profiles": [
+    {
+      "profile": "crit_flow",
+      "bonus": "critical damage against exposed, chilled, stunned, or tethered targets"
+    },
+    {
+      "profile": "airborne_combo",
+      "bonus": "aerial juggle and combo preservation"
+    },
+    {
+      "profile": "major_magic",
+      "bonus": "major ability recharge and ultimate VFX intensity"
+    },
+    {
+      "profile": "support_synergy",
+      "bonus": "support NPC assist cooldown reduction"
+    }
+  ]
+}

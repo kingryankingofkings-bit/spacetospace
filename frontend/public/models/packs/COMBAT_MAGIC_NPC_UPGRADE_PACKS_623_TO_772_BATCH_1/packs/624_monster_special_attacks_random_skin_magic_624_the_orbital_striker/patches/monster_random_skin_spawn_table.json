@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Grid-Rushers",
+  "element_context": "gravity",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_grid_rushers_gravity_01",
+      "display_name": "Ash-Baptized The Grid-Rushers 01",
+      "weight": 4.561,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 0.991
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_02",
+      "display_name": "Tide-Broken The Grid-Rushers 02",
+      "weight": 4.733,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "hide",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.096
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_03",
+      "display_name": "Magnetized The Grid-Rushers 03",
+      "weight": 4.461,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.039
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_04",
+      "display_name": "Sonic-Scarred The Grid-Rushers 04",
+      "weight": 4.108,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 1.1
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_05",
+      "display_name": "Glass-Hardened The Grid-Rushers 05",
+      "weight": 4.04,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "bark",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 0.936
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_06",
+      "display_name": "Spore-Sick The Grid-Rushers 06",
+      "weight": 4.06,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 0.956
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_07",
+      "display_name": "Chrome-Maw The Grid-Rushers 07",
+      "weight": 3.667,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "crystal",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.078
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_08",
+      "display_name": "Eclipse-Synced The Grid-Rushers 08",
+      "weight": 3.614,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.109
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_09",
+      "display_name": "Overcharged The Grid-Rushers 09",
+      "weight": 3.302,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.062
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_10",
+      "display_name": "Bark-Crowned The Grid-Rushers 10",
+      "weight": 3.284,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "crystal",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.043
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_11",
+      "display_name": "Echo-Split The Grid-Rushers 11",
+      "weight": 3.115,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "jagged",
+        "armor_growth": "crystal",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.028
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_12",
+      "display_name": "Null-Branded The Grid-Rushers 12",
+      "weight": 3.127,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "void",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 1.069
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_13",
+      "display_name": "Rhythm-Warped The Grid-Rushers 13",
+      "weight": 2.833,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "void",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.076
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_14",
+      "display_name": "Grav-Torn The Grid-Rushers 14",
+      "weight": 2.8,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.026
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_15",
+      "display_name": "Ablative The Grid-Rushers 15",
+      "weight": 2.373,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "scrap",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 0.968
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_16",
+      "display_name": "Phase-Bound The Grid-Rushers 16",
+      "weight": 2.324,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "jagged",
+        "armor_growth": "hide",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.983
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_17",
+      "display_name": "Venom-Laced The Grid-Rushers 17",
+      "weight": 2.291,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "crown",
+        "armor_growth": "bone",
+        "weather_tint": "red ashfall",
+        "scale_jitter": 1.087
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_18",
+      "display_name": "Warden-Fused The Grid-Rushers 18",
+      "weight": 2.16,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "gold noon",
+        "scale_jitter": 1.041
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_19",
+      "display_name": "Sovereign-Touched The Grid-Rushers 19",
+      "weight": 1.684,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "none",
+        "armor_growth": "void",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.076
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_20",
+      "display_name": "Data-Forged The Grid-Rushers 20",
+      "weight": 1.777,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "gold noon",
+        "scale_jitter": 0.938
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_21",
+      "display_name": "Ash-Baptized The Grid-Rushers 21",
+      "weight": 1.626,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "none",
+        "armor_growth": "crystal",
+        "weather_tint": "clear dawn",
+        "scale_jitter": 1.098
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_22",
+      "display_name": "Tide-Broken The Grid-Rushers 22",
+      "weight": 1.409,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 0.962
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_23",
+      "display_name": "Magnetized The Grid-Rushers 23",
+      "weight": 0.999,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "bone",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.106
+      }
+    },
+    {
+      "skin_id": "the_grid_rushers_gravity_24",
+      "display_name": "Sonic-Scarred The Grid-Rushers 24",
+      "weight": 0.852,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "scrap",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.928
+      }
+    }
+  ]
+}

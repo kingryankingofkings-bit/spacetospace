@@ -19,9 +19,15 @@ module.exports = function initializeAbilities(db, broadcast, npcs, players) {
     const { attacker, target } = context;
     if (attacker && target) {
       // Pull target to attacker
+      const dx = (target.x || 0) - (attacker.x || 0);
+      const dy = (target.y || 0) - (attacker.y || 0);
+      const dz = (target.z || 0) - (attacker.z || 0);
+      const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
+      if (dist > 20) return; // Tether max range 20 units
+
       target.x = attacker.x;
       target.z = attacker.z;
-      if (target.id.startsWith('npc_')) {
+      if (target.id && typeof target.id === 'string' && target.id.startsWith('npc_')) {
         broadcast({ type: "npc_update", npcs: [target] }, null, target.zone);
       }
     }
@@ -68,6 +74,12 @@ module.exports = function initializeAbilities(db, broadcast, npcs, players) {
   register('the_phantom_shift_skill_2', (context) => {
     const { attacker, x, z } = context;
     if (attacker && x !== undefined && z !== undefined) {
+      // Teleport limit: max range 20 units
+      const dx = x - (attacker.x || 0);
+      const dz = z - (attacker.z || 0);
+      const dist = Math.sqrt(dx * dx + dz * dz);
+      if (dist > 20) return;
+
       // Teleport
       attacker.x = x;
       attacker.z = z;

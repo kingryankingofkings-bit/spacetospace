@@ -1,0 +1,472 @@
+{
+  "pack_number": 457,
+  "pack_name": "Skyship Deck Interior Upgrades Batch 035 - Merchant Barge",
+  "created_utc": "2026-07-05T09:42:30.377077+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_deck_interiors",
+  "theme": "waste_scrap",
+  "element": "dustfire",
+  "skyship_class_profile": {
+    "class": "merchant_barge",
+    "scale": 1.5,
+    "role": "trade, supplies, shop route"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "10_town_exterior_structures_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/dock_house.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/cosmic_orbital_debris.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "orbital",
+        "cosmic"
+      ]
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/skyship_anchor_winch.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/skyship_balloon_panel.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/skyship_canvas_sail_folded.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "sail"
+      ]
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/skyship_cargo_net.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/skyship_gangplank.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/skyship_rope_coil.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+      "path_in_zip": "concept_monsters_proper_glb_pack_v2/03b_nexus_warden_evolved.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+      "path_in_zip": "sector_characters_glb_pack_v4/iron_warden.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "browser_game_3d_asset_pack_v1.zip",
+      "path_in_zip": "glb_assets/orbital_tether_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "tether",
+        "orbital"
+      ]
+    },
+    {
+      "source_zip": "sector_characters_glb_pack_v4.zip",
+      "path_in_zip": "sector_characters_glb_pack_v4/glb/iron_warden.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "concept_monsters_proper_glb_pack_v2.zip",
+      "path_in_zip": "concept_monsters_glb_pack_v2/models/03b_nexus_warden_evolved.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "023_lunar_readiness_base_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "024_planet_defense_perimeter_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "025_orbital_tether_station_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "025_orbital_tether_station_world_detail_kit.zip",
+      "path_in_zip": "textures/01_orbital_tether_station_world_detail_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "tether",
+        "orbital"
+      ]
+    },
+    {
+      "source_zip": "025_orbital_tether_station_world_detail_kit.zip",
+      "path_in_zip": "textures/02_orbital_tether_station_world_detail_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "tether",
+        "orbital"
+      ]
+    },
+    {
+      "source_zip": "025_orbital_tether_station_world_detail_kit.zip",
+      "path_in_zip": "textures/03_orbital_tether_station_world_detail_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "tether",
+        "orbital"
+      ]
+    },
+    {
+      "source_zip": "025_orbital_tether_station_world_detail_kit.zip",
+      "path_in_zip": "textures/04_orbital_tether_station_world_detail_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "tether",
+        "orbital"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/06_kael_dubwater_tactician_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/07_makoa_frostrelay_tamer_of.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/08_varren_latchward_smith_at.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/09_ren_riftwalker_responder_at.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/10_mirek_glassroot_watcher_near.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/11_mirek_riftwalker_custodian_from.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/12_auren_holloway_watcher_from.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/13_nyra_echohand_pilgrim_of.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/14_ilyra_latchward_tactician_at.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/15_edda_frostrelay_watcher_under.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/16_yara_ironwake_engineer_near.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/17_bryn_starfall_broker_from.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/18_zerin_mossguard_navigator_near.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/19_cassian_chromabell_navigator_near.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber/20_orin_deepwell_archivist_from.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/03_the_rotating_stackways/01_sarai_frostrelay_ranger_at.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/03_the_rotating_stackways/02_thorne_glassroot_oracle_near.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/03_the_rotating_stackways/03_keir_frostrelay_tamer_near.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/03_the_rotating_stackways/04_isolde_ashvein_fixer_under.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/03_the_rotating_stackways/05_vexa_gantryn_runner_at.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "303_material_polish_upgrade_batch_081.zip",
+      "path_in_zip": "texture_upgrades/06_material_polish_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "303_material_polish_upgrade_batch_081.zip",
+      "path_in_zip": "texture_upgrades/07_material_polish_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "303_material_polish_upgrade_batch_081.zip",
+      "path_in_zip": "texture_upgrades/08_material_polish_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "303_material_polish_upgrade_batch_081.zip",
+      "path_in_zip": "texture_upgrades/09_material_polish_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "303_material_polish_upgrade_batch_081.zip",
+      "path_in_zip": "texture_upgrades/10_material_polish_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "303_material_polish_upgrade_batch_081.zip",
+      "path_in_zip": "texture_upgrades/11_material_polish_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "303_material_polish_upgrade_batch_081.zip",
+      "path_in_zip": "texture_upgrades/12_material_polish_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/01_texture_remaster_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/02_texture_remaster_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/03_texture_remaster_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/04_texture_remaster_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/05_texture_remaster_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/06_texture_remaster_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/07_texture_remaster_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/08_texture_remaster_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/09_texture_remaster_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/10_texture_remaster_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/11_texture_remaster_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/12_texture_remaster_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "305_low_poly_silhouette_upgrade_batch_083.zip",
+      "path_in_zip": "texture_upgrades/01_low_poly_silhouette_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

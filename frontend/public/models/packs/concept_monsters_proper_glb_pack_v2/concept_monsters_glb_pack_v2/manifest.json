@@ -1,0 +1,345 @@
+{
+  "pack_name": "Concept Monsters Proper GLB Pack",
+  "version": "2.0",
+  "created_for": "stylized 3D web browser game prototype",
+  "format": "glb",
+  "coordinate_system": {
+    "up_axis": "+Y",
+    "front_axis": "+Z",
+    "origin": "grounded at local model floor, centered approximately at broadphase center",
+    "unit_scale": "meters-ish / game units"
+  },
+  "contents_note": "These are real low-poly GLB mesh assets with named parts and PBR materials. They are not concept images. They are not rigged or animated; use them as game-ready visual prototypes/base meshes.",
+  "models": {
+    "01_sylvan_juggernaut.glb": {
+      "file": "models/01_sylvan_juggernaut.glb",
+      "file_size_bytes": 76428,
+      "geometry_nodes": 71,
+      "vertices": 2078,
+      "triangles": 3808,
+      "bounds_min": [
+        -1.84,
+        0.0,
+        -0.98
+      ],
+      "bounds_max": [
+        1.84,
+        4.2392,
+        1.08
+      ],
+      "dimensions": [
+        3.68,
+        4.2392,
+        2.06
+      ],
+      "name": "The Sylvan Juggernaut",
+      "role": "Heavy Tank / Environmental Hazard",
+      "kind": "massive biped forest-bark beast",
+      "key_visual_parts": [
+        "wood_core_torso",
+        "ablative_chest_bark_plate_*",
+        "massive_wooden_fist_*",
+        "ground_root_tendril_*",
+        "moss_eye_*"
+      ],
+      "mechanic_hooks": {
+        "Ablative Armor": "Use named bark plates as destroyable visual chunks or material swap states.",
+        "Rooting Strike": "Fist/root meshes mark the intended slam and ground-root silhouette.",
+        "Regrowth": "Bark plate names can be re-enabled/re-grown by gameplay logic."
+      },
+      "recommended_runtime_notes": "Use separate gameplay colliders for bark plates, fists, and torso health core."
+    },
+    "02_scrap_stalker.glb": {
+      "file": "models/02_scrap_stalker.glb",
+      "file_size_bytes": 55212,
+      "geometry_nodes": 51,
+      "vertices": 1176,
+      "triangles": 2116,
+      "bounds_min": [
+        -0.69,
+        -0.0,
+        -1.78
+      ],
+      "bounds_max": [
+        0.7165,
+        1.5523,
+        1.92
+      ],
+      "dimensions": [
+        1.4065,
+        1.5523,
+        3.7
+      ],
+      "name": "The Scrap-Stalker",
+      "role": "High-Mobility Assassin / Flanker",
+      "kind": "augmented canine predator",
+      "key_visual_parts": [
+        "right_hydraulic_thigh_armor",
+        "right_hydraulic_upper_piston",
+        "bladed_prosthetic_forelimb",
+        "exposed_electric_wire_*",
+        "electric_eye_*"
+      ],
+      "mechanic_hooks": {
+        "Hydraulic Pounce": "Right mechanical hind leg and piston nodes indicate leap power.",
+        "Overclock": "Electric wire/eye materials can be intensified or swapped during 30% HP phase.",
+        "EMP Howl": "Head/muzzle area is the source socket for short-range EMP effect."
+      },
+      "recommended_runtime_notes": "Attach leap VFX to right_hydraulic_upper_piston and EMP VFX to angular_stalker_head/spit front."
+    },
+    "03_nexus_swarmers_cluster.glb": {
+      "file": "models/03_nexus_swarmers_cluster.glb",
+      "file_size_bytes": 65396,
+      "geometry_nodes": 82,
+      "vertices": 988,
+      "triangles": 1648,
+      "bounds_min": [
+        -0.7759,
+        0.0,
+        -0.7059
+      ],
+      "bounds_max": [
+        0.8104,
+        1.241,
+        1.0676
+      ],
+      "dimensions": [
+        1.5863,
+        1.241,
+        1.7735
+      ],
+      "name": "The Nexus Swarmers",
+      "role": "Mob / Escalating Threat",
+      "kind": "cluster of small crystalline parasites",
+      "key_visual_parts": [
+        "nexus_swarmer_crystal_body_*",
+        "nexus_swarmer_scanning_eye_*",
+        "swarm_adaptive_link_*",
+        "nexus_hover_arc_*"
+      ],
+      "mechanic_hooks": {
+        "Swarm Mentality": "Cluster file includes multiple parasite bodies for group presentation.",
+        "Adaptive Evolution": "Fusion links visualize the evolution trigger state."
+      },
+      "recommended_runtime_notes": "For individual enemies, duplicate one crystal body/eye group or use this cluster as a spawn preview."
+    },
+    "03b_nexus_warden_evolved.glb": {
+      "file": "models/03b_nexus_warden_evolved.glb",
+      "file_size_bytes": 22300,
+      "geometry_nodes": 28,
+      "vertices": 240,
+      "triangles": 368,
+      "bounds_min": [
+        -1.05,
+        0.0,
+        -0.5223
+      ],
+      "bounds_max": [
+        1.05,
+        2.7555,
+        1.05
+      ],
+      "dimensions": [
+        2.1,
+        2.7555,
+        1.5723
+      ],
+      "name": "Nexus Warden Evolved",
+      "role": "Evolved Nexus construct / bonus asset",
+      "kind": "larger humanoid crystalline construct",
+      "key_visual_parts": [
+        "warden_crystal_torso",
+        "warden_core",
+        "warden_single_beam_eye",
+        "warden_long_range_beam_core",
+        "warden_beam_focus_shard_*"
+      ],
+      "mechanic_hooks": {
+        "Adaptive Evolution Result": "Spawn this asset when Swarmers survive and fuse.",
+        "Long-Range Beam": "Use warden_long_range_beam_core as the beam source socket."
+      },
+      "recommended_runtime_notes": "Included as a bonus because the Swarmer concept explicitly evolves into this enemy."
+    },
+    "04_void_anomaly.glb": {
+      "file": "models/04_void_anomaly.glb",
+      "file_size_bytes": 59376,
+      "geometry_nodes": 55,
+      "vertices": 1438,
+      "triangles": 2608,
+      "bounds_min": [
+        -0.73,
+        -0.0,
+        -0.497
+      ],
+      "bounds_max": [
+        0.8158,
+        2.44,
+        0.62
+      ],
+      "dimensions": [
+        1.5458,
+        2.44,
+        1.117
+      ],
+      "name": "The Void Anomaly",
+      "role": "Elite / Mini-Boss",
+      "kind": "glitching humanoid anomaly",
+      "key_visual_parts": [
+        "phase_shift_ghost_torso_*",
+        "glitch_fragment_*",
+        "broken_reality_tear_arc_*",
+        "void_chest_reality_gap"
+      ],
+      "mechanic_hooks": {
+        "Phase Shift": "Ghost silhouettes and glitch fragments support alpha/emission flicker during intangibility.",
+        "Reality Tear": "Broken rift arcs can be separated or used as a source for battlefield rift VFX."
+      },
+      "recommended_runtime_notes": "Use alpha material animation and temporarily disable damage collision during Phase Shift."
+    },
+    "05_tremor_fiend.glb": {
+      "file": "models/05_tremor_fiend.glb",
+      "file_size_bytes": 55800,
+      "geometry_nodes": 46,
+      "vertices": 1605,
+      "triangles": 2978,
+      "bounds_min": [
+        -1.18,
+        0.0,
+        -1.0498
+      ],
+      "bounds_max": [
+        1.18,
+        1.66,
+        1.4962
+      ],
+      "dimensions": [
+        2.36,
+        1.66,
+        2.5459
+      ],
+      "name": "The Tremor-Fiend",
+      "role": "Area Denial / Pacing Dictator",
+      "kind": "hulking subterranean amphibian",
+      "key_visual_parts": [
+        "resonant_throat_sac_*",
+        "ground_slam_mallet_fist_*",
+        "sonic_hum_arc_*",
+        "subterranean_back_spike_*"
+      ],
+      "mechanic_hooks": {
+        "Metronome Strike": "Mallet forelimbs and fists define the rhythmic ground-slam animation targets.",
+        "Sonic Bellow": "Throat sacs provide telegraph material for expanding/glowing before cone attack."
+      },
+      "recommended_runtime_notes": "Drive throat sac scale/emission for telegraph timing; shockwave should be gameplay/VFX separate."
+    },
+    "06_iron_jaw_hound.glb": {
+      "file": "models/06_iron_jaw_hound.glb",
+      "file_size_bytes": 62172,
+      "geometry_nodes": 57,
+      "vertices": 1616,
+      "triangles": 2940,
+      "bounds_min": [
+        -0.64,
+        -0.0,
+        -1.1648
+      ],
+      "bounds_max": [
+        0.64,
+        1.215,
+        1.8
+      ],
+      "dimensions": [
+        1.28,
+        1.215,
+        2.9648
+      ],
+      "name": "The Iron-Jaw Hound",
+      "role": "Combo Breaker / Priority Target",
+      "kind": "low quadruped grappler with reinforced jaw",
+      "key_visual_parts": [
+        "reinforced_upper_jaw_plate",
+        "reinforced_lower_jaw_plate",
+        "jaw_hinge_rivet_*",
+        "jaw_side_lock_bar_*"
+      ],
+      "mechanic_hooks": {
+        "The Latch": "Jaw plates and front bite zone indicate grapple source.",
+        "Ally Assist": "Back/collar area supports vault-kick target marker."
+      },
+      "recommended_runtime_notes": "Separate bite/grapple collider should be active only during lunge frames."
+    },
+    "07_aegis_carapace.glb": {
+      "file": "models/07_aegis_carapace.glb",
+      "file_size_bytes": 38048,
+      "geometry_nodes": 37,
+      "vertices": 716,
+      "triangles": 1284,
+      "bounds_min": [
+        -1.08,
+        0.0,
+        -1.08
+      ],
+      "bounds_max": [
+        1.08,
+        1.6842,
+        0.825
+      ],
+      "dimensions": [
+        2.16,
+        1.6842,
+        1.905
+      ],
+      "name": "The Aegis Carapace",
+      "role": "Directional Blocker",
+      "kind": "insectoid creature with riot-shield front shell",
+      "key_visual_parts": [
+        "impenetrable_front_shell_riot_shield",
+        "central_shield_keel",
+        "exposed_rear_abdomen",
+        "rear_vulnerable_eye_spot"
+      ],
+      "mechanic_hooks": {
+        "Deflection": "Large front shell should use a directional block collider/material response.",
+        "Vault-Over Vulnerability": "Rear abdomen is colored as the exposed weak point after vaulting."
+      },
+      "recommended_runtime_notes": "Use frontal cone/box detection for deflection and rear hitbox for actual damage."
+    },
+    "08_venom_spitter.glb": {
+      "file": "models/08_venom_spitter.glb",
+      "file_size_bytes": 42004,
+      "geometry_nodes": 43,
+      "vertices": 993,
+      "triangles": 1814,
+      "bounds_min": [
+        -0.5967,
+        0.0,
+        -1.77
+      ],
+      "bounds_max": [
+        0.5967,
+        0.8349,
+        2.04
+      ],
+      "dimensions": [
+        1.1933,
+        0.8349,
+        3.81
+      ],
+      "name": "The Venom-Spitter",
+      "role": "Ranged Harasser / Flow Extender",
+      "kind": "fragile serpentine wall-clinger/spitter",
+      "key_visual_parts": [
+        "telegraphed_acid_globe_ready",
+        "spit_nozzle_mouth",
+        "venom_warning_frill_*",
+        "yellow_projectile_indicator_arc_*",
+        "wall_cling_hook_*"
+      ],
+      "mechanic_hooks": {
+        "Telegraphed Projectiles": "Acid globe and yellow indicator arcs show projectile warning state.",
+        "Projectile Reversal": "Mouth/nozzle is projectile spawn socket; reversed projectile can target head collider."
+      },
+      "recommended_runtime_notes": "Use procedural projectile mesh/VFX at runtime rather than the held acid globe if desired."
+    }
+  }
+}

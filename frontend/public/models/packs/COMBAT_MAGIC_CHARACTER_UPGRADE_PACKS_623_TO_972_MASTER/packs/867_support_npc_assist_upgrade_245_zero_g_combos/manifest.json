@@ -1,0 +1,245 @@
+{
+  "pack_number": 867,
+  "pack_name": "Support NPC Assist Upgrade 245 - Zero G Combos",
+  "set_name": "Combat + Magic + Character Upgrade Packs",
+  "created_utc": "2026-07-05T10:38:08.917773+00:00",
+  "family": "support_npc_assists",
+  "theme": "sonic",
+  "element": "sonic",
+  "source_context": {
+    "monster": "The Void Anomaly",
+    "boss": "The Resonance Maestro",
+    "player_class": "The Sylvan Warden",
+    "support_npc": "Red-Pen Quinn",
+    "pet": "Trench-Crab",
+    "special_attack": "Zero-G Combos",
+    "weapon": "Lich-Court Command Scepter",
+    "armor": "Dawnforge Bracers",
+    "source_document": "WorldData.md"
+  },
+  "purpose": "Upgrade pack for monster/boss/player/support NPC special attacks, magic, high-tier gear, combat flow, dynamic camera triggers, and random monster skins.",
+  "counts": {
+    "glb_upgrades": 9,
+    "textures_png": 11,
+    "audio_wav": 3,
+    "json_configs": 11,
+    "script_files": 3,
+    "skin_variants_defined": 64
+  },
+  "glb_assets": [
+    {
+      "file": "glb_upgrades/01_special_attack_vfx.glb",
+      "role": "special_attack_vfx",
+      "theme": "sonic",
+      "target_entity": "Zero-G Combos",
+      "purpose": "upgrade module for special attacks, skins, gear, NPC assist, combat flow, or camera trigger",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_upgrades/02_random_skin_projector.glb",
+      "role": "random_skin_projector",
+      "theme": "sonic",
+      "target_entity": "The Void Anomaly",
+      "purpose": "upgrade module for special attacks, skins, gear, NPC assist, combat flow, or camera trigger",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_upgrades/03_magic_weapon_upgrade.glb",
+      "role": "magic_weapon_upgrade",
+      "theme": "sonic",
+      "target_entity": "Lich-Court Command Scepter",
+      "purpose": "upgrade module for special attacks, skins, gear, NPC assist, combat flow, or camera trigger",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_upgrades/04_magic_armor_upgrade.glb",
+      "role": "magic_armor_upgrade",
+      "theme": "sonic",
+      "target_entity": "Dawnforge Bracers",
+      "purpose": "upgrade module for special attacks, skins, gear, NPC assist, combat flow, or camera trigger",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_upgrades/05_dynamic_camera_trigger.glb",
+      "role": "dynamic_camera_trigger",
+      "theme": "sonic",
+      "target_entity": "combat start dynamic camera",
+      "purpose": "upgrade module for special attacks, skins, gear, NPC assist, combat flow, or camera trigger",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_upgrades/06_combat_flow_anchor.glb",
+      "role": "combat_flow_anchor",
+      "theme": "sonic",
+      "target_entity": "free-flow combat smoothing",
+      "purpose": "upgrade module for special attacks, skins, gear, NPC assist, combat flow, or camera trigger",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_upgrades/07_support_npc_aura.glb",
+      "role": "support_npc_aura",
+      "theme": "sonic",
+      "target_entity": "Red-Pen Quinn",
+      "purpose": "upgrade module for special attacks, skins, gear, NPC assist, combat flow, or camera trigger",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_upgrades/08_pet_companion_proc.glb",
+      "role": "pet_companion_proc",
+      "theme": "sonic",
+      "target_entity": "Trench-Crab",
+      "purpose": "upgrade module for special attacks, skins, gear, NPC assist, combat flow, or camera trigger",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_upgrades/09_high_tier_relic_pedestal.glb",
+      "role": "high_tier_relic_pedestal",
+      "theme": "sonic",
+      "target_entity": "relic magic pickup",
+      "purpose": "upgrade module for special attacks, skins, gear, NPC assist, combat flow, or camera trigger",
+      "glb_header_ok": true
+    }
+  ],
+  "texture_assets": [
+    {
+      "file": "textures/01_monster_skin_albedo.png",
+      "pattern": "monster_skin_albedo",
+      "theme": "sonic",
+      "applies_to": [
+        "monster_random_skins",
+        "boss_skin_variants"
+      ]
+    },
+    {
+      "file": "textures/02_monster_skin_emission.png",
+      "pattern": "monster_skin_emission",
+      "theme": "sonic",
+      "applies_to": [
+        "monster_eyes",
+        "boss_phase_glow",
+        "magic_effects"
+      ]
+    },
+    {
+      "file": "textures/03_random_spawn_decal_sheet.png",
+      "pattern": "random_spawn_decal_sheet",
+      "theme": "sonic",
+      "applies_to": [
+        "per-spawn skin markings",
+        "rare_variant_marks"
+      ]
+    },
+    {
+      "file": "textures/04_vfx_emission_sheet.png",
+      "pattern": "vfx_emission_sheet",
+      "theme": "sonic",
+      "applies_to": [
+        "special_attack_vfx",
+        "spell_casts",
+        "telegraphs"
+      ]
+    },
+    {
+      "file": "textures/05_magic_weapon_runes.png",
+      "pattern": "magic_weapon_runes",
+      "theme": "sonic",
+      "applies_to": [
+        "high_tier_magic_weapons"
+      ]
+    },
+    {
+      "file": "textures/06_magic_armor_trim.png",
+      "pattern": "magic_armor_trim",
+      "theme": "sonic",
+      "applies_to": [
+        "high_tier_magic_armor"
+      ]
+    },
+    {
+      "file": "textures/07_camera_focus_overlay.png",
+      "pattern": "camera_focus_overlay",
+      "theme": "sonic",
+      "applies_to": [
+        "dynamic_combat_camera",
+        "lock_on",
+        "boss_intro"
+      ]
+    },
+    {
+      "file": "textures/08_combat_flow_trail.png",
+      "pattern": "combat_flow_trail",
+      "theme": "sonic",
+      "applies_to": [
+        "dash",
+        "vault",
+        "parry",
+        "free_flow_chain"
+      ]
+    },
+    {
+      "file": "textures/09_high_tier_material_mask.png",
+      "pattern": "high_tier_material_mask",
+      "theme": "sonic",
+      "applies_to": [
+        "legendary",
+        "mythic",
+        "astral_artifact"
+      ]
+    },
+    {
+      "file": "textures/10_support_npc_ability_icon.png",
+      "pattern": "support_npc_ability_icon",
+      "theme": "sonic",
+      "applies_to": [
+        "support_npc_assists",
+        "pet_proc"
+      ]
+    },
+    {
+      "file": "textures/11_normal_detail_proxy.png",
+      "pattern": "normal_detail_proxy",
+      "theme": "sonic",
+      "applies_to": [
+        "all_meshes_material_detail"
+      ]
+    }
+  ],
+  "audio_assets": [
+    {
+      "file": "audio/attack_cast.wav",
+      "cue_id": "support_npc_assist_upgrade_245_zero_g_combos_attack_cast",
+      "cue_type": "attack_cast",
+      "placeholder_note": "Procedural placeholder tone; replace with final sound design."
+    },
+    {
+      "file": "audio/camera_combat_start.wav",
+      "cue_id": "support_npc_assist_upgrade_245_zero_g_combos_camera_combat_start",
+      "cue_type": "camera_combat_start",
+      "placeholder_note": "Procedural placeholder tone; replace with final sound design."
+    },
+    {
+      "file": "audio/skin_spawn_chime.wav",
+      "cue_id": "support_npc_assist_upgrade_245_zero_g_combos_skin_spawn_chime",
+      "cue_type": "skin_spawn_chime",
+      "placeholder_note": "Procedural placeholder tone; replace with final sound design."
+    }
+  ],
+  "json_configs": [
+    "configs/random_skin_spawn_table.json",
+    "configs/special_attack_upgrade_manifest.json",
+    "configs/boss_phase_magic_manifest.json",
+    "configs/player_class_magic_upgrade.json",
+    "configs/high_tier_magic_weapon_armor_manifest.json",
+    "configs/support_npc_pet_assist_manifest.json",
+    "configs/dynamic_camera_trigger_profile.json",
+    "configs/combat_flow_smoothness_tuning.json",
+    "configs/animation_event_markers.json",
+    "configs/target_asset_reference_manifest.json",
+    "configs/antigravity_2_0_prefab_instructions.json"
+  ],
+  "script_files": [
+    "scripts/RandomMonsterSkinSelector.ts",
+    "scripts/DynamicCombatCameraProfile.ts",
+    "scripts/CombatFlowSmoothingHooks.ts"
+  ]
+}

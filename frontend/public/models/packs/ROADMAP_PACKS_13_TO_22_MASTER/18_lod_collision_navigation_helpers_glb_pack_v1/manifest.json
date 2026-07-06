@@ -1,0 +1,315 @@
+{
+  "pack_name": "LOD Collision + Navigation Helpers GLB Pack v1",
+  "roadmap_pack_number": 18,
+  "created_utc": "2026-07-05T07:46:56.297650+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "notes": [
+    "All assets are real static low-poly GLB meshes.",
+    "They are browser-game prototype assets.",
+    "They are not rigged, animated, scripted, or engine-prefabbed yet.",
+    "Use manifest and colliders as first-pass metadata for engine import."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/01_box_collider_helper.glb",
+      "name": "Box Collider Helper",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.631
+        ],
+        "size": [
+          1.5,
+          1.476,
+          1.263
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "box_collider",
+        "cyan"
+      ],
+      "size_bytes": 6780
+    },
+    {
+      "file": "glb_assets/02_sphere_collider_helper.glb",
+      "name": "Sphere Collider Helper",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.631
+        ],
+        "size": [
+          1.5,
+          1.476,
+          1.263
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "sphere_collider",
+        "blue"
+      ],
+      "size_bytes": 6780
+    },
+    {
+      "file": "glb_assets/03_capsule_collider_helper.glb",
+      "name": "Capsule Collider Helper",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.631
+        ],
+        "size": [
+          1.5,
+          1.476,
+          1.263
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "capsule_collider",
+        "green"
+      ],
+      "size_bytes": 6780
+    },
+    {
+      "file": "glb_assets/04_cylinder_collider_helper.glb",
+      "name": "Cylinder Collider Helper",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.631
+        ],
+        "size": [
+          1.5,
+          1.476,
+          1.263
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "cylinder_collider",
+        "yellow"
+      ],
+      "size_bytes": 6780
+    },
+    {
+      "file": "glb_assets/05_navmesh_tile_marker.glb",
+      "name": "Navmesh Tile Marker",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.715
+        ],
+        "size": [
+          1.36,
+          1.16,
+          1.43
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "nav_tile",
+        "green"
+      ],
+      "size_bytes": 11760
+    },
+    {
+      "file": "glb_assets/06_spawn_point_marker.glb",
+      "name": "Spawn Point Marker",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.76
+        ],
+        "size": [
+          1.16,
+          1.16,
+          1.52
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "spawn_point",
+        "blue"
+      ],
+      "size_bytes": 8948
+    },
+    {
+      "file": "glb_assets/07_patrol_waypoint_marker.glb",
+      "name": "Patrol Waypoint Marker",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.76
+        ],
+        "size": [
+          1.16,
+          1.16,
+          1.52
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "waypoint",
+        "purple"
+      ],
+      "size_bytes": 8948
+    },
+    {
+      "file": "glb_assets/08_cover_point_marker.glb",
+      "name": "Cover Point Marker",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.715
+        ],
+        "size": [
+          1.36,
+          1.16,
+          1.43
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "cover_point",
+        "yellow"
+      ],
+      "size_bytes": 11764
+    },
+    {
+      "file": "glb_assets/09_ledge_grab_marker.glb",
+      "name": "Ledge Grab Marker",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.715
+        ],
+        "size": [
+          1.36,
+          1.16,
+          1.43
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "ledge_marker",
+        "cyan"
+      ],
+      "size_bytes": 11760
+    },
+    {
+      "file": "glb_assets/10_offmesh_link_helper.glb",
+      "name": "Offmesh Link Helper",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.237
+        ],
+        "size": [
+          1.76,
+          0.36,
+          0.475
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "offmesh_link",
+        "orange"
+      ],
+      "size_bytes": 3788
+    },
+    {
+      "file": "glb_assets/11_camera_volume_helper.glb",
+      "name": "Camera Volume Helper",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.631
+        ],
+        "size": [
+          1.5,
+          1.476,
+          1.263
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "camera_volume",
+        "blue"
+      ],
+      "size_bytes": 6780
+    },
+    {
+      "file": "glb_assets/12_streaming_volume_helper.glb",
+      "name": "Streaming Volume Helper",
+      "category": "lod_collision_navigation_helper",
+      "gameplay_use": "lod collision + navigation helpers asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.631
+        ],
+        "size": [
+          1.5,
+          1.476,
+          1.263
+        ]
+      },
+      "tags": [
+        "lod_collision_navigation_helper",
+        "streaming_volume",
+        "purple"
+      ],
+      "size_bytes": 6780
+    }
+  ]
+}

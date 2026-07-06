@@ -1,0 +1,463 @@
+{
+  "pack_number": 535,
+  "pack_name": "Skyship Propulsion Upgrades Batch 113 - Courier Cutter",
+  "created_utc": "2026-07-05T09:42:36.572088+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_propulsion_upgrades",
+  "theme": "cosmic",
+  "element": "astral",
+  "skyship_class_profile": {
+    "class": "courier_cutter",
+    "scale": 1.1,
+    "role": "cargo runner and messenger craft"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/10_ossa_ironwake_engineer_under_freight.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/11_selka_stormhush_engineer_under_freight.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/09_freight_transfer_courts/17_lio_cragwarden_runner_near_freight.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/02_the_provisioning_sectors/10_service_alleys/08_vexa_cinderholt_engineer_of_service.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/01_executive_crown/03_rook_spirebound_warden_of_executive.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/01_executive_crown/05_edda_cragwarden_responder_of_executive.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/01_executive_crown/13_ossa_mossguard_engineer_of_executive.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/01_executive_crown/19_nix_skyharrow_watcher_near_executive.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/01_juno_rootborne_broker_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/02_nyra_echohand_pilgrim_at_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/03_auren_brightlock_medic_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/04_draven_emberkin_tamer_near_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/05_cassian_ashvein_diver_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/06_brant_whispercoil_herald_at_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/07_lyric_ironwake_scout_of_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/08_korra_glassroot_engineer_near_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "engine",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/09_luma_deepwell_courier_of_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/10_brant_mossguard_navigator_of_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/11_juno_signalborn_guide_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/12_draven_gearmantle_fixer_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse/12_vexa_cragwarden_custodian_of_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse/13_sable_deepwell_keeper_at_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse/14_vale_tideforged_courier_under_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse/15_ren_wayfare_broker_of_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse/16_juno_cragwarden_cartographer_under_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse/17_maelis_gravesong_courier_near_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse/18_ossa_cragwarden_oracle_of_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse/19_maven_latchward_tactician_at_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/10_rooftop_safehouse/20_draven_spirebound_fixer_under_rooftop.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/01_maelis_voxmere_mechanist_of_reality.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/02_edda_holloway_runner_near_reality.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/03_brant_voxmere_keeper_from_reality.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/04_dax_brightlock_herald_of_reality.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/05_vale_tideforged_navigator_near_reality.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/06_maven_ashvein_watcher_under_reality.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/07_soren_gravesong_cartographer_of_reality.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/08_mirek_riftwalker_ranger_of_reality.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/09_selka_trenchmark_marshal_under_reality.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/10_maven_spirebound_specialist_under_reality.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/05_the_front_matter_void/01_reality_fracture_edge/11_bex_cragwarden_responder_at_reality.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "374_texture_remaster_upgrade_batch_152.zip",
+      "path_in_zip": "texture_upgrades/09_texture_remaster_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "374_texture_remaster_upgrade_batch_152.zip",
+      "path_in_zip": "texture_upgrades/10_texture_remaster_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "374_texture_remaster_upgrade_batch_152.zip",
+      "path_in_zip": "texture_upgrades/11_texture_remaster_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "374_texture_remaster_upgrade_batch_152.zip",
+      "path_in_zip": "texture_upgrades/12_texture_remaster_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/01_low_poly_silhouette_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/02_low_poly_silhouette_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/03_low_poly_silhouette_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/04_low_poly_silhouette_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/05_low_poly_silhouette_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/06_low_poly_silhouette_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/07_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/08_low_poly_silhouette_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/09_low_poly_silhouette_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/10_low_poly_silhouette_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/11_low_poly_silhouette_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "375_low_poly_silhouette_upgrade_batch_153.zip",
+      "path_in_zip": "texture_upgrades/12_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "376_emissive_glow_upgrade_batch_154.zip",
+      "path_in_zip": "texture_upgrades/01_emissive_glow_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "376_emissive_glow_upgrade_batch_154.zip",
+      "path_in_zip": "texture_upgrades/02_emissive_glow_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "376_emissive_glow_upgrade_batch_154.zip",
+      "path_in_zip": "texture_upgrades/03_emissive_glow_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "376_emissive_glow_upgrade_batch_154.zip",
+      "path_in_zip": "texture_upgrades/04_emissive_glow_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

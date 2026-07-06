@@ -1,0 +1,563 @@
+{
+  "pack_number": 635,
+  "family": "full_encounter_polish",
+  "class": "The Scrap-Tek",
+  "monster": "The Sylvan Juggernaut",
+  "boss": "The Ascendant Colossus",
+  "support_npc": "Cipher the Deviant",
+  "source_targets": {
+    "glb_targets": [
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_venom_projectile.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/armor_pickup_belt_uncommon.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "armor",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/armor_pickup_helmet_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "armor",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/display_ring_case.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/loot_beam_epic.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/loot_chest_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/rarity_base_legendary.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/shield_pickup_aegis_legendary.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_crystal_lance_epic.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_hand_axe_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_short_bow_common.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/weapon_pickup_warhammer_rare.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/mod_door_wood.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/mod_ladder_wood.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/mod_terrain_chunk_rock.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "terrain",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/quest_courier_package.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/quest_rescue_cage.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/shop_armor_stand.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "armor",
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/shop_lantern.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/shop_storage_chest.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/05_tremor_fiend.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/04_siphon_tick.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_07_data_forged_evolvarch.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "sector_characters_glb_pack_v4/fragmented_core.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "character"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "tiered_low_poly_monster_model_pack_v1/biped_tier_4_warlord_boss.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster",
+          "boss"
+        ]
+      },
+      {
+        "source_zip": "browser_game_3d_asset_pack_v1.zip",
+        "path_in_zip": "glb_assets/anti_gravity_barricade.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "browser_game_3d_asset_pack_v1.zip",
+        "path_in_zip": "glb_assets/deployable_turret.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      },
+      {
+        "source_zip": "browser_game_3d_asset_pack_v1.zip",
+        "path_in_zip": "glb_assets/hazard_barrier.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "glb_assets"
+        ]
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "507_skyship_deck_interior_upgrades_batch_085_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/01_world_albedo_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "507_skyship_deck_interior_upgrades_batch_085_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/08_skyship_engine_glow.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "508_skyship_weapons_defense_upgrades_batch_086_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/03_world_emission_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "508_skyship_weapons_defense_upgrades_batch_086_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/10_cloud_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "509_skyship_docking_travel_upgrades_batch_087_heavy_carrier.zip",
+        "path_in_zip": "texture_upgrades/05_skyship_hull_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "509_skyship_docking_travel_upgrades_batch_087_heavy_carrier.zip",
+        "path_in_zip": "texture_upgrades/12_water_reflection_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "510_environment_lighting_atmosphere_upgrades_batch_088_dreadnought.zip",
+        "path_in_zip": "texture_upgrades/07_skyship_sail_fabric.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "511_water_star_cloud_visual_upgrades_batch_089_arkship.zip",
+        "path_in_zip": "texture_upgrades/02_world_trim_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "511_water_star_cloud_visual_upgrades_batch_089_arkship.zip",
+        "path_in_zip": "texture_upgrades/09_skyship_banner_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "512_global_object_material_pass_batch_090_repair_tug.zip",
+        "path_in_zip": "texture_upgrades/04_world_normal_proxy_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "512_global_object_material_pass_batch_090_repair_tug.zip",
+        "path_in_zip": "texture_upgrades/11_starfield_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "513_world_object_visual_polish_batch_091_micro_sky_skiff.zip",
+        "path_in_zip": "texture_upgrades/06_skyship_edgewear_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "514_skyship_hull_size_variants_batch_092_scout_sloop.zip",
+        "path_in_zip": "texture_upgrades/01_world_albedo_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "514_skyship_hull_size_variants_batch_092_scout_sloop.zip",
+        "path_in_zip": "texture_upgrades/08_skyship_engine_glow.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "515_skyship_propulsion_upgrades_batch_093_courier_cutter.zip",
+        "path_in_zip": "texture_upgrades/03_world_emission_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "515_skyship_propulsion_upgrades_batch_093_courier_cutter.zip",
+        "path_in_zip": "texture_upgrades/10_cloud_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "516_skyship_sail_balloon_rigging_batch_094_patrol_corvette.zip",
+        "path_in_zip": "texture_upgrades/05_skyship_hull_albedo.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "516_skyship_sail_balloon_rigging_batch_094_patrol_corvette.zip",
+        "path_in_zip": "texture_upgrades/12_water_reflection_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "517_skyship_deck_interior_upgrades_batch_095_merchant_barge.zip",
+        "path_in_zip": "texture_upgrades/07_skyship_sail_fabric.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "518_skyship_weapons_defense_upgrades_batch_096_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/02_world_trim_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "518_skyship_weapons_defense_upgrades_batch_096_skywarden_frigate.zip",
+        "path_in_zip": "texture_upgrades/09_skyship_banner_decal.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "519_skyship_docking_travel_upgrades_batch_097_heavy_carrier.zip",
+        "path_in_zip": "texture_upgrades/04_world_normal_proxy_plus.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "519_skyship_docking_travel_upgrades_batch_097_heavy_carrier.zip",
+        "path_in_zip": "texture_upgrades/11_starfield_layer.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "texture"
+        ]
+      },
+      {
+        "source_zip": "520_environment_lighting_atmosphere_upgrades_batch_098_dreadnought.zip",
+        "path_in_zip": "texture_upgrades/06_skyship_edgewear_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "sky",
+          "texture"
+        ]
+      }
+    ],
+    "audio_targets": [
+      {
+        "source_zip": "169_special_event_encounter_bundle_03.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_03_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "171_special_event_encounter_bundle_05.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_05_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "173_special_event_encounter_bundle_07.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_07_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "176_special_event_encounter_bundle_10.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_10_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "178_special_event_encounter_bundle_12.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_12_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "180_special_event_encounter_bundle_14.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_14_event_or_pickup_sting.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "183_special_event_encounter_bundle_17.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_17_music_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      },
+      {
+        "source_zip": "185_special_event_encounter_bundle_19.zip",
+        "path_in_zip": "audio/special_event_encounter_bundle_19_ambience_loop.wav",
+        "asset_type": "audio_cue",
+        "tags": []
+      }
+    ],
+    "metadata_targets": [
+      {
+        "source_zip": "570_environment_lighting_atmosphere_upgrades_batch_148_dreadnought.zip",
+        "path_in_zip": "manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "571_water_star_cloud_visual_upgrades_batch_149_arkship.zip",
+        "path_in_zip": "patches/target_application_map.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "572_global_object_material_pass_batch_150_repair_tug.zip",
+        "path_in_zip": "patches/qa_validation_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "573_world_object_visual_polish_batch_151_micro_sky_skiff.zip",
+        "path_in_zip": "patches/prefab_variant_patch.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "574_skyship_hull_size_variants_batch_152_scout_sloop.zip",
+        "path_in_zip": "patches/material_visual_upgrade_plan.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "575_skyship_propulsion_upgrades_batch_153_courier_cutter.zip",
+        "path_in_zip": "patches/skyship_size_upgrade_plan.json",
+        "asset_type": "metadata_json",
+        "tags": [
+          "sky"
+        ]
+      },
+      {
+        "source_zip": "576_skyship_sail_balloon_rigging_batch_154_patrol_corvette.zip",
+        "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      },
+      {
+        "source_zip": "576_skyship_sail_balloon_rigging_batch_154_patrol_corvette.zip",
+        "path_in_zip": "VALIDATION_REPORT.json",
+        "asset_type": "metadata_json",
+        "tags": []
+      }
+    ]
+  },
+  "antigravity_2_0_tasks": [
+    "Create non-destructive upgraded prefab variants.",
+    "Apply random monster skin tables at spawn time.",
+    "Bind player class ability VFX to level progression and subclass specialization.",
+    "Attach high-tier weapon/armor GLBs and material maps to item prefabs.",
+    "Add combat-start camera trigger using camera rules.",
+    "Add weather, sun color, terrain, and nature material overrides.",
+    "QA duplicate monster appearances across a 50-spawn encounter sample."
+  ]
+}

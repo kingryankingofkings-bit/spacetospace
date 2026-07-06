@@ -1,0 +1,462 @@
+{
+  "pack_number": 425,
+  "pack_name": "Skyship Propulsion Upgrades Batch 003 - Courier Cutter",
+  "created_utc": "2026-07-05T09:42:27.824555+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_propulsion_upgrades",
+  "theme": "waste_scrap",
+  "element": "dustfire",
+  "skyship_class_profile": {
+    "class": "courier_cutter",
+    "scale": 1.1,
+    "role": "cargo runner and messenger craft"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/07_lyric_ironwake_scout_of_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/08_korra_glassroot_engineer_near_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "engine",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/09_luma_deepwell_courier_of_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/10_brant_mossguard_navigator_of_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/11_juno_signalborn_guide_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/12_draven_gearmantle_fixer_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/13_orin_holloway_navigator_at_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/14_noor_glassroot_tamer_at_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/15_vela_ashvein_keeper_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/16_isolde_dubwater_herald_near_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/17_astra_gantryn_mechanist_under_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/18_astra_rootborne_guide_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/19_lio_holloway_medic_under_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/20_noor_gearmantle_tactician_near_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/03_observation_halo/05_rook_spirebound_warden_from_observation.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/03_observation_halo/13_sable_cragwarden_pilgrim_at_observation.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/04_corporate_council_atrium/19_juno_gravesong_engineer_from_corporate.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/05_command_nexus/01_sable_glassroot_engineer_from_command.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/05_command_nexus/15_dax_gearmantle_warden_of_command.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/06_security_ring/08_astra_deepwell_engineer_near_security.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/02_lyric_ashvein_sentinel_under.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/03_thorne_cragwarden_diver_from.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/04_yara_frostrelay_responder_of.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/05_cassian_cragwarden_cartographer_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/06_ren_signalborn_archivist_under.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/07_tovin_voidrill_watcher_of.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/08_nyra_gearmantle_fixer_under.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/09_auren_holloway_medic_near.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/10_astra_glassroot_medic_near.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/11_bryn_wayfare_sentinel_at.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/12_kael_trenchmark_ranger_under.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/13_vexa_skyharrow_sentinel_under.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/14_maelis_echohand_sentinel_of.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/15_yara_cinderholt_smith_near.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/16_nix_rootborne_tactician_under.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/17_isolde_rootborne_pilgrim_at.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/18_keir_dubwater_navigator_under.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/19_zerin_echohand_cartographer_under.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges/20_brant_runeclasp_sentinel_under.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/06_the_chronicle_spires/01_kiva_rootborne_navigator_of.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "367_weathering_wear_upgrade_batch_145.zip",
+      "path_in_zip": "texture_upgrades/08_weathering_wear_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "367_weathering_wear_upgrade_batch_145.zip",
+      "path_in_zip": "texture_upgrades/09_weathering_wear_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "367_weathering_wear_upgrade_batch_145.zip",
+      "path_in_zip": "texture_upgrades/10_weathering_wear_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "367_weathering_wear_upgrade_batch_145.zip",
+      "path_in_zip": "texture_upgrades/11_weathering_wear_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "367_weathering_wear_upgrade_batch_145.zip",
+      "path_in_zip": "texture_upgrades/12_weathering_wear_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/01_lod_collision_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/02_lod_collision_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/03_lod_collision_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/04_lod_collision_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/05_lod_collision_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/06_lod_collision_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/07_lod_collision_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/08_lod_collision_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/09_lod_collision_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/10_lod_collision_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/11_lod_collision_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "368_lod_collision_upgrade_batch_146.zip",
+      "path_in_zip": "texture_upgrades/12_lod_collision_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "369_biome_recolor_upgrade_batch_147.zip",
+      "path_in_zip": "texture_upgrades/01_biome_recolor_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "369_biome_recolor_upgrade_batch_147.zip",
+      "path_in_zip": "texture_upgrades/02_biome_recolor_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "369_biome_recolor_upgrade_batch_147.zip",
+      "path_in_zip": "texture_upgrades/03_biome_recolor_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

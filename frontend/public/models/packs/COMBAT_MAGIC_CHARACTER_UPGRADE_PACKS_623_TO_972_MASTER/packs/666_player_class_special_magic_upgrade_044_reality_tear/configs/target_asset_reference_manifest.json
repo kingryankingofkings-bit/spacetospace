@@ -1,0 +1,1054 @@
+{
+  "target_pool_summary": {
+    "monster_targets_detected": 1029,
+    "character_targets_detected": 6249,
+    "gear_targets_detected": 448,
+    "vfx_targets_detected": 151,
+    "texture_targets_detected": 6759
+  },
+  "target_references": {
+    "monster_boss_targets": [
+      {
+        "source_zip": "01_animation_placeholder_pose_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/monster_roar_pose.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "04_boss_arena_mechanics_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/boss_weakpoint_pedestal.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss"
+        ]
+      },
+      {
+        "source_zip": "02_ui_hud_worldspace_markers_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/boss_health_bar_proxy.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss"
+        ]
+      },
+      {
+        "source_zip": "08_destructible_debris_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/boss_armor_shard_pile.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "armor"
+        ]
+      },
+      {
+        "source_zip": "11_faction_banners_signage_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/danger_boss_gate_sign.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss"
+        ]
+      },
+      {
+        "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_boss_phase_explosion.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/loot_chest_boss_reward.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss"
+        ]
+      },
+      {
+        "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/quest_boss_key_pedestal.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/01_sylvan_juggernaut.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/02_scrap_stalker.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/03_nexus_swarmers_cluster.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/03b_nexus_warden_evolved.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/04_void_anomaly.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/05_tremor_fiend.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/06_iron_jaw_hound.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/07_aegis_carapace.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "concept_monsters_proper_glb_pack_v2/08_venom_spitter.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/01_gnarl_maw.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/02_grid_rusher.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/03_scrap_phalanx.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/04_siphon_tick.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_01_ascendant_colossus.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_02_syndicate_lich.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_03_resonant_behemoth.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_04_null_anomaly.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_05_apex_chimera.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_06_resonance_maestro.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_07_data_forged_evolvarch.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_08_ivory_behemoth.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_09_astral_sovereign.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "tiered_low_poly_monster_model_pack_v1/biped_tier_1_imp_grunt.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "tiered_low_poly_monster_model_pack_v1/biped_tier_2_bone_brute.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "tiered_low_poly_monster_model_pack_v1/biped_tier_3_spine_hunter.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "tiered_low_poly_monster_model_pack_v1/biped_tier_4_warlord_boss.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster",
+          "boss"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "tiered_low_poly_monster_model_pack_v1/quadruped_tier_1_razorhound.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      },
+      {
+        "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+        "path_in_zip": "tiered_low_poly_monster_model_pack_v1/quadruped_tier_2_boneback_stalker.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "monster"
+        ]
+      }
+    ],
+    "character_npc_targets": [
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/01_war_college_court/13_lyric_voidrill_ranger_from_war.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/01_war_college_court/14_soren_emberkin_sentinel_of_war.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/01_war_college_court/15_draven_riftwalker_smith_from_war.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/01_war_college_court/16_dax_ashvein_watcher_at_war.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/01_war_college_court/17_talia_whispercoil_broker_from_war.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/01_war_college_court/18_elo_mossguard_ranger_of_war.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/01_war_college_court/19_makoa_riftwalker_mechanist_of_war.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/01_war_college_court/20_maven_riftwalker_smith_of_war.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/01_keir_gantryn_archivist_near_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/02_ilyra_ashvein_archivist_at_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/03_juno_cinderholt_fixer_under_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/04_makoa_frostrelay_captain_near_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/05_mirek_latchward_oracle_under_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/06_juno_mossguard_cartographer_from_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/07_dax_ironwake_tactician_under_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/08_astra_voxmere_responder_under_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/09_vela_gravesong_smith_near_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/10_tovin_voidrill_mechanist_near_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/11_bex_riftwalker_watcher_at_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/12_eryk_whispercoil_captain_near_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/13_soren_glassroot_archivist_of_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/14_auren_voxmere_ranger_of_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/15_ren_gravesong_runner_near_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      },
+      {
+        "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+        "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/04_the_shut_down_academies/02_simulation_hall/16_mirek_cinderholt_mechanist_of_simulation.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "npc"
+        ]
+      }
+    ],
+    "gear_targets": [
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_item_weapon_finish_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_item_weapon_finish_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/01_item_weapon_finish_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/02_item_weapon_finish_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/03_item_weapon_finish_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/04_item_weapon_finish_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/05_item_weapon_finish_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/06_item_weapon_finish_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/07_item_weapon_finish_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/08_item_weapon_finish_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/09_item_weapon_finish_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/10_item_weapon_finish_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon",
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/11_item_weapon_finish_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "300_item_weapon_finish_upgrade_batch_078.zip",
+        "path_in_zip": "texture_upgrades/12_item_weapon_finish_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "310_item_weapon_finish_upgrade_batch_088.zip",
+        "path_in_zip": "upgrade_glb_overlays/01_item_weapon_finish_overlay_1.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "310_item_weapon_finish_upgrade_batch_088.zip",
+        "path_in_zip": "upgrade_glb_overlays/02_item_weapon_finish_overlay_2.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "310_item_weapon_finish_upgrade_batch_088.zip",
+        "path_in_zip": "upgrade_glb_overlays/03_item_weapon_finish_overlay_3.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "310_item_weapon_finish_upgrade_batch_088.zip",
+        "path_in_zip": "upgrade_glb_overlays/04_item_weapon_finish_overlay_4.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "310_item_weapon_finish_upgrade_batch_088.zip",
+        "path_in_zip": "upgrade_glb_overlays/05_item_weapon_finish_overlay_5.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "310_item_weapon_finish_upgrade_batch_088.zip",
+        "path_in_zip": "upgrade_glb_overlays/06_item_weapon_finish_overlay_6.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "310_item_weapon_finish_upgrade_batch_088.zip",
+        "path_in_zip": "texture_upgrades/01_item_weapon_finish_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "310_item_weapon_finish_upgrade_batch_088.zip",
+        "path_in_zip": "texture_upgrades/02_item_weapon_finish_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "310_item_weapon_finish_upgrade_batch_088.zip",
+        "path_in_zip": "texture_upgrades/03_item_weapon_finish_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      },
+      {
+        "source_zip": "310_item_weapon_finish_upgrade_batch_088.zip",
+        "path_in_zip": "texture_upgrades/04_item_weapon_finish_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "weapon"
+        ]
+      }
+    ],
+    "vfx_camera_combat_targets": [
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_acid_splash.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_aerial_juggle_trail.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_armor_break_shards.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "armor",
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_bark_armor_regrowth.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "armor",
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_barrier_wall.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_bass_drop_ring.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_arcane_purple.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_healing_green.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_beam_laser_red.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_block_spark.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_boss_phase_explosion.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "boss",
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_buff_aura_gold.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_burning_ground_patch.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_chain_lightning_arc.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_checkpoint_flare.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_combo_multiplier_orbit.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_corrosion_status_drip.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_cosmic_meteor_warning.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_cross_slash.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_crystalline_beam_blue.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_despawn_smoke_puff.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_earth_shockwave.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_emp_pulse_ring.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      },
+      {
+        "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+        "path_in_zip": "glb_assets/vfx_evolution_data_ring.glb",
+        "asset_type": "glb_object",
+        "tags": [
+          "vfx"
+        ]
+      }
+    ],
+    "texture_targets": [
+      {
+        "source_zip": "383_material_polish_upgrade_batch_161.zip",
+        "path_in_zip": "texture_upgrades/07_material_polish_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "383_material_polish_upgrade_batch_161.zip",
+        "path_in_zip": "texture_upgrades/08_material_polish_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "383_material_polish_upgrade_batch_161.zip",
+        "path_in_zip": "texture_upgrades/09_material_polish_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "383_material_polish_upgrade_batch_161.zip",
+        "path_in_zip": "texture_upgrades/10_material_polish_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "383_material_polish_upgrade_batch_161.zip",
+        "path_in_zip": "texture_upgrades/11_material_polish_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "383_material_polish_upgrade_batch_161.zip",
+        "path_in_zip": "texture_upgrades/12_material_polish_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/01_texture_remaster_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/02_texture_remaster_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/03_texture_remaster_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/04_texture_remaster_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/05_texture_remaster_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/06_texture_remaster_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/07_texture_remaster_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/08_texture_remaster_decal_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/09_texture_remaster_trim_upgrade_sheet.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/10_texture_remaster_creature_overlay.png",
+        "asset_type": "texture_image",
+        "tags": [
+          "creature"
+        ]
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/11_texture_remaster_object_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "384_texture_remaster_upgrade_batch_162.zip",
+        "path_in_zip": "texture_upgrades/12_texture_remaster_water_star_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "385_low_poly_silhouette_upgrade_batch_163.zip",
+        "path_in_zip": "texture_upgrades/01_low_poly_silhouette_albedo_upgrade.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "385_low_poly_silhouette_upgrade_batch_163.zip",
+        "path_in_zip": "texture_upgrades/02_low_poly_silhouette_normal_detail_proxy.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "385_low_poly_silhouette_upgrade_batch_163.zip",
+        "path_in_zip": "texture_upgrades/03_low_poly_silhouette_roughness_variation.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "385_low_poly_silhouette_upgrade_batch_163.zip",
+        "path_in_zip": "texture_upgrades/04_low_poly_silhouette_emission_overlay.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "385_low_poly_silhouette_upgrade_batch_163.zip",
+        "path_in_zip": "texture_upgrades/05_low_poly_silhouette_edge_wear_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      },
+      {
+        "source_zip": "385_low_poly_silhouette_upgrade_batch_163.zip",
+        "path_in_zip": "texture_upgrades/06_low_poly_silhouette_biome_tint_mask.png",
+        "asset_type": "texture_image",
+        "tags": []
+      }
+    ]
+  },
+  "source_context": "WorldData.md plus prior generated asset packs"
+}

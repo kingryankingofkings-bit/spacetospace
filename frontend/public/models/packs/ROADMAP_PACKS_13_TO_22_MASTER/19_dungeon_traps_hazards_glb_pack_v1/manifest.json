@@ -1,0 +1,315 @@
+{
+  "pack_name": "Dungeon Traps + Hazards GLB Pack v1",
+  "roadmap_pack_number": 19,
+  "created_utc": "2026-07-05T07:46:56.407297+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "notes": [
+    "All assets are real static low-poly GLB meshes.",
+    "They are browser-game prototype assets.",
+    "They are not rigged, animated, scripted, or engine-prefabbed yet.",
+    "Use manifest and colliders as first-pass metadata for engine import."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/01_spike_floor_trap.glb",
+      "name": "Spike Floor Trap",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "size": [
+          1.5,
+          1.5,
+          0.9
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "spike_floor",
+        "red"
+      ],
+      "size_bytes": 6828
+    },
+    {
+      "file": "glb_assets/02_swinging_blade_trap.glb",
+      "name": "Swinging Blade Trap",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.9
+        ],
+        "size": [
+          1.5,
+          1.5,
+          1.8
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "swinging_blade",
+        "red"
+      ],
+      "size_bytes": 3248
+    },
+    {
+      "file": "glb_assets/03_poison_dart_wall_trap.glb",
+      "name": "Poison Dart Wall Trap",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.625
+        ],
+        "size": [
+          1.5,
+          1.5,
+          1.25
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "dart_wall",
+        "green"
+      ],
+      "size_bytes": 4124
+    },
+    {
+      "file": "glb_assets/04_fire_jet_trap.glb",
+      "name": "Fire Jet Trap",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.875
+        ],
+        "size": [
+          1.5,
+          1.5,
+          1.75
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "fire_jet",
+        "orange"
+      ],
+      "size_bytes": 4064
+    },
+    {
+      "file": "glb_assets/05_crushing_ceiling_trap.glb",
+      "name": "Crushing Ceiling Trap",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.82
+        ],
+        "size": [
+          1.5,
+          1.5,
+          1.64
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "crushing_ceiling",
+        "red"
+      ],
+      "size_bytes": 3444
+    },
+    {
+      "file": "glb_assets/06_blade_wheel_trap.glb",
+      "name": "Blade Wheel Trap",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.554
+        ],
+        "size": [
+          1.5,
+          1.5,
+          1.107
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "blade_wheel",
+        "red"
+      ],
+      "size_bytes": 11188
+    },
+    {
+      "file": "glb_assets/07_rolling_boulder_hazard.glb",
+      "name": "Rolling Boulder Hazard",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "size": [
+          1.5,
+          1.5,
+          0.8
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "boulder",
+        "stone"
+      ],
+      "size_bytes": 7684
+    },
+    {
+      "file": "glb_assets/08_pitfall_marker.glb",
+      "name": "Pitfall Marker",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "size": [
+          1.5,
+          1.5,
+          0.8
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "pitfall",
+        "void"
+      ],
+      "size_bytes": 7684
+    },
+    {
+      "file": "glb_assets/09_chain_snare_trap.glb",
+      "name": "Chain Snare Trap",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "size": [
+          1.5,
+          1.5,
+          0.8
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "chain_snare",
+        "blue"
+      ],
+      "size_bytes": 7688
+    },
+    {
+      "file": "glb_assets/10_lightning_rune_trap.glb",
+      "name": "Lightning Rune Trap",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "size": [
+          1.5,
+          1.5,
+          0.8
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "lightning_rune",
+        "yellow"
+      ],
+      "size_bytes": 7688
+    },
+    {
+      "file": "glb_assets/11_collapsing_bridge_segment.glb",
+      "name": "Collapsing Bridge Segment",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "size": [
+          1.5,
+          1.5,
+          0.8
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "bridge_collapse",
+        "orange"
+      ],
+      "size_bytes": 7688
+    },
+    {
+      "file": "glb_assets/12_sawblade_track.glb",
+      "name": "Sawblade Track",
+      "category": "dungeon_trap_hazard",
+      "gameplay_use": "dungeon traps + hazards asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.554
+        ],
+        "size": [
+          1.5,
+          1.5,
+          1.107
+        ]
+      },
+      "tags": [
+        "dungeon_trap_hazard",
+        "blade_wheel",
+        "steel"
+      ],
+      "size_bytes": 11188
+    }
+  ]
+}

@@ -15573,5 +15573,5 @@ export function getAssetByType(type: string) {
   if (type in ASSET_REGISTRY) {
     return ASSET_REGISTRY[type as string];
   }
-  return getCdnAssetPath('/models/browser_game_3d_asset_pack_v1/glb_assets/', 'wooden_crate.glb');
+  return getCdnAssetPath('/models/browser_game_3d_asset_pack_v1/glb_assets/', 'industrial_crate_stack.glb');
 }

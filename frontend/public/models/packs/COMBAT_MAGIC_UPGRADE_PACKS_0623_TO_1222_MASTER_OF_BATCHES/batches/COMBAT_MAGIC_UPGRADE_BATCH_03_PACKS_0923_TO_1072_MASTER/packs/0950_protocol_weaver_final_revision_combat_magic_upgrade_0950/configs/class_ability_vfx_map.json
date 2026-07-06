@@ -1,0 +1,39 @@
+{
+  "class": "Protocol Weaver",
+  "combat_style": "Reality Manipulation / Crowd Control",
+  "subclass": "Evolutionary Coder",
+  "specialization": "Foundation Warding",
+  "primary_ability": "Final Revision",
+  "resource": "Protocol Points",
+  "ability_vfx": {
+    "cast_module": "glb_modules/01_class_special_attack_vfx.glb",
+    "emission_map": "texture_upgrades/01_class_ability_emission.png",
+    "glyph_sheet": "texture_upgrades/02_subclass_talent_glyph_sheet.png",
+    "cast_audio": "audio_cues/01_special_attack_cast.wav",
+    "impact_audio": "audio_cues/02_magic_impact.wav",
+    "engine_profile": {
+      "spawn_socket": "hands_or_weapon_tip",
+      "lifetime_ms": 650,
+      "blend_mode": "additive_emissive",
+      "hitstop_ms": 51,
+      "combo_safe_cancel_window_ms": 180
+    }
+  },
+  "all_class_subclasses": [
+    "EPI-Savant",
+    "Anomaly",
+    "Front-Matter Architect",
+    "Evolutionary Coder"
+  ],
+  "all_class_specializations": [
+    "Structural Revision",
+    "Cognitive Override",
+    "Reality Tearing",
+    "Timeline Splintering",
+    "Foundation Warding",
+    "Lethal Formatting",
+    "Biomechanical Shift",
+    "Digital Ascension"
+  ],
+  "coverage_note": "Across the 600-pack set, class, subclass, specialization, and level-tree ability coverage is rotated through all ten player classes."
+}

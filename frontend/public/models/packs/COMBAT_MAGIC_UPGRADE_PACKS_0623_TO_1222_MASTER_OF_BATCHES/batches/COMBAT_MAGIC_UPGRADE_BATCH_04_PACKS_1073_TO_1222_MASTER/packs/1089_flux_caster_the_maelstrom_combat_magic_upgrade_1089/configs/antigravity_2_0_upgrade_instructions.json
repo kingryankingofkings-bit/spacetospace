@@ -1,0 +1,327 @@
+{
+  "pack_number": 1089,
+  "action": "create non-destructive upgraded prefab variants",
+  "target_references_sample": [
+    {
+      "source_zip": "147_the_playa_of_ash_shop_item_skin_kit.zip",
+      "path_in_zip": "prefab_specs/prefab_handoff.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "148_the_burning_playa_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/05_the_burning_playa_shop_item_skin_kit_decal.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "149_the_rhyming_labyrinths_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/01_vendor_counter_terminal.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "149_the_rhyming_labyrinths_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/the_rhyming_labyrinths_shop_item_skin_kit_music_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "150_the_phonetic_wastes_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/05_dye_liquid_or_reflection_pool.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "150_the_phonetic_wastes_shop_item_skin_kit.zip",
+      "path_in_zip": "data/material_texture_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "151_the_emerald_canopy_sanctuary_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/04_the_emerald_canopy_sanctuary_shop_item_skin_kit_emission.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "151_the_emerald_canopy_sanctuary_shop_item_skin_kit.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "152_the_whispering_glade_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/08_the_whispering_glade_shop_item_skin_kit_surface.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "153_the_canopy_portrait_halls_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/04_shop_guard_or_vendor_variant.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "153_the_canopy_portrait_halls_shop_item_skin_kit.zip",
+      "path_in_zip": "data/object_and_spawn_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/03_the_infinite_archives_shop_item_skin_kit_trim.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "154_the_infinite_archives_shop_item_skin_kit.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "155_the_voyage_incubator_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/07_the_voyage_incubator_shop_item_skin_kit_starfield.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/03_shop_front_anchor.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "156_the_lichs_court_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/the_lichs_court_shop_item_skin_kit_event_or_pickup_sting.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "157_the_evolution_arenas_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/02_the_evolution_arenas_shop_item_skin_kit_normal_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "157_the_evolution_arenas_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/music_cue_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "158_the_pocket_monster_plains_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/06_the_pocket_monster_plains_shop_item_skin_kit_water.png",
+      "asset_type": "png",
+      "tags": [
+        "monster",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "159_the_magma_core_forges_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/02_display_prop_cluster.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "159_the_magma_core_forges_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/the_magma_core_forges_shop_item_skin_kit_ambience_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "160_the_reggae_dub_oasis_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/01_the_reggae_dub_oasis_shop_item_skin_kit_albedo.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "160_the_reggae_dub_oasis_shop_item_skin_kit.zip",
+      "path_in_zip": "prefab_specs/prefab_handoff.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "161_the_subterranean_grid_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/05_the_subterranean_grid_shop_item_skin_kit_decal.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "162_the_private_quarantine_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/01_vendor_counter_terminal.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "162_the_private_quarantine_shop_item_skin_kit.zip",
+      "path_in_zip": "audio/the_private_quarantine_shop_item_skin_kit_music_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "163_the_revision_labs_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/05_dye_liquid_or_reflection_pool.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "163_the_revision_labs_shop_item_skin_kit.zip",
+      "path_in_zip": "data/material_texture_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "164_the_molten_forge_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/04_the_molten_forge_shop_item_skin_kit_emission.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "164_the_molten_forge_shop_item_skin_kit.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "165_the_abyssal_trench_shop_item_skin_kit.zip",
+      "path_in_zip": "textures/08_the_abyssal_trench_shop_item_skin_kit_surface.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "166_the_wayfora_archipelago_shop_item_skin_kit.zip",
+      "path_in_zip": "glb_assets/04_shop_guard_or_vendor_variant.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "166_the_wayfora_archipelago_shop_item_skin_kit.zip",
+      "path_in_zip": "data/object_and_spawn_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "167_special_event_encounter_bundle_01.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_01_trim.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "167_special_event_encounter_bundle_01.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "168_special_event_encounter_bundle_02.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_02_starfield.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "glb_assets/03_event_trigger_node.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "audio/special_event_encounter_bundle_03_event_or_pickup_sting.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "textures/02_special_event_encounter_bundle_04_normal_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "audio/music_cue_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "171_special_event_encounter_bundle_05.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_05_water.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "172_special_event_encounter_bundle_06.zip",
+      "path_in_zip": "glb_assets/02_event_elite_variant.glb",
+      "asset_type": "glb",
+      "tags": []
+    }
+  ],
+  "required_components": [
+    "MaterialVariantSet",
+    "VFXLifetime",
+    "AbilityTriggerBinding",
+    "MonsterSkinRandomizer",
+    "CombatFlowProfile",
+    "DynamicCombatCameraTrigger",
+    "WeatherSunProfile",
+    "CharacterQualityMaterialPatch",
+    "HighTierEquipmentAffixBinding",
+    "SupportNPCAssistBinding"
+  ],
+  "validation": [
+    "random monster skin table returns no duplicate within recent window",
+    "combat camera blends without breaking input",
+    "class ability VFX spawns on correct socket",
+    "weather/sun LUT changes are reversible",
+    "high tier weapon and armor auras are optional prefab children",
+    "support NPC assist marker does not block navigation"
+  ]
+}

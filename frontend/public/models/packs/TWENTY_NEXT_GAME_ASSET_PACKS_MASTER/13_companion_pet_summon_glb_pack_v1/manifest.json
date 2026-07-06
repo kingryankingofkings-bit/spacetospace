@@ -1,0 +1,304 @@
+{
+  "pack_name": "Companion Pet + Summon GLB Pack v1",
+  "pack_slug": "13_companion_pet_summon_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:57.075885+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Summon circles, pet nests, drone stations, and companion interaction props.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/pet_nest_small.glb",
+      "name": "Pet Nest Small",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.309
+        ],
+        "size": [
+          1.26,
+          1.26,
+          0.37
+        ]
+      },
+      "tags": [
+        "companion",
+        "red"
+      ],
+      "size_bytes": 7164
+    },
+    {
+      "file": "glb_assets/beast_den_companion.glb",
+      "name": "Beast Den Companion",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.309
+        ],
+        "size": [
+          1.26,
+          1.26,
+          0.37
+        ]
+      },
+      "tags": [
+        "companion",
+        "orange"
+      ],
+      "size_bytes": 7164
+    },
+    {
+      "file": "glb_assets/drone_dock_station.glb",
+      "name": "Drone Dock Station",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.831
+        ],
+        "size": [
+          1.6,
+          1.02,
+          0.597
+        ]
+      },
+      "tags": [
+        "companion",
+        "yellow"
+      ],
+      "size_bytes": 9676
+    },
+    {
+      "file": "glb_assets/repair_bot_cradle.glb",
+      "name": "Repair Bot Cradle",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.831
+        ],
+        "size": [
+          1.6,
+          1.02,
+          0.597
+        ]
+      },
+      "tags": [
+        "companion",
+        "green"
+      ],
+      "size_bytes": 9676
+    },
+    {
+      "file": "glb_assets/summon_circle_basic.glb",
+      "name": "Summon Circle Basic",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          0.7
+        ]
+      },
+      "tags": [
+        "companion",
+        "blue"
+      ],
+      "size_bytes": 9576
+    },
+    {
+      "file": "glb_assets/summon_circle_nature.glb",
+      "name": "Summon Circle Nature",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          0.7
+        ]
+      },
+      "tags": [
+        "companion",
+        "purple"
+      ],
+      "size_bytes": 9576
+    },
+    {
+      "file": "glb_assets/summon_circle_void.glb",
+      "name": "Summon Circle Void",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          0.7
+        ]
+      },
+      "tags": [
+        "companion",
+        "purple"
+      ],
+      "size_bytes": 9576
+    },
+    {
+      "file": "glb_assets/companion_food_bowl.glb",
+      "name": "Companion Food Bowl",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          0.7
+        ]
+      },
+      "tags": [
+        "companion",
+        "gold"
+      ],
+      "size_bytes": 9564
+    },
+    {
+      "file": "glb_assets/pet_training_perch.glb",
+      "name": "Pet Training Perch",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          0.7
+        ]
+      },
+      "tags": [
+        "companion",
+        "red"
+      ],
+      "size_bytes": 9572
+    },
+    {
+      "file": "glb_assets/familiar_totem.glb",
+      "name": "Familiar Totem",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          0.7
+        ]
+      },
+      "tags": [
+        "companion",
+        "orange"
+      ],
+      "size_bytes": 9576
+    },
+    {
+      "file": "glb_assets/companion_upgrade_pedestal.glb",
+      "name": "Companion Upgrade Pedestal",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          0.7
+        ]
+      },
+      "tags": [
+        "companion",
+        "yellow"
+      ],
+      "size_bytes": 9576
+    },
+    {
+      "file": "glb_assets/rescue_pet_cage.glb",
+      "name": "Rescue Pet Cage",
+      "template": "companion",
+      "gameplay_use": "Summon circles, pet nests, drone stations, and companion interaction props.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.35
+        ],
+        "size": [
+          1.45,
+          1.45,
+          0.7
+        ]
+      },
+      "tags": [
+        "companion",
+        "green"
+      ],
+      "size_bytes": 9576
+    }
+  ]
+}

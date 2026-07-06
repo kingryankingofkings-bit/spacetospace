@@ -1,0 +1,334 @@
+{
+  "pack_number": 1217,
+  "batch_number": 4,
+  "pack_name": "Phantom-Shift Reality Shatter Combat Magic Upgrade 1217",
+  "created_utc": "2026-07-05T11:03:20.960876+00:00",
+  "purpose": "Combat, magic, monster/boss/player/support NPC, special attack, high-tier gear, combat-flow, dynamic-camera, random monster skin, weather, terrain/nature, sun color, and character-quality upgrade pack.",
+  "worlddata_basis": {
+    "class": "Phantom-Shift",
+    "subclass": "Void-Walker",
+    "specialization": "Sensory Feedback",
+    "ability": "Reality Shatter",
+    "monster": "The Sylvan Juggernaut",
+    "boss": "The Resonant Behemoth",
+    "support_npc": "The Grand Archivist",
+    "weather": "tidal surge",
+    "terrain": "glass shard soundwave",
+    "sun_variant": "archive white-gold"
+  },
+  "counts": {
+    "glb_modules": 8,
+    "texture_png": 12,
+    "audio_wav": 5,
+    "config_docs": 11
+  },
+  "glb_assets": [
+    {
+      "file": "glb_modules/01_class_special_attack_vfx.glb",
+      "role": "class_special_attack_vfx",
+      "class": "Phantom-Shift",
+      "ability": "Reality Shatter",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "archive white-gold",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/02_monster_random_skin_module.glb",
+      "role": "monster_random_skin_module",
+      "class": "Phantom-Shift",
+      "ability": "Reality Shatter",
+      "monster_or_boss_or_npc": "The Sylvan Juggernaut",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "archive white-gold",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/03_boss_magic_phase_module.glb",
+      "role": "boss_magic_phase_module",
+      "class": "Phantom-Shift",
+      "ability": "Reality Shatter",
+      "monster_or_boss_or_npc": "The Resonant Behemoth",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "archive white-gold",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/04_high_tier_magic_weapon_aura.glb",
+      "role": "high_tier_magic_weapon_aura",
+      "class": "Phantom-Shift",
+      "ability": "Reality Shatter",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "archive white-gold",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/05_high_tier_magic_armor_aura.glb",
+      "role": "high_tier_magic_armor_aura",
+      "class": "Phantom-Shift",
+      "ability": "Reality Shatter",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "archive white-gold",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/06_dynamic_combat_camera_trigger.glb",
+      "role": "dynamic_combat_camera_trigger",
+      "class": "Phantom-Shift",
+      "ability": "Reality Shatter",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "archive white-gold",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/07_weather_terrain_nature_effect.glb",
+      "role": "weather_terrain_nature_effect",
+      "class": "Phantom-Shift",
+      "ability": "Reality Shatter",
+      "monster_or_boss_or_npc": null,
+      "weather": "tidal surge",
+      "terrain": "glass shard soundwave",
+      "sun_variant": "archive white-gold",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/08_support_npc_assist_marker.glb",
+      "role": "support_npc_assist_marker",
+      "class": "Phantom-Shift",
+      "ability": "Reality Shatter",
+      "monster_or_boss_or_npc": "The Grand Archivist",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "archive white-gold",
+      "glb_header_ok": true
+    }
+  ],
+  "textures": [
+    {
+      "file": "texture_upgrades/01_class_ability_emission.png",
+      "pattern": "class_ability_emission",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/02_subclass_talent_glyph_sheet.png",
+      "pattern": "subclass_talent_glyph_sheet",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/03_monster_skin_albedo.png",
+      "pattern": "monster_skin_albedo",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/04_monster_skin_emission.png",
+      "pattern": "monster_skin_emission",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/05_boss_phase_material.png",
+      "pattern": "boss_phase_material",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/06_weapon_finish.png",
+      "pattern": "weapon_finish",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/07_armor_trim.png",
+      "pattern": "armor_trim",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/08_npc_assist_decal.png",
+      "pattern": "npc_assist_decal",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/09_weather_overlay.png",
+      "pattern": "weather_overlay",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/10_terrain_nature_overlay.png",
+      "pattern": "terrain_nature_overlay",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/11_character_quality_overlay.png",
+      "pattern": "character_quality_overlay",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/12_sun_color_grade_lut.png",
+      "pattern": "sun_color_grade_lut",
+      "class": "Phantom-Shift",
+      "theme": "phantom",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio_cues/01_special_attack_cast.wav",
+      "cue_id": "phantom_shift_reality_shatter_special_attack_cast_1217",
+      "cue_type": "special_attack_cast",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/02_magic_impact.wav",
+      "cue_id": "phantom_shift_reality_shatter_magic_impact_1217",
+      "cue_type": "magic_impact",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/03_combat_camera_swell.wav",
+      "cue_id": "phantom_shift_reality_shatter_combat_camera_swell_1217",
+      "cue_type": "combat_camera_swell",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/04_weather_sun_cue.wav",
+      "cue_id": "phantom_shift_reality_shatter_weather_sun_cue_1217",
+      "cue_type": "weather_sun_cue",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/05_monster_spawn_variance.wav",
+      "cue_id": "phantom_shift_reality_shatter_monster_spawn_variance_1217",
+      "cue_type": "monster_spawn_variance",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    }
+  ],
+  "data_files": [
+    "configs/class_ability_vfx_map.json",
+    "configs/monster_random_skin_spawn_table.json",
+    "configs/boss_special_attack_upgrade_plan.json",
+    "configs/support_npc_assist_scripts.json",
+    "configs/high_tier_magic_weapon_armor_patch.json",
+    "configs/combat_flow_smoothness_profile.json",
+    "configs/dynamic_combat_camera_trigger.json",
+    "configs/weather_terrain_nature_sun_plan.json",
+    "configs/character_appearance_quality_patch.json",
+    "configs/antigravity_2_0_upgrade_instructions.json",
+    "configs/monster_skin_weights.csv"
+  ],
+  "target_references_sample": [
+    {
+      "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_creature_skin_element_overlay_6.glb",
+      "asset_type": "glb",
+      "tags": [
+        "creature"
+      ]
+    },
+    {
+      "source_zip": "301_creature_skin_element_upgrade_batch_079.zip",
+      "path_in_zip": "patches/asset_upgrade_patch_manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "302_water_star_environment_upgrade_batch_080.zip",
+      "path_in_zip": "texture_upgrades/01_water_star_environment_albedo_upgrade.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "302_water_star_environment_upgrade_batch_080.zip",
+      "path_in_zip": "patches/material_upgrade_profiles.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "303_material_polish_upgrade_batch_081.zip",
+      "path_in_zip": "texture_upgrades/02_material_polish_normal_detail_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "303_material_polish_upgrade_batch_081.zip",
+      "path_in_zip": "patches/prefab_upgrade_instructions.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "texture_upgrades/03_texture_remaster_roughness_variation.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "304_texture_remaster_upgrade_batch_082.zip",
+      "path_in_zip": "patches/lod_collision_upgrade_rules.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "305_low_poly_silhouette_upgrade_batch_083.zip",
+      "path_in_zip": "texture_upgrades/04_low_poly_silhouette_emission_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "305_low_poly_silhouette_upgrade_batch_083.zip",
+      "path_in_zip": "patches/texture_application_map.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "306_emissive_glow_upgrade_batch_084.zip",
+      "path_in_zip": "texture_upgrades/05_emissive_glow_edge_wear_mask.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "306_emissive_glow_upgrade_batch_084.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    }
+  ]
+}

@@ -24,7 +24,7 @@ const companionData = require("./companionData");
 const petData = require("./petData");
 const craftingManager = require("./craftingManager");
 const resourceNodeManager = require("./resourceNodeManager");
-
+const { populateZone } = require("./zonePopulator");
 
 let agonesSDK = null;
 
@@ -35,6 +35,13 @@ resourceNodeManager.initializeNodes();
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: '10kb' }));
+
+app.post('/client-error', (req, res) => {
+  console.log('====== CLIENT ERROR ======');
+  console.log(req.body);
+  console.log('==========================');
+  res.sendStatus(200);
+});
 
 // Serve frontend static files
 const frontendDistPath = path.join(__dirname, '../frontend/dist');
@@ -549,6 +556,11 @@ wss.on("connection", (ws) => {
     try {
       const data = JSON.parse(message);
       
+      if (data.type !== "join" && !ws.sessionId) {
+        ws.send(JSON.stringify({ type: "error", message: "Unauthorized" }));
+        return;
+      }
+      
       if (data.type === "trigger_special_event") {
         if (!ws.sessionId) return;
         const result = specialEventsManager.triggerEvent(ws.sessionId, data.sublocation);
@@ -580,13 +592,25 @@ wss.on("connection", (ws) => {
           await updatePlayerSpatial(position);
           updateAgonesPlayerCount();
           
+          let zoneNpcs = npcs.filter(n => n.zone === position.zone);
+          if (zoneNpcs.length < 20) {
+            const newEntities = populateZone(position.zone, position.x || 0, position.z || 0, zoneNpcs.length, 20);
+            if (newEntities.length > 0) {
+               npcs.push(...newEntities);
+               zoneNpcs = zoneNpcs.concat(newEntities);
+               newEntities.forEach(e => {
+                  broadcast({ type: "npc_spawned", npc: e }, ws, position.zone, e.x, e.z);
+               });
+            }
+          }
+          
           ws.send(JSON.stringify({ 
             type: "init", 
             sessionId, 
             players: await getPlayersInInterestArea(position.zone, position.x || 0, position.z || 0),
             objects: await db.getObjects(),
             terrain: await db.getTerrain(),
-            npcs: npcs.filter(n => n.zone === position.zone && getDistance(n, position) < CELL_SIZE * 2),
+            npcs: zoneNpcs.filter(n => getDistance(n, position) < CELL_SIZE * 2),
             resourceNodes: resourceNodeManager.getActiveNodesInZone(position.zone)
           }));
           
@@ -672,13 +696,25 @@ wss.on("connection", (ws) => {
              pet.x = 0; pet.y = 0; pet.z = 0;
            }
            
+           let zoneNpcs = npcs.filter(n => n.zone === player.zone);
+           if (zoneNpcs.length < 20) {
+             const newEntities = populateZone(player.zone, player.x, player.z, zoneNpcs.length, 20);
+             if (newEntities.length > 0) {
+                npcs.push(...newEntities);
+                zoneNpcs = zoneNpcs.concat(newEntities);
+                newEntities.forEach(e => {
+                   broadcast({ type: "npc_spawned", npc: e }, ws, player.zone, e.x, e.z);
+                });
+             }
+           }
+           
            ws.send(JSON.stringify({
              type: "init",
              sessionId,
              players: await getPlayersInInterestArea(player.zone, player.x, player.z),
              objects: await db.getObjects(),
              terrain: await db.getTerrain(),
-             npcs: npcs.filter(n => n.zone === player.zone && getDistance(n, player) < CELL_SIZE * 2)
+             npcs: zoneNpcs.filter(n => getDistance(n, player) < CELL_SIZE * 2)
            }));
            broadcast({ type: "join", sessionId, player }, ws, player.zone, player.x, player.z);
            questManager.onZoneChange(ws.sessionId, data.zone);
@@ -768,57 +804,92 @@ wss.on("connection", (ws) => {
         const sessionId = ws.sessionId;
         const playerStr = await db.redisClient.hGet('active_players', sessionId);
         if (npc && playerStr) {
-          let player = JSON.parse(playerStr);
-          if (!player.choices) player.choices = {};
-          if (!player.factionReputation) player.factionReputation = {};
+           let player = JSON.parse(playerStr);
+           if (npc.zone !== player.zone || getDistance(player, npc) > 15) {
+             ws.send(JSON.stringify({ type: "error", message: "NPC is too far away." }));
+             return;
+           }
+           if (!player.choices) player.choices = {};
+           if (!player.factionReputation) player.factionReputation = {};
 
-          if (npc.dialogueTree) {
-            const nodeId = data.choiceId || "start";
-            const node = npc.dialogueTree[nodeId];
-            if (node) {
-              if (node.addChoice) player.choices[node.addChoice] = true;
-              if (node.addFactionRep) {
-                const { faction, amount } = node.addFactionRep;
-                player.factionReputation[faction] = (player.factionReputation[faction] || 0) + amount;
-              }
-              if (node.action === "vendor_open") {
-                const economyManager = require('./economyManager');
-                const vendorInv = economyManager.getVendorInventory(npc.vendorType || "general");
-                ws.send(JSON.stringify({ type: "vendor_inventory", items: vendorInv, npcId: npc.id }));
-              }
-              if (node.action === "heal") {
-                player.hp = player.maxHp;
-                ws.send(JSON.stringify({ type: "combat_update", targetId: sessionId, targetHealth: player.hp }));
-              }
-              if (node.action === "accept_quest" && node.questId) {
-                const questManager = require('./questManager');
-                questManager.addQuest(sessionId, node.questId);
-              }
-              
-              const availableChoices = (node.choices || []).filter(c => {
-                if (c.reqChoice && !player.choices[c.reqChoice]) return false;
-                if (c.reqFaction) {
-                   const rep = player.factionReputation[c.reqFaction.faction] || 0;
-                   if (rep < c.reqFaction.min) return false;
-                }
-                return true;
-              });
+           if (npc.dialogueTree) {
+             const nodeId = data.choiceId || "start";
+             
+             // Stateful dialogue transition validation:
+             if (nodeId !== "start") {
+               if (!player.activeDialogue || player.activeDialogue.npcId !== npc.id) {
+                 ws.send(JSON.stringify({ type: "error", message: "Invalid dialogue state." }));
+                 return;
+               }
+               const prevNode = npc.dialogueTree[player.activeDialogue.nodeId];
+               if (!prevNode) {
+                 ws.send(JSON.stringify({ type: "error", message: "Invalid dialogue state." }));
+                 return;
+               }
+               const choice = (prevNode.choices || []).find(c => c.nodeId === nodeId);
+               if (!choice) {
+                 ws.send(JSON.stringify({ type: "error", message: "Choice not offered." }));
+                 return;
+               }
+               if (choice.reqChoice && !player.choices[choice.reqChoice]) {
+                 ws.send(JSON.stringify({ type: "error", message: "Missing required choice." }));
+                 return;
+               }
+               if (choice.reqFaction) {
+                 const rep = player.factionReputation[choice.reqFaction.faction] || 0;
+                 if (rep < choice.reqFaction.min) {
+                   ws.send(JSON.stringify({ type: "error", message: "Insufficient reputation." }));
+                   return;
+                 }
+               }
+             }
 
-              await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
-              await db.saveUser(sessionId, player);
+             const node = npc.dialogueTree[nodeId];
+             if (node) {
+               player.activeDialogue = { npcId: npc.id, nodeId: nodeId };
+               if (node.addChoice) player.choices[node.addChoice] = true;
+               if (node.addFactionRep) {
+                 const { faction, amount } = node.addFactionRep;
+                 player.factionReputation[faction] = (player.factionReputation[faction] || 0) + amount;
+               }
+               if (node.action === "vendor_open") {
+                 const economyManager = require('./economyManager');
+                 const vendorInv = economyManager.getVendorInventory(npc.vendorType || "general");
+                 ws.send(JSON.stringify({ type: "vendor_inventory", items: vendorInv, npcId: npc.id }));
+               }
+               if (node.action === "heal") {
+                 player.hp = player.maxHp;
+                 ws.send(JSON.stringify({ type: "combat_update", targetId: sessionId, targetHealth: player.hp }));
+               }
+               if (node.action === "accept_quest" && node.questId) {
+                 const questManager = require('./questManager');
+                 questManager.addQuest(sessionId, node.questId);
+               }
+               
+               const availableChoices = (node.choices || []).filter(c => {
+                 if (c.reqChoice && !player.choices[c.reqChoice]) return false;
+                 if (c.reqFaction) {
+                    const rep = player.factionReputation[c.reqFaction.faction] || 0;
+                    if (rep < c.reqFaction.min) return false;
+                 }
+                 return true;
+               });
 
-              ws.send(JSON.stringify({ 
-                type: "npc_dialogue_tree", 
-                npcId: npc.id, 
-                text: node.text, 
-                choices: availableChoices 
-              }));
-            }
-          } else if (npc.dialogue && npc.dialogue.length > 0) {
-            // Fallback for simple NPCs
-            const dialogueLine = npc.dialogue[Math.floor(Math.random() * npc.dialogue.length)];
-            ws.send(JSON.stringify({ type: "npc_dialogue", npcId: npc.id, text: dialogueLine }));
-          }
+               await db.redisClient.hSet('active_players', sessionId, JSON.stringify(player));
+               await db.saveUser(sessionId, player);
+
+               ws.send(JSON.stringify({ 
+                 type: "npc_dialogue_tree", 
+                 npcId: npc.id, 
+                 text: node.text, 
+                 choices: availableChoices 
+               }));
+             }
+           } else if (npc.dialogue && npc.dialogue.length > 0) {
+             // Fallback for simple NPCs
+             const dialogueLine = npc.dialogue[Math.floor(Math.random() * npc.dialogue.length)];
+             ws.send(JSON.stringify({ type: "npc_dialogue", npcId: npc.id, text: dialogueLine }));
+           }
         }
       }
       else if (data.type === "interact_wild_pet") {
@@ -946,9 +1017,12 @@ wss.on("connection", (ws) => {
            const player = JSON.parse(playerStr);
 
            const { instanceId, quantity } = data;
-           if (quantity < 1) { await client.query('ROLLBACK'); return; } // exploit fix
-           
-           const index = player.inventory.findIndex(i => i.instanceId === instanceId);
+            if (quantity !== undefined && quantity !== null && (!Number.isInteger(quantity) || quantity < 1)) {
+               await client.query('ROLLBACK');
+               ws.send(JSON.stringify({ type: "error", message: "Invalid quantity." }));
+               return;
+            }
+            const index = player.inventory.findIndex(i => i.instanceId === instanceId);
            if (index === -1) {
               await client.query('ROLLBACK');
               ws.send(JSON.stringify({ type: "error", message: "Item not found in inventory." }));
@@ -1340,8 +1414,10 @@ wss.on("connection", (ws) => {
           }
 
           if (target) {
-            let dist = 0;
-            if (!isBoss) {
+            let dist = 999999;
+            if (isBoss) {
+              dist = 0;
+            } else if (target.zone === attacker.zone) {
               dist = getDistance(attacker, target);
             }
             
@@ -1461,6 +1537,24 @@ wss.on("connection", (ws) => {
           }
         }
         
+        // Bounding / distance check for abilities
+        if (target && !target.isBoss) {
+          if (target.zone !== attacker.zone || getDistance(attacker, target) > 30) {
+             ws.send(JSON.stringify({ type: "error", message: "Target is too far away." }));
+             return;
+          }
+        }
+        if (data.x !== undefined && data.z !== undefined) {
+          if (isNaN(parseFloat(data.x)) || isNaN(parseFloat(data.z))) return;
+          const dx = parseFloat(data.x) - attacker.x;
+          const dz = parseFloat(data.z) - attacker.z;
+          const dist = Math.sqrt(dx * dx + dz * dz);
+          if (dist > 30) {
+             ws.send(JSON.stringify({ type: "error", message: "Target location is too far away." }));
+             return;
+          }
+        }
+        
         try {
           executeAbility(data.abilityId, {
             attacker,
@@ -1469,6 +1563,11 @@ wss.on("connection", (ws) => {
             y: data.y,
             z: data.z
           });
+          // Save modified attacker and target positions/states to Redis
+          await db.redisClient.hSet('active_players', sessionId, JSON.stringify(attacker));
+          if (target && !data.targetId.startsWith("npc_") && !data.targetId.startsWith("boss_")) {
+             await db.redisClient.hSet('active_players', data.targetId, JSON.stringify(target));
+          }
         } catch (e) {
           killSwitch.disableFeature(featureId);
           ws.send(JSON.stringify({ type: "error", message: "Ability encountered a fatal error and has been disabled." }));
@@ -1515,7 +1614,11 @@ wss.on("connection", (ws) => {
           const playerStr = await db.redisClient.hGet('active_players', sessionId);
           if (playerStr) {
               const player = JSON.parse(playerStr);
-              const cost = data.price;
+              const cost = economyManager.getItemPrice(data.itemId);
+              if (cost === null || cost === undefined) {
+                  ws.send(JSON.stringify({ type: "error", message: "Invalid item." }));
+                  return;
+              }
               if (economyManager.deductCurrency(player, cost)) {
                   if (!player.inventory) player.inventory = [];
                   player.inventory.push({
@@ -1629,7 +1732,7 @@ wss.on("connection", (ws) => {
         await removePlayerSpatial(player);
       }
       await updateAgonesPlayerCount();
-      broadcast({ type: "leave", sessionId });
+      broadcast({ type: "leave", sessionId: ws.sessionId });
     }
   });
 });

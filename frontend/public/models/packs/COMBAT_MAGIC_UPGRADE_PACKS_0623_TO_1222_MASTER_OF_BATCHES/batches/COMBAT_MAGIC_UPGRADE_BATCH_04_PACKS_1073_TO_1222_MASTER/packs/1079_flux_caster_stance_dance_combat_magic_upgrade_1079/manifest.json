@@ -1,0 +1,337 @@
+{
+  "pack_number": 1079,
+  "batch_number": 4,
+  "pack_name": "Flux-Caster Stance Dance Combat Magic Upgrade 1079",
+  "created_utc": "2026-07-05T11:03:05.150029+00:00",
+  "purpose": "Combat, magic, monster/boss/player/support NPC, special attack, high-tier gear, combat-flow, dynamic-camera, random monster skin, weather, terrain/nature, sun color, and character-quality upgrade pack.",
+  "worlddata_basis": {
+    "class": "Flux-Caster",
+    "subclass": "Geo-Mage",
+    "specialization": "Crystal Carapace",
+    "ability": "Stance Dance",
+    "monster": "The Grid-Rushers",
+    "boss": "The Null Anomaly",
+    "support_npc": "Beastmaster Thorne",
+    "weather": "amber dusk",
+    "terrain": "glass shard soundwave",
+    "sun_variant": "festival magenta sun"
+  },
+  "counts": {
+    "glb_modules": 8,
+    "texture_png": 12,
+    "audio_wav": 5,
+    "config_docs": 11
+  },
+  "glb_assets": [
+    {
+      "file": "glb_modules/01_class_special_attack_vfx.glb",
+      "role": "class_special_attack_vfx",
+      "class": "Flux-Caster",
+      "ability": "Stance Dance",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/02_monster_random_skin_module.glb",
+      "role": "monster_random_skin_module",
+      "class": "Flux-Caster",
+      "ability": "Stance Dance",
+      "monster_or_boss_or_npc": "The Grid-Rushers",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/03_boss_magic_phase_module.glb",
+      "role": "boss_magic_phase_module",
+      "class": "Flux-Caster",
+      "ability": "Stance Dance",
+      "monster_or_boss_or_npc": "The Null Anomaly",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/04_high_tier_magic_weapon_aura.glb",
+      "role": "high_tier_magic_weapon_aura",
+      "class": "Flux-Caster",
+      "ability": "Stance Dance",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/05_high_tier_magic_armor_aura.glb",
+      "role": "high_tier_magic_armor_aura",
+      "class": "Flux-Caster",
+      "ability": "Stance Dance",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/06_dynamic_combat_camera_trigger.glb",
+      "role": "dynamic_combat_camera_trigger",
+      "class": "Flux-Caster",
+      "ability": "Stance Dance",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/07_weather_terrain_nature_effect.glb",
+      "role": "weather_terrain_nature_effect",
+      "class": "Flux-Caster",
+      "ability": "Stance Dance",
+      "monster_or_boss_or_npc": null,
+      "weather": "amber dusk",
+      "terrain": "glass shard soundwave",
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/08_support_npc_assist_marker.glb",
+      "role": "support_npc_assist_marker",
+      "class": "Flux-Caster",
+      "ability": "Stance Dance",
+      "monster_or_boss_or_npc": "Beastmaster Thorne",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "festival magenta sun",
+      "glb_header_ok": true
+    }
+  ],
+  "textures": [
+    {
+      "file": "texture_upgrades/01_class_ability_emission.png",
+      "pattern": "class_ability_emission",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/02_subclass_talent_glyph_sheet.png",
+      "pattern": "subclass_talent_glyph_sheet",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/03_monster_skin_albedo.png",
+      "pattern": "monster_skin_albedo",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/04_monster_skin_emission.png",
+      "pattern": "monster_skin_emission",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/05_boss_phase_material.png",
+      "pattern": "boss_phase_material",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/06_weapon_finish.png",
+      "pattern": "weapon_finish",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/07_armor_trim.png",
+      "pattern": "armor_trim",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/08_npc_assist_decal.png",
+      "pattern": "npc_assist_decal",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/09_weather_overlay.png",
+      "pattern": "weather_overlay",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/10_terrain_nature_overlay.png",
+      "pattern": "terrain_nature_overlay",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/11_character_quality_overlay.png",
+      "pattern": "character_quality_overlay",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/12_sun_color_grade_lut.png",
+      "pattern": "sun_color_grade_lut",
+      "class": "Flux-Caster",
+      "theme": "flux",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio_cues/01_special_attack_cast.wav",
+      "cue_id": "flux_caster_stance_dance_special_attack_cast_1079",
+      "cue_type": "special_attack_cast",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/02_magic_impact.wav",
+      "cue_id": "flux_caster_stance_dance_magic_impact_1079",
+      "cue_type": "magic_impact",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/03_combat_camera_swell.wav",
+      "cue_id": "flux_caster_stance_dance_combat_camera_swell_1079",
+      "cue_type": "combat_camera_swell",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/04_weather_sun_cue.wav",
+      "cue_id": "flux_caster_stance_dance_weather_sun_cue_1079",
+      "cue_type": "weather_sun_cue",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/05_monster_spawn_variance.wav",
+      "cue_id": "flux_caster_stance_dance_monster_spawn_variance_1079",
+      "cue_type": "monster_spawn_variance",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    }
+  ],
+  "data_files": [
+    "configs/class_ability_vfx_map.json",
+    "configs/monster_random_skin_spawn_table.json",
+    "configs/boss_special_attack_upgrade_plan.json",
+    "configs/support_npc_assist_scripts.json",
+    "configs/high_tier_magic_weapon_armor_patch.json",
+    "configs/combat_flow_smoothness_profile.json",
+    "configs/dynamic_combat_camera_trigger.json",
+    "configs/weather_terrain_nature_sun_plan.json",
+    "configs/character_appearance_quality_patch.json",
+    "configs/antigravity_2_0_upgrade_instructions.json",
+    "configs/monster_skin_weights.csv"
+  ],
+  "target_references_sample": [
+    {
+      "source_zip": "411_creature_skin_element_upgrade_batch_189.zip",
+      "path_in_zip": "patches/lod_collision_upgrade_rules.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "412_water_star_environment_upgrade_batch_190.zip",
+      "path_in_zip": "texture_upgrades/04_water_star_environment_emission_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "412_water_star_environment_upgrade_batch_190.zip",
+      "path_in_zip": "patches/texture_application_map.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "413_material_polish_upgrade_batch_191.zip",
+      "path_in_zip": "texture_upgrades/05_material_polish_edge_wear_mask.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "413_material_polish_upgrade_batch_191.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "414_texture_remaster_upgrade_batch_192.zip",
+      "path_in_zip": "texture_upgrades/06_texture_remaster_biome_tint_mask.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "414_texture_remaster_upgrade_batch_192.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "415_low_poly_silhouette_upgrade_batch_193.zip",
+      "path_in_zip": "texture_upgrades/07_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "416_emissive_glow_upgrade_batch_194.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_emissive_glow_overlay_1.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "416_emissive_glow_upgrade_batch_194.zip",
+      "path_in_zip": "texture_upgrades/08_emissive_glow_decal_upgrade_sheet.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "417_weathering_wear_upgrade_batch_195.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_weathering_wear_overlay_2.glb",
+      "asset_type": "glb",
+      "tags": [
+        "weather"
+      ]
+    },
+    {
+      "source_zip": "417_weathering_wear_upgrade_batch_195.zip",
+      "path_in_zip": "texture_upgrades/09_weathering_wear_trim_upgrade_sheet.png",
+      "asset_type": "png",
+      "tags": [
+        "weather",
+        "texture"
+      ]
+    }
+  ]
+}

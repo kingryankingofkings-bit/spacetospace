@@ -1,0 +1,463 @@
+{
+  "pack_number": 509,
+  "pack_name": "Skyship Docking Travel Upgrades Batch 087 - Heavy Carrier",
+  "created_utc": "2026-07-05T09:42:34.519127+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_docking_travel",
+  "theme": "deep_water",
+  "element": "tide",
+  "skyship_class_profile": {
+    "class": "heavy_carrier",
+    "scale": 2.05,
+    "role": "large deck carrier and spawn platform"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/19_lio_holloway_medic_under_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/20_noor_gearmantle_tactician_near_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/03_observation_halo/05_rook_spirebound_warden_from_observation.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/03_observation_halo/13_sable_cragwarden_pilgrim_at_observation.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/04_corporate_council_atrium/19_juno_gravesong_engineer_from_corporate.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/05_command_nexus/01_sable_glassroot_engineer_from_command.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/05_command_nexus/15_dax_gearmantle_warden_of_command.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/06_security_ring/08_astra_deepwell_engineer_near_security.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/06_security_ring/19_thorne_spirebound_warden_under_security.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/07_data_vault_complex/04_soren_skyharrow_tamer_from_data.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/07_data_vault_complex/14_ren_voidrill_engineer_at_data.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/08_transit_lift_core/01_talia_cragwarden_captain_of_transit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/08_transit_lift_core/12_ossa_skyharrow_mechanist_at_transit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/08_transit_lift_core/17_edda_skyharrow_operator_from_transit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/08_transit_lift_core/19_quill_cragwarden_oracle_near_transit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/09_spire_plaza/19_tovin_mossguard_warden_at_spire.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/10_maintenance_conduits/15_calder_cragwarden_broker_of_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/11_power_plant/03_juno_skyharrow_specialist_under_power.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/11_power_plant/12_ren_chromabell_warden_of_power.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/11_power_plant/19_ren_ironwake_warden_from_power.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/10_soren_wayfare_diver_under_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/11_varren_cragwarden_cartographer_of_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/12_thorne_mossguard_herald_from_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/13_mirek_signalborn_marshal_near_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/14_bryn_mossguard_smith_at_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/15_eryk_starfall_archivist_under_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/16_sarai_gravesong_tactician_from_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/17_lio_starfall_navigator_near_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/18_nix_voidrill_custodian_of_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/19_varren_nullborne_diver_of_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/03_maintenance_loop/20_bryn_cragwarden_tactician_near_maintenance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/01_ossa_chromabell_warden_under_relay.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/02_brant_emberkin_archivist_of_relay.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/03_cassian_starfall_oracle_from_relay.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/04_brant_nullborne_smith_at_relay.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/05_makoa_stormhush_engineer_at_relay.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/06_astra_gravesong_courier_of_relay.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/07_elo_chromabell_marshal_under_relay.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/08_calder_gantryn_courier_near_relay.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/05_deep_transit_system/01_the_subterranean_grid/04_relay_control_station/09_lyric_spirebound_broker_at_relay.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+      "path_in_zip": "textures/02_the_evolution_arenas_world_detail_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+      "path_in_zip": "textures/03_the_evolution_arenas_world_detail_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+      "path_in_zip": "textures/04_the_evolution_arenas_world_detail_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+      "path_in_zip": "textures/05_the_evolution_arenas_world_detail_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+      "path_in_zip": "textures/06_the_evolution_arenas_world_detail_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+      "path_in_zip": "textures/07_the_evolution_arenas_world_detail_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+      "path_in_zip": "textures/08_the_evolution_arenas_world_detail_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+      "path_in_zip": "textures/01_the_pocket_monster_plains_world_detail_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+      "path_in_zip": "textures/02_the_pocket_monster_plains_world_detail_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+      "path_in_zip": "textures/03_the_pocket_monster_plains_world_detail_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+      "path_in_zip": "textures/04_the_pocket_monster_plains_world_detail_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+      "path_in_zip": "textures/05_the_pocket_monster_plains_world_detail_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+      "path_in_zip": "textures/06_the_pocket_monster_plains_world_detail_kit_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+      "path_in_zip": "textures/07_the_pocket_monster_plains_world_detail_kit_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+      "path_in_zip": "textures/08_the_pocket_monster_plains_world_detail_kit_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "051_the_magma_core_forges_world_detail_kit.zip",
+      "path_in_zip": "textures/01_the_magma_core_forges_world_detail_kit_albedo.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "051_the_magma_core_forges_world_detail_kit.zip",
+      "path_in_zip": "textures/02_the_magma_core_forges_world_detail_kit_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "051_the_magma_core_forges_world_detail_kit.zip",
+      "path_in_zip": "textures/03_the_magma_core_forges_world_detail_kit_trim.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "051_the_magma_core_forges_world_detail_kit.zip",
+      "path_in_zip": "textures/04_the_magma_core_forges_world_detail_kit_emission.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "051_the_magma_core_forges_world_detail_kit.zip",
+      "path_in_zip": "textures/05_the_magma_core_forges_world_detail_kit_decal.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "forge"
+      ]
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

@@ -1,0 +1,62 @@
+Dawnforge Questline XP Rewards Support Pack — Balance Validation Report
+============================================================================
+Quest count: 250
+Subquest count: 1500
+Expected subquests: 1,500
+Total quest + subquest story XP: 2,107,770
+  - Subquest XP total: 1,331,335
+  - Quest-completion XP total: 776,435
+Milestone boss encounter XP total: 173,200
+Combined story + milestone boss XP: 2,280,970
+Level-40 total XP requirement: 10,327,000
+Combined story + milestone boss share of cap: 22.09%
+
+Level counts:
+  Level 01: 7 quests; story budget 750 XP
+  Level 02: 6 quests; story budget 975 XP
+  Level 03: 6 quests; story budget 1,375 XP
+  Level 04: 6 quests; story budget 1,920 XP
+  Level 05: 7 quests; story budget 2,700 XP
+  Level 06: 6 quests; story budget 3,825 XP
+  Level 07: 6 quests; story budget 5,175 XP
+  Level 08: 6 quests; story budget 6,750 XP
+  Level 09: 7 quests; story budget 8,000 XP
+  Level 10: 6 quests; story budget 10,400 XP
+  Level 11: 6 quests; story budget 11,220 XP
+  Level 12: 6 quests; story budget 13,940 XP
+  Level 13: 7 quests; story budget 17,000 XP
+  Level 14: 6 quests; story budget 20,400 XP
+  Level 15: 6 quests; story budget 24,480 XP
+  Level 16: 6 quests; story budget 28,900 XP
+  Level 17: 7 quests; story budget 30,000 XP
+  Level 18: 6 quests; story budget 34,800 XP
+  Level 19: 6 quests; story budget 40,200 XP
+  Level 20: 6 quests; story budget 46,200 XP
+  Level 21: 5 quests; story budget 45,760 XP
+  Level 22: 5 quests; story budget 52,000 XP
+  Level 23: 5 quests; story budget 58,760 XP
+  Level 24: 5 quests; story budget 66,040 XP
+  Level 25: 5 quests; story budget 73,840 XP
+  Level 26: 5 quests; story budget 69,520 XP
+  Level 27: 5 quests; story budget 77,000 XP
+  Level 28: 5 quests; story budget 84,920 XP
+  Level 29: 5 quests; story budget 93,280 XP
+  Level 30: 5 quests; story budget 102,080 XP
+  Level 31: 5 quests; story budget 91,080 XP
+  Level 32: 5 quests; story budget 99,000 XP
+  Level 33: 5 quests; story budget 107,280 XP
+  Level 34: 5 quests; story budget 115,920 XP
+  Level 35: 5 quests; story budget 124,920 XP
+  Level 36: 7 quests; story budget 104,440 XP
+  Level 37: 6 quests; story budget 112,000 XP
+  Level 38: 6 quests; story budget 119,840 XP
+  Level 39: 18 quests; story budget 127,960 XP
+  Level 40: 13 quests; story budget 73,120 XP
+
+Gating checks:
+PASS: No low-level quest receives mid/late monsters, and no mid-game quest receives late-game monsters.
+
+Quest/subquest checks:
+PASS: All 250 quests have exactly 6 subquest rows.
+PASS: Every quest has subquest XP, quest completion XP, reward item, consumable/material grant, recommended level, and monster gate.
+PASS: Boss XP is separated from quest completion XP to avoid double-dipping.

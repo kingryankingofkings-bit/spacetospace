@@ -1,0 +1,13 @@
+{
+  "target": "player + support NPC + recruitable companions",
+  "texture": "texture_upgrades/11_character_quality_overlay.png",
+  "upgrades": [
+    "face/skin normal proxy",
+    "cloth trim detail",
+    "hair roughness variation",
+    "eye/emissive highlight",
+    "armor material polish",
+    "silhouette-readable accessory attachment"
+  ],
+  "lod_policy": "keep silhouette upgrades at all LODs; drop micro detail after LOD1"
+}

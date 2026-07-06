@@ -1,0 +1,304 @@
+{
+  "pack_name": "Crafting Workstations GLB Pack v1",
+  "pack_slug": "15_crafting_workstations_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:57.188383+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/blacksmith_forge_station.glb",
+      "name": "Blacksmith Forge Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.062,
+          0.0,
+          0.527
+        ],
+        "size": [
+          1.525,
+          1.0,
+          1.045
+        ]
+      },
+      "tags": [
+        "workstation",
+        "orange"
+      ],
+      "size_bytes": 3708
+    },
+    {
+      "file": "glb_assets/alchemy_table_station.glb",
+      "name": "Alchemy Table Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.548
+        ],
+        "size": [
+          1.5,
+          0.8,
+          1.095
+        ]
+      },
+      "tags": [
+        "workstation",
+        "orange"
+      ],
+      "size_bytes": 7288
+    },
+    {
+      "file": "glb_assets/enchanting_table_station.glb",
+      "name": "Enchanting Table Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.5,
+          0.8,
+          0.33
+        ]
+      },
+      "tags": [
+        "workstation",
+        "yellow"
+      ],
+      "size_bytes": 4308
+    },
+    {
+      "file": "glb_assets/cooking_fire_station.glb",
+      "name": "Cooking Fire Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.5,
+          0.8,
+          0.33
+        ]
+      },
+      "tags": [
+        "workstation",
+        "orange"
+      ],
+      "size_bytes": 4304
+    },
+    {
+      "file": "glb_assets/loom_station.glb",
+      "name": "Loom Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.04,
+          0.8
+        ],
+        "size": [
+          1.0,
+          0.26,
+          1.4
+        ]
+      },
+      "tags": [
+        "workstation",
+        "blue"
+      ],
+      "size_bytes": 5688
+    },
+    {
+      "file": "glb_assets/tinker_bench_station.glb",
+      "name": "Tinker Bench Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.5,
+          0.8,
+          0.33
+        ]
+      },
+      "tags": [
+        "workstation",
+        "purple"
+      ],
+      "size_bytes": 4304
+    },
+    {
+      "file": "glb_assets/gem_cutting_station.glb",
+      "name": "Gem Cutting Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.5,
+          0.8,
+          0.33
+        ]
+      },
+      "tags": [
+        "workstation",
+        "white"
+      ],
+      "size_bytes": 4288
+    },
+    {
+      "file": "glb_assets/armor_dye_station.glb",
+      "name": "Armor Dye Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.5,
+          0.8,
+          0.33
+        ]
+      },
+      "tags": [
+        "workstation",
+        "gold"
+      ],
+      "size_bytes": 4296
+    },
+    {
+      "file": "glb_assets/weapon_skin_station.glb",
+      "name": "Weapon Skin Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.5,
+          0.8,
+          0.33
+        ]
+      },
+      "tags": [
+        "workstation",
+        "red"
+      ],
+      "size_bytes": 4304
+    },
+    {
+      "file": "glb_assets/repair_station.glb",
+      "name": "Repair Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.5,
+          0.8,
+          0.33
+        ]
+      },
+      "tags": [
+        "workstation",
+        "orange"
+      ],
+      "size_bytes": 4304
+    },
+    {
+      "file": "glb_assets/data_forge_terminal.glb",
+      "name": "Data Forge Terminal",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.062,
+          0.0,
+          0.527
+        ],
+        "size": [
+          1.525,
+          1.0,
+          1.045
+        ]
+      },
+      "tags": [
+        "workstation",
+        "orange"
+      ],
+      "size_bytes": 3708
+    },
+    {
+      "file": "glb_assets/pet_upgrade_station.glb",
+      "name": "Pet Upgrade Station",
+      "template": "workstation",
+      "gameplay_use": "Crafting stations for equipment, upgrades, alchemy, and cooking.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.855
+        ],
+        "size": [
+          1.5,
+          0.8,
+          0.33
+        ]
+      },
+      "tags": [
+        "workstation",
+        "green"
+      ],
+      "size_bytes": 4304
+    }
+  ]
+}

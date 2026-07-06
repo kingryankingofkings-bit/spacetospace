@@ -1,0 +1,25 @@
+{
+  "weather_profile": "tidal surge",
+  "terrain_nature_element": "starfield dust",
+  "sun_variant": {
+    "name": "golden sanctuary sun",
+    "rgb": [
+      255,
+      214,
+      124
+    ]
+  },
+  "modules": [
+    "glb_modules/07_weather_terrain_nature_effect.glb"
+  ],
+  "textures": {
+    "weather_overlay": "texture_upgrades/09_weather_overlay.png",
+    "terrain_overlay": "texture_upgrades/10_terrain_nature_overlay.png",
+    "sun_lut": "texture_upgrades/12_sun_color_grade_lut.png"
+  },
+  "engine_notes": [
+    "drive sun color and fog tint from weather profile",
+    "spawn terrain/nature module as non-blocking visual unless hazard flag is active",
+    "terrain nature effects can attach to boss arenas, monster spawns, or class ultimates"
+  ]
+}

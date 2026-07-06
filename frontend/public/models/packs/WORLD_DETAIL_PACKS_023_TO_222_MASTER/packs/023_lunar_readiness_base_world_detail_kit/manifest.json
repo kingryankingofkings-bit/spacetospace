@@ -1,0 +1,226 @@
+{
+  "pack_number": 23,
+  "pack_name": "Lunar Readiness Base World Detail Kit",
+  "kind": "sublocation_world_detail",
+  "created_utc": "2026-07-05T08:06:53.182369+00:00",
+  "source_docs_used": [
+    "geographic_master_guide_basic_area_maps_pack.zip",
+    "geographic_master_guide_detailed_maps.zip",
+    "dawnforge_sublocation_special_events_pack(1).zip",
+    "dawnforge_level_1_40_itemization_pack(1).zip",
+    "dawnforge_character_creator_customization_pack(1).zip",
+    "uploaded geographic master guide image"
+  ],
+  "region": "01 Cosmic Layer",
+  "sub_location": "01 Lunar Readiness Base",
+  "theme": "cosmic",
+  "description": "Full local dressing kit with landmark props, local hazards, creature variants, textures, and area music.",
+  "counts": {
+    "glb_assets": 5,
+    "textures_png": 8,
+    "audio_wav": 3,
+    "data_files": 4
+  },
+  "assets": [
+    {
+      "file": "glb_assets/01_landmark_anchor.glb",
+      "name": "Landmark Anchor",
+      "asset_kind": "landmark",
+      "theme": "cosmic",
+      "element_variant": "astral",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "static_world_anchor"
+    },
+    {
+      "file": "glb_assets/02_local_prop_cluster.glb",
+      "name": "Local Prop Cluster",
+      "asset_kind": "prop",
+      "theme": "cosmic",
+      "element_variant": "astral",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "static_prop_or_debris"
+    },
+    {
+      "file": "glb_assets/03_creature_or_npc_variant.glb",
+      "name": "Creature Or Npc Variant",
+      "asset_kind": "creature",
+      "theme": "cosmic",
+      "element_variant": "astral",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": true,
+      "script_profile": "creature_variant_base"
+    },
+    {
+      "file": "glb_assets/04_quest_or_system_interactable.glb",
+      "name": "Quest Or System Interactable",
+      "asset_kind": "interactable",
+      "theme": "cosmic",
+      "element_variant": "astral",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "quest_or_system_interactable"
+    },
+    {
+      "file": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "name": "Water Star Sky Or Liquid Asset",
+      "asset_kind": "liquid_sky",
+      "theme": "cosmic",
+      "element_variant": "astral",
+      "export_validation": "glb_header_ok",
+      "rigging_needed": false,
+      "script_profile": "environment_surface_or_sky_proxy"
+    }
+  ],
+  "textures": [
+    {
+      "file": "textures/01_lunar_readiness_base_world_detail_kit_albedo.png",
+      "pattern": "albedo",
+      "theme": "cosmic",
+      "material_use": "local surface albedo"
+    },
+    {
+      "file": "textures/02_lunar_readiness_base_world_detail_kit_normal_proxy.png",
+      "pattern": "normal_proxy",
+      "theme": "cosmic",
+      "material_use": "placeholder normal-map proxy"
+    },
+    {
+      "file": "textures/03_lunar_readiness_base_world_detail_kit_trim.png",
+      "pattern": "trim",
+      "theme": "cosmic",
+      "material_use": "architecture/prop trim sheet"
+    },
+    {
+      "file": "textures/04_lunar_readiness_base_world_detail_kit_emission.png",
+      "pattern": "emission",
+      "theme": "cosmic",
+      "material_use": "glowing signage, runes, creatures, UI, and VFX"
+    },
+    {
+      "file": "textures/05_lunar_readiness_base_world_detail_kit_decal.png",
+      "pattern": "decal",
+      "theme": "cosmic",
+      "material_use": "floor/wall decals and quest markers"
+    },
+    {
+      "file": "textures/06_lunar_readiness_base_world_detail_kit_water.png",
+      "pattern": "water",
+      "theme": "cosmic",
+      "material_use": "water/liquid/caustic surface"
+    },
+    {
+      "file": "textures/07_lunar_readiness_base_world_detail_kit_starfield.png",
+      "pattern": "starfield",
+      "theme": "cosmic",
+      "material_use": "skybox/starfield/cosmic overlay"
+    },
+    {
+      "file": "textures/08_lunar_readiness_base_world_detail_kit_surface.png",
+      "pattern": "surface",
+      "theme": "cosmic",
+      "material_use": "secondary local surface variation"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio/lunar_readiness_base_world_detail_kit_music_loop.wav",
+      "cue_id": "lunar_readiness_base_world_detail_kit_music_loop",
+      "cue_type": "music",
+      "music_mode": "cosmic-minor",
+      "fits_region": "01 Cosmic Layer",
+      "fits_sub_location": "01 Lunar Readiness Base",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    },
+    {
+      "file": "audio/lunar_readiness_base_world_detail_kit_ambience_loop.wav",
+      "cue_id": "lunar_readiness_base_world_detail_kit_ambience_loop",
+      "cue_type": "ambience",
+      "music_mode": "cosmic-minor",
+      "fits_region": "01 Cosmic Layer",
+      "fits_sub_location": "01 Lunar Readiness Base",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    },
+    {
+      "file": "audio/lunar_readiness_base_world_detail_kit_event_or_pickup_sting.wav",
+      "cue_id": "lunar_readiness_base_world_detail_kit_event_or_pickup_sting",
+      "cue_type": "sting",
+      "music_mode": "cosmic-minor",
+      "fits_region": "01 Cosmic Layer",
+      "fits_sub_location": "01 Lunar Readiness Base",
+      "placeholder_note": "Procedural placeholder loop/cue; replace with final composed audio later."
+    }
+  ],
+  "data_files": [
+    "data/object_and_spawn_plan.json",
+    "data/material_texture_manifest.json",
+    "prefab_specs/prefab_handoff.json",
+    "audio/music_cue_manifest.json"
+  ],
+  "area_references": [
+    {
+      "region": "01 Cosmic Layer",
+      "sub_location": "01 Lunar Readiness Base",
+      "area": "Lunar Command Citadel",
+      "map_file": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/01_lunar_command_citadel_map.png",
+      "shops": "Mechanic: Boltworks Lunar; General Goods: Supply Post Lunar"
+    },
+    {
+      "region": "01 Cosmic Layer",
+      "sub_location": "01 Lunar Readiness Base",
+      "area": "Crater Gantry Loop",
+      "map_file": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/02_crater_gantry_loop_map.png",
+      "shops": "Medic: Field Surgery Crater"
+    },
+    {
+      "region": "01 Cosmic Layer",
+      "sub_location": "01 Lunar Readiness Base",
+      "area": "Surface Launch Gantries",
+      "map_file": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/03_surface_launch_gantries_map.png",
+      "shops": "Armor Dye Pack Shop: Color Forge Surface"
+    },
+    {
+      "region": "01 Cosmic Layer",
+      "sub_location": "01 Lunar Readiness Base",
+      "area": "Anti-Orbital Battery Grid",
+      "map_file": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/04_anti_orbital_battery_grid_map.png",
+      "shops": "Inn: The Wandering Anti-Orbital; Armor Dye Pack Shop: Color Forge Anti-Orbital"
+    },
+    {
+      "region": "01 Cosmic Layer",
+      "sub_location": "01 Lunar Readiness Base",
+      "area": "Troop Barracks & Armories",
+      "map_file": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/05_troop_barracks_and_armories_map.png",
+      "shops": "Blacksmith: Smelter of Troop; Weapon Skin Shop: Patternsmith Troop"
+    },
+    {
+      "region": "01 Cosmic Layer",
+      "sub_location": "01 Lunar Readiness Base",
+      "area": "Vehicle Hangars",
+      "map_file": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/06_vehicle_hangars_map.png",
+      "shops": "Alchemist: Elixir Nook Vehicle; Tailor: Stitchmark Vehicle"
+    },
+    {
+      "region": "01 Cosmic Layer",
+      "sub_location": "01 Lunar Readiness Base",
+      "area": "Resource Refinery Complex",
+      "map_file": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/07_resource_refinery_complex_map.png",
+      "shops": "Weapon Skin Shop: EdgeLacquer Resource"
+    },
+    {
+      "region": "01 Cosmic Layer",
+      "sub_location": "01 Lunar Readiness Base",
+      "area": "Helipad & Dropship Pads",
+      "map_file": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/08_helipad_and_dropship_pads_map.png",
+      "shops": "Tailor: Thread & Hem Helipad"
+    },
+    {
+      "region": "01 Cosmic Layer",
+      "sub_location": "01 Lunar Readiness Base",
+      "area": "Maintenance Trenches",
+      "map_file": "area_maps/sub_locations/01_cosmic_layer/01_lunar_readiness_base/09_maintenance_trenches_map.png",
+      "shops": "Stable: Saddle Gate Maintenance; Weapon Skin Shop: EdgeLacquer Maintenance"
+    }
+  ]
+}

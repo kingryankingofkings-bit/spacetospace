@@ -1,0 +1,30 @@
+{
+  "monster": "The Grid-Rushers",
+  "target_goal": "It should be rare to see two identical monsters.",
+  "skin_table_file": "patches/monster_random_skin_spawn_table.json",
+  "algorithm": {
+    "method": "weighted_random_plus_spawn_seed_hash",
+    "inputs": [
+      "monster_family",
+      "biome_id",
+      "weather_id",
+      "encounter_id",
+      "spawn_index",
+      "player_level_band"
+    ],
+    "reroll_if_recent_duplicate": true,
+    "recent_duplicate_window": 12,
+    "force_different_eye_or_overlay_if_same_base": true
+  },
+  "combination_slots": [
+    "base_skin",
+    "overlay",
+    "emission",
+    "horns",
+    "armor_growth",
+    "weather_tint",
+    "scale_jitter",
+    "eye_emission"
+  ],
+  "estimated_unique_local_combinations": 2304
+}

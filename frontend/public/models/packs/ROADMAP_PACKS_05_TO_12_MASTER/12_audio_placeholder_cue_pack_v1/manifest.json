@@ -1,0 +1,201 @@
+{
+  "pack_name": "Audio Placeholder Cue Pack v1",
+  "created_utc": "2026-07-05T07:36:08.286766+00:00",
+  "format": "WAV + JSON",
+  "asset_count": 24,
+  "description": "Placeholder audio cue pack for prototyping. This is intentionally not GLB.",
+  "assets": [
+    {
+      "file": "audio_wav/ui_click.wav",
+      "cue_id": "ui_click",
+      "group": "ui",
+      "gameplay_use": "menu/button click",
+      "duration_seconds": 0.08,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/ui_confirm.wav",
+      "cue_id": "ui_confirm",
+      "group": "ui",
+      "gameplay_use": "positive confirmation",
+      "duration_seconds": 0.14,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/ui_error.wav",
+      "cue_id": "ui_error",
+      "group": "ui",
+      "gameplay_use": "invalid action",
+      "duration_seconds": 0.18,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/pickup_health.wav",
+      "cue_id": "pickup_health",
+      "group": "pickup",
+      "gameplay_use": "health pickup",
+      "duration_seconds": 0.22,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/pickup_loot_common.wav",
+      "cue_id": "pickup_loot_common",
+      "group": "pickup",
+      "gameplay_use": "common loot pickup",
+      "duration_seconds": 0.16,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/pickup_loot_rare.wav",
+      "cue_id": "pickup_loot_rare",
+      "group": "pickup",
+      "gameplay_use": "rare loot pickup",
+      "duration_seconds": 0.24,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/footstep_stone_01.wav",
+      "cue_id": "footstep_stone_01",
+      "group": "footsteps",
+      "gameplay_use": "stone footstep variant",
+      "duration_seconds": 0.08,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/footstep_wood_01.wav",
+      "cue_id": "footstep_wood_01",
+      "group": "footsteps",
+      "gameplay_use": "wood footstep variant",
+      "duration_seconds": 0.08,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/footstep_metal_01.wav",
+      "cue_id": "footstep_metal_01",
+      "group": "footsteps",
+      "gameplay_use": "metal footstep variant",
+      "duration_seconds": 0.07,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/hit_light.wav",
+      "cue_id": "hit_light",
+      "group": "combat",
+      "gameplay_use": "light hit impact",
+      "duration_seconds": 0.09,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/hit_heavy.wav",
+      "cue_id": "hit_heavy",
+      "group": "combat",
+      "gameplay_use": "heavy hit impact",
+      "duration_seconds": 0.16,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/block_clang.wav",
+      "cue_id": "block_clang",
+      "group": "combat",
+      "gameplay_use": "block/parry clang",
+      "duration_seconds": 0.12,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/parry_perfect.wav",
+      "cue_id": "parry_perfect",
+      "group": "combat",
+      "gameplay_use": "perfect counter cue",
+      "duration_seconds": 0.16,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/slash_light.wav",
+      "cue_id": "slash_light",
+      "group": "combat",
+      "gameplay_use": "light weapon swing",
+      "duration_seconds": 0.1,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/slash_heavy.wav",
+      "cue_id": "slash_heavy",
+      "group": "combat",
+      "gameplay_use": "heavy weapon swing",
+      "duration_seconds": 0.16,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/monster_roar_small.wav",
+      "cue_id": "monster_roar_small",
+      "group": "monster",
+      "gameplay_use": "small monster aggro",
+      "duration_seconds": 0.35,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/monster_roar_boss.wav",
+      "cue_id": "monster_roar_boss",
+      "group": "monster",
+      "gameplay_use": "boss roar",
+      "duration_seconds": 0.6,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/boss_phase_shift.wav",
+      "cue_id": "boss_phase_shift",
+      "group": "boss",
+      "gameplay_use": "boss phase transition",
+      "duration_seconds": 0.75,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/warning_telegraph.wav",
+      "cue_id": "warning_telegraph",
+      "group": "combat",
+      "gameplay_use": "incoming danger warning",
+      "duration_seconds": 0.22,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/quest_accept.wav",
+      "cue_id": "quest_accept",
+      "group": "quest",
+      "gameplay_use": "quest accepted",
+      "duration_seconds": 0.22,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/quest_complete.wav",
+      "cue_id": "quest_complete",
+      "group": "quest",
+      "gameplay_use": "quest completed",
+      "duration_seconds": 0.32,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/ambient_forest_loop_placeholder.wav",
+      "cue_id": "ambient_forest_loop_placeholder",
+      "group": "ambient",
+      "gameplay_use": "forest ambience placeholder",
+      "duration_seconds": 1.25,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/ambient_industrial_loop_placeholder.wav",
+      "cue_id": "ambient_industrial_loop_placeholder",
+      "group": "ambient",
+      "gameplay_use": "industrial ambience placeholder",
+      "duration_seconds": 1.25,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    },
+    {
+      "file": "audio_wav/ambient_cosmic_loop_placeholder.wav",
+      "cue_id": "ambient_cosmic_loop_placeholder",
+      "group": "ambient",
+      "gameplay_use": "cosmic ambience placeholder",
+      "duration_seconds": 1.25,
+      "placeholder_note": "Synthetic placeholder tone only; replace with final designed audio."
+    }
+  ]
+}

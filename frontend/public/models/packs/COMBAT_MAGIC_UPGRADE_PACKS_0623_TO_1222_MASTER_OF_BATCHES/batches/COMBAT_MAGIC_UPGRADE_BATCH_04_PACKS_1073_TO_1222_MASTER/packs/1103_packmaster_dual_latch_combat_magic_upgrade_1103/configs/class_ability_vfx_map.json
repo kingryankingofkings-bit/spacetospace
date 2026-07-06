@@ -1,0 +1,39 @@
+{
+  "class": "Packmaster",
+  "combat_style": "Tag-Team / Grappler",
+  "subclass": "Hound-Rider",
+  "specialization": "Mounted Artillery",
+  "primary_ability": "Dual-Latch",
+  "resource": "Command Points",
+  "ability_vfx": {
+    "cast_module": "glb_modules/01_class_special_attack_vfx.glb",
+    "emission_map": "texture_upgrades/01_class_ability_emission.png",
+    "glyph_sheet": "texture_upgrades/02_subclass_talent_glyph_sheet.png",
+    "cast_audio": "audio_cues/01_special_attack_cast.wav",
+    "impact_audio": "audio_cues/02_magic_impact.wav",
+    "engine_profile": {
+      "spawn_socket": "hands_or_weapon_tip",
+      "lifetime_ms": 1010,
+      "blend_mode": "additive_emissive",
+      "hitstop_ms": 59,
+      "combo_safe_cancel_window_ms": 180
+    }
+  },
+  "all_class_subclasses": [
+    "Alpha-Handler",
+    "Feral Vanguard",
+    "Outward Hunter",
+    "Hound-Rider"
+  ],
+  "all_class_specializations": [
+    "Heavy-Chewer Lockdown",
+    "Coordinated Assault",
+    "Blood-Scent",
+    "Pack Mentality",
+    "Flanking Maneuvers",
+    "Territorial Divide",
+    "The Stampede",
+    "Mounted Artillery"
+  ],
+  "coverage_note": "Across the 600-pack set, class, subclass, specialization, and level-tree ability coverage is rotated through all ten player classes."
+}

@@ -1,0 +1,1622 @@
+{
+  "pack_name": "VFX Proxy + Combat Telegraph GLB Pack v1",
+  "created_utc": "2026-07-05T06:57:20.329961+00:00",
+  "format": "GLB",
+  "asset_count": 68,
+  "notes": [
+    "All assets are real static GLB mesh proxies.",
+    "Intended as browser-game VFX placeholders and combat readability assets.",
+    "Not particle systems, shaders, animations, sounds, or engine prefab logic.",
+    "Use engine-side transparency, emissive materials, additive blending, billboarding, scaling curves, and timed despawn logic for production behavior."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/vfx_slash_arc_light.glb",
+      "name": "Light Slash Arc",
+      "category": "melee_vfx",
+      "gameplay_use": "light attack slash trail",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.766,
+          0.035,
+          0.995
+        ],
+        "size": [
+          0.568,
+          0.509,
+          1.332
+        ]
+      },
+      "tags": [
+        "slash",
+        "melee"
+      ],
+      "size_bytes": 3952
+    },
+    {
+      "file": "glb_assets/vfx_slash_arc_heavy.glb",
+      "name": "Heavy Slash Arc",
+      "category": "melee_vfx",
+      "gameplay_use": "heavy attack slash trail",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.887,
+          0.018,
+          1.05
+        ],
+        "size": [
+          1.125,
+          0.924,
+          2.471
+        ]
+      },
+      "tags": [
+        "slash",
+        "heavy"
+      ],
+      "size_bytes": 5588
+    },
+    {
+      "file": "glb_assets/vfx_cross_slash.glb",
+      "name": "Cross Slash",
+      "category": "melee_vfx",
+      "gameplay_use": "cross slash combo trail",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.645,
+          -0.0,
+          0.977
+        ],
+        "size": [
+          0.74,
+          1.178,
+          1.649
+        ]
+      },
+      "tags": [
+        "slash",
+        "combo"
+      ],
+      "size_bytes": 5592
+    },
+    {
+      "file": "glb_assets/vfx_spinning_attack_ring.glb",
+      "name": "Spinning Attack Ring",
+      "category": "melee_vfx",
+      "gameplay_use": "360-degree melee spin effect",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.85
+        ],
+        "size": [
+          2.47,
+          2.47,
+          0.067
+        ]
+      },
+      "tags": [
+        "melee",
+        "spin"
+      ],
+      "size_bytes": 9424
+    },
+    {
+      "file": "glb_assets/vfx_uppercut_trail.glb",
+      "name": "Uppercut Trail",
+      "category": "melee_vfx",
+      "gameplay_use": "vertical launcher attack trail",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.038,
+          0.404
+        ],
+        "size": [
+          0.03,
+          1.81,
+          0.807
+        ]
+      },
+      "tags": [
+        "launcher"
+      ],
+      "size_bytes": 3964
+    },
+    {
+      "file": "glb_assets/vfx_ground_slam_crack.glb",
+      "name": "Ground Slam Crack",
+      "category": "melee_vfx",
+      "gameplay_use": "ground impact crack proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.036
+        ],
+        "size": [
+          1.593,
+          1.55,
+          0.056
+        ]
+      },
+      "tags": [
+        "slam",
+        "ground"
+      ],
+      "size_bytes": 7588
+    },
+    {
+      "file": "glb_assets/vfx_vault_kick_trail.glb",
+      "name": "Vault Kick Trail",
+      "category": "combo_vfx",
+      "gameplay_use": "vault kick / ally assist trail",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.57,
+          -0.166,
+          0.735
+        ],
+        "size": [
+          0.801,
+          0.312,
+          1.627
+        ]
+      },
+      "tags": [
+        "combo",
+        "vault"
+      ],
+      "size_bytes": 6240
+    },
+    {
+      "file": "glb_assets/vfx_aerial_juggle_trail.glb",
+      "name": "Aerial Juggle Trail",
+      "category": "combo_vfx",
+      "gameplay_use": "air combo trail proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.064,
+          0.383,
+          0.945
+        ],
+        "size": [
+          0.863,
+          1.301,
+          1.806
+        ]
+      },
+      "tags": [
+        "combo",
+        "aerial"
+      ],
+      "size_bytes": 5584
+    },
+    {
+      "file": "glb_assets/vfx_impact_burst_small.glb",
+      "name": "Small Impact Burst",
+      "category": "impact_vfx",
+      "gameplay_use": "small hit impact",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.275
+        ],
+        "size": [
+          1.093,
+          1.093,
+          0.29
+        ]
+      },
+      "tags": [
+        "impact",
+        "small"
+      ],
+      "size_bytes": 7564
+    },
+    {
+      "file": "glb_assets/vfx_impact_burst_large.glb",
+      "name": "Large Impact Burst",
+      "category": "impact_vfx",
+      "gameplay_use": "large hit impact",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.402
+        ],
+        "size": [
+          1.945,
+          1.945,
+          0.484
+        ]
+      },
+      "tags": [
+        "impact",
+        "large"
+      ],
+      "size_bytes": 9764
+    },
+    {
+      "file": "glb_assets/vfx_block_spark.glb",
+      "name": "Block Spark",
+      "category": "impact_vfx",
+      "gameplay_use": "blocked attack spark",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "size": [
+          0.918,
+          0.918,
+          0.65
+        ]
+      },
+      "tags": [
+        "block"
+      ],
+      "size_bytes": 6320
+    },
+    {
+      "file": "glb_assets/vfx_parry_flash.glb",
+      "name": "Parry Flash",
+      "category": "impact_vfx",
+      "gameplay_use": "perfect counter/parry visual",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.75
+        ],
+        "size": [
+          1.55,
+          0.32,
+          1.55
+        ]
+      },
+      "tags": [
+        "parry",
+        "counter"
+      ],
+      "size_bytes": 9632
+    },
+    {
+      "file": "glb_assets/vfx_stagger_stars.glb",
+      "name": "Stagger Stars",
+      "category": "status_vfx",
+      "gameplay_use": "stunned/staggered status proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.043,
+          0.0,
+          1.4
+        ],
+        "size": [
+          1.054,
+          1.096,
+          0.07
+        ]
+      },
+      "tags": [
+        "stun"
+      ],
+      "size_bytes": 11240
+    },
+    {
+      "file": "glb_assets/vfx_armor_break_shards.glb",
+      "name": "Armor Break Shards",
+      "category": "boss_vfx",
+      "gameplay_use": "ablative armor break visual",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.435
+        ],
+        "size": [
+          1.55,
+          1.55,
+          0.718
+        ]
+      },
+      "tags": [
+        "armor_break"
+      ],
+      "size_bytes": 12552
+    },
+    {
+      "file": "glb_assets/vfx_fire_burst.glb",
+      "name": "Fire Burst",
+      "category": "elemental_vfx",
+      "gameplay_use": "fire explosion proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.783
+        ],
+        "size": [
+          1.37,
+          1.37,
+          1.533
+        ]
+      },
+      "tags": [
+        "fire"
+      ],
+      "size_bytes": 7664
+    },
+    {
+      "file": "glb_assets/vfx_fireball_projectile.glb",
+      "name": "Fireball Projectile",
+      "category": "projectile_vfx",
+      "gameplay_use": "fire projectile proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.51,
+          0.35
+        ],
+        "size": [
+          0.756,
+          1.58,
+          0.756
+        ]
+      },
+      "tags": [
+        "fire",
+        "projectile"
+      ],
+      "size_bytes": 8884
+    },
+    {
+      "file": "glb_assets/vfx_flame_wall_segment.glb",
+      "name": "Flame Wall Segment",
+      "category": "hazard_vfx",
+      "gameplay_use": "fire wall hazard segment",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.707
+        ],
+        "size": [
+          2.0,
+          0.315,
+          1.385
+        ]
+      },
+      "tags": [
+        "fire",
+        "wall"
+      ],
+      "size_bytes": 5088
+    },
+    {
+      "file": "glb_assets/vfx_burning_ground_patch.glb",
+      "name": "Burning Ground Patch",
+      "category": "hazard_vfx",
+      "gameplay_use": "damage-over-time fire patch",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "size": [
+          1.83,
+          1.83,
+          0.6
+        ]
+      },
+      "tags": [
+        "fire",
+        "dot"
+      ],
+      "size_bytes": 12596
+    },
+    {
+      "file": "glb_assets/vfx_ice_spike_cluster.glb",
+      "name": "Ice Spike Cluster",
+      "category": "elemental_vfx",
+      "gameplay_use": "ice spike attack proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.015
+        ],
+        "size": [
+          1.4,
+          1.4,
+          2.03
+        ]
+      },
+      "tags": [
+        "ice",
+        "spike"
+      ],
+      "size_bytes": 4412
+    },
+    {
+      "file": "glb_assets/vfx_frost_nova_ring.glb",
+      "name": "Frost Nova Ring",
+      "category": "elemental_vfx",
+      "gameplay_use": "expanding ice ring proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.073
+        ],
+        "size": [
+          2.38,
+          2.367,
+          0.082
+        ]
+      },
+      "tags": [
+        "ice",
+        "nova"
+      ],
+      "size_bytes": 11652
+    },
+    {
+      "file": "glb_assets/vfx_ice_shard_projectile.glb",
+      "name": "Ice Shard Projectile",
+      "category": "projectile_vfx",
+      "gameplay_use": "ice projectile proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.017,
+          0.225,
+          0.35
+        ],
+        "size": [
+          0.326,
+          0.85,
+          0.342
+        ]
+      },
+      "tags": [
+        "ice",
+        "projectile"
+      ],
+      "size_bytes": 2036
+    },
+    {
+      "file": "glb_assets/vfx_freeze_status_ring.glb",
+      "name": "Freeze Status Ring",
+      "category": "status_vfx",
+      "gameplay_use": "frozen enemy status proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.75
+        ],
+        "size": [
+          1.18,
+          1.18,
+          1.17
+        ]
+      },
+      "tags": [
+        "freeze"
+      ],
+      "size_bytes": 9656
+    },
+    {
+      "file": "glb_assets/vfx_lightning_bolt.glb",
+      "name": "Lightning Bolt",
+      "category": "elemental_vfx",
+      "gameplay_use": "single lightning strike proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.019
+        ],
+        "size": [
+          0.95,
+          0.95,
+          1.985
+        ]
+      },
+      "tags": [
+        "lightning"
+      ],
+      "size_bytes": 8708
+    },
+    {
+      "file": "glb_assets/vfx_chain_lightning_arc.glb",
+      "name": "Chain Lightning Arc",
+      "category": "elemental_vfx",
+      "gameplay_use": "chain lightning between targets",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.025,
+          0.915
+        ],
+        "size": [
+          2.2,
+          0.313,
+          0.331
+        ]
+      },
+      "tags": [
+        "chain",
+        "lightning"
+      ],
+      "size_bytes": 6724
+    },
+    {
+      "file": "glb_assets/vfx_emp_pulse_ring.glb",
+      "name": "EMP Pulse Ring",
+      "category": "elemental_vfx",
+      "gameplay_use": "EMP area pulse proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.128
+        ],
+        "size": [
+          2.47,
+          2.456,
+          0.123
+        ]
+      },
+      "tags": [
+        "emp"
+      ],
+      "size_bytes": 13256
+    },
+    {
+      "file": "glb_assets/vfx_overclock_sparks.glb",
+      "name": "Overclock Sparks",
+      "category": "status_vfx",
+      "gameplay_use": "mechanical overclock status proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.025,
+          0.85
+        ],
+        "size": [
+          1.15,
+          0.194,
+          1.15
+        ]
+      },
+      "tags": [
+        "overclock"
+      ],
+      "size_bytes": 9356
+    },
+    {
+      "file": "glb_assets/vfx_poison_cloud.glb",
+      "name": "Poison Cloud",
+      "category": "hazard_vfx",
+      "gameplay_use": "poison gas cloud proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.54
+        ],
+        "size": [
+          1.7,
+          1.7,
+          1.08
+        ]
+      },
+      "tags": [
+        "poison",
+        "cloud"
+      ],
+      "size_bytes": 6444
+    },
+    {
+      "file": "glb_assets/vfx_acid_splash.glb",
+      "name": "Acid Splash",
+      "category": "elemental_vfx",
+      "gameplay_use": "acid impact/splash proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.235
+        ],
+        "size": [
+          1.4,
+          1.4,
+          0.47
+        ]
+      },
+      "tags": [
+        "acid"
+      ],
+      "size_bytes": 8532
+    },
+    {
+      "file": "glb_assets/vfx_venom_projectile.glb",
+      "name": "Venom Projectile",
+      "category": "projectile_vfx",
+      "gameplay_use": "venom spit projectile proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.416,
+          0.35
+        ],
+        "size": [
+          0.506,
+          1.207,
+          0.374
+        ]
+      },
+      "tags": [
+        "poison",
+        "projectile"
+      ],
+      "size_bytes": 3648
+    },
+    {
+      "file": "glb_assets/vfx_corrosion_status_drip.glb",
+      "name": "Corrosion Status Drip",
+      "category": "status_vfx",
+      "gameplay_use": "corroding armor/status proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.884
+        ],
+        "size": [
+          0.95,
+          0.087,
+          1.368
+        ]
+      },
+      "tags": [
+        "corrosion"
+      ],
+      "size_bytes": 5952
+    },
+    {
+      "file": "glb_assets/vfx_root_snare_burst.glb",
+      "name": "Root Snare Burst",
+      "category": "nature_vfx",
+      "gameplay_use": "root immobilize attack proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.555
+        ],
+        "size": [
+          1.7,
+          1.7,
+          1.111
+        ]
+      },
+      "tags": [
+        "root",
+        "snare"
+      ],
+      "size_bytes": 4420
+    },
+    {
+      "file": "glb_assets/vfx_leaf_heal_swirl.glb",
+      "name": "Leaf Heal Swirl",
+      "category": "healing_vfx",
+      "gameplay_use": "nature healing effect proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.75
+        ],
+        "size": [
+          1.35,
+          1.34,
+          1.35
+        ]
+      },
+      "tags": [
+        "healing",
+        "nature"
+      ],
+      "size_bytes": 13384
+    },
+    {
+      "file": "glb_assets/vfx_earth_shockwave.glb",
+      "name": "Earth Shockwave",
+      "category": "nature_vfx",
+      "gameplay_use": "ground shockwave proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.111
+        ],
+        "size": [
+          2.48,
+          2.48,
+          0.138
+        ]
+      },
+      "tags": [
+        "earth",
+        "shockwave"
+      ],
+      "size_bytes": 16164
+    },
+    {
+      "file": "glb_assets/vfx_bark_armor_regrowth.glb",
+      "name": "Bark Armor Regrowth",
+      "category": "nature_vfx",
+      "gameplay_use": "regenerating bark armor proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.85
+        ],
+        "size": [
+          1.15,
+          1.02,
+          1.15
+        ]
+      },
+      "tags": [
+        "bark",
+        "regrowth"
+      ],
+      "size_bytes": 9612
+    },
+    {
+      "file": "glb_assets/vfx_void_rift_core.glb",
+      "name": "Void Rift Core",
+      "category": "void_vfx",
+      "gameplay_use": "rift pull center proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "size": [
+          1.7,
+          1.7,
+          1.51
+        ]
+      },
+      "tags": [
+        "void",
+        "rift"
+      ],
+      "size_bytes": 14484
+    },
+    {
+      "file": "glb_assets/vfx_gravity_pull_ring.glb",
+      "name": "Gravity Pull Ring",
+      "category": "void_vfx",
+      "gameplay_use": "pulling area-of-effect proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.092
+        ],
+        "size": [
+          3.17,
+          3.17,
+          0.13
+        ]
+      },
+      "tags": [
+        "gravity",
+        "pull"
+      ],
+      "size_bytes": 17484
+    },
+    {
+      "file": "glb_assets/vfx_phase_shift_afterimage.glb",
+      "name": "Phase Shift Afterimage",
+      "category": "void_vfx",
+      "gameplay_use": "intangible dodge/phase proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.061,
+          0.0,
+          1.19
+        ],
+        "size": [
+          0.867,
+          0.36,
+          1.08
+        ]
+      },
+      "tags": [
+        "phase"
+      ],
+      "size_bytes": 4864
+    },
+    {
+      "file": "glb_assets/vfx_reality_tear_line.glb",
+      "name": "Reality Tear Line",
+      "category": "void_vfx",
+      "gameplay_use": "linear battlefield tear proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.005,
+          0.135
+        ],
+        "size": [
+          2.3,
+          0.331,
+          0.09
+        ]
+      },
+      "tags": [
+        "rift",
+        "line"
+      ],
+      "size_bytes": 2828
+    },
+    {
+      "file": "glb_assets/vfx_zero_g_field_bubble.glb",
+      "name": "Zero-G Field Bubble",
+      "category": "void_vfx",
+      "gameplay_use": "zero-gravity field proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "size": [
+          2.15,
+          2.15,
+          2.15
+        ]
+      },
+      "tags": [
+        "zero_g"
+      ],
+      "size_bytes": 15016
+    },
+    {
+      "file": "glb_assets/vfx_sonic_wave_cone.glb",
+      "name": "Sonic Wave Cone",
+      "category": "sonic_vfx",
+      "gameplay_use": "cone-shaped sonic bellow proxy",
+      "collider_type": "mesh",
+      "bounds": {
+        "center": [
+          1.1,
+          0.0,
+          0.071
+        ],
+        "size": [
+          2.2,
+          1.5,
+          0.047
+        ]
+      },
+      "tags": [
+        "sonic",
+        "cone"
+      ],
+      "size_bytes": 6260
+    },
+    {
+      "file": "glb_assets/vfx_bass_drop_ring.glb",
+      "name": "Bass Drop Ring",
+      "category": "sonic_vfx",
+      "gameplay_use": "arena-wide bass shockwave proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.09
+        ],
+        "size": [
+          3.39,
+          3.39,
+          0.107
+        ]
+      },
+      "tags": [
+        "sonic",
+        "shockwave"
+      ],
+      "size_bytes": 18968
+    },
+    {
+      "file": "glb_assets/vfx_rhythm_beat_marker.glb",
+      "name": "Rhythm Beat Marker",
+      "category": "sonic_vfx",
+      "gameplay_use": "timed beat/strike marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.062
+        ],
+        "size": [
+          1.55,
+          1.55,
+          0.124
+        ]
+      },
+      "tags": [
+        "rhythm"
+      ],
+      "size_bytes": 9004
+    },
+    {
+      "file": "glb_assets/vfx_redirectable_sonic_sphere.glb",
+      "name": "Redirectable Sonic Sphere",
+      "category": "sonic_vfx",
+      "gameplay_use": "bouncing counterable sonic projectile",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "size": [
+          1.01,
+          1.01,
+          1.01
+        ]
+      },
+      "tags": [
+        "sonic",
+        "projectile"
+      ],
+      "size_bytes": 8864
+    },
+    {
+      "file": "glb_assets/vfx_beam_laser_red.glb",
+      "name": "Red Laser Beam",
+      "category": "beam_vfx",
+      "gameplay_use": "straight beam attack proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.08,
+          0.0,
+          1.0
+        ],
+        "size": [
+          3.16,
+          0.32,
+          0.425
+        ]
+      },
+      "tags": [
+        "beam",
+        "laser"
+      ],
+      "size_bytes": 7352
+    },
+    {
+      "file": "glb_assets/vfx_beam_arcane_purple.glb",
+      "name": "Arcane Purple Beam",
+      "category": "beam_vfx",
+      "gameplay_use": "straight beam attack proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.08,
+          0.0,
+          1.0
+        ],
+        "size": [
+          3.16,
+          0.32,
+          0.425
+        ]
+      },
+      "tags": [
+        "beam",
+        "arcane"
+      ],
+      "size_bytes": 7352
+    },
+    {
+      "file": "glb_assets/vfx_beam_healing_green.glb",
+      "name": "Healing Beam",
+      "category": "beam_vfx",
+      "gameplay_use": "straight beam attack proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.08,
+          0.0,
+          1.0
+        ],
+        "size": [
+          3.16,
+          0.32,
+          0.425
+        ]
+      },
+      "tags": [
+        "beam",
+        "healing"
+      ],
+      "size_bytes": 7352
+    },
+    {
+      "file": "glb_assets/vfx_crystalline_beam_blue.glb",
+      "name": "Crystalline Beam",
+      "category": "beam_vfx",
+      "gameplay_use": "straight beam attack proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          -0.08,
+          0.0,
+          1.0
+        ],
+        "size": [
+          3.16,
+          0.32,
+          0.425
+        ]
+      },
+      "tags": [
+        "beam",
+        "crystal"
+      ],
+      "size_bytes": 7344
+    },
+    {
+      "file": "glb_assets/vfx_shield_bubble_basic.glb",
+      "name": "Shield Bubble Basic",
+      "category": "shield_vfx",
+      "gameplay_use": "personal shield bubble proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.85
+        ],
+        "size": [
+          1.684,
+          1.684,
+          1.684
+        ]
+      },
+      "tags": [
+        "shield"
+      ],
+      "size_bytes": 13928
+    },
+    {
+      "file": "glb_assets/vfx_barrier_wall.glb",
+      "name": "Energy Barrier Wall",
+      "category": "shield_vfx",
+      "gameplay_use": "temporary protective wall proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.75
+        ],
+        "size": [
+          2.5,
+          0.2,
+          1.45
+        ]
+      },
+      "tags": [
+        "barrier"
+      ],
+      "size_bytes": 5564
+    },
+    {
+      "file": "glb_assets/vfx_healing_circle.glb",
+      "name": "Healing Circle",
+      "category": "healing_vfx",
+      "gameplay_use": "healing area proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.065
+        ],
+        "size": [
+          2.15,
+          2.15,
+          0.129
+        ]
+      },
+      "tags": [
+        "healing"
+      ],
+      "size_bytes": 15276
+    },
+    {
+      "file": "glb_assets/vfx_buff_aura_gold.glb",
+      "name": "Gold Buff Aura",
+      "category": "status_vfx",
+      "gameplay_use": "temporary buff aura proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.723
+        ],
+        "size": [
+          1.55,
+          1.55,
+          1.394
+        ]
+      },
+      "tags": [
+        "buff"
+      ],
+      "size_bytes": 9592
+    },
+    {
+      "file": "glb_assets/vfx_teleport_marker.glb",
+      "name": "Teleport Marker",
+      "category": "teleport_vfx",
+      "gameplay_use": "teleport destination marker",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.275
+        ],
+        "size": [
+          1.95,
+          1.95,
+          2.55
+        ]
+      },
+      "tags": [
+        "teleport"
+      ],
+      "size_bytes": 15200
+    },
+    {
+      "file": "glb_assets/vfx_spawn_portal.glb",
+      "name": "Spawn Portal",
+      "category": "teleport_vfx",
+      "gameplay_use": "enemy spawn portal proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.955
+        ],
+        "size": [
+          1.81,
+          1.0,
+          1.9
+        ]
+      },
+      "tags": [
+        "portal",
+        "spawn"
+      ],
+      "size_bytes": 14540
+    },
+    {
+      "file": "glb_assets/vfx_despawn_smoke_puff.glb",
+      "name": "Despawn Smoke Puff",
+      "category": "teleport_vfx",
+      "gameplay_use": "despawn / vanish proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          -0.05,
+          -0.015,
+          0.4
+        ],
+        "size": [
+          1.1,
+          0.91,
+          0.8
+        ]
+      },
+      "tags": [
+        "smoke"
+      ],
+      "size_bytes": 4628
+    },
+    {
+      "file": "glb_assets/vfx_checkpoint_flare.glb",
+      "name": "Checkpoint Flare",
+      "category": "teleport_vfx",
+      "gameplay_use": "checkpoint activation visual",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.525
+        ],
+        "size": [
+          1.41,
+          1.41,
+          3.05
+        ]
+      },
+      "tags": [
+        "checkpoint"
+      ],
+      "size_bytes": 8876
+    },
+    {
+      "file": "glb_assets/vfx_boss_phase_explosion.glb",
+      "name": "Boss Phase Explosion",
+      "category": "boss_vfx",
+      "gameplay_use": "boss phase transition burst",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.434
+        ],
+        "size": [
+          2.89,
+          2.89,
+          0.793
+        ]
+      },
+      "tags": [
+        "boss",
+        "phase"
+      ],
+      "size_bytes": 17604
+    },
+    {
+      "file": "glb_assets/vfx_evolution_data_ring.glb",
+      "name": "Evolution Data Ring",
+      "category": "boss_vfx",
+      "gameplay_use": "data-forged evolution ring proxy",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.04,
+          1.0
+        ],
+        "size": [
+          2.17,
+          0.18,
+          2.17
+        ]
+      },
+      "tags": [
+        "boss",
+        "evolution"
+      ],
+      "size_bytes": 19904
+    },
+    {
+      "file": "glb_assets/vfx_cosmic_meteor_warning.glb",
+      "name": "Cosmic Meteor Warning",
+      "category": "boss_vfx",
+      "gameplay_use": "meteor landing warning proxy",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.926
+        ],
+        "size": [
+          2.17,
+          2.17,
+          1.848
+        ]
+      },
+      "tags": [
+        "meteor",
+        "warning"
+      ],
+      "size_bytes": 12100
+    },
+    {
+      "file": "glb_assets/telegraph_warning_circle_small.glb",
+      "name": "Warning Circle Small",
+      "category": "combat_telegraph",
+      "gameplay_use": "small circular danger telegraph",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.035
+        ],
+        "size": [
+          1.444,
+          1.444,
+          0.071
+        ]
+      },
+      "tags": [
+        "telegraph",
+        "circle"
+      ],
+      "size_bytes": 7780
+    },
+    {
+      "file": "glb_assets/telegraph_warning_circle_large.glb",
+      "name": "Warning Circle Large",
+      "category": "combat_telegraph",
+      "gameplay_use": "large circular danger telegraph",
+      "collider_type": "cylinder",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.043
+        ],
+        "size": [
+          2.7,
+          2.7,
+          0.088
+        ]
+      },
+      "tags": [
+        "telegraph",
+        "circle"
+      ],
+      "size_bytes": 15116
+    },
+    {
+      "file": "glb_assets/telegraph_warning_cone.glb",
+      "name": "Warning Cone",
+      "category": "combat_telegraph",
+      "gameplay_use": "cone attack warning",
+      "collider_type": "mesh",
+      "bounds": {
+        "center": [
+          1.2,
+          0.0,
+          0.041
+        ],
+        "size": [
+          2.4,
+          1.6,
+          0.068
+        ]
+      },
+      "tags": [
+        "telegraph",
+        "cone"
+      ],
+      "size_bytes": 2188
+    },
+    {
+      "file": "glb_assets/telegraph_warning_line.glb",
+      "name": "Warning Line",
+      "category": "combat_telegraph",
+      "gameplay_use": "line attack warning",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.041
+        ],
+        "size": [
+          3.2,
+          0.32,
+          0.077
+        ]
+      },
+      "tags": [
+        "telegraph",
+        "line"
+      ],
+      "size_bytes": 2068
+    },
+    {
+      "file": "glb_assets/telegraph_rectangular_zone.glb",
+      "name": "Rectangular Zone Warning",
+      "category": "combat_telegraph",
+      "gameplay_use": "rectangular hazard warning",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.031
+        ],
+        "size": [
+          2.64,
+          1.24,
+          0.062
+        ]
+      },
+      "tags": [
+        "telegraph",
+        "rectangle"
+      ],
+      "size_bytes": 3576
+    },
+    {
+      "file": "glb_assets/telegraph_counter_prompt_marker.glb",
+      "name": "Counter Prompt Marker",
+      "category": "combat_telegraph",
+      "gameplay_use": "counter/parry timing marker",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.7
+        ],
+        "size": [
+          0.77,
+          0.067,
+          0.77
+        ]
+      },
+      "tags": [
+        "counter",
+        "telegraph"
+      ],
+      "size_bytes": 6280
+    },
+    {
+      "file": "glb_assets/telegraph_projectile_indicator.glb",
+      "name": "Projectile Indicator",
+      "category": "combat_telegraph",
+      "gameplay_use": "incoming projectile warning marker",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.263,
+          0.65
+        ],
+        "size": [
+          0.69,
+          0.574,
+          0.68
+        ]
+      },
+      "tags": [
+        "projectile",
+        "telegraph"
+      ],
+      "size_bytes": 5468
+    },
+    {
+      "file": "glb_assets/vfx_combo_multiplier_orbit.glb",
+      "name": "Combo Multiplier Orbit",
+      "category": "combo_vfx",
+      "gameplay_use": "combo streak visual around player",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.05
+        ],
+        "size": [
+          1.75,
+          1.526,
+          1.75
+        ]
+      },
+      "tags": [
+        "combo"
+      ],
+      "size_bytes": 18076
+    },
+    {
+      "file": "glb_assets/vfx_finisher_starburst.glb",
+      "name": "Finisher Starburst",
+      "category": "combo_vfx",
+      "gameplay_use": "combo finisher impact visual",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.753
+        ],
+        "size": [
+          2.595,
+          2.595,
+          0.666
+        ]
+      },
+      "tags": [
+        "finisher"
+      ],
+      "size_bytes": 11880
+    },
+    {
+      "file": "glb_assets/vfx_grapple_line.glb",
+      "name": "Grapple Line",
+      "category": "movement_vfx",
+      "gameplay_use": "grapple traversal line proxy",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.137,
+          0.0,
+          1.1
+        ],
+        "size": [
+          3.075,
+          0.24,
+          0.45
+        ]
+      },
+      "tags": [
+        "grapple"
+      ],
+      "size_bytes": 7272
+    }
+  ]
+}

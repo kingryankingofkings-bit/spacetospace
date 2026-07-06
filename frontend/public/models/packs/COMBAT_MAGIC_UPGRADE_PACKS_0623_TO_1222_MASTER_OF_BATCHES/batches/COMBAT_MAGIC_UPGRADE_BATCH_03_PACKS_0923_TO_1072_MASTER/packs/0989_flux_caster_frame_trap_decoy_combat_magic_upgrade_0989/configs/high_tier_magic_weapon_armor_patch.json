@@ -1,0 +1,24 @@
+{
+  "tier": "high-tier magic",
+  "weapon_aura": "glb_modules/04_high_tier_magic_weapon_aura.glb",
+  "armor_aura": "glb_modules/05_high_tier_magic_armor_aura.glb",
+  "texture_slots": {
+    "weapon_finish": "texture_upgrades/06_weapon_finish.png",
+    "armor_trim": "texture_upgrades/07_armor_trim.png"
+  },
+  "affix_pool": [
+    "combo-safe cancel",
+    "critical elemental echo",
+    "armor-shred pulse",
+    "phase blink after parry",
+    "aerial juggle extender",
+    "support NPC proc",
+    "weather-sun resonance",
+    "boss-weakpoint amplification"
+  ],
+  "drop_context": {
+    "boss": "The Null Anomaly",
+    "monster_family": "The Siphon-Ticks",
+    "class_bias": "Flux-Caster"
+  }
+}

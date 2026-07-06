@@ -1,0 +1,518 @@
+{
+  "pack_number": 475,
+  "pack_name": "Skyship Propulsion Upgrades Batch 053 - Courier Cutter",
+  "created_utc": "2026-07-05T09:42:31.811157+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_propulsion_upgrades",
+  "theme": "transit_cyan",
+  "element": "magnetic",
+  "skyship_class_profile": {
+    "class": "courier_cutter",
+    "scale": 1.1,
+    "role": "cargo runner and messenger craft"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-046_ilyra_highroot.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-047_sahel_meridian.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-048_bracca_halforn.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-049_captain_aurex_dawnhelm.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/characters/SWN-050_marshal_veyra_solis.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/headquarters/SWHQ-001_aerie_of_the_dawnshield.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-001_sparrowhook_scout_skiff.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-002_cloudneedle_patrol_boat.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "cloud",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-003_dawn_courier.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-004_cloudhook_cutter.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "cloud",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-005_bronze_gull_brig.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-006_tempest_frigate.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-007_aegiswing_escort.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-008_stormglass_carrier.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-009_highwind_dreadnought.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-010_aether_titan_barge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-011_moonwake_medical_ark.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack(1).zip",
+      "path_in_zip": "dawnforge_sky_wardens_epochalypse_postgame_pack/models/skyships/SWS-012_warden_horizon_command_ark.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "ship",
+        "skyship",
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/01_surface_lift_dock_map.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "dock"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_basic_area_maps_pack.zip",
+      "path_in_zip": "geographic_master_guide_basic_area_maps_pack/area_maps/sub_locations/05_deep_transit_system/03_the_revision_labs/02_revision_engine_map.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "engine"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "332_water_star_environment_upgrade_batch_110.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_water_star_environment_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "332_water_star_environment_upgrade_batch_110.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_water_star_environment_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "332_water_star_environment_upgrade_batch_110.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_water_star_environment_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "332_water_star_environment_upgrade_batch_110.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_water_star_environment_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "332_water_star_environment_upgrade_batch_110.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_water_star_environment_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "333_material_polish_upgrade_batch_111.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_material_polish_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "333_material_polish_upgrade_batch_111.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_material_polish_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "333_material_polish_upgrade_batch_111.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_material_polish_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "333_material_polish_upgrade_batch_111.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_material_polish_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "333_material_polish_upgrade_batch_111.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_material_polish_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "333_material_polish_upgrade_batch_111.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_material_polish_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "334_texture_remaster_upgrade_batch_112.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_texture_remaster_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "334_texture_remaster_upgrade_batch_112.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_texture_remaster_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "334_texture_remaster_upgrade_batch_112.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_texture_remaster_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "334_texture_remaster_upgrade_batch_112.zip",
+      "path_in_zip": "upgrade_glb_overlays/04_texture_remaster_overlay_4.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "334_texture_remaster_upgrade_batch_112.zip",
+      "path_in_zip": "upgrade_glb_overlays/05_texture_remaster_overlay_5.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "334_texture_remaster_upgrade_batch_112.zip",
+      "path_in_zip": "upgrade_glb_overlays/06_texture_remaster_overlay_6.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "335_low_poly_silhouette_upgrade_batch_113.zip",
+      "path_in_zip": "upgrade_glb_overlays/01_low_poly_silhouette_overlay_1.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "335_low_poly_silhouette_upgrade_batch_113.zip",
+      "path_in_zip": "upgrade_glb_overlays/02_low_poly_silhouette_overlay_2.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "335_low_poly_silhouette_upgrade_batch_113.zip",
+      "path_in_zip": "upgrade_glb_overlays/03_low_poly_silhouette_overlay_3.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "403_material_polish_upgrade_batch_181.zip",
+      "path_in_zip": "texture_upgrades/12_material_polish_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/01_texture_remaster_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/02_texture_remaster_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/03_texture_remaster_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/04_texture_remaster_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/05_texture_remaster_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/06_texture_remaster_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/07_texture_remaster_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/08_texture_remaster_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/09_texture_remaster_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/10_texture_remaster_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/11_texture_remaster_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "404_texture_remaster_upgrade_batch_182.zip",
+      "path_in_zip": "texture_upgrades/12_texture_remaster_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/01_low_poly_silhouette_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/02_low_poly_silhouette_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/03_low_poly_silhouette_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/04_low_poly_silhouette_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/05_low_poly_silhouette_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/06_low_poly_silhouette_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "405_low_poly_silhouette_upgrade_batch_183.zip",
+      "path_in_zip": "texture_upgrades/07_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

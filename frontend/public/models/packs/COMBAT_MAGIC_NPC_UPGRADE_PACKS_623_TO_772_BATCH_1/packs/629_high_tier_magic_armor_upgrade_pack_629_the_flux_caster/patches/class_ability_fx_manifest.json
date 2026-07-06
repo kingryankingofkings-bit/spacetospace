@@ -1,0 +1,29 @@
+{
+  "class": "The Flux-Caster",
+  "combat_style": "Stance-Swapper / Elemental Combo",
+  "subclass": "Aether-Blade",
+  "specialization": "Blizzard",
+  "resource": "Aether Charges",
+  "selected_ability": "The Avatar of Flux",
+  "ability_pool_sample": [
+    "Flux-Strike",
+    "Stance Dance",
+    "Thermal Detonation",
+    "The Crucible",
+    "Flash-Freeze / Flash-Fry",
+    "The Maelstrom",
+    "The Avatar of Flux"
+  ],
+  "level_progression_coverage": "Designed to bind to level 1-40 talent tree abilities and capstones.",
+  "fx_modules": {
+    "cast": "glb_modules/01_ability_vfx_module.glb",
+    "trail_texture": "texture_upgrades/10_combat_flow_trail.png",
+    "ability_atlas": "texture_upgrades/04_player_class_ability_atlas.png",
+    "audio": "audio_cues/special_attack_cast.wav"
+  },
+  "implementation_notes": [
+    "Use shared class VFX controller with per-ability material overrides.",
+    "Bind major ability VFX to cooldown, finisher, aura, and ultimate activation events.",
+    "For subclass abilities, select color and timing from class resource and selected specialization."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "weather": "acid rain",
+  "sun_variant": {
+    "name": "Toxic Green Eclipse",
+    "rgb": [
+      118,
+      255,
+      100
+    ],
+    "weather": "green eclipse"
+  },
+  "terrain_module": "glb_modules/06_weather_terrain_nature_module.glb",
+  "sun_texture": "texture_upgrades/08_weather_sun_gradient.png",
+  "terrain_texture": "texture_upgrades/09_terrain_nature_detail.png",
+  "nature_element_behavior": {
+    "wind_affects_particles": true,
+    "rain_affects_reflections": true,
+    "sun_color_affects_emission_grade": true,
+    "weather_affects_random_monster_skin_tint": true
+  },
+  "sun_color_variations_available": [
+    {
+      "name": "Clear Dawn Sun",
+      "rgb": [
+        255,
+        214,
+        150
+      ],
+      "weather": "clear dawn"
+    },
+    {
+      "name": "Hard Noon White Sun",
+      "rgb": [
+        255,
+        248,
+        220
+      ],
+      "weather": "gold noon"
+    },
+    {
+      "name": "Ash Orange Sun",
+      "rgb": [
+        255,
+        126,
+        48
+      ],
+      "weather": "red ashfall"
+    },
+    {
+      "name": "Storm Violet Sun",
+      "rgb": [
+        164,
+        110,
+        255
+      ],
+      "weather": "violet stormfront"
+    },
+    {
+      "name": "Toxic Green Eclipse",
+      "rgb": [
+        118,
+        255,
+        100
+      ],
+      "weather": "green eclipse"
+    },
+    {
+      "name": "Deep Blue Lunar Sun",
+      "rgb": [
+        120,
+        175,
+        255
+      ],
+      "weather": "blue moonlight"
+    },
+    {
+      "name": "Black-Sun Rimlight",
+      "rgb": [
+        40,
+        20,
+        80
+      ],
+      "weather": "black-sun anomaly"
+    },
+    {
+      "name": "Aurora Cyan Sun",
+      "rgb": [
+        80,
+        255,
+        230
+      ],
+      "weather": "aurora rain"
+    }
+  ]
+}

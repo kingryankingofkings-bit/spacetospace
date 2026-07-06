@@ -1,0 +1,304 @@
+{
+  "pack_name": "UI HUD + Worldspace Markers GLB Pack v1",
+  "pack_slug": "02_ui_hud_worldspace_markers_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:56.251107+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "3D worldspace UI markers and HUD proxy meshes.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/health_bar_worldspace.glb",
+      "name": "Health Bar Worldspace",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.38
+        ],
+        "size": [
+          1.4,
+          1.079,
+          0.76
+        ]
+      },
+      "tags": [
+        "ui",
+        "green"
+      ],
+      "size_bytes": 8756
+    },
+    {
+      "file": "glb_assets/stamina_bar_worldspace.glb",
+      "name": "Stamina Bar Worldspace",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.38
+        ],
+        "size": [
+          1.4,
+          1.079,
+          0.76
+        ]
+      },
+      "tags": [
+        "ui",
+        "orange"
+      ],
+      "size_bytes": 8756
+    },
+    {
+      "file": "glb_assets/special_meter_worldspace.glb",
+      "name": "Special Meter Worldspace",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.38
+        ],
+        "size": [
+          1.4,
+          1.079,
+          0.76
+        ]
+      },
+      "tags": [
+        "ui",
+        "yellow"
+      ],
+      "size_bytes": 8756
+    },
+    {
+      "file": "glb_assets/boss_health_bar_proxy.glb",
+      "name": "Boss Health Bar Proxy",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.38
+        ],
+        "size": [
+          1.4,
+          1.079,
+          0.76
+        ]
+      },
+      "tags": [
+        "ui",
+        "green"
+      ],
+      "size_bytes": 8756
+    },
+    {
+      "file": "glb_assets/combo_counter_token.glb",
+      "name": "Combo Counter Token",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.512
+        ],
+        "size": [
+          1.09,
+          1.079,
+          1.025
+        ]
+      },
+      "tags": [
+        "ui",
+        "blue"
+      ],
+      "size_bytes": 10260
+    },
+    {
+      "file": "glb_assets/quest_marker_exclamation.glb",
+      "name": "Quest Marker Exclamation",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.09,
+          1.079,
+          1.15
+        ]
+      },
+      "tags": [
+        "ui",
+        "yellow"
+      ],
+      "size_bytes": 13296
+    },
+    {
+      "file": "glb_assets/vendor_marker.glb",
+      "name": "Vendor Marker",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.09,
+          1.079,
+          1.15
+        ]
+      },
+      "tags": [
+        "ui",
+        "white"
+      ],
+      "size_bytes": 13076
+    },
+    {
+      "file": "glb_assets/interact_prompt_marker.glb",
+      "name": "Interact Prompt Marker",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.09,
+          1.079,
+          1.15
+        ]
+      },
+      "tags": [
+        "ui",
+        "gold"
+      ],
+      "size_bytes": 13284
+    },
+    {
+      "file": "glb_assets/minimap_pin_marker.glb",
+      "name": "Minimap Pin Marker",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.75
+        ],
+        "size": [
+          1.09,
+          1.079,
+          1.5
+        ]
+      },
+      "tags": [
+        "ui",
+        "red"
+      ],
+      "size_bytes": 9036
+    },
+    {
+      "file": "glb_assets/party_member_marker.glb",
+      "name": "Party Member Marker",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.575
+        ],
+        "size": [
+          1.09,
+          1.079,
+          1.15
+        ]
+      },
+      "tags": [
+        "ui",
+        "orange"
+      ],
+      "size_bytes": 13292
+    },
+    {
+      "file": "glb_assets/damage_number_proxy.glb",
+      "name": "Damage Number Proxy",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.512
+        ],
+        "size": [
+          1.09,
+          1.079,
+          1.025
+        ]
+      },
+      "tags": [
+        "ui",
+        "yellow"
+      ],
+      "size_bytes": 10264
+    },
+    {
+      "file": "glb_assets/objective_arrow_marker.glb",
+      "name": "Objective Arrow Marker",
+      "template": "ui",
+      "gameplay_use": "3D worldspace UI markers and HUD proxy meshes.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.75
+        ],
+        "size": [
+          1.09,
+          1.079,
+          1.5
+        ]
+      },
+      "tags": [
+        "ui",
+        "green"
+      ],
+      "size_bytes": 9036
+    }
+  ]
+}

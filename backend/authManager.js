@@ -11,6 +11,7 @@ const authManager = {
   
   register: async (req, res) => {
     try {
+      await db.connectPromise;
       const { username, password } = req.body;
       if (!username || !password) {
         return res.status(400).json({ error: "Username and password are required" });
@@ -18,8 +19,11 @@ const authManager = {
       if (password.length < 6) {
         return res.status(400).json({ error: "Password must be at least 6 characters long" });
       }
-      const existing = await db.pool.query('SELECT id FROM users WHERE id = $1', [username]);
-      if (existing.rows.length > 0) {
+      if (password.length > 72) {
+        return res.status(400).json({ error: "Password must be at most 72 characters long" });
+      }
+      const existing = await db.getUser(username);
+      if (existing && existing.password_hash) {
         return res.status(400).json({ error: "Username already taken" });
       }
       
@@ -34,17 +38,21 @@ const authManager = {
 
   login: async (req, res) => {
     try {
+      await db.connectPromise;
       const { username, password } = req.body;
       if (!username || !password) {
          return res.status(400).json({ error: "Username and password are required" });
       }
+      if (password.length > 72) {
+         return res.status(400).json({ error: "Password must be at most 72 characters long" });
+      }
       
-      const { rows } = await db.pool.query('SELECT password_hash FROM users WHERE id = $1', [username]);
-      if (rows.length === 0) {
+      const user = await db.getUser(username);
+      if (!user || !user.password_hash) {
         return res.status(401).json({ error: "Invalid credentials" });
       }
       
-      const match = await bcrypt.compare(password, rows[0].password_hash);
+      const match = await bcrypt.compare(password, user.password_hash);
       if (!match) {
         return res.status(401).json({ error: "Invalid credentials" });
       }
@@ -64,6 +72,7 @@ const authManager = {
   
   refresh: async (req, res) => {
     try {
+      await db.connectPromise;
       const { refreshToken } = req.body;
       if (!refreshToken) {
         return res.status(400).json({ error: "Refresh token is required" });

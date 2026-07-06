@@ -1,0 +1,324 @@
+{
+  "pack_name": "Tiered Low-Poly Monster Model Pack",
+  "version": "1.0",
+  "created_for": "3D web browser game prototyping",
+  "asset_format": "glb",
+  "coordinate_system": {
+    "up": "+Y",
+    "forward": "-Z",
+    "unit_scale": "1 unit = 1 meter-style game unit"
+  },
+  "style": "stylized low-poly, vertex-colored, no external textures",
+  "limits": {
+    "rigged": false,
+    "animated": false,
+    "physics_colliders_included_as_meshes": false,
+    "note": "Collider recommendations are provided as JSON. These are game-ready prototype meshes, not fully rigged production characters."
+  },
+  "models": [
+    {
+      "id": "biped_tier_1_imp_grunt",
+      "family": "biped_goblin_demon",
+      "tier": 1,
+      "name": "Imp Grunt",
+      "description": "Small weak bipedal grunt with simple horns, claws, leather wraps, and loincloth.",
+      "file": "models/biped_tier_1_imp_grunt.glb",
+      "format": "glb",
+      "forward_axis": "-Z",
+      "up_axis": "+Y",
+      "rigged": false,
+      "animated": false,
+      "intended_use": "static or manually/procedurally animated low-poly browser-game monster",
+      "bounds": {
+        "min": [
+          -0.4995,
+          0.0788,
+          -0.3895
+        ],
+        "max": [
+          0.4995,
+          1.7193,
+          0.2205
+        ],
+        "size": [
+          0.999,
+          1.6406,
+          0.61
+        ],
+        "center": [
+          0.0,
+          0.899,
+          -0.0845
+        ]
+      },
+      "geometry_count": 56,
+      "file_size_bytes": 90160
+    },
+    {
+      "id": "biped_tier_2_bone_brute",
+      "family": "biped_goblin_demon",
+      "tier": 2,
+      "name": "Bone Brute",
+      "description": "Bulkier biped with shoulder bone plates, sharper claws, and stronger horns.",
+      "file": "models/biped_tier_2_bone_brute.glb",
+      "format": "glb",
+      "forward_axis": "-Z",
+      "up_axis": "+Y",
+      "rigged": false,
+      "animated": false,
+      "intended_use": "static or manually/procedurally animated low-poly browser-game monster",
+      "bounds": {
+        "min": [
+          -0.6135,
+          0.0858,
+          -0.4305
+        ],
+        "max": [
+          0.6135,
+          1.974,
+          0.2818
+        ],
+        "size": [
+          1.227,
+          1.8882,
+          0.7123
+        ],
+        "center": [
+          0.0,
+          1.0299,
+          -0.0743
+        ]
+      },
+      "geometry_count": 63,
+      "file_size_bytes": 107048
+    },
+    {
+      "id": "biped_tier_3_spine_hunter",
+      "family": "biped_goblin_demon",
+      "tier": 3,
+      "name": "Spine Hunter",
+      "description": "Elite bipedal hunter with elongated threat silhouette, crest, extra spikes, and heavier claws.",
+      "file": "models/biped_tier_3_spine_hunter.glb",
+      "format": "glb",
+      "forward_axis": "-Z",
+      "up_axis": "+Y",
+      "rigged": false,
+      "animated": false,
+      "intended_use": "static or manually/procedurally animated low-poly browser-game monster",
+      "bounds": {
+        "min": [
+          -0.642,
+          0.0995,
+          -0.4305
+        ],
+        "max": [
+          0.642,
+          2.2286,
+          0.3051
+        ],
+        "size": [
+          1.284,
+          2.1291,
+          0.7356
+        ],
+        "center": [
+          0.0,
+          1.164,
+          -0.0627
+        ]
+      },
+      "geometry_count": 65,
+      "file_size_bytes": 108688
+    },
+    {
+      "id": "biped_tier_4_warlord_boss",
+      "family": "biped_goblin_demon",
+      "tier": 4,
+      "name": "Warlord Boss",
+      "description": "Large boss-tier biped with bulky body, heavy horns, armor plates, and expanded spikes.",
+      "file": "models/biped_tier_4_warlord_boss.glb",
+      "format": "glb",
+      "forward_axis": "-Z",
+      "up_axis": "+Y",
+      "rigged": false,
+      "animated": false,
+      "intended_use": "static or manually/procedurally animated low-poly browser-game monster",
+      "bounds": {
+        "min": [
+          -0.8415,
+          0.1077,
+          -0.5002
+        ],
+        "max": [
+          0.8415,
+          2.6377,
+          0.4118
+        ],
+        "size": [
+          1.683,
+          2.53,
+          0.912
+        ],
+        "center": [
+          0.0,
+          1.3727,
+          -0.0442
+        ]
+      },
+      "geometry_count": 69,
+      "file_size_bytes": 117884
+    },
+    {
+      "id": "quadruped_tier_1_razorhound",
+      "family": "quadruped_reptile_wolf",
+      "tier": 1,
+      "name": "Razorhound",
+      "description": "Lean reptilian-wolf quadruped with a long tail, head plates, back spikes, and glowing eyes.",
+      "file": "models/quadruped_tier_1_razorhound.glb",
+      "format": "glb",
+      "forward_axis": "-Z",
+      "up_axis": "+Y",
+      "rigged": false,
+      "animated": false,
+      "intended_use": "static or manually/procedurally animated low-poly browser-game monster",
+      "bounds": {
+        "min": [
+          -0.3998,
+          0.0213,
+          -1.612
+        ],
+        "max": [
+          0.3998,
+          1.0472,
+          1.7414
+        ],
+        "size": [
+          0.7995,
+          1.026,
+          3.3534
+        ],
+        "center": [
+          0.0,
+          0.5342,
+          0.0647
+        ]
+      },
+      "geometry_count": 60,
+      "file_size_bytes": 107000
+    },
+    {
+      "id": "quadruped_tier_2_boneback_stalker",
+      "family": "quadruped_reptile_wolf",
+      "tier": 2,
+      "name": "Boneback Stalker",
+      "description": "Stronger quadruped with more muscle, extra bony plates, larger claws, and more dorsal spikes.",
+      "file": "models/quadruped_tier_2_boneback_stalker.glb",
+      "format": "glb",
+      "forward_axis": "-Z",
+      "up_axis": "+Y",
+      "rigged": false,
+      "animated": false,
+      "intended_use": "static or manually/procedurally animated low-poly browser-game monster",
+      "bounds": {
+        "min": [
+          -0.469,
+          0.0238,
+          -1.872
+        ],
+        "max": [
+          0.469,
+          1.2321,
+          2.0239
+        ],
+        "size": [
+          0.9381,
+          1.2084,
+          3.8959
+        ],
+        "center": [
+          0.0,
+          0.6279,
+          0.0759
+        ]
+      },
+      "geometry_count": 73,
+      "file_size_bytes": 135628
+    },
+    {
+      "id": "quadruped_tier_3_spined_alpha",
+      "family": "quadruped_reptile_wolf",
+      "tier": 3,
+      "name": "Spined Alpha",
+      "description": "High-threat quadruped with heavier armor plates, broader shoulders, and aggressive predator stance.",
+      "file": "models/quadruped_tier_3_spined_alpha.glb",
+      "format": "glb",
+      "forward_axis": "-Z",
+      "up_axis": "+Y",
+      "rigged": false,
+      "animated": false,
+      "intended_use": "static or manually/procedurally animated low-poly browser-game monster",
+      "bounds": {
+        "min": [
+          -0.5409,
+          0.0263,
+          -2.132
+        ],
+        "max": [
+          0.5409,
+          1.417,
+          2.3081
+        ],
+        "size": [
+          1.0817,
+          1.3908,
+          4.4401
+        ],
+        "center": [
+          0.0,
+          0.7216,
+          0.088
+        ]
+      },
+      "geometry_count": 83,
+      "file_size_bytes": 158268
+    },
+    {
+      "id": "quadruped_tier_4_apex_beast",
+      "family": "quadruped_reptile_wolf",
+      "tier": 4,
+      "name": "Apex Beast",
+      "description": "Boss-tier quadruped with bulky mass, large bony crest, dramatic dorsal spikes, and heavy claws.",
+      "file": "models/quadruped_tier_4_apex_beast.glb",
+      "format": "glb",
+      "forward_axis": "-Z",
+      "up_axis": "+Y",
+      "rigged": false,
+      "animated": false,
+      "intended_use": "static or manually/procedurally animated low-poly browser-game monster",
+      "bounds": {
+        "min": [
+          -0.6569,
+          0.0305,
+          -2.4752
+        ],
+        "max": [
+          0.6569,
+          1.6824,
+          2.6908
+        ],
+        "size": [
+          1.3138,
+          1.6519,
+          5.166
+        ],
+        "center": [
+          0.0,
+          0.8564,
+          0.1078
+        ]
+      },
+      "geometry_count": 90,
+      "file_size_bytes": 166600
+    }
+  ]
+}

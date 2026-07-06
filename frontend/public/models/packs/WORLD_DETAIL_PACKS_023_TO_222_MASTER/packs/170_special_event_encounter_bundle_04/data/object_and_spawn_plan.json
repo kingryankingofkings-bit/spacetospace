@@ -1,0 +1,172 @@
+{
+  "pack_identity": {
+    "pack_number": 170,
+    "title": "Special Event Encounter Bundle 04",
+    "kind": "special_event_bundle",
+    "region": "The Urban Sprawl",
+    "sub_location": "Alliance Muster Square",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "Alliance Muster Square Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Alliance Muster Square Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Alliance Muster Square Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Alliance Muster Square Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Alliance Muster Square Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Alliance Muster Square Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-004",
+      "event_title": "Null-Branded Incident: Alliance Muster Square",
+      "world_map_location": "The Urban Sprawl",
+      "sublocation": "Alliance Muster Square",
+      "required_player_level": 20,
+      "primary_variant": "Null-Branded Tremor-Fiend",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-038",
+      "event_title": "Overcharged Incident: Neon Vendor Labyrinth",
+      "world_map_location": "The Micro-Transaction Markets",
+      "sublocation": "Neon Vendor Labyrinth",
+      "required_player_level": 23,
+      "primary_variant": "Overcharged Tremor-Fiend",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-072",
+      "event_title": "Chrome-Maw Incident: Slagfall Gantry",
+      "world_map_location": "The Molten Forge",
+      "sublocation": "Slagfall Gantry",
+      "required_player_level": 27,
+      "primary_variant": "Chrome-Maw Aegis Carapace",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-106",
+      "event_title": "Sonic-Scarred Incident: Hillside Speaker Towers",
+      "world_map_location": "The Reggae-Dub Oasis",
+      "sublocation": "Hillside Speaker Towers",
+      "required_player_level": 30,
+      "primary_variant": "Sonic-Scarred Resonant Behemoth",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-140",
+      "event_title": "Tide-Broken Incident: Director Vance Broadcast Room",
+      "world_map_location": "The Syndicate Spire",
+      "sublocation": "Director Vance Broadcast Room",
+      "required_player_level": 34,
+      "primary_variant": "Tide-Broken Void Anomaly",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-174",
+      "event_title": "Ash-Baptized Incident: Health-Bar Edit Sweep",
+      "world_map_location": "The Marlowe Editing Protocol",
+      "sublocation": "Health-Bar Edit Sweep",
+      "required_player_level": 39,
+      "primary_variant": "Ash-Baptized Syndicate Lich",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-208",
+      "event_title": "Phase-Bound Incident: Draw-In Geometry Corridor",
+      "world_map_location": "The Front-Matter Void",
+      "sublocation": "Draw-In Geometry Corridor",
+      "required_player_level": 40,
+      "primary_variant": "Phase-Bound Astral Sovereign",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

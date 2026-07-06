@@ -1,0 +1,394 @@
+{
+  "monster_family": "The Siphon-Ticks",
+  "element_context": "reality",
+  "anti_duplicate_goal": "It should be rare to see two identical monsters.",
+  "spawn_selection_rule": "weighted_random_with_spawn_seed_and_biome_hash",
+  "recommended_min_unique_combinations": 240,
+  "identical_spawn_probability_target": "<= 1.5% per local encounter group",
+  "variants": [
+    {
+      "skin_id": "the_siphon_ticks_reality_01",
+      "display_name": "Sovereign-Touched The Siphon-Ticks 01",
+      "weight": 4.763,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 0.92
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_02",
+      "display_name": "Data-Forged The Siphon-Ticks 02",
+      "weight": 4.442,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "crystal",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 1.052
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_03",
+      "display_name": "Ash-Baptized The Siphon-Ticks 03",
+      "weight": 4.576,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "hide",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 1.039
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_04",
+      "display_name": "Tide-Broken The Siphon-Ticks 04",
+      "weight": 4.06,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "void",
+        "weather_tint": "aurora rain",
+        "scale_jitter": 1.072
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_05",
+      "display_name": "Magnetized The Siphon-Ticks 05",
+      "weight": 4.186,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.061
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_06",
+      "display_name": "Sonic-Scarred The Siphon-Ticks 06",
+      "weight": 3.924,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "jagged",
+        "armor_growth": "crystal",
+        "weather_tint": "deep-water gloom",
+        "scale_jitter": 1.011
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_07",
+      "display_name": "Glass-Hardened The Siphon-Ticks 07",
+      "weight": 3.586,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "bark",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.015
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_08",
+      "display_name": "Spore-Sick The Siphon-Ticks 08",
+      "weight": 3.67,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "crystal",
+        "weather_tint": "blue moonlight",
+        "scale_jitter": 0.923
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_09",
+      "display_name": "Chrome-Maw The Siphon-Ticks 09",
+      "weight": 3.501,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "scrap",
+        "weather_tint": "whiteout snow",
+        "scale_jitter": 0.949
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_10",
+      "display_name": "Eclipse-Synced The Siphon-Ticks 10",
+      "weight": 3.256,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "void",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 0.963
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_11",
+      "display_name": "Overcharged The Siphon-Ticks 11",
+      "weight": 3.255,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "wide",
+        "armor_growth": "bone",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.014
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_12",
+      "display_name": "Bark-Crowned The Siphon-Ticks 12",
+      "weight": 3.094,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "jagged",
+        "armor_growth": "scrap",
+        "weather_tint": "gold noon",
+        "scale_jitter": 1.063
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_13",
+      "display_name": "Echo-Split The Siphon-Ticks 13",
+      "weight": 2.753,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "bark",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 1.008
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_14",
+      "display_name": "Null-Branded The Siphon-Ticks 14",
+      "weight": 2.702,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.108
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_15",
+      "display_name": "Rhythm-Warped The Siphon-Ticks 15",
+      "weight": 2.554,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "jagged",
+        "armor_growth": "bark",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.083
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_16",
+      "display_name": "Grav-Torn The Siphon-Ticks 16",
+      "weight": 2.29,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "black-sun anomaly",
+        "scale_jitter": 0.934
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_17",
+      "display_name": "Ablative The Siphon-Ticks 17",
+      "weight": 2.115,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "none",
+        "armor_growth": "void",
+        "weather_tint": "green eclipse",
+        "scale_jitter": 0.961
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_18",
+      "display_name": "Phase-Bound The Siphon-Ticks 18",
+      "weight": 2.024,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "crown",
+        "armor_growth": "hide",
+        "weather_tint": "heat shimmer",
+        "scale_jitter": 1.085
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_19",
+      "display_name": "Venom-Laced The Siphon-Ticks 19",
+      "weight": 1.851,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "bright",
+        "horn_profile": "small",
+        "armor_growth": "scrap",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.033
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_20",
+      "display_name": "Warden-Fused The Siphon-Ticks 20",
+      "weight": 1.647,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "none",
+        "armor_growth": "bone",
+        "weather_tint": "acid rain",
+        "scale_jitter": 1.081
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_21",
+      "display_name": "Sovereign-Touched The Siphon-Ticks 21",
+      "weight": 1.421,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "dim",
+        "horn_profile": "small",
+        "armor_growth": "crystal",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 1.07
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_22",
+      "display_name": "Data-Forged The Siphon-Ticks 22",
+      "weight": 1.166,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "jagged",
+        "armor_growth": "void",
+        "weather_tint": "gold noon",
+        "scale_jitter": 1.077
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_23",
+      "display_name": "Ash-Baptized The Siphon-Ticks 23",
+      "weight": 1.222,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "flicker",
+        "horn_profile": "small",
+        "armor_growth": "bone",
+        "weather_tint": "zero-g starwind",
+        "scale_jitter": 0.986
+      }
+    },
+    {
+      "skin_id": "the_siphon_ticks_reality_24",
+      "display_name": "Tide-Broken The Siphon-Ticks 24",
+      "weight": 1.097,
+      "base_texture": "texture_upgrades/01_monster_skin_base.png",
+      "overlay_texture": "texture_upgrades/02_monster_skin_overlay.png",
+      "emission_texture": "texture_upgrades/03_boss_magic_emission.png",
+      "mesh_attachment": "glb_modules/02_monster_skin_attachment.glb",
+      "variation_components": {
+        "eye_emission": "medium",
+        "horn_profile": "wide",
+        "armor_growth": "bark",
+        "weather_tint": "orange dusk",
+        "scale_jitter": 1.02
+      }
+    }
+  ]
+}

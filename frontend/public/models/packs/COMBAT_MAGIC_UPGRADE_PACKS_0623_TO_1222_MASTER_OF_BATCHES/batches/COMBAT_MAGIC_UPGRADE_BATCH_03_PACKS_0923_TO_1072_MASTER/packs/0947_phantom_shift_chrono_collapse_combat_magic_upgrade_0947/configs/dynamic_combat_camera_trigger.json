@@ -1,0 +1,41 @@
+{
+  "trigger": "combat_start",
+  "module": "glb_modules/06_dynamic_combat_camera_trigger.glb",
+  "audio": "audio_cues/03_combat_camera_swell.wav",
+  "profiles": [
+    {
+      "name": "standard_horde",
+      "fov": 62,
+      "distance": 6.5,
+      "height": 2.1,
+      "damping": 0.18
+    },
+    {
+      "name": "boss_lock",
+      "fov": 68,
+      "distance": 9.0,
+      "height": 3.0,
+      "damping": 0.14
+    },
+    {
+      "name": "aerial_juggle",
+      "fov": 74,
+      "distance": 8.2,
+      "height": 3.8,
+      "damping": 0.1
+    },
+    {
+      "name": "support_npc_callout",
+      "fov": 58,
+      "distance": 7.0,
+      "height": 2.5,
+      "damping": 0.22
+    }
+  ],
+  "rules": [
+    "blend in after first hostile lock-on or first damage event",
+    "do not trigger cinematic lock if player is mid-parry",
+    "boss phase transition may briefly override with 0.9 second camera beat",
+    "recenter behind player after finisher or camera occlusion"
+  ]
+}

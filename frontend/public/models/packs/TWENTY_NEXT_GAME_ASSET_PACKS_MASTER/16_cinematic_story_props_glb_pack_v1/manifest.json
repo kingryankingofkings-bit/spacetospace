@@ -1,0 +1,304 @@
+{
+  "pack_name": "Cinematic + Story Props GLB Pack v1",
+  "pack_slug": "16_cinematic_story_props_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:57.247732+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Set dressing props for cutscenes, lore rooms, and story beats.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/corporate_throne_chair.glb",
+      "name": "Corporate Throne Chair",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.037,
+          1.087
+        ],
+        "size": [
+          1.38,
+          0.875,
+          1.625
+        ]
+      },
+      "tags": [
+        "story",
+        "red"
+      ],
+      "size_bytes": 5264
+    },
+    {
+      "file": "glb_assets/hologram_map_table.glb",
+      "name": "Hologram Map Table",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.794
+        ],
+        "size": [
+          1.6,
+          1.0,
+          0.207
+        ]
+      },
+      "tags": [
+        "story",
+        "orange"
+      ],
+      "size_bytes": 2764
+    },
+    {
+      "file": "glb_assets/broken_crown_relic.glb",
+      "name": "Broken Crown Relic",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.015,
+          0.838
+        ],
+        "size": [
+          0.77,
+          0.789,
+          0.643
+        ]
+      },
+      "tags": [
+        "story",
+        "yellow"
+      ],
+      "size_bytes": 10204
+    },
+    {
+      "file": "glb_assets/ancient_story_pedestal.glb",
+      "name": "Ancient Story Pedestal",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.625
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.239
+        ]
+      },
+      "tags": [
+        "story",
+        "green"
+      ],
+      "size_bytes": 8100
+    },
+    {
+      "file": "glb_assets/sealed_prophecy_scroll.glb",
+      "name": "Sealed Prophecy Scroll",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.625
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.239
+        ]
+      },
+      "tags": [
+        "story",
+        "blue"
+      ],
+      "size_bytes": 8100
+    },
+    {
+      "file": "glb_assets/memory_crystal_story.glb",
+      "name": "Memory Crystal Story",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.625
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.239
+        ]
+      },
+      "tags": [
+        "story",
+        "purple"
+      ],
+      "size_bytes": 8100
+    },
+    {
+      "file": "glb_assets/archive_projection_dais.glb",
+      "name": "Archive Projection Dais",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.625
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.239
+        ]
+      },
+      "tags": [
+        "story",
+        "white"
+      ],
+      "size_bytes": 8084
+    },
+    {
+      "file": "glb_assets/fallen_banner_story.glb",
+      "name": "Fallen Banner Story",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.625
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.239
+        ]
+      },
+      "tags": [
+        "story",
+        "gold"
+      ],
+      "size_bytes": 8088
+    },
+    {
+      "file": "glb_assets/boss_trophy_display.glb",
+      "name": "Boss Trophy Display",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.625
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.239
+        ]
+      },
+      "tags": [
+        "story",
+        "red"
+      ],
+      "size_bytes": 8096
+    },
+    {
+      "file": "glb_assets/resistance_war_table.glb",
+      "name": "Resistance War Table",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.625
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.239
+        ]
+      },
+      "tags": [
+        "story",
+        "orange"
+      ],
+      "size_bytes": 8100
+    },
+    {
+      "file": "glb_assets/void_heart_relic.glb",
+      "name": "Void Heart Relic",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.625
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.239
+        ]
+      },
+      "tags": [
+        "story",
+        "purple"
+      ],
+      "size_bytes": 8100
+    },
+    {
+      "file": "glb_assets/sky_warden_oath_stone.glb",
+      "name": "Sky Warden Oath Stone",
+      "template": "story",
+      "gameplay_use": "Set dressing props for cutscenes, lore rooms, and story beats.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.625
+        ],
+        "size": [
+          0.9,
+          0.9,
+          1.239
+        ]
+      },
+      "tags": [
+        "story",
+        "green"
+      ],
+      "size_bytes": 8100
+    }
+  ]
+}

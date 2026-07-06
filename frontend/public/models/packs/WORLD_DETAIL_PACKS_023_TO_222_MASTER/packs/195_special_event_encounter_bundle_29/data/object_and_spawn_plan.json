@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 195,
+    "title": "Special Event Encounter Bundle 29",
+    "kind": "special_event_bundle",
+    "region": "The Raid-Rush Choke Points",
+    "sub_location": "Kill-Lane Overpass",
+    "theme": "neutral"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Kill-Lane Overpass Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Kill-Lane Overpass Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Kill-Lane Overpass Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Kill-Lane Overpass Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Kill-Lane Overpass Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "Kill-Lane Overpass Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Siphon-Ticks",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-029",
+      "event_title": "Data-Forged Incident: Kill-Lane Overpass",
+      "world_map_location": "The Raid-Rush Choke Points",
+      "sublocation": "Kill-Lane Overpass",
+      "required_player_level": 23,
+      "primary_variant": "Data-Forged Null Anomaly",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-063",
+      "event_title": "Venom-Laced Incident: Adaptive Pit Lanes",
+      "world_map_location": "The Evolution Arenas",
+      "sublocation": "Adaptive Pit Lanes",
+      "required_player_level": 26,
+      "primary_variant": "Venom-Laced Tremor-Fiend",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-097",
+      "event_title": "Grav-Torn Incident: Resonance Crack Basin",
+      "world_map_location": "The Sonic Badlands",
+      "sublocation": "Resonance Crack Basin",
+      "required_player_level": 29,
+      "primary_variant": "Grav-Torn Venom-Spitter",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-131",
+      "event_title": "Echo-Split Incident: Sterile Corridor Block",
+      "world_map_location": "Sector 6 Quarantine",
+      "sublocation": "Sterile Corridor Block",
+      "required_player_level": 32,
+      "primary_variant": "Echo-Split Aegis Carapace",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-165",
+      "event_title": "Bark-Crowned Incident: Incubator Control Theatre",
+      "world_map_location": "The Voyage Incubator",
+      "sublocation": "Incubator Control Theatre",
+      "required_player_level": 37,
+      "primary_variant": "Bark-Crowned Null Anomaly",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-199",
+      "event_title": "Chrome-Maw Incident: Half-Deployed Service Gate",
+      "world_map_location": "The Canceled Supabase",
+      "sublocation": "Half-Deployed Service Gate",
+      "required_player_level": 40,
+      "primary_variant": "Chrome-Maw Null Anomaly",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

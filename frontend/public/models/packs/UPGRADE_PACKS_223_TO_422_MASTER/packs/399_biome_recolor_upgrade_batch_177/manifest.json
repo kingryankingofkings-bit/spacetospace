@@ -1,0 +1,270 @@
+{
+  "pack_number": 399,
+  "pack_name": "Biome Recolor Upgrade Batch 177",
+  "set_name": "Second 200 Upgrade Packs",
+  "created_utc": "2026-07-05T09:13:02.170249+00:00",
+  "upgrade_type": "biome_recolor",
+  "theme": "urban",
+  "element": "electric",
+  "purpose": "Non-destructive upgrade pack for prior generated textures and low-poly object assets.",
+  "counts": {
+    "upgrade_glb_overlays": 6,
+    "texture_upgrades_png": 12,
+    "patch_json_files": 5,
+    "target_glb_refs": 32,
+    "target_texture_refs": 32
+  },
+  "glb_assets": [
+    {
+      "file": "upgrade_glb_overlays/01_biome_recolor_overlay_1.glb",
+      "name": "Biome Recolor Upgrade Overlay 1",
+      "purpose": "additive low-poly overlay/proxy object for upgrading existing GLB objects",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "glb_object",
+      "script_profile": "upgrade_overlay_or_prefab_addon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_overlays/02_biome_recolor_overlay_2.glb",
+      "name": "Biome Recolor Upgrade Overlay 2",
+      "purpose": "additive low-poly overlay/proxy object for upgrading existing GLB objects",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "glb_object",
+      "script_profile": "upgrade_overlay_or_prefab_addon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_overlays/03_biome_recolor_overlay_3.glb",
+      "name": "Biome Recolor Upgrade Overlay 3",
+      "purpose": "additive low-poly overlay/proxy object for upgrading existing GLB objects",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "glb_object",
+      "script_profile": "upgrade_overlay_or_prefab_addon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_overlays/04_biome_recolor_overlay_4.glb",
+      "name": "Biome Recolor Upgrade Overlay 4",
+      "purpose": "additive low-poly overlay/proxy object for upgrading existing GLB objects",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "glb_object",
+      "script_profile": "upgrade_overlay_or_prefab_addon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_overlays/05_biome_recolor_overlay_5.glb",
+      "name": "Biome Recolor Upgrade Overlay 5",
+      "purpose": "additive low-poly overlay/proxy object for upgrading existing GLB objects",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "glb_object",
+      "script_profile": "upgrade_overlay_or_prefab_addon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "upgrade_glb_overlays/06_biome_recolor_overlay_6.glb",
+      "name": "Biome Recolor Upgrade Overlay 6",
+      "purpose": "additive low-poly overlay/proxy object for upgrading existing GLB objects",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "glb_object",
+      "script_profile": "upgrade_overlay_or_prefab_addon",
+      "glb_header_ok": true
+    }
+  ],
+  "texture_assets": [
+    {
+      "file": "texture_upgrades/01_biome_recolor_albedo_upgrade.png",
+      "pattern": "albedo_upgrade",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/02_biome_recolor_normal_detail_proxy.png",
+      "pattern": "normal_detail_proxy",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/03_biome_recolor_roughness_variation.png",
+      "pattern": "roughness_variation",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/04_biome_recolor_emission_overlay.png",
+      "pattern": "emission_overlay",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/05_biome_recolor_edge_wear_mask.png",
+      "pattern": "edge_wear_mask",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/06_biome_recolor_biome_tint_mask.png",
+      "pattern": "biome_tint_mask",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/07_biome_recolor_water_star_overlay.png",
+      "pattern": "water_star_overlay",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/08_biome_recolor_decal_upgrade_sheet.png",
+      "pattern": "decal_upgrade_sheet",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/09_biome_recolor_trim_upgrade_sheet.png",
+      "pattern": "trim_upgrade_sheet",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/10_biome_recolor_creature_overlay.png",
+      "pattern": "creature_overlay",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/11_biome_recolor_object_overlay.png",
+      "pattern": "object_overlay",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    },
+    {
+      "file": "texture_upgrades/12_biome_recolor_water_star_overlay.png",
+      "pattern": "water_star_overlay",
+      "purpose": "upgrade texture/material overlay for prior generated textures and low-poly assets",
+      "upgrade_type": "biome_recolor",
+      "theme": "urban",
+      "target_asset_type": "texture_image_or_material_slot"
+    }
+  ],
+  "patch_files": [
+    "patches/asset_upgrade_patch_manifest.json",
+    "patches/material_upgrade_profiles.json",
+    "patches/prefab_upgrade_instructions.json",
+    "patches/lod_collision_upgrade_rules.json",
+    "patches/texture_application_map.json"
+  ],
+  "target_assets_sample": [
+    {
+      "source_zip": "100_the_provisioning_sectors_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/01_starfield_sky_water_preview.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "100_the_provisioning_sectors_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/02_music_trigger_totem.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "100_the_provisioning_sectors_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/03_ambient_object_cluster.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "100_the_provisioning_sectors_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/04_soundscape_landmark.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "100_the_provisioning_sectors_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "101_the_on_demand_arteries_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/01_starfield_sky_water_preview.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "101_the_on_demand_arteries_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/02_music_trigger_totem.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "101_the_on_demand_arteries_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/03_ambient_object_cluster.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "101_the_on_demand_arteries_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/04_soundscape_landmark.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "101_the_on_demand_arteries_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "102_the_raid_rush_choke_points_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/01_starfield_sky_water_preview.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "102_the_raid_rush_choke_points_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/02_music_trigger_totem.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "102_the_raid_rush_choke_points_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/03_ambient_object_cluster.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "102_the_raid_rush_choke_points_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/04_soundscape_landmark.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "102_the_raid_rush_choke_points_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/05_ambient_creature_listener.glb",
+      "asset_type": "glb_object"
+    },
+    {
+      "source_zip": "103_the_front_matter_void_music_ambience_texture_kit.zip",
+      "path_in_zip": "glb_assets/01_starfield_sky_water_preview.glb",
+      "asset_type": "glb_object"
+    }
+  ],
+  "source_target_pool_summary": {
+    "detected_glb_targets_total": 6969,
+    "detected_texture_targets_total": 1983
+  }
+}

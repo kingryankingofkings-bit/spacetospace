@@ -1,0 +1,79 @@
+{
+  "character": "Torinn Rhogar",
+  "role": "legendary ally / high-tier boss / founder protector",
+  "combat_style": "monk close-combat with sorcerous frost-lightning channeled through clawed fists",
+  "passive_auras": [
+    {
+      "id": "divine_winter_radius",
+      "name": "31\u00b0F Divine Aura",
+      "lore_radius_miles": 2,
+      "gameplay_visible_radius_m": 24,
+      "effects": [
+        "cold breath",
+        "snow motes",
+        "frost rim",
+        "minor ground frost"
+      ]
+    },
+    {
+      "id": "blue_green_ignisai_static",
+      "name": "Blue-Green Static Mist",
+      "trigger": "combat ready / spell charge",
+      "effects": [
+        "mist coils around arms",
+        "gem shimmer",
+        "halo flicker"
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "frost_palm_push",
+      "slot": "special_01",
+      "range_m": 7,
+      "vfx": "fist_static",
+      "animation": "frost_palm_push",
+      "notes": "short concussive monk palm strike with frost shockwave"
+    },
+    {
+      "id": "dual_claw_tempest",
+      "slot": "combo_finisher",
+      "range_m": 2.4,
+      "vfx": "fist_static + mist",
+      "animation": "dual_fist_charge",
+      "notes": "close-range claw barrage with white-blue arcs"
+    },
+    {
+      "id": "still_air_command",
+      "slot": "defensive",
+      "range_m": 14,
+      "vfx": "halo + snowflake",
+      "animation": "divine_halo_channel",
+      "notes": "brief control field; lowers motion and adds frost buildup"
+    },
+    {
+      "id": "monk_step_reposition",
+      "slot": "movement",
+      "range_m": 11,
+      "vfx": "mist trail",
+      "animation": "monk_step_reposition",
+      "notes": "fast step reposition, not a flashy teleport unless upgraded"
+    },
+    {
+      "id": "frozen_breath_short",
+      "slot": "cone",
+      "range_m": 9,
+      "vfx": "mist + snowflake",
+      "animation": "frost_breath_short",
+      "notes": "short directional cone of cold vapor and ice glyph particles"
+    },
+    {
+      "id": "tempest_of_the_frozen_breath",
+      "slot": "ultimate",
+      "range_m": 22,
+      "vfx": "all",
+      "animation": "boss_execute_tempest",
+      "notes": "boss-grade channel; fists, halo, breath, and cold aura surge together"
+    }
+  ]
+}

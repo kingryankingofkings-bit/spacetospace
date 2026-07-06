@@ -1,0 +1,459 @@
+{
+  "pack_number": 458,
+  "pack_name": "Skyship Weapons Defense Upgrades Batch 036 - Skywarden Frigate",
+  "created_utc": "2026-07-05T09:42:30.457280+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "skyship_weapons_defense",
+  "theme": "emerald_wilds",
+  "element": "verdant",
+  "skyship_class_profile": {
+    "class": "skywarden_frigate",
+    "scale": 1.75,
+    "role": "military escort"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/06_ballast_spine/12_lyric_trenchmark_warden_at_ballast.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/01_keir_chromabell_warden_under_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/04_bryn_skyharrow_smith_of_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/10_zerin_starfall_engineer_from_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/11_nix_skyharrow_warden_near_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/12_orin_mossguard_warden_from_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/17_soren_glassroot_engineer_of_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/07_trench_window/18_ossa_echohand_warden_of_trench.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/08_floodlock_annex/19_ossa_cragwarden_keeper_of_floodlock.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/08_floodlock_annex/20_nyra_glassroot_engineer_at_floodlock.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/09_the_abyss_crown/05_draven_deepwell_engineer_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/02_the_abyssal_trench/09_the_abyss_crown/12_orin_emberkin_engineer_of.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/01_crater_gate/10_auren_ironwake_warden_near_crater.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/01_crater_gate/11_maven_gravesong_warden_near_crater.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/01_crater_gate/17_korra_frostrelay_engineer_near_crater.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/01_crater_gate/19_edda_skyharrow_pilgrim_under_crater.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/02_chainlift_gantry/20_sarai_skyharrow_keeper_under_chainlift.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/03_main_crucible/08_astra_cragwarden_tactician_near_main.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/04_slag_spillway/01_ilyra_cragwarden_keeper_at_slag.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "forge"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/06_geothermal_abyss/01_the_molten_forge/04_slag_spillway/06_vexa_rootborne_engineer_from_slag.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "forge"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "187_special_event_encounter_bundle_21.zip",
+      "path_in_zip": "glb_assets/01_event_arena_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "187_special_event_encounter_bundle_21.zip",
+      "path_in_zip": "glb_assets/02_event_elite_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "187_special_event_encounter_bundle_21.zip",
+      "path_in_zip": "glb_assets/03_event_trigger_node.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "187_special_event_encounter_bundle_21.zip",
+      "path_in_zip": "glb_assets/04_event_hazard_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "187_special_event_encounter_bundle_21.zip",
+      "path_in_zip": "glb_assets/05_event_sky_or_hazard_field.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "188_special_event_encounter_bundle_22.zip",
+      "path_in_zip": "glb_assets/01_event_arena_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "188_special_event_encounter_bundle_22.zip",
+      "path_in_zip": "glb_assets/02_event_elite_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "188_special_event_encounter_bundle_22.zip",
+      "path_in_zip": "glb_assets/03_event_trigger_node.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "188_special_event_encounter_bundle_22.zip",
+      "path_in_zip": "glb_assets/04_event_hazard_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "188_special_event_encounter_bundle_22.zip",
+      "path_in_zip": "glb_assets/05_event_sky_or_hazard_field.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "189_special_event_encounter_bundle_23.zip",
+      "path_in_zip": "glb_assets/01_event_arena_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "189_special_event_encounter_bundle_23.zip",
+      "path_in_zip": "glb_assets/02_event_elite_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "189_special_event_encounter_bundle_23.zip",
+      "path_in_zip": "glb_assets/03_event_trigger_node.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "189_special_event_encounter_bundle_23.zip",
+      "path_in_zip": "glb_assets/04_event_hazard_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "189_special_event_encounter_bundle_23.zip",
+      "path_in_zip": "glb_assets/05_event_sky_or_hazard_field.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "190_special_event_encounter_bundle_24.zip",
+      "path_in_zip": "glb_assets/01_event_arena_anchor.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "190_special_event_encounter_bundle_24.zip",
+      "path_in_zip": "glb_assets/02_event_elite_variant.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "190_special_event_encounter_bundle_24.zip",
+      "path_in_zip": "glb_assets/03_event_trigger_node.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "190_special_event_encounter_bundle_24.zip",
+      "path_in_zip": "glb_assets/04_event_hazard_cluster.glb",
+      "asset_type": "glb_object",
+      "tags": []
+    },
+    {
+      "source_zip": "190_special_event_encounter_bundle_24.zip",
+      "path_in_zip": "glb_assets/05_event_sky_or_hazard_field.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "168_special_event_encounter_bundle_02.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_02_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "168_special_event_encounter_bundle_02.zip",
+      "path_in_zip": "textures/05_special_event_encounter_bundle_02_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "168_special_event_encounter_bundle_02.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_02_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "168_special_event_encounter_bundle_02.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_02_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "168_special_event_encounter_bundle_02.zip",
+      "path_in_zip": "textures/08_special_event_encounter_bundle_02_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "textures/01_special_event_encounter_bundle_03_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "textures/02_special_event_encounter_bundle_03_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_03_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_03_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "textures/05_special_event_encounter_bundle_03_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_03_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_03_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "textures/08_special_event_encounter_bundle_03_surface.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "textures/01_special_event_encounter_bundle_04_albedo.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "textures/02_special_event_encounter_bundle_04_normal_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_04_trim.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_04_emission.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "textures/05_special_event_encounter_bundle_04_decal.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "textures/06_special_event_encounter_bundle_04_water.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_04_starfield.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "star"
+      ]
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

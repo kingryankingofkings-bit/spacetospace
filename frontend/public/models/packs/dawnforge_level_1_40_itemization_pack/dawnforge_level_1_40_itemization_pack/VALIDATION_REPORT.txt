@@ -1,0 +1,55 @@
+DAWNFORGE ITEMIZATION VALIDATION REPORT
+================================================
+Total items: 2200
+Non-Godly items: 2000
+Godly level-40 uniques: 200
+Armor pieces: 1300
+Weapon pieces: 900
+Levels covered: 1-40
+
+Rarity counts:
+- Common: 382
+- Uncommon: 387
+- Rare: 488
+- Very Rare: 416
+- Super: 205
+- Legend: 64
+- Ancient: 42
+- Mythological: 16
+- Godly: 200
+
+Core constraints:
+- Level 1 Common-only: PASS
+- Godly only level 40: PASS
+- Godly unique count exactly 200: PASS
+- Non-Godly count exactly 2000: PASS
+- Legend/Ancient/Mythological after level 20 only: PASS
+- Ancient starts at level 26 or later: PASS
+- Mythological starts at level 31 or later: PASS
+- Required core source types present: PASS
+- Unique item IDs: PASS
+- Unique item names: PASS
+
+Level 21+ high-tier pacing summary:
+- L21: Legend=1, Ancient=0, Mythological=0, Godly=0
+- L22: Legend=1, Ancient=0, Mythological=0, Godly=0
+- L23: Legend=1, Ancient=0, Mythological=0, Godly=0
+- L24: Legend=2, Ancient=0, Mythological=0, Godly=0
+- L25: Legend=2, Ancient=0, Mythological=0, Godly=0
+- L26: Legend=2, Ancient=1, Mythological=0, Godly=0
+- L27: Legend=2, Ancient=1, Mythological=0, Godly=0
+- L28: Legend=2, Ancient=1, Mythological=0, Godly=0
+- L29: Legend=3, Ancient=2, Mythological=0, Godly=0
+- L30: Legend=3, Ancient=2, Mythological=0, Godly=0
+- L31: Legend=3, Ancient=2, Mythological=1, Godly=0
+- L32: Legend=3, Ancient=2, Mythological=1, Godly=0
+- L33: Legend=4, Ancient=3, Mythological=1, Godly=0
+- L34: Legend=4, Ancient=3, Mythological=1, Godly=0
+- L35: Legend=4, Ancient=3, Mythological=1, Godly=0
+- L36: Legend=5, Ancient=4, Mythological=2, Godly=0
+- L37: Legend=5, Ancient=4, Mythological=2, Godly=0
+- L38: Legend=5, Ancient=4, Mythological=2, Godly=0
+- L39: Legend=6, Ancient=5, Mythological=2, Godly=0
+- L40: Legend=6, Ancient=5, Mythological=3, Godly=200
+
+Overall status: PASS

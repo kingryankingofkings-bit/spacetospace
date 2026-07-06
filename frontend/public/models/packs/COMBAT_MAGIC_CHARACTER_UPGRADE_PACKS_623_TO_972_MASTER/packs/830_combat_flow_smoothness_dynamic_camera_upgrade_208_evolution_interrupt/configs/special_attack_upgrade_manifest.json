@@ -1,0 +1,25 @@
+{
+  "special_attack": "Evolution Interrupt",
+  "source_monster": "The Grid-Rushers",
+  "source_boss": "The Ascendant Colossus",
+  "theme": "void",
+  "element": "void",
+  "upgrade_family": "combat_flow_camera",
+  "vfx_prefabs": [
+    "glb_upgrades/01_special_attack_vfx.glb"
+  ],
+  "telegraph": {
+    "startup_ms": 420,
+    "active_window_ms": 250,
+    "recovery_ms": 540,
+    "counter_window_ms": 180,
+    "warning_texture": "textures/04_vfx_emission_sheet.png"
+  },
+  "hitbox_profile": {
+    "shape": "cone_or_ring",
+    "radius_m": 3.5,
+    "height_m": 2.2,
+    "damage_type": "void",
+    "stagger": "medium_to_heavy"
+  }
+}

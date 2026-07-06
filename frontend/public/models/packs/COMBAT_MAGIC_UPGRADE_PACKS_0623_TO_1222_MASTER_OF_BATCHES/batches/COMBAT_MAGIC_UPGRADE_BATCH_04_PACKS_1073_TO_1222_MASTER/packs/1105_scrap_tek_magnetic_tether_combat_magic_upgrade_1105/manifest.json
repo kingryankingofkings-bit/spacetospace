@@ -1,0 +1,332 @@
+{
+  "pack_number": 1105,
+  "batch_number": 4,
+  "pack_name": "Scrap-Tek Magnetic Tether Combat Magic Upgrade 1105",
+  "created_utc": "2026-07-05T11:03:08.100433+00:00",
+  "purpose": "Combat, magic, monster/boss/player/support NPC, special attack, high-tier gear, combat-flow, dynamic-camera, random monster skin, weather, terrain/nature, sun color, and character-quality upgrade pack.",
+  "worlddata_basis": {
+    "class": "Scrap-Tek",
+    "subclass": "Scavenger",
+    "specialization": "Magnetic Harvester",
+    "ability": "Magnetic Tether",
+    "monster": "The Grid-Rushers",
+    "boss": "The Astral Sovereign",
+    "support_npc": "The Grand Archivist",
+    "weather": "tidal surge",
+    "terrain": "starfield dust",
+    "sun_variant": "molten red noon"
+  },
+  "counts": {
+    "glb_modules": 8,
+    "texture_png": 12,
+    "audio_wav": 5,
+    "config_docs": 11
+  },
+  "glb_assets": [
+    {
+      "file": "glb_modules/01_class_special_attack_vfx.glb",
+      "role": "class_special_attack_vfx",
+      "class": "Scrap-Tek",
+      "ability": "Magnetic Tether",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "molten red noon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/02_monster_random_skin_module.glb",
+      "role": "monster_random_skin_module",
+      "class": "Scrap-Tek",
+      "ability": "Magnetic Tether",
+      "monster_or_boss_or_npc": "The Grid-Rushers",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "molten red noon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/03_boss_magic_phase_module.glb",
+      "role": "boss_magic_phase_module",
+      "class": "Scrap-Tek",
+      "ability": "Magnetic Tether",
+      "monster_or_boss_or_npc": "The Astral Sovereign",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "molten red noon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/04_high_tier_magic_weapon_aura.glb",
+      "role": "high_tier_magic_weapon_aura",
+      "class": "Scrap-Tek",
+      "ability": "Magnetic Tether",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "molten red noon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/05_high_tier_magic_armor_aura.glb",
+      "role": "high_tier_magic_armor_aura",
+      "class": "Scrap-Tek",
+      "ability": "Magnetic Tether",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "molten red noon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/06_dynamic_combat_camera_trigger.glb",
+      "role": "dynamic_combat_camera_trigger",
+      "class": "Scrap-Tek",
+      "ability": "Magnetic Tether",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "molten red noon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/07_weather_terrain_nature_effect.glb",
+      "role": "weather_terrain_nature_effect",
+      "class": "Scrap-Tek",
+      "ability": "Magnetic Tether",
+      "monster_or_boss_or_npc": null,
+      "weather": "tidal surge",
+      "terrain": "starfield dust",
+      "sun_variant": "molten red noon",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/08_support_npc_assist_marker.glb",
+      "role": "support_npc_assist_marker",
+      "class": "Scrap-Tek",
+      "ability": "Magnetic Tether",
+      "monster_or_boss_or_npc": "The Grand Archivist",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "molten red noon",
+      "glb_header_ok": true
+    }
+  ],
+  "textures": [
+    {
+      "file": "texture_upgrades/01_class_ability_emission.png",
+      "pattern": "class_ability_emission",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/02_subclass_talent_glyph_sheet.png",
+      "pattern": "subclass_talent_glyph_sheet",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/03_monster_skin_albedo.png",
+      "pattern": "monster_skin_albedo",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/04_monster_skin_emission.png",
+      "pattern": "monster_skin_emission",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/05_boss_phase_material.png",
+      "pattern": "boss_phase_material",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/06_weapon_finish.png",
+      "pattern": "weapon_finish",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/07_armor_trim.png",
+      "pattern": "armor_trim",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/08_npc_assist_decal.png",
+      "pattern": "npc_assist_decal",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/09_weather_overlay.png",
+      "pattern": "weather_overlay",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/10_terrain_nature_overlay.png",
+      "pattern": "terrain_nature_overlay",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/11_character_quality_overlay.png",
+      "pattern": "character_quality_overlay",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/12_sun_color_grade_lut.png",
+      "pattern": "sun_color_grade_lut",
+      "class": "Scrap-Tek",
+      "theme": "scrap",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio_cues/01_special_attack_cast.wav",
+      "cue_id": "scrap_tek_magnetic_tether_special_attack_cast_1105",
+      "cue_type": "special_attack_cast",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/02_magic_impact.wav",
+      "cue_id": "scrap_tek_magnetic_tether_magic_impact_1105",
+      "cue_type": "magic_impact",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/03_combat_camera_swell.wav",
+      "cue_id": "scrap_tek_magnetic_tether_combat_camera_swell_1105",
+      "cue_type": "combat_camera_swell",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/04_weather_sun_cue.wav",
+      "cue_id": "scrap_tek_magnetic_tether_weather_sun_cue_1105",
+      "cue_type": "weather_sun_cue",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/05_monster_spawn_variance.wav",
+      "cue_id": "scrap_tek_magnetic_tether_monster_spawn_variance_1105",
+      "cue_type": "monster_spawn_variance",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    }
+  ],
+  "data_files": [
+    "configs/class_ability_vfx_map.json",
+    "configs/monster_random_skin_spawn_table.json",
+    "configs/boss_special_attack_upgrade_plan.json",
+    "configs/support_npc_assist_scripts.json",
+    "configs/high_tier_magic_weapon_armor_patch.json",
+    "configs/combat_flow_smoothness_profile.json",
+    "configs/dynamic_combat_camera_trigger.json",
+    "configs/weather_terrain_nature_sun_plan.json",
+    "configs/character_appearance_quality_patch.json",
+    "configs/antigravity_2_0_upgrade_instructions.json",
+    "configs/monster_skin_weights.csv"
+  ],
+  "target_references_sample": [
+    {
+      "source_zip": "168_special_event_encounter_bundle_02.zip",
+      "path_in_zip": "glb_assets/05_event_sky_or_hazard_field.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "168_special_event_encounter_bundle_02.zip",
+      "path_in_zip": "data/material_texture_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "textures/04_special_event_encounter_bundle_03_emission.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "169_special_event_encounter_bundle_03.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "170_special_event_encounter_bundle_04.zip",
+      "path_in_zip": "textures/08_special_event_encounter_bundle_04_surface.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "171_special_event_encounter_bundle_05.zip",
+      "path_in_zip": "glb_assets/04_event_hazard_cluster.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "171_special_event_encounter_bundle_05.zip",
+      "path_in_zip": "data/object_and_spawn_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "172_special_event_encounter_bundle_06.zip",
+      "path_in_zip": "textures/03_special_event_encounter_bundle_06_trim.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "172_special_event_encounter_bundle_06.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "173_special_event_encounter_bundle_07.zip",
+      "path_in_zip": "textures/07_special_event_encounter_bundle_07_starfield.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "174_special_event_encounter_bundle_08.zip",
+      "path_in_zip": "glb_assets/03_event_trigger_node.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "174_special_event_encounter_bundle_08.zip",
+      "path_in_zip": "audio/special_event_encounter_bundle_08_event_or_pickup_sting.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    }
+  ]
+}

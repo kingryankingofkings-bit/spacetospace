@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 82,
+    "title": "The Infinite Archives Sylvan Juggernaut Variant Pack",
+    "kind": "creature_biome_variants",
+    "region": "04 Eastern Wilds And Ancient Archives",
+    "sub_location": "04 The Infinite Archives",
+    "theme": "wilds"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "The Axiom Gate",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/01_the_axiom_gate_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Curio Shop: Curio Niche "
+    },
+    {
+      "source_area": "The Index Chamber",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/02_the_index_chamber_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Moonlit "
+    },
+    {
+      "source_area": "The Rotating Stackways",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/03_the_rotating_stackways_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Cloak and Cord "
+    },
+    {
+      "source_area": "The Memory Vaults",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/04_the_memory_vaults_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Enchanter: Arcane Polish "
+    },
+    {
+      "source_area": "The Archivist Bridges",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/05_the_archivist_bridges_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Field Surgery ; Alchemist: Elixir Nook "
+    },
+    {
+      "source_area": "The Chronicle Spires",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/06_the_chronicle_spires_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Relic Trader: Oldlight Finds "
+    },
+    {
+      "source_area": "The Reference Labyrinth",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/07_the_reference_labyrinth_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Patternsmith "
+    },
+    {
+      "source_area": "The Protocol Core",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/08_the_protocol_core_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Color Forge ; Medic: Remedy Booth "
+    },
+    {
+      "source_area": "The Silent Stacks",
+      "map_file_reference": "area_maps/sub_locations/04_eastern_wilds_and_ancient_archives/04_the_infinite_archives/09_the_silent_stacks_map.png",
+      "suggested_objects": [
+        "wilds_landmark_anchor",
+        "wilds_navigation_prop",
+        "wilds_nature_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Forge of ; Food Stall: Hotplate "
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Infinite Archives Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Infinite Archives Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Infinite Archives Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Infinite Archives Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Infinite Archives Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Infinite Archives Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Sylvan Juggernaut",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

@@ -1,0 +1,334 @@
+{
+  "pack_number": 1003,
+  "batch_number": 3,
+  "pack_name": "Packmaster Alpha's Command Combat Magic Upgrade 1003",
+  "created_utc": "2026-07-05T11:02:52.855024+00:00",
+  "purpose": "Combat, magic, monster/boss/player/support NPC, special attack, high-tier gear, combat-flow, dynamic-camera, random monster skin, weather, terrain/nature, sun color, and character-quality upgrade pack.",
+  "worlddata_basis": {
+    "class": "Packmaster",
+    "subclass": "Feral Vanguard",
+    "specialization": "The Stampede",
+    "ability": "Alpha's Command",
+    "monster": "The Venom-Spitter",
+    "boss": "The Resonance Maestro",
+    "support_npc": "Beastmaster Thorne",
+    "weather": "acid rain",
+    "terrain": "starfield dust",
+    "sun_variant": "eclipse violet rim"
+  },
+  "counts": {
+    "glb_modules": 8,
+    "texture_png": 12,
+    "audio_wav": 5,
+    "config_docs": 11
+  },
+  "glb_assets": [
+    {
+      "file": "glb_modules/01_class_special_attack_vfx.glb",
+      "role": "class_special_attack_vfx",
+      "class": "Packmaster",
+      "ability": "Alpha's Command",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "eclipse violet rim",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/02_monster_random_skin_module.glb",
+      "role": "monster_random_skin_module",
+      "class": "Packmaster",
+      "ability": "Alpha's Command",
+      "monster_or_boss_or_npc": "The Venom-Spitter",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "eclipse violet rim",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/03_boss_magic_phase_module.glb",
+      "role": "boss_magic_phase_module",
+      "class": "Packmaster",
+      "ability": "Alpha's Command",
+      "monster_or_boss_or_npc": "The Resonance Maestro",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "eclipse violet rim",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/04_high_tier_magic_weapon_aura.glb",
+      "role": "high_tier_magic_weapon_aura",
+      "class": "Packmaster",
+      "ability": "Alpha's Command",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "eclipse violet rim",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/05_high_tier_magic_armor_aura.glb",
+      "role": "high_tier_magic_armor_aura",
+      "class": "Packmaster",
+      "ability": "Alpha's Command",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "eclipse violet rim",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/06_dynamic_combat_camera_trigger.glb",
+      "role": "dynamic_combat_camera_trigger",
+      "class": "Packmaster",
+      "ability": "Alpha's Command",
+      "monster_or_boss_or_npc": null,
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "eclipse violet rim",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/07_weather_terrain_nature_effect.glb",
+      "role": "weather_terrain_nature_effect",
+      "class": "Packmaster",
+      "ability": "Alpha's Command",
+      "monster_or_boss_or_npc": null,
+      "weather": "acid rain",
+      "terrain": "starfield dust",
+      "sun_variant": "eclipse violet rim",
+      "glb_header_ok": true
+    },
+    {
+      "file": "glb_modules/08_support_npc_assist_marker.glb",
+      "role": "support_npc_assist_marker",
+      "class": "Packmaster",
+      "ability": "Alpha's Command",
+      "monster_or_boss_or_npc": "Beastmaster Thorne",
+      "weather": null,
+      "terrain": null,
+      "sun_variant": "eclipse violet rim",
+      "glb_header_ok": true
+    }
+  ],
+  "textures": [
+    {
+      "file": "texture_upgrades/01_class_ability_emission.png",
+      "pattern": "class_ability_emission",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/02_subclass_talent_glyph_sheet.png",
+      "pattern": "subclass_talent_glyph_sheet",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/03_monster_skin_albedo.png",
+      "pattern": "monster_skin_albedo",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/04_monster_skin_emission.png",
+      "pattern": "monster_skin_emission",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/05_boss_phase_material.png",
+      "pattern": "boss_phase_material",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/06_weapon_finish.png",
+      "pattern": "weapon_finish",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/07_armor_trim.png",
+      "pattern": "armor_trim",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/08_npc_assist_decal.png",
+      "pattern": "npc_assist_decal",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/09_weather_overlay.png",
+      "pattern": "weather_overlay",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/10_terrain_nature_overlay.png",
+      "pattern": "terrain_nature_overlay",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/11_character_quality_overlay.png",
+      "pattern": "character_quality_overlay",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    },
+    {
+      "file": "texture_upgrades/12_sun_color_grade_lut.png",
+      "pattern": "sun_color_grade_lut",
+      "class": "Packmaster",
+      "theme": "pack",
+      "usage": "VFX/material/skin/weather/sun/character-quality upgrade map"
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio_cues/01_special_attack_cast.wav",
+      "cue_id": "packmaster_alpha_s_command_special_attack_cast_1003",
+      "cue_type": "special_attack_cast",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/02_magic_impact.wav",
+      "cue_id": "packmaster_alpha_s_command_magic_impact_1003",
+      "cue_type": "magic_impact",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/03_combat_camera_swell.wav",
+      "cue_id": "packmaster_alpha_s_command_combat_camera_swell_1003",
+      "cue_type": "combat_camera_swell",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/04_weather_sun_cue.wav",
+      "cue_id": "packmaster_alpha_s_command_weather_sun_cue_1003",
+      "cue_type": "weather_sun_cue",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    },
+    {
+      "file": "audio_cues/05_monster_spawn_variance.wav",
+      "cue_id": "packmaster_alpha_s_command_monster_spawn_variance_1003",
+      "cue_type": "monster_spawn_variance",
+      "placeholder_note": "Procedural placeholder cue; replace with final SFX/music in production."
+    }
+  ],
+  "data_files": [
+    "configs/class_ability_vfx_map.json",
+    "configs/monster_random_skin_spawn_table.json",
+    "configs/boss_special_attack_upgrade_plan.json",
+    "configs/support_npc_assist_scripts.json",
+    "configs/high_tier_magic_weapon_armor_patch.json",
+    "configs/combat_flow_smoothness_profile.json",
+    "configs/dynamic_combat_camera_trigger.json",
+    "configs/weather_terrain_nature_sun_plan.json",
+    "configs/character_appearance_quality_patch.json",
+    "configs/antigravity_2_0_upgrade_instructions.json",
+    "configs/monster_skin_weights.csv"
+  ],
+  "target_references_sample": [
+    {
+      "source_zip": "491_water_star_cloud_visual_upgrades_batch_069_arkship.zip",
+      "path_in_zip": "upgrade_glb_modules/03_world_landmark_light.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "491_water_star_cloud_visual_upgrades_batch_069_arkship.zip",
+      "path_in_zip": "texture_upgrades/06_skyship_edgewear_mask.png",
+      "asset_type": "png",
+      "tags": [
+        "skyship",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "491_water_star_cloud_visual_upgrades_batch_069_arkship.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "492_global_object_material_pass_batch_070_repair_tug.zip",
+      "path_in_zip": "texture_upgrades/02_world_trim_plus.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "492_global_object_material_pass_batch_070_repair_tug.zip",
+      "path_in_zip": "patches/material_visual_upgrade_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "493_world_object_visual_polish_batch_071_micro_sky_skiff.zip",
+      "path_in_zip": "upgrade_glb_modules/08_skyship_deck.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "493_world_object_visual_polish_batch_071_micro_sky_skiff.zip",
+      "path_in_zip": "texture_upgrades/11_starfield_layer.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "494_skyship_hull_size_variants_batch_072_scout_sloop.zip",
+      "path_in_zip": "upgrade_glb_modules/04_atmosphere.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "494_skyship_hull_size_variants_batch_072_scout_sloop.zip",
+      "path_in_zip": "texture_upgrades/07_skyship_sail_fabric.png",
+      "asset_type": "png",
+      "tags": [
+        "skyship",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "494_skyship_hull_size_variants_batch_072_scout_sloop.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "495_skyship_propulsion_upgrades_batch_073_courier_cutter.zip",
+      "path_in_zip": "texture_upgrades/03_world_emission_plus.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "495_skyship_propulsion_upgrades_batch_073_courier_cutter.zip",
+      "path_in_zip": "patches/prefab_variant_patch.json",
+      "asset_type": "json",
+      "tags": []
+    }
+  ]
+}

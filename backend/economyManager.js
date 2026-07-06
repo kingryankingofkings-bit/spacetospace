@@ -75,9 +75,25 @@ function addCurrency(player, amount) {
   player.currency += amount;
 }
 
+/**
+ * Resolves the price of an item by searching VENDOR_INVENTORIES.
+ * @returns {number|null} The price of the item, or null if not found.
+ */
+function getItemPrice(itemId) {
+  for (const vendorType in VENDOR_INVENTORIES) {
+    const item = VENDOR_INVENTORIES[vendorType].find(i => i.itemId === itemId);
+    if (item) {
+      return item.price;
+    }
+  }
+  return null;
+}
+
 module.exports = {
   getVendorInventory,
   canAfford,
   deductCurrency,
-  addCurrency
+  addCurrency,
+  getItemPrice
 };
+

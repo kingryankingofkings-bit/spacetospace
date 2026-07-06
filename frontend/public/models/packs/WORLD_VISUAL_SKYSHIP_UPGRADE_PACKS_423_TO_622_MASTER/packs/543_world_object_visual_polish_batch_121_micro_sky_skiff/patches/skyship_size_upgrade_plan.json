@@ -1,0 +1,29 @@
+{
+  "skyship_class": "micro_sky_skiff",
+  "scale_profile": 0.72,
+  "role": "solo scout, courier, personal traversal",
+  "recommended_prefab_children": [
+    "skyship_hull",
+    "skyship_engine",
+    "skyship_rigging",
+    "skyship_deck",
+    "skyship_defense",
+    "skyship_dock"
+  ],
+  "size_rules": {
+    "crew_slots": 1,
+    "weapon_mounts": 0,
+    "cargo_slots": 1
+  },
+  "engine_components_to_add": [
+    "SkyshipClassComponent",
+    "DockingSocketSet",
+    "BoardingRampTrigger",
+    "EngineVFXSocket",
+    "HullMaterialVariant",
+    "ShipLiveryVariant",
+    "DamageStateVisuals",
+    "LODGroup",
+    "NavObstacleOrVehicleCollider"
+  ]
+}

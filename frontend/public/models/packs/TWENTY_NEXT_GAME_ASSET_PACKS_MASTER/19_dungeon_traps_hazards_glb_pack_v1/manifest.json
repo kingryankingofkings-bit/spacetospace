@@ -1,0 +1,304 @@
+{
+  "pack_name": "Dungeon Traps + Hazards GLB Pack v1",
+  "pack_slug": "19_dungeon_traps_hazards_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:57.432989+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/floor_spike_trap.glb",
+      "name": "Floor Spike Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.455
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.91
+        ]
+      },
+      "tags": [
+        "trap",
+        "red"
+      ],
+      "size_bytes": 6348
+    },
+    {
+      "file": "glb_assets/swinging_blade_trap.glb",
+      "name": "Swinging Blade Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.75
+        ],
+        "size": [
+          1.49,
+          1.49,
+          1.5
+        ]
+      },
+      "tags": [
+        "trap",
+        "red"
+      ],
+      "size_bytes": 6712
+    },
+    {
+      "file": "glb_assets/dart_wall_trap.glb",
+      "name": "Dart Wall Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.125,
+          0.6
+        ],
+        "size": [
+          1.4,
+          0.45,
+          1.2
+        ]
+      },
+      "tags": [
+        "trap",
+        "red"
+      ],
+      "size_bytes": 4012
+    },
+    {
+      "file": "glb_assets/falling_crusher_trap.glb",
+      "name": "Falling Crusher Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          1.325
+        ],
+        "size": [
+          1.2,
+          1.2,
+          2.65
+        ]
+      },
+      "tags": [
+        "trap",
+        "red"
+      ],
+      "size_bytes": 3356
+    },
+    {
+      "file": "glb_assets/rotating_saw_trap.glb",
+      "name": "Rotating Saw Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.455
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.91
+        ]
+      },
+      "tags": [
+        "trap",
+        "red"
+      ],
+      "size_bytes": 6348
+    },
+    {
+      "file": "glb_assets/flame_jet_trap.glb",
+      "name": "Flame Jet Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.455
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.91
+        ]
+      },
+      "tags": [
+        "trap",
+        "red"
+      ],
+      "size_bytes": 6348
+    },
+    {
+      "file": "glb_assets/acid_sprayer_trap.glb",
+      "name": "Acid Sprayer Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.455
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.91
+        ]
+      },
+      "tags": [
+        "trap",
+        "green"
+      ],
+      "size_bytes": 6348
+    },
+    {
+      "file": "glb_assets/electric_arc_trap.glb",
+      "name": "Electric Arc Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.455
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.91
+        ]
+      },
+      "tags": [
+        "trap",
+        "red"
+      ],
+      "size_bytes": 6348
+    },
+    {
+      "file": "glb_assets/rolling_boulder_trap.glb",
+      "name": "Rolling Boulder Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.455
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.91
+        ]
+      },
+      "tags": [
+        "trap",
+        "red"
+      ],
+      "size_bytes": 6348
+    },
+    {
+      "file": "glb_assets/collapsing_floor_trap.glb",
+      "name": "Collapsing Floor Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.455
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.91
+        ]
+      },
+      "tags": [
+        "trap",
+        "red"
+      ],
+      "size_bytes": 6348
+    },
+    {
+      "file": "glb_assets/chain_snare_trap.glb",
+      "name": "Chain Snare Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.455
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.91
+        ]
+      },
+      "tags": [
+        "trap",
+        "red"
+      ],
+      "size_bytes": 6348
+    },
+    {
+      "file": "glb_assets/void_rift_trap.glb",
+      "name": "Void Rift Trap",
+      "template": "trap",
+      "gameplay_use": "Mechanical trap meshes and hazard proxies for dungeons and arenas.",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.455
+        ],
+        "size": [
+          1.3,
+          1.3,
+          0.91
+        ]
+      },
+      "tags": [
+        "trap",
+        "purple"
+      ],
+      "size_bytes": 6348
+    }
+  ]
+}

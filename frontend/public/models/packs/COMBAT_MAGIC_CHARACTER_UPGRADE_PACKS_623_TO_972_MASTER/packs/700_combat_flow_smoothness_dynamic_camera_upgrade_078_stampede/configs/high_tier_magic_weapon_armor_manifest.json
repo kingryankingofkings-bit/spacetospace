@@ -1,0 +1,31 @@
+{
+  "weapon": "Ivory Tuskgraft Weapon Core",
+  "armor": "Heat-Resistant Plating",
+  "tiers": [
+    "legendary",
+    "mythic",
+    "astral_artifact"
+  ],
+  "weapon_glb": "glb_upgrades/03_magic_weapon_upgrade.glb",
+  "armor_glb": "glb_upgrades/04_magic_armor_upgrade.glb",
+  "material_slots": {
+    "weapon_runes": "textures/05_magic_weapon_runes.png",
+    "armor_trim": "textures/06_magic_armor_trim.png",
+    "emission": "textures/04_vfx_emission_sheet.png",
+    "high_tier_mask": "textures/09_high_tier_material_mask.png"
+  },
+  "stat_intent": {
+    "legendary": {
+      "attack_bonus_pct": 8,
+      "flow_bonus_pct": 4
+    },
+    "mythic": {
+      "attack_bonus_pct": 12,
+      "flow_bonus_pct": 7
+    },
+    "astral_artifact": {
+      "attack_bonus_pct": 16,
+      "flow_bonus_pct": 10
+    }
+  }
+}

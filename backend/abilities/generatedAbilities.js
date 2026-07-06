@@ -27,7 +27,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -59,7 +59,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -98,7 +98,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -130,7 +130,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -169,7 +169,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -201,7 +201,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -240,7 +240,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -272,7 +272,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -311,7 +311,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -343,7 +343,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -382,7 +382,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -414,7 +414,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -453,7 +453,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -485,7 +485,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -524,7 +524,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -556,7 +556,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -620,7 +620,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -652,7 +652,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -691,7 +691,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -723,7 +723,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -762,7 +762,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -794,7 +794,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -838,7 +838,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -870,7 +870,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -913,7 +913,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -945,7 +945,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1005,7 +1005,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1037,7 +1037,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1076,7 +1076,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1108,7 +1108,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1147,7 +1147,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1179,7 +1179,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1218,7 +1218,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1250,7 +1250,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1289,7 +1289,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1321,7 +1321,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1360,7 +1360,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1392,7 +1392,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1431,7 +1431,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1463,7 +1463,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1502,7 +1502,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1534,7 +1534,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1587,7 +1587,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1619,7 +1619,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1658,7 +1658,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1690,7 +1690,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1729,7 +1729,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1761,7 +1761,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1804,7 +1804,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1836,7 +1836,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1875,7 +1875,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1907,7 +1907,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -1968,7 +1968,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2000,7 +2000,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2039,7 +2039,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2071,7 +2071,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2110,7 +2110,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2142,7 +2142,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2195,7 +2195,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2227,7 +2227,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2266,7 +2266,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2298,7 +2298,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2337,7 +2337,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2369,7 +2369,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2408,7 +2408,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2440,7 +2440,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2479,7 +2479,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2511,7 +2511,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2550,7 +2550,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2582,7 +2582,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2621,7 +2621,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2653,7 +2653,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2701,7 +2701,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2733,7 +2733,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2776,7 +2776,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2808,7 +2808,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2847,7 +2847,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2879,7 +2879,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2918,7 +2918,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2950,7 +2950,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -2989,7 +2989,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3021,7 +3021,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3060,7 +3060,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3092,7 +3092,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3131,7 +3131,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3163,7 +3163,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3213,7 +3213,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3245,7 +3245,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3284,7 +3284,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3316,7 +3316,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3370,7 +3370,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3402,7 +3402,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3441,7 +3441,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3473,7 +3473,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3512,7 +3512,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3544,7 +3544,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3583,7 +3583,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3615,7 +3615,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3672,7 +3672,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3704,7 +3704,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3743,7 +3743,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3775,7 +3775,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3814,7 +3814,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3846,7 +3846,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3885,7 +3885,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3917,7 +3917,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -3971,7 +3971,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4003,7 +4003,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4042,7 +4042,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4074,7 +4074,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4128,7 +4128,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4160,7 +4160,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4199,7 +4199,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4231,7 +4231,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4270,7 +4270,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4302,7 +4302,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4341,7 +4341,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4373,7 +4373,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4412,7 +4412,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4444,7 +4444,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4483,7 +4483,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4515,7 +4515,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4558,7 +4558,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4590,7 +4590,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4639,7 +4639,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4671,7 +4671,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4710,7 +4710,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4742,7 +4742,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4795,7 +4795,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4827,7 +4827,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4876,7 +4876,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4908,7 +4908,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -4984,7 +4984,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5016,7 +5016,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5055,7 +5055,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5087,7 +5087,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5141,7 +5141,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5173,7 +5173,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5212,7 +5212,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5244,7 +5244,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5305,7 +5305,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5337,7 +5337,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5426,7 +5426,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5458,7 +5458,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5501,7 +5501,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5533,7 +5533,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5577,7 +5577,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5609,7 +5609,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5662,7 +5662,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5694,7 +5694,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5733,7 +5733,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5765,7 +5765,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5810,7 +5810,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5842,7 +5842,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5881,7 +5881,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5913,7 +5913,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5952,7 +5952,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -5984,7 +5984,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6023,7 +6023,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6055,7 +6055,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6094,7 +6094,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6126,7 +6126,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6179,7 +6179,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6211,7 +6211,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6250,7 +6250,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6282,7 +6282,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6321,7 +6321,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6353,7 +6353,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6392,7 +6392,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6424,7 +6424,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6467,7 +6467,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6499,7 +6499,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6544,7 +6544,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6576,7 +6576,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6615,7 +6615,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6647,7 +6647,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6692,7 +6692,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6724,7 +6724,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6763,7 +6763,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6795,7 +6795,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6845,7 +6845,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6877,7 +6877,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6922,7 +6922,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6954,7 +6954,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -6993,7 +6993,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7025,7 +7025,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7075,7 +7075,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7107,7 +7107,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7146,7 +7146,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7178,7 +7178,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7217,7 +7217,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7249,7 +7249,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7347,7 +7347,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7379,7 +7379,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7422,7 +7422,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7454,7 +7454,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7503,7 +7503,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7535,7 +7535,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7583,7 +7583,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7615,7 +7615,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7654,7 +7654,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7686,7 +7686,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7725,7 +7725,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7757,7 +7757,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7848,7 +7848,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7880,7 +7880,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7929,7 +7929,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -7961,7 +7961,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8030,7 +8030,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8062,7 +8062,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8123,7 +8123,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8155,7 +8155,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8262,7 +8262,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8294,7 +8294,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8337,7 +8337,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8369,7 +8369,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8408,7 +8408,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8440,7 +8440,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8479,7 +8479,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8511,7 +8511,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8550,7 +8550,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8582,7 +8582,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8621,7 +8621,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8653,7 +8653,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8714,7 +8714,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8746,7 +8746,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8785,7 +8785,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8817,7 +8817,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8856,7 +8856,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8888,7 +8888,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8927,7 +8927,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8959,7 +8959,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -8998,7 +8998,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -9030,7 +9030,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -9079,7 +9079,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -9111,7 +9111,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -9150,7 +9150,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -9182,7 +9182,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -9231,7 +9231,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -9263,7 +9263,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -9311,7 +9311,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
         if (!isBoss) {
           if (targetHp <= 0) {
             handleDeath(target, isNpc);
-            const xpRes = awardXP(attacker, target.modelFile, false, attacker.combo);
+            const xpRes = awardXP(attacker, target.level || 1, target.role || 'Fodder', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }
@@ -9343,7 +9343,7 @@ module.exports = function initializeGeneratedAbilities(db, broadcast, npcs, play
           if (targetHp <= 0) {
             const actualBoss = getBoss(target.id);
             const bossType = actualBoss ? actualBoss.type : "unknown";
-            const xpRes = awardXP(attacker, bossType, true, attacker.combo);
+            const xpRes = awardXP(attacker, actualBoss ? actualBoss.level || 40 : 40, 'Boss', attacker.combo);
             if (xpRes.leveledUp) {
                broadcast({ type: "player_level_up", sessionId: attacker.sessionId || attacker.id, newLevel: xpRes.newLevel }, null, attacker.zone);
             }

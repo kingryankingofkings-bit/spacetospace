@@ -1,0 +1,23 @@
+{
+  "boss": "The Data-Forged Evolvarch",
+  "magic_upgrade_family": "combat_flow_camera",
+  "phase_attack_upgrades": [
+    {
+      "phase": 1,
+      "attack": "entry_wipe_tell",
+      "vfx": "glb_modules/01_ability_vfx_module.glb",
+      "camera": "glb_modules/05_combat_start_camera_rig.glb"
+    },
+    {
+      "phase": 2,
+      "attack": "shield_or_armor_break",
+      "texture": "texture_upgrades/03_boss_magic_emission.png"
+    },
+    {
+      "phase": 3,
+      "attack": "ultimate_phase_burst",
+      "audio": "audio_cues/special_attack_cast.wav"
+    }
+  ],
+  "counterplay_notes": "Keep readable telegraphs and preserve free-flow counter windows."
+}

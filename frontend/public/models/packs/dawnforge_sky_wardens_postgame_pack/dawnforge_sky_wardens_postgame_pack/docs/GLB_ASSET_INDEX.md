@@ -1,0 +1,69 @@
+# GLB Asset Index
+
+All `.glb` files in this pack are listed below with relative paths and checksums.
+
+| Asset | Kind | Size Bytes | SHA256 Prefix |
+|---|---|---:|---|
+| `assets/glb/headquarters/SW_HQ_001_the_aerie_of_oaths.glb` | headquarters | 125452 | `2ba30c030c581944` |
+| `assets/glb/npcs/SW_NPC_001_ari_stormvale.glb` | npc_character | 32396 | `9563f0675b265ce4` |
+| `assets/glb/npcs/SW_NPC_002_belan_aerieson.glb` | npc_character | 73476 | `b6c077b4d9cee6fd` |
+| `assets/glb/npcs/SW_NPC_003_cyra_brightmast.glb` | npc_character | 35152 | `b6df61d4e12b8596` |
+| `assets/glb/npcs/SW_NPC_004_damak_skyrill.glb` | npc_character | 73600 | `3d258123fe09d075` |
+| `assets/glb/npcs/SW_NPC_005_elowen_noxwind.glb` | npc_character | 38344 | `277525355cad47e0` |
+| `assets/glb/npcs/SW_NPC_006_fenn_glasswake.glb` | npc_character | 43988 | `bfe37a26848b80fb` |
+| `assets/glb/npcs/SW_NPC_007_ghara_ironwake.glb` | npc_character | 36112 | `c395ad6deea6ffd4` |
+| `assets/glb/npcs/SW_NPC_008_hesh_sparkline.glb` | npc_character | 72240 | `afbaebc5720ceba8` |
+| `assets/glb/npcs/SW_NPC_009_ilyra_galesong.glb` | npc_character | 37128 | `e434e7130030f523` |
+| `assets/glb/npcs/SW_NPC_010_joric_firemast.glb` | npc_character | 72336 | `b7a5b3ab59547a95` |
+| `assets/glb/npcs/SW_NPC_011_kael_quillspire.glb` | npc_character | 38400 | `168f075be98a1d6b` |
+| `assets/glb/npcs/SW_NPC_012_luma_voidson.glb` | npc_character | 36912 | `33b3bef6012e7b49` |
+| `assets/glb/npcs/SW_NPC_013_mavik_driftforge.glb` | npc_character | 74676 | `0517111908113440` |
+| `assets/glb/npcs/SW_NPC_014_nyra_aethermark.glb` | npc_character | 74460 | `99bc86cd7aa4f8fe` |
+| `assets/glb/npcs/SW_NPC_015_orren_stormvale.glb` | npc_character | 36952 | `e5c6712b21824234` |
+| `assets/glb/npcs/SW_NPC_016_pell_aerieson.glb` | npc_character | 36240 | `fd653c109cd525d1` |
+| `assets/glb/npcs/SW_NPC_017_quen_brightmast.glb` | npc_character | 34176 | `9418a9ba6eeaacb5` |
+| `assets/glb/npcs/SW_NPC_018_rava_skyrill.glb` | npc_character | 74596 | `f474f255130be200` |
+| `assets/glb/npcs/SW_NPC_019_solis_noxwind.glb` | npc_character | 36232 | `eeeef7ad40959df7` |
+| `assets/glb/npcs/SW_NPC_020_tavi_glasswake.glb` | npc_character | 36832 | `c94e45e17377a69a` |
+| `assets/glb/npcs/SW_NPC_021_uren_rootwing.glb` | npc_character | 41776 | `52e076fae339a531` |
+| `assets/glb/npcs/SW_NPC_022_vexa_sparkline.glb` | npc_character | 45472 | `1f4d22ad085556c0` |
+| `assets/glb/npcs/SW_NPC_023_wren_galesong.glb` | npc_character | 40328 | `90bd7e4d3d413be1` |
+| `assets/glb/npcs/SW_NPC_024_yara_firemast.glb` | npc_character | 76448 | `676e112e847881c6` |
+| `assets/glb/npcs/SW_NPC_025_zorin_quillspire.glb` | npc_character | 40872 | `622d19a83ac3baa2` |
+| `assets/glb/npcs/SW_NPC_026_asha_voidson.glb` | npc_character | 76696 | `675f55fef5a1fb6a` |
+| `assets/glb/npcs/SW_NPC_027_bracca_longsail.glb` | npc_character | 39940 | `c5cbb070f0195795` |
+| `assets/glb/npcs/SW_NPC_028_crix_thunderpin.glb` | npc_character | 38500 | `0a068dc3988bea1b` |
+| `assets/glb/npcs/SW_NPC_029_dalen_stormvale.glb` | npc_character | 38420 | `2e4ce8a13f96887e` |
+| `assets/glb/npcs/SW_NPC_030_eris_aerieson.glb` | npc_character | 79296 | `2cd03d8cfed173ac` |
+| `assets/glb/npcs/SW_NPC_031_fael_brightmast.glb` | npc_character | 38036 | `b27f6b258a93ec6c` |
+| `assets/glb/npcs/SW_NPC_032_galen_vossmark.glb` | npc_character | 37764 | `682b60718ed0acde` |
+| `assets/glb/npcs/SW_NPC_033_hara_ashwing.glb` | npc_character | 34852 | `6c7ceb0c601718ac` |
+| `assets/glb/npcs/SW_NPC_034_isk_tidecrown.glb` | npc_character | 76276 | `b39e256eed52cf88` |
+| `assets/glb/npcs/SW_NPC_035_jalen_rootwing.glb` | npc_character | 37884 | `ceb92601e68ee608` |
+| `assets/glb/npcs/SW_NPC_036_kora_sparkline.glb` | npc_character | 38524 | `de1a3038579344ce` |
+| `assets/glb/npcs/SW_NPC_037_lyra_horizonward.glb` | npc_character | 40812 | `a1ea0cf08db38b5e` |
+| `assets/glb/npcs/SW_NPC_038_mael_wardenmere.glb` | npc_character | 43832 | `43498dcf10dbb380` |
+| `assets/glb/npcs/SW_NPC_039_nima_cinderrig.glb` | npc_character | 39348 | `c5b9d66bde88bdf2` |
+| `assets/glb/npcs/SW_NPC_040_oda_canopyreel.glb` | npc_character | 74880 | `b0457efa5493873e` |
+| `assets/glb/npcs/SW_NPC_041_renn_aethermark.glb` | npc_character | 40468 | `11b217dcff759e27` |
+| `assets/glb/npcs/SW_NPC_042_sera_cloudmere.glb` | npc_character | 75668 | `429eede9dcecce44` |
+| `assets/glb/npcs/SW_NPC_043_thane_rhythmfall.glb` | npc_character | 41468 | `a758c193cc85c841` |
+| `assets/glb/npcs/SW_NPC_044_vale_dawnhook.glb` | npc_character | 40092 | `d043c195b899ed82` |
+| `assets/glb/npcs/SW_NPC_045_xara_skyrill.glb` | npc_character | 78444 | `5cb0a46abe5a05ea` |
+| `assets/glb/npcs/SW_NPC_046_yorin_noxwind.glb` | npc_character | 78168 | `13f744d76681412f` |
+| `assets/glb/npcs/SW_NPC_047_zaya_glasswake.glb` | npc_character | 40204 | `e0a911a242fef6ef` |
+| `assets/glb/npcs/SW_NPC_048_rixx_rootwing.glb` | npc_character | 39776 | `513065ec227e38f7` |
+| `assets/glb/npcs/SW_NPC_049_mora_sparkline.glb` | npc_character | 36804 | `530f1f765378ba6c` |
+| `assets/glb/npcs/SW_NPC_050_jun_galesong.glb` | npc_character | 78460 | `4b60b60b1060e3b3` |
+| `assets/glb/skyships/SKYSHIP_01_WISP_RUNNER_wisp_runner.glb` | skyship | 23596 | `acae88b1edea4d1e` |
+| `assets/glb/skyships/SKYSHIP_02_CLOUDLACE_COURIER_cloudlace_courier.glb` | skyship | 23672 | `7516c89ad027e3ce` |
+| `assets/glb/skyships/SKYSHIP_03_RAINNEEDLE_PATROL_rainneedle_patrol_skiff.glb` | skyship | 23472 | `6dbce97810cce176` |
+| `assets/glb/skyships/SKYSHIP_04_SKYHOOK_CUTTER_skyhook_cutter.glb` | skyship | 23712 | `c90eda21efe93af2` |
+| `assets/glb/skyships/SKYSHIP_05_SILVERWING_CORVETTE_silverwing_corvette.glb` | skyship | 23768 | `c47e550aa37abf51` |
+| `assets/glb/skyships/SKYSHIP_06_MERCY_BARQUE_mercy_barque.glb` | skyship | 23944 | `33491e49fd50ee06` |
+| `assets/glb/skyships/SKYSHIP_07_THUNDERLINE_DROPSHIP_thunderline_dropship.glb` | skyship | 74932 | `208e03ce0450b7e1` |
+| `assets/glb/skyships/SKYSHIP_08_TEMPEST_FRIGATE_tempest_frigate.glb` | skyship | 76960 | `953c6154885415a5` |
+| `assets/glb/skyships/SKYSHIP_09_DAWNLIFT_HAULER_dawnlift_hauler.glb` | skyship | 77144 | `e7a1c127e4056099` |
+| `assets/glb/skyships/SKYSHIP_10_AERIE_CRUISER_aerie_cruiser.glb` | skyship | 92296 | `8d5eb0fe7915bcc7` |
+| `assets/glb/skyships/SKYSHIP_11_STORMCROWN_DREADNOUGHT_stormcrown_dreadnought.glb` | skyship | 92380 | `2083ebc86c98bc94` |
+| `assets/glb/skyships/SKYSHIP_12_COVENANT_ARK_CARRIER_covenant_ark_carrier.glb` | skyship | 92068 | `4e948b3be3363963` |

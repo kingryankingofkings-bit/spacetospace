@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 90,
+    "title": "The Private Quarantine Aegis Carapace Variant Pack",
+    "kind": "creature_biome_variants",
+    "region": "05 Deep Transit System",
+    "sub_location": "02 The Private Quarantine",
+    "theme": "transit"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Intake Checkpoint",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/01_intake_checkpoint_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Field Surgery Intake"
+    },
+    {
+      "source_area": "Isolation Wing Alpha",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/02_isolation_wing_alpha_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: EdgeLacquer Isolation; Marketplace: Open Market Isolation"
+    },
+    {
+      "source_area": "Decon Corridor",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/03_decon_corridor_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Shadeworks Decon"
+    },
+    {
+      "source_area": "Observation Ring",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/04_observation_ring_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Wandering Observation; Medic: Mender Post Observation"
+    },
+    {
+      "source_area": "Sedation Ward",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/05_sedation_ward_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Curio Shop: Lucky Relics Sedation"
+    },
+    {
+      "source_area": "Containment Vaults",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/06_containment_vaults_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Hammer at Containment"
+    },
+    {
+      "source_area": "Quarantine Chapel",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/07_quarantine_chapel_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Relic Trader: Oldlight Finds Quarantine"
+    },
+    {
+      "source_area": "Emergency Purge System",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/08_emergency_purge_system_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Tailor: Needlehouse Emergency"
+    },
+    {
+      "source_area": "The Silent Exit",
+      "map_file_reference": "area_maps/sub_locations/05_deep_transit_system/02_the_private_quarantine/09_the_silent_exit_map.png",
+      "suggested_objects": [
+        "transit_landmark_anchor",
+        "transit_navigation_prop",
+        "transit_metal_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Stable: Saddle Gate ; Mechanic: Boltworks "
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Private Quarantine Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Private Quarantine Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Private Quarantine Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Private Quarantine Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Private Quarantine Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "The Private Quarantine Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Aegis Carapace",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

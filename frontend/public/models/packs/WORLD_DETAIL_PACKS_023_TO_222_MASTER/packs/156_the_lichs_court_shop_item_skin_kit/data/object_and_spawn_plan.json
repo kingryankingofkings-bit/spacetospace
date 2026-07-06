@@ -1,0 +1,154 @@
+{
+  "pack_identity": {
+    "pack_number": 156,
+    "title": "The Lichs Court Shop Item Skin Kit",
+    "kind": "shop_item_skin",
+    "region": "04 Eastern Wilds And Ancient Archives",
+    "sub_location": "06 The Lichs Court",
+    "theme": "wilds"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "The Lichs Court Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "The Lichs Court Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "The Lichs Court Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "The Lichs Court Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "The Lichs Court Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Lichs Court Nature Variant",
+      "element": "nature",
+      "can_share_base_rig_with": "Gnarl-Maws",
+      "texture_overrides": [
+        "wilds_albedo",
+        "wilds_emission",
+        "nature_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [
+    {
+      "item_id": "DF-N-1635",
+      "item_name": "Supercharged Alternating Archives Dawnforge Tempered Mutagen Command Whistle of Mirror Deflection",
+      "rarity": "Super",
+      "slot": "Handler Focus",
+      "gear_family": "Command Whistle",
+      "world_location": "The Alternating Archives",
+      "suggested_skin": "wilds_nature_handler_focus_finish"
+    },
+    {
+      "item_id": "DF-N-1678",
+      "item_name": "Hardened Burning Playa Dreamglass Seismic Helm of Evolution Charge",
+      "rarity": "Rare",
+      "slot": "Head",
+      "gear_family": "Helm",
+      "world_location": "The Burning Playa",
+      "suggested_skin": "wilds_nature_head_finish"
+    },
+    {
+      "item_id": "DF-N-1721",
+      "item_name": "Prismatic Alternating Archives Dawnforge Tempered Adaptive Pulse Pistols of Starwell Sync",
+      "rarity": "Very Rare",
+      "slot": "Dual Ranged",
+      "gear_family": "Pulse Pistols",
+      "world_location": "The Alternating Archives",
+      "suggested_skin": "wilds_nature_dual_ranged_finish"
+    },
+    {
+      "item_id": "DF-N-1764",
+      "item_name": "Prismatic Orbital Tether Station Dreamglass Kinetic Helm of Sevenfold Counter",
+      "rarity": "Very Rare",
+      "slot": "Head",
+      "gear_family": "Helm",
+      "world_location": "The Orbital Tether Station",
+      "suggested_skin": "wilds_nature_head_finish"
+    },
+    {
+      "item_id": "DF-N-1807",
+      "item_name": "Prismatic Infinite Archives Dawnforge Tempered Chimera Helm of Hound Latch",
+      "rarity": "Very Rare",
+      "slot": "Head",
+      "gear_family": "Helm",
+      "world_location": "The Infinite Archives",
+      "suggested_skin": "wilds_nature_head_finish"
+    }
+  ],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Alchemist, Armor Dye Pack Shop, Blacksmith, Curio Shop, Enchanter, Food Stall, General Goods, Inn, Mechanic, Tailor, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

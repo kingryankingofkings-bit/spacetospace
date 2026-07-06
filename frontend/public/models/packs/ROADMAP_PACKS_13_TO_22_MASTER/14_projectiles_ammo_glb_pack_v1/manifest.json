@@ -1,0 +1,315 @@
+{
+  "pack_name": "Projectiles + Ammo GLB Pack v1",
+  "roadmap_pack_number": 14,
+  "created_utc": "2026-07-05T07:46:55.844345+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "notes": [
+    "All assets are real static low-poly GLB meshes.",
+    "They are browser-game prototype assets.",
+    "They are not rigged, animated, scripted, or engine-prefabbed yet.",
+    "Use manifest and colliders as first-pass metadata for engine import."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/01_arrow_projectile.glb",
+      "name": "Arrow Projectile",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.11,
+          0.0,
+          0.38
+        ],
+        "size": [
+          1.84,
+          0.96,
+          0.76
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "arrow",
+        "steel"
+      ],
+      "size_bytes": 10488
+    },
+    {
+      "file": "glb_assets/02_crossbow_bolt_projectile.glb",
+      "name": "Crossbow Bolt Projectile",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.11,
+          0.0,
+          0.38
+        ],
+        "size": [
+          1.84,
+          0.96,
+          0.76
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "bolt",
+        "iron"
+      ],
+      "size_bytes": 10476
+    },
+    {
+      "file": "glb_assets/03_javelin_projectile.glb",
+      "name": "Javelin Projectile",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.11,
+          0.0,
+          0.38
+        ],
+        "size": [
+          1.84,
+          0.96,
+          0.76
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "javelin",
+        "steel"
+      ],
+      "size_bytes": 10488
+    },
+    {
+      "file": "glb_assets/04_throwing_knife_projectile.glb",
+      "name": "Throwing Knife Projectile",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.11,
+          0.0,
+          0.38
+        ],
+        "size": [
+          1.84,
+          0.96,
+          0.76
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "knife",
+        "steel"
+      ],
+      "size_bytes": 10488
+    },
+    {
+      "file": "glb_assets/05_shuriken_cluster.glb",
+      "name": "Shuriken Cluster",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.459
+        ],
+        "size": [
+          1.04,
+          1.04,
+          0.918
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "shuriken_cluster",
+        "steel"
+      ],
+      "size_bytes": 13160
+    },
+    {
+      "file": "glb_assets/06_chakram_projectile.glb",
+      "name": "Chakram Projectile",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.459
+        ],
+        "size": [
+          1.04,
+          1.04,
+          0.918
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "chakram",
+        "gold"
+      ],
+      "size_bytes": 13144
+    },
+    {
+      "file": "glb_assets/07_fire_rocket_projectile.glb",
+      "name": "Fire Rocket Projectile",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.11,
+          0.0,
+          0.38
+        ],
+        "size": [
+          1.84,
+          0.96,
+          0.76
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "rocket",
+        "orange"
+      ],
+      "size_bytes": 10496
+    },
+    {
+      "file": "glb_assets/08_grenade_projectile.glb",
+      "name": "Grenade Projectile",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.52
+        ],
+        "size": [
+          1.04,
+          1.04,
+          1.04
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "grenade",
+        "rust"
+      ],
+      "size_bytes": 11492
+    },
+    {
+      "file": "glb_assets/09_cannonball_projectile.glb",
+      "name": "Cannonball Projectile",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.52
+        ],
+        "size": [
+          1.04,
+          1.04,
+          1.04
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "bomb",
+        "iron"
+      ],
+      "size_bytes": 11480
+    },
+    {
+      "file": "glb_assets/10_plasma_orb_projectile.glb",
+      "name": "Plasma Orb Projectile",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.467
+        ],
+        "size": [
+          1.04,
+          1.04,
+          0.933
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "plasma_orb",
+        "blue"
+      ],
+      "size_bytes": 12728
+    },
+    {
+      "file": "glb_assets/11_acid_glob_projectile.glb",
+      "name": "Acid Glob Projectile",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.467
+        ],
+        "size": [
+          1.04,
+          1.04,
+          0.933
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "acid_glob",
+        "green"
+      ],
+      "size_bytes": 12728
+    },
+    {
+      "file": "glb_assets/12_ammo_crate_pickup.glb",
+      "name": "Ammo Crate Pickup",
+      "category": "projectile_ammo",
+      "gameplay_use": "projectiles + ammo asset for browser-game prototyping",
+      "collider_type": "box",
+      "bounds": {
+        "center": [
+          0.0,
+          0.0,
+          0.52
+        ],
+        "size": [
+          1.04,
+          1.04,
+          1.04
+        ]
+      },
+      "tags": [
+        "projectile_ammo",
+        "grenade",
+        "wood"
+      ],
+      "size_bytes": 11492
+    }
+  ]
+}

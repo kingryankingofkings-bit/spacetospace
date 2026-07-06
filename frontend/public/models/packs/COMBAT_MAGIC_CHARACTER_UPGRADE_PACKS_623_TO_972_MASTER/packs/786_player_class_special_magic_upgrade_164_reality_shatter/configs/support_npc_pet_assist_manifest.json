@@ -1,0 +1,21 @@
+{
+  "support_npc": "The Iron Warden",
+  "pet": "Echo-Bat",
+  "npc_assist_glb": "glb_upgrades/07_support_npc_aura.glb",
+  "pet_proc_glb": "glb_upgrades/08_pet_companion_proc.glb",
+  "assist_types": [
+    "offscreen_pin",
+    "laser_designator",
+    "healing_safe_zone",
+    "hazard_interrupt",
+    "combo_timer_extension",
+    "camera_callout_marker"
+  ],
+  "cooldown_seconds": 22,
+  "proc_conditions": [
+    "player_combo_above_25",
+    "ally_down",
+    "boss_phase_start",
+    "player_near_hazard"
+  ]
+}

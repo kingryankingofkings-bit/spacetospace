@@ -1,0 +1,44 @@
+{
+  "materials": [
+    {
+      "name": "M_Torinn_PlatinumScales",
+      "albedo": "../03_textures_1080p/torinn_platinum_scales_albedo_1080.png",
+      "normal": "../03_textures_1080p/torinn_platinum_scales_normal_proxy_1080.png",
+      "roughness": "../03_textures_1080p/torinn_platinum_scales_roughness_1080.png",
+      "metallic": 0.05,
+      "roughness_value": 0.38,
+      "emissive": null
+    },
+    {
+      "name": "M_Torinn_WhiteGoldRobe",
+      "albedo": "../03_textures_1080p/torinn_white_gold_robe_albedo_1080.png",
+      "normal": null,
+      "roughness": "../03_textures_1080p/torinn_robe_roughness_1080.png",
+      "metallic": 0.0,
+      "roughness_value": 0.68,
+      "emissive": null
+    },
+    {
+      "name": "M_Torinn_GoldSkulls",
+      "albedo": "../03_textures_1080p/torinn_gold_skull_armor_albedo_1080.png",
+      "metallic": "../03_textures_1080p/torinn_gold_skull_metallic_1080.png",
+      "roughness_value": 0.24,
+      "emissive": null
+    },
+    {
+      "name": "M_Torinn_GemsBlue",
+      "base_color": "#2D6DFF",
+      "metallic": 0,
+      "roughness_value": 0.08,
+      "emissive": "#0B65FF",
+      "emissive_strength": 1.2
+    },
+    {
+      "name": "M_Torinn_FrostVFX",
+      "base_color": "#AEEBFF",
+      "alpha_mode": "additive",
+      "emissive": "#7FD8FF",
+      "emissive_strength": 3.5
+    }
+  ]
+}

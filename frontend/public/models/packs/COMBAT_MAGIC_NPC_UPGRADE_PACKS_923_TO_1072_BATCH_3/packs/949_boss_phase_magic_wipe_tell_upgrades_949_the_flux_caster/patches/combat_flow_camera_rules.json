@@ -1,0 +1,20 @@
+{
+  "trigger": "combat_start",
+  "module": "glb_modules/05_combat_start_camera_rig.glb",
+  "camera_mode": "rhythm_sync_side_pan",
+  "duration_seconds": 1.27,
+  "fov_start": 62,
+  "fov_combat": 75,
+  "smoothing": {
+    "position_spring": 0.78,
+    "rotation_slerp": 0.84,
+    "collision_avoidance": true,
+    "shake_profile": "micro_impact_only_until_heavy_hit"
+  },
+  "combat_flow_rules": [
+    "Do not cut camera during active parry windows.",
+    "Do not block player read of telegraphs.",
+    "During aerial juggles, bias framing toward vertical space.",
+    "During boss phase starts, pull back only after lock-on confirms target visibility."
+  ]
+}

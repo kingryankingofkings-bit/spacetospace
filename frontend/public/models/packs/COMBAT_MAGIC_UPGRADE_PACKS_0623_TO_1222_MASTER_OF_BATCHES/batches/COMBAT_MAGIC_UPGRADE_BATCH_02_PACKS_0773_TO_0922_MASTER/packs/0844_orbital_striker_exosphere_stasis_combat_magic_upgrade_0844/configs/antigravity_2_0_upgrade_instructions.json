@@ -1,0 +1,313 @@
+{
+  "pack_number": 844,
+  "action": "create non-destructive upgraded prefab variants",
+  "target_references_sample": [
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/telegraph_rectangular_zone.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_beam_laser_red.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_earth_shockwave.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_ice_shard_projectile.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_root_snare_burst.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "05_vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_zero_g_field_bubble.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "06_animation_placeholder_pose_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/biped_run_pose_a.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "07_ui_hud_worldspace_markers_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/interact_prompt_marker.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "08_quest_interaction_objects_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/quest_courier_package.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "08_quest_interaction_objects_glb_pack_v1.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "09_mounts_vehicles_travel_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/wooden_wagon.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "10_enemy_faction_architecture_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/scrap_bandit_watchtower.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "11_boss_arena_mechanics_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/evolvarch_data_ring_anchor.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "12_audio_placeholder_cue_pack_v1.zip",
+      "path_in_zip": "audio_wav/footstep_metal_01.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "12_audio_placeholder_cue_pack_v1.zip",
+      "path_in_zip": "audio_wav/slash_heavy.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "12_audio_placeholder_cue_pack_v1.zip",
+      "path_in_zip": "cue_groups/ui.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "04_boss_arena_mechanics_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/lich_shield_pylon.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "01_animation_placeholder_pose_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/biped_run_pose_a.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "05_mounts_vehicles_travel_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/mount_saddle_station.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "03_enemy_faction_architecture_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/corporate_security_gate.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "02_ui_hud_worldspace_markers_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/boss_health_bar_proxy.glb",
+      "asset_type": "glb",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "source_zip": "06_lighting_atmosphere_glb_pack_v1.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "06_lighting_atmosphere_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/warning_beacon_red.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "07_puzzle_mechanisms_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/sequence_button_blue.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "08_destructible_debris_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/metal_scrap_pile.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "09_resource_gathering_nodes_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/healing_herb_patch.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "12_combat_training_practice_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/combo_meter_obelisk.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "11_faction_banners_signage_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/danger_boss_gate_sign.glb",
+      "asset_type": "glb",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "source_zip": "10_town_exterior_structures_glb_pack_v1.zip",
+      "path_in_zip": "colliders.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "10_town_exterior_structures_glb_pack_v1.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_bark_armor_regrowth.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx",
+        "armor"
+      ]
+    },
+    {
+      "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_corrosion_status_drip.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_frost_nova_ring.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_phase_shift_afterimage.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_teleport_marker.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/armor_pickup_belt_uncommon.glb",
+      "asset_type": "glb",
+      "tags": [
+        "armor"
+      ]
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/display_item_rotator_base.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/loot_beam_uncommon.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/recipe_scroll_pickup.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/weapon_pickup_executioner_axe_legendary.glb",
+      "asset_type": "glb",
+      "tags": [
+        "weapon"
+      ]
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/weapon_pickup_spear_common.glb",
+      "asset_type": "glb",
+      "tags": [
+        "weapon"
+      ]
+    },
+    {
+      "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/mod_cliff_face.glb",
+      "asset_type": "glb",
+      "tags": []
+    }
+  ],
+  "required_components": [
+    "MaterialVariantSet",
+    "VFXLifetime",
+    "AbilityTriggerBinding",
+    "MonsterSkinRandomizer",
+    "CombatFlowProfile",
+    "DynamicCombatCameraTrigger",
+    "WeatherSunProfile",
+    "CharacterQualityMaterialPatch",
+    "HighTierEquipmentAffixBinding",
+    "SupportNPCAssistBinding"
+  ],
+  "validation": [
+    "random monster skin table returns no duplicate within recent window",
+    "combat camera blends without breaking input",
+    "class ability VFX spawns on correct socket",
+    "weather/sun LUT changes are reversible",
+    "high tier weapon and armor auras are optional prefab children",
+    "support NPC assist marker does not block navigation"
+  ]
+}

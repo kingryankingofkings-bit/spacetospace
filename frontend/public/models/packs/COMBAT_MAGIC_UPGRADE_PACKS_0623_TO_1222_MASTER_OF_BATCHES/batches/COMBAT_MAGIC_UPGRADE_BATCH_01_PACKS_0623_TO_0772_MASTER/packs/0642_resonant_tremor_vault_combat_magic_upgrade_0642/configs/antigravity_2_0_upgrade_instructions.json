@@ -1,0 +1,333 @@
+{
+  "pack_number": 642,
+  "action": "create non-destructive upgraded prefab variants",
+  "target_references_sample": [
+    {
+      "source_zip": "030_the_raid_rush_choke_points_world_detail_kit.zip",
+      "path_in_zip": "prefab_specs/prefab_handoff.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "031_the_front_matter_void_world_detail_kit.zip",
+      "path_in_zip": "textures/05_the_front_matter_void_world_detail_kit_decal.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "032_the_micro_markets_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/01_landmark_anchor.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "032_the_micro_markets_world_detail_kit.zip",
+      "path_in_zip": "audio/the_micro_markets_world_detail_kit_music_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "033_the_resonant_peaks_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "033_the_resonant_peaks_world_detail_kit.zip",
+      "path_in_zip": "data/material_texture_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "034_the_sonic_badlands_world_detail_kit.zip",
+      "path_in_zip": "textures/04_the_sonic_badlands_world_detail_kit_emission.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "034_the_sonic_badlands_world_detail_kit.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "035_the_heavy_chewer_canyons_world_detail_kit.zip",
+      "path_in_zip": "textures/08_the_heavy_chewer_canyons_world_detail_kit_surface.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "036_the_shut_down_academies_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/04_quest_or_system_interactable.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "036_the_shut_down_academies_world_detail_kit.zip",
+      "path_in_zip": "data/object_and_spawn_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "037_the_deprecated_repositories_world_detail_kit.zip",
+      "path_in_zip": "textures/03_the_deprecated_repositories_world_detail_kit_trim.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "037_the_deprecated_repositories_world_detail_kit.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "038_the_scrap_yard_labyrinth_world_detail_kit.zip",
+      "path_in_zip": "textures/07_the_scrap_yard_labyrinth_world_detail_kit_starfield.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "039_the_playa_of_ash_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc",
+        "creature"
+      ]
+    },
+    {
+      "source_zip": "039_the_playa_of_ash_world_detail_kit.zip",
+      "path_in_zip": "audio/the_playa_of_ash_world_detail_kit_event_or_pickup_sting.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "040_the_burning_playa_world_detail_kit.zip",
+      "path_in_zip": "textures/02_the_burning_playa_world_detail_kit_normal_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "040_the_burning_playa_world_detail_kit.zip",
+      "path_in_zip": "audio/music_cue_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "041_the_rhyming_labyrinths_world_detail_kit.zip",
+      "path_in_zip": "textures/06_the_rhyming_labyrinths_world_detail_kit_water.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "042_the_phonetic_wastes_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/02_local_prop_cluster.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "042_the_phonetic_wastes_world_detail_kit.zip",
+      "path_in_zip": "audio/the_phonetic_wastes_world_detail_kit_ambience_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "043_the_emerald_canopy_sanctuary_world_detail_kit.zip",
+      "path_in_zip": "textures/01_the_emerald_canopy_sanctuary_world_detail_kit_albedo.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "043_the_emerald_canopy_sanctuary_world_detail_kit.zip",
+      "path_in_zip": "prefab_specs/prefab_handoff.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "044_the_whispering_glade_world_detail_kit.zip",
+      "path_in_zip": "textures/05_the_whispering_glade_world_detail_kit_decal.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/01_landmark_anchor.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "045_the_canopy_portrait_halls_world_detail_kit.zip",
+      "path_in_zip": "audio/the_canopy_portrait_halls_world_detail_kit_music_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "046_the_infinite_archives_world_detail_kit.zip",
+      "path_in_zip": "data/material_texture_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "047_the_voyage_incubator_world_detail_kit.zip",
+      "path_in_zip": "textures/04_the_voyage_incubator_world_detail_kit_emission.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "047_the_voyage_incubator_world_detail_kit.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "048_the_lichs_court_world_detail_kit.zip",
+      "path_in_zip": "textures/08_the_lichs_court_world_detail_kit_surface.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/04_quest_or_system_interactable.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "049_the_evolution_arenas_world_detail_kit.zip",
+      "path_in_zip": "data/object_and_spawn_plan.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+      "path_in_zip": "textures/03_the_pocket_monster_plains_world_detail_kit_trim.png",
+      "asset_type": "png",
+      "tags": [
+        "monster",
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "050_the_pocket_monster_plains_world_detail_kit.zip",
+      "path_in_zip": "manifest.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "051_the_magma_core_forges_world_detail_kit.zip",
+      "path_in_zip": "textures/07_the_magma_core_forges_world_detail_kit_starfield.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "052_the_reggae_dub_oasis_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/03_creature_or_npc_variant.glb",
+      "asset_type": "glb",
+      "tags": [
+        "npc",
+        "creature"
+      ]
+    },
+    {
+      "source_zip": "052_the_reggae_dub_oasis_world_detail_kit.zip",
+      "path_in_zip": "audio/the_reggae_dub_oasis_world_detail_kit_event_or_pickup_sting.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "053_the_subterranean_grid_world_detail_kit.zip",
+      "path_in_zip": "textures/02_the_subterranean_grid_world_detail_kit_normal_proxy.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "053_the_subterranean_grid_world_detail_kit.zip",
+      "path_in_zip": "audio/music_cue_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "054_the_private_quarantine_world_detail_kit.zip",
+      "path_in_zip": "textures/06_the_private_quarantine_world_detail_kit_water.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "055_the_revision_labs_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/02_local_prop_cluster.glb",
+      "asset_type": "glb",
+      "tags": []
+    }
+  ],
+  "required_components": [
+    "MaterialVariantSet",
+    "VFXLifetime",
+    "AbilityTriggerBinding",
+    "MonsterSkinRandomizer",
+    "CombatFlowProfile",
+    "DynamicCombatCameraTrigger",
+    "WeatherSunProfile",
+    "CharacterQualityMaterialPatch",
+    "HighTierEquipmentAffixBinding",
+    "SupportNPCAssistBinding"
+  ],
+  "validation": [
+    "random monster skin table returns no duplicate within recent window",
+    "combat camera blends without breaking input",
+    "class ability VFX spawns on correct socket",
+    "weather/sun LUT changes are reversible",
+    "high tier weapon and armor auras are optional prefab children",
+    "support NPC assist marker does not block navigation"
+  ]
+}

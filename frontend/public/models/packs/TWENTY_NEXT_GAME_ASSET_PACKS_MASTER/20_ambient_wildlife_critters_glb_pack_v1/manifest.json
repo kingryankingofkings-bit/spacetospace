@@ -1,0 +1,304 @@
+{
+  "pack_name": "Ambient Wildlife + Critters GLB Pack v1",
+  "pack_slug": "20_ambient_wildlife_critters_glb_pack_v1",
+  "created_utc": "2026-07-05T07:17:57.544551+00:00",
+  "format": "GLB",
+  "asset_count": 12,
+  "description": "Low-poly ambient creatures and small environmental life proxies.",
+  "notes": [
+    "All assets are real static low-poly GLB mesh assets.",
+    "Assets are prototype/game-base meshes, not rigged, animated, scripted, or engine-prefabbed.",
+    "Use colliders.json as a first-pass collision/layout guide.",
+    "Materials are embedded PBR factors; configure emissive/additive behavior in-engine when needed."
+  ],
+  "assets": [
+    {
+      "file": "glb_assets/small_fish_blue.glb",
+      "name": "Small Fish Blue",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          -0.213,
+          0.0,
+          0.465
+        ],
+        "size": [
+          1.175,
+          0.312,
+          0.33
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "red"
+      ],
+      "size_bytes": 4356
+    },
+    {
+      "file": "glb_assets/reef_fish_orange.glb",
+      "name": "Reef Fish Orange",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          -0.213,
+          0.0,
+          0.465
+        ],
+        "size": [
+          1.175,
+          0.312,
+          0.33
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "orange"
+      ],
+      "size_bytes": 4356
+    },
+    {
+      "file": "glb_assets/cave_bat_proxy.glb",
+      "name": "Cave Bat Proxy",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.312,
+          0.0,
+          0.533
+        ],
+        "size": [
+          2.175,
+          1.536,
+          1.065
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "yellow"
+      ],
+      "size_bytes": 19652
+    },
+    {
+      "file": "glb_assets/forest_bird_proxy.glb",
+      "name": "Forest Bird Proxy",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.0,
+          -0.04,
+          0.65
+        ],
+        "size": [
+          1.044,
+          0.36,
+          0.28
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "green"
+      ],
+      "size_bytes": 4912
+    },
+    {
+      "file": "glb_assets/swamp_firefly_insect.glb",
+      "name": "Swamp Firefly Insect",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.02,
+          0.0,
+          0.35
+        ],
+        "size": [
+          0.6,
+          0.45,
+          0.256
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "orange"
+      ],
+      "size_bytes": 8772
+    },
+    {
+      "file": "glb_assets/desert_beetle_bug.glb",
+      "name": "Desert Beetle Bug",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.02,
+          0.0,
+          0.35
+        ],
+        "size": [
+          0.6,
+          0.45,
+          0.256
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "purple"
+      ],
+      "size_bytes": 8772
+    },
+    {
+      "file": "glb_assets/snow_hare_proxy.glb",
+      "name": "Snow Hare Proxy",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.312,
+          0.0,
+          0.533
+        ],
+        "size": [
+          2.175,
+          1.536,
+          1.065
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "white"
+      ],
+      "size_bytes": 19636
+    },
+    {
+      "file": "glb_assets/city_rat_proxy.glb",
+      "name": "City Rat Proxy",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.312,
+          0.0,
+          0.533
+        ],
+        "size": [
+          2.175,
+          1.536,
+          1.065
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "gold"
+      ],
+      "size_bytes": 19640
+    },
+    {
+      "file": "glb_assets/sky_moth_proxy.glb",
+      "name": "Sky Moth Proxy",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.312,
+          0.0,
+          0.533
+        ],
+        "size": [
+          2.175,
+          1.536,
+          1.065
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "red"
+      ],
+      "size_bytes": 19648
+    },
+    {
+      "file": "glb_assets/crystal_wisp_proxy.glb",
+      "name": "Crystal Wisp Proxy",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.312,
+          0.0,
+          0.533
+        ],
+        "size": [
+          2.175,
+          1.536,
+          1.065
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "orange"
+      ],
+      "size_bytes": 19652
+    },
+    {
+      "file": "glb_assets/tiny_lizard_proxy.glb",
+      "name": "Tiny Lizard Proxy",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.312,
+          0.0,
+          0.533
+        ],
+        "size": [
+          2.175,
+          1.536,
+          1.065
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "yellow"
+      ],
+      "size_bytes": 19652
+    },
+    {
+      "file": "glb_assets/ambient_butterfly_proxy.glb",
+      "name": "Ambient Butterfly Proxy",
+      "template": "wildlife",
+      "gameplay_use": "Low-poly ambient creatures and small environmental life proxies.",
+      "collider_type": "sphere",
+      "bounds": {
+        "center": [
+          0.312,
+          0.0,
+          0.533
+        ],
+        "size": [
+          2.175,
+          1.536,
+          1.065
+        ]
+      },
+      "tags": [
+        "wildlife",
+        "green"
+      ],
+      "size_bytes": 19652
+    }
+  ]
+}

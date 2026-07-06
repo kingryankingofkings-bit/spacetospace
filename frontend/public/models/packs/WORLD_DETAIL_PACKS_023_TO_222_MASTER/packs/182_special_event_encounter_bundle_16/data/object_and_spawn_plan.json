@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 182,
+    "title": "Special Event Encounter Bundle 16",
+    "kind": "special_event_bundle",
+    "region": "The Subterranean Grid",
+    "sub_location": "Neon Rail Concourse",
+    "theme": "transit"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "Neon Rail Concourse Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Siphon-Ticks",
+      "local_variant": "Neon Rail Concourse Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Iron-Jaw Hound",
+      "local_variant": "Neon Rail Concourse Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "Neon Rail Concourse Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Neon Rail Concourse Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Neon Rail Concourse Metal Variant",
+      "element": "metal",
+      "can_share_base_rig_with": "Scrap-Phalanx",
+      "texture_overrides": [
+        "transit_albedo",
+        "transit_emission",
+        "metal_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-016",
+      "event_title": "Glass-Hardened Incident: Neon Rail Concourse",
+      "world_map_location": "The Subterranean Grid",
+      "sublocation": "Neon Rail Concourse",
+      "required_player_level": 21,
+      "primary_variant": "Glass-Hardened Tremor-Fiend",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-050",
+      "event_title": "Magnetized Incident: Ancient Beast Hollow",
+      "world_map_location": "The Pachyderm Sanctuaries",
+      "sublocation": "Ancient Beast Hollow",
+      "required_player_level": 25,
+      "primary_variant": "Magnetized Ivory Behemoth",
+      "hazard_profile": "root snares, moving beast-platforms, and canopy traversal pressure"
+    },
+    {
+      "event_id": "SEV-084",
+      "event_title": "Data-Forged Incident: Scrap-Tek Salvage Yard",
+      "world_map_location": "The Scrap-Yard Labyrinth",
+      "sublocation": "Scrap-Tek Salvage Yard",
+      "required_player_level": 28,
+      "primary_variant": "Data-Forged Nexus Warden",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-118",
+      "event_title": "Venom-Laced Incident: Leaking Airlock Run",
+      "world_map_location": "The Abyssal Trench",
+      "sublocation": "Leaking Airlock Run",
+      "required_player_level": 31,
+      "primary_variant": "Venom-Laced Nexus Swarmers",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-152",
+      "event_title": "Phase-Bound Incident: Refunding Bridge Span",
+      "world_map_location": "The Deprecated Repositories",
+      "sublocation": "Refunding Bridge Span",
+      "required_player_level": 36,
+      "primary_variant": "Phase-Bound Data-Forged Evolvarch",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-186",
+      "event_title": "Grav-Torn Incident: Shattered Solar Panel Field",
+      "world_map_location": "The Orbital Tether Station",
+      "sublocation": "Shattered Solar Panel Field",
+      "required_player_level": 40,
+      "primary_variant": "Grav-Torn Data-Forged Evolvarch",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

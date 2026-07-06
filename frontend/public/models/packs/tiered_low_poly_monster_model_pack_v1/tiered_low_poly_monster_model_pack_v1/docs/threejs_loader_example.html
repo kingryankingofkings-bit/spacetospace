@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Monster Pack GLB Loader Example</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #1f2228; color: white; font-family: system-ui, sans-serif; }
+    #info { position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,.55); padding: 10px 12px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+<div id="info">
+  <b>Tiered Low-Poly Monster Pack</b><br>
+  Change <code>modelPath</code> in this file to preview a different GLB.
+</div>
+
+<script type="module">
+import * as THREE from "https://unpkg.com/three@0.160.0/build/three.module.js";
+import { GLTFLoader } from "https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "https://unpkg.com/three@0.160.0/examples/jsm/controls/OrbitControls.js";
+
+const modelPath = "../models/quadruped_tier_1_razorhound.glb";
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x2a2d34);
+
+const camera = new THREE.PerspectiveCamera(55, innerWidth / innerHeight, 0.1, 100);
+camera.position.set(2.8, 1.8, 4.2);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(innerWidth, innerHeight);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 0.7, 0);
+controls.update();
+
+const hemi = new THREE.HemisphereLight(0xffffff, 0x303030, 2.4);
+scene.add(hemi);
+
+const dir = new THREE.DirectionalLight(0xffffff, 2.0);
+dir.position.set(2, 4, 3);
+scene.add(dir);
+
+const grid = new THREE.GridHelper(8, 8, 0x606060, 0x404040);
+scene.add(grid);
+
+new GLTFLoader().load(modelPath, (gltf) => {
+  const model = gltf.scene;
+  model.traverse((obj) => {
+    if (obj.isMesh) {
+      obj.castShadow = true;
+      obj.receiveShadow = true;
+    }
+  });
+  scene.add(model);
+}, undefined, (err) => {
+  console.error(err);
+});
+
+addEventListener("resize", () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+
+function animate() {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+}
+animate();
+</script>
+</body>
+</html>

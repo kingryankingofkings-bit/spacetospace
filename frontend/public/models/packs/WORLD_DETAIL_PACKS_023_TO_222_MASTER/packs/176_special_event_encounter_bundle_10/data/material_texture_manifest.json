@@ -1,0 +1,83 @@
+{
+  "theme": "urban",
+  "palette": {
+    "base": [
+      36,
+      37,
+      49
+    ],
+    "accent": [
+      161,
+      80,
+      255
+    ],
+    "glow": [
+      0,
+      218,
+      255
+    ],
+    "tone": 176,
+    "mode": "neon",
+    "element": "electric"
+  },
+  "texture_set": [
+    {
+      "file": "textures/01_special_event_encounter_bundle_10_albedo.png",
+      "pattern": "albedo",
+      "theme": "urban",
+      "material_use": "local surface albedo"
+    },
+    {
+      "file": "textures/02_special_event_encounter_bundle_10_normal_proxy.png",
+      "pattern": "normal_proxy",
+      "theme": "urban",
+      "material_use": "placeholder normal-map proxy"
+    },
+    {
+      "file": "textures/03_special_event_encounter_bundle_10_trim.png",
+      "pattern": "trim",
+      "theme": "urban",
+      "material_use": "architecture/prop trim sheet"
+    },
+    {
+      "file": "textures/04_special_event_encounter_bundle_10_emission.png",
+      "pattern": "emission",
+      "theme": "urban",
+      "material_use": "glowing signage, runes, creatures, UI, and VFX"
+    },
+    {
+      "file": "textures/05_special_event_encounter_bundle_10_decal.png",
+      "pattern": "decal",
+      "theme": "urban",
+      "material_use": "floor/wall decals and quest markers"
+    },
+    {
+      "file": "textures/06_special_event_encounter_bundle_10_water.png",
+      "pattern": "water",
+      "theme": "urban",
+      "material_use": "water/liquid/caustic surface"
+    },
+    {
+      "file": "textures/07_special_event_encounter_bundle_10_starfield.png",
+      "pattern": "starfield",
+      "theme": "urban",
+      "material_use": "skybox/starfield/cosmic overlay"
+    },
+    {
+      "file": "textures/08_special_event_encounter_bundle_10_surface.png",
+      "pattern": "surface",
+      "theme": "urban",
+      "material_use": "secondary local surface variation"
+    }
+  ],
+  "water_included": true,
+  "stars_included": true,
+  "shader_targets": [
+    "opaque_world_surface",
+    "emissive_world_detail",
+    "transparent_water_or_liquid",
+    "starfield_skybox_or_overlay",
+    "creature_biome_variant_skin",
+    "item_rarity_or_skin_finish"
+  ]
+}

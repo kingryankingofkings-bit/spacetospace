@@ -1,0 +1,448 @@
+{
+  "coordinate_system": {
+    "up_axis": "+Y",
+    "front_axis": "+Z",
+    "origin": "grounded at local model floor, centered approximately at broadphase center",
+    "unit_scale": "meters-ish / game units"
+  },
+  "note": "Collider entries are suggested gameplay proxies. They are not baked collision meshes inside the GLBs.",
+  "models": {
+    "01_sylvan_juggernaut.glb": {
+      "name": "The Sylvan Juggernaut",
+      "broadphase": {
+        "type": "box",
+        "center": [
+          0.0,
+          2.1196,
+          0.05
+        ],
+        "size": [
+          3.68,
+          4.2392,
+          2.06
+        ]
+      },
+      "hit_zones": [
+        {
+          "name": "health_core",
+          "type": "capsule",
+          "center": [
+            0,
+            2.05,
+            0.05
+          ],
+          "radius": 0.65,
+          "height": 2.1,
+          "notes": "Damage this only after bark armor is broken."
+        },
+        {
+          "name": "ablative_bark_front",
+          "type": "box",
+          "center": [
+            0,
+            2.1,
+            0.62
+          ],
+          "size": [
+            1.2,
+            1.5,
+            0.25
+          ],
+          "notes": "Destroyable armor layer."
+        },
+        {
+          "name": "rooting_strike_aoe",
+          "type": "cylinder",
+          "center": [
+            0,
+            0.02,
+            0.5
+          ],
+          "radius": 2.6,
+          "height": 0.15,
+          "notes": "Gameplay area, not model collision."
+        }
+      ]
+    },
+    "02_scrap_stalker.glb": {
+      "name": "The Scrap-Stalker",
+      "broadphase": {
+        "type": "box",
+        "center": [
+          0.0133,
+          0.7762,
+          0.07
+        ],
+        "size": [
+          1.4065,
+          1.5523,
+          3.7
+        ]
+      },
+      "hit_zones": [
+        {
+          "name": "body",
+          "type": "capsule",
+          "center": [
+            0,
+            0.82,
+            0.05
+          ],
+          "radius": 0.43,
+          "height": 1.6,
+          "axis": "Z"
+        },
+        {
+          "name": "hydraulic_pounce_leg",
+          "type": "capsule",
+          "center": [
+            0.48,
+            0.42,
+            -0.48
+          ],
+          "radius": 0.16,
+          "height": 0.9,
+          "axis": "Y/Z angled"
+        },
+        {
+          "name": "emp_howl_origin",
+          "type": "point",
+          "position": [
+            0,
+            1.05,
+            1.62
+          ]
+        }
+      ]
+    },
+    "03_nexus_swarmers_cluster.glb": {
+      "name": "The Nexus Swarmers",
+      "broadphase": {
+        "type": "box",
+        "center": [
+          0.0172,
+          0.6205,
+          0.1809
+        ],
+        "size": [
+          1.5863,
+          1.241,
+          1.7735
+        ]
+      },
+      "hit_zones": [
+        {
+          "name": "individual_swarmer_proxy",
+          "type": "sphere",
+          "radius": 0.28,
+          "notes": "Use per parasite; cluster contains multiple visual bodies."
+        },
+        {
+          "name": "fusion_check_volume",
+          "type": "sphere",
+          "center": [
+            0,
+            0.75,
+            0.1
+          ],
+          "radius": 1.1
+        }
+      ]
+    },
+    "03b_nexus_warden_evolved.glb": {
+      "name": "Nexus Warden Evolved",
+      "broadphase": {
+        "type": "box",
+        "center": [
+          0.0,
+          1.3778,
+          0.2639
+        ],
+        "size": [
+          2.1,
+          2.7555,
+          1.5723
+        ]
+      },
+      "hit_zones": [
+        {
+          "name": "crystal_core_weakpoint",
+          "type": "sphere",
+          "center": [
+            0,
+            1.55,
+            0.38
+          ],
+          "radius": 0.28
+        },
+        {
+          "name": "beam_origin",
+          "type": "point",
+          "position": [
+            0,
+            2.3,
+            1.05
+          ]
+        }
+      ]
+    },
+    "04_void_anomaly.glb": {
+      "name": "The Void Anomaly",
+      "broadphase": {
+        "type": "box",
+        "center": [
+          0.0429,
+          1.22,
+          0.0615
+        ],
+        "size": [
+          1.5458,
+          2.44,
+          1.117
+        ]
+      },
+      "hit_zones": [
+        {
+          "name": "phase_body",
+          "type": "capsule",
+          "center": [
+            0,
+            1.25,
+            0.05
+          ],
+          "radius": 0.38,
+          "height": 2.1,
+          "notes": "Disable/ghost during Phase Shift."
+        },
+        {
+          "name": "reality_tear_pull",
+          "type": "sphere",
+          "center": [
+            0.78,
+            1.2,
+            0.1
+          ],
+          "radius": 1.8,
+          "notes": "Gameplay pull field; center damage radius smaller."
+        }
+      ]
+    },
+    "05_tremor_fiend.glb": {
+      "name": "The Tremor-Fiend",
+      "broadphase": {
+        "type": "box",
+        "center": [
+          0.0,
+          0.83,
+          0.2232
+        ],
+        "size": [
+          2.36,
+          1.66,
+          2.546
+        ]
+      },
+      "hit_zones": [
+        {
+          "name": "body",
+          "type": "capsule",
+          "center": [
+            0,
+            0.8,
+            0.15
+          ],
+          "radius": 0.75,
+          "height": 2.1,
+          "axis": "Z"
+        },
+        {
+          "name": "sonic_bellow_cone",
+          "type": "cone",
+          "origin": [
+            0,
+            0.82,
+            1.36
+          ],
+          "direction": "+Z",
+          "angle_degrees": 42,
+          "range": 4.0
+        },
+        {
+          "name": "metronome_shockwave",
+          "type": "cylinder",
+          "center": [
+            0,
+            0.02,
+            0.6
+          ],
+          "radius": 3.5,
+          "height": 0.1
+        }
+      ]
+    },
+    "06_iron_jaw_hound.glb": {
+      "name": "The Iron-Jaw Hound",
+      "broadphase": {
+        "type": "box",
+        "center": [
+          0.0,
+          0.6075,
+          0.3176
+        ],
+        "size": [
+          1.28,
+          1.215,
+          2.9648
+        ]
+      },
+      "hit_zones": [
+        {
+          "name": "hound_body",
+          "type": "capsule",
+          "center": [
+            0,
+            0.65,
+            0.1
+          ],
+          "radius": 0.42,
+          "height": 1.8,
+          "axis": "Z"
+        },
+        {
+          "name": "latch_bite_zone",
+          "type": "box",
+          "center": [
+            0,
+            0.7,
+            1.66
+          ],
+          "size": [
+            0.7,
+            0.35,
+            0.45
+          ]
+        },
+        {
+          "name": "ally_vault_target",
+          "type": "box",
+          "center": [
+            0,
+            0.96,
+            0.45
+          ],
+          "size": [
+            0.8,
+            0.24,
+            0.5
+          ]
+        }
+      ]
+    },
+    "07_aegis_carapace.glb": {
+      "name": "The Aegis Carapace",
+      "broadphase": {
+        "type": "box",
+        "center": [
+          0.0,
+          0.8421,
+          -0.1275
+        ],
+        "size": [
+          2.16,
+          1.6842,
+          1.905
+        ]
+      },
+      "hit_zones": [
+        {
+          "name": "front_deflection_shell",
+          "type": "box",
+          "center": [
+            0,
+            0.78,
+            0.72
+          ],
+          "size": [
+            1.6,
+            1.35,
+            0.25
+          ],
+          "notes": "Frontal strikes deflect here."
+        },
+        {
+          "name": "rear_vulnerable_abdomen",
+          "type": "sphere",
+          "center": [
+            0,
+            0.65,
+            -0.75
+          ],
+          "radius": 0.48
+        },
+        {
+          "name": "vault_over_trigger",
+          "type": "box",
+          "center": [
+            0,
+            1.45,
+            0.2
+          ],
+          "size": [
+            1.0,
+            0.3,
+            1.2
+          ]
+        }
+      ]
+    },
+    "08_venom_spitter.glb": {
+      "name": "The Venom-Spitter",
+      "broadphase": {
+        "type": "box",
+        "center": [
+          0.0,
+          0.4174,
+          0.135
+        ],
+        "size": [
+          1.1934,
+          0.8349,
+          3.81
+        ]
+      },
+      "hit_zones": [
+        {
+          "name": "serpentine_body",
+          "type": "capsule",
+          "center": [
+            0,
+            0.52,
+            -0.1
+          ],
+          "radius": 0.2,
+          "height": 3.2,
+          "axis": "Z"
+        },
+        {
+          "name": "spit_origin",
+          "type": "point",
+          "position": [
+            0,
+            0.82,
+            1.92
+          ]
+        },
+        {
+          "name": "reversal_target",
+          "type": "sphere",
+          "center": [
+            0,
+            0.82,
+            1.36
+          ],
+          "radius": 0.34
+        }
+      ]
+    }
+  }
+}

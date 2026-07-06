@@ -1,0 +1,17 @@
+{
+  "boss": "The Syndicate Lich",
+  "special_attack_upgrade": {
+    "phase_module": "glb_modules/03_boss_magic_phase_module.glb",
+    "phase_material": "texture_upgrades/05_boss_phase_material.png",
+    "telegraph_policy": "telegraph before damage; tighten counter windows only in empowered phases",
+    "dynamic_camera": "use configs/dynamic_combat_camera_trigger.json",
+    "attack_variants": [
+      "phase-break shockwave",
+      "arena pull",
+      "lane sweep",
+      "weakpoint expose",
+      "summon support variant",
+      "rage echo repeat"
+    ]
+  }
+}

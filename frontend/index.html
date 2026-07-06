@@ -1,6 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      window.onerror = function(msg, url, line, col, error) {
+        fetch("http://localhost:8080/client-error", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ msg, url, line, col, stack: error ? error.stack : "" })
+        });
+      };
+      window.onunhandledrejection = function(e) {
+        fetch("http://localhost:8080/client-error", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ msg: e.reason ? e.reason.toString() : "Promise Rejection", stack: e.reason && e.reason.stack ? e.reason.stack : "" })
+        });
+      };
+    </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

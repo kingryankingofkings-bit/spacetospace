@@ -1,0 +1,29 @@
+{
+  "attack_event_markers": [
+    "windup_start",
+    "telegraph_show",
+    "active_start",
+    "hitbox_enable",
+    "vfx_spawn",
+    "camera_pulse",
+    "hitbox_disable",
+    "recovery_start",
+    "combo_buffer_open",
+    "recovery_end"
+  ],
+  "skin_spawn_event_markers": [
+    "spawn_begin",
+    "skin_seed_resolved",
+    "material_bound",
+    "glb_overlay_attached",
+    "spawn_vfx",
+    "ai_enable"
+  ],
+  "camera_event_markers": [
+    "combat_start",
+    "camera_profile_push",
+    "special_attack_focus",
+    "boss_phase_focus",
+    "combat_exit"
+  ]
+}

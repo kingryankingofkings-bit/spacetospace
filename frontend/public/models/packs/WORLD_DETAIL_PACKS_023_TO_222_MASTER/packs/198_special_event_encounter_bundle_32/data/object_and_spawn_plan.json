@@ -1,0 +1,163 @@
+{
+  "pack_identity": {
+    "pack_number": 198,
+    "title": "Special Event Encounter Bundle 32",
+    "kind": "special_event_bundle",
+    "region": "The On-Demand Arteries",
+    "sub_location": "Lane-Swap Bridges",
+    "theme": "urban"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "Lane-Swap Bridges Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "Lane-Swap Bridges Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "Lane-Swap Bridges Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "Lane-Swap Bridges Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "Lane-Swap Bridges Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "Lane-Swap Bridges Electric Variant",
+      "element": "electric",
+      "can_share_base_rig_with": "Venom-Spitter",
+      "texture_overrides": [
+        "urban_albedo",
+        "urban_emission",
+        "electric_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-032",
+      "event_title": "Magnetized Incident: Lane-Swap Bridges",
+      "world_map_location": "The On-Demand Arteries",
+      "sublocation": "Lane-Swap Bridges",
+      "required_player_level": 23,
+      "primary_variant": "Magnetized Tremor-Fiend",
+      "hazard_profile": "high-speed transit sweeps, lane swaps, and lethal timing windows"
+    },
+    {
+      "event_id": "SEV-066",
+      "event_title": "Data-Forged Incident: Geode Narrows",
+      "world_map_location": "The Heavy-Chewer Canyons",
+      "sublocation": "Geode Narrows",
+      "required_player_level": 26,
+      "primary_variant": "Data-Forged Gnarl-Maws",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-100",
+      "event_title": "Venom-Laced Incident: Fork-Chime Gate",
+      "world_map_location": "The Sonic Badlands",
+      "sublocation": "Fork-Chime Gate",
+      "required_player_level": 29,
+      "primary_variant": "Venom-Laced Nexus Swarmers",
+      "hazard_profile": "tempo-locked shockwaves, parry-window distortion, and bass pulses that punish dropped combos"
+    },
+    {
+      "event_id": "SEV-134",
+      "event_title": "Grav-Torn Incident: Central Trauma Ward",
+      "world_map_location": "Sector 6 Quarantine",
+      "sublocation": "Central Trauma Ward",
+      "required_player_level": 32,
+      "primary_variant": "Grav-Torn Data-Forged Evolvarch",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-168",
+      "event_title": "Ablative Incident: Front-Matter Guard Hall",
+      "world_map_location": "The Alternating Archives",
+      "sublocation": "Front-Matter Guard Hall",
+      "required_player_level": 39,
+      "primary_variant": "Ablative Syndicate Lich",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    },
+    {
+      "event_id": "SEV-202",
+      "event_title": "Bark-Crowned Incident: Holographic Archivist Hall",
+      "world_map_location": "The Infinite Archives",
+      "sublocation": "Holographic Archivist Hall",
+      "required_player_level": 40,
+      "primary_variant": "Bark-Crowned Data-Forged Evolvarch",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

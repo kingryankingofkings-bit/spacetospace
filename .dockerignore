@@ -1,0 +1,20 @@
+node_modules/
+npm-debug.log
+.git
+.env
+
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+backend/node_modules/
+backend/.env
+
+# Ignore unnecessary root folders
+.agents/
+k8s/
+schemas/
+scripts/
+extracted_pack/
+geographic_master_guide_shop_inventories/
+per_pack_briefs/

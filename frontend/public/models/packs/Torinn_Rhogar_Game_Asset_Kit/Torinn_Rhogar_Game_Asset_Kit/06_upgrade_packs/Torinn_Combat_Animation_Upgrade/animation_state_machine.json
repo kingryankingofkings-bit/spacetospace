@@ -1,0 +1,70 @@
+{
+  "state_machine": "Torinn_Rhogar_Combat_Controller",
+  "default_state": "idle_cold_breath",
+  "layers": [
+    {
+      "name": "BaseLocomotion",
+      "states": [
+        "idle_cold_breath",
+        "walk_robed_heavy",
+        "run_monk_controlled",
+        "combat_ready",
+        "turn_90_left",
+        "turn_90_right",
+        "pivot_180"
+      ]
+    },
+    {
+      "name": "UpperBodyCombat",
+      "states": [
+        "claw_jab_L",
+        "claw_cross_R",
+        "frost_palm_push",
+        "dual_fist_charge",
+        "divine_halo_channel",
+        "frost_breath_short"
+      ]
+    },
+    {
+      "name": "AdditiveSecondary",
+      "states": [
+        "tendril_followthrough",
+        "robe_panel_flutter",
+        "tail_balance",
+        "cold_breath_loop",
+        "gem_glint"
+      ]
+    }
+  ],
+  "parameters": [
+    "speed",
+    "combat",
+    "charge",
+    "aura_level",
+    "health_percent",
+    "ultimate_ready",
+    "turn_angle"
+  ],
+  "events": [
+    {
+      "animation": "frost_palm_push",
+      "time": 0.42,
+      "event": "spawn_fist_burst_R"
+    },
+    {
+      "animation": "dual_fist_charge",
+      "time": 0.18,
+      "event": "enable_hand_arcs"
+    },
+    {
+      "animation": "boss_execute_tempest",
+      "time": 0.64,
+      "event": "aura_surge_31F"
+    },
+    {
+      "animation": "frost_breath_short",
+      "time": 0.31,
+      "event": "spawn_mouth_mist_cone"
+    }
+  ]
+}

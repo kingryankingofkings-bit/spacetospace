@@ -1,0 +1,172 @@
+{
+  "pack_identity": {
+    "pack_number": 177,
+    "title": "Special Event Encounter Bundle 11",
+    "kind": "special_event_bundle",
+    "region": "The Central Pillar / Star-Elevator Core",
+    "sub_location": "Aether Counterweight Hall",
+    "theme": "neutral"
+  },
+  "source_area_object_plan": [],
+  "creature_variants": [
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "Aether Counterweight Hall Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "Aether Counterweight Hall Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Sylvan Juggernaut",
+      "local_variant": "Aether Counterweight Hall Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Gnarl-Maws",
+      "local_variant": "Aether Counterweight Hall Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Grid-Rushers",
+      "local_variant": "Aether Counterweight Hall Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Phalanx",
+      "local_variant": "Aether Counterweight Hall Arcane Variant",
+      "element": "arcane",
+      "can_share_base_rig_with": "Nexus Swarmers",
+      "texture_overrides": [
+        "neutral_albedo",
+        "neutral_emission",
+        "arcane_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [
+    {
+      "event_id": "SEV-011",
+      "event_title": "Data-Forged Incident: Aether Counterweight Hall",
+      "world_map_location": "The Central Pillar / Star-Elevator Core",
+      "sublocation": "Aether Counterweight Hall",
+      "required_player_level": 21,
+      "primary_variant": "Data-Forged Venom-Spitter",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    },
+    {
+      "event_id": "SEV-045",
+      "event_title": "Venom-Laced Incident: Kaelen\u2019s Treetop Camp",
+      "world_map_location": "The Emerald Canopy Sanctuary",
+      "sublocation": "Kaelen\u2019s Treetop Camp",
+      "required_player_level": 24,
+      "primary_variant": "Venom-Laced Iron-Jaw Hound",
+      "hazard_profile": "root snares, moving beast-platforms, and canopy traversal pressure"
+    },
+    {
+      "event_id": "SEV-079",
+      "event_title": "Grav-Torn Incident: Forge-Crane Bridges",
+      "world_map_location": "The Magma-Core Forges",
+      "sublocation": "Forge-Crane Bridges",
+      "required_player_level": 27,
+      "primary_variant": "Grav-Torn Aegis Carapace",
+      "hazard_profile": "thermal flare cycles, fire-spout lanes, and rising hazard floors"
+    },
+    {
+      "event_id": "SEV-113",
+      "event_title": "Echo-Split Incident: Resort Reef Paths",
+      "world_map_location": "The Wayfora Archipelago",
+      "sublocation": "Resort Reef Paths",
+      "required_player_level": 30,
+      "primary_variant": "Echo-Split Ivory Behemoth",
+      "hazard_profile": "pressure shifts, tidal knockback, and slow-motion parry timing"
+    },
+    {
+      "event_id": "SEV-147",
+      "event_title": "Echo-Split Incident: Central Processing Chasm",
+      "world_map_location": "The EPI-Center",
+      "sublocation": "Central Processing Chasm",
+      "required_player_level": 36,
+      "primary_variant": "Echo-Split Syndicate Lich",
+      "hazard_profile": "reverting geometry, data-laser sweeps, and UI-noise distraction hazards"
+    },
+    {
+      "event_id": "SEV-181",
+      "event_title": "Overcharged Incident: Crater Training Field",
+      "world_map_location": "The Lunar Readiness Base",
+      "sublocation": "Crater Training Field",
+      "required_player_level": 40,
+      "primary_variant": "Overcharged Null Anomaly",
+      "hazard_profile": "gravity inversion, debris lanes, and delayed orbital strike telegraphs"
+    },
+    {
+      "event_id": "SEV-215",
+      "event_title": "Magnetized Incident: Syndicate Lich Dais",
+      "world_map_location": "The Lich's Court",
+      "sublocation": "Syndicate Lich Dais",
+      "required_player_level": 40,
+      "primary_variant": "Magnetized Syndicate Lich",
+      "hazard_profile": "elite spawn pressure, sublocation-specific chokepoints, and forced traversal interrupts"
+    }
+  ],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": null,
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}

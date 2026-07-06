@@ -1,0 +1,318 @@
+{
+  "pack_number": 1133,
+  "action": "create non-destructive upgraded prefab variants",
+  "target_references_sample": [
+    {
+      "source_zip": "11_faction_banners_signage_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/sanctuary_leaf_banner.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "10_town_exterior_structures_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/town_fountain.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/telegraph_warning_cone.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_buff_aura_gold.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_finisher_starburst.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_impact_burst_small.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "vfx_proxy_combat_telegraph_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/vfx_slash_arc_light.glb",
+      "asset_type": "glb",
+      "tags": [
+        "vfx"
+      ]
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "colliders.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/armor_pickup_horned_helmet_rare.glb",
+      "asset_type": "glb",
+      "tags": [
+        "armor"
+      ]
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/loot_beam_epic.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/rarity_base_godly.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/weapon_pickup_arcane_bow_epic.glb",
+      "asset_type": "glb",
+      "tags": [
+        "weapon"
+      ]
+    },
+    {
+      "source_zip": "item_pickup_equipment_display_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/weapon_pickup_morningstar_epic.glb",
+      "asset_type": "glb",
+      "tags": [
+        "weapon"
+      ]
+    },
+    {
+      "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "path_in_zip": "colliders.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/mod_interior_room_shell.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/quest_boss_key_pedestal.glb",
+      "asset_type": "glb",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/quest_signal_flare_beacon.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "modular_environment_shop_quest_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/shop_shelf_tall.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/cave_stalagmite_cluster.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/data_server_relic.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/industrial_chain_hanging.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/skyship_balloon_panel.glb",
+      "asset_type": "glb",
+      "tags": [
+        "skyship"
+      ]
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/swamp_murky_pool.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "biome_specific_props_glb_pack_v1.zip",
+      "path_in_zip": "glb_assets/volcanic_iron_ore_node.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "browser_game_3d_asset_pack_v1.zip",
+      "path_in_zip": "glb_assets/combo_multiplier_token.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "browser_game_3d_asset_pack_v1.zip",
+      "path_in_zip": "glb_assets/hydraulic_hammer.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "browser_game_3d_asset_pack_v1.zip",
+      "path_in_zip": "glb_assets/reconfigurable_wall_panel.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "browser_game_3d_asset_pack_v1.zip",
+      "path_in_zip": "glb_assets/toxic_gas_vent.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+      "path_in_zip": "concept_monsters_proper_glb_pack_v2/08_venom_spitter.glb",
+      "asset_type": "glb",
+      "tags": [
+        "monster"
+      ]
+    },
+    {
+      "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+      "path_in_zip": "free_flow_creatures_and_bosses_glb_pack_v3/boss_09_astral_sovereign.glb",
+      "asset_type": "glb",
+      "tags": [
+        "boss",
+        "creature"
+      ]
+    },
+    {
+      "source_zip": "MASTER_ALL_GLB_ASSETS_PACK.zip",
+      "path_in_zip": "tiered_low_poly_monster_model_pack_v1/biped_tier_4_warlord_boss.glb",
+      "asset_type": "glb",
+      "tags": [
+        "monster",
+        "boss"
+      ]
+    },
+    {
+      "source_zip": "sector_characters_glb_pack_v4.zip",
+      "path_in_zip": "sector_characters_glb_pack_v4/glb/spark.glb",
+      "asset_type": "glb",
+      "tags": [
+        "character"
+      ]
+    },
+    {
+      "source_zip": "free_flow_creatures_and_bosses_glb_pack_v3.zip",
+      "path_in_zip": "models/bosses/boss_05_apex_chimera.glb",
+      "asset_type": "glb",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "source_zip": "concept_monsters_proper_glb_pack_v2.zip",
+      "path_in_zip": "concept_monsters_glb_pack_v2/models/06_iron_jaw_hound.glb",
+      "asset_type": "glb",
+      "tags": [
+        "monster"
+      ]
+    },
+    {
+      "source_zip": "023_lunar_readiness_base_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/01_landmark_anchor.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "023_lunar_readiness_base_world_detail_kit.zip",
+      "path_in_zip": "audio/lunar_readiness_base_world_detail_kit_music_loop.wav",
+      "asset_type": "wav",
+      "tags": [
+        "audio"
+      ]
+    },
+    {
+      "source_zip": "024_planet_defense_perimeter_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/05_water_star_sky_or_liquid_asset.glb",
+      "asset_type": "glb",
+      "tags": []
+    },
+    {
+      "source_zip": "024_planet_defense_perimeter_world_detail_kit.zip",
+      "path_in_zip": "data/material_texture_manifest.json",
+      "asset_type": "json",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "025_orbital_tether_station_world_detail_kit.zip",
+      "path_in_zip": "textures/04_orbital_tether_station_world_detail_kit_emission.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "025_orbital_tether_station_world_detail_kit.zip",
+      "path_in_zip": "VALIDATION_REPORT.json",
+      "asset_type": "json",
+      "tags": []
+    },
+    {
+      "source_zip": "026_space_elevator_world_detail_kit.zip",
+      "path_in_zip": "textures/08_space_elevator_world_detail_kit_surface.png",
+      "asset_type": "png",
+      "tags": [
+        "texture"
+      ]
+    },
+    {
+      "source_zip": "027_the_zenith_spire_world_detail_kit.zip",
+      "path_in_zip": "glb_assets/04_quest_or_system_interactable.glb",
+      "asset_type": "glb",
+      "tags": []
+    }
+  ],
+  "required_components": [
+    "MaterialVariantSet",
+    "VFXLifetime",
+    "AbilityTriggerBinding",
+    "MonsterSkinRandomizer",
+    "CombatFlowProfile",
+    "DynamicCombatCameraTrigger",
+    "WeatherSunProfile",
+    "CharacterQualityMaterialPatch",
+    "HighTierEquipmentAffixBinding",
+    "SupportNPCAssistBinding"
+  ],
+  "validation": [
+    "random monster skin table returns no duplicate within recent window",
+    "combat camera blends without breaking input",
+    "class ability VFX spawns on correct socket",
+    "weather/sun LUT changes are reversible",
+    "high tier weapon and armor auras are optional prefab children",
+    "support NPC assist marker does not block navigation"
+  ]
+}

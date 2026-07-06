@@ -1,0 +1,504 @@
+{
+  "pack_number": 552,
+  "pack_name": "Global Object Material Pass Batch 130 - Repair Tug",
+  "created_utc": "2026-07-05T09:42:37.930867+00:00",
+  "upgrade_set": "World Visual + Skyship Upgrade Round",
+  "family": "global_object_material_pass",
+  "theme": "urban_neon",
+  "element": "electric",
+  "skyship_class_profile": {
+    "class": "repair_tug",
+    "scale": 1.0,
+    "role": "utility tow and field repair"
+  },
+  "target_pool_counts": {
+    "detected_skyship_or_skyship_adjacent_targets": 1248,
+    "detected_world_object_targets": 9160,
+    "detected_texture_targets": 4371,
+    "this_pack_target_skyships": 36,
+    "this_pack_target_world_objects": 36,
+    "this_pack_target_textures": 36
+  },
+  "target_skyship_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/01_echo_crown/20_edda_echohand_engineer_under_echo.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/02_summit_causeway/09_quill_skyharrow_guide_of_summit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/02_summit_causeway/12_ren_frostrelay_engineer_of_summit.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/03_harmonic_spire/05_vela_spirebound_warden_at_harmonic.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/03_harmonic_spire/13_lio_runeclasp_warden_at_harmonic.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/05_resonance_basin/06_pax_echohand_warden_near_resonance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/05_resonance_basin/20_talia_cragwarden_pilgrim_at_resonance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/06_avalanche_steps/14_bex_skyharrow_cartographer_near_avalanche.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/06_avalanche_steps/15_nyra_glassroot_engineer_from_avalanche.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/07_choir_pass/07_eryk_glassroot_engineer_from_choir.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/08_watcher_ledge/05_bex_cragwarden_courier_at_watcher.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/09_resonance_towers/03_orin_cragwarden_marshal_under_resonance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/09_resonance_towers/07_astra_ironwake_warden_near_resonance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/09_resonance_towers/09_luma_skyharrow_watcher_under_resonance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/09_resonance_towers/16_varren_trenchmark_warden_at_resonance.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/10_deep_echo_cavern/01_tamsin_gravesong_engineer_under_deep.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "engine",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/10_deep_echo_cavern/02_zerin_ironwake_warden_of_deep.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/10_deep_echo_cavern/07_auren_skyharrow_responder_from_deep.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/03_western_wastes_and_arid_plains/01_the_resonant_peaks/10_deep_echo_cavern/12_kiva_cragwarden_mechanist_under_deep.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden",
+        "cave"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/06_the_micro_markets/01_bazaar_ring/01_orin_trenchmark_warden_of_bazaar.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "warden"
+      ]
+    }
+  ],
+  "target_world_object_assets_sample": [
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/01_juno_rootborne_broker_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/02_nyra_echohand_pilgrim_at_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/03_auren_brightlock_medic_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/04_draven_emberkin_tamer_near_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/05_cassian_ashvein_diver_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/06_brant_whispercoil_herald_at_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/07_lyric_ironwake_scout_of_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/08_korra_glassroot_engineer_near_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "engine",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/09_luma_deepwell_courier_of_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/10_brant_mossguard_navigator_of_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/11_juno_signalborn_guide_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/12_draven_gearmantle_fixer_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/13_orin_holloway_navigator_at_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/14_noor_glassroot_tamer_at_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/15_vela_ashvein_keeper_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/16_isolde_dubwater_herald_near_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck",
+        "water"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/17_astra_gantryn_mechanist_under_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/18_astra_rootborne_guide_from_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/19_lio_holloway_medic_under_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    },
+    {
+      "source_zip": "geographic_master_guide_named_npc_glb_pack(1).zip",
+      "path_in_zip": "geographic_master_guide_npc_glb_pack/sub_locations/02_urban_core/01_the_zenith_spire/02_skybridge_decks/20_noor_gearmantle_tactician_near_skybridge.glb",
+      "asset_type": "glb_object",
+      "tags": [
+        "sky",
+        "deck"
+      ]
+    }
+  ],
+  "target_texture_assets_sample": [
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/10_low_poly_silhouette_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/11_low_poly_silhouette_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "225_low_poly_silhouette_upgrade_batch_003.zip",
+      "path_in_zip": "texture_upgrades/12_low_poly_silhouette_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/01_emissive_glow_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/02_emissive_glow_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/03_emissive_glow_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/04_emissive_glow_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/05_emissive_glow_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/06_emissive_glow_biome_tint_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/07_emissive_glow_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/08_emissive_glow_decal_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/09_emissive_glow_trim_upgrade_sheet.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/10_emissive_glow_creature_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/11_emissive_glow_object_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "226_emissive_glow_upgrade_batch_004.zip",
+      "path_in_zip": "texture_upgrades/12_emissive_glow_water_star_overlay.png",
+      "asset_type": "texture_image",
+      "tags": [
+        "water",
+        "star"
+      ]
+    },
+    {
+      "source_zip": "227_weathering_wear_upgrade_batch_005.zip",
+      "path_in_zip": "texture_upgrades/01_weathering_wear_albedo_upgrade.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "227_weathering_wear_upgrade_batch_005.zip",
+      "path_in_zip": "texture_upgrades/02_weathering_wear_normal_detail_proxy.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "227_weathering_wear_upgrade_batch_005.zip",
+      "path_in_zip": "texture_upgrades/03_weathering_wear_roughness_variation.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "227_weathering_wear_upgrade_batch_005.zip",
+      "path_in_zip": "texture_upgrades/04_weathering_wear_emission_overlay.png",
+      "asset_type": "texture_image",
+      "tags": []
+    },
+    {
+      "source_zip": "227_weathering_wear_upgrade_batch_005.zip",
+      "path_in_zip": "texture_upgrades/05_weathering_wear_edge_wear_mask.png",
+      "asset_type": "texture_image",
+      "tags": []
+    }
+  ],
+  "non_destructive_rule": "Create upgraded prefab variants; do not overwrite source GLB or texture files."
+}

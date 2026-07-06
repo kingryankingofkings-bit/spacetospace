@@ -1,0 +1,217 @@
+{
+  "pack_identity": {
+    "pack_number": 41,
+    "title": "The Rhyming Labyrinths World Detail Kit",
+    "kind": "sublocation_world_detail",
+    "region": "03 Western Wastes And Arid Plains",
+    "sub_location": "09 The Rhyming Labyrinths",
+    "theme": "waste"
+  },
+  "source_area_object_plan": [
+    {
+      "source_area": "Verse Gate",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/01_verse_gate_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Armor Dye Pack Shop: Dyehouse Verse"
+    },
+    {
+      "source_area": "Echo Spiral",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/02_echo_spiral_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Marketplace: Bazaar Lane Echo; Alchemist: Tonic Cellar Echo"
+    },
+    {
+      "source_area": "Couplet Court",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/03_couplet_court_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Medic: Field Surgery Couplet"
+    },
+    {
+      "source_area": "Meter Walk",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/04_meter_walk_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Relic Trader: Relic Reach Meter; Food Stall: Lantern Kitchen Meter"
+    },
+    {
+      "source_area": "Glass Tongue Corridor",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/05_glass_tongue_corridor_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Weapon Skin Shop: Chromaforge Glass"
+    },
+    {
+      "source_area": "Stanza Vault",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/06_stanza_vault_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Blacksmith: Smelter of Stanza"
+    },
+    {
+      "source_area": "Rhyme Lock Arch",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/07_rhyme_lock_arch_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Inn: The Moonlit Rhyme"
+    },
+    {
+      "source_area": "Cadence Well",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/08_cadence_well_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Food Stall: Griddle Row Cadence"
+    },
+    {
+      "source_area": "Sonic Canopy",
+      "map_file_reference": "area_maps/sub_locations/03_western_wastes_and_arid_plains/09_the_rhyming_labyrinths/09_sonic_canopy_map.png",
+      "suggested_objects": [
+        "waste_landmark_anchor",
+        "waste_navigation_prop",
+        "waste_fire_hazard",
+        "water_or_liquid_surface",
+        "starfield_or_sky_overlay"
+      ],
+      "shop_context": "Mechanic: Repair Dock Sonic"
+    }
+  ],
+  "creature_variants": [
+    {
+      "race": "Tremor-Fiend",
+      "local_variant": "The Rhyming Labyrinths Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Venom-Spitter",
+      "local_variant": "The Rhyming Labyrinths Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Aegis Carapace",
+      "local_variant": "The Rhyming Labyrinths Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Null Anomaly",
+      "local_variant": "The Rhyming Labyrinths Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Nexus Swarmers",
+      "local_variant": "The Rhyming Labyrinths Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    },
+    {
+      "race": "Scrap-Stalker",
+      "local_variant": "The Rhyming Labyrinths Fire Variant",
+      "element": "fire",
+      "can_share_base_rig_with": "Tremor-Fiend",
+      "texture_overrides": [
+        "waste_albedo",
+        "waste_emission",
+        "fire_decal"
+      ],
+      "script_notes": "Use shared base creature behavior with biome-specific attack VFX/audio."
+    }
+  ],
+  "event_references": [],
+  "item_skin_references": [],
+  "customization_reference_counts": {
+    "hairstyles_total": 45,
+    "hairstyles_per_presentation": {
+      "Masculine Presentation Hairstyle Presets": 15,
+      "Feminine Presentation Hairstyle Presets": 15,
+      "Androgynous / Nonbinary Presentation Hairstyle Presets": 15
+    },
+    "face_presets_total": 60,
+    "face_presets_per_presentation": {
+      "Masculine Presentation Face Presets": 20,
+      "Feminine Presentation Face Presets": 20,
+      "Androgynous / Nonbinary Presentation Face Presets": 20
+    },
+    "skin_tones": 48,
+    "hair_colors": 30,
+    "facial_hair_styles": 20,
+    "origins": 12,
+    "classes": 10
+  },
+  "shops": "Alchemist, Armor Dye Pack Shop, Blacksmith, Food Stall, Inn, Marketplace, Mechanic, Medic, Relic Trader, Weapon Skin Shop",
+  "non_duplicate_rule": "Each pack uses pack-specific prefixes, local palette, local audio cue names, and contextual metadata references instead of duplicating map PNGs."
+}
