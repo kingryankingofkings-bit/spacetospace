@@ -5,12 +5,7 @@ import { getCdnAssetPath } from '../utils/AssetManager';
 import { getAssetByType } from '../utils/AssetRegistry';
 import { useGLTF, Instances, Instance } from '@react-three/drei';
 import { StartArea } from './StartArea';
-
-// A deterministic random number generator to ensure consistent foliage/building placement
-const seededRandom = (x: number, z: number, seed = 1) => {
-  const sin = Math.sin(x * 12.9898 + z * 78.233 + seed) * 43758.5453;
-  return sin - Math.floor(sin);
-};
+import { generateOrganicPoints } from '../utils/PointGenerator';
 
 interface InstancedModelProps {
   url: string;
@@ -59,55 +54,87 @@ export const ProceduralTerrain: React.FC = () => {
     material: { friction: 0.1, restitution: 0.1 }
   }));
 
-  // Generate deterministic instances for foliage, walls, buildings
-  const mapSize = 400; // Generate within a -200 to +200 grid
-  const cellSize = 10;
+  // Generate deterministic instances for foliage, walls, buildings, and wildlife
+  const MAP_SIZE = 2000;
   
-  const foliageInstances: any[] = [];
-  const buildingInstances: any[] = [];
-  const wallInstances: any[] = [];
+  const { foliageInstances, buildingInstances, wallInstances, wildlifeInstances } = useMemo(() => {
+    const exclusionZones = [{ x: 0, z: 0, radius: 50 }]; // Protect StartArea
+    
+    // 1. Architecture Layer (Sparse)
+    const archPoints = generateOrganicPoints({
+      mapSize: MAP_SIZE,
+      cellSize: 40,
+      jitterAmount: 0.2,
+      seedOffset: 100,
+      exclusionZones
+    });
 
-  useMemo(() => {
-    for (let x = -mapSize / 2; x <= mapSize / 2; x += cellSize) {
-      for (let z = -mapSize / 2; z <= mapSize / 2; z += cellSize) {
-        // Leave the center mostly clear for spawning
-        if (Math.abs(x) < 30 && Math.abs(z) < 30) continue;
-
-        const randFoliage = seededRandom(x, z, 1);
-        const randBuilding = seededRandom(x, z, 2);
-        
-        // Jitter position to make it look natural
-        const jitterX = (seededRandom(x, z, 3) - 0.5) * cellSize;
-        const jitterZ = (seededRandom(x, z, 4) - 0.5) * cellSize;
-        const finalX = x + jitterX;
-        const finalZ = z + jitterZ;
-        const rotY = seededRandom(x, z, 5) * Math.PI * 2;
-        const scaleRandom = 0.8 + seededRandom(x, z, 6) * 0.4;
-
-        if (randBuilding > 0.95) {
-          // 5% chance per cell for a building
-          buildingInstances.push({
-            position: [finalX, 0, finalZ],
-            rotation: [0, rotY, 0],
-            scale: [scaleRandom * 2, scaleRandom * 2, scaleRandom * 2]
-          });
-        } else if (randBuilding > 0.90) {
-          // 5% chance for a wall chunk
-          wallInstances.push({
-            position: [finalX, 0, finalZ],
-            rotation: [0, rotY, 0],
-            scale: [scaleRandom * 3, scaleRandom * 1.5, scaleRandom]
-          });
-        } else if (randFoliage > 0.6) {
-          // 40% chance for foliage if no building
-          foliageInstances.push({
-            position: [finalX, 0, finalZ],
-            rotation: [0, rotY, 0],
-            scale: [scaleRandom, scaleRandom, scaleRandom]
-          });
-        }
+    const bInstances: any[] = [];
+    const wInstances: any[] = [];
+    
+    archPoints.forEach(pt => {
+      if (pt.randomVal > 0.8) {
+        bInstances.push({
+          position: [pt.x, 0, pt.z],
+          rotation: [0, pt.rotY, 0],
+          scale: [pt.scale * 2, pt.scale * 2, pt.scale * 2]
+        });
+      } else if (pt.randomVal > 0.5) {
+        wInstances.push({
+          position: [pt.x, 0, pt.z],
+          rotation: [0, pt.rotY, 0],
+          scale: [pt.scale * 3, pt.scale * 1.5, pt.scale]
+        });
       }
-    }
+    });
+
+    // 2. Nature/Foliage Layer (Dense)
+    const naturePoints = generateOrganicPoints({
+      mapSize: MAP_SIZE,
+      cellSize: 15,
+      jitterAmount: 0.7,
+      seedOffset: 200,
+      exclusionZones
+    });
+
+    const fInstances: any[] = [];
+    naturePoints.forEach(pt => {
+      // 40% chance of a tree in this cell
+      if (pt.randomVal > 0.6) {
+        fInstances.push({
+          position: [pt.x, 0, pt.z],
+          rotation: [0, pt.rotY, 0],
+          scale: [pt.scale, pt.scale, pt.scale]
+        });
+      }
+    });
+
+    // 3. Wildlife Layer (Very Sparse)
+    const wildlifePoints = generateOrganicPoints({
+      mapSize: MAP_SIZE,
+      cellSize: 60,
+      jitterAmount: 0.9,
+      seedOffset: 300,
+      exclusionZones
+    });
+    
+    const wlInstances: any[] = [];
+    wildlifePoints.forEach(pt => {
+      if (pt.randomVal > 0.4) {
+        wlInstances.push({
+          position: [pt.x, 0.5, pt.z], // Slightly above ground
+          rotation: [0, pt.rotY, 0],
+          scale: [pt.scale * 0.5, pt.scale * 0.5, pt.scale * 0.5]
+        });
+      }
+    });
+
+    return {
+      buildingInstances: bInstances,
+      wallInstances: wInstances,
+      foliageInstances: fInstances,
+      wildlifeInstances: wlInstances
+    };
   }, []);
 
   const foliageAsset = getAssetByType('foliage_tree');
@@ -116,17 +143,22 @@ export const ProceduralTerrain: React.FC = () => {
 
   const wallAsset = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "wall.glb");
   const buildingAsset = getCdnAssetPath("/models/modular_environment_shop_quest_glb_pack_v1/glb_assets/", "mod_platform_round.glb");
+  
+  // Use a generic critter for wildlife, or fallback to something small
+  const critterAsset = getAssetByType('01_rabbit_critter');
+  const fallbackCritterAsset = getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "rock.glb");
+  const critterUrl = critterAsset ? `${critterAsset.rootUrl}${critterAsset.sceneFilename}` : `${fallbackCritterAsset.rootUrl}${fallbackCritterAsset.sceneFilename}`;
 
   return (
     <group>
       {/* Flat Green Base */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
-        <planeGeometry args={[1000, 1000]} />
+        <planeGeometry args={[MAP_SIZE, MAP_SIZE]} />
         <meshStandardMaterial color="#2d5a27" roughness={0.9} metalness={0.1} />
       </mesh>
 
       {/* Grid helper for scale reference */}
-      <gridHelper args={[1000, 200, 0x000000, 0x000000]} position={[0, 0.01, 0]} material-opacity={0.1} material-transparent />
+      <gridHelper args={[MAP_SIZE, MAP_SIZE / 10, 0x000000, 0x000000]} position={[0, 0.01, 0]} material-opacity={0.1} material-transparent />
 
       {/* Starting Hub Area */}
       <StartArea />
@@ -135,6 +167,7 @@ export const ProceduralTerrain: React.FC = () => {
       {foliageInstances.length > 0 && <InstancedModel url={treeUrl} instances={foliageInstances} />}
       {wallInstances.length > 0 && <InstancedModel url={`${wallAsset.rootUrl}${wallAsset.sceneFilename}`} instances={wallInstances} />}
       {buildingInstances.length > 0 && <InstancedModel url={`${buildingAsset.rootUrl}${buildingAsset.sceneFilename}`} instances={buildingInstances} />}
+      {wildlifeInstances.length > 0 && <InstancedModel url={critterUrl} instances={wildlifeInstances} colorTint="#aaddff" />}
     </group>
   );
 };

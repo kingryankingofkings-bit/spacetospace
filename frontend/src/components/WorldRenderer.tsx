@@ -12,6 +12,7 @@ import { getAssetByType } from '../utils/AssetRegistry';
 import { ProceduralTerrain } from './ProceduralTerrain';
 import { Controls } from '../store/InputManager';
 import { playerPositions, npcPositions, bossPositions } from '../store/transientStore';
+import { TelemetryDashboard } from './TelemetryDashboard';
 import { ParticleManager, useParticleStore } from './ParticleManager';
 import { playHitSound } from '../utils/AudioEngine';
 
@@ -190,13 +191,16 @@ const SceneSetup: React.FC = () => {
 
   return (
     <>
+      <TelemetryDashboard />
+      <Sky sunPosition={[100, 20, 100]} turbidity={0.3} rayleigh={0.5} />
+
       {/* Solid background to prevent black/blank screen if environment preset fails */}
       <color attach="background" args={['#0f172a']} />
       
       {/* High-End IBL Lighting with offline resilience */}
       <SafeEnvironment>
         <Suspense fallback={null}>
-          <Environment preset="dawn" background blur={0.8} />
+          <Environment preset="night" background blur={0.5} />
         </Suspense>
       </SafeEnvironment>
       
@@ -637,11 +641,23 @@ const RemotePlayer: React.FC<{ player: Player, isBoss?: boolean }> = ({ player, 
 
   // Update physics body position directly rather than modifying the mesh ref to prevent desync
   useFrame((_state, delta) => {
-    const posData = isBoss ? bossPositions.get(player.id) : playerPositions.get(player.id);
-    if (posData) {
-      targetPos.set(posData.targetX, posData.targetY, posData.targetZ);
+    let targetX, targetY, targetZ;
+    if (isBoss && bossIndices.has(player.id)) {
+      const idx = bossIndices.get(player.id)! * 6;
+      targetX = bossBuffer[idx+3];
+      targetY = bossBuffer[idx+4];
+      targetZ = bossBuffer[idx+5];
+    } else if (!isBoss && playerIndices.has(player.id)) {
+      const idx = playerIndices.get(player.id)! * 6;
+      targetX = playerBuffer[idx+3];
+      targetY = playerBuffer[idx+4];
+      targetZ = playerBuffer[idx+5];
     }
-    currentPos.current.lerp(targetPos, 10 * delta);
+
+    if (targetX !== undefined && targetY !== undefined && targetZ !== undefined) {
+      targetPos.set(targetX, targetY, targetZ);
+      currentPos.current.lerp(targetPos, 10 * delta);
+    }
     api.position.set(currentPos.current.x, currentPos.current.y, currentPos.current.z);
   });
 
@@ -678,11 +694,19 @@ const NPC: React.FC<{ npc: any, setInteractingNpcId?: (id: string | null) => voi
 
   // Update physics body position directly rather than modifying the mesh ref to prevent desync
   useFrame((_state, delta) => {
-    const posData = npcPositions.get(npc.id);
-    if (posData) {
-      targetPos.set(posData.targetX, posData.targetY, posData.targetZ);
+    let targetX, targetY, targetZ;
+    if (npcIndices.has(npc.id)) {
+      const idx = npcIndices.get(npc.id)! * 6;
+      targetX = npcBuffer[idx+3];
+      targetY = npcBuffer[idx+4];
+      targetZ = npcBuffer[idx+5];
     }
-    currentPos.current.lerp(targetPos, 10 * delta);
+    
+    if (targetX !== undefined && targetY !== undefined && targetZ !== undefined) {
+      targetPos.set(targetX, targetY, targetZ);
+      currentPos.current.lerp(targetPos, 10 * delta);
+    }
+    
     api.position.set(currentPos.current.x, currentPos.current.y, currentPos.current.z);
 
     const state = useMultiplayerStore.getState();

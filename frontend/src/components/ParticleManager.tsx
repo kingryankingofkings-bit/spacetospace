@@ -18,6 +18,8 @@ interface ParticleState {
   emit: (position: [number,number,number], velocity: [number,number,number], count: number, color?: string, size?: number, life?: number) => void;
 }
 
+import { ObjectPool } from '../utils/ObjectPool';
+
 export const useParticleStore = create<ParticleState>((set, get) => ({
   particles: [],
   emit: (pos, vel, count, color = '#ffffff', size = 0.5, life = 1.0) => {
@@ -26,8 +28,8 @@ export const useParticleStore = create<ParticleState>((set, get) => ({
     
     for (let i = 0; i < count; i++) {
       newParticles.push({
-        position: new THREE.Vector3(pos[0], pos[1], pos[2]),
-        velocity: new THREE.Vector3(
+        position: ObjectPool.getVec3(pos[0], pos[1], pos[2]),
+        velocity: ObjectPool.getVec3(
           vel[0] + (Math.random() - 0.5) * 5,
           vel[1] + (Math.random() - 0.5) * 5,
           vel[2] + (Math.random() - 0.5) * 5
@@ -39,10 +41,6 @@ export const useParticleStore = create<ParticleState>((set, get) => ({
       });
     }
     
-    // We mutate the array in a single instance so React state update works, 
-    // but in a true ECS we'd use a transient array. For particles, Zustand is okay if we don't map them into React components.
-    // Wait, we WON'T map them into React components! The InstancedMesh will read from this store directly!
-    // So we don't even need to call set().
     const { particles } = get();
     particles.push(...newParticles);
   }
@@ -69,7 +67,10 @@ export const ParticleManager: React.FC<{ maxParticles?: number }> = ({ maxPartic
       p.life -= delta;
       
       if (p.life <= 0) {
-        // Fast remove
+        // Fast remove and release pool resources
+        ObjectPool.releaseVec3(p.position);
+        ObjectPool.releaseVec3(p.velocity);
+        
         particles[i] = particles[particles.length - 1];
         particles.pop();
         continue;
