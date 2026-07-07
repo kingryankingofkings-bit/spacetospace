@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react';
 import { useGLTF } from '@react-three/drei';
-import { getCdnAssetPath } from '../utils/AssetManager';
 import { getAssetByType } from '../utils/AssetRegistry';
 import type { AssetType } from '../utils/AssetRegistry';
 

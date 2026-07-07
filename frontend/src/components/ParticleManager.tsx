@@ -1,4 +1,4 @@
-import React, { useRef, useMemo, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { create } from 'zustand';
@@ -20,7 +20,7 @@ interface ParticleState {
 
 import { ObjectPool } from '../utils/ObjectPool';
 
-export const useParticleStore = create<ParticleState>((set, get) => ({
+export const useParticleStore = create<ParticleState>((set) => ({
   particles: [],
   emit: (pos, vel, count, color = '#ffffff', size = 0.5, life = 1.0) => {
     const newParticles: Particle[] = [];

@@ -29,6 +29,34 @@ const { populateZone } = require("./zonePopulator");
 let agonesSDK = null;
 
 const localActivePlayers = new Map();
+const playerPositionHistory = new Map(); // sessionId -> [{ x, y, z, timestamp }]
+const RECORD_HISTORY_MS = 2000; // 2 seconds of history
+
+function recordPlayerPosition(sessionId, x, y, z, timestamp) {
+  if (!playerPositionHistory.has(sessionId)) playerPositionHistory.set(sessionId, []);
+  const hist = playerPositionHistory.get(sessionId);
+  hist.push({ x, y, z, timestamp });
+  
+  while (hist.length > 0 && timestamp - hist[0].timestamp > RECORD_HISTORY_MS) {
+    hist.shift();
+  }
+}
+
+function getHistoricalPosition(sessionId, targetTime) {
+  const hist = playerPositionHistory.get(sessionId);
+  if (!hist || hist.length === 0) return null;
+  
+  let closest = hist[0];
+  let minDiff = Math.abs(hist[0].timestamp - targetTime);
+  for (let i = 1; i < hist.length; i++) {
+    const diff = Math.abs(hist[i].timestamp - targetTime);
+    if (diff < minDiff) {
+      minDiff = diff;
+      closest = hist[i];
+    }
+  }
+  return closest;
+}
 
 resourceNodeManager.initializeNodes();
 
@@ -555,6 +583,7 @@ wss.on("connection", (ws) => {
   ws.on("message", async (message) => {
     try {
       const data = JSON.parse(message);
+      if (!data || typeof data !== 'object' || Array.isArray(data)) return;
       
       if (data.type !== "join" && !ws.sessionId) {
         ws.send(JSON.stringify({ type: "error", message: "Unauthorized" }));
@@ -584,7 +613,7 @@ wss.on("connection", (ws) => {
           const position = await db.getUser(sessionId);
           if (data.color) position.color = data.color;
           if (data.health !== undefined) position.health = data.health;
-          if (!position.zone) position.zone = "urban_core";
+          if (!position.zone) position.zone = "verdant_town";
           position.sessionId = sessionId;
           position.statusEffects = position.statusEffects || [];
           
@@ -604,12 +633,19 @@ wss.on("connection", (ws) => {
             }
           }
           
+          let zoneObjects = await db.getObjectsInZone(position.zone);
+          if (zoneObjects.length === 0 && position.zone === 'verdant_town') {
+            const { generateTownBuildings } = require('./zonePopulator');
+            zoneObjects = generateTownBuildings(position.zone);
+            for (const obj of zoneObjects) await db.saveObject(obj);
+          }
+
           ws.send(JSON.stringify({ 
             type: "init", 
             sessionId, 
             players: await getPlayersInInterestArea(position.zone, position.x || 0, position.z || 0),
-            objects: await db.getObjects(),
-            terrain: await db.getTerrain(),
+            objects: zoneObjects,
+            terrain: await db.getTerrainInZone(position.zone),
             npcs: zoneNpcs.filter(n => getDistance(n, position) < CELL_SIZE * 2),
             resourceNodes: resourceNodeManager.getActiveNodesInZone(position.zone)
           }));
@@ -708,14 +744,21 @@ wss.on("connection", (ws) => {
              }
            }
            
-           ws.send(JSON.stringify({
-             type: "init",
-             sessionId,
-             players: await getPlayersInInterestArea(player.zone, player.x, player.z),
-             objects: await db.getObjects(),
-             terrain: await db.getTerrain(),
-             npcs: zoneNpcs.filter(n => getDistance(n, player) < CELL_SIZE * 2)
-           }));
+            let zoneObjects = await db.getObjectsInZone(player.zone);
+            if (zoneObjects.length === 0 && player.zone === 'verdant_town') {
+              const { generateTownBuildings } = require('./zonePopulator');
+              zoneObjects = generateTownBuildings(player.zone);
+              for (const obj of zoneObjects) await db.saveObject(obj);
+            }
+
+            ws.send(JSON.stringify({
+              type: "init",
+              sessionId,
+              players: await getPlayersInInterestArea(player.zone, player.x, player.z),
+              objects: zoneObjects,
+              terrain: await db.getTerrainInZone(player.zone),
+              npcs: zoneNpcs.filter(n => getDistance(n, player) < CELL_SIZE * 2)
+            }));
            broadcast({ type: "join", sessionId, player }, ws, player.zone, player.x, player.z);
            questManager.onZoneChange(ws.sessionId, data.zone);
         }
@@ -724,10 +767,8 @@ wss.on("connection", (ws) => {
         const sessionId = ws.sessionId;
         if (!sessionId) return;
         
-        const playerStr = await db.redisClient.hGet('active_players', sessionId);
-        if (playerStr) {
-          const player = JSON.parse(playerStr);
-          
+        const player = localActivePlayers.get(sessionId);
+        if (player) {
           const now = Date.now();
           const dt = (now - (player.lastMoveTime || now)) / 1000;
           player.lastMoveTime = now;
@@ -749,8 +790,14 @@ wss.on("connection", (ws) => {
           player.color = data.color ?? player.color;
           // anti-cheat: dropped health spoof
           player.sessionId = sessionId;
-          await updatePlayerSpatial(player);
-          broadcast({ type: "move", sessionId, position: { x: player.x, y: player.y, z: player.z, id: sessionId } }, ws, player.zone, player.x, player.z);
+          updatePlayerSpatial(player); // fire and forget
+          
+          recordPlayerPosition(sessionId, player.x, player.y, player.z, now);
+          
+          broadcast({ type: "move", sessionId, position: { x: player.x, y: player.y, z: player.z, id: sessionId }, seq: data.seq, serverTime: now }, ws, player.zone, player.x, player.z);
+          
+          // Fire and forget to redis to prevent blocking read-modify-write race conditions
+          db.redisClient.hSet('active_players', sessionId, JSON.stringify(player)).catch(err => console.error(err));
         }
       }
       else if (data.type === "finalize_character") {
@@ -1412,7 +1459,13 @@ wss.on("connection", (ws) => {
             if (isBoss) {
               dist = 0;
             } else if (target.zone === attacker.zone) {
-              dist = getDistance(attacker, target);
+              // Lag Compensation: rewind target position based on attacker latency (estimated 100ms)
+              let targetPosForHitbox = target;
+              if (!isNpc && !isBoss) {
+                const historicalPos = getHistoricalPosition(targetId, now - 100);
+                if (historicalPos) targetPosForHitbox = historicalPos;
+              }
+              dist = getDistance(attacker, targetPosForHitbox);
             }
             
             if (dist < 15 || isBoss) {
@@ -1718,13 +1771,18 @@ wss.on("connection", (ws) => {
     if (ws.sessionId) {
       activeCompanions.delete(ws.sessionId);
       activePets.delete(ws.sessionId);
-      const playerStr = await db.redisClient.hGet('active_players', ws.sessionId);
-      if (playerStr) {
-        const player = JSON.parse(playerStr);
+      
+      const player = localActivePlayers.get(ws.sessionId);
+      if (player) {
         await db.saveUser(ws.sessionId, player);
         if (player.inventory) await db.saveInventory(ws.sessionId, player.inventory);
         await removePlayerSpatial(player);
       }
+      
+      localActivePlayers.delete(ws.sessionId);
+      playerPositionHistory.delete(ws.sessionId);
+      await db.redisClient.hDel('active_players', ws.sessionId);
+      
       await updateAgonesPlayerCount();
       broadcast({ type: "leave", sessionId: ws.sessionId });
     }

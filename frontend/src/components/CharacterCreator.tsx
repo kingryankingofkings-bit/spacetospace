@@ -128,15 +128,6 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
     setSelections(prev => ({ ...prev, [key]: value }));
   };
 
-  const currentHeroImg = heroImageMap[selections.presentation.replace(' Face Presets', '')] || heroImageMap['Androgynous / Nonbinary Presentation'];
-  const currentHoloHead = holoHeadMap[selections.presentation.replace(' Face Presets', '')] || holoHeadMap['Androgynous / Nonbinary Presentation'];
-  
-  // Basic heuristic for hair selection
-  const isLongHair = selections.hairStyle.toLowerCase().includes('long') || selections.hairStyle.toLowerCase().includes('braid');
-  const hasHair = selections.hairStyle && !selections.hairStyle.toLowerCase().includes('bald');
-  const holoHair = hasHair ? holoHairMap[isLongHair ? 'long' : 'short'] : null;
-  const hasBeard = selections.facialHair && selections.facialHair !== 'Clean Shaven';
-
   const renderPreview = () => {
     return (
       <div style={{ width: '400px', flexShrink: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', paddingBottom: '20px' }}>

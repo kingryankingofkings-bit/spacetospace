@@ -38,14 +38,16 @@ interface MultiplayerState {
   sessionId: string | null;
   worldTime: 'day' | 'night';
   previewAppearance: any | null;
+  
+  moveSequenceNumber: number;
+  pendingMoves: { x: number, y: number, z: number, seq: number }[];
 
   sendMove: (x: number, y: number, z: number) => void;
   sendAttack: (targetId: string) => void;
   sendAbility: (abilityId: string, targetId?: string, x?: number, y?: number, z?: number) => void;
   sendFastTravel: (zone: string) => void;
-  sendAppearance: (appearance: any) => void;
+  finalizeCharacter: (appearance: any, classId: string) => void;
   setPreviewAppearance: (appearance: any) => void;
-  selectClass: (classId: string) => void;
   unlockSkill: (skillId: string) => void;
   sendSpawnBoss: (bossType: string) => void;
   sendPickupLoot: (item: any) => void;
@@ -87,10 +89,22 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
     sessionId: null,
     worldTime: 'day',
     previewAppearance: null,
+    moveSequenceNumber: 0,
+    pendingMoves: [],
 
     sendMove: (x, y, z) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
-        sharedWs.send(JSON.stringify({ type: 'move', x, y, z }));
+        const set = useMultiplayerStore.setState;
+        const state = useMultiplayerStore.getState();
+        const seq = state.moveSequenceNumber + 1;
+        set({ moveSequenceNumber: seq, pendingMoves: [...state.pendingMoves, { x, y, z, seq }] });
+        
+        // Immediate local prediction
+        if (state.sessionId) {
+          updateTransientPlayer(state.sessionId, x, y, z);
+        }
+        
+        sharedWs.send(JSON.stringify({ type: 'move', x, y, z, seq }));
       }
     },
 
@@ -109,7 +123,7 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
         sharedWs.send(JSON.stringify({ type: 'fast_travel', zone }));
       }
     },
-    finalizeCharacter: (appearance, classId) => {
+    finalizeCharacter: (appearance: any, classId: string) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
         sharedWs.send(JSON.stringify({ type: 'finalize_character', appearance, classId }));
       }
@@ -230,7 +244,32 @@ export const initMultiplayer = () => {
     } else if (data.type === 'leave') {
       set((state) => ({ players: state.players.filter((p) => p.id !== data.sessionId) }));
     } else if (data.type === 'move') {
-      updateTransientPlayer(data.sessionId, data.position.x, data.position.y, data.position.z);
+      const currentState = useMultiplayerStore.getState();
+      if (data.sessionId === currentState.sessionId && data.seq) {
+        // CSP Reconciliation
+        // Server confirmed a move at sequence `seq`
+        const ackSeq = data.seq;
+        // @ts-ignore
+        useMultiplayerStore.setState((state: any) => {
+          return { 
+            pendingMoves: state.pendingMoves.filter((m: any) => m.seq > ackSeq) 
+          };
+        });
+        
+        // Re-apply remaining unacknowledged moves on top of server state
+        let finalX = data.position.x;
+        let finalY = data.position.y;
+        let finalZ = data.position.z;
+        
+        const remainingMoves = useMultiplayerStore.getState().pendingMoves;
+        for (const m of remainingMoves) {
+          finalX = m.x; finalY = m.y; finalZ = m.z;
+        }
+        
+        updateTransientPlayer(data.sessionId, finalX, finalY, finalZ, data.serverTime);
+      } else {
+        updateTransientPlayer(data.sessionId, data.position.x, data.position.y, data.position.z, data.serverTime);
+      }
       // DO NOT trigger React re-renders by mutating `players` array
     } else if (data.type === 'attack') {
       set((state) => ({

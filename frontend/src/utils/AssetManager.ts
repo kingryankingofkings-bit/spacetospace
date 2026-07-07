@@ -1,6 +1,6 @@
 import manifest from '../cdn_manifest.json';
+// @ts-ignore
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import * as THREE from 'three';
 
 const CDN_BASE_URL = import.meta.env.VITE_CDN_URL || '';
 
@@ -54,12 +54,12 @@ export async function preloadAsset(fullUrl: string) {
   return new Promise((resolve, reject) => {
     gltfLoader.load(
       fullUrl,
-      (gltf) => {
+      (gltf: any) => {
         globalAssetCache.set(fullUrl, gltf);
         resolve(gltf);
       },
       undefined,
-      (error) => reject(error)
+      (error: any) => reject(error)
     );
   });
 }

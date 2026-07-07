@@ -33,6 +33,7 @@ const names = ["Aria", "Balthazar", "Caelum", "Dax", "Elara", "Fenrir", "Gael", 
 
 const zoneConfig = {
   "urban_core": { type: "NPC" },
+  "verdant_town": { type: "NPC" },
   "meridian_gate": { type: "NPC" },
   "cindervale": { type: "Monster", archetype: "goblin", level: 5 },
   "glass_desert": { type: "Monster", archetype: "skeleton", level: 15 },
@@ -112,7 +113,30 @@ function populateZone(zone, cx, cz, currentEntities, maxEntities = 20) {
   return newEntities;
 }
 
+function generateTownBuildings(zone) {
+  if (zone !== 'verdant_town') return [];
+  const buildings = [];
+  const buildingTypes = ['small_house_facade', 'dock_house'];
+  
+  // Create 15-20 buildings in a grid/circular pattern
+  for (let i = 0; i < 20; i++) {
+    const angle = Math.random() * Math.PI * 2;
+    const radius = 30 + Math.random() * 150; // scatter around center
+    buildings.push({
+      id: `bld_${zone}_${i}_${Date.now()}`,
+      type: buildingTypes[Math.floor(Math.random() * buildingTypes.length)],
+      zone: zone,
+      x: Math.cos(angle) * radius,
+      y: 0,
+      z: Math.sin(angle) * radius,
+      color: '#ffffff'
+    });
+  }
+  return buildings;
+}
+
 module.exports = {
   populateZone,
+  generateTownBuildings,
   zoneConfig
 };

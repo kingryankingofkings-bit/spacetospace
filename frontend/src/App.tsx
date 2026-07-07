@@ -41,8 +41,6 @@ function App() {
   const playerCount = useMultiplayerStore(state => state.players.length);
   const sendSpawnBoss = useMultiplayerStore(state => state.sendSpawnBoss);
   const sendAcceptQuest = useMultiplayerStore(state => state.sendAcceptQuest);
-  const selectClass = useMultiplayerStore(state => state.selectClass);
-  const sendAppearance = useMultiplayerStore(state => state.sendAppearance);
 
   useEffect(() => {
     if (playerClass) {

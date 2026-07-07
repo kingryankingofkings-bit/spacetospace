@@ -1,17 +1,25 @@
 import React, { useRef, useMemo, useEffect, useState, Suspense } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { useGLTF, Environment, Html, Instances, Instance, Billboard, useTexture, useKeyboardControls } from '@react-three/drei';
+import { useGLTF, Environment, Html, Instances, Instance, Billboard, useTexture, useKeyboardControls, Sky } from '@react-three/drei';
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
 import { Physics, useBox, useSphere } from '@react-three/cannon';
 import * as THREE from 'three';
 import { useMultiplayerStore } from '../store/multiplayerStore';
 import { useGraphicsSettingsStore } from '../store/graphicsSettingsStore';
+import { 
+  playerBuffer, 
+  npcBuffer, 
+  bossBuffer, 
+  playerIndices, 
+  npcIndices, 
+  bossIndices,
+  interpolateEntities 
+} from '../store/transientStore';
 import { WeatherSystem } from './WeatherSystem';
 import { getCdnAssetPath } from '../utils/AssetManager';
 import { getAssetByType } from '../utils/AssetRegistry';
 import { ProceduralTerrain } from './ProceduralTerrain';
 import { Controls } from '../store/InputManager';
-import { playerPositions, npcPositions, bossPositions } from '../store/transientStore';
 import { TelemetryDashboard } from './TelemetryDashboard';
 import { ParticleManager, useParticleStore } from './ParticleManager';
 import { playHitSound } from '../utils/AudioEngine';
@@ -24,12 +32,6 @@ const holoHeadMap: Record<string, string> = {
 const holoHairMap: Record<string, string> = {
   "short": "holo_hair_short_1783307878879.png",
   "long": "holo_hair_long_1783307886323.png"
-};
-
-const heroImageMap: Record<string, string> = {
-  "Masculine Presentation": "hero_masculine_1783304787475.png",
-  "Feminine Presentation": "hero_feminine_1783304794125.png",
-  "Androgynous / Nonbinary Presentation": "hero_androgynous_1783304800858.png"
 };
 
 export interface Player {
@@ -246,7 +248,7 @@ const CameraRig: React.FC<{ targetRef: React.RefObject<THREE.Group> }> = ({ targ
   const raycaster = useMemo(() => new THREE.Raycaster(), []);
   const rayDir = useRef(new THREE.Vector3());
 
-  useFrame(() => {
+  useFrame((_state, delta) => {
     if (targetRef.current) {
       // 3rd Person MMORPG Follow Camera
       lookAtPosRef.current.copy(targetRef.current.position);
@@ -262,8 +264,6 @@ const CameraRig: React.FC<{ targetRef: React.RefObject<THREE.Group> }> = ({ targ
       raycaster.set(lookAtPosRef.current, rayDir.current);
       
       // Intersect only with environment meshes, skip players/triggers if possible
-      // In this simple approach, we intersect with the whole scene, 
-      // but in a full build we would use layers (e.g. object.layers.enable(1)).
       const intersects = raycaster.intersectObjects(scene.children, true);
       
       let finalCameraPos = desiredPosRef.current;
@@ -281,6 +281,9 @@ const CameraRig: React.FC<{ targetRef: React.RefObject<THREE.Group> }> = ({ targ
       currentLookAtRef.current.set(0, 0, -1).applyQuaternion(camera.quaternion).add(camera.position);
       currentLookAtRef.current.lerp(lookAtPosRef.current, 0.1);
       camera.lookAt(currentLookAtRef.current);
+
+      // Process Audio Engine updates for Doppler and Occlusion
+      AudioEngine.updateDopplerAndOcclusion(scene, delta);
     }
   });
 
@@ -400,7 +403,7 @@ const FlatSprite: React.FC<{ appearance: any }> = ({ appearance }) => {
   
   const mat = useMemo(() => {
     return new THREE.MeshStandardMaterial({
-      map: texture,
+      map: texture as THREE.Texture,
       transparent: true,
       side: THREE.DoubleSide,
       emissive: "#111"
@@ -467,7 +470,7 @@ const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, 
   }));
   const targetPos = useMemo(() => new THREE.Vector3(player.x, player.y, player.z), [player.x, player.y, player.z]);
   
-  const [sub, get] = useKeyboardControls<Controls>();
+  const [, get] = useKeyboardControls<Controls>();
   const lastSend = useRef<number>(0);
   
   const velocity = useRef([0,0,0]);
@@ -787,9 +790,6 @@ const ObjectsList: React.FC = () => {
 
 const CharacterCreatorPreview: React.FC = () => {
   const previewAppearance = useMultiplayerStore(state => state.previewAppearance);
-  const localPlayerId = useMultiplayerStore(state => state.sessionId);
-  const players = useMultiplayerStore(state => state.players);
-  
   const playerClass = useMultiplayerStore(state => state.playerClass);
 
   // If playerClass is set, they've finished character creation and LocalPlayer will render.
@@ -800,21 +800,20 @@ const CharacterCreatorPreview: React.FC = () => {
   // Need a ref to attach the camera rig to
   return (
     <>
-      <StaticPreviewRig />
+      <StaticPreviewRig appearance={previewAppearance} />
     </>
   );
 };
 
-const StaticPreviewRig: React.FC = () => {
+const StaticPreviewRig: React.FC<{ appearance: any }> = ({ appearance }) => {
   const ref = useRef<THREE.Group>(null);
-  const previewAppearance = useMultiplayerStore(state => state.previewAppearance);
   
   return (
     <>
       <group ref={ref} position={[0, 0, 0]}>
-        <PlayerSprite appearance={previewAppearance} />
+        <PlayerSprite appearance={appearance} />
       </group>
-      <CameraRig targetRef={ref} />
+      <CameraRig targetRef={ref as any} />
     </>
   );
 };
@@ -865,6 +864,14 @@ const NpcsList: React.FC<{ setInteractingNpcId?: (id: string | null) => void }> 
   );
 };
 
+const InterpolationSystem: React.FC = () => {
+  useFrame(() => {
+    // Slight delay (e.g. 100ms) to allow snapshots to accumulate
+    interpolateEntities(performance.now() - 100);
+  });
+  return null;
+};
+
 // ------------------------------------------------------------------
 // MAIN RENDERER (Memoized to prevent 2D UI updates from triggering canvas updates)
 // ------------------------------------------------------------------
@@ -884,6 +891,7 @@ export const WorldRenderer: React.FC<WorldRendererProps> = React.memo(({ setInte
           <SceneSetup />
           <WeatherSystem />
           <ParticleManager maxParticles={2000} />
+          <InterpolationSystem />
 
           <Physics gravity={[0, -30, 0]}>
             <ProceduralTerrain />

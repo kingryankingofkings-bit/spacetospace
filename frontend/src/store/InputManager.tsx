@@ -1,18 +1,21 @@
 import React, { useMemo } from 'react';
-import { KeyboardControls, KeyboardControlsEntry } from '@react-three/drei';
+import { KeyboardControls } from '@react-three/drei';
+import type { KeyboardControlsEntry } from '@react-three/drei';
 
-export enum Controls {
-  forward = 'forward',
-  backward = 'backward',
-  left = 'left',
-  right = 'right',
-  jump = 'jump',
-  interact = 'interact',
-  map = 'map',
-  inventory = 'inventory',
-  skilltree = 'skilltree',
-  crafting = 'crafting'
-}
+export const Controls = {
+  forward: 'forward',
+  backward: 'backward',
+  left: 'left',
+  right: 'right',
+  jump: 'jump',
+  interact: 'interact',
+  map: 'map',
+  inventory: 'inventory',
+  skilltree: 'skilltree',
+  crafting: 'crafting'
+} as const;
+
+export type Controls = typeof Controls[keyof typeof Controls];
 
 export const InputManager: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const map = useMemo<KeyboardControlsEntry<Controls>[]>(() => [

@@ -100,8 +100,8 @@ async function saveInventory(id, inventory, externalClient) {
   }
 }
 
-async function getObjects() {
-  const { rows } = await dbConnection.pool.query('SELECT * FROM world_objects');
+async function getObjectsInZone(zone) {
+  const { rows } = await dbConnection.pool.query('SELECT * FROM world_objects WHERE zone = $1', [zone]);
   return rows;
 }
 async function getObject(id) {
@@ -112,29 +112,29 @@ async function saveObject(obj, externalClient) {
   const client = externalClient || dbConnection.pool;
   const type = obj.objectType || obj.type || 'unknown';
   await client.query(
-    'INSERT INTO world_objects (id, type, x, y, z) VALUES ($1, $2, $3, $4, $5) ON CONFLICT (id) DO UPDATE SET type = EXCLUDED.type, x = EXCLUDED.x, y = EXCLUDED.y, z = EXCLUDED.z',
-    [obj.id, type, obj.x, obj.y, obj.z]
+    'INSERT INTO world_objects (id, type, x, y, z, zone) VALUES ($1, $2, $3, $4, $5, $6) ON CONFLICT (id) DO UPDATE SET type = EXCLUDED.type, x = EXCLUDED.x, y = EXCLUDED.y, z = EXCLUDED.z, zone = EXCLUDED.zone',
+    [obj.id, type, obj.x, obj.y, obj.z, obj.zone || 'verdant_town']
   );
 }
 async function deleteObject(id, externalClient) {
   const client = externalClient || dbConnection.pool;
   await client.query('DELETE FROM world_objects WHERE id = $1', [id]);
 }
-async function getTerrain() {
-  const { rows } = await dbConnection.pool.query('SELECT * FROM world_terrain');
+async function getTerrainInZone(zone) {
+  const { rows } = await dbConnection.pool.query('SELECT * FROM world_terrain WHERE zone = $1', [zone]);
   return rows;
 }
 async function saveTerrain(t) {
   await dbConnection.pool.query(
-    'INSERT INTO world_terrain (x, z, height) VALUES ($1, $2, $3) ON CONFLICT (x, z) DO UPDATE SET height = EXCLUDED.height',
-    [t.x, t.z, t.height]
+    'INSERT INTO world_terrain (x, z, height, zone) VALUES ($1, $2, $3, $4) ON CONFLICT (x, z) DO UPDATE SET height = EXCLUDED.height, zone = EXCLUDED.zone',
+    [t.x, t.z, t.height, t.zone || 'verdant_town']
   );
 }
 
 module.exports = {
   getUser, saveUser, saveInventory,
-  getObjects, getObject, saveObject, deleteObject,
-  getTerrain, saveTerrain,
+  getObjectsInZone, getObject, saveObject, deleteObject,
+  getTerrainInZone, saveTerrain,
   get redisClient() { return dbConnection.redisClient; },
   get pool() { return dbConnection.pool; },
   get connectPromise() { return connectPromise; }

@@ -3,46 +3,137 @@ import * as THREE from 'three';
 class AudioEngineSystem {
   private listener: THREE.AudioListener | null = null;
   private bgmAudio: THREE.Audio | null = null;
-  private audioLoader = new THREE.AudioLoader();
-  private positionalCache: THREE.PositionalAudio[] = [];
+  
+  // Pooling for dynamic audio sources
+  private positionalPool: THREE.PositionalAudio[] = [];
+  private poolSize = 32;
+  
+  // Raycaster for Acoustic Occlusion
+  private raycaster = new THREE.Raycaster();
+  
+  // Doppler tracking
+  private lastListenerPos = new THREE.Vector3();
+  private listenerVelocity = new THREE.Vector3();
 
   init(camera: THREE.Camera) {
     if (this.listener) return;
     this.listener = new THREE.AudioListener();
     camera.add(this.listener);
     this.bgmAudio = new THREE.Audio(this.listener);
+    
+    // Initialize pool
+    for (let i = 0; i < this.poolSize; i++) {
+      const pAudio = new THREE.PositionalAudio(this.listener);
+      pAudio.setRefDistance(5);
+      pAudio.setMaxDistance(100);
+      pAudio.setRolloffFactor(1);
+      
+      // Setup lowpass filter for occlusion
+      const filter = pAudio.context.createBiquadFilter();
+      filter.type = 'lowpass';
+      filter.frequency.value = 22050; // Open filter by default
+      pAudio.setFilter(filter);
+      
+      this.positionalPool.push(pAudio);
+    }
+  }
+
+  private getAvailableAudio(): THREE.PositionalAudio | null {
+    for (const audio of this.positionalPool) {
+      if (!audio.isPlaying) return audio;
+    }
+    return null;
+  }
+
+  updateDopplerAndOcclusion(scene: THREE.Scene, delta: number) {
+    if (!this.listener) return;
+
+    // Calculate Listener Velocity
+    const currentListenerPos = new THREE.Vector3();
+    this.listener.getWorldPosition(currentListenerPos);
+    
+    if (delta > 0) {
+      this.listenerVelocity.subVectors(currentListenerPos, this.lastListenerPos).divideScalar(delta);
+    }
+    this.lastListenerPos.copy(currentListenerPos);
+
+    // Speed of sound in game units per second (approx)
+    const speedOfSound = 343;
+
+    // Update active positional audio sources
+    for (const pAudio of this.positionalPool) {
+      if (pAudio.isPlaying) {
+        const sourcePos = new THREE.Vector3();
+        pAudio.getWorldPosition(sourcePos);
+        
+        // 1. Ray-Cast Acoustic Occlusion
+        const dir = new THREE.Vector3().subVectors(sourcePos, currentListenerPos);
+        const distance = dir.length();
+        dir.normalize();
+        
+        this.raycaster.set(currentListenerPos, dir);
+        this.raycaster.far = distance;
+        
+        // Check for geometry in the way
+        const intersects = this.raycaster.intersectObjects(scene.children, true);
+        const isOccluded = intersects.some(hit => hit.object.type === 'Mesh' && !hit.object.userData?.isTrigger);
+        
+        const filter = pAudio.getFilter() as BiquadFilterNode;
+        if (isOccluded) {
+          // Muffle the sound (lowpass)
+          filter.frequency.setTargetAtTime(1000, pAudio.context.currentTime, 0.1);
+          pAudio.setVolume(0.3); // Attenuate volume
+        } else {
+          // Clear line of sight
+          filter.frequency.setTargetAtTime(22050, pAudio.context.currentTime, 0.1);
+          pAudio.setVolume(1.0);
+        }
+
+        // 2. Doppler Shift Calculation
+        // Assuming source is stationary for this simple example (vSource = 0)
+        // If source was moving, we'd calculate its velocity similar to listener
+        const vListener = dir.dot(this.listenerVelocity);
+        const vSource = 0; 
+        
+        // Prevent division-by-zero
+        const denominator = speedOfSound + vSource;
+        const safeDenominator = Math.max(0.001, denominator);
+        
+        let dopplerFactor = (speedOfSound + vListener) / safeDenominator;
+        dopplerFactor = Math.max(0.1, Math.min(dopplerFactor, 3.0)); // Clamp extreme shifts
+        
+        if (pAudio.playbackRate !== dopplerFactor) {
+            pAudio.setPlaybackRate(dopplerFactor);
+        }
+      }
+    }
   }
 
   playBGM(zone: string) {
     if (!this.bgmAudio) return;
-    
-    // Simulate mapping zones to audio files
-    const url = `/audio/bgm_${zone}.mp3`;
-    
-    // Stop current BGM
-    if (this.bgmAudio.isPlaying) {
-      this.bgmAudio.stop();
-    }
-
-    // In a real app we'd load the actual file, but for this engine test, 
-    // we use a synthetic oscillator to avoid needing assets
+    if (this.bgmAudio.isPlaying) this.bgmAudio.stop();
     console.log(`[AudioEngine] Playing BGM for zone: ${zone}`);
   }
 
   playHitSound(position: [number, number, number]) {
     if (!this.listener) return;
-
-    // Use a simple oscillator for hit sounds
-    const ctx = this.listener.context;
     
-    // Resume context if suspended (browser auto-play policy)
-    if (ctx.state === 'suspended') {
-      ctx.resume();
-    }
+    const pAudio = this.getAvailableAudio();
+    if (!pAudio) return; // Pool exhausted
+    
+    const ctx = this.listener.context;
+    if (ctx.state === 'suspended') ctx.resume();
 
+    // Reset properties
+    pAudio.position.set(position[0], position[1], position[2]);
+    pAudio.setPlaybackRate(1);
+    
+    const filter = pAudio.getFilter() as BiquadFilterNode;
+    filter.frequency.value = 22050; // Open
+
+    // Generate synth hit sound
     const osc = ctx.createOscillator();
     const gainNode = ctx.createGain();
-    const panner = ctx.createPanner();
 
     osc.type = 'square';
     osc.frequency.setValueAtTime(150, ctx.currentTime);
@@ -51,23 +142,40 @@ class AudioEngineSystem {
     gainNode.gain.setValueAtTime(0.5, ctx.currentTime);
     gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1);
 
-    // Positional audio
-    panner.panningModel = 'HRTF';
-    panner.distanceModel = 'inverse';
-    panner.refDistance = 1;
-    panner.maxDistance = 10000;
-    panner.rolloffFactor = 1;
-    
-    panner.positionX.value = position[0];
-    panner.positionY.value = position[1];
-    panner.positionZ.value = position[2];
-
     osc.connect(gainNode);
-    gainNode.connect(panner);
-    panner.connect(ctx.destination);
+    pAudio.setNodeSource(gainNode as unknown as AudioBufferSourceNode); // Hack for synthetic node
 
     osc.start();
+    pAudio.play();
     osc.stop(ctx.currentTime + 0.1);
+    
+    setTimeout(() => {
+      if (pAudio.isPlaying) pAudio.stop();
+      pAudio.disconnect(); // Clear custom node source
+    }, 150);
+  }
+
+  setListenerVelocity(velocity: THREE.Vector3) {
+    this.listenerVelocity.copy(velocity);
+  }
+
+  dispose() {
+    if (this.bgmAudio && this.bgmAudio.isPlaying) {
+      this.bgmAudio.stop();
+    }
+    this.positionalPool.forEach(audio => {
+      if (audio.isPlaying) audio.stop();
+      audio.disconnect();
+    });
+    this.positionalPool = [];
+    
+    if (this.listener && this.listener.context) {
+      const ctx = this.listener.context;
+      if (ctx.state !== 'closed') {
+        ctx.close();
+      }
+    }
+    console.log("[AudioEngine] Disposed successfully");
   }
 }
 
