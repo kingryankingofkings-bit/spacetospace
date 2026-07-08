@@ -20,7 +20,7 @@ interface ParticleState {
 
 import { ObjectPool } from '../utils/ObjectPool';
 
-export const useParticleStore = create<ParticleState>((set) => ({
+export const useParticleStore = create<ParticleState>((set, get) => ({
   particles: [],
   emit: (pos, vel, count, color = '#ffffff', size = 0.5, life = 1.0) => {
     const newParticles: Particle[] = [];

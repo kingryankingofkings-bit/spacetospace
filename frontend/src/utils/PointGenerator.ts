@@ -20,6 +20,7 @@ export interface GenerationConfig {
   jitterAmount: number; // How much a point can deviate from the cell center (0.0 to 1.0)
   seedOffset: number; // Unique seed for this layer
   exclusionZones?: { x: number, z: number, radius: number }[]; // Areas to avoid spawning
+  biomeFilter?: (x: number, z: number) => boolean; // Determines if point belongs in the current biome
 }
 
 /**
@@ -54,13 +55,15 @@ export function generateOrganicPoints(config: GenerationConfig): GeneratedPoint[
       }
 
       if (!excluded) {
-        points.push({
-          x: finalX,
-          z: finalZ,
-          rotY: seededRandom(finalX, finalZ, seedOffset + 3) * Math.PI * 2,
-          scale: 0.8 + seededRandom(finalX, finalZ, seedOffset + 4) * 0.4,
-          randomVal: seededRandom(finalX, finalZ, seedOffset + 5)
-        });
+        if (!config.biomeFilter || config.biomeFilter(finalX, finalZ)) {
+          points.push({
+            x: finalX,
+            z: finalZ,
+            rotY: seededRandom(finalX, finalZ, seedOffset + 3) * Math.PI * 2,
+            scale: 0.8 + seededRandom(finalX, finalZ, seedOffset + 4) * 0.4,
+            randomVal: seededRandom(finalX, finalZ, seedOffset + 5)
+          });
+        }
       }
     }
   }

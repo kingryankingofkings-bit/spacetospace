@@ -12,7 +12,8 @@ export const Controls = {
   map: 'map',
   inventory: 'inventory',
   skilltree: 'skilltree',
-  crafting: 'crafting'
+  crafting: 'crafting',
+  attack: 'attack'
 } as const;
 
 export type Controls = typeof Controls[keyof typeof Controls];
@@ -29,6 +30,7 @@ export const InputManager: React.FC<{ children: React.ReactNode }> = ({ children
     { name: Controls.inventory, keys: ['KeyI', 'Keyi'] },
     { name: Controls.skilltree, keys: ['KeyK', 'Keyk'] },
     { name: Controls.crafting, keys: ['KeyC', 'Keyc'] },
+    { name: Controls.attack, keys: ['KeyF', 'Keyf', 'Click'] },
   ], []);
 
   return (

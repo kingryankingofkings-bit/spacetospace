@@ -7,7 +7,17 @@ export interface ModData {
   scaleMod: number;
 }
 
+export interface SceneNodeData {
+  id: string;
+  type: string;
+  position: [number, number, number];
+  rotation: [number, number, number];
+  scale: [number, number, number];
+}
+
 interface ToolState {
+  isEditorMode: boolean;
+  setIsEditorMode: (mode: boolean) => void;
   activeTool: string;
   setActiveTool: (tool: string) => void;
   brushSize: number;
@@ -20,11 +30,16 @@ interface ToolState {
   setSelectedEntityId: (id: string | null) => void;
   localMods: Record<string, ModData>;
   setLocalMod: (entityId: string, modData: ModData) => void;
+  sceneNodes: SceneNodeData[];
+  setSceneNodes: (nodes: SceneNodeData[]) => void;
+  updateSceneNode: (id: string, partial: Partial<SceneNodeData>) => void;
 }
 
 export const useToolStore = create<ToolState>()(
   persist(
     (set) => ({
+      isEditorMode: false,
+      setIsEditorMode: (mode) => set({ isEditorMode: mode }),
       activeTool: 'select',
       setActiveTool: (tool) => set({ activeTool: tool }),
       brushSize: 5,
@@ -41,6 +56,11 @@ export const useToolStore = create<ToolState>()(
           ...state.localMods,
           [entityId]: modData
         }
+      })),
+      sceneNodes: [],
+      setSceneNodes: (nodes) => set({ sceneNodes: nodes }),
+      updateSceneNode: (id, partial) => set((state) => ({
+        sceneNodes: state.sceneNodes.map(n => n.id === id ? { ...n, ...partial } : n)
       }))
     }),
     {

@@ -15,6 +15,7 @@ export class WebGPURayTracer {
   private bvhBuffer: GPUBuffer | null = null;
   private vertexBuffer: GPUBuffer | null = null;
   private indexBuffer: GPUBuffer | null = null;
+  public outputTexture: any = null;
   async init(sceneGeometry: THREE.BufferGeometry, width: number, height: number) {
     if (!navigator.gpu) {
       console.warn("WebGPU not supported on this browser. Falling back to WebGL.");

@@ -69,7 +69,7 @@ export interface WorldRendererProps {
 // UTILS
 // ------------------------------------------------------------------
 
-const OptimizedModel: React.FC<{ 
+export const OptimizedModel: React.FC<{ 
   url: string, 
   scaleToDimension?: number,
   scaling?: [number, number, number],
@@ -202,6 +202,7 @@ const SceneSetup: React.FC = () => {
       {/* High-End IBL Lighting with offline resilience */}
       <SafeEnvironment>
         <Suspense fallback={null}>
+          <FPSLimiter fps={60} />
           <Environment preset="night" background blur={0.5} />
         </Suspense>
       </SafeEnvironment>
@@ -233,7 +234,7 @@ const SceneSetup: React.FC = () => {
 
 import { AudioEngine } from '../utils/AudioEngine';
 
-const CameraRig: React.FC<{ targetRef: React.RefObject<THREE.Group> }> = ({ targetRef }) => {
+const CameraRig = React.memo(({ targetRef }: { targetRef: React.RefObject<THREE.Group> }) => {
   const { camera, scene } = useThree();
 
   useEffect(() => {
@@ -288,7 +289,7 @@ const CameraRig: React.FC<{ targetRef: React.RefObject<THREE.Group> }> = ({ targ
   });
 
   return null;
-};
+});
 
 const WeaponSwingHitbox: React.FC<{
   position: [number, number, number];
@@ -447,6 +448,7 @@ const PlayerSprite: React.FC<{ appearance: any }> = ({ appearance }) => {
   return (
     <Billboard follow={true} lockX={false} lockY={false} lockZ={false}>
       <Suspense fallback={null}>
+          <FPSLimiter fps={60} />
          <SpriteLayer file={headFile} color={skinColor} zOffset={0} />
          {hairFile && <SpriteLayer file={hairFile} color={hairColor} zOffset={0.01} />}
          {beardFile && <SpriteLayer file={beardFile} color={hairColor} zOffset={0.02} />}
@@ -460,7 +462,7 @@ const PlayerSprite: React.FC<{ appearance: any }> = ({ appearance }) => {
   );
 };
 
-const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, z: number) => void }> = ({ player, sendMove }) => {
+const LocalPlayer = React.memo(({ player, sendMove }: { player: Player, sendMove?: (x: number, y: number, z: number) => void }) => {
   const [ref, api] = useBox(() => ({ 
     mass: 1, 
     type: 'Dynamic', 
@@ -609,7 +611,7 @@ const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, 
           <OptimizedModel url={`${asset.rootUrl}${asset.sceneFilename}`} scaleToDimension={2.5} />
         )}
       </group>
-      <CameraRig targetRef={ref} />
+      <CameraRig targetRef={ref as any} />
       {swings.map(s => (
         <WeaponSwingHitbox key={s.id} position={s.pos} rotation={s.rot} onHit={sendAttack} />
       ))}
@@ -627,9 +629,9 @@ const LocalPlayer: React.FC<{ player: Player, sendMove?: (x: number, y: number, 
       ))}
     </>
   );
-};
+});
 
-const RemotePlayer: React.FC<{ player: Player, isBoss?: boolean }> = ({ player, isBoss }) => {
+const RemotePlayer = React.memo(({ player, isBoss }: { player: Player, isBoss?: boolean }) => {
   const targetPos = useMemo(() => new THREE.Vector3(player.x, player.y, player.z), [player.x, player.y, player.z]);
   const currentPos = useRef(new THREE.Vector3(player.x, player.y, player.z));
   
@@ -677,7 +679,7 @@ const RemotePlayer: React.FC<{ player: Player, isBoss?: boolean }> = ({ player, 
       )}
     </group>
   );
-};
+});
 
 const NPC: React.FC<{ npc: any, setInteractingNpcId?: (id: string | null) => void }> = ({ npc, setInteractingNpcId }) => {
   const [hovered, setHovered] = useState(false);
@@ -818,7 +820,7 @@ const StaticPreviewRig: React.FC<{ appearance: any }> = ({ appearance }) => {
   );
 };
 
-const PlayersList: React.FC = () => {
+const PlayersList = React.memo(() => {
   const localPlayerId = useMultiplayerStore(state => state.sessionId);
   const players = useMultiplayerStore(state => state.players);
   const playerClass = useMultiplayerStore(state => state.playerClass);
@@ -836,7 +838,7 @@ const PlayersList: React.FC = () => {
       {remotePlayers.map(p => <RemotePlayer key={p.id} player={p} />)}
     </>
   );
-};
+});
 
 const BossesList: React.FC = () => {
   const bosses = useMultiplayerStore(state => state.bosses);
@@ -876,6 +878,35 @@ const InterpolationSystem: React.FC = () => {
 // MAIN RENDERER (Memoized to prevent 2D UI updates from triggering canvas updates)
 // ------------------------------------------------------------------
 
+
+const FPSLimiter = ({ fps = 60 }: { fps?: number }) => {
+  const set = useThree((state) => state.set);
+  const invalidate = useThree((state) => state.invalidate);
+  
+  React.useEffect(() => {
+    set({ frameloop: 'demand' });
+    
+    const interval = 1000 / fps;
+    let lastTime = performance.now();
+    let animationFrameId: number;
+    
+    const loop = (time: number) => {
+      animationFrameId = requestAnimationFrame(loop);
+      if (time - lastTime >= interval) {
+        lastTime = time - ((time - lastTime) % interval);
+        invalidate();
+      }
+    };
+    
+    animationFrameId = requestAnimationFrame(loop);
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      set({ frameloop: 'always' });
+    };
+  }, [fps, set, invalidate]);
+  return null;
+};
+
 export const WorldRenderer: React.FC<WorldRendererProps> = React.memo(({ setInteractingNpcId }) => {
   const resolutionScale = useGraphicsSettingsStore(state => state.resolutionScale);
   const dpr = useMemo(() => Math.min(window.devicePixelRatio, resolutionScale, 2), [resolutionScale]);
@@ -888,6 +919,7 @@ export const WorldRenderer: React.FC<WorldRendererProps> = React.memo(({ setInte
     <div style={{ width: '100vw', height: '100vh', background: '#000' }}>
       <Canvas shadows={shadowQuality !== 'low'} camera={{ position: [0, 15, 20], fov: 60 }} dpr={dpr}>
         <Suspense fallback={null}>
+          <FPSLimiter fps={60} />
           <SceneSetup />
           <WeatherSystem />
           <ParticleManager maxParticles={2000} />

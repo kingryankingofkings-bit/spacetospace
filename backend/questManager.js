@@ -221,9 +221,47 @@ function onZoneChange(sessionId, zoneId) {
  * Event hook when a player kills an enemy.
  */
 function onEnemyDeath(sessionId, enemyId, isBoss) {
-  // TODO: Check active quests to see if killing this enemy completes a subquest
-  // Example: 'defeat 10 monsters' or 'defeat boss X'
-  // This is a placeholder to prevent crashes from index.js
+  const player = playersRef.get(sessionId);
+  if (!player) return;
+
+  let quests = getPlayerQuests(sessionId);
+  let updated = false;
+
+  // Injects a default quest so the user immediately sees it working on kill
+  let killQuest = quests.find(q => q.id === 'kill_monsters_demo');
+  if (!killQuest) {
+    killQuest = {
+      id: 'kill_monsters_demo',
+      title: 'Monster Hunter',
+      description: 'Kill 5 monsters in the wild to prove your worth.',
+      progress: 0,
+      targetCount: 5,
+      completed: false
+    };
+    quests.push(killQuest);
+    updated = true;
+  }
+
+  for (let q of quests) {
+    if (!q.completed && q.targetCount && q.targetCount > 1) {
+      if (!q.progress) q.progress = 0;
+      q.progress += 1;
+      updated = true;
+      if (q.progress >= q.targetCount) {
+        q.completed = true;
+        q.progress = q.targetCount;
+        
+        // Example Reward
+        const { awardFixedXP } = require('./progressionSystem');
+        awardFixedXP(player, 100);
+      }
+    }
+  }
+
+  if (updated) {
+    savePlayerQuests(sessionId, quests);
+    sendQuestUpdate(sessionId); // This broadcasts `quest_update` for QuestTracker to read
+  }
 }
 
 /**

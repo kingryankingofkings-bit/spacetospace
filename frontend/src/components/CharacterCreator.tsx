@@ -190,7 +190,7 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
                   <motion.div 
                     key={p}
                     whileHover={{ scale: 1.02 }}
-                    onClick={() => updateSelection('presentation', p + ' Face Presets')}
+                    onClick={() => updateSelection('presentation', p)}
                     className="aaa-panel relative overflow-hidden"
                     style={{ 
                       padding: 0, 
@@ -249,45 +249,38 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
 
       case 'Skin':
         return (
-          <div className="flex gap-8 h-full">
-            {renderPreview()}
-            
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex-col gap-6 flex-1 h-full">
-              <h2 style={{ fontSize: '1.8rem', color: 'var(--accent-primary)', textShadow: '0 0 10px var(--accent-primary-glow)', marginBottom: '16px' }}>SKIN TONE & DETAIL</h2>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(64px, 1fr))', gap: '16px', overflowY: 'auto', paddingRight: '10px' }}>
-                {catalog.skin_tones.map((tone: string) => {
-                  const isActive = selections.skinTone === tone;
-                  const color = skinColors[tone] || '#888';
-                  return (
-                    <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      title={tone}
-                      key={tone}
-                      onClick={() => updateSelection('skinTone', tone)}
-                      style={{ 
-                        width: '64px', height: '64px', borderRadius: '50%',
-                        background: color,
-                        border: isActive ? '3px solid var(--accent-primary)' : '2px solid rgba(255,255,255,0.2)',
-                        boxShadow: isActive ? '0 0 15px var(--accent-primary-glow)' : '0 4px 10px rgba(0,0,0,0.5)',
-                        cursor: 'pointer'
-                      }}
-                    />
-                  )
-                })}
-              </div>
-            </motion.div>
-          </div>
+          <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex-col gap-6 h-full">
+            <h2 style={{ fontSize: '1.8rem', color: 'var(--accent-primary)', textShadow: '0 0 10px var(--accent-primary-glow)', marginBottom: '16px' }}>SKIN TONE & DETAIL</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(64px, 1fr))', gap: '16px', overflowY: 'auto', paddingRight: '10px' }}>
+              {catalog.skin_tones.map((tone: string) => {
+                const isActive = selections.skinTone === tone;
+                const color = skinColors[tone] || '#888';
+                return (
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    title={tone}
+                    key={tone}
+                    onClick={() => updateSelection('skinTone', tone)}
+                    style={{ 
+                      width: '64px', height: '64px', borderRadius: '50%',
+                      background: color,
+                      border: isActive ? '3px solid var(--accent-primary)' : '2px solid rgba(255,255,255,0.2)',
+                      boxShadow: isActive ? '0 0 15px var(--accent-primary-glow)' : '0 4px 10px rgba(0,0,0,0.5)',
+                      cursor: 'pointer'
+                    }}
+                  />
+                )
+              })}
+            </div>
+          </motion.div>
         );
 
       case 'Face':
-        const faceCategory = selections.presentation;
+        const faceCategory = selections.presentation + ' Face Presets';
         const faces = (catalog.face_presets as any)[faceCategory] || [];
         return (
-          <div className="flex gap-8 h-full">
-            {renderPreview()}
-
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex-col gap-6 flex-1 h-full" style={{ overflowY: 'auto', paddingRight: '10px' }}>
-              <h2 style={{ fontSize: '1.8rem', color: 'var(--accent-primary)', textShadow: '0 0 10px var(--accent-primary-glow)', marginBottom: '16px' }}>FACIAL STRUCTURE</h2>
+          <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex-col gap-6 h-full" style={{ overflowY: 'auto', paddingRight: '10px' }}>
+            <h2 style={{ fontSize: '1.8rem', color: 'var(--accent-primary)', textShadow: '0 0 10px var(--accent-primary-glow)', marginBottom: '16px' }}>FACIAL STRUCTURE</h2>
               
               <div className="flex-col gap-6">
                 <div>
@@ -299,18 +292,14 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
                         <div 
                           key={face[0]}
                           onClick={() => updateSelection('facePreset', face[0])}
-                          className="aaa-item-slot"
+                          className="aaa-item-slot flex flex-col items-start gap-1"
                           style={{ 
                             padding: '16px',
-                            flexDirection: 'column',
-                            alignItems: 'flex-start',
-                            gap: '4px',
                             border: isActive ? '1px solid var(--accent-primary)' : '1px solid rgba(255,255,255,0.05)',
                             background: isActive ? 'rgba(0,240,255,0.1)' : ''
                           }}
                         >
                           <span style={{ color: isActive ? 'var(--accent-primary)' : 'white', fontWeight: 800 }}>{face[1]}</span>
-                          <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>{face[2]}</span>
                         </div>
                       )
                     })}
@@ -342,18 +331,14 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
                 </div>
               </div>
             </motion.div>
-          </div>
         );
 
       case 'Hair':
-        const hairCategory = selections.presentation.replace('Face', 'Hairstyle');
+        const hairCategory = selections.presentation + ' Hairstyle Presets';
         const hairstyles = (catalog.hairstyles as any)[hairCategory] || [];
         return (
-          <div className="flex gap-8 h-full">
-             {renderPreview()}
-
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex-col gap-6 flex-1 h-full" style={{ overflowY: 'auto', paddingRight: '10px' }}>
-              <h2 style={{ fontSize: '1.8rem', color: 'var(--accent-primary)', textShadow: '0 0 10px var(--accent-primary-glow)', marginBottom: '16px' }}>HAIR & STYLE</h2>
+          <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex-col gap-6 h-full" style={{ overflowY: 'auto', paddingRight: '10px' }}>
+            <h2 style={{ fontSize: '1.8rem', color: 'var(--accent-primary)', textShadow: '0 0 10px var(--accent-primary-glow)', marginBottom: '16px' }}>HAIR & STYLE</h2>
               
               <div className="flex-col gap-6">
                 <div>
@@ -390,16 +375,14 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
                         <div 
                           key={hair[0]}
                           onClick={() => updateSelection('hairStyle', hair[0])}
-                          className="aaa-item-slot"
+                          className="aaa-item-slot flex flex-col items-start gap-1"
                           style={{ 
                             padding: '16px',
-                            alignItems: 'flex-start',
                             border: isActive ? '1px solid var(--accent-primary)' : '1px solid rgba(255,255,255,0.05)',
                             background: isActive ? 'rgba(0,240,255,0.1)' : ''
                           }}
                         >
-                          <div style={{ fontWeight: 800, color: isActive ? 'var(--accent-primary)' : 'white', marginBottom: '4px' }}>{hair[1]}</div>
-                          <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{hair[2]}</div>
+                          <div style={{ fontWeight: 800, color: isActive ? 'var(--accent-primary)' : 'white' }}>{hair[1]}</div>
                         </div>
                       )
                     })}
@@ -407,7 +390,6 @@ export const CharacterCreator: React.FC<CharacterCreatorProps> = ({ onComplete }
                 </div>
               </div>
             </motion.div>
-          </div>
         );
 
       case 'Class':

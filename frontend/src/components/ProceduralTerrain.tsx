@@ -45,7 +45,7 @@ const InstancedModel: React.FC<InstancedModelProps> = ({ url, instances, colorTi
   );
 };
 
-export const ProceduralTerrain: React.FC = () => {
+export const ProceduralTerrain = React.memo(() => {
   // Infinite horizontal physics plane at y=0
   usePlane(() => ({
     position: [0, 0, 0],
@@ -170,4 +170,4 @@ export const ProceduralTerrain: React.FC = () => {
       {wildlifeInstances.length > 0 && <InstancedModel url={critterUrl} instances={wildlifeInstances} colorTint="#aaddff" />}
     </group>
   );
-};
+});

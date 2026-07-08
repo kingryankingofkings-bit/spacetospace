@@ -5,7 +5,7 @@
 
 const MAX_ENTITIES = 4096;
 // Stride: current(xyz 0,1,2), snapshot0(xyz,t 3,4,5,6), snapshot1(xyz,t 7,8,9,10)
-const STRIDE = 11;
+export const STRIDE = 11;
 
 // Pre-allocate typed arrays
 export const playerBuffer = new Float32Array(MAX_ENTITIES * STRIDE);

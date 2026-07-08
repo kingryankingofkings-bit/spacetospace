@@ -19,7 +19,26 @@ import { Login } from './components/Login';
 import { GraphicsSettingsPanel } from './components/GraphicsSettingsPanel';
 import { useKeyboardControls } from '@react-three/drei';
 import { Controls } from './store/InputManager';
+import { useGLTF } from '@react-three/drei';
+import { getCdnAssetPath } from './utils/AssetManager';
+import { getAssetByType } from './utils/AssetRegistry';
 
+// Preload core assets to prevent pop-in during gameplay
+[
+  getAssetByType('01_rabbit_critter'),
+  getAssetByType('foliage_tree'),
+  getAssetByType('01_warrior'),
+  getAssetByType('02_mage'),
+  getAssetByType('03_ranger'),
+  getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "tree.glb"),
+  getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "wall.glb"),
+  getCdnAssetPath("/models/modular_environment_shop_quest_glb_pack_v1/glb_assets/", "mod_platform_round.glb"),
+  getCdnAssetPath("/models/browser_game_3d_asset_pack_v1/glb_assets/", "rock.glb")
+].forEach(asset => {
+  if (asset) {
+    useGLTF.preload(`${asset.rootUrl}${asset.sceneFilename}`);
+  }
+});
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(!!localStorage.getItem('auth_token'));
   const [interactingNpcId, setInteractingNpcId] = useState<string | null>(null);

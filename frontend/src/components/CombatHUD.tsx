@@ -4,10 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export const CombatHUD: React.FC = () => {
   const health = useMultiplayerStore(state => state.health);
+  const mana = useMultiplayerStore(state => state.mana);
   const combo = useMultiplayerStore(state => state.combo);
 
   return (
-    <>
+    <React.Fragment>
       <div className="absolute flex-col items-center gap-6 pointer-events-none z-100" style={{ bottom: '140px', left: '50%', transform: 'translateX(-50%)' }}>
         
         {/* Combo Text - High-end Floating Display */}
@@ -76,14 +77,28 @@ export const CombatHUD: React.FC = () => {
             </motion.div>
           </div>
           
-          {/* Health Text Overlay */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <span style={{ color: 'white', fontWeight: 900, fontSize: '0.9rem', letterSpacing: '4px', textShadow: '0 2px 4px black' }}>
-              {Math.round(health)} <span style={{ color: 'rgba(0,240,255,0.6)', margin: '0 4px' }}>/</span> 100
-            </span>
-          </div>
+        {/* Health Text Overlay */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+          <span style={{ color: 'white', fontWeight: 900, fontSize: '0.9rem', letterSpacing: '4px', textShadow: '0 2px 4px black' }}>
+            {Math.round(health)} <span style={{ color: 'rgba(0,240,255,0.6)', margin: '0 4px' }}>/</span> 100
+          </span>
+        </div>
+
+        {/* Mana Bar - Smaller, secondary bar underneath */}
+        <div className="absolute -bottom-3 left-1/2 -translate-x-1/2" style={{ width: '400px', height: '12px', padding: '2px', borderRadius: '6px', background: 'rgba(0,0,0,0.8)', boxShadow: '0 4px 6px rgba(0,0,0,0.5)' }}>
+          <motion.div 
+            initial={{ width: 0 }}
+            animate={{ width: `${Math.max(0, Math.min(100, mana))}%` }}
+            transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+            className="h-full rounded"
+            style={{
+              background: 'linear-gradient(90deg, #1d4ed8 0%, #3b82f6 100%)',
+              boxShadow: '0 0 10px rgba(59,130,246,0.6)'
+            }}
+          />
+        </div>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 };

@@ -24,7 +24,10 @@ interface MultiplayerState {
   worldNpcs: any[];
   bosses: any[];
   combo: number;
+  comboTimer: NodeJS.Timeout | null;
   health: number;
+  mana: number;
+  isDead: boolean;
   playerClass: string | null;
   level: number;
   skillPoints: number;
@@ -45,6 +48,7 @@ interface MultiplayerState {
   sendMove: (x: number, y: number, z: number) => void;
   sendAttack: (targetId: string) => void;
   sendAbility: (abilityId: string, targetId?: string, x?: number, y?: number, z?: number) => void;
+  consumeMana: (amount: number) => boolean;
   sendFastTravel: (zone: string) => void;
   finalizeCharacter: (appearance: any, classId: string) => void;
   setPreviewAppearance: (appearance: any) => void;
@@ -68,14 +72,17 @@ export const setAuthToken = (token: string, _username: string) => {
   authToken = token;
 };
 
-export const useMultiplayerStore = create<MultiplayerState>((set) => {
+export const useMultiplayerStore = create<MultiplayerState>((set, get) => {
   return {
     players: [],
     worldObjects: [],
     worldNpcs: [],
     bosses: [],
     combo: 0,
+    comboTimer: null,
     health: 100,
+    mana: 100,
+    isDead: false,
     playerClass: null,
     level: 1,
     skillPoints: 0,
@@ -110,6 +117,16 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
 
     sendAttack: (targetId) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
+        const { comboTimer } = get();
+        if (comboTimer) clearTimeout(comboTimer);
+        const newTimer = setTimeout(() => {
+          set({ combo: 0, comboTimer: null });
+        }, 3000);
+        set(state => ({ 
+          combo: state.combo + 1, 
+          comboTimer: newTimer,
+          mana: Math.min(100, state.mana + 5) // Attacks restore mana
+        }));
         sharedWs.send(JSON.stringify({ type: 'attack', targetId }));
       }
     },
@@ -117,6 +134,14 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
         sharedWs.send(JSON.stringify({ type: 'use_ability', abilityId, targetId, x, y, z }));
       }
+    },
+    consumeMana: (amount: number) => {
+      const { mana } = get();
+      if (mana >= amount) {
+        set({ mana: mana - amount });
+        return true;
+      }
+      return false;
     },
     sendFastTravel: (zone) => {
       if (sharedWs && sharedWs.readyState === WebSocket.OPEN) {
@@ -181,23 +206,52 @@ export const useMultiplayerStore = create<MultiplayerState>((set) => {
 });
 
 let isInitialized = false;
+let reconnectAttempts = 0;
+let reconnectTimeout: ReturnType<typeof setTimeout> | null = null;
+
+const MAX_RECONNECT_ATTEMPTS = 10;
+const BASE_RECONNECT_DELAY = 1000;
 
 export const initMultiplayer = () => {
   if (isInitialized || !authToken) return;
   isInitialized = true;
 
   const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-  const defaultWsUrl = window.location.hostname === 'localhost' ? 'ws://localhost:2567' : `${protocol}//${window.location.host}`;
+  const isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+  const defaultWsUrl = isLocal ? `ws://${window.location.hostname}:2567` : `${protocol}//${window.location.host}`;
   const wsUrl = import.meta.env.VITE_WS_URL || defaultWsUrl;
-  sharedWs = new WebSocket(wsUrl);
-  sharedWs.onopen = () => {
-    console.log('Connected to server');
-    sharedWs?.send(JSON.stringify({ type: 'join', token: authToken, color: '#00ff88' }));
-  };
-  sharedWs.onclose = () => {
-    console.log('Disconnected from server');
-    isInitialized = false;
-  };
+  
+  const connect = () => {
+    if (sharedWs) {
+      sharedWs.close();
+    }
+    
+    sharedWs = new WebSocket(wsUrl);
+    
+    sharedWs.onopen = () => {
+      console.log('Connected to server');
+      reconnectAttempts = 0; // Reset on successful connection
+      sharedWs?.send(JSON.stringify({ type: 'join', token: authToken, color: '#00ff88' }));
+    };
+    
+    sharedWs.onclose = () => {
+      console.log('Disconnected from server');
+      if (reconnectAttempts < MAX_RECONNECT_ATTEMPTS) {
+        const delay = BASE_RECONNECT_DELAY * Math.pow(1.5, reconnectAttempts);
+        console.log(`Reconnecting in ${delay}ms... (Attempt ${reconnectAttempts + 1}/${MAX_RECONNECT_ATTEMPTS})`);
+        reconnectAttempts++;
+        if (reconnectTimeout) clearTimeout(reconnectTimeout);
+        reconnectTimeout = setTimeout(connect, delay);
+      } else {
+        console.error('Max reconnection attempts reached. Please refresh the page.');
+        isInitialized = false;
+      }
+    };
+    
+    sharedWs.onerror = (error) => {
+      console.error('WebSocket Error:', error);
+      // onclose will handle the reconnection
+    };
 
   sharedWs.onmessage = (event) => {
     const data = JSON.parse(event.data);
@@ -334,7 +388,10 @@ export const initMultiplayer = () => {
         ...(data.health !== undefined ? { health: data.health } : {})
       }));
     } else if (data.type === 'quest_update') {
-      set({ activeQuests: data.quests || [] });
+      const currentState = useMultiplayerStore.getState();
+      if (!data.sessionId || data.sessionId === currentState.sessionId) {
+        set({ activeQuests: data.quests || [] });
+      }
     } else if (data.type === 'npc_dialogue') {
       set({ dialogueTrigger: { npcName: data.npcId, text: data.text, timestamp: Date.now() } });
     } else if (data.type === 'npc_dialogue_tree') {
@@ -343,4 +400,7 @@ export const initMultiplayer = () => {
       set({ worldTime: data.time });
     }
   };
+  };
+
+  connect();
 };

@@ -15,7 +15,8 @@ export const Login: React.FC<{ onLoginSuccess: () => void }> = ({ onLoginSuccess
     setError(null);
     setSuccess(null);
     try {
-      const baseUrl = import.meta.env.VITE_BACKEND_URL || (window.location.hostname === 'localhost' ? 'http://localhost:2567' : '');
+      const isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+      const baseUrl = import.meta.env.VITE_BACKEND_URL || (isLocal ? `http://${window.location.hostname}:2567` : '');
       const res = await fetch(`${baseUrl}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -38,7 +39,8 @@ export const Login: React.FC<{ onLoginSuccess: () => void }> = ({ onLoginSuccess
     setError(null);
     setSuccess(null);
     try {
-      const baseUrl = import.meta.env.VITE_BACKEND_URL || (window.location.hostname === 'localhost' ? 'http://localhost:2567' : '');
+      const isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+      const baseUrl = import.meta.env.VITE_BACKEND_URL || (isLocal ? `http://${window.location.hostname}:2567` : '');
       const res = await fetch(`${baseUrl}/api/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

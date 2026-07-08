@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
 class AudioEngineSystem {
-  private listener: THREE.AudioListener | null = null;
+  public listener: THREE.AudioListener | null = null;
   private bgmAudio: THREE.Audio | null = null;
   
   // Pooling for dynamic audio sources
@@ -36,6 +36,10 @@ class AudioEngineSystem {
       
       this.positionalPool.push(pAudio);
     }
+  }
+
+  public getPositionalAudio(): THREE.PositionalAudio | null {
+    return this.getAvailableAudio();
   }
 
   private getAvailableAudio(): THREE.PositionalAudio | null {
@@ -187,4 +191,89 @@ export const playBGM = (zone: string) => {
 
 export const playHitSound = (position: [number, number, number]) => {
   AudioEngine.playHitSound(position);
+};
+
+export const playFootstep = (position: [number, number, number], surface: string = 'dirt') => {
+  if (!AudioEngine.listener) return;
+  const ctx = AudioEngine.listener.context;
+  const pAudio = AudioEngine.getPositionalAudio();
+  if (!pAudio) return;
+  pAudio.position.set(position[0], position[1], position[2]);
+  
+  // Create footstep thud
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  
+  // Surface differentiation
+  if (surface === 'stone') {
+    osc.type = 'triangle';
+    osc.frequency.setValueAtTime(150, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(40, ctx.currentTime + 0.1);
+  } else {
+    // Dirt/grass
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(80, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(30, ctx.currentTime + 0.1);
+  }
+
+  gain.gain.setValueAtTime(0.3, ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1);
+  
+  osc.connect(gain);
+  
+  const bufferSource = ctx.createBufferSource();
+  const emptyBuffer = ctx.createBuffer(1, 1, ctx.sampleRate);
+  bufferSource.buffer = emptyBuffer;
+  bufferSource.connect(pAudio.context.destination); 
+  
+  const pGain = pAudio.getOutput();
+  gain.connect(pGain);
+  
+  osc.start(ctx.currentTime);
+  osc.stop(ctx.currentTime + 0.1);
+  
+  setTimeout(() => {
+    if (pAudio.isPlaying) pAudio.stop();
+    pAudio.disconnect();
+  }, 150);
+};
+
+export const playSwingSound = (position: [number, number, number]) => {
+  if (!AudioEngine.listener) return;
+  const ctx = AudioEngine.listener.context;
+  const pAudio = AudioEngine.getPositionalAudio();
+  if (!pAudio) return;
+  pAudio.position.set(position[0], position[1], position[2]);
+  
+  // Create sword swoosh
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  
+  osc.type = 'square';
+  osc.frequency.setValueAtTime(400, ctx.currentTime);
+  osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.2);
+
+  // Bandpass filter for wind-like sound
+  const filter = ctx.createBiquadFilter();
+  filter.type = 'bandpass';
+  filter.frequency.value = 1000;
+  filter.Q.value = 1;
+  
+  gain.gain.setValueAtTime(0, ctx.currentTime);
+  gain.gain.linearRampToValueAtTime(0.4, ctx.currentTime + 0.1);
+  gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.25);
+  
+  osc.connect(filter);
+  filter.connect(gain);
+  
+  const pGain = pAudio.getOutput();
+  gain.connect(pGain);
+  
+  osc.start(ctx.currentTime);
+  osc.stop(ctx.currentTime + 0.25);
+  
+  setTimeout(() => {
+    if (pAudio.isPlaying) pAudio.stop();
+    pAudio.disconnect();
+  }, 300);
 };
