@@ -117,42 +117,9 @@ export const OptimizedModel: React.FC<{
   return <primitive object={clone} scale={scale} />;
 };
 
-const PhysicsBox: React.FC<{ position: [number, number, number], args: [number, number, number] }> = ({ position, args }) => {
-  useBox(() => ({ type: 'Static', args, position }));
-  return null;
-};
 
-// Instanced model renderer to batch draw calls of repeated modular props
-interface InstancedModelProps {
-  url: string;
-  instances: { position: [number, number, number]; scale?: [number, number, number] }[];
-}
 
-const InstancedModel: React.FC<InstancedModelProps> = ({ url, instances }) => {
-  const { scene } = useGLTF(url);
-  
-  const meshes = useMemo(() => {
-    const list: THREE.Mesh[] = [];
-    scene.traverse(child => {
-      if ((child as THREE.Mesh).isMesh) {
-        list.push(child as THREE.Mesh);
-      }
-    });
-    return list;
-  }, [scene]);
 
-  return (
-    <>
-      {meshes.map((mesh, meshIdx) => (
-        <Instances key={meshIdx} geometry={mesh.geometry} material={mesh.material} castShadow receiveShadow>
-          {instances.map((inst, instIdx) => (
-            <Instance key={instIdx} position={inst.position} scale={inst.scale || [1, 1, 1]} />
-          ))}
-        </Instances>
-      ))}
-    </>
-  );
-};
 
 // Safe wrapper for Drei Environment preset to handle offline CDN download failures gracefully
 class SafeEnvironment extends React.Component<{ children: React.ReactNode }, { hasError: boolean }> {
@@ -546,7 +513,7 @@ const LocalPlayer = React.memo(({ player, sendMove }: { player: Player, sendMove
     };
   }, [ref]);
 
-  useFrame((_state, delta) => {
+  useFrame((_state, _delta) => {
     const mesh = ref.current as any;
     if (!mesh) return;
 

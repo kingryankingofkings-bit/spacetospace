@@ -40,16 +40,7 @@ const heroImageMap: Record<string, string> = {
   "Androgynous / Nonbinary Presentation": "hero_androgynous_1783304800858.png"
 };
 
-const holoHeadMap: Record<string, string> = {
-  "Masculine Presentation": "holo_head_masc_1783307851588.png",
-  "Feminine Presentation": "holo_head_fem_1783307859017.png",
-  "Androgynous / Nonbinary Presentation": "holo_head_andro_1783307865512.png"
-};
 
-const holoHairMap: Record<string, string> = {
-  "short": "holo_hair_short_1783307878879.png",
-  "long": "holo_hair_long_1783307886323.png"
-};
 
 const skinColors: Record<string, string> = {
   "Porcelain rose": "#ffe0d6", "Porcelain neutral": "#ffe6dc", "Pale ivory": "#ffeedf", "Pale olive": "#e8e1cd",
